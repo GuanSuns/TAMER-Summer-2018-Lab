@@ -49,13 +49,13 @@ key_action_tform_table = (
 
 def main():
 
-    if (len(sys.argv) < 2):
+    if len(sys.argv) < 2:
         print("Usage ./ale_python_test_pygame_player.py <ROM_FILE_NAME>")
         sys.exit()
 
     ale = ALEInterface()
 
-    max_frames_per_episode = ale.getInt("max_num_frames_per_episode");
+    max_frames_per_episode = ale.getInt("max_num_frames_per_episode")
     ale.setInt(b'random_seed', 123)
 
     random_seed = ale.getInt("random_seed")
@@ -63,12 +63,13 @@ def main():
 
     ale.loadROM(sys.argv[1])
     legal_actions = ale.getMinimalActionSet()
-    print legal_actions
+    print 'Legal actions: ', legal_actions
 
     (screen_width, screen_height) = ale.getScreenDims()
-    print("width/height: " + str(screen_width) + "/" + str(screen_height))
+    print("screen width/height: " + str(screen_width) + "/" + str(screen_height))
 
     (display_width, display_height) = (1024, 420)
+    print 'display width/height', (display_width, display_height)
 
     # init pygame
     pygame.init()
@@ -84,7 +85,7 @@ def main():
 
     episode = 0
     total_reward = 0.0
-    while (episode < 10):
+    while episode < 10:
 
         # get the keys
         keys = 0
@@ -109,7 +110,7 @@ def main():
 
         # get RAM
         ram_size = ale.getRAMSize()
-        ram = np.zeros((ram_size), dtype=np.uint8)
+        ram = np.zeros(ram_size, dtype=np.uint8)
         ale.getRAM(ram)
 
         # Display ram bytes
@@ -122,7 +123,7 @@ def main():
 
         line_pos = 40
         ram_pos = 0
-        while (ram_pos < 128):
+        while ram_pos < 128:
             ram_string = ''.join(["%02X " % ram[x] for x in range(ram_pos, min(ram_pos + 16, 128))])
             text = font.render(ram_string, 1, (255, 255, 255))
             screen.blit(text, (340, line_pos))
@@ -144,20 +145,20 @@ def main():
         pygame.display.flip()
 
         # process pygame event queue
-        exit = False
+        is_exit = False
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
-                exit = True
+                is_exit = True
                 break
-        if (pressed[pygame.K_q]):
-            exit = True
-        if (exit):
+        if pressed[pygame.K_q]:
+            is_exit = True
+        if is_exit:
             break
 
         # delay to 60fps
         clock.tick(60.)
 
-        if (ale.game_over()):
+        if ale.game_over():
             episode_frame_number = ale.getEpisodeFrameNumber()
             frame_number = ale.getFrameNumber()
             print("Frame Number: " + str(frame_number) + " Episode Frame Number: " + str(episode_frame_number))
