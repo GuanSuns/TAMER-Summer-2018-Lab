@@ -48,10 +48,8 @@ key_action_tform_table = (
 
 
 def main():
-
     if len(sys.argv) < 2:
-        print("Usage ./ale_python_test_pygame_player.py <ROM_FILE_NAME>")
-        sys.exit()
+        sys.argv.append('/Users/lguan/Documents/Study/Research/Atari-2600-Roms/T-Z/Tennis.bin')
 
     ale = ALEInterface()
 
@@ -94,7 +92,7 @@ def main():
         keys |= pressed[pygame.K_DOWN] << 1
         keys |= pressed[pygame.K_LEFT] << 2
         keys |= pressed[pygame.K_RIGHT] << 3
-        keys |= pressed[pygame.K_z] << 4
+        keys |= pressed[pygame.K_SPACE] << 4
         a = key_action_tform_table[keys]
         reward = ale.act(a)
         total_reward += reward
@@ -103,10 +101,14 @@ def main():
         screen.fill((0, 0, 0))
 
         # get atari screen pixels and blit them
-        numpy_surface = np.frombuffer(game_surface.get_buffer(), dtype=np.int32)
+        numpy_surface = np.zeros(shape=(screen_height, screen_width, 3), dtype=np.int8)
         ale.getScreenRGB(numpy_surface)
-        del numpy_surface
-        screen.blit(pygame.transform.scale2x(game_surface), (0, 0))
+        numpy_surface = np.swapaxes(numpy_surface, 0, 1)
+
+        print(numpy_surface.shape)
+
+        surf = pygame.pixelcopy.make_surface(numpy_surface)
+        screen.blit(pygame.transform.scale2x(surf), (0, 0))
 
         # get RAM
         ram_size = ale.getRAMSize()

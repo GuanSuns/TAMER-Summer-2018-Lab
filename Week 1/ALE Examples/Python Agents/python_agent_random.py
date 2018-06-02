@@ -1,7 +1,7 @@
 import sys
-from random import randrange
 from ale_python_interface import ALEInterface
 import pygame
+import numpy as np
 
 key_action_table = (
     0,  # 00000 none
@@ -70,29 +70,18 @@ def main():
     ale.loadROM(rom_file)
     print('- Complete loading ROM')
 
+    legal_actions = ale.getMinimalActionSet()
+
     # Play 10 episodes
     for episode in range(10):
         total_reward = 0
         while not ale.game_over():
-            a = getActionFromKeyboard()
+            a = legal_actions[np.random.randint(legal_actions.size)]
             # Apply an action and get the resulting reward
             reward = ale.act(a)
             total_reward += reward
         print('Episode %d ended with score: %d' % (episode, total_reward))
         ale.reset_game()
-
-
-def getActionFromKeyboard():
-    # get the keys
-    keys = 0
-    pressed = pygame.key.get_pressed()
-    keys |= pressed[pygame.K_UP]
-    keys |= pressed[pygame.K_DOWN] << 1
-    keys |= pressed[pygame.K_LEFT] << 2
-    keys |= pressed[pygame.K_RIGHT] << 3
-    keys |= pressed[pygame.K_SPACE] << 4
-    action = key_action_table[keys]
-    return action
 
 
 if __name__ == "__main__":

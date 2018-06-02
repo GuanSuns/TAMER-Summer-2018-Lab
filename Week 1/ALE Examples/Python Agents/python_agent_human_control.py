@@ -1,5 +1,14 @@
+# python_agent_human_control.py
+# Author: Lin Guan
+#
+# This modified ale_python_test_pygame.py to provide a fully interactive experience allowing the player
+# to play. RAM Contents, current action, and reward are also displayed.
+# keys are:
+# arrow keys -> up/down/left/right
+# z -> fire button
+
 import sys
-from random import randrange
+import numpy as np
 from ale_python_interface import ALEInterface
 import pygame
 
@@ -53,7 +62,7 @@ def main():
     # Set USE_SDL to true to display the screen. ALE must be compilied
     # with SDL enabled for this to work. On OSX, pygame init is used to
     # proxy-call SDL_main.
-    USE_SDL = True
+    USE_SDL = False
     if USE_SDL:
         # mac OS
         if sys.platform == 'darwin':
@@ -70,16 +79,79 @@ def main():
     ale.loadROM(rom_file)
     print('- Complete loading ROM')
 
+    (game_surface_width, game_surface_height) = ale.getScreenDims()
+    print("game surface width/height: "
+          + str(game_surface_width) + "/"
+          + str(game_surface_height))
+
+    (display_width, display_height) = (1024, 420)
+    print 'display width/height', (display_width, display_height)
+
+    # init pygame
+    pygame.init()
+    display_screen = pygame.display.set_mode((display_width, display_height))
+    pygame.display.set_caption("Arcade Learning Environment Player Agent Display")
+
+    # init clock
+    clock = pygame.time.Clock()
+
     # Play 10 episodes
     for episode in range(10):
         total_reward = 0
+
         while not ale.game_over():
             a = getActionFromKeyboard()
             # Apply an action and get the resulting reward
             reward = ale.act(a)
             total_reward += reward
+            # render game surface
+
+            # clear screen
+            display_screen.fill((255, 0, 0))
+
+            # get atari screen pixels and blit them
+            numpy_surface = np.zeros(shape=(display_height, display_width, 3), dtype=np.int8)
+            ale.getScreenRGB(numpy_surface)
+            numpy_surface = np.swapaxes(numpy_surface, 0, 1)
+
+            surf = pygame.pixelcopy.make_surface(numpy_surface)
+            display_screen.blit(surf, (0, 0))
+
+            pygame.display.flip()
+
+            # delay to 60fps
+            clock.tick(60.)
+
         print('Episode %d ended with score: %d' % (episode, total_reward))
         ale.reset_game()
+
+
+def renderGameSurface(ale, screen, game_surface_dim):
+    # clear screen
+    screen.fill((0, 0, 0))
+
+    # get atari screen pixels and blit them
+    numpy_surface = np.zeros(shape=(game_surface_dim[1], game_surface_dim[0], 3), dtype=np.int8)
+    ale.getScreenRGB(numpy_surface)
+    numpy_surface = np.swapaxes(numpy_surface, 0, 1)
+
+    surf = pygame.pixelcopy.make_surface(numpy_surface)
+    screen.blit(pygame.transform.scale2x(surf), (5, 5))
+
+
+def displayRelatedInfo(screen, action, total_reward):
+    line_pos = 20
+    # display current action
+    font = pygame.font.SysFont("Ubuntu Mono", 32)
+    text = font.render("Current Action: " + str(action), 1, (208, 208, 255))
+    height = font.get_height() * 1.2
+    screen.blit(text, (330, line_pos))
+    line_pos += height
+
+    # display reward
+    font = pygame.font.SysFont("Ubuntu Mono", 30)
+    text = font.render("Total Reward: " + str(total_reward), 1, (208, 255, 255))
+    screen.blit(text, (330, line_pos))
 
 
 def getActionFromKeyboard():
@@ -91,6 +163,7 @@ def getActionFromKeyboard():
     keys |= pressed[pygame.K_LEFT] << 2
     keys |= pressed[pygame.K_RIGHT] << 3
     keys |= pressed[pygame.K_SPACE] << 4
+
     action = key_action_table[keys]
     return action
 
