@@ -1,11 +1,11 @@
 # python_agent_human_control.py
 # Author: Lin Guan
 #
-# This modified ale_python_test_pygame.py to provide a fully interactive experience allowing the player
-# to play. RAM Contents, current action, and reward are also displayed.
+# This modified ale_python_test_pygame.py by Ben Goodrich to provide a fully interactive experience allowing the player
+# to play.
 # keys are:
 # arrow keys -> up/down/left/right
-# z -> fire button
+# SPACE -> fire button
 
 import sys
 import numpy as np
@@ -84,7 +84,7 @@ def main():
           + str(game_surface_width) + "/"
           + str(game_surface_height))
 
-    (display_width, display_height) = (1024, 420)
+    (display_width, display_height) = (800, 640)
     print 'display width/height', (display_width, display_height)
 
     # init pygame
@@ -94,30 +94,37 @@ def main():
 
     # init clock
     clock = pygame.time.Clock()
+    is_exit = False
 
     # Play 10 episodes
     for episode in range(10):
+        if is_exit:
+            break
+
         total_reward = 0
 
-        while not ale.game_over():
+        while not ale.game_over() and not is_exit:
             a = getActionFromKeyboard()
             # Apply an action and get the resulting reward
             reward = ale.act(a)
             total_reward += reward
-            # render game surface
-
             # clear screen
-            display_screen.fill((255, 0, 0))
-
-            # get atari screen pixels and blit them
-            numpy_surface = np.zeros(shape=(display_height, display_width, 3), dtype=np.int8)
-            ale.getScreenRGB(numpy_surface)
-            numpy_surface = np.swapaxes(numpy_surface, 0, 1)
-
-            surf = pygame.pixelcopy.make_surface(numpy_surface)
-            display_screen.blit(surf, (0, 0))
+            display_screen.fill((0, 0, 0))
+            # render game surface
+            renderGameSurface(ale, display_screen, (game_surface_width, game_surface_height))
+            # display related info
+            displayRelatedInfo(display_screen, a, total_reward)
 
             pygame.display.flip()
+
+            # process pygame event queue
+            for event in pygame.event.get():
+                if event.type == pygame.QUIT:
+                    is_exit = True
+                    break
+                if event.type == pygame.KEYDOWN and event.key == pygame.K_q:
+                    is_exit = True
+                    break
 
             # delay to 60fps
             clock.tick(60.)
@@ -145,13 +152,13 @@ def displayRelatedInfo(screen, action, total_reward):
     font = pygame.font.SysFont("Ubuntu Mono", 32)
     text = font.render("Current Action: " + str(action), 1, (208, 208, 255))
     height = font.get_height() * 1.2
-    screen.blit(text, (330, line_pos))
+    screen.blit(text, (380, line_pos))
     line_pos += height
 
     # display reward
     font = pygame.font.SysFont("Ubuntu Mono", 30)
     text = font.render("Total Reward: " + str(total_reward), 1, (208, 255, 255))
-    screen.blit(text, (330, line_pos))
+    screen.blit(text, (380, line_pos))
 
 
 def getActionFromKeyboard():
