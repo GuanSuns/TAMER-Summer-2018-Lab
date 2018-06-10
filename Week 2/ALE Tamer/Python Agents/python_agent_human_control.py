@@ -12,6 +12,9 @@ import numpy as np
 from ale_python_interface import ALEInterface
 import pygame
 
+import scipy
+import scipy.misc
+
 from action_table import key_action_table
 
 
@@ -74,6 +77,7 @@ def main():
         total_reward = 0
 
         while not ale.game_over() and not is_exit:
+
             a = getActionFromKeyboard()
             # Apply an action and get the resulting reward
             reward = ale.act(a)
@@ -103,6 +107,18 @@ def main():
         ale.reset_game()
 
 
+def rgb2gray(rgb):
+    return np.dot(rgb[..., :3], [0.299, 0.587, 0.114])
+
+
+def copyBuffer(source):
+    dest = np.ndarray(shape=(172, 160))
+    for row in range(172):
+        for col in range(160):
+            dest[row, col] = source[row, col]
+    return dest
+
+
 def renderGameSurface(ale, screen, game_surface_dim):
     # clear screen
     screen.fill((0, 0, 0))
@@ -110,8 +126,13 @@ def renderGameSurface(ale, screen, game_surface_dim):
     # get atari screen pixels and blit them
     numpy_surface = np.zeros(shape=(game_surface_dim[1], game_surface_dim[0], 3), dtype=np.int8)
     ale.getScreenRGB(numpy_surface)
-    numpy_surface = np.swapaxes(numpy_surface, 0, 1)
 
+    gray = rgb2gray(numpy_surface.copy()).astype(int)
+    copy_gray = copyBuffer(gray)
+    frame_id = ale.getFrameNumber()
+    scipy.misc.imsave('/Users/lguan/Desktop/Others/Pacman/frame_%d.png' % frame_id, copy_gray)
+
+    numpy_surface = np.swapaxes(numpy_surface, 0, 1)
     surf = pygame.pixelcopy.make_surface(numpy_surface)
     screen.blit(pygame.transform.scale2x(surf), (5, 5))
 

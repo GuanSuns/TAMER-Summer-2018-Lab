@@ -7,13 +7,14 @@
 
 import sys
 import numpy as np
-from ale_python_interface import ALEInterface
 import pygame
+from ale_python_interface import ALEInterface
+from python_agent import PythonReinforcementAgent
 
 
 class LearningEnvironment:
-    def __init__(self, rom_path=None, agent=None, episodes=10
-                 , fps=60, display_width=800, display_height=640):
+    def __init__(self, rom_path=None, agent=None
+                 , episodes=10, fps=60, display_width=800, display_height=640):
         # if not specified, use the default game rom: pacman
         if rom_path is None:
             rom_path = '/Users/lguan/Documents/Study/Research/Atari-2600-Roms/K-P/ms_pacman.bin'
@@ -21,6 +22,8 @@ class LearningEnvironment:
         # setup agent
         if agent is None:
             raise ValueError('Learning Environment - No specified agent')
+        elif not isinstance(agent, PythonReinforcementAgent):
+            raise TypeError('The agent should be inherited from PythonReinforcementAgent')
         self.agent = agent
 
         # setup ALE
@@ -95,10 +98,14 @@ class LearningEnvironment:
             total_reward = 0
 
             while not ale.game_over() and not is_exit:
-                a = getActionFromKeyboard()
-                # Apply an action and get the resulting reward
+                # get the action from the agent
+                a = agent.getAction()
+                # apply an action and get the resulting reward
                 reward = ale.act(a)
                 total_reward += reward
+
+
+
                 # clear screen
                 display_screen.fill((0, 0, 0))
                 # render game surface
