@@ -122,7 +122,10 @@ class LearningEnvironment:
                 clock.tick(self.fps)
 
             print('Episode %d ended with score: %d' % (episode, total_reward))
-            ale.reset_game()
+            self.end_episode()
+
+    def end_episode(self):
+        self.ale.reset_game()
 
     @staticmethod
     def renderGameSurface(ale, screen, game_surface_width, game_surface_height):
