@@ -113,7 +113,8 @@ class LearningEnvironment:
 
             while not ale.game_over() and not is_exit:
                 # get new sample according to the sample_rate
-                if self.last_sample_frame >= (ale.getEpisodeFrameNumber() + self.sample_from_odd_frame) \
+                if self.last_sample_frame + self.sample_rate \
+                        >= (ale.getEpisodeFrameNumber() + self.sample_from_odd_frame) \
                         or features is None:
                     np_game_surface = np.zeros(shape=(self.game_surface_height, self.game_surface_width, 3)
                                                , dtype=np.int8)
@@ -121,6 +122,10 @@ class LearningEnvironment:
                     game_rgb = utils.copyBuffer(np_game_surface)
                     # get new features based on current game state
                     features = self.agent.extract_features(game_rgb)
+
+                    # update info
+                    self.last_sample_frame = ale.getEpisodeFrameNumber()
+                    self.sample_from_odd_frame = -self.sample_from_odd_frame
 
                 # get the action from the agent
                 a = agent.getAction(features)
