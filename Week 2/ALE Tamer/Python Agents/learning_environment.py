@@ -134,6 +134,11 @@ class LearningEnvironment:
                     # get the action from the agent
                     action = agent.getAction(state)
 
+                    current_time = time.time()
+                    experience = {'time': current_time, 'reward': sub_episode_reward, 'state': state}
+                    sub_episode_reward = 0
+                    agent.addExperience(experience)
+
                     if IS_DEBUG:
                         print('ALE - sample from frame %s' % ale.getEpisodeFrameNumber())
 
@@ -141,10 +146,6 @@ class LearningEnvironment:
                 reward = ale.act(action)
                 self.total_reward += reward
                 sub_episode_reward += reward
-
-                current_time = time.time()
-                experience = {'time': current_time, 'reward': reward, 'state': state}
-                agent.addExperience(experience)
 
                 # if current agent is Tamer agent, then receive
                 if isinstance(agent, BasicTamerAgent):
@@ -238,7 +239,8 @@ class LearningEnvironment:
 
 
 def main():
-    agent = BasicTamerAgent()
+    # choice of step-size?
+    agent = BasicTamerAgent(window_size=5, learning_rate=0.01)
     agent.initAgent()
     environment = LearningEnvironment(rom_path='/Users/lguan/Documents/Study/Research/Atari-2600-Roms/K-P/ms_pacman.bin'
                                       , agent=agent, sample_rate=60, fps=60)

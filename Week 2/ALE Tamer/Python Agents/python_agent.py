@@ -24,11 +24,12 @@ class PythonAgent:
 
 class PythonReinforcementAgent(PythonAgent):
     def __init__(self, index=0, isTraining=True
-                 , epsilon=0.5, alpha=0.5, gamma=1):
+                 , epsilon=0.5, alpha=0.5, gamma=1, learning_rate=0.01):
         """
             alpha    - learning rate
             epsilon  - exploration rate
             gamma    - discount factor
+            learning_rate   -   learning step size
         """
         PythonAgent.__init__(self, index)
         self.isTraining = isTraining

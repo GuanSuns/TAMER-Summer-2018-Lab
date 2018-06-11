@@ -8,6 +8,7 @@
 from python_agent import PythonReinforcementAgent
 import utils
 import time
+from enum_actions import Actions
 
 IS_DEBUG = True
 
@@ -15,13 +16,14 @@ IS_DEBUG = True
 class BasicTamerAgent(PythonReinforcementAgent):
 
     def __init__(self, index=0, isTraining=True
-                 , epsilon=0.5, alpha=0.5, gamma=1, window_size=2, max_n_experiences=1000):
+                 , epsilon=0.5, alpha=0.5, gamma=1
+                 , window_size=2, max_n_experiences=1000, learning_rate=0.01):
         """
             window_size: use the experiences within 2 seconds to update the weights
             max_n_experiences: maximum number of experiences stored in the history list
         """
         PythonReinforcementAgent.__init__(self, index, isTraining
-                                          , epsilon, alpha, gamma)
+                                          , epsilon, alpha, gamma, learning_rate)
         self.weights = utils.Dict()
         self.weights['bias'] = 0
         self.window_size = window_size
@@ -43,9 +45,22 @@ class BasicTamerAgent(PythonReinforcementAgent):
             else:
                 break
 
+        # update weights using Algorithm 1 in paper
         n_experiences = len(self.experiences)
-        weight_per_experience =
+        weight_per_experience = 1.0/n_experiences
+        cred_features = utils.Dict()
 
+        for experience in self.experiences:
+            exp_features = experience['state']['feature']
+            exp_features.multiplyAll(weight_per_experience)
+            cred_features += exp_features
+
+        error = signal - self.weights * cred_features
+        cred_features.multiplyAll(self.learning_rate * error)
+        self.weights += cred_features
+
+        if IS_DEBUG:
+            print('Tamer Agent - updated weights using human signal: %s' % self.weights)
 
     def getAction(self, state):
         """
@@ -88,7 +103,8 @@ class BasicTamerAgent(PythonReinforcementAgent):
             return the state based on current game RGB values
             In state, 0: nothing, 1: wall, 2: path, 3: pacman, 4: scared ghost, 5: ghost, 6: food, 7: capsule
         """
-        return {'state': utils.getStateFromRgbWorld(rgb_state)}
+        state = utils.getStateFromRgbWorld(rgb_state)
+        return {'state': state, 'feature': self.getStateFeatures(state, Actions.NO)}
 
     def addExperience(self, experience):
         """
@@ -209,22 +225,22 @@ class BasicTamerAgent(PythonReinforcementAgent):
 
         # compute the features
         if features['dist-food'] is not None:
-            features['dist-food'] = features['dist-food']/float(160*170)
+            features['dist-food'] = features['dist-food']/float(160*170*10)
         else:
             features['dist-food'] = 0
 
         if features['dist-capsule'] is not None:
-            features['dist-capsule'] = features['dist-capsule']/float(160*170)
+            features['dist-capsule'] = features['dist-capsule']/float(160*170*10)
         else:
             features['dist-capsule'] = 0
 
         if features['dist-ghost'] is not None:
-            features['dist-ghost'] = features['dist-ghost']/float(160*170)
+            features['dist-ghost'] = features['dist-ghost']/float(160*170*10)
         else:
             features['dist-ghost'] = 0
 
         if features['dist-scared-ghost'] is not None:
-            features['dist-scared-ghost'] = features['dist-scared-ghost']/float(160*170)
+            features['dist-scared-ghost'] = features['dist-scared-ghost']/float(160*170*10)
         else:
             features['dist-scared-ghost'] = 0
 

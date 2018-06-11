@@ -204,3 +204,65 @@ class Dict(dict):
     def __getitem__(self, idx):
         self.setdefault(idx, 0)
         return dict.__getitem__(self, idx)
+
+    def multiplyAll(self, factor):
+        factor = float(factor)
+        for key in self:
+            self[key] *= factor
+
+    def __mul__(self, y):
+        """
+            Multiplying two counters gives the dot product of their vectors where
+            each unique label is a vector element.
+        """
+        sum_result = 0
+        x = self
+        if len(x) > len(y):
+            x, y = y, x
+        for key in x:
+            if key not in y:
+                continue
+            sum_result += x[key] * y[key]
+        return sum_result
+
+    def __radd__(self, y):
+        """
+            Adding another counter to a counter increments the current counter
+            by the values stored in the second counter.
+        """
+        for key, value in y.items():
+            self[key] += value
+
+    def __add__(self, y):
+        """
+            Adding two counters gives a counter with the union of all keys and
+            counts of the second added to counts of the first.
+        """
+        addend = Dict()
+        for key in self:
+            if key in y:
+                addend[key] = self[key] + y[key]
+            else:
+                addend[key] = self[key]
+        for key in y:
+            if key in self:
+                continue
+            addend[key] = y[key]
+        return addend
+
+    def __sub__(self, y):
+        """
+            Subtracting a counter from another gives a counter with the union of all keys and
+            counts of the second subtracted from counts of the first.
+        """
+        addend = Dict()
+        for key in self:
+            if key in y:
+                addend[key] = self[key] - y[key]
+            else:
+                addend[key] = self[key]
+        for key in y:
+            if key in self:
+                continue
+            addend[key] = -1 * y[key]
+        return addend
