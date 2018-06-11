@@ -145,7 +145,7 @@ def rgb2gray(rgb):
 
 
 def copyBuffer(source):
-    dest = np.ndarray(shape=(172, 160, 3))
+    dest = np.ndarray(shape=(172, 160, 3), dtype=np.uint8)
     for row in range(172):
         for col in range(160):
             dest[row, col, :] = source[row, col, :]
@@ -157,11 +157,20 @@ def renderGameSurface(ale, screen, game_surface_dim):
     screen.fill((0, 0, 0))
 
     # get atari screen pixels and blit them
-    numpy_surface = np.zeros(shape=(game_surface_dim[1], game_surface_dim[0], 3), dtype=np.int8)
+    numpy_surface = np.zeros(shape=(game_surface_dim[1], game_surface_dim[0], 3), dtype=np.uint8)
     ale.getScreenRGB(numpy_surface)
 
+    print '------------------------------------'
+    color_set = set()
+    for row in range(172):
+        for col in range(160):
+            if (numpy_surface[row, col, 0], numpy_surface[row, col, 1], numpy_surface[row, col, 2]) not in color_set:
+                print (numpy_surface[row, col, 0], numpy_surface[row, col, 1], numpy_surface[row, col, 2])
+                color_set.add((numpy_surface[row, col, 0], numpy_surface[row, col, 1], numpy_surface[row, col, 2]))
+
+
     # copy_png = copyBuffer(numpy_surface)
-    frame_id = ale.getFrameNumber()
+    # frame_id = ale.getFrameNumber()
     # scipy.misc.imsave('/Users/lguan/Desktop/Others/Pacman/frame_%d.png' % frame_id, copy_png)
 
     numpy_surface = np.swapaxes(numpy_surface, 0, 1)

@@ -32,7 +32,7 @@ class BasicTamerAgent(PythonReinforcementAgent):
             return
         current_time = time.time()
 
-    def getAction(self, features):
+    def getAction(self, state):
         """
             The Agent will receive a GameState and
             must return an action
@@ -41,9 +41,6 @@ class BasicTamerAgent(PythonReinforcementAgent):
 
     def getWeights(self):
         return self.weights
-
-    def getStateFeatures(self, state, action):
-        return {}
 
     def getQValue(self, state, action):
         """
@@ -112,4 +109,7 @@ class BasicTamerAgent(PythonReinforcementAgent):
         """ Called by environment at the end """
         print("Basic Tamer Agent - final weights: ")
         print(self.weights)
+
+    def getStateFeatures(self, state, action):
+        return {}
 

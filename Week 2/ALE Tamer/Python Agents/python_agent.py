@@ -36,8 +36,8 @@ class PythonReinforcementAgent(PythonAgent):
         self.learning_rate = alpha
         self.gamma = gamma
 
-    def extract_features(self, rgb_state):
-        """ return the features based on current game RGB values"""
+    def extract_state(self, rgb_state):
+        """ return the state based on current game RGB values"""
         pass
 
     def addExperience(self, experience):

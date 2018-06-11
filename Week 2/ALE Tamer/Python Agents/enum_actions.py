@@ -12,4 +12,5 @@ class Actions(Enum):
     LEFT = 4
     RIGHT = 3
     DOWN = 5
+    NO = 0
 

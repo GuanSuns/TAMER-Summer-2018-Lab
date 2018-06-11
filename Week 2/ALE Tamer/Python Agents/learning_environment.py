@@ -110,12 +110,13 @@ class LearningEnvironment:
 
             self.start_episode()
             state = None
+            action = None
 
             while not ale.game_over() and not is_exit:
                 # get new sample according to the sample_rate
                 if self.last_sample_frame + self.sample_rate \
                         >= (ale.getEpisodeFrameNumber() + self.sample_from_odd_frame) \
-                        or state is None:
+                        or state is None or action is None:
                     np_game_surface = np.zeros(shape=(self.game_surface_height, self.game_surface_width, 3)
                                                , dtype=np.int8)
                     ale.getScreenRGB(np_game_surface)
@@ -127,10 +128,11 @@ class LearningEnvironment:
                     self.last_sample_frame = ale.getEpisodeFrameNumber()
                     self.sample_from_odd_frame = -self.sample_from_odd_frame
 
-                # get the action from the agent
-                a = agent.getAction(state)
+                    # get the action from the agent
+                    action = agent.getAction(state)
+
                 # apply an action and get the resulting reward
-                reward = ale.act(a)
+                reward = ale.act(action)
                 self.total_reward += reward
 
                 current_time = time.time()
@@ -193,7 +195,7 @@ class LearningEnvironment:
         screen.fill((0, 0, 0))
 
         # get atari screen pixels and blit them
-        numpy_surface = np.zeros(shape=(game_surface_height, game_surface_width, 3), dtype=np.int8)
+        numpy_surface = np.zeros(shape=(game_surface_height, game_surface_width, 3), dtype=np.uint8)
         ale.getScreenRGB(numpy_surface)
         numpy_surface = np.swapaxes(numpy_surface, 0, 1)
 
