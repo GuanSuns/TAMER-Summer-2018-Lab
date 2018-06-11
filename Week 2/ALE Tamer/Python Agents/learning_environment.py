@@ -6,13 +6,15 @@
 # --------------
 
 import sys
+import time
 import numpy as np
 import pygame
+import utils
 from ale_python_interface import ALEInterface
-from python_tamer_agent import TamerAgent
+from python_tamer_agent import TamerAgent, PythonReinforcementAgent
 
 
-class TamerLearningEnvironment:
+class LearningEnvironment:
     def __init__(self, rom_path=None, agent=None
                  , episodes=10, fps=60, display_width=800, display_height=640, sample_rate=10):
         """
@@ -25,8 +27,8 @@ class TamerLearningEnvironment:
         # setup agent
         if agent is None:
             raise ValueError('Learning Environment - No specified agent')
-        elif not isinstance(agent, TamerAgent):
-            raise TypeError('The agent should be inherited from TamerAgent')
+        elif not isinstance(agent, PythonReinforcementAgent):
+            raise TypeError('The agent should be inherited from PythonReinforcementAgent')
         self.agent = agent
 
         # setup ALE
@@ -44,6 +46,8 @@ class TamerLearningEnvironment:
 
         # initialize some useful variables
         self.total_reward = 0
+        self.last_sample_frame = 0
+        self.sample_from_odd_frame = 1  # by switching between 1 and -1 to sample from even frames and odd frames
 
     def setup_ale(self, rom_path):
         # use current ale
@@ -99,24 +103,39 @@ class TamerLearningEnvironment:
         clock = pygame.time.Clock()
         is_exit = False
 
-        # init some local variables
-        last_sample_frame = 0
-        sample_from_odd_frame = 1   # by switching between 1 and -1 to sample from even frames and odd frames
-
         # start episodes
         for episode in range(self.episodes):
             if is_exit:
                 break
 
             self.start_episode()
+            features = None
 
             while not ale.game_over() and not is_exit:
+                # get new sample according to the sample_rate
+                if self.last_sample_frame >= (ale.getEpisodeFrameNumber() + self.sample_from_odd_frame) \
+                        or features is None:
+                    np_game_surface = np.zeros(shape=(self.game_surface_height, self.game_surface_width, 3)
+                                               , dtype=np.int8)
+                    ale.getScreenRGB(np_game_surface)
+                    game_rgb = utils.copyBuffer(np_game_surface)
+                    # get new features based on current game state
+                    features = self.agent.extract_features(game_rgb)
+
                 # get the action from the agent
-                a = agent.getAction()
+                a = agent.getAction(features)
                 # apply an action and get the resulting reward
                 reward = ale.act(a)
                 self.total_reward += reward
 
+                current_time = time.time()
+                experience = {'time': current_time, 'reward': reward, 'features': features}
+                agent.addExperience(experience)
+
+                # if current agent is Tamer agent, then receive
+                if isinstance(agent, TamerAgent):
+                    h = self.getHumanSignal()
+                    agent.receiveHumanSignal(signal=h)
 
                 # clear screen
                 display_screen.fill((0, 0, 0))
@@ -153,6 +172,8 @@ class TamerLearningEnvironment:
     def start_episode(self):
         """ This function will be at the beginning of each episode """
         self.total_reward = 0
+        self.last_sample_frame = self.ale.getEpisodeFrameNumber()
+        self.sample_from_odd_frame = 1  # by switching between 1 and -1 to sample from even frames and odd frames
         self.agent.startEpisode()
 
     def end_episode(self):
@@ -190,3 +211,23 @@ class TamerLearningEnvironment:
         text = font.render("Total Reward: " + str(total_reward), 1, (208, 255, 255))
         screen.blit(text, (380, line_pos))
 
+    @staticmethod
+    def getHumanSignal():
+        pressed = pygame.key.get_pressed()
+        # positive signal
+        if pressed[pygame.K_UP]:
+            return 1
+        elif pressed[pygame.K_DOWN]:
+            return -1
+        else:
+            return 0
+
+
+def main():
+    agent = TamerAgent()
+    environment = LearningEnvironment(agent=agent)
+    environment.start_game()
+
+
+if __name__ == "__main__":
+    main()

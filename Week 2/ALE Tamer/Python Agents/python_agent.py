@@ -11,7 +11,7 @@ class PythonAgent:
     def __init__(self, index=0):
         self.index = index
 
-    def getAction(self, state):
+    def getAction(self, features):
         """
             The Agent will receive a GameState and
             must return an action
@@ -20,7 +20,7 @@ class PythonAgent:
 
 
 class PythonReinforcementAgent(PythonAgent):
-    def __init__(self, index=0, isTraining=False
+    def __init__(self, index=0, isTraining=True
                  , epsilon=0.5, alpha=0.5, gamma=1):
         """
             alpha    - learning rate
@@ -32,6 +32,10 @@ class PythonReinforcementAgent(PythonAgent):
         self.epsilon = epsilon
         self.learning_rate = alpha
         self.gamma = gamma
+
+    def extract_features(self, rgb_state):
+        """ return the features based on current game RGB values"""
+        pass
 
     def addExperience(self, experience):
         """
@@ -65,6 +69,7 @@ class PythonReinforcementAgent(PythonAgent):
           Called by environment at the end
         """
         utils.raiseNotDefined("stopEpisode")
+
 
 
 
