@@ -78,7 +78,17 @@ def distinguishWallFoodCapsule(state):
     for row in range(dim_state[0]):
         for col in range(dim_state[1]):
             if state[row, col] == -1:
-                pass
+                # count component but not change its value
+                n_component = countConnectedComponentSize(state, row, col, -1, -1)
+                # if it's food
+                if n_component < 20:
+                    countConnectedComponentSize(state, row, col, -1, 6)
+                # if it's capsule
+                elif n_component < 30:
+                    countConnectedComponentSize(state, row, col, -1, 7)
+                # if it's wall
+                else:
+                    countConnectedComponentSize(state, row, col, -1, 1)
 
 
 def countConnectedComponentSize(state, row, col, old_value, new_value):
@@ -122,17 +132,16 @@ def countConnectedComponentSize(state, row, col, old_value, new_value):
                 break
             if (new_x, new_y) in expanded:
                 continue
-            else:
-                expanded.add((new_x, new_y))
-                state[new_x, new_y] = new_value
-                n_component += 1
+
+            expanded.add((new_x, new_y))
+            state[new_x, new_y] = new_value
+            n_component += 1
 
             queue_bfs[que_end][0] = new_x
             queue_bfs[que_end][1] = new_y
             que_end += 1
 
     return n_component
-
 
 
 def getLegalActions(state):
