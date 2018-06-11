@@ -9,12 +9,15 @@ import sys
 import numpy as np
 import pygame
 from ale_python_interface import ALEInterface
-from python_agent import PythonReinforcementAgent
+from python_tamer_agent import TamerAgent
 
 
-class LearningEnvironment:
+class TamerLearningEnvironment:
     def __init__(self, rom_path=None, agent=None
-                 , episodes=10, fps=60, display_width=800, display_height=640):
+                 , episodes=10, fps=60, display_width=800, display_height=640, sample_rate=10):
+        """
+            sample_rate: sample experience every sample_rate (or sample_rate+1) frames
+        """
         # if not specified, use the default game rom: pacman
         if rom_path is None:
             rom_path = '/Users/lguan/Documents/Study/Research/Atari-2600-Roms/K-P/ms_pacman.bin'
@@ -22,8 +25,8 @@ class LearningEnvironment:
         # setup agent
         if agent is None:
             raise ValueError('Learning Environment - No specified agent')
-        elif not isinstance(agent, PythonReinforcementAgent):
-            raise TypeError('The agent should be inherited from PythonReinforcementAgent')
+        elif not isinstance(agent, TamerAgent):
+            raise TypeError('The agent should be inherited from TamerAgent')
         self.agent = agent
 
         # setup ALE
@@ -37,6 +40,7 @@ class LearningEnvironment:
         self.display_height = display_height
         self.game_surface_width = 0     # the value will be set after loading the rom
         self.game_surface_height = 0    # the value will be set after loading the rom
+        self.sample_rate = sample_rate
 
     def setup_ale(self, rom_path):
         # use current ale
@@ -76,7 +80,9 @@ class LearningEnvironment:
         print('available action set: ', available_action)
 
     def start_game(self):
-        """use this function to start the game"""
+        """
+            use this function to start the game
+        """
         # get the ALE and agent
         ale = self.ale
         agent = self.agent
@@ -103,7 +109,6 @@ class LearningEnvironment:
                 # apply an action and get the resulting reward
                 reward = ale.act(a)
                 total_reward += reward
-
 
 
                 # clear screen

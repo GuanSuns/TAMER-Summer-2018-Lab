@@ -112,10 +112,10 @@ def rgb2gray(rgb):
 
 
 def copyBuffer(source):
-    dest = np.ndarray(shape=(172, 160))
+    dest = np.ndarray(shape=(172, 160, 3))
     for row in range(172):
         for col in range(160):
-            dest[row, col] = source[row, col]
+            dest[row, col, :] = source[row, col, :]
     return dest
 
 
@@ -127,10 +127,9 @@ def renderGameSurface(ale, screen, game_surface_dim):
     numpy_surface = np.zeros(shape=(game_surface_dim[1], game_surface_dim[0], 3), dtype=np.int8)
     ale.getScreenRGB(numpy_surface)
 
-    gray = rgb2gray(numpy_surface.copy()).astype(int)
-    copy_gray = copyBuffer(gray)
+    copy_png = copyBuffer(numpy_surface)
     frame_id = ale.getFrameNumber()
-    scipy.misc.imsave('/Users/lguan/Desktop/Others/Pacman/frame_%d.png' % frame_id, copy_gray)
+    scipy.misc.imsave('/Users/lguan/Desktop/Others/Pacman/frame_%d.png' % frame_id, copy_png)
 
     numpy_surface = np.swapaxes(numpy_surface, 0, 1)
     surf = pygame.pixelcopy.make_surface(numpy_surface)
