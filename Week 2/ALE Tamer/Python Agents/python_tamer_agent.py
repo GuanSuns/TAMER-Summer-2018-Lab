@@ -9,13 +9,15 @@ from python_agent import PythonReinforcementAgent
 import utils
 import time
 
+IS_DEBUG = True
+
 
 class BasicTamerAgent(PythonReinforcementAgent):
 
     def __init__(self, index=0, isTraining=True
-                 , epsilon=0.5, alpha=0.5, gamma=1, window_size=1, max_n_experiences=1000):
+                 , epsilon=0.5, alpha=0.5, gamma=1, window_size=2, max_n_experiences=1000):
         """
-            window_size: use the experiences within 1 second to update the weights
+            window_size: use the experiences within 2 seconds to update the weights
             max_n_experiences: maximum number of experiences stored in the history list
         """
         PythonReinforcementAgent.__init__(self, index, isTraining
@@ -31,12 +33,25 @@ class BasicTamerAgent(PythonReinforcementAgent):
         # do nothing when the signal is 0 or it's not in training
         if signal == 0 or not self.isTraining:
             return
+
+        # clear stale data
         current_time = time.time()
+        while len(self.experiences) > 0:
+            experience = self.experiences[0]
+            if experience['time'] < current_time - self.window_size:
+                self.experiences.pop(0)
+            else:
+                break
+
+        n_experiences = len(self.experiences)
+        weight_per_experience =
+
 
     def getAction(self, state):
         """
           Compute the best action to take in a state.
         """
+        state = state['state']
         legal_actions = utils.getLegalActions(state)
 
         max_action = None
@@ -59,11 +74,12 @@ class BasicTamerAgent(PythonReinforcementAgent):
         weights = self.getWeights()
         state_features = self.getStateFeatures(state, action)
 
-        print state_features
-
         q_value = 0
         for name, value in state_features.items():
             q_value += weights[name]*value
+
+        if IS_DEBUG:
+            print('Tamer Agent - q-value: %s, features of action %s: %s' % (q_value, action, state_features))
 
         return q_value
 
@@ -107,7 +123,12 @@ class BasicTamerAgent(PythonReinforcementAgent):
 
     def getStateFeatures(self, state, action):
         # get pacman pos
-        (x, y) = utils.getPacmanPos(state)
+        pacman_pos = utils.getPacmanPos(state)
+        if pacman_pos is None:
+            print('pacman not found')
+            return utils.Dict()
+        else:
+            (x, y) = pacman_pos
         # compute the next pos
         (next_x, next_y) = utils.getNextPos(x, y, action)
         # use bfs to get features
@@ -188,22 +209,22 @@ class BasicTamerAgent(PythonReinforcementAgent):
 
         # compute the features
         if features['dist-food'] is not None:
-            features['dist-food'] = features['dist-food']/(160*170)
+            features['dist-food'] = features['dist-food']/float(160*170)
         else:
             features['dist-food'] = 0
 
         if features['dist-capsule'] is not None:
-            features['dist-capsule'] = features['dist-capsule']/(160*170)
+            features['dist-capsule'] = features['dist-capsule']/float(160*170)
         else:
             features['dist-capsule'] = 0
 
         if features['dist-ghost'] is not None:
-            features['dist-ghost'] = features['dist-ghost']/(160*170)
+            features['dist-ghost'] = features['dist-ghost']/float(160*170)
         else:
             features['dist-ghost'] = 0
 
         if features['dist-scared-ghost'] is not None:
-            features['dist-scared-ghost'] = features['dist-scared-ghost']/(160*170)
+            features['dist-scared-ghost'] = features['dist-scared-ghost']/float(160*170)
         else:
             features['dist-scared-ghost'] = 0
 

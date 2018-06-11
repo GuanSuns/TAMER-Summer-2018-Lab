@@ -7,6 +7,9 @@ import sys
 import numpy as np
 from enum_actions import Actions
 
+import scipy
+import scipy.misc
+
 
 def raiseNotDefined(method_name):
     print("Method not implemented: %s" % method_name)
@@ -14,8 +17,7 @@ def raiseNotDefined(method_name):
 
 
 def copyBuffer(source):
-    dest = np.zeros(shape=(172, 160, 3))
-    print(dest.shape)
+    dest = np.zeros(shape=(172, 160, 3), dtype=np.uint8)
     for row in range(172):
         for col in range(160):
             for color_dim in range(3):
@@ -76,7 +78,6 @@ def distinguishWallFoodCapsule(state):
         In state, 0: nothing, 1: wall, 2: path, 3: pacman, 4: scared ghost, 5: ghost, 6: food, 7: capsule
     """
     dim_state = state.shape
-
     for row in range(dim_state[0]):
         for col in range(dim_state[1]):
             if state[row, col] == -1:

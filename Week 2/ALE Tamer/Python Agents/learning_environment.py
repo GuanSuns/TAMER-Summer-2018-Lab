@@ -13,6 +13,8 @@ import utils
 from ale_python_interface import ALEInterface
 from python_tamer_agent import BasicTamerAgent, PythonReinforcementAgent
 
+IS_DEBUG = True
+
 
 class LearningEnvironment:
     def __init__(self, rom_path=None, agent=None
@@ -111,11 +113,12 @@ class LearningEnvironment:
             self.start_episode()
             state = None
             action = None
+            sub_episode_reward = 0
 
             while not ale.game_over() and not is_exit:
                 # get new sample according to the sample_rate
                 if self.last_sample_frame + self.sample_rate \
-                        >= (ale.getEpisodeFrameNumber() + self.sample_from_odd_frame) \
+                        < (ale.getEpisodeFrameNumber() + self.sample_from_odd_frame) \
                         or state is None or action is None:
                     np_game_surface = np.zeros(shape=(self.game_surface_height, self.game_surface_width, 3)
                                                , dtype=np.int8)
@@ -131,9 +134,13 @@ class LearningEnvironment:
                     # get the action from the agent
                     action = agent.getAction(state)
 
+                    if IS_DEBUG:
+                        print('ALE - sample from frame %s' % ale.getEpisodeFrameNumber())
+
                 # apply an action and get the resulting reward
                 reward = ale.act(action)
                 self.total_reward += reward
+                sub_episode_reward += reward
 
                 current_time = time.time()
                 experience = {'time': current_time, 'reward': reward, 'state': state}
@@ -234,7 +241,7 @@ def main():
     agent = BasicTamerAgent()
     agent.initAgent()
     environment = LearningEnvironment(rom_path='/Users/lguan/Documents/Study/Research/Atari-2600-Roms/K-P/ms_pacman.bin'
-                                      , agent=agent)
+                                      , agent=agent, sample_rate=60, fps=60)
     environment.start_game()
 
 
