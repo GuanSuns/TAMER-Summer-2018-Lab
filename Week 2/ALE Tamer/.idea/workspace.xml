@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6f0273c9-2959-437d-87b1-2ae6c1d40900" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/Python Agents/learning_environment.py" afterPath="$PROJECT_DIR$/Python Agents/learning_environment.py" />
       <change beforePath="$PROJECT_DIR$/Python Agents/python_tamer_agent.py" afterPath="$PROJECT_DIR$/Python Agents/python_tamer_agent.py" />
       <change beforePath="$PROJECT_DIR$/Python Agents/utils.py" afterPath="$PROJECT_DIR$/Python Agents/utils.py" />
     </list>
@@ -14,25 +15,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="python_tamer_agent.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="python_tamer_agent.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Python Agents/python_tamer_agent.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="9" column="11" lean-forward="false" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
+            <state relative-caret-position="133">
+              <caret line="39" column="16" lean-forward="false" selection-start-line="39" selection-start-column="16" selection-end-line="39" selection-end-column="16" />
               <folding>
                 <element signature="e#109#158#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="learning_environment.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Python Agents/learning_environment.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1241">
-              <caret line="130" column="29" lean-forward="false" selection-start-line="130" selection-start-column="29" selection-end-line="130" selection-end-column="29" />
-              <folding>
-                <element signature="e#190#200#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -41,10 +30,22 @@
       <file leaf-file-name="utils.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Python Agents/utils.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="461">
-              <caret line="190" column="29" lean-forward="true" selection-start-line="190" selection-start-column="29" selection-end-line="190" selection-end-column="29" />
+            <state relative-caret-position="243">
+              <caret line="21" column="71" lean-forward="false" selection-start-line="21" selection-start-column="71" selection-end-line="21" selection-end-column="71" />
               <folding>
                 <element signature="e#66#76#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="learning_environment.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Python Agents/learning_environment.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-559">
+              <caret line="123" column="45" lean-forward="true" selection-start-line="123" selection-start-column="45" selection-end-line="123" selection-end-column="45" />
+              <folding>
+                <element signature="e#190#200#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -59,6 +60,12 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>getNextPos</find>
+      <find>game_surface_height</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
@@ -72,11 +79,11 @@
         <option value="$PROJECT_DIR$/Python Agents/draft code/python_agent_human_control.py" />
         <option value="$PROJECT_DIR$/Python Agents/draft/python_agent_human_control.py" />
         <option value="$PROJECT_DIR$/Python Agents/python_agent.py" />
-        <option value="$PROJECT_DIR$/Python Agents/learning_environment.py" />
         <option value="$PROJECT_DIR$/Python Agents/tmp/python_agent_human_control.py" />
         <option value="$PROJECT_DIR$/Python Agents/enum_actions.py" />
-        <option value="$PROJECT_DIR$/Python Agents/utils.py" />
         <option value="$PROJECT_DIR$/Python Agents/python_tamer_agent.py" />
+        <option value="$PROJECT_DIR$/Python Agents/learning_environment.py" />
+        <option value="$PROJECT_DIR$/Python Agents/utils.py" />
       </list>
     </option>
   </component>
@@ -154,7 +161,25 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.python_agent_human_control (1)">
+  <component name="RunManager" selected="Python.learning_environment">
+    <configuration name="learning_environment" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Python Agents" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="ALE Tamer" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Python Agents/learning_environment.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
     <configuration name="python_agent_human_control (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -191,14 +216,16 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <list size="2">
+    <list size="3">
       <item index="0" class="java.lang.String" itemvalue="Python.python_agent_human_control" />
       <item index="1" class="java.lang.String" itemvalue="Python.python_agent_human_control (1)" />
+      <item index="2" class="java.lang.String" itemvalue="Python.learning_environment" />
     </list>
     <recent_temporary>
-      <list size="2">
-        <item index="0" class="java.lang.String" itemvalue="Python.python_agent_human_control (1)" />
-        <item index="1" class="java.lang.String" itemvalue="Python.python_agent_human_control" />
+      <list size="3">
+        <item index="0" class="java.lang.String" itemvalue="Python.learning_environment" />
+        <item index="1" class="java.lang.String" itemvalue="Python.python_agent_human_control (1)" />
+        <item index="2" class="java.lang.String" itemvalue="Python.python_agent_human_control" />
       </list>
     </recent_temporary>
   </component>
@@ -226,7 +253,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32914287" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16825776" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3568019" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32914287" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3281046" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -299,32 +326,32 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Python Agents/learning_environment.py">
+    <entry file="file://$PROJECT_DIR$/Python Agents/python_tamer_agent.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1241">
-          <caret line="130" column="29" lean-forward="false" selection-start-line="130" selection-start-column="29" selection-end-line="130" selection-end-column="29" />
+        <state relative-caret-position="133">
+          <caret line="39" column="16" lean-forward="false" selection-start-line="39" selection-start-column="16" selection-end-line="39" selection-end-column="16" />
           <folding>
-            <element signature="e#190#200#0" expanded="true" />
+            <element signature="e#109#158#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Python Agents/utils.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="461">
-          <caret line="190" column="29" lean-forward="true" selection-start-line="190" selection-start-column="29" selection-end-line="190" selection-end-column="29" />
+        <state relative-caret-position="243">
+          <caret line="21" column="71" lean-forward="false" selection-start-line="21" selection-start-column="71" selection-end-line="21" selection-end-column="71" />
           <folding>
             <element signature="e#66#76#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Python Agents/python_tamer_agent.py">
+    <entry file="file://$PROJECT_DIR$/Python Agents/learning_environment.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="9" column="11" lean-forward="false" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
+        <state relative-caret-position="-559">
+          <caret line="123" column="45" lean-forward="true" selection-start-line="123" selection-start-column="45" selection-end-line="123" selection-end-column="45" />
           <folding>
-            <element signature="e#109#158#0" expanded="true" />
+            <element signature="e#190#200#0" expanded="true" />
           </folding>
         </state>
       </provider>

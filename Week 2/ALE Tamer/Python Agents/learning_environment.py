@@ -31,23 +31,23 @@ class LearningEnvironment:
             raise TypeError('The agent should be inherited from PythonReinforcementAgent')
         self.agent = agent
 
-        # setup ALE
-        self.ale = ALEInterface()
-        self.setup_ale(rom_path)
-
         # initialize parameters
         self.episodes = episodes
         self.fps = fps
         self.display_width = display_width
         self.display_height = display_height
-        self.game_surface_width = 0     # the value will be set after loading the rom
-        self.game_surface_height = 0    # the value will be set after loading the rom
+        self.game_surface_width = 0  # the value will be set after loading the rom
+        self.game_surface_height = 0  # the value will be set after loading the rom
         self.sample_rate = sample_rate
 
         # initialize some useful variables
         self.total_reward = 0
         self.last_sample_frame = 0
         self.sample_from_odd_frame = 1  # by switching between 1 and -1 to sample from even frames and odd frames
+
+        # setup ALE
+        self.ale = ALEInterface()
+        self.setup_ale(rom_path)
 
     def setup_ale(self, rom_path):
         # use current ale
@@ -84,7 +84,7 @@ class LearningEnvironment:
         self.game_surface_width = game_surface_width
 
         available_action = ale.getMinimalActionSet()
-        print('available action set: ', available_action)
+        print("available action set: %s" % available_action)
 
     def start_game(self):
         """
@@ -150,7 +150,7 @@ class LearningEnvironment:
                 self.renderGameSurface(ale, display_screen
                                        , self.game_surface_width, self.game_surface_height)
                 # display related info
-                self.displayRelatedInfo(display_screen, a, self.total_reward)
+                self.displayRelatedInfo(display_screen, action, self.total_reward)
 
                 pygame.display.flip()
 
@@ -233,7 +233,8 @@ class LearningEnvironment:
 def main():
     agent = BasicTamerAgent()
     agent.initAgent()
-    environment = LearningEnvironment(agent=agent)
+    environment = LearningEnvironment(rom_path='/Users/lguan/Documents/Study/Research/Atari-2600-Roms/K-P/ms_pacman.bin'
+                                      , agent=agent)
     environment.start_game()
 
 

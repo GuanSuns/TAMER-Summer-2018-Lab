@@ -14,10 +14,12 @@ def raiseNotDefined(method_name):
 
 
 def copyBuffer(source):
-    dest = np.ndarray(shape=(172, 160, 3))
+    dest = np.zeros(shape=(172, 160, 3))
+    print(dest.shape)
     for row in range(172):
         for col in range(160):
-            dest[row, col, :] = source[row, col, :]
+            for color_dim in range(3):
+                dest[row, col, color_dim] = source[row, col, color_dim]
     return dest
 
 
