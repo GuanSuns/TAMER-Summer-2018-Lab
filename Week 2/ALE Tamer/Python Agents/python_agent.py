@@ -11,6 +11,9 @@ class PythonAgent:
     def __init__(self, index=0):
         self.index = index
 
+    def initAgent(self):
+        pass
+
     def getAction(self, features):
         """
             The Agent will receive a GameState and

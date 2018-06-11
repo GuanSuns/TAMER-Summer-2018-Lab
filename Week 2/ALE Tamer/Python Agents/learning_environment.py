@@ -11,7 +11,7 @@ import numpy as np
 import pygame
 import utils
 from ale_python_interface import ALEInterface
-from python_tamer_agent import TamerAgent, PythonReinforcementAgent
+from python_tamer_agent import BasicTamerAgent, PythonReinforcementAgent
 
 
 class LearningEnvironment:
@@ -138,7 +138,7 @@ class LearningEnvironment:
                 agent.addExperience(experience)
 
                 # if current agent is Tamer agent, then receive
-                if isinstance(agent, TamerAgent):
+                if isinstance(agent, BasicTamerAgent):
                     h = self.getHumanSignal()
                     agent.receiveHumanSignal(signal=h)
 
@@ -229,7 +229,8 @@ class LearningEnvironment:
 
 
 def main():
-    agent = TamerAgent()
+    agent = BasicTamerAgent()
+    agent.initAgent()
     environment = LearningEnvironment(agent=agent)
     environment.start_game()
 
