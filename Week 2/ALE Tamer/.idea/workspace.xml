@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6f0273c9-2959-437d-87b1-2ae6c1d40900" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/Python Agents/learning_environment.py" afterPath="$PROJECT_DIR$/Python Agents/learning_environment.py" />
-      <change beforePath="$PROJECT_DIR$/Python Agents/python_tamer_agent.py" afterPath="$PROJECT_DIR$/Python Agents/python_tamer_agent.py" />
+      <change beforePath="$PROJECT_DIR$/Python Agents/python_agent_human_control.py" afterPath="$PROJECT_DIR$/Python Agents/draft/python_agent_human_control.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -14,11 +13,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="python_agent_human_control.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Python Agents/python_agent_human_control.py">
+      <file leaf-file-name="python_agent_human_control.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Python Agents/draft/python_agent_human_control.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="406">
-              <caret line="167" column="0" lean-forward="false" selection-start-line="167" selection-start-column="0" selection-end-line="168" selection-end-column="10" />
+            <state relative-caret-position="318">
+              <caret line="196" column="35" lean-forward="true" selection-start-line="196" selection-start-column="35" selection-end-line="196" selection-end-column="35" />
               <folding>
                 <element signature="e#255#265#0" expanded="true" />
               </folding>
@@ -36,11 +35,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="python_tamer_agent.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="python_tamer_agent.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Python Agents/python_tamer_agent.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="902">
-              <caret line="82" column="63" lean-forward="true" selection-start-line="82" selection-start-column="63" selection-end-line="82" selection-end-column="63" />
+            <state relative-caret-position="734">
+              <caret line="78" column="26" lean-forward="true" selection-start-line="78" selection-start-column="26" selection-end-line="78" selection-end-column="26" />
               <folding>
                 <element signature="e#109#158#0" expanded="true" />
               </folding>
@@ -63,8 +62,8 @@
       <file leaf-file-name="action_table.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Python Agents/action_table.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="241">
-              <caret line="11" column="20" lean-forward="false" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
+            <state relative-caret-position="442">
+              <caret line="39" column="1" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="39" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -105,6 +104,9 @@
         <option value="$PROJECT_DIR$/Python Agents/utils.py" />
         <option value="$PROJECT_DIR$/Python Agents/learning_environment.py" />
         <option value="$PROJECT_DIR$/Python Agents/python_tamer_agent.py" />
+        <option value="$PROJECT_DIR$/Python Agents/enum_actions.py" />
+        <option value="$PROJECT_DIR$/Python Agents/draft code/python_agent_human_control.py" />
+        <option value="$PROJECT_DIR$/Python Agents/draft/python_agent_human_control.py" />
       </list>
     </option>
   </component>
@@ -157,6 +159,9 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Python Agents/draft code" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/Python Agents" />
     </key>
@@ -186,7 +191,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="ALE Tamer" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Python Agents/python_agent_human_control.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Python Agents/draft code/python_agent_human_control.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -253,39 +258,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Python Agents/python_agent_human_control.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="406">
-          <caret line="167" column="0" lean-forward="false" selection-start-line="167" selection-start-column="0" selection-end-line="168" selection-end-column="10" />
-          <folding>
-            <element signature="e#255#265#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Python Agents/action_table.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="241">
-          <caret line="11" column="20" lean-forward="false" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Python Agents/python_agent.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="32">
           <caret line="14" column="12" lean-forward="false" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Python Agents/learning_environment.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="387">
-          <caret line="134" column="0" lean-forward="true" selection-start-line="134" selection-start-column="0" selection-end-line="134" selection-end-column="0" />
-          <folding>
-            <element signature="e#190#200#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -299,12 +276,56 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Python Agents/learning_environment.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="387">
+          <caret line="134" column="0" lean-forward="true" selection-start-line="134" selection-start-column="0" selection-end-line="134" selection-end-column="0" />
+          <folding>
+            <element signature="e#190#200#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Python Agents/enum_actions.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" column="1" lean-forward="true" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Python Agents/python_tamer_agent.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="902">
-          <caret line="82" column="63" lean-forward="true" selection-start-line="82" selection-start-column="63" selection-end-line="82" selection-end-column="63" />
+        <state relative-caret-position="734">
+          <caret line="78" column="26" lean-forward="true" selection-start-line="78" selection-start-column="26" selection-end-line="78" selection-end-column="26" />
           <folding>
             <element signature="e#109#158#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Python Agents/draft/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Python Agents/action_table.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="39" column="1" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="39" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Python Agents/draft/python_agent_human_control.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="318">
+          <caret line="196" column="35" lean-forward="true" selection-start-line="196" selection-start-column="35" selection-end-line="196" selection-end-column="35" />
+          <folding>
+            <element signature="e#255#265#0" expanded="true" />
           </folding>
         </state>
       </provider>
