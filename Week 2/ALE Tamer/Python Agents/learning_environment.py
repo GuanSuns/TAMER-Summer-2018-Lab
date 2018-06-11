@@ -109,32 +109,32 @@ class LearningEnvironment:
                 break
 
             self.start_episode()
-            features = None
+            state = None
 
             while not ale.game_over() and not is_exit:
                 # get new sample according to the sample_rate
                 if self.last_sample_frame + self.sample_rate \
                         >= (ale.getEpisodeFrameNumber() + self.sample_from_odd_frame) \
-                        or features is None:
+                        or state is None:
                     np_game_surface = np.zeros(shape=(self.game_surface_height, self.game_surface_width, 3)
                                                , dtype=np.int8)
                     ale.getScreenRGB(np_game_surface)
                     game_rgb = utils.copyBuffer(np_game_surface)
-                    # get new features based on current game state
-                    features = self.agent.extract_features(game_rgb)
+                    # get new state based on current game state
+                    state = self.agent.extract_state(game_rgb)
 
                     # update info
                     self.last_sample_frame = ale.getEpisodeFrameNumber()
                     self.sample_from_odd_frame = -self.sample_from_odd_frame
 
                 # get the action from the agent
-                a = agent.getAction(features)
+                a = agent.getAction(state)
                 # apply an action and get the resulting reward
                 reward = ale.act(a)
                 self.total_reward += reward
 
                 current_time = time.time()
-                experience = {'time': current_time, 'reward': reward, 'features': features}
+                experience = {'time': current_time, 'reward': reward, 'state': state}
                 agent.addExperience(experience)
 
                 # if current agent is Tamer agent, then receive

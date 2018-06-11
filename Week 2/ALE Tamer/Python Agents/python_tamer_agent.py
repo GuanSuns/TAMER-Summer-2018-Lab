@@ -78,9 +78,9 @@ class BasicTamerAgent(PythonReinforcementAgent):
                 max_q_value = q_value
         return max_q_value
 
-    def extract_features(self, rgb_state):
-        """ return the features based on current game RGB values"""
-        pass
+    def extract_state(self, rgb_state):
+        """ return the state based on current game RGB values"""
+        return {'state': utils.getStateFromRgbWorld(rgb_state)}
 
     def addExperience(self, experience):
         """
