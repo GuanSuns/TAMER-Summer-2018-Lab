@@ -27,18 +27,18 @@ def rgb2gray(rgb):
 
 def getStateFromRgbWorld(rgb_world):
     """
-        In state, 0: nothing, 1: wall, 2: path, 3: pacman, 4: scared ghost, 5: ghost
+        In state, 0: nothing, 1: wall, 2: path, 3: pacman, 4: scared ghost, 5: ghost, 6: food, 7: capsule
     """
     dim_world = rgb_world.shape
     state = np.zeros(shape=(dim_world[0], dim_world[1]), dtype=int)
 
     for row in range(dim_world[0]):
         for col in range(dim_world[1]):
-            # check if it's wall(1 denotes wall)
+            # check if it's wall or food or capsule (-1 denotes wall or food or capsule)
             if rgb_world[row, col, 0] == 228 \
                     and rgb_world[row, col, 1] == 111 \
                     and rgb_world[row, col, 2] == 111:
-                state[row, col] = 1
+                state[row, col] = -1
             # check if it's path (2 denotes path)
             elif rgb_world[row, col, 0] == 0 \
                     and rgb_world[row, col, 1] == 28 \
@@ -63,7 +63,76 @@ def getStateFromRgbWorld(rgb_world):
             else:
                 state[row, col] = 5
 
+    distinguishWallFoodCapsule(state)
+
     return state
+
+
+def distinguishWallFoodCapsule(state):
+    """
+        In the input state, wall food and capsule should all be -1, this function help distinguish them
+        In state, 0: nothing, 1: wall, 2: path, 3: pacman, 4: scared ghost, 5: ghost, 6: food, 7: capsule
+    """
+    dim_state = state.shape
+
+    for row in range(dim_state[0]):
+        for col in range(dim_state[1]):
+            if state[row, col] == -1:
+                pass
+
+
+def countConnectedComponentSize(state, row, col, old_value, new_value):
+    n_component = 0
+
+    dim_state = state.shape
+    max_depth = 210*160
+    legal_moves = [(1, 1), (1, 0), (1, -1), (0, 1), (0, -1), (-1, 0), (-1, -1), (-1, 1)]
+
+    # queue for BFS
+    que_start = 0
+    que_end = 0
+    queue_bfs = [[0, 0] for _ in range(0, max_depth)]  # format [x,y]
+    expanded = set()
+
+    # push initial state
+    queue_bfs[que_start][0] = int(row)
+    queue_bfs[que_start][1] = int(col)
+    que_end += 1
+    n_component += 1
+    expanded.add((row, col))
+    # update initial state
+    state[row, col] = new_value
+
+    while que_start <= que_end < max_depth:
+        x = queue_bfs[que_start][0]
+        y = queue_bfs[que_start][1]
+        que_start += 1
+
+        # spread out from the location to its neighbours
+        neighbours = []
+        for legal_move in legal_moves:
+            new_x = x + legal_move[0]
+            new_y = y + legal_move[1]
+            if 0 <= new_x < dim_state[0] and 0 <= new_y < dim_state[1]:
+                if state[new_x, new_y] == old_value:
+                    neighbours.append((new_x, new_y))
+
+        for new_x, new_y in neighbours:
+            if que_end >= max_depth:
+                break
+            if (new_x, new_y) in expanded:
+                continue
+            else:
+                expanded.add((new_x, new_y))
+                state[new_x, new_y] = new_value
+                n_component += 1
+
+            queue_bfs[que_end][0] = new_x
+            queue_bfs[que_end][1] = new_y
+            que_end += 1
+
+    return n_component
+
 
 
 def getLegalActions(state):
