@@ -150,7 +150,8 @@ class BasicTamerAgent(PythonReinforcementAgent):
         # use bfs to get features
         return self.bfs_features(state, next_x, next_y)
 
-    def bfs_features(self, state, next_x, next_y):
+    @staticmethod
+    def bfs_features(state, next_x, next_y):
         """
             extract features using BFS
             In state, 0: nothing, 1: wall, 2: path, 3: pacman, 4: scared ghost, 5: ghost, 6: food, 7: capsule
