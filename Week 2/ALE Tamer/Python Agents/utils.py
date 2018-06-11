@@ -34,7 +34,7 @@ def getStateFromRgbWorld(rgb_world):
 
     for row in range(dim_world[0]):
         for col in range(dim_world[1]):
-            # check if it's wall (1 denotes wall)
+            # check if it's wall(1 denotes wall)
             if rgb_world[row, col, 0] == 228 \
                     and rgb_world[row, col, 1] == 111 \
                     and rgb_world[row, col, 2] == 111:
@@ -54,11 +54,11 @@ def getStateFromRgbWorld(rgb_world):
                     and rgb_world[row, col, 1] == 114 \
                     and rgb_world[row, col, 2] == 194:
                 state[row, col] = 4
-            # ignore (0, 0, 0)
+            # ignore (0, 0, 0), set it to wall 1
             elif rgb_world[row, col, 0] == 0 \
                     and rgb_world[row, col, 1] == 0 \
                     and rgb_world[row, col, 2] == 0:
-                state[row, col] = 0
+                state[row, col] = 1
             # then it should be a ghost (5 denotes ghost)
             else:
                 state[row, col] = 5
@@ -81,8 +81,25 @@ def getLegalActions(state):
     if pacman_pos is None:
         return [Actions.NO.value]
 
+    step_size = 5
+    # check up
+    if pacman_pos[0] - step_size >= 0 \
+            and state[pacman_pos[0]-step_size, pacman_pos[1]] != 1:
+        legal_actions.append(Actions.UP.value)
+    # check left
+    if pacman_pos[1] - step_size >= 0 \
+            and state[pacman_pos[0], pacman_pos[1]-step_size] != 1:
+        legal_actions.append(Actions.LEFT.value)
+    # check down
+    if pacman_pos[0] + step_size < 172 \
+            and state[pacman_pos[0] + step_size, pacman_pos[1]] != 1:
+        legal_actions.append(Actions.DOWN.value)
+    # check right
+    if pacman_pos[1] + step_size < 160 \
+            and state[pacman_pos[0], pacman_pos[1]+step_size] != 1:
+        legal_actions.append(Actions.RIGHT.value)
 
-
+    return legal_actions
 
 
 class Dict(dict):
