@@ -42,6 +42,9 @@ class TamerLearningEnvironment:
         self.game_surface_height = 0    # the value will be set after loading the rom
         self.sample_rate = sample_rate
 
+        # initialize some useful variables
+        self.total_reward = 0
+
     def setup_ale(self, rom_path):
         # use current ale
         ale = self.ale
@@ -96,19 +99,23 @@ class TamerLearningEnvironment:
         clock = pygame.time.Clock()
         is_exit = False
 
+        # init some local variables
+        last_sample_frame = 0
+        sample_from_odd_frame = 1   # by switching between 1 and -1 to sample from even frames and odd frames
+
         # start episodes
         for episode in range(self.episodes):
             if is_exit:
                 break
 
-            total_reward = 0
+            self.start_episode()
 
             while not ale.game_over() and not is_exit:
                 # get the action from the agent
                 a = agent.getAction()
                 # apply an action and get the resulting reward
                 reward = ale.act(a)
-                total_reward += reward
+                self.total_reward += reward
 
 
                 # clear screen
@@ -117,7 +124,7 @@ class TamerLearningEnvironment:
                 self.renderGameSurface(ale, display_screen
                                        , self.game_surface_width, self.game_surface_height)
                 # display related info
-                self.displayRelatedInfo(display_screen, a, total_reward)
+                self.displayRelatedInfo(display_screen, a, self.total_reward)
 
                 pygame.display.flip()
 
@@ -133,11 +140,25 @@ class TamerLearningEnvironment:
                 # delay (default: 60fps)
                 clock.tick(self.fps)
 
-            print('Episode %d ended with score: %d' % (episode, total_reward))
+            print('Episode %d ended with score: %d' % (episode, self.total_reward))
             self.end_episode()
 
+        # finalize the game
+        self.final()
+
+    def final(self):
+        """ This function will be at the every end of this program """
+        self.agent.final()
+
+    def start_episode(self):
+        """ This function will be at the beginning of each episode """
+        self.total_reward = 0
+        self.agent.startEpisode()
+
     def end_episode(self):
+        """ This function will be at the end of each episode """
         self.ale.reset_game()
+        self.agent.stopEpisode()
 
     @staticmethod
     def renderGameSurface(ale, screen, game_surface_width, game_surface_height):

@@ -127,9 +127,9 @@ def renderGameSurface(ale, screen, game_surface_dim):
     numpy_surface = np.zeros(shape=(game_surface_dim[1], game_surface_dim[0], 3), dtype=np.int8)
     ale.getScreenRGB(numpy_surface)
 
-    copy_png = copyBuffer(numpy_surface)
+    # copy_png = copyBuffer(numpy_surface)
     frame_id = ale.getFrameNumber()
-    scipy.misc.imsave('/Users/lguan/Desktop/Others/Pacman/frame_%d.png' % frame_id, copy_png)
+    # scipy.misc.imsave('/Users/lguan/Desktop/Others/Pacman/frame_%d.png' % frame_id, copy_png)
 
     numpy_surface = np.swapaxes(numpy_surface, 0, 1)
     surf = pygame.pixelcopy.make_surface(numpy_surface)
