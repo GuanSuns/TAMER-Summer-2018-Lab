@@ -14,7 +14,7 @@ class PythonAgent:
     def initAgent(self):
         pass
 
-    def getAction(self, features):
+    def getAction(self, state):
         """
             The Agent will receive a GameState and
             must return an action
@@ -72,7 +72,7 @@ class PythonReinforcementAgent(PythonAgent):
         """
           Called by environment at the end
         """
-        utils.raiseNotDefined("stopEpisode")
+        utils.raiseNotDefined("final")
 
 
 
