@@ -21,6 +21,7 @@ class BasicTamerAgent(PythonReinforcementAgent):
         PythonReinforcementAgent.__init__(self, index, isTraining
                                           , epsilon, alpha, gamma)
         self.weights = utils.Dict()
+        self.weights['bias'] = 0
         self.window_size = window_size
         self.experiences = list()
         self.max_n_experiences = max_n_experiences
@@ -34,10 +35,18 @@ class BasicTamerAgent(PythonReinforcementAgent):
 
     def getAction(self, state):
         """
-            The Agent will receive a GameState and
-            must return an action
+          Compute the best action to take in a state.
         """
-        utils.raiseNotDefined("getAction")
+        legal_actions = utils.getLegalActions(state)
+
+        max_action = None
+        max_q_value = -9999999
+        for action in legal_actions:
+            q_value = self.getQValue(state, action)
+            if q_value > max_q_value:
+                max_q_value = q_value
+                max_action = action
+        return max_action
 
     def getWeights(self):
         return self.weights
@@ -56,27 +65,11 @@ class BasicTamerAgent(PythonReinforcementAgent):
 
         return q_value
 
-    def getValue(self, state):
-        return self.computeValueFromQValues(state)
-
-    def computeValueFromQValues(self, state):
-        """
-          Returns max_action Q(state,action)
-          where the max is over legal actions.
-        """
-        actions = state.getLegalActions(self.index)
-        if len(actions) == 0:
-            return 0
-
-        max_q_value = -9999999
-        for action in actions:
-            q_value = self.getQValue(state, action)
-            if q_value > max_q_value:
-                max_q_value = q_value
-        return max_q_value
-
     def extract_state(self, rgb_state):
-        """ return the state based on current game RGB values"""
+        """
+            return the state based on current game RGB values
+            In state, 0: nothing, 1: wall, 2: path, 3: pacman, 4: scared ghost, 5: ghost, 6: food, 7: capsule
+        """
         return {'state': utils.getStateFromRgbWorld(rgb_state)}
 
     def addExperience(self, experience):
@@ -111,5 +104,21 @@ class BasicTamerAgent(PythonReinforcementAgent):
         print(self.weights)
 
     def getStateFeatures(self, state, action):
-        return {}
+        # get pacman pos
+        (x, y) = utils.getPacmanPos(state)
+        # compute the next pos
+        (next_x, next_y) = utils.getNextPos(x, y, action)
+        # use bfs to get features
+        return self.bfs_features(state, x, y, next_x, next_y)
+
+    def bfs_features(self, state, x, y, next_x, next_y):
+        # init features
+        features = utils.Dict()
+        features['dist-food'] = 9999999999999
+        features['dist-capsule'] = 9999999999999
+        features['dist-ghost'] = 0
+        features['dist-scared-ghost'] = 9999999999999
+
+
+
 

@@ -144,22 +144,14 @@ def countConnectedComponentSize(state, row, col, old_value, new_value):
     return n_component
 
 
-def getLegalActions(state):
-    # check if UP is legal
+def getLegalActions(state, step_size=5):
     legal_actions = []
-    dim_world = state.shape
-    pacman_pos = None
-
-    for row in range(dim_world[0]):
-        for col in range(dim_world[1]):
-            if state[row, col] == 3:
-                pacman_pos = (row, col)
+    pacman_pos = getPacmanPos(state)
 
     # if pacman disappears, then return None action
     if pacman_pos is None:
         return [Actions.NO.value]
 
-    step_size = 5
     # check up
     if pacman_pos[0] - step_size >= 0 \
             and state[pacman_pos[0]-step_size, pacman_pos[1]] != 1:
@@ -178,6 +170,31 @@ def getLegalActions(state):
         legal_actions.append(Actions.RIGHT.value)
 
     return legal_actions
+
+
+def getPacmanPos(state):
+    """ returns the pacman position """
+    pacman_pos = None
+    dim_world = state.shape
+
+    for row in range(dim_world[0]):
+        for col in range(dim_world[1]):
+            if state[row, col] == 3:
+                pacman_pos = (row, col)
+    return pacman_pos
+
+
+def getNextPos(x, y, action, step_size=5):
+    if action == Actions.UP.value:
+        return x-step_size, y
+    elif action == Actions.DOWN.value:
+        return x+step_size, y
+    elif action == Actions.LEFT.value:
+        return x, y-step_size
+    elif action == Actions.RIGHT.value:
+        return x, y+step_size
+    else:
+        return x, y
 
 
 class Dict(dict):
