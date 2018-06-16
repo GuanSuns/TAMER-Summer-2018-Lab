@@ -1,10 +1,16 @@
 # gridworld.py
 # ------------
-# Licensing Information: Please do not distribute or publish solutions to this
-# project. You are free to use and extend these projects for educational
-# purposes. The Pacman AI projects were developed at UC Berkeley, primarily by
-# John DeNero (denero@cs.berkeley.edu) and Dan Klein (klein@cs.berkeley.edu).
-# For more info, see http://inst.eecs.berkeley.edu/~cs188/sp09/pacman.html
+# Licensing Information:  You are free to use or extend these projects for
+# educational purposes provided that (1) you do not distribute or publish
+# solutions, (2) you retain this notice, and (3) you provide clear
+# attribution to UC Berkeley, including a link to http://ai.berkeley.edu.
+# 
+# Attribution Information: The Pacman AI projects were developed at UC Berkeley.
+# The core projects and autograders were primarily created by John DeNero
+# (denero@cs.berkeley.edu) and Dan Klein (klein@cs.berkeley.edu).
+# Student side autograding was added by Brad Miller, Nick Hay, and
+# Pieter Abbeel (pabbeel@cs.berkeley.edu).
+
 
 import random
 import sys
@@ -19,8 +25,6 @@ class Gridworld(mdp.MarkovDecisionProcess):
       Gridworld
     """
     def __init__(self, grid):
-        # super class's constructor
-        mdp.MarkovDecisionProcess.__init__(self)
         # layout
         if isinstance(grid, list):
             grid = makeGrid(grid)
@@ -46,7 +50,7 @@ class Gridworld(mdp.MarkovDecisionProcess):
         """
         self.noise = noise
 
-
+    # noinspection PyRedundantParentheses
     def getPossibleActions(self, state):
         """
         Returns list of valid actions for 'state'.
@@ -60,7 +64,7 @@ class Gridworld(mdp.MarkovDecisionProcess):
         x,y = state
         if type(self.grid[x][y]) == int:
             return ('exit',)
-        return ('north','west','south','east')
+        return ('north', 'west', 'south', 'east')
 
     def getStates(self):
         """
@@ -71,7 +75,7 @@ class Gridworld(mdp.MarkovDecisionProcess):
         for x in range(self.grid.width):
             for y in range(self.grid.height):
                 if self.grid[x][y] != '#':
-                    state = (x,y)
+                    state = (x, y)
                     states.append(state)
         return states
 
@@ -187,17 +191,25 @@ class GridworldEnvironment(environment.Environment):
         return self.gridWorld.getPossibleActions(state)
 
     def doAction(self, action):
-        successors = self.gridWorld.getTransitionStatesAndProbs(self.state, action)
-        sum = 0.0
-        rand = random.random()
         state = self.getCurrentState()
+        (nextState, reward) = self.getRandomNextState(state, action)
+        self.state = nextState
+        return (nextState, reward)
+
+    def getRandomNextState(self, state, action, randObj=None):
+        rand = -1.0
+        if randObj is None:
+            rand = random.random()
+        else:
+            rand = randObj.random()
+        sum = 0.0
+        successors = self.gridWorld.getTransitionStatesAndProbs(state, action)
         for nextState, prob in successors:
             sum += prob
             if sum > 1.0:
                 raise 'Total transition probability more than one; sample failure.'
             if rand < sum:
                 reward = self.gridWorld.getReward(state, action, nextState)
-                self.state = nextState
                 return (nextState, reward)
         raise 'Total transition probability less than one; sample failure.'
 
@@ -378,7 +390,7 @@ def parseOptions():
     optParser.add_option('-n', '--noise',action='store',
                          type='float',dest='noise',default=0.2,
                          metavar="P", help='How often action results in ' +
-                                           'unintended direction (default %default)' )
+                         'unintended direction (default %default)' )
     optParser.add_option('-e', '--epsilon',action='store',
                          type='float',dest='epsilon',default=0.3,
                          metavar="E", help='Chance of taking a random action in q-learning (default %default)')
@@ -425,7 +437,7 @@ def parseOptions():
 
     # MANAGE CONFLICTS
     if opts.textDisplay or opts.quiet:
-        # if opts.quiet:
+    # if opts.quiet:
         opts.pause = False
         # opts.manual = False
 
@@ -460,7 +472,10 @@ if __name__ == '__main__':
     if not opts.textDisplay:
         import graphicsGridworldDisplay
         display = graphicsGridworldDisplay.GraphicsGridworldDisplay(mdp, opts.gridSize, opts.speed)
-    display.start()
+    try:
+        display.start()
+    except KeyboardInterrupt:
+        sys.exit(0)
 
     ###########################
     # GET THE AGENT
@@ -505,17 +520,20 @@ if __name__ == '__main__':
     # RUN EPISODES
     ###########################
     # DISPLAY Q/V VALUES BEFORE SIMULATION OF EPISODES
-    if not opts.manual and opts.agent == 'value':
-        if opts.valueSteps:
-            for i in range(opts.iters):
-                tempAgent = valueIterationAgents.ValueIterationAgent(mdp, opts.discount, i)
-                display.displayValues(tempAgent, message = "VALUES AFTER "+str(i)+" ITERATIONS")
-                display.pause()
+    try:
+        if not opts.manual and opts.agent == 'value':
+            if opts.valueSteps:
+                for i in range(opts.iters):
+                    tempAgent = valueIterationAgents.ValueIterationAgent(mdp, opts.discount, i)
+                    display.displayValues(tempAgent, message = "VALUES AFTER "+str(i)+" ITERATIONS")
+                    display.pause()
 
-        display.displayValues(a, message = "VALUES AFTER "+str(opts.iters)+" ITERATIONS")
-        display.pause()
-        display.displayQValues(a, message = "Q-VALUES AFTER "+str(opts.iters)+" ITERATIONS")
-        display.pause()
+            display.displayValues(a, message = "VALUES AFTER "+str(opts.iters)+" ITERATIONS")
+            display.pause()
+            display.displayQValues(a, message = "Q-VALUES AFTER "+str(opts.iters)+" ITERATIONS")
+            display.pause()
+    except KeyboardInterrupt:
+        sys.exit(0)
 
 
 
@@ -544,7 +562,7 @@ if __name__ == '__main__':
     else:
         decisionCallback = a.getAction
 
-        # RUN EPISODES
+    # RUN EPISODES
     if opts.episodes > 0:
         print
         print "RUNNING", opts.episodes, "EPISODES"
@@ -560,9 +578,10 @@ if __name__ == '__main__':
 
     # DISPLAY POST-LEARNING VALUES / Q-VALUES
     if opts.agent == 'q' and not opts.manual:
-        display.displayQValues(a, message = "Q-VALUES AFTER "+str(opts.episodes)+" EPISODES")
-        display.pause()
-        display.displayValues(a, message = "VALUES AFTER "+str(opts.episodes)+" EPISODES")
-        display.pause()
-    
-   
+        try:
+            display.displayQValues(a, message = "Q-VALUES AFTER "+str(opts.episodes)+" EPISODES")
+            display.pause()
+            display.displayValues(a, message = "VALUES AFTER "+str(opts.episodes)+" EPISODES")
+            display.pause()
+        except KeyboardInterrupt:
+            sys.exit(0)

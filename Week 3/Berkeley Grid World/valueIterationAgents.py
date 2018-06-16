@@ -1,10 +1,16 @@
 # valueIterationAgents.py
 # -----------------------
-# Licensing Information: Please do not distribute or publish solutions to this
-# project. You are free to use and extend these projects for educational
-# purposes. The Pacman AI projects were developed at UC Berkeley, primarily by
-# John DeNero (denero@cs.berkeley.edu) and Dan Klein (klein@cs.berkeley.edu).
-# For more info, see http://inst.eecs.berkeley.edu/~cs188/sp09/pacman.html
+# Licensing Information:  You are free to use or extend these projects for
+# educational purposes provided that (1) you do not distribute or publish
+# solutions, (2) you retain this notice, and (3) you provide clear
+# attribution to UC Berkeley, including a link to http://ai.berkeley.edu.
+# 
+# Attribution Information: The Pacman AI projects were developed at UC Berkeley.
+# The core projects and autograders were primarily created by John DeNero
+# (denero@cs.berkeley.edu) and Dan Klein (klein@cs.berkeley.edu).
+# Student side autograding was added by Brad Miller, Nick Hay, and
+# Pieter Abbeel (pabbeel@cs.berkeley.edu).
+
 
 import mdp, util
 
@@ -30,18 +36,20 @@ class ValueIterationAgent(ValueEstimationAgent):
               mdp.getPossibleActions(state)
               mdp.getTransitionStatesAndProbs(state, action)
               mdp.getReward(state, action, nextState)
+              mdp.isTerminal(state)
         """
         self.mdp = mdp
         self.discount = discount
         self.iterations = iterations
         self.values = util.Counter()    # A Counter is a dict with default 0
 
+        # Write value iteration code here
         "*** YOUR CODE HERE ***"
+
         for i in range(0, iterations):
             # get all the states
             stateValues = util.Counter()
             states = mdp.getStates()
-
             for state in states:
                 actions = mdp.getPossibleActions(state)
                 # if there is no possible action, continue
@@ -51,10 +59,9 @@ class ValueIterationAgent(ValueEstimationAgent):
                 # iterate through all the possible actions
                 qValues = util.Counter()
                 for action in actions:
-                    qValues[action] = self.getQValue(state, action)
+                    qValues[action] = self.computeQValueFromValues(state, action)
                 # get the state value from qValues
                 stateValues[state] = qValues[qValues.argMax()]
-
             # only update those states we reach
             for state in states:
                 self.values[state] = stateValues[state]
@@ -65,52 +72,49 @@ class ValueIterationAgent(ValueEstimationAgent):
         """
         return self.values[state]
 
-    def getQValue(self, state, action):
+    def computeQValueFromValues(self, state, action):
         """
-          The q-value of the state action pair
-          (after the indicated number of value iteration
-          passes).  Note that value iteration does not
-          necessarily create this quantity and you may have
-          to derive it on the fly.
+          Compute the Q-value of action in state from the
+          value function stored in self.values.
         """
         "*** YOUR CODE HERE ***"
         qValue = 0
         transitions = self.mdp.getTransitionStatesAndProbs(state, action)
-
         for nextState, probs in transitions:
             reward = self.mdp.getReward(state, action, nextState)
             qValue += probs * (reward + self.discount * self.values[nextState])
-
         return qValue
 
-    def getPolicy(self, state):
+    def computeActionFromValues(self, state):
         """
           The policy is the best action in the given state
-          according to the values computed by value iteration.
+          according to the values currently stored in self.values.
+
           You may break ties any way you see fit.  Note that if
           there are no legal actions, which is the case at the
           terminal state, you should return None.
         """
         "*** YOUR CODE HERE ***"
-        mdp = self.mdp
-        actions = mdp.getPossibleActions(state)
-
+        actions = self.mdp.getPossibleActions(state)
+        # if there is no possible action, return None
         if len(actions) == 0:
             return None
 
-        # iterate through all the possible actions
-        best_action = None
-        best_q_value = -9999999999999
-
+        bestAction = None
+        maxQValue = -99999999
         for action in actions:
-            qValue = self.getQValue(state, action)
-            if qValue > best_q_value:
-                best_action = action
-                best_q_value = qValue
+            qValue = self.computeQValueFromValues(state, action)
+            if qValue > maxQValue:
+                maxQValue = qValue
+                bestAction = action
+        return bestAction
 
-        return best_action
+    def getPolicy(self, state):
+        return self.computeActionFromValues(state)
 
     def getAction(self, state):
-        """ Returns the policy at the state (no exploration). """
-        return self.getPolicy(state)
+        "Returns the policy at the state (no exploration)."
+        return self.computeActionFromValues(state)
 
+    def getQValue(self, state, action):
+        return self.computeQValueFromValues(state, action)

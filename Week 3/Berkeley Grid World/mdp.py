@@ -4,7 +4,7 @@
 # educational purposes provided that (1) you do not distribute or publish
 # solutions, (2) you retain this notice, and (3) you provide clear
 # attribution to UC Berkeley, including a link to http://ai.berkeley.edu.
-#
+# 
 # Attribution Information: The Pacman AI projects were developed at UC Berkeley.
 # The core projects and autograders were primarily created by John DeNero
 # (denero@cs.berkeley.edu) and Dan Klein (klein@cs.berkeley.edu).
@@ -14,29 +14,26 @@
 
 import random
 
-
 class MarkovDecisionProcess:
-    def __init__(self):
-        return
 
     def getStates(self):
         """
         Return a list of all states in the MDP.
         Not generally possible for large MDPs.
         """
-        pass
+        abstract
 
     def getStartState(self):
         """
         Return the start state of the MDP.
         """
-        pass
+        abstract
 
     def getPossibleActions(self, state):
         """
         Return list of possible actions from 'state'.
         """
-        pass
+        abstract
 
     def getTransitionStatesAndProbs(self, state, action):
         """
@@ -49,7 +46,7 @@ class MarkovDecisionProcess:
         learning in general, we do not know these
         probabilities nor do we directly model them.
         """
-        pass
+        abstract
 
     def getReward(self, state, action, nextState):
         """
@@ -57,7 +54,7 @@ class MarkovDecisionProcess:
 
         Not available in reinforcement learning.
         """
-        pass
+        abstract
 
     def isTerminal(self, state):
         """
@@ -67,4 +64,4 @@ class MarkovDecisionProcess:
         state as having a self-loop action 'pass' with zero reward; the formulations
         are equivalent.
         """
-        pass
+        abstract
