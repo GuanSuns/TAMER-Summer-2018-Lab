@@ -469,6 +469,104 @@ def parseOptions():
     return m_opts
 
 
+class TamerGridWorldExperiment():
+    # noinspection PyUnresolvedReferences
+    def __init__(self, grid_name='DiscountGrid', discount=0.9, learning_rate=0.5, living_reward=0.0
+                 , noise=0.2, epsilon=0.3, display_speed=1.0
+                 , grid_size=150, text_only=False, n_episodes=10):
+        self.text_only = text_only
+        self.display_speed = display_speed
+        self.n_episodes = n_episodes
+        self.discount = discount
+
+        ###########################
+        # GET THE GRIDWORLD
+        ###########################
+
+        # noinspection PyUnresolvedReferences
+        import gridworld
+        mdp_function = getattr(gridworld, "get" + grid_name)
+        self.mdp = mdp_function()
+        self.mdp.setLivingReward(living_reward)
+        self.mdp.setNoise(noise)
+        self.env = gridworld.GridworldEnvironment(self.mdp)
+
+        ###########################
+        # GET THE DISPLAY ADAPTER
+        ###########################
+
+        import textGridworldDisplay
+        self.display = textGridworldDisplay.TextGridworldDisplay(self.mdp)
+        if not text_only:
+            import graphicsGridworldDisplay
+            self.display = graphicsGridworldDisplay.GraphicsGridworldDisplay(self.mdp, grid_size, display_speed)
+        try:
+            self.display.start()
+        except KeyboardInterrupt:
+            sys.exit(0)
+
+        ###########################
+        # GET THE TAMER AGENT
+        ###########################
+
+        import qlearningAgents
+        # env.getPossibleActions, opts.discount, opts.learningRate, opts.epsilon
+        # simulationFn = lambda agent, state: simulation.GridworldSimulation(agent,state,mdp)
+        self.gridWorldEnv = GridworldEnvironment(self.mdp)
+        action_function = lambda state: self.mdp.getPossibleActions(state)
+        q_learn_opts = {
+            'gamma': discount,
+            'alpha': learning_rate,
+            'epsilon': epsilon,
+            'actionFn': action_function
+        }
+        self.agent = qlearningAgents.TamerQAgent(**q_learn_opts)
+
+    def run_episodes(self):
+        ###########################
+        # RUN EPISODES
+        ###########################
+        display_callback = lambda x: None
+        if not self.text_only:
+            display_callback = lambda state: self.display.displayQValues(self.agent, state, "CURRENT Q-VALUES")
+
+        message_callback = lambda x: printString(x)
+        if self.text_only:
+            message_callback = lambda x: None
+
+        # FIGURE OUT WHETHER TO WAIT FOR A KEY PRESS AFTER EACH TIME STEP
+        pause_callback = lambda: None
+
+        # FIGURE OUT WHETHER THE USER WANTS MANUAL CONTROL (FOR DEBUGGING AND DEMOS)
+        decisionCallback = self.agent.getAction
+
+        # RUN EPISODES
+        if self.n_episodes > 0:
+            print
+            print "RUNNING", self.n_episodes, "EPISODES"
+            print
+        total_returns = 0
+
+        for episode in range(1, self.n_episodes + 1):
+            total_returns += runEpisode(self.agent, self.env, self.discount
+                                        , decisionCallback, display_callback, message_callback
+                                        , pause_callback, episode)
+        if self.n_episodes > 0:
+            print
+            print "AVERAGE RETURNS FROM START STATE: " + str((total_returns + 0.0) / self.n_episodes)
+            print
+            print
+
+        # DISPLAY POST-LEARNING VALUES / Q-VALUES
+        try:
+            self.display.displayQValues(self.agent, message="Q-VALUES AFTER " + str(self.n_episodes) + " EPISODES")
+            self.display.pause()
+            self.display.displayValues(self.agent, message="VALUES AFTER " + str(self.n_episodes) + " EPISODES")
+            self.display.pause()
+        except KeyboardInterrupt:
+            sys.exit(0)
+
+
 if __name__ == '__main__':
 
     opts = parseOptions()
@@ -479,7 +577,7 @@ if __name__ == '__main__':
 
     # noinspection PyUnresolvedReferences
     import gridworld
-    mdpFunction = getattr(gridworld, "get"+opts.grid)
+    mdpFunction = getattr(gridworld, "get" + opts.grid)
     mdp = mdpFunction()
     mdp.setLivingReward(opts.livingReward)
     mdp.setNoise(opts.noise)
@@ -618,3 +716,9 @@ if __name__ == '__main__':
             display.pause()
         except KeyboardInterrupt:
             sys.exit(0)
+
+
+
+
+
+

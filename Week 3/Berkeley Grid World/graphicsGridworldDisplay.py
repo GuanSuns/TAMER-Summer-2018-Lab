@@ -15,6 +15,7 @@
 import util
 from graphicsUtils import *
 
+
 class GraphicsGridworldDisplay:
 
     def __init__(self, gridworld, size=120, speed=1.0):

@@ -18,6 +18,7 @@ from featureExtractors import *
 
 import random,util,math
 
+
 class QLearningAgent(ReinforcementAgent):
     """
       Q-Learning Agent
@@ -46,7 +47,6 @@ class QLearningAgent(ReinforcementAgent):
         # the key of Q-Values should be (state, action)
         self.qValues = util.Counter()
 
-
     def getQValue(self, state, action):
         """
           Returns Q(state,action)
@@ -55,7 +55,6 @@ class QLearningAgent(ReinforcementAgent):
         """
         "*** YOUR CODE HERE ***"
         return self.qValues[(state, action)]
-
 
     def computeValueFromQValues(self, state):
         """
@@ -142,6 +141,11 @@ class QLearningAgent(ReinforcementAgent):
 
     def getValue(self, state):
         return self.computeValueFromQValues(state)
+
+
+class TamerQAgent(QLearningAgent):
+    def __init__(self, **args):
+        QLearningAgent.__init__(self, **args)
 
 
 class PacmanQAgent(QLearningAgent):
