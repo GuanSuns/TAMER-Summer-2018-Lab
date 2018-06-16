@@ -525,6 +525,9 @@ if __name__ == '__main__':
 
         # noinspection PyUnusedLocal
         class RandomAgent:
+            def __init__(self):
+                pass
+
             def getAction(self, state):
                 return random.choice(mdp.getPossibleActions(state))
 
