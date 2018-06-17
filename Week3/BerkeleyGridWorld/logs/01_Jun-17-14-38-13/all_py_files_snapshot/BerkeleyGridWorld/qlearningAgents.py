@@ -148,11 +148,6 @@ class TamerQAgent(QLearningAgent):
         """
             window_size: use the experiences within 2 seconds to update the weights
             max_n_experiences: maximum number of experiences stored in the history list
-
-            Instance variables inherited from QLearningAgent
-                - self.epsilon (exploration prob)
-                - self.alpha (learning rate)
-                - self.discount (discount rate)
         """
         QLearningAgent.__init__(self, **args)
 
@@ -186,13 +181,6 @@ class TamerQAgent(QLearningAgent):
                 break
 
         # update q-values
-        alpha = self.alpha
-        for experience in self.experiences:
-            action = experience['action']
-            state = experience['state']
-            oldQValue = self.qValues[(state, action)]
-            newQValue = oldQValue + alpha * (human_signal - oldQValue)
-            self.qValues[(state, action)] = newQValue
 
     def update(self, state, action, nextState, reward):
         """
@@ -200,12 +188,8 @@ class TamerQAgent(QLearningAgent):
         """
         "*** YOUR CODE HERE ***"
         current_time = time.time()
-        experience = {'time': current_time, 'state': state, 'nextState': nextState, 'reward': reward}
-        self.experiences.append(experience)
+        experience = {'time': current_time, }
 
-        # pop out stale experience
-        while len(self.experiences) > self.max_n_experiences:
-            self.experiences.pop(0)
 
 
 class PacmanQAgent(QLearningAgent):

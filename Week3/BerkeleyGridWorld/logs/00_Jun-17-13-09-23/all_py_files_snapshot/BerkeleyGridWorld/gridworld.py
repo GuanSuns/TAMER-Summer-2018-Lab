@@ -457,10 +457,10 @@ def runEpisode(agent, m_environment, discount, f_decision
 
         # EXECUTE ACTION
         nextState, reward = m_environment.doAction(action)
-        f_message("S: " + str(state) +
-                  ", A: " + str(action) +
-                  ", S': " + str(nextState) +
-                  ", R: " + str(reward) + "\n")
+        f_message("Started in state: " + str(state) +
+                  "\nTook action: " + str(action) +
+                  "\nEnded in state: " + str(nextState) +
+                  "\nGot reward: " + str(reward) + "\n")
 
         # UPDATE LEARNER
         if 'observeTransition' in dir(agent):

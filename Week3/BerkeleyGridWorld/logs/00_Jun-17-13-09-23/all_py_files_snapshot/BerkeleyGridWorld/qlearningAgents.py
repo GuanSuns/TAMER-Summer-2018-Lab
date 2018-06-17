@@ -144,22 +144,8 @@ class QLearningAgent(ReinforcementAgent):
 
 
 class TamerQAgent(QLearningAgent):
-    def __init__(self, max_n_experiences=1000, window_size=3, **args):
-        """
-            window_size: use the experiences within 2 seconds to update the weights
-            max_n_experiences: maximum number of experiences stored in the history list
-
-            Instance variables inherited from QLearningAgent
-                - self.epsilon (exploration prob)
-                - self.alpha (learning rate)
-                - self.discount (discount rate)
-        """
+    def __init__(self, **args):
         QLearningAgent.__init__(self, **args)
-
-        # initialize experiences list
-        self.max_n_experiences = max_n_experiences
-        self.experiences = list()
-        self.window_size = window_size
 
     def getQValue(self, state, action):
         """
@@ -170,46 +156,9 @@ class TamerQAgent(QLearningAgent):
         "*** YOUR CODE HERE ***"
         return 1.0
 
-    def receiveHumanSignal(self, human_signal):
-        """ receive human signal and update the weights """
-        # do nothing when the signal is 0 or it's not in training
-        if human_signal == 0:
-            return
-
-        # clear stale data
-        current_time = time.time()
-        while len(self.experiences) > 0:
-            experience = self.experiences[0]
-            if experience['time'] < current_time - self.window_size:
-                self.experiences.pop(0)
-            else:
-                break
-
-        # update q-values
-        alpha = self.alpha
-        for experience in self.experiences:
-            action = experience['action']
-            state = experience['state']
-            oldQValue = self.qValues[(state, action)]
-            newQValue = oldQValue + alpha * (human_signal - oldQValue)
-            self.qValues[(state, action)] = newQValue
-
-    def update(self, state, action, nextState, reward):
-        """
-          Add the transition experience to experiences list
-        """
-        "*** YOUR CODE HERE ***"
-        current_time = time.time()
-        experience = {'time': current_time, 'state': state, 'nextState': nextState, 'reward': reward}
-        self.experiences.append(experience)
-
-        # pop out stale experience
-        while len(self.experiences) > self.max_n_experiences:
-            self.experiences.pop(0)
-
 
 class PacmanQAgent(QLearningAgent):
-    """ Exactly the same as QLearningAgent, but with different default parameters """
+    "Exactly the same as QLearningAgent, but with different default parameters"
 
     def __init__(self, epsilon=0.05,gamma=0.8,alpha=0.2, numTraining=0, **args):
         """

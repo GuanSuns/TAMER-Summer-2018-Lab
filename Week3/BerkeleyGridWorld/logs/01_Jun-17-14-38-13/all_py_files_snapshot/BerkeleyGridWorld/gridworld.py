@@ -457,7 +457,7 @@ def runEpisode(agent, m_environment, discount, f_decision
 
         # EXECUTE ACTION
         nextState, reward = m_environment.doAction(action)
-        f_message("S: " + str(state) +
+        f_message("S: " + str(type(state)) +
                   ", A: " + str(action) +
                   ", S': " + str(nextState) +
                   ", R: " + str(reward) + "\n")
