@@ -1,11 +1,11 @@
-# expr_runner_ide.py
+# expr_runner_terminal.py
 #
-# experiment launcher used in IDE like Pygame
+# experiment launcher used in terminal (command line)
 # -----------------------
 
-from experiment_creater_and_resumer.experiment_creater_and_resumer import ExprCreaterAndResumer
-import gridworld
-from input import user_input
+from ..experiment_creater_and_resumer.experiment_creater_and_resumer import ExprCreaterAndResumer
+from .. import gridworld
+from ..input import user_input
 
 
 def run_expr():

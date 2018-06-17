@@ -14,8 +14,8 @@
       <file leaf-file-name="experiment_creater_and_resumer.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../BerkeleyGridWorld/experiment_creater_and_resumer/experiment_creater_and_resumer.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="157">
-              <caret line="9" column="39" lean-forward="false" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="39" />
+            <state relative-caret-position="-408">
+              <caret line="14" column="42" lean-forward="false" selection-start-line="14" selection-start-column="42" selection-end-line="14" selection-end-column="42" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -23,13 +23,25 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="expr_runner_terminal.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="expr_runner_terminal.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../BerkeleyGridWorld/experiment/expr_runner_terminal.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="334">
-              <caret line="23" column="16" lean-forward="true" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="16" />
+            <state relative-caret-position="134">
+              <caret line="37" column="19" lean-forward="false" selection-start-line="37" selection-start-column="19" selection-end-line="37" selection-end-column="19" />
               <folding>
                 <element signature="e#109#206#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="expr_runner_ide.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../BerkeleyGridWorld/experiment/expr_runner_ide.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="552">
+              <caret line="51" column="14" lean-forward="false" selection-start-line="51" selection-start-column="14" selection-end-line="51" selection-end-column="14" />
+              <folding>
+                <element signature="e#96#191#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -38,18 +50,18 @@
       <file leaf-file-name="qlearningAgents.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../BerkeleyGridWorld/qlearningAgents.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="67">
-              <caret line="152" column="37" lean-forward="false" selection-start-line="152" selection-start-column="37" selection-end-line="152" selection-end-column="37" />
+            <state relative-caret-position="120">
+              <caret line="21" column="28" lean-forward="true" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="gridworld.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="gridworld.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../BerkeleyGridWorld/gridworld.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="398">
-              <caret line="552" column="53" lean-forward="false" selection-start-line="552" selection-start-column="53" selection-end-line="552" selection-end-column="53" />
+            <state relative-caret-position="740">
+              <caret line="452" column="0" lean-forward="true" selection-start-line="452" selection-start-column="0" selection-end-line="452" selection-end-column="0" />
               <folding>
                 <element signature="e#656#669#0" expanded="true" />
               </folding>
@@ -110,11 +122,11 @@
         <option value="$PROJECT_DIR$/../BerkeleyGridWorld/input/getchar.py" />
         <option value="$PROJECT_DIR$/../BerkeleyGridWorld/input/user_input.py" />
         <option value="$PROJECT_DIR$/../BerkeleyGridWorld/experiment/expr_runner_command.py" />
-        <option value="$PROJECT_DIR$/../BerkeleyGridWorld/experiment/expr_runner_ide.py" />
         <option value="$PROJECT_DIR$/../BerkeleyGridWorld/learningAgents.py" />
-        <option value="$PROJECT_DIR$/../BerkeleyGridWorld/qlearningAgents.py" />
-        <option value="$PROJECT_DIR$/../BerkeleyGridWorld/gridworld.py" />
         <option value="$PROJECT_DIR$/../BerkeleyGridWorld/experiment/expr_runner_terminal.py" />
+        <option value="$PROJECT_DIR$/../BerkeleyGridWorld/qlearningAgents.py" />
+        <option value="$PROJECT_DIR$/../BerkeleyGridWorld/experiment/expr_runner_ide.py" />
+        <option value="$PROJECT_DIR$/../BerkeleyGridWorld/gridworld.py" />
       </list>
     </option>
   </component>
@@ -211,7 +223,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.gridworld">
+  <component name="RunManager" selected="Python.expr_runner_ide">
     <configuration name="expr_runner (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -398,9 +410,9 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.gridworld" />
-        <item index="1" class="java.lang.String" itemvalue="Python.expr_runner_ide" />
-        <item index="2" class="java.lang.String" itemvalue="Python.expr_runner (1)" />
+        <item index="0" class="java.lang.String" itemvalue="Python.expr_runner_ide" />
+        <item index="1" class="java.lang.String" itemvalue="Python.expr_runner (1)" />
+        <item index="2" class="java.lang.String" itemvalue="Python.gridworld" />
         <item index="3" class="java.lang.String" itemvalue="Python.expr_runner" />
         <item index="4" class="java.lang.String" itemvalue="Python.user_input" />
       </list>
@@ -721,14 +733,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../BerkeleyGridWorld/learningAgents.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="109">
-          <caret line="115" column="30" lean-forward="false" selection-start-line="115" selection-start-column="30" selection-end-line="115" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../BerkeleyGridWorld/input/user_input.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="682">
@@ -739,50 +743,58 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../BerkeleyGridWorld/qlearningAgents.py">
+    <entry file="file://$PROJECT_DIR$/../BerkeleyGridWorld/learningAgents.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="67">
-          <caret line="152" column="37" lean-forward="false" selection-start-line="152" selection-start-column="37" selection-end-line="152" selection-end-column="37" />
+        <state relative-caret-position="-3320">
+          <caret line="86" column="6" lean-forward="false" selection-start-line="86" selection-start-column="6" selection-end-line="86" selection-end-column="6" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../BerkeleyGridWorld/experiment/expr_runner_ide.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="107">
-          <caret line="10" column="15" lean-forward="true" selection-start-line="10" selection-start-column="15" selection-end-line="10" selection-end-column="15" />
+        <state relative-caret-position="552">
+          <caret line="51" column="14" lean-forward="false" selection-start-line="51" selection-start-column="14" selection-end-line="51" selection-end-column="14" />
           <folding>
             <element signature="e#96#191#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/../BerkeleyGridWorld/experiment/expr_runner_terminal.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="134">
+          <caret line="37" column="19" lean-forward="false" selection-start-line="37" selection-start-column="19" selection-end-line="37" selection-end-column="19" />
+          <folding>
+            <element signature="e#109#206#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/../BerkeleyGridWorld/experiment_creater_and_resumer/experiment_creater_and_resumer.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="157">
-          <caret line="9" column="39" lean-forward="false" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="39" />
+        <state relative-caret-position="-408">
+          <caret line="14" column="42" lean-forward="false" selection-start-line="14" selection-start-column="42" selection-end-line="14" selection-end-column="42" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../BerkeleyGridWorld/gridworld.py">
+    <entry file="file://$PROJECT_DIR$/../BerkeleyGridWorld/qlearningAgents.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="398">
-          <caret line="552" column="53" lean-forward="false" selection-start-line="552" selection-start-column="53" selection-end-line="552" selection-end-column="53" />
-          <folding>
-            <element signature="e#656#669#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="120">
+          <caret line="21" column="28" lean-forward="true" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../BerkeleyGridWorld/experiment/expr_runner_terminal.py">
+    <entry file="file://$PROJECT_DIR$/../BerkeleyGridWorld/gridworld.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="334">
-          <caret line="23" column="16" lean-forward="true" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="16" />
+        <state relative-caret-position="740">
+          <caret line="452" column="0" lean-forward="true" selection-start-line="452" selection-start-column="0" selection-end-line="452" selection-end-column="0" />
           <folding>
-            <element signature="e#109#206#0" expanded="true" />
+            <element signature="e#656#669#0" expanded="true" />
           </folding>
         </state>
       </provider>

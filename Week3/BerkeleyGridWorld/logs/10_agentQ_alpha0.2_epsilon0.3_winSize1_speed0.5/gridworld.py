@@ -448,7 +448,7 @@ def runEpisode(agent, m_environment, discount, f_decision
         actions = m_environment.getPossibleActions(state)
         if len(actions) == 0:
             f_message("EPISODE " + str(i_episode) + " COMPLETE: RETURN WAS " + str(returns_result) + "\n")
-            f_message("Learned QValue: " + str(agent.getQValues()) + "\n")
+            f_message("Learned QValue: " + str(agent.getQValues()))
             return returns_result
 
         # GET ACTION (USUALLY FROM AGENT)

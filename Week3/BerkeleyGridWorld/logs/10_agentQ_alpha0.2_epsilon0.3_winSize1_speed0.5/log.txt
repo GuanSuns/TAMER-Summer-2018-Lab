@@ -1,0 +1,460 @@
+
+RUNNING 100 EPISODES
+
+BEGINNING EPISODE: 1
+
+S: (0, 1), A: north, S': (0, 1), R: 0.0
+
+S: (0, 1), A: north, S': (0, 2), R: 0.0
+
+S: (0, 2), A: north, S': (0, 2), R: 0.0
+
+S: (0, 2), A: east, S': (0, 2), R: 0.0
+
+S: (0, 2), A: north, S': (0, 3), R: 0.0
+
+S: (0, 3), A: north, S': (0, 4), R: 0.0
+
+S: (0, 4), A: south, S': (0, 3), R: 0.0
+
+S: (0, 3), A: north, S': (0, 4), R: 0.0
+
+S: (0, 4), A: north, S': (0, 4), R: 0.0
+
+S: (0, 4), A: north, S': (0, 4), R: 0.0
+
+S: (0, 4), A: south, S': (0, 3), R: 0.0
+
+S: (0, 3), A: east, S': (0, 3), R: 0.0
+
+S: (0, 3), A: east, S': (0, 3), R: 0.0
+
+S: (0, 3), A: north, S': (0, 3), R: 0.0
+
+S: (0, 3), A: north, S': (0, 4), R: 0.0
+
+S: (0, 4), A: north, S': (0, 4), R: 0.0
+
+S: (0, 4), A: north, S': (0, 4), R: 0.0
+
+S: (0, 4), A: north, S': (0, 4), R: 0.0
+
+S: (0, 4), A: north, S': (0, 4), R: 0.0
+
+S: (0, 4), A: north, S': (0, 4), R: 0.0
+
+S: (0, 4), A: north, S': (0, 4), R: 0.0
+
+S: (0, 4), A: north, S': (0, 4), R: 0.0
+
+S: (0, 4), A: north, S': (0, 4), R: 0.0
+
+S: (0, 4), A: south, S': (0, 3), R: 0.0
+
+S: (0, 3), A: north, S': (0, 4), R: 0.0
+
+S: (0, 4), A: north, S': (0, 4), R: 0.0
+
+S: (0, 4), A: south, S': (0, 3), R: 0.0
+
+S: (0, 3), A: north, S': (0, 4), R: 0.0
+
+S: (0, 4), A: north, S': (0, 4), R: 0.0
+
+S: (0, 4), A: north, S': (0, 4), R: 0.0
+
+S: (0, 4), A: north, S': (0, 4), R: 0.0
+
+S: (0, 4), A: east, S': (1, 4), R: 0.0
+
+S: (1, 4), A: north, S': (0, 4), R: 0.0
+
+S: (0, 4), A: north, S': (0, 4), R: 0.0
+
+S: (0, 4), A: east, S': (0, 3), R: 0.0
+
+S: (0, 3), A: north, S': (0, 4), R: 0.0
+
+S: (0, 4), A: east, S': (1, 4), R: 0.0
+
+S: (1, 4), A: north, S': (1, 4), R: 0.0
+
+S: (1, 4), A: east, S': (2, 4), R: 0.0
+
+S: (2, 4), A: west, S': (1, 4), R: 0.0
+
+S: (1, 4), A: north, S': (1, 4), R: 0.0
+
+S: (1, 4), A: west, S': (1, 4), R: 0.0
+
+S: (1, 4), A: north, S': (1, 4), R: 0.0
+
+S: (1, 4), A: north, S': (1, 4), R: 0.0
+
+S: (1, 4), A: west, S': (0, 4), R: 0.0
+
+S: (0, 4), A: north, S': (1, 4), R: 0.0
+
+S: (1, 4), A: east, S': (2, 4), R: 0.0
+
+S: (2, 4), A: north, S': (2, 4), R: 0.0
+
+S: (2, 4), A: north, S': (2, 4), R: 0.0
+
+S: (2, 4), A: north, S': (2, 4), R: 0.0
+
+S: (2, 4), A: east, S': (3, 4), R: 0.0
+
+S: (3, 4), A: north, S': (3, 4), R: 0.0
+
+S: (3, 4), A: south, S': (3, 3), R: 0.0
+
+S: (3, 3), A: north, S': (2, 3), R: 0.0
+
+S: (2, 3), A: north, S': (2, 4), R: 0.0
+
+S: (2, 4), A: west, S': (1, 4), R: 0.0
+
+S: (1, 4), A: south, S': (1, 4), R: 0.0
+
+S: (1, 4), A: north, S': (1, 4), R: 0.0
+
+S: (1, 4), A: north, S': (0, 4), R: 0.0
+
+S: (0, 4), A: north, S': (0, 4), R: 0.0
+
+S: (0, 4), A: north, S': (0, 4), R: 0.0
+
+S: (0, 4), A: north, S': (0, 4), R: 0.0
+
+S: (0, 4), A: north, S': (0, 4), R: 0.0
+
+S: (0, 4), A: north, S': (0, 4), R: 0.0
+
+S: (0, 4), A: north, S': (0, 4), R: 0.0
+
+S: (0, 4), A: south, S': (0, 3), R: 0.0
+
+S: (0, 3), A: north, S': (0, 4), R: 0.0
+
+S: (0, 4), A: north, S': (0, 4), R: 0.0
+
+S: (0, 4), A: north, S': (1, 4), R: 0.0
+
+S: (1, 4), A: north, S': (1, 4), R: 0.0
+
+S: (1, 4), A: east, S': (1, 4), R: 0.0
+
+S: (1, 4), A: north, S': (0, 4), R: 0.0
+
+S: (0, 4), A: west, S': (0, 4), R: 0.0
+
+S: (0, 4), A: north, S': (1, 4), R: 0.0
+
+S: (1, 4), A: north, S': (1, 4), R: 0.0
+
+S: (1, 4), A: north, S': (1, 4), R: 0.0
+
+S: (1, 4), A: south, S': (1, 4), R: 0.0
+
+S: (1, 4), A: west, S': (0, 4), R: 0.0
+
+S: (0, 4), A: east, S': (1, 4), R: 0.0
+
+S: (1, 4), A: north, S': (1, 4), R: 0.0
+
+S: (1, 4), A: north, S': (1, 4), R: 0.0
+
+S: (1, 4), A: north, S': (1, 4), R: 0.0
+
+S: (1, 4), A: north, S': (2, 4), R: 0.0
+
+S: (2, 4), A: north, S': (2, 4), R: 0.0
+
+S: (2, 4), A: south, S': (2, 3), R: 0.0
+
+S: (2, 3), A: west, S': (2, 3), R: 0.0
+
+S: (2, 3), A: north, S': (2, 4), R: 0.0
+
+S: (2, 4), A: north, S': (2, 4), R: 0.0
+
+S: (2, 4), A: north, S': (2, 4), R: 0.0
+
+S: (2, 4), A: west, S': (1, 4), R: 0.0
+
+S: (1, 4), A: north, S': (2, 4), R: 0.0
+
+S: (2, 4), A: north, S': (2, 4), R: 0.0
+
+S: (2, 4), A: north, S': (2, 4), R: 0.0
+
+S: (2, 4), A: north, S': (2, 4), R: 0.0
+
+S: (2, 4), A: north, S': (2, 4), R: 0.0
+
+S: (2, 4), A: north, S': (2, 4), R: 0.0
+
+S: (2, 4), A: north, S': (2, 4), R: 0.0
+
+S: (2, 4), A: north, S': (2, 4), R: 0.0
+
+S: (2, 4), A: west, S': (1, 4), R: 0.0
+
+S: (1, 4), A: north, S': (1, 4), R: 0.0
+
+S: (1, 4), A: north, S': (1, 4), R: 0.0
+
+S: (1, 4), A: north, S': (1, 4), R: 0.0
+
+S: (1, 4), A: north, S': (1, 4), R: 0.0
+
+S: (1, 4), A: north, S': (2, 4), R: 0.0
+
+S: (2, 4), A: north, S': (2, 4), R: 0.0
+
+S: (2, 4), A: north, S': (2, 4), R: 0.0
+
+S: (2, 4), A: north, S': (2, 4), R: 0.0
+
+S: (2, 4), A: north, S': (1, 4), R: 0.0
+
+S: (1, 4), A: north, S': (1, 4), R: 0.0
+
+S: (1, 4), A: south, S': (0, 4), R: 0.0
+
+S: (0, 4), A: north, S': (1, 4), R: 0.0
+
+S: (1, 4), A: north, S': (0, 4), R: 0.0
+
+S: (0, 4), A: north, S': (0, 4), R: 0.0
+
+S: (0, 4), A: north, S': (1, 4), R: 0.0
+
+S: (1, 4), A: north, S': (1, 4), R: 0.0
+
+S: (1, 4), A: north, S': (1, 4), R: 0.0
+
+S: (1, 4), A: north, S': (1, 4), R: 0.0
+
+S: (1, 4), A: north, S': (0, 4), R: 0.0
+
+S: (0, 4), A: west, S': (0, 4), R: 0.0
+
+S: (0, 4), A: north, S': (0, 4), R: 0.0
+
+S: (0, 4), A: north, S': (0, 4), R: 0.0
+
+S: (0, 4), A: north, S': (0, 4), R: 0.0
+
+S: (0, 4), A: north, S': (0, 4), R: 0.0
+
+S: (0, 4), A: north, S': (0, 4), R: 0.0
+
+S: (0, 4), A: north, S': (0, 4), R: 0.0
+
+S: (0, 4), A: north, S': (0, 4), R: 0.0
+
+S: (0, 4), A: south, S': (0, 3), R: 0.0
+
+S: (0, 3), A: south, S': (0, 2), R: 0.0
+
+S: (0, 2), A: north, S': (0, 3), R: 0.0
+
+S: (0, 3), A: north, S': (0, 4), R: 0.0
+
+S: (0, 4), A: north, S': (0, 4), R: 0.0
+
+S: (0, 4), A: north, S': (0, 4), R: 0.0
+
+S: (0, 4), A: north, S': (1, 4), R: 0.0
+
+S: (1, 4), A: north, S': (1, 4), R: 0.0
+
+S: (1, 4), A: west, S': (0, 4), R: 0.0
+
+S: (0, 4), A: north, S': (1, 4), R: 0.0
+
+S: (1, 4), A: east, S': (2, 4), R: 0.0
+
+S: (2, 4), A: north, S': (2, 4), R: 0.0
+
+S: (2, 4), A: north, S': (2, 4), R: 0.0
+
+S: (2, 4), A: west, S': (1, 4), R: 0.0
+
+S: (1, 4), A: north, S': (1, 4), R: 0.0
+
+S: (1, 4), A: north, S': (2, 4), R: 0.0
+
+S: (2, 4), A: north, S': (2, 4), R: 0.0
+
+S: (2, 4), A: north, S': (2, 4), R: 0.0
+
+S: (2, 4), A: west, S': (2, 4), R: 0.0
+
+S: (2, 4), A: south, S': (1, 4), R: 0.0
+
+S: (1, 4), A: south, S': (1, 4), R: 0.0
+
+S: (1, 4), A: north, S': (2, 4), R: 0.0
+
+S: (2, 4), A: north, S': (2, 4), R: 0.0
+
+S: (2, 4), A: north, S': (2, 4), R: 0.0
+
+S: (2, 4), A: east, S': (3, 4), R: 0.0
+
+S: (3, 4), A: north, S': (3, 4), R: 0.0
+
+S: (3, 4), A: north, S': (3, 4), R: 0.0
+
+S: (3, 4), A: south, S': (3, 3), R: 0.0
+
+S: (3, 3), A: north, S': (3, 4), R: 0.0
+
+S: (3, 4), A: south, S': (3, 3), R: 0.0
+
+S: (3, 3), A: north, S': (3, 4), R: 0.0
+
+S: (3, 4), A: south, S': (3, 3), R: 0.0
+
+S: (3, 3), A: north, S': (4, 3), R: 0.0
+
+S: (4, 3), A: north, S': (4, 4), R: 0.0
+
+S: (4, 4), A: north, S': (4, 4), R: 0.0
+
+S: (4, 4), A: north, S': (4, 4), R: 0.0
+
+S: (4, 4), A: north, S': (3, 4), R: 0.0
+
+S: (3, 4), A: north, S': (3, 4), R: 0.0
+
+S: (3, 4), A: west, S': (2, 4), R: 0.0
+
+S: (2, 4), A: north, S': (2, 4), R: 0.0
+
+S: (2, 4), A: east, S': (3, 4), R: 0.0
+
+S: (3, 4), A: north, S': (3, 4), R: 0.0
+
+S: (3, 4), A: north, S': (3, 4), R: 0.0
+
+S: (3, 4), A: north, S': (3, 4), R: 0.0
+
+S: (3, 4), A: north, S': (3, 4), R: 0.0
+
+S: (3, 4), A: north, S': (3, 4), R: 0.0
+
+S: (3, 4), A: east, S': (4, 4), R: 0.0
+
+S: (4, 4), A: north, S': (3, 4), R: 0.0
+
+S: (3, 4), A: north, S': (3, 4), R: 0.0
+
+S: (3, 4), A: north, S': (3, 4), R: 0.0
+
+S: (3, 4), A: north, S': (3, 4), R: 0.0
+
+S: (3, 4), A: north, S': (3, 4), R: 0.0
+
+S: (3, 4), A: east, S': (4, 4), R: 0.0
+
+S: (4, 4), A: north, S': (4, 4), R: 0.0
+
+S: (4, 4), A: north, S': (4, 4), R: 0.0
+
+S: (4, 4), A: north, S': (4, 4), R: 0.0
+
+S: (4, 4), A: north, S': (3, 4), R: 0.0
+
+S: (3, 4), A: east, S': (3, 4), R: 0.0
+
+S: (3, 4), A: south, S': (2, 4), R: 0.0
+
+S: (2, 4), A: south, S': (2, 3), R: 0.0
+
+S: (2, 3), A: south, S': (2, 2), R: 0.0
+
+S: (2, 2), A: exit, S': TERMINAL_STATE, R: 1
+
+EPISODE 1 COMPLETE: RETURN WAS 2.77555134108e-09
+
+Learned QValue: {((0, 1), 'east'): 0, ((4, 4), 'south'): 0, ((0, 2), 'south'): 0, ((0, 2), 'west'): 0, ((3, 1), 'west'): 0, ((2, 0), 'exit'): 0, ((2, 1), 'east'): 0, ((4, 0), 'exit'): 0, ((2, 3), 'west'): 0.0, ((0, 3), 'north'): 0.0, ((4, 2), 'exit'): 0, ((2, 4), 'east'): 0.0, ((0, 1), 'south'): 0, ((2, 3), 'east'): 0, ((0, 2), 'east'): 0.0, ((3, 3), 'south'): 0, ((3, 3), 'north'): 0.0, ((3, 4), 'north'): 0.0, ((4, 4), 'north'): 0.0, ((4, 1), 'south'): 0, ((2, 1), 'south'): 0, ((2, 2), 'exit'): 0.2, ((0, 3), 'west'): 0, ((2, 4), 'south'): 0.0, ((4, 4), 'east'): 0, ((3, 4), 'east'): 0.0, ((1, 4), 'north'): 0.0, ((0, 2), 'north'): 0.0, ((2, 3), 'north'): 0.0, ((3, 3), 'west'): 0, ((4, 4), 'west'): 0, ((0, 3), 'east'): 0.0, ((1, 0), 'exit'): 0, ((3, 1), 'south'): 0, ((2, 4), 'north'): 0.0, ((1, 1), 'south'): 0, ((1, 1), 'west'): 0, ((3, 3), 'east'): 0, ((0, 0), 'exit'): 0, ((2, 3), 'south'): 0.0, ((3, 0), 'exit'): 0, ((1, 4), 'east'): 0.0, ((4, 3), 'west'): 0, ((4, 1), 'north'): 0, ((0, 1), 'north'): 0.0, ((2, 4), 'west'): 0.0, ((1, 4), 'west'): 0.0, ((1, 1), 'east'): 0, ((0, 4), 'north'): 0.0, ((2, 1), 'west'): 0, ((0, 4), 'south'): 0.0, ((3, 4), 'west'): 0.0, ((3, 1), 'north'): 0, ((3, 4), 'south'): 0.0, ((1, 4), 'south'): 0.0, ((4, 3), 'east'): 0, ((4, 1), 'west'): 0, ((0, 4), 'west'): 0.0, ((4, 3), 'north'): 0.0, ((0, 3), 'south'): 0.0, ((3, 1), 'east'): 0, ((4, 1), 'east'): 0, ((0, 1), 'west'): 0, ((0, 4), 'east'): 0.0, ((1, 1), 'north'): 0, ((2, 1), 'north'): 0, ((4, 3), 'south'): 0}
+BEGINNING EPISODE: 2
+
+S: (0, 1), A: west, S': (0, 1), R: 0.0
+
+S: (0, 1), A: north, S': (0, 2), R: 0.0
+
+S: (0, 2), A: north, S': (0, 3), R: 0.0
+
+S: (0, 3), A: north, S': (0, 4), R: 0.0
+
+S: (0, 4), A: north, S': (0, 4), R: 0.0
+
+S: (0, 4), A: east, S': (1, 4), R: 0.0
+
+S: (1, 4), A: north, S': (1, 4), R: 0.0
+
+S: (1, 4), A: north, S': (1, 4), R: 0.0
+
+S: (1, 4), A: south, S': (1, 4), R: 0.0
+
+S: (1, 4), A: north, S': (1, 4), R: 0.0
+
+S: (1, 4), A: north, S': (1, 4), R: 0.0
+
+S: (1, 4), A: north, S': (2, 4), R: 0.0
+
+S: (2, 4), A: north, S': (2, 4), R: 0.0
+
+S: (2, 4), A: north, S': (2, 4), R: 0.0
+
+S: (2, 4), A: south, S': (2, 3), R: 0.0
+
+S: (2, 3), A: north, S': (2, 4), R: 0.0
+
+S: (2, 4), A: north, S': (2, 4), R: 0.0
+
+S: (2, 4), A: east, S': (3, 4), R: 0.0
+
+S: (3, 4), A: north, S': (3, 4), R: 0.0
+
+S: (3, 4), A: north, S': (3, 4), R: 0.0
+
+S: (3, 4), A: north, S': (4, 4), R: 0.0
+
+S: (4, 4), A: south, S': (4, 3), R: 0.0
+
+S: (4, 3), A: east, S': (4, 3), R: 0.0
+
+S: (4, 3), A: north, S': (4, 3), R: 0.0
+
+S: (4, 3), A: north, S': (4, 4), R: 0.0
+
+S: (4, 4), A: north, S': (3, 4), R: 0.0
+
+S: (3, 4), A: north, S': (3, 4), R: 0.0
+
+Traceback (most recent call last):
+  File "/Users/lguan/Documents/Study/Research/Summer 2018/Week3/BerkeleyGridWorld/experiment/expr_runner_ide.py", line 52, in <module>
+    run_expr()
+  File "/Users/lguan/Documents/Study/Research/Summer 2018/Week3/BerkeleyGridWorld/experiment/expr_runner_ide.py", line 48, in run_expr
+    tamerGridWorld.run_episodes()
+  File "/Users/lguan/Documents/Study/Research/Summer 2018/Week3/BerkeleyGridWorld/gridworld.py", line 584, in run_episodes
+    , pause_callback, i_episode, user_input_module=self.user_input_module)
+  File "/Users/lguan/Documents/Study/Research/Summer 2018/Week3/BerkeleyGridWorld/gridworld.py", line 444, in runEpisode
+    f_display(state)
+  File "/Users/lguan/Documents/Study/Research/Summer 2018/Week3/BerkeleyGridWorld/gridworld.py", line 562, in <lambda>
+    display_callback = lambda state: self.display.displayQValues(self.agent, state, "CURRENT Q-VALUES")
+  File "/Users/lguan/Documents/Study/Research/Summer 2018/Week3/BerkeleyGridWorld/graphicsGridworldDisplay.py", line 60, in displayQValues
+    sleep(0.05 / self.speed)
+  File "/Users/lguan/Documents/Study/Research/Summer 2018/Week3/BerkeleyGridWorld/graphicsUtils.py", line 54, in sleep
+    _root_window.mainloop()
+  File "/Users/lguan/env-tensorflow-py2.7/lib/python2.7/lib-tk/Tkinter.py", line 1129, in mainloop
+    self.tk.mainloop(n)
+  File "/Users/lguan/env-tensorflow-py2.7/lib/python2.7/lib-tk/Tkinter.py", line 1536, in __call__
+    def __call__(self, *args):
+KeyboardInterrupt
