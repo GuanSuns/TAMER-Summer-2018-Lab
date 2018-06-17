@@ -20,16 +20,8 @@ def run_expr():
     n_episodes = 100
     display_speed = 0.5
 
-    # generate postfix
-    postfix = ''
-    postfix += 'agent' + ('Q' if is_use_q_agent else 'Tamer')
-    postfix += '_alpha' + str(alpha)
-    postfix += '_epsilon' + str(epsilon)
-    postfix += '_winSize' + str(window_size)
-    postfix += '_speed' + str(display_speed)
-
     log_dir = '/Users/lguan/Documents/Study/Research/Summer 2018/Week3/BerkeleyGridWorld/logs'
-    expr_saver = ExprCreaterAndResumer(rootdir=log_dir, postfix=postfix)
+    expr_saver = ExprCreaterAndResumer(rootdir=log_dir)
 
     # save experiment runner
     expr_saver.dump_src_code_and_model_def(fname=__file__)

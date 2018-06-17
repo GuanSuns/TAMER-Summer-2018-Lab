@@ -550,7 +550,7 @@ class TamerGridWorldExperiment():
             self.agent = qlearningAgents.QLearningAgent(**q_learn_opts)
         else:
             self.agent = qlearningAgents.TamerQAgent(max_n_experiences=agent_max_n_experiences
-                                                     , window_size=agent_window_size, **q_learn_opts)
+                                                 , window_size=agent_window_size, **q_learn_opts)
 
     def run_episodes(self):
         ###########################
