@@ -1,4 +1,5 @@
 from experiment_creater_and_resumer.experiment_creater_and_resumer import ExprCreaterAndResumer
+import gridworld
 
 
 def run_expr():
@@ -7,6 +8,12 @@ def run_expr():
 
     print('test logger -- %s' % __file__)
     expr_saver.dump_src_code_and_model_def(fname=__file__)
+
+    tamerGridWorld = gridworld.TamerGridWorldExperiment()
+    print(gridworld.__file__)
+    expr_saver.dump_src_code_and_model_def(fname=gridworld.__file__)
+
+    tamerGridWorld.run_episodes()
 
 
 if __name__ == '__main__':

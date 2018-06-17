@@ -358,37 +358,39 @@ def printString(x):
     print x
 
 
-def runEpisode(agent, m_environment, discount, decision, f_display, message, pause, n_episode):
+def runEpisode(agent, m_environment, discount, f_decision, f_display, f_message, f_pause, i_episode):
     returns_result = 0
     totalDiscount = 1.0
     m_environment.reset()
+
     if 'startEpisode' in dir(agent):
         agent.startEpisode()
-    message("BEGINNING EPISODE: " + str(n_episode) + "\n")
-    while True:
+    f_message("BEGINNING EPISODE: " + str(i_episode) + "\n")
 
+    while True:
         # DISPLAY CURRENT STATE
         state = m_environment.getCurrentState()
         f_display(state)
-        pause()
+        f_pause()
 
         # END IF IN A TERMINAL STATE
         actions = m_environment.getPossibleActions(state)
         if len(actions) == 0:
-            message("EPISODE " + str(n_episode) + " COMPLETE: RETURN WAS " + str(returns_result) + "\n")
+            f_message("EPISODE " + str(i_episode) + " COMPLETE: RETURN WAS " + str(returns_result) + "\n")
             return returns_result
 
         # GET ACTION (USUALLY FROM AGENT)
-        action = decision(state)
+        action = f_decision(state)
         if action is None:
             raise Exception('Error: Agent returned None action')
 
         # EXECUTE ACTION
         nextState, reward = m_environment.doAction(action)
-        message("Started in state: "+str(state) +
-                "\nTook action: "+str(action) +
-                "\nEnded in state: "+str(nextState) +
-                "\nGot reward: "+str(reward)+"\n")
+        f_message("Started in state: " + str(state) +
+                  "\nTook action: " + str(action) +
+                  "\nEnded in state: " + str(nextState) +
+                  "\nGot reward: " + str(reward) + "\n")
+
         # UPDATE LEARNER
         if 'observeTransition' in dir(agent):
             agent.observeTransition(state, action, nextState, reward)
@@ -538,7 +540,7 @@ class TamerGridWorldExperiment():
         pause_callback = lambda: None
 
         # FIGURE OUT WHETHER THE USER WANTS MANUAL CONTROL (FOR DEBUGGING AND DEMOS)
-        decisionCallback = self.agent.getAction
+        decision_callback = self.agent.getAction
 
         # RUN EPISODES
         if self.n_episodes > 0:
@@ -547,10 +549,10 @@ class TamerGridWorldExperiment():
             print
         total_returns = 0
 
-        for episode in range(1, self.n_episodes + 1):
+        for i_episode in range(1, self.n_episodes + 1):
             total_returns += runEpisode(self.agent, self.env, self.discount
-                                        , decisionCallback, display_callback, message_callback
-                                        , pause_callback, episode)
+                                        , decision_callback, display_callback, message_callback
+                                        , pause_callback, i_episode)
         if self.n_episodes > 0:
             print
             print "AVERAGE RETURNS FROM START STATE: " + str((total_returns + 0.0) / self.n_episodes)

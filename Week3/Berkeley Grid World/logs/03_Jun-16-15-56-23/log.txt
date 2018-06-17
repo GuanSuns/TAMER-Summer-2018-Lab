@@ -1,0 +1,345 @@
+test logger -- /Users/lguan/Documents/Study/Research/Summer 2018/Week 3/Berkeley Grid World/experiment/expr_runner.py
+/Users/lguan/Documents/Study/Research/Summer 2018/Week 3/Berkeley Grid World/gridworld.py
+
+RUNNING 10 EPISODES
+
+BEGINNING EPISODE: 1
+
+Started in state: (0, 1)
+Took action: west
+Ended in state: (0, 1)
+Got reward: 0.0
+
+Started in state: (0, 1)
+Took action: north
+Ended in state: (0, 2)
+Got reward: 0.0
+
+Started in state: (0, 2)
+Took action: north
+Ended in state: (0, 3)
+Got reward: 0.0
+
+Started in state: (0, 3)
+Took action: north
+Ended in state: (0, 4)
+Got reward: 0.0
+
+Started in state: (0, 4)
+Took action: north
+Ended in state: (1, 4)
+Got reward: 0.0
+
+Started in state: (1, 4)
+Took action: north
+Ended in state: (1, 4)
+Got reward: 0.0
+
+Started in state: (1, 4)
+Took action: south
+Ended in state: (1, 4)
+Got reward: 0.0
+
+Started in state: (1, 4)
+Took action: west
+Ended in state: (1, 4)
+Got reward: 0.0
+
+Started in state: (1, 4)
+Took action: north
+Ended in state: (1, 4)
+Got reward: 0.0
+
+Started in state: (1, 4)
+Took action: north
+Ended in state: (1, 4)
+Got reward: 0.0
+
+Started in state: (1, 4)
+Took action: north
+Ended in state: (2, 4)
+Got reward: 0.0
+
+Started in state: (2, 4)
+Took action: north
+Ended in state: (2, 4)
+Got reward: 0.0
+
+Started in state: (2, 4)
+Took action: north
+Ended in state: (2, 4)
+Got reward: 0.0
+
+Started in state: (2, 4)
+Took action: north
+Ended in state: (2, 4)
+Got reward: 0.0
+
+Started in state: (2, 4)
+Took action: north
+Ended in state: (2, 4)
+Got reward: 0.0
+
+Started in state: (2, 4)
+Took action: north
+Ended in state: (2, 4)
+Got reward: 0.0
+
+Started in state: (2, 4)
+Took action: north
+Ended in state: (2, 4)
+Got reward: 0.0
+
+Started in state: (2, 4)
+Took action: north
+Ended in state: (2, 4)
+Got reward: 0.0
+
+Started in state: (2, 4)
+Took action: north
+Ended in state: (2, 4)
+Got reward: 0.0
+
+Started in state: (2, 4)
+Took action: north
+Ended in state: (2, 4)
+Got reward: 0.0
+
+Started in state: (2, 4)
+Took action: north
+Ended in state: (2, 4)
+Got reward: 0.0
+
+Started in state: (2, 4)
+Took action: south
+Ended in state: (2, 3)
+Got reward: 0.0
+
+Started in state: (2, 3)
+Took action: east
+Ended in state: (3, 3)
+Got reward: 0.0
+
+Started in state: (3, 3)
+Took action: north
+Ended in state: (3, 4)
+Got reward: 0.0
+
+Started in state: (3, 4)
+Took action: north
+Ended in state: (3, 4)
+Got reward: 0.0
+
+Started in state: (3, 4)
+Took action: north
+Ended in state: (3, 4)
+Got reward: 0.0
+
+Started in state: (3, 4)
+Took action: north
+Ended in state: (3, 4)
+Got reward: 0.0
+
+Started in state: (3, 4)
+Took action: north
+Ended in state: (3, 4)
+Got reward: 0.0
+
+Started in state: (3, 4)
+Took action: north
+Ended in state: (3, 4)
+Got reward: 0.0
+
+Started in state: (3, 4)
+Took action: north
+Ended in state: (3, 4)
+Got reward: 0.0
+
+Started in state: (3, 4)
+Took action: south
+Ended in state: (3, 3)
+Got reward: 0.0
+
+Started in state: (3, 3)
+Took action: north
+Ended in state: (3, 4)
+Got reward: 0.0
+
+Started in state: (3, 4)
+Took action: north
+Ended in state: (3, 4)
+Got reward: 0.0
+
+Started in state: (3, 4)
+Took action: north
+Ended in state: (4, 4)
+Got reward: 0.0
+
+Started in state: (4, 4)
+Took action: north
+Ended in state: (4, 4)
+Got reward: 0.0
+
+Started in state: (4, 4)
+Took action: north
+Ended in state: (4, 4)
+Got reward: 0.0
+
+Started in state: (4, 4)
+Took action: north
+Ended in state: (3, 4)
+Got reward: 0.0
+
+Started in state: (3, 4)
+Took action: west
+Ended in state: (2, 4)
+Got reward: 0.0
+
+Started in state: (2, 4)
+Took action: north
+Ended in state: (2, 4)
+Got reward: 0.0
+
+Started in state: (2, 4)
+Took action: north
+Ended in state: (1, 4)
+Got reward: 0.0
+
+Started in state: (1, 4)
+Took action: north
+Ended in state: (2, 4)
+Got reward: 0.0
+
+Started in state: (2, 4)
+Took action: west
+Ended in state: (1, 4)
+Got reward: 0.0
+
+Started in state: (1, 4)
+Took action: north
+Ended in state: (1, 4)
+Got reward: 0.0
+
+Started in state: (1, 4)
+Took action: north
+Ended in state: (1, 4)
+Got reward: 0.0
+
+Started in state: (1, 4)
+Took action: north
+Ended in state: (1, 4)
+Got reward: 0.0
+
+Started in state: (1, 4)
+Took action: north
+Ended in state: (1, 4)
+Got reward: 0.0
+
+Started in state: (1, 4)
+Took action: north
+Ended in state: (1, 4)
+Got reward: 0.0
+
+Started in state: (1, 4)
+Took action: north
+Ended in state: (1, 4)
+Got reward: 0.0
+
+Started in state: (1, 4)
+Took action: north
+Ended in state: (0, 4)
+Got reward: 0.0
+
+Started in state: (0, 4)
+Took action: north
+Ended in state: (0, 4)
+Got reward: 0.0
+
+Started in state: (0, 4)
+Took action: west
+Ended in state: (0, 4)
+Got reward: 0.0
+
+Started in state: (0, 4)
+Took action: north
+Ended in state: (0, 4)
+Got reward: 0.0
+
+Started in state: (0, 4)
+Took action: north
+Ended in state: (0, 4)
+Got reward: 0.0
+
+Started in state: (0, 4)
+Took action: north
+Ended in state: (1, 4)
+Got reward: 0.0
+
+Started in state: (1, 4)
+Took action: north
+Ended in state: (1, 4)
+Got reward: 0.0
+
+Started in state: (1, 4)
+Took action: north
+Ended in state: (1, 4)
+Got reward: 0.0
+
+Started in state: (1, 4)
+Took action: north
+Ended in state: (1, 4)
+Got reward: 0.0
+
+Started in state: (1, 4)
+Took action: south
+Ended in state: (1, 4)
+Got reward: 0.0
+
+Started in state: (1, 4)
+Took action: north
+Ended in state: (1, 4)
+Got reward: 0.0
+
+Started in state: (1, 4)
+Took action: north
+Ended in state: (2, 4)
+Got reward: 0.0
+
+Started in state: (2, 4)
+Took action: south
+Ended in state: (2, 3)
+Got reward: 0.0
+
+Started in state: (2, 3)
+Took action: north
+Ended in state: (2, 4)
+Got reward: 0.0
+
+Started in state: (2, 4)
+Took action: north
+Ended in state: (2, 4)
+Got reward: 0.0
+
+Started in state: (2, 4)
+Took action: north
+Ended in state: (2, 4)
+Got reward: 0.0
+
+Traceback (most recent call last):
+  File "/Users/lguan/Documents/Study/Research/Summer 2018/Week 3/Berkeley Grid World/experiment/expr_runner.py", line 20, in <module>
+    run_expr()
+  File "/Users/lguan/Documents/Study/Research/Summer 2018/Week 3/Berkeley Grid World/experiment/expr_runner.py", line 16, in run_expr
+    tamerGridWorld.run_episodes()
+  File "/Users/lguan/Documents/Study/Research/Summer 2018/Week 3/Berkeley Grid World/gridworld.py", line 553, in run_episodes
+    , pause_callback, i_episode)
+  File "/Users/lguan/Documents/Study/Research/Summer 2018/Week 3/Berkeley Grid World/gridworld.py", line 372, in runEpisode
+    f_display(state)
+  File "/Users/lguan/Documents/Study/Research/Summer 2018/Week 3/Berkeley Grid World/gridworld.py", line 531, in <lambda>
+    display_callback = lambda state: self.display.displayQValues(self.agent, state, "CURRENT Q-VALUES")
+  File "/Users/lguan/Documents/Study/Research/Summer 2018/Week 3/Berkeley Grid World/graphicsGridworldDisplay.py", line 60, in displayQValues
+    sleep(0.05 / self.speed)
+  File "/Users/lguan/Documents/Study/Research/Summer 2018/Week 3/Berkeley Grid World/graphicsUtils.py", line 52, in sleep
+    _root_window.update_idletasks()
+  File "/Users/lguan/env-tensorflow-py2.7/lib/python2.7/lib-tk/Tkinter.py", line 1028, in update_idletasks
+    self.tk.call('update', 'idletasks')
+KeyboardInterrupt
