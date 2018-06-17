@@ -3,7 +3,7 @@ import gridworld
 
 
 def run_expr():
-    log_dir = '/Users/lguan/Documents/Study/Research/Summer 2018/Week 3/Berkeley Grid World/logs'
+    log_dir = '/Users/lguan/Documents/Study/Research/Summer 2018/Week 3/BerkeleyGridWorld/logs'
     expr_saver = ExprCreaterAndResumer(rootdir=log_dir)
 
     print('test logger -- %s' % __file__)
