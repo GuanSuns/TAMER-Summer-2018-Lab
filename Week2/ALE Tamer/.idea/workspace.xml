@@ -2,352 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6f0273c9-2959-437d-87b1-2ae6c1d40900" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/.idea/dictionaries/lguan.xml" afterPath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/.idea/dictionaries/lguan.xml" />
       <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/experiment/expr_runner.py" afterPath="" />
       <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/gridworld.py" afterPath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/gridworld.py" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/learningAgents.py" afterPath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/learningAgents.py" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/00_Jun-17-01-31-16/all_py_files_snapshot/BerkeleyGridWorld/__init__.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/00_Jun-17-01-31-16/all_py_files_snapshot/BerkeleyGridWorld/analysis.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/00_Jun-17-01-31-16/all_py_files_snapshot/BerkeleyGridWorld/autograder.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/00_Jun-17-01-31-16/all_py_files_snapshot/BerkeleyGridWorld/crawler.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/00_Jun-17-01-31-16/all_py_files_snapshot/BerkeleyGridWorld/environment.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/00_Jun-17-01-31-16/all_py_files_snapshot/BerkeleyGridWorld/featureExtractors.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/00_Jun-17-01-31-16/all_py_files_snapshot/BerkeleyGridWorld/game.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/00_Jun-17-01-31-16/all_py_files_snapshot/BerkeleyGridWorld/ghostAgents.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/00_Jun-17-01-31-16/all_py_files_snapshot/BerkeleyGridWorld/grading.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/00_Jun-17-01-31-16/all_py_files_snapshot/BerkeleyGridWorld/graphicsCrawlerDisplay.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/00_Jun-17-01-31-16/all_py_files_snapshot/BerkeleyGridWorld/graphicsDisplay.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/00_Jun-17-01-31-16/all_py_files_snapshot/BerkeleyGridWorld/graphicsGridworldDisplay.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/00_Jun-17-01-31-16/all_py_files_snapshot/BerkeleyGridWorld/graphicsUtils.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/00_Jun-17-01-31-16/all_py_files_snapshot/BerkeleyGridWorld/gridworld.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/00_Jun-17-01-31-16/all_py_files_snapshot/BerkeleyGridWorld/keyboardAgents.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/00_Jun-17-01-31-16/all_py_files_snapshot/BerkeleyGridWorld/layout.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/00_Jun-17-01-31-16/all_py_files_snapshot/BerkeleyGridWorld/learningAgents.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/00_Jun-17-01-31-16/all_py_files_snapshot/BerkeleyGridWorld/mdp.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/00_Jun-17-01-31-16/all_py_files_snapshot/BerkeleyGridWorld/pacman.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/00_Jun-17-01-31-16/all_py_files_snapshot/BerkeleyGridWorld/pacmanAgents.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/00_Jun-17-01-31-16/all_py_files_snapshot/BerkeleyGridWorld/projectParams.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/00_Jun-17-01-31-16/all_py_files_snapshot/BerkeleyGridWorld/qlearningAgents.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/00_Jun-17-01-31-16/all_py_files_snapshot/BerkeleyGridWorld/reinforcementTestClasses.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/00_Jun-17-01-31-16/all_py_files_snapshot/BerkeleyGridWorld/testClasses.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/00_Jun-17-01-31-16/all_py_files_snapshot/BerkeleyGridWorld/testParser.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/00_Jun-17-01-31-16/all_py_files_snapshot/BerkeleyGridWorld/textDisplay.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/00_Jun-17-01-31-16/all_py_files_snapshot/BerkeleyGridWorld/textGridworldDisplay.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/00_Jun-17-01-31-16/all_py_files_snapshot/BerkeleyGridWorld/util.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/00_Jun-17-01-31-16/all_py_files_snapshot/BerkeleyGridWorld/valueIterationAgents.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/00_Jun-17-01-31-16/all_py_files_snapshot/__init__.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/00_Jun-17-01-31-16/all_py_files_snapshot/experiment/__init__.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/00_Jun-17-01-31-16/all_py_files_snapshot/experiment/expr_runner.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/00_Jun-17-01-31-16/all_py_files_snapshot/input/__init__.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/00_Jun-17-01-31-16/all_py_files_snapshot/input/getchar.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/00_Jun-17-01-31-16/all_py_files_snapshot/input/user_input.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/00_Jun-17-01-31-16/expr_runner.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/00_Jun-17-01-31-16/gridworld.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/00_Jun-17-01-31-16/log.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/01_Jun-17-01-46-21/all_py_files_snapshot/BerkeleyGridWorld/__init__.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/01_Jun-17-01-46-21/all_py_files_snapshot/BerkeleyGridWorld/analysis.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/01_Jun-17-01-46-21/all_py_files_snapshot/BerkeleyGridWorld/autograder.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/01_Jun-17-01-46-21/all_py_files_snapshot/BerkeleyGridWorld/crawler.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/01_Jun-17-01-46-21/all_py_files_snapshot/BerkeleyGridWorld/environment.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/01_Jun-17-01-46-21/all_py_files_snapshot/BerkeleyGridWorld/featureExtractors.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/01_Jun-17-01-46-21/all_py_files_snapshot/BerkeleyGridWorld/game.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/01_Jun-17-01-46-21/all_py_files_snapshot/BerkeleyGridWorld/ghostAgents.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/01_Jun-17-01-46-21/all_py_files_snapshot/BerkeleyGridWorld/grading.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/01_Jun-17-01-46-21/all_py_files_snapshot/BerkeleyGridWorld/graphicsCrawlerDisplay.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/01_Jun-17-01-46-21/all_py_files_snapshot/BerkeleyGridWorld/graphicsDisplay.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/01_Jun-17-01-46-21/all_py_files_snapshot/BerkeleyGridWorld/graphicsGridworldDisplay.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/01_Jun-17-01-46-21/all_py_files_snapshot/BerkeleyGridWorld/graphicsUtils.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/01_Jun-17-01-46-21/all_py_files_snapshot/BerkeleyGridWorld/gridworld.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/01_Jun-17-01-46-21/all_py_files_snapshot/BerkeleyGridWorld/keyboardAgents.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/01_Jun-17-01-46-21/all_py_files_snapshot/BerkeleyGridWorld/layout.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/01_Jun-17-01-46-21/all_py_files_snapshot/BerkeleyGridWorld/learningAgents.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/01_Jun-17-01-46-21/all_py_files_snapshot/BerkeleyGridWorld/mdp.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/01_Jun-17-01-46-21/all_py_files_snapshot/BerkeleyGridWorld/pacman.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/01_Jun-17-01-46-21/all_py_files_snapshot/BerkeleyGridWorld/pacmanAgents.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/01_Jun-17-01-46-21/all_py_files_snapshot/BerkeleyGridWorld/projectParams.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/01_Jun-17-01-46-21/all_py_files_snapshot/BerkeleyGridWorld/qlearningAgents.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/01_Jun-17-01-46-21/all_py_files_snapshot/BerkeleyGridWorld/reinforcementTestClasses.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/01_Jun-17-01-46-21/all_py_files_snapshot/BerkeleyGridWorld/testClasses.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/01_Jun-17-01-46-21/all_py_files_snapshot/BerkeleyGridWorld/testParser.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/01_Jun-17-01-46-21/all_py_files_snapshot/BerkeleyGridWorld/textDisplay.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/01_Jun-17-01-46-21/all_py_files_snapshot/BerkeleyGridWorld/textGridworldDisplay.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/01_Jun-17-01-46-21/all_py_files_snapshot/BerkeleyGridWorld/util.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/01_Jun-17-01-46-21/all_py_files_snapshot/BerkeleyGridWorld/valueIterationAgents.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/01_Jun-17-01-46-21/all_py_files_snapshot/__init__.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/01_Jun-17-01-46-21/all_py_files_snapshot/experiment/__init__.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/01_Jun-17-01-46-21/all_py_files_snapshot/experiment/expr_runner.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/01_Jun-17-01-46-21/all_py_files_snapshot/input/__init__.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/01_Jun-17-01-46-21/all_py_files_snapshot/input/getchar.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/01_Jun-17-01-46-21/all_py_files_snapshot/input/user_input.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/01_Jun-17-01-46-21/expr_runner.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/01_Jun-17-01-46-21/gridworld.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/01_Jun-17-01-46-21/log.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/02_Jun-17-01-54-07/all_py_files_snapshot/BerkeleyGridWorld/__init__.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/02_Jun-17-01-54-07/all_py_files_snapshot/BerkeleyGridWorld/analysis.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/02_Jun-17-01-54-07/all_py_files_snapshot/BerkeleyGridWorld/autograder.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/02_Jun-17-01-54-07/all_py_files_snapshot/BerkeleyGridWorld/crawler.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/02_Jun-17-01-54-07/all_py_files_snapshot/BerkeleyGridWorld/environment.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/02_Jun-17-01-54-07/all_py_files_snapshot/BerkeleyGridWorld/featureExtractors.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/02_Jun-17-01-54-07/all_py_files_snapshot/BerkeleyGridWorld/game.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/02_Jun-17-01-54-07/all_py_files_snapshot/BerkeleyGridWorld/ghostAgents.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/02_Jun-17-01-54-07/all_py_files_snapshot/BerkeleyGridWorld/grading.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/02_Jun-17-01-54-07/all_py_files_snapshot/BerkeleyGridWorld/graphicsCrawlerDisplay.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/02_Jun-17-01-54-07/all_py_files_snapshot/BerkeleyGridWorld/graphicsDisplay.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/02_Jun-17-01-54-07/all_py_files_snapshot/BerkeleyGridWorld/graphicsGridworldDisplay.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/02_Jun-17-01-54-07/all_py_files_snapshot/BerkeleyGridWorld/graphicsUtils.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/02_Jun-17-01-54-07/all_py_files_snapshot/BerkeleyGridWorld/gridworld.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/02_Jun-17-01-54-07/all_py_files_snapshot/BerkeleyGridWorld/keyboardAgents.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/02_Jun-17-01-54-07/all_py_files_snapshot/BerkeleyGridWorld/layout.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/02_Jun-17-01-54-07/all_py_files_snapshot/BerkeleyGridWorld/learningAgents.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/02_Jun-17-01-54-07/all_py_files_snapshot/BerkeleyGridWorld/mdp.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/02_Jun-17-01-54-07/all_py_files_snapshot/BerkeleyGridWorld/pacman.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/02_Jun-17-01-54-07/all_py_files_snapshot/BerkeleyGridWorld/pacmanAgents.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/02_Jun-17-01-54-07/all_py_files_snapshot/BerkeleyGridWorld/projectParams.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/02_Jun-17-01-54-07/all_py_files_snapshot/BerkeleyGridWorld/qlearningAgents.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/02_Jun-17-01-54-07/all_py_files_snapshot/BerkeleyGridWorld/reinforcementTestClasses.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/02_Jun-17-01-54-07/all_py_files_snapshot/BerkeleyGridWorld/testClasses.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/02_Jun-17-01-54-07/all_py_files_snapshot/BerkeleyGridWorld/testParser.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/02_Jun-17-01-54-07/all_py_files_snapshot/BerkeleyGridWorld/textDisplay.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/02_Jun-17-01-54-07/all_py_files_snapshot/BerkeleyGridWorld/textGridworldDisplay.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/02_Jun-17-01-54-07/all_py_files_snapshot/BerkeleyGridWorld/util.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/02_Jun-17-01-54-07/all_py_files_snapshot/BerkeleyGridWorld/valueIterationAgents.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/02_Jun-17-01-54-07/all_py_files_snapshot/__init__.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/02_Jun-17-01-54-07/all_py_files_snapshot/experiment/__init__.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/02_Jun-17-01-54-07/all_py_files_snapshot/experiment/expr_runner.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/02_Jun-17-01-54-07/all_py_files_snapshot/input/__init__.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/02_Jun-17-01-54-07/all_py_files_snapshot/input/getchar.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/02_Jun-17-01-54-07/all_py_files_snapshot/input/user_input.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/02_Jun-17-01-54-07/expr_runner.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/02_Jun-17-01-54-07/log.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/02_Jun-17-01-54-07/user_input.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/03_Jun-17-01-57-36/all_py_files_snapshot/BerkeleyGridWorld/__init__.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/03_Jun-17-01-57-36/all_py_files_snapshot/BerkeleyGridWorld/analysis.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/03_Jun-17-01-57-36/all_py_files_snapshot/BerkeleyGridWorld/autograder.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/03_Jun-17-01-57-36/all_py_files_snapshot/BerkeleyGridWorld/crawler.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/03_Jun-17-01-57-36/all_py_files_snapshot/BerkeleyGridWorld/environment.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/03_Jun-17-01-57-36/all_py_files_snapshot/BerkeleyGridWorld/featureExtractors.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/03_Jun-17-01-57-36/all_py_files_snapshot/BerkeleyGridWorld/game.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/03_Jun-17-01-57-36/all_py_files_snapshot/BerkeleyGridWorld/ghostAgents.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/03_Jun-17-01-57-36/all_py_files_snapshot/BerkeleyGridWorld/grading.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/03_Jun-17-01-57-36/all_py_files_snapshot/BerkeleyGridWorld/graphicsCrawlerDisplay.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/03_Jun-17-01-57-36/all_py_files_snapshot/BerkeleyGridWorld/graphicsDisplay.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/03_Jun-17-01-57-36/all_py_files_snapshot/BerkeleyGridWorld/graphicsGridworldDisplay.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/03_Jun-17-01-57-36/all_py_files_snapshot/BerkeleyGridWorld/graphicsUtils.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/03_Jun-17-01-57-36/all_py_files_snapshot/BerkeleyGridWorld/gridworld.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/03_Jun-17-01-57-36/all_py_files_snapshot/BerkeleyGridWorld/keyboardAgents.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/03_Jun-17-01-57-36/all_py_files_snapshot/BerkeleyGridWorld/layout.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/03_Jun-17-01-57-36/all_py_files_snapshot/BerkeleyGridWorld/learningAgents.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/03_Jun-17-01-57-36/all_py_files_snapshot/BerkeleyGridWorld/mdp.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/03_Jun-17-01-57-36/all_py_files_snapshot/BerkeleyGridWorld/pacman.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/03_Jun-17-01-57-36/all_py_files_snapshot/BerkeleyGridWorld/pacmanAgents.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/03_Jun-17-01-57-36/all_py_files_snapshot/BerkeleyGridWorld/projectParams.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/03_Jun-17-01-57-36/all_py_files_snapshot/BerkeleyGridWorld/qlearningAgents.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/03_Jun-17-01-57-36/all_py_files_snapshot/BerkeleyGridWorld/reinforcementTestClasses.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/03_Jun-17-01-57-36/all_py_files_snapshot/BerkeleyGridWorld/testClasses.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/03_Jun-17-01-57-36/all_py_files_snapshot/BerkeleyGridWorld/testParser.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/03_Jun-17-01-57-36/all_py_files_snapshot/BerkeleyGridWorld/textDisplay.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/03_Jun-17-01-57-36/all_py_files_snapshot/BerkeleyGridWorld/textGridworldDisplay.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/03_Jun-17-01-57-36/all_py_files_snapshot/BerkeleyGridWorld/util.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/03_Jun-17-01-57-36/all_py_files_snapshot/BerkeleyGridWorld/valueIterationAgents.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/03_Jun-17-01-57-36/all_py_files_snapshot/__init__.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/03_Jun-17-01-57-36/all_py_files_snapshot/experiment/__init__.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/03_Jun-17-01-57-36/all_py_files_snapshot/experiment/expr_runner.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/03_Jun-17-01-57-36/all_py_files_snapshot/input/__init__.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/03_Jun-17-01-57-36/all_py_files_snapshot/input/getchar.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/03_Jun-17-01-57-36/all_py_files_snapshot/input/user_input.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/03_Jun-17-01-57-36/expr_runner.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/03_Jun-17-01-57-36/log.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/03_Jun-17-01-57-36/user_input.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/04_Jun-17-02-00-51/all_py_files_snapshot/BerkeleyGridWorld/__init__.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/04_Jun-17-02-00-51/all_py_files_snapshot/BerkeleyGridWorld/analysis.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/04_Jun-17-02-00-51/all_py_files_snapshot/BerkeleyGridWorld/autograder.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/04_Jun-17-02-00-51/all_py_files_snapshot/BerkeleyGridWorld/crawler.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/04_Jun-17-02-00-51/all_py_files_snapshot/BerkeleyGridWorld/environment.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/04_Jun-17-02-00-51/all_py_files_snapshot/BerkeleyGridWorld/featureExtractors.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/04_Jun-17-02-00-51/all_py_files_snapshot/BerkeleyGridWorld/game.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/04_Jun-17-02-00-51/all_py_files_snapshot/BerkeleyGridWorld/ghostAgents.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/04_Jun-17-02-00-51/all_py_files_snapshot/BerkeleyGridWorld/grading.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/04_Jun-17-02-00-51/all_py_files_snapshot/BerkeleyGridWorld/graphicsCrawlerDisplay.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/04_Jun-17-02-00-51/all_py_files_snapshot/BerkeleyGridWorld/graphicsDisplay.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/04_Jun-17-02-00-51/all_py_files_snapshot/BerkeleyGridWorld/graphicsGridworldDisplay.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/04_Jun-17-02-00-51/all_py_files_snapshot/BerkeleyGridWorld/graphicsUtils.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/04_Jun-17-02-00-51/all_py_files_snapshot/BerkeleyGridWorld/gridworld.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/04_Jun-17-02-00-51/all_py_files_snapshot/BerkeleyGridWorld/keyboardAgents.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/04_Jun-17-02-00-51/all_py_files_snapshot/BerkeleyGridWorld/layout.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/04_Jun-17-02-00-51/all_py_files_snapshot/BerkeleyGridWorld/learningAgents.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/04_Jun-17-02-00-51/all_py_files_snapshot/BerkeleyGridWorld/mdp.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/04_Jun-17-02-00-51/all_py_files_snapshot/BerkeleyGridWorld/pacman.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/04_Jun-17-02-00-51/all_py_files_snapshot/BerkeleyGridWorld/pacmanAgents.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/04_Jun-17-02-00-51/all_py_files_snapshot/BerkeleyGridWorld/projectParams.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/04_Jun-17-02-00-51/all_py_files_snapshot/BerkeleyGridWorld/qlearningAgents.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/04_Jun-17-02-00-51/all_py_files_snapshot/BerkeleyGridWorld/reinforcementTestClasses.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/04_Jun-17-02-00-51/all_py_files_snapshot/BerkeleyGridWorld/testClasses.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/04_Jun-17-02-00-51/all_py_files_snapshot/BerkeleyGridWorld/testParser.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/04_Jun-17-02-00-51/all_py_files_snapshot/BerkeleyGridWorld/textDisplay.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/04_Jun-17-02-00-51/all_py_files_snapshot/BerkeleyGridWorld/textGridworldDisplay.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/04_Jun-17-02-00-51/all_py_files_snapshot/BerkeleyGridWorld/util.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/04_Jun-17-02-00-51/all_py_files_snapshot/BerkeleyGridWorld/valueIterationAgents.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/04_Jun-17-02-00-51/all_py_files_snapshot/__init__.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/04_Jun-17-02-00-51/all_py_files_snapshot/experiment/__init__.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/04_Jun-17-02-00-51/all_py_files_snapshot/experiment/expr_runner.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/04_Jun-17-02-00-51/all_py_files_snapshot/input/__init__.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/04_Jun-17-02-00-51/all_py_files_snapshot/input/getchar.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/04_Jun-17-02-00-51/all_py_files_snapshot/input/user_input.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/04_Jun-17-02-00-51/expr_runner.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/04_Jun-17-02-00-51/log.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/04_Jun-17-02-00-51/user_input.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/05_Jun-17-02-01-55/all_py_files_snapshot/BerkeleyGridWorld/__init__.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/05_Jun-17-02-01-55/all_py_files_snapshot/BerkeleyGridWorld/analysis.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/05_Jun-17-02-01-55/all_py_files_snapshot/BerkeleyGridWorld/autograder.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/05_Jun-17-02-01-55/all_py_files_snapshot/BerkeleyGridWorld/crawler.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/05_Jun-17-02-01-55/all_py_files_snapshot/BerkeleyGridWorld/environment.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/05_Jun-17-02-01-55/all_py_files_snapshot/BerkeleyGridWorld/featureExtractors.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/05_Jun-17-02-01-55/all_py_files_snapshot/BerkeleyGridWorld/game.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/05_Jun-17-02-01-55/all_py_files_snapshot/BerkeleyGridWorld/ghostAgents.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/05_Jun-17-02-01-55/all_py_files_snapshot/BerkeleyGridWorld/grading.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/05_Jun-17-02-01-55/all_py_files_snapshot/BerkeleyGridWorld/graphicsCrawlerDisplay.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/05_Jun-17-02-01-55/all_py_files_snapshot/BerkeleyGridWorld/graphicsDisplay.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/05_Jun-17-02-01-55/all_py_files_snapshot/BerkeleyGridWorld/graphicsGridworldDisplay.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/05_Jun-17-02-01-55/all_py_files_snapshot/BerkeleyGridWorld/graphicsUtils.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/05_Jun-17-02-01-55/all_py_files_snapshot/BerkeleyGridWorld/gridworld.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/05_Jun-17-02-01-55/all_py_files_snapshot/BerkeleyGridWorld/keyboardAgents.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/05_Jun-17-02-01-55/all_py_files_snapshot/BerkeleyGridWorld/layout.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/05_Jun-17-02-01-55/all_py_files_snapshot/BerkeleyGridWorld/learningAgents.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/05_Jun-17-02-01-55/all_py_files_snapshot/BerkeleyGridWorld/mdp.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/05_Jun-17-02-01-55/all_py_files_snapshot/BerkeleyGridWorld/pacman.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/05_Jun-17-02-01-55/all_py_files_snapshot/BerkeleyGridWorld/pacmanAgents.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/05_Jun-17-02-01-55/all_py_files_snapshot/BerkeleyGridWorld/projectParams.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/05_Jun-17-02-01-55/all_py_files_snapshot/BerkeleyGridWorld/qlearningAgents.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/05_Jun-17-02-01-55/all_py_files_snapshot/BerkeleyGridWorld/reinforcementTestClasses.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/05_Jun-17-02-01-55/all_py_files_snapshot/BerkeleyGridWorld/testClasses.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/05_Jun-17-02-01-55/all_py_files_snapshot/BerkeleyGridWorld/testParser.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/05_Jun-17-02-01-55/all_py_files_snapshot/BerkeleyGridWorld/textDisplay.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/05_Jun-17-02-01-55/all_py_files_snapshot/BerkeleyGridWorld/textGridworldDisplay.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/05_Jun-17-02-01-55/all_py_files_snapshot/BerkeleyGridWorld/util.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/05_Jun-17-02-01-55/all_py_files_snapshot/BerkeleyGridWorld/valueIterationAgents.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/05_Jun-17-02-01-55/all_py_files_snapshot/__init__.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/05_Jun-17-02-01-55/all_py_files_snapshot/experiment/__init__.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/05_Jun-17-02-01-55/all_py_files_snapshot/experiment/expr_runner.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/05_Jun-17-02-01-55/all_py_files_snapshot/input/__init__.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/05_Jun-17-02-01-55/all_py_files_snapshot/input/getchar.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/05_Jun-17-02-01-55/all_py_files_snapshot/input/user_input.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/05_Jun-17-02-01-55/expr_runner.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/05_Jun-17-02-01-55/log.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/06_Jun-17-02-11-44/all_py_files_snapshot/BerkeleyGridWorld/__init__.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/06_Jun-17-02-11-44/all_py_files_snapshot/BerkeleyGridWorld/analysis.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/06_Jun-17-02-11-44/all_py_files_snapshot/BerkeleyGridWorld/autograder.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/06_Jun-17-02-11-44/all_py_files_snapshot/BerkeleyGridWorld/crawler.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/06_Jun-17-02-11-44/all_py_files_snapshot/BerkeleyGridWorld/environment.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/06_Jun-17-02-11-44/all_py_files_snapshot/BerkeleyGridWorld/featureExtractors.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/06_Jun-17-02-11-44/all_py_files_snapshot/BerkeleyGridWorld/game.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/06_Jun-17-02-11-44/all_py_files_snapshot/BerkeleyGridWorld/ghostAgents.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/06_Jun-17-02-11-44/all_py_files_snapshot/BerkeleyGridWorld/grading.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/06_Jun-17-02-11-44/all_py_files_snapshot/BerkeleyGridWorld/graphicsCrawlerDisplay.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/06_Jun-17-02-11-44/all_py_files_snapshot/BerkeleyGridWorld/graphicsDisplay.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/06_Jun-17-02-11-44/all_py_files_snapshot/BerkeleyGridWorld/graphicsGridworldDisplay.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/06_Jun-17-02-11-44/all_py_files_snapshot/BerkeleyGridWorld/graphicsUtils.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/06_Jun-17-02-11-44/all_py_files_snapshot/BerkeleyGridWorld/gridworld.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/06_Jun-17-02-11-44/all_py_files_snapshot/BerkeleyGridWorld/keyboardAgents.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/06_Jun-17-02-11-44/all_py_files_snapshot/BerkeleyGridWorld/layout.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/06_Jun-17-02-11-44/all_py_files_snapshot/BerkeleyGridWorld/learningAgents.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/06_Jun-17-02-11-44/all_py_files_snapshot/BerkeleyGridWorld/mdp.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/06_Jun-17-02-11-44/all_py_files_snapshot/BerkeleyGridWorld/pacman.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/06_Jun-17-02-11-44/all_py_files_snapshot/BerkeleyGridWorld/pacmanAgents.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/06_Jun-17-02-11-44/all_py_files_snapshot/BerkeleyGridWorld/projectParams.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/06_Jun-17-02-11-44/all_py_files_snapshot/BerkeleyGridWorld/qlearningAgents.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/06_Jun-17-02-11-44/all_py_files_snapshot/BerkeleyGridWorld/reinforcementTestClasses.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/06_Jun-17-02-11-44/all_py_files_snapshot/BerkeleyGridWorld/testClasses.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/06_Jun-17-02-11-44/all_py_files_snapshot/BerkeleyGridWorld/testParser.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/06_Jun-17-02-11-44/all_py_files_snapshot/BerkeleyGridWorld/textDisplay.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/06_Jun-17-02-11-44/all_py_files_snapshot/BerkeleyGridWorld/textGridworldDisplay.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/06_Jun-17-02-11-44/all_py_files_snapshot/BerkeleyGridWorld/util.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/06_Jun-17-02-11-44/all_py_files_snapshot/BerkeleyGridWorld/valueIterationAgents.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/06_Jun-17-02-11-44/all_py_files_snapshot/__init__.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/06_Jun-17-02-11-44/all_py_files_snapshot/experiment/__init__.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/06_Jun-17-02-11-44/all_py_files_snapshot/experiment/expr_runner.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/06_Jun-17-02-11-44/all_py_files_snapshot/input/__init__.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/06_Jun-17-02-11-44/all_py_files_snapshot/input/getchar.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/06_Jun-17-02-11-44/all_py_files_snapshot/input/user_input.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/06_Jun-17-02-11-44/expr_runner.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/06_Jun-17-02-11-44/log.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/06_Jun-17-02-11-44/user_input.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/07_Jun-17-02-18-04/all_py_files_snapshot/BerkeleyGridWorld/__init__.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/07_Jun-17-02-18-04/all_py_files_snapshot/BerkeleyGridWorld/analysis.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/07_Jun-17-02-18-04/all_py_files_snapshot/BerkeleyGridWorld/autograder.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/07_Jun-17-02-18-04/all_py_files_snapshot/BerkeleyGridWorld/crawler.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/07_Jun-17-02-18-04/all_py_files_snapshot/BerkeleyGridWorld/environment.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/07_Jun-17-02-18-04/all_py_files_snapshot/BerkeleyGridWorld/featureExtractors.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/07_Jun-17-02-18-04/all_py_files_snapshot/BerkeleyGridWorld/game.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/07_Jun-17-02-18-04/all_py_files_snapshot/BerkeleyGridWorld/ghostAgents.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/07_Jun-17-02-18-04/all_py_files_snapshot/BerkeleyGridWorld/grading.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/07_Jun-17-02-18-04/all_py_files_snapshot/BerkeleyGridWorld/graphicsCrawlerDisplay.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/07_Jun-17-02-18-04/all_py_files_snapshot/BerkeleyGridWorld/graphicsDisplay.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/07_Jun-17-02-18-04/all_py_files_snapshot/BerkeleyGridWorld/graphicsGridworldDisplay.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/07_Jun-17-02-18-04/all_py_files_snapshot/BerkeleyGridWorld/graphicsUtils.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/07_Jun-17-02-18-04/all_py_files_snapshot/BerkeleyGridWorld/gridworld.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/07_Jun-17-02-18-04/all_py_files_snapshot/BerkeleyGridWorld/keyboardAgents.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/07_Jun-17-02-18-04/all_py_files_snapshot/BerkeleyGridWorld/layout.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/07_Jun-17-02-18-04/all_py_files_snapshot/BerkeleyGridWorld/learningAgents.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/07_Jun-17-02-18-04/all_py_files_snapshot/BerkeleyGridWorld/mdp.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/07_Jun-17-02-18-04/all_py_files_snapshot/BerkeleyGridWorld/pacman.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/07_Jun-17-02-18-04/all_py_files_snapshot/BerkeleyGridWorld/pacmanAgents.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/07_Jun-17-02-18-04/all_py_files_snapshot/BerkeleyGridWorld/projectParams.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/07_Jun-17-02-18-04/all_py_files_snapshot/BerkeleyGridWorld/qlearningAgents.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/07_Jun-17-02-18-04/all_py_files_snapshot/BerkeleyGridWorld/reinforcementTestClasses.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/07_Jun-17-02-18-04/all_py_files_snapshot/BerkeleyGridWorld/testClasses.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/07_Jun-17-02-18-04/all_py_files_snapshot/BerkeleyGridWorld/testParser.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/07_Jun-17-02-18-04/all_py_files_snapshot/BerkeleyGridWorld/textDisplay.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/07_Jun-17-02-18-04/all_py_files_snapshot/BerkeleyGridWorld/textGridworldDisplay.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/07_Jun-17-02-18-04/all_py_files_snapshot/BerkeleyGridWorld/util.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/07_Jun-17-02-18-04/all_py_files_snapshot/BerkeleyGridWorld/valueIterationAgents.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/07_Jun-17-02-18-04/all_py_files_snapshot/__init__.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/07_Jun-17-02-18-04/all_py_files_snapshot/experiment/__init__.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/07_Jun-17-02-18-04/all_py_files_snapshot/experiment/expr_runner.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/07_Jun-17-02-18-04/all_py_files_snapshot/input/__init__.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/07_Jun-17-02-18-04/all_py_files_snapshot/input/getchar.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/07_Jun-17-02-18-04/all_py_files_snapshot/input/user_input.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/07_Jun-17-02-18-04/expr_runner.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/07_Jun-17-02-18-04/log.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/07_Jun-17-02-18-04/user_input.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/08_Jun-17-02-19-14/all_py_files_snapshot/BerkeleyGridWorld/__init__.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/08_Jun-17-02-19-14/all_py_files_snapshot/BerkeleyGridWorld/analysis.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/08_Jun-17-02-19-14/all_py_files_snapshot/BerkeleyGridWorld/autograder.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/08_Jun-17-02-19-14/all_py_files_snapshot/BerkeleyGridWorld/crawler.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/08_Jun-17-02-19-14/all_py_files_snapshot/BerkeleyGridWorld/environment.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/08_Jun-17-02-19-14/all_py_files_snapshot/BerkeleyGridWorld/featureExtractors.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/08_Jun-17-02-19-14/all_py_files_snapshot/BerkeleyGridWorld/game.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/08_Jun-17-02-19-14/all_py_files_snapshot/BerkeleyGridWorld/ghostAgents.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/08_Jun-17-02-19-14/all_py_files_snapshot/BerkeleyGridWorld/grading.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/08_Jun-17-02-19-14/all_py_files_snapshot/BerkeleyGridWorld/graphicsCrawlerDisplay.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/08_Jun-17-02-19-14/all_py_files_snapshot/BerkeleyGridWorld/graphicsDisplay.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/08_Jun-17-02-19-14/all_py_files_snapshot/BerkeleyGridWorld/graphicsGridworldDisplay.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/08_Jun-17-02-19-14/all_py_files_snapshot/BerkeleyGridWorld/graphicsUtils.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/08_Jun-17-02-19-14/all_py_files_snapshot/BerkeleyGridWorld/gridworld.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/08_Jun-17-02-19-14/all_py_files_snapshot/BerkeleyGridWorld/keyboardAgents.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/08_Jun-17-02-19-14/all_py_files_snapshot/BerkeleyGridWorld/layout.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/08_Jun-17-02-19-14/all_py_files_snapshot/BerkeleyGridWorld/learningAgents.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/08_Jun-17-02-19-14/all_py_files_snapshot/BerkeleyGridWorld/mdp.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/08_Jun-17-02-19-14/all_py_files_snapshot/BerkeleyGridWorld/pacman.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/08_Jun-17-02-19-14/all_py_files_snapshot/BerkeleyGridWorld/pacmanAgents.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/08_Jun-17-02-19-14/all_py_files_snapshot/BerkeleyGridWorld/projectParams.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/08_Jun-17-02-19-14/all_py_files_snapshot/BerkeleyGridWorld/qlearningAgents.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/08_Jun-17-02-19-14/all_py_files_snapshot/BerkeleyGridWorld/reinforcementTestClasses.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/08_Jun-17-02-19-14/all_py_files_snapshot/BerkeleyGridWorld/testClasses.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/08_Jun-17-02-19-14/all_py_files_snapshot/BerkeleyGridWorld/testParser.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/08_Jun-17-02-19-14/all_py_files_snapshot/BerkeleyGridWorld/textDisplay.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/08_Jun-17-02-19-14/all_py_files_snapshot/BerkeleyGridWorld/textGridworldDisplay.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/08_Jun-17-02-19-14/all_py_files_snapshot/BerkeleyGridWorld/util.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/08_Jun-17-02-19-14/all_py_files_snapshot/BerkeleyGridWorld/valueIterationAgents.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/08_Jun-17-02-19-14/all_py_files_snapshot/__init__.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/08_Jun-17-02-19-14/all_py_files_snapshot/experiment/__init__.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/08_Jun-17-02-19-14/all_py_files_snapshot/experiment/expr_runner.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/08_Jun-17-02-19-14/all_py_files_snapshot/input/__init__.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/08_Jun-17-02-19-14/all_py_files_snapshot/input/getchar.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/08_Jun-17-02-19-14/all_py_files_snapshot/input/user_input.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/08_Jun-17-02-19-14/expr_runner.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/08_Jun-17-02-19-14/log.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/logs/08_Jun-17-02-19-14/user_input.py" afterPath="" />
       <change beforePath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/qlearningAgents.py" afterPath="$PROJECT_DIR$/../../Week3/BerkeleyGridWorld/qlearningAgents.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -359,21 +15,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="python_agent.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="python_agent.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Python Agents/python_agent.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="528">
-              <caret line="24" column="20" lean-forward="false" selection-start-line="24" selection-start-column="20" selection-end-line="24" selection-end-column="20" />
+            <state relative-caret-position="286">
+              <caret line="36" column="34" lean-forward="true" selection-start-line="36" selection-start-column="34" selection-end-line="36" selection-end-column="34" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="python_tamer_agent.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="python_tamer_agent.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Python Agents/python_tamer_agent.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="566">
-              <caret line="116" column="8" lean-forward="false" selection-start-line="116" selection-start-column="8" selection-end-line="117" selection-end-column="35" />
+            <state relative-caret-position="394">
+              <caret line="104" column="11" lean-forward="true" selection-start-line="104" selection-start-column="11" selection-end-line="104" selection-end-column="11" />
               <folding>
                 <element signature="e#109#158#0" expanded="true" />
               </folding>
@@ -735,21 +391,21 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Python Agents/python_agent.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="24" column="20" lean-forward="false" selection-start-line="24" selection-start-column="20" selection-end-line="24" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Python Agents/python_tamer_agent.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="566">
-          <caret line="116" column="8" lean-forward="false" selection-start-line="116" selection-start-column="8" selection-end-line="117" selection-end-column="35" />
+        <state relative-caret-position="394">
+          <caret line="104" column="11" lean-forward="true" selection-start-line="104" selection-start-column="11" selection-end-line="104" selection-end-column="11" />
           <folding>
             <element signature="e#109#158#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Python Agents/python_agent.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="36" column="34" lean-forward="true" selection-start-line="36" selection-start-column="34" selection-end-line="36" selection-end-column="34" />
+          <folding />
         </state>
       </provider>
     </entry>
