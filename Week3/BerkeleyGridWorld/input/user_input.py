@@ -5,6 +5,7 @@
 
 import threading
 from getchar import getChar
+import pygame
 
 
 class ThreadSafeInputList:
@@ -56,6 +57,39 @@ class ReceiveInputThread(threading.Thread):
             self.thread_safe_list.push(ch, self.is_clear)
 
 
+class PygameUserInputModule():
+    def __init__(self):
+        self.shutdown_flag = False
+
+        # init pygame
+        pygame.init()
+        pygame.display.set_caption('User Input')
+        self.screen = pygame.display.set_mode((250, 120))
+
+    def getInput(self):
+        ch = None
+        # Event filtering
+        for event in pygame.event.get():
+            if event.type == pygame.KEYDOWN:
+                if event.key == pygame.K_SPACE:
+                    self.shutdown_flag = True
+                elif event.key == pygame.K_UP:
+                    ch = 'A'
+                elif event.key == pygame.K_DOWN:
+                    ch = 'B'
+                elif event.key == pygame.K_a:
+                    ch = 'a'
+                elif event.key == pygame.K_b:
+                    ch = 'b'
+
+        self.screen.fill((0, 0, 0))
+        pygame.display.flip()
+        return ch
+
+    def isTerminated(self):
+        return self.shutdown_flag
+
+
 class UserInputModule():
     def __init__(self):
         self.inputs = ThreadSafeInputList()
@@ -71,7 +105,7 @@ class UserInputModule():
 
 if __name__ == '__main__':
     def main():
-        user_input_module = UserInputModule()
+        user_input_module = PygameUserInputModule()
         while not user_input_module.isTerminated():
             input_value = user_input_module.getInput()
             if input_value is not None:

@@ -19,6 +19,8 @@ import environment
 import util
 import optparse
 
+from input import user_input
+
 
 class Gridworld(mdp.MarkovDecisionProcess):
     """
@@ -358,51 +360,6 @@ def printString(x):
     print x
 
 
-def runEpisode(agent, m_environment, discount, f_decision, f_display, f_message, f_pause, i_episode):
-    returns_result = 0
-    totalDiscount = 1.0
-    m_environment.reset()
-
-    if 'startEpisode' in dir(agent):
-        agent.startEpisode()
-    f_message("BEGINNING EPISODE: " + str(i_episode) + "\n")
-
-    while True:
-        # DISPLAY CURRENT STATE
-        state = m_environment.getCurrentState()
-        f_display(state)
-        f_pause()
-
-        # END IF IN A TERMINAL STATE
-        actions = m_environment.getPossibleActions(state)
-        if len(actions) == 0:
-            f_message("EPISODE " + str(i_episode) + " COMPLETE: RETURN WAS " + str(returns_result) + "\n")
-            return returns_result
-
-        # GET ACTION (USUALLY FROM AGENT)
-        action = f_decision(state)
-        if action is None:
-            raise Exception('Error: Agent returned None action')
-
-        # EXECUTE ACTION
-        nextState, reward = m_environment.doAction(action)
-        f_message("Started in state: " + str(state) +
-                  "\nTook action: " + str(action) +
-                  "\nEnded in state: " + str(nextState) +
-                  "\nGot reward: " + str(reward) + "\n")
-
-        # UPDATE LEARNER
-        if 'observeTransition' in dir(agent):
-            agent.observeTransition(state, action, nextState, reward)
-
-        returns_result += reward * totalDiscount
-        totalDiscount *= discount
-
-    # noinspection PyUnreachableCode
-    if 'stopEpisode' in dir(agent):
-        agent.stopEpisode()
-
-
 def parseOptions():
     optParser = optparse.OptionParser()
     optParser.add_option('-d', '--discount', action='store',
@@ -471,15 +428,71 @@ def parseOptions():
     return m_opts
 
 
+def runEpisode(agent, m_environment, discount, f_decision
+                , f_display, f_message, f_pause, i_episode, user_input_module=None):
+    returns_result = 0
+    totalDiscount = 1.0
+    m_environment.reset()
+
+    if 'startEpisode' in dir(agent):
+        agent.startEpisode()
+    f_message("BEGINNING EPISODE: " + str(i_episode) + "\n")
+
+    while True:
+        # DISPLAY CURRENT STATE
+        state = m_environment.getCurrentState()
+        f_display(state)
+        f_pause()
+
+        # END IF IN A TERMINAL STATE
+        actions = m_environment.getPossibleActions(state)
+        if len(actions) == 0:
+            f_message("EPISODE " + str(i_episode) + " COMPLETE: RETURN WAS " + str(returns_result) + "\n")
+            return returns_result
+
+        # GET ACTION (USUALLY FROM AGENT)
+        action = f_decision(state)
+        if action is None:
+            raise Exception('Error: Agent returned None action')
+
+        # EXECUTE ACTION
+        nextState, reward = m_environment.doAction(action)
+        f_message("Started in state: " + str(state) +
+                  "\nTook action: " + str(action) +
+                  "\nEnded in state: " + str(nextState) +
+                  "\nGot reward: " + str(reward) + "\n")
+
+        # UPDATE LEARNER
+        if 'observeTransition' in dir(agent):
+            agent.observeTransition(state, action, nextState, reward)
+
+        if user_input_module is not None:
+            human_signal = user_input_module.getInput()
+            print(' ----------- human signal ' + human_signal)
+
+        returns_result += reward * totalDiscount
+        totalDiscount *= discount
+
+    # noinspection PyUnreachableCode
+    if 'stopEpisode' in dir(agent):
+        agent.stopEpisode()
+
+
 class TamerGridWorldExperiment():
     # noinspection PyUnresolvedReferences
     def __init__(self, grid_name='DiscountGrid', discount=0.9, learning_rate=0.5, living_reward=0.0
-                 , noise=0.2, epsilon=0.3, display_speed=1.0
+                 , noise=0.2, epsilon=0.3, display_speed=0.1
                  , grid_size=150, text_only=False, n_episodes=10):
         self.text_only = text_only
         self.display_speed = display_speed
         self.n_episodes = n_episodes
         self.discount = discount
+
+        ###########################
+        # GET THE INPUT MODULE
+        ###########################
+
+        self.user_input_module = user_input.PygameUserInputModule()
 
         ###########################
         # GET THE GRIDWORLD
@@ -552,7 +565,7 @@ class TamerGridWorldExperiment():
         for i_episode in range(1, self.n_episodes + 1):
             total_returns += runEpisode(self.agent, self.env, self.discount
                                         , decision_callback, display_callback, message_callback
-                                        , pause_callback, i_episode)
+                                        , pause_callback, i_episode, user_input_module=self.user_input_module)
         if self.n_episodes > 0:
             print
             print "AVERAGE RETURNS FROM START STATE: " + str((total_returns + 0.0) / self.n_episodes)
