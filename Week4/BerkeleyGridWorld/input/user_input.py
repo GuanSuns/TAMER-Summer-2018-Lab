@@ -91,16 +91,26 @@ class PygameUserInputModule():
 
 
 class UserInputModule():
-    def __init__(self):
-        self.inputs = ThreadSafeInputList()
-        self.input_thread = ReceiveInputThread(self.inputs)
-        self.input_thread.start()
+    def __init__(self, is_asyn=True):
+        """ is_aysn: control whether to receive user input asynchronously """
+        self.is_asyn = is_asyn
+
+        if is_asyn:
+            self.inputs = ThreadSafeInputList()
+            self.input_thread = ReceiveInputThread(self.inputs)
+            self.input_thread.start()
 
     def getInput(self):
-        return self.inputs.get_last(is_clear=True)
+        if self.is_asyn:
+            return self.inputs.get_last(is_clear=True)
+        else:
+            return getChar()
 
     def isTerminated(self):
-        return self.input_thread.shutdown_flag
+        if self.is_asyn:
+            return self.input_thread.shutdown_flag
+        else:
+            return False
 
 
 if __name__ == '__main__':
