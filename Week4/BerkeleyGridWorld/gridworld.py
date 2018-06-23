@@ -491,7 +491,7 @@ class TamerGridWorldExperiment():
                  , noise=0.2, epsilon=0.3, display_speed=0.5
                  , grid_size=150, text_only=False, n_episodes=100
                  , agent_window_size=1, agent_max_n_experiences=1000
-                 , is_use_q_agent=False):
+                 , is_use_q_agent=False, is_asyn_input=True):
         self.text_only = text_only
         self.display_speed = display_speed
         self.n_episodes = n_episodes
@@ -504,7 +504,7 @@ class TamerGridWorldExperiment():
         if is_use_q_agent:
             self.user_input_module = None
         else:
-            self.user_input_module = user_input.UserInputModule()
+            self.user_input_module = user_input.UserInputModule(is_asyn=is_asyn_input)
 
         ###########################
         # GET THE GRIDWORLD
@@ -552,7 +552,9 @@ class TamerGridWorldExperiment():
             self.agent = qlearningAgents.QLearningAgent(**q_learn_opts)
         else:
             self.agent = qlearningAgents.TamerQAgent(max_n_experiences=agent_max_n_experiences
-                                                     , window_size=agent_window_size, **q_learn_opts)
+                                                     , window_size=agent_window_size
+                                                     , is_asyn_input=is_asyn_input
+                                                     , **q_learn_opts)
 
     def run_episodes(self):
         ###########################

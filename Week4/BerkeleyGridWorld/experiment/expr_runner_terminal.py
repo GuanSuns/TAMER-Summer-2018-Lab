@@ -15,6 +15,7 @@ def run_expr():
     epsilon = 0.3   # exploration rate
     window_size = 1     # Tamer agent window size
     max_n_experience = 1000     # Tamer agent maximum number of experiences
+    is_asyn = False      # whether to receive input asynchronously
 
     # learning environment parameters
     n_episodes = 100
@@ -26,7 +27,10 @@ def run_expr():
     postfix += '_alpha' + str(alpha)
     postfix += '_epsilon' + str(epsilon)
     postfix += '_k' + str(n_episodes)
-    postfix += '_winSize' + str(window_size)
+    if is_asyn:
+        postfix += '_winSize' + str(window_size)
+    else:
+        postfix += '_synchInput'
     postfix += '_speed' + str(display_speed)
 
     log_dir = '/Users/lguan/Documents/Study/Research/Summer 2018/Week3/BerkeleyGridWorld/logs'
@@ -45,6 +49,7 @@ def run_expr():
                                                         , agent_window_size=window_size
                                                         , n_episodes=n_episodes
                                                         , display_speed=display_speed
+                                                        , is_asyn_input=is_asyn
                                                         , is_use_q_agent=is_use_q_agent)
     tamerGridWorld.run_episodes()
 

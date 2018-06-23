@@ -147,7 +147,7 @@ class QLearningAgent(ReinforcementAgent):
 
 
 class TamerQAgent(QLearningAgent):
-    def __init__(self, max_n_experiences=1000, window_size=1, **args):
+    def __init__(self, max_n_experiences=1000, window_size=1, is_asyn_input=True, **args):
         """
             window_size: use the experiences within 2 seconds to update the weights
             max_n_experiences: maximum number of experiences stored in the history list
@@ -163,6 +163,7 @@ class TamerQAgent(QLearningAgent):
         self.max_n_experiences = max_n_experiences
         self.experiences = list()
         self.window_size = window_size
+        self.is_asyn_input = is_asyn_input
 
     def receiveHumanSignal(self, human_signal):
         """ receive human signal and update the weights """
@@ -170,26 +171,43 @@ class TamerQAgent(QLearningAgent):
         if human_signal == 0:
             return
 
-        # clear stale data
-        current_time = time.time()
-        while len(self.experiences) > 0:
-            experience = self.experiences[0]
-            if experience['time'] < current_time - self.window_size:
-                self.experiences.pop(0)
-            else:
-                break
+        # if pause-and-wait-for-user-feedback, only update according to the latest observation
+        if not self.is_asyn_input:
+            if len(self.experiences) > 0:
+                # get the latest experience
+                experience = self.experiences[len(self.experiences)-1]
+                
+                # do the update
+                action = experience['action']
+                state = experience['state']
+                oldQValue = self.qValues[(state, action)]
+                newQValue = oldQValue + self.alpha * (human_signal - oldQValue)
+                self.qValues[(state, action)] = newQValue
 
-        # update q-values
-        alpha = self.alpha
-        for experience in self.experiences:
-            action = experience['action']
-            state = experience['state']
-            oldQValue = self.qValues[(state, action)]
-            newQValue = oldQValue + alpha * (human_signal - oldQValue)
-            self.qValues[(state, action)] = newQValue
+                # clear experiences
+                self.experiences = list()
 
-        # clear experiences
-        self.experiences = list()
+        else:
+            # clear stale data
+            current_time = time.time()
+            while len(self.experiences) > 0:
+                experience = self.experiences[0]
+                if experience['time'] < current_time - self.window_size:
+                    self.experiences.pop(0)
+                else:
+                    break
+
+            # update q-values
+            alpha = self.alpha
+            for experience in self.experiences:
+                action = experience['action']
+                state = experience['state']
+                oldQValue = self.qValues[(state, action)]
+                newQValue = oldQValue + alpha * (human_signal - oldQValue)
+                self.qValues[(state, action)] = newQValue
+
+            # clear experiences
+            self.experiences = list()
 
     def update(self, state, action, nextState, reward):
         """
