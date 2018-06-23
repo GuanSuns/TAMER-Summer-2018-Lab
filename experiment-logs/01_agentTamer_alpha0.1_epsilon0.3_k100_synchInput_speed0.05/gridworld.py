@@ -448,6 +448,8 @@ def runEpisode(agent, m_environment, discount, f_decision
 
         # get human feedback
         if not is_first_step and user_input_module is not None:
+            is_first_step = False
+
             human_signal = user_input_module.getInput()
             if human_signal is not None and human_signal == 'a':
                 f_message("Receive Positive (+1) human signal\n")
@@ -481,7 +483,6 @@ def runEpisode(agent, m_environment, discount, f_decision
 
         returns_result += reward * totalDiscount
         totalDiscount *= discount
-        is_first_step = False
 
     # noinspection PyUnreachableCode
     if 'stopEpisode' in dir(agent):

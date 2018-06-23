@@ -439,22 +439,11 @@ def runEpisode(agent, m_environment, discount, f_decision
         agent.startEpisode()
     f_message("BEGINNING EPISODE: " + str(i_episode) + "\n")
 
-    is_first_step = True
     while True:
         # DISPLAY CURRENT STATE
         state = m_environment.getCurrentState()
         f_display(state)
         f_pause()
-
-        # get human feedback
-        if not is_first_step and user_input_module is not None:
-            human_signal = user_input_module.getInput()
-            if human_signal is not None and human_signal == 'a':
-                f_message("Receive Positive (+1) human signal\n")
-                agent.receiveHumanSignal(human_signal=1)
-            elif human_signal is not None and human_signal == 's':
-                f_message("Receive Negative (-1) human signal\n")
-                agent.receiveHumanSignal(human_signal=-1)
 
         # END IF IN A TERMINAL STATE
         actions = m_environment.getPossibleActions(state)
@@ -479,9 +468,20 @@ def runEpisode(agent, m_environment, discount, f_decision
         if 'observeTransition' in dir(agent):
             agent.observeTransition(state, action, nextState, reward)
 
+        if user_input_module is not None:
+            human_signal = user_input_module.getInput()
+
+            print(human_signal)
+
+            if human_signal is not None and human_signal == 'a':
+                f_message("Receive Positive (+1) human signal\n")
+                agent.receiveHumanSignal(human_signal=1)
+            elif human_signal is not None and human_signal == 's':
+                f_message("Receive Negative (-1) human signal\n")
+                agent.receiveHumanSignal(human_signal=-1)
+
         returns_result += reward * totalDiscount
         totalDiscount *= discount
-        is_first_step = False
 
     # noinspection PyUnreachableCode
     if 'stopEpisode' in dir(agent):
