@@ -433,9 +433,8 @@ def parseOptions():
 
 
 def runEpisode(agent, m_environment, discount, f_decision
-                , f_display, f_message, f_pause, i_episode, user_input_module=None, global_step=0):
-    episode_rewards = 0
-    episode_step = 0
+                , f_display, f_message, f_pause, i_episode, user_input_module=None):
+    returns_result = 0
     totalDiscount = 1.0
     m_environment.reset()
 
@@ -443,6 +442,7 @@ def runEpisode(agent, m_environment, discount, f_decision
         agent.startEpisode()
     f_message("BEGINNING EPISODE: " + str(i_episode) + "\n")
 
+    is_first_step = True
     while True:
         # DISPLAY CURRENT STATE
         state = m_environment.getCurrentState()
@@ -450,7 +450,7 @@ def runEpisode(agent, m_environment, discount, f_decision
         f_pause()
 
         # get human feedback
-        if episode_step != 0 and user_input_module is not None:
+        if not is_first_step and user_input_module is not None:
             human_signal = user_input_module.getInput()
             if human_signal is not None and human_signal == 'a':
                 f_message("Receive Positive (+1) human signal\n")
@@ -462,12 +462,9 @@ def runEpisode(agent, m_environment, discount, f_decision
         # END IF IN A TERMINAL STATE
         actions = m_environment.getPossibleActions(state)
         if len(actions) == 0:
-            f_message("--------------------------------")
-            f_message("EPISODE " + str(i_episode) + " COMPLETE: RETURN WAS " + str(episode_rewards) + "\n")
-            f_message("TOTAL STEPS: " + str(global_step) + ", EPISODE STEPS: " + episode_step)
+            f_message("EPISODE " + str(i_episode) + " COMPLETE: RETURN WAS " + str(returns_result) + "\n")
             f_message("Learned QValue: " + str(agent.getQValues()) + "\n")
-            f_message("--------------------------------")
-            return (episode_rewards, global_step)
+            return returns_result
 
         # GET ACTION (USUALLY FROM AGENT)
         action = f_decision(state)
@@ -476,8 +473,7 @@ def runEpisode(agent, m_environment, discount, f_decision
 
         # EXECUTE ACTION
         nextState, reward = m_environment.doAction(action)
-        f_message("Step: " + str(episode_step) +
-                  ", S: " + str(state) +
+        f_message("S: " + str(state) +
                   ", A: " + str(action) +
                   ", S': " + str(nextState) +
                   ", R: " + str(reward) + "\n")
@@ -486,10 +482,9 @@ def runEpisode(agent, m_environment, discount, f_decision
         if 'observeTransition' in dir(agent):
             agent.observeTransition(state, action, nextState, reward)
 
-        episode_rewards += reward * totalDiscount
+        returns_result += reward * totalDiscount
         totalDiscount *= discount
-        episode_step += 1
-        global_step += 1
+        is_first_step = False
 
     # noinspection PyUnreachableCode
     if 'stopEpisode' in dir(agent):
@@ -591,17 +586,11 @@ class TamerGridWorldExperiment():
             print "RUNNING", self.n_episodes, "EPISODES"
             print
         total_returns = 0
-        total_steps = 0
 
         for i_episode in range(1, self.n_episodes + 1):
-            (episode_rewards, global_step) = runEpisode(self.agent, self.env, self.discount
-                                                        , decision_callback, display_callback, message_callback
-                                                        , pause_callback, i_episode
-                                                        , user_input_module=self.user_input_module
-                                                        , global_step=total_steps)
-            total_returns += episode_rewards
-            total_steps = global_step
-
+            total_returns += runEpisode(self.agent, self.env, self.discount
+                                        , decision_callback, display_callback, message_callback
+                                        , pause_callback, i_episode, user_input_module=self.user_input_module)
         if self.n_episodes > 0:
             print
             print "AVERAGE RETURNS FROM START STATE: " + str((total_returns + 0.0) / self.n_episodes)
@@ -750,14 +739,8 @@ if __name__ == '__main__':
         print "RUNNING", opts.episodes, "EPISODES"
         print
     returns = 0
-    total_steps = 0
     for episode in range(1, opts.episodes+1):
-        (episode_rewards, global_step) = runEpisode(a, env, opts.discount, decisionCallback
-                                                    , displayCallback, messageCallback
-                                                    , pauseCallback, episode
-                                                    , global_step=total_steps)
-        returns += episode_rewards
-        total_steps = global_step
+        returns += runEpisode(a, env, opts.discount, decisionCallback, displayCallback, messageCallback, pauseCallback, episode)
     if opts.episodes > 0:
         print
         print "AVERAGE RETURNS FROM START STATE: " + str((returns+0.0) / opts.episodes)
