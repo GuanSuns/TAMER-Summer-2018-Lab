@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="2cc07f5f-c6ba-40b1-99dc-e0ae1cdb89a6" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/experiment/expr_runner_terminal.py" afterPath="$PROJECT_DIR$/experiment/expr_runner_terminal.py" />
-      <change beforePath="$PROJECT_DIR$/gridworld.py" afterPath="$PROJECT_DIR$/gridworld.py" />
+      <change beforePath="$PROJECT_DIR$/qlearningAgents.py" afterPath="$PROJECT_DIR$/qlearningAgents.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -17,8 +17,8 @@
       <file leaf-file-name="expr_runner_terminal.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/experiment/expr_runner_terminal.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="82">
-              <caret line="21" column="23" lean-forward="false" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
+            <state relative-caret-position="365">
+              <caret line="25" column="21" lean-forward="false" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="21" />
               <folding>
                 <element signature="e#109#206#0" expanded="true" />
               </folding>
@@ -26,11 +26,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="qlearningAgents.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="qlearningAgents.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/qlearningAgents.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4782">
-              <caret line="228" column="11" lean-forward="true" selection-start-line="228" selection-start-column="11" selection-end-line="228" selection-end-column="11" />
+            <state relative-caret-position="407">
+              <caret line="243" column="61" lean-forward="false" selection-start-line="243" selection-start-column="61" selection-end-line="243" selection-end-column="61" />
               <folding>
                 <element signature="e#668#686#0" expanded="true" />
               </folding>
@@ -52,17 +52,17 @@
         <entry file="file://$PROJECT_DIR$/input/getchar.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="365">
-              <caret line="20" column="13" lean-forward="true" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+              <caret line="20" column="13" lean-forward="false" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="gridworld.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="gridworld.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/gridworld.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1633">
-              <caret line="493" column="24" lean-forward="true" selection-start-line="493" selection-start-column="24" selection-end-line="493" selection-end-column="24" />
+            <state relative-caret-position="173">
+              <caret line="474" column="27" lean-forward="false" selection-start-line="474" selection-start-column="17" selection-end-line="474" selection-end-column="27" />
               <folding>
                 <element signature="e#656#669#0" expanded="true" />
               </folding>
@@ -129,11 +129,11 @@
         <option value="$PROJECT_DIR$/experiment/expr_runner_ide.py" />
         <option value="$PROJECT_DIR$/input/user_input.py" />
         <option value="$PROJECT_DIR$/input/user_input.py" />
-        <option value="$PROJECT_DIR$/qlearningAgents.py" />
-        <option value="$PROJECT_DIR$/qlearningAgents.py" />
+        <option value="$PROJECT_DIR$/gridworld.py" />
+        <option value="$PROJECT_DIR$/gridworld.py" />
         <option value="$PROJECT_DIR$/experiment/expr_runner_terminal.py" />
-        <option value="$PROJECT_DIR$/gridworld.py" />
-        <option value="$PROJECT_DIR$/gridworld.py" />
+        <option value="$PROJECT_DIR$/qlearningAgents.py" />
+        <option value="$PROJECT_DIR$/qlearningAgents.py" />
       </list>
     </option>
   </component>
@@ -461,7 +461,7 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32891566" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2253012" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32891566" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.10722891" sideWeight="0.49181446" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31686747" sideWeight="0.49181446" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32891566" sideWeight="0.49727148" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -754,25 +754,15 @@
     <entry file="file://$PROJECT_DIR$/input/getchar.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="365">
-          <caret line="20" column="13" lean-forward="true" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+          <caret line="20" column="13" lean-forward="false" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/qlearningAgents.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4782">
-          <caret line="228" column="11" lean-forward="true" selection-start-line="228" selection-start-column="11" selection-end-line="228" selection-end-column="11" />
-          <folding>
-            <element signature="e#668#686#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/experiment/expr_runner_terminal.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="82">
-          <caret line="21" column="23" lean-forward="false" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
+        <state relative-caret-position="365">
+          <caret line="25" column="21" lean-forward="false" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="21" />
           <folding>
             <element signature="e#109#206#0" expanded="true" />
           </folding>
@@ -781,10 +771,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/gridworld.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1633">
-          <caret line="493" column="24" lean-forward="true" selection-start-line="493" selection-start-column="24" selection-end-line="493" selection-end-column="24" />
+        <state relative-caret-position="173">
+          <caret line="474" column="27" lean-forward="false" selection-start-line="474" selection-start-column="17" selection-end-line="474" selection-end-column="27" />
           <folding>
             <element signature="e#656#669#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/qlearningAgents.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="407">
+          <caret line="243" column="61" lean-forward="false" selection-start-line="243" selection-start-column="61" selection-end-line="243" selection-end-column="61" />
+          <folding>
+            <element signature="e#668#686#0" expanded="true" />
           </folding>
         </state>
       </provider>

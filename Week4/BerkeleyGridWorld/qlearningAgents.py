@@ -241,7 +241,7 @@ class TamerQAgent(QLearningAgent):
         maxQValue = np.max(qValues)
         softmaxValues = np.exp(qValues - maxQValue) / float(np.sum(np.exp(qValues - maxQValue)))
 
-        actionId = np.random.choice(np.arange(0, len(actions)-1), p=softmaxValues)
+        actionId = np.random.choice(np.arange(0, len(actions)), p=softmaxValues)
         return actions[actionId]
 
     def getAction(self, state):
