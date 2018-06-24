@@ -12,7 +12,7 @@ def run_expr():
     # agent parameters
     is_use_q_agent = False  # use qAgent or use Tamer agent
     alpha = 0.1     # learning rate
-    epsilon = 0.0   # exploration rate
+    epsilon = 0.3   # exploration rate
     window_size = 1     # Tamer agent window size
     max_n_experience = 1000     # Tamer agent maximum number of experiences
     is_asyn = False      # whether to receive input asynchronously

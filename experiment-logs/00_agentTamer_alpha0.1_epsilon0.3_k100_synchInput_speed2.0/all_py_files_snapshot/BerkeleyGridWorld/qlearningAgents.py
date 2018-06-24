@@ -83,22 +83,23 @@ class QLearningAgent(ReinforcementAgent):
 
     def computeActionFromQValues(self, state):
         """
-          Choose the action using softmax function
+          Compute the best action to take in a state.  Note that if there
+          are no legal actions, which is the case at the terminal state,
+          you should return None.
         """
         "*** YOUR CODE HERE ***"
         actions = self.getLegalActions(state)
         if len(actions) == 0:
             return None
 
-        qValues = list()
+        maxAction = None
+        maxQValue = -9999999
         for action in actions:
-            qValue = float(self.getQValue(state, action))
-            qValues.append(qValue)
-        maxQValue = np.max(qValues)
-        softmaxValues = np.exp(qValues - maxQValue) / float(np.sum(np.exp(qValues - maxQValue)))
-
-        actionId = np.random.choice(np.arange(0, len(actions)), p=softmaxValues)
-        return actions[actionId]
+            qValue = self.getQValue(state, action)
+            if qValue > maxQValue:
+                maxQValue = qValue
+                maxAction = action
+        return maxAction
 
     def getAction(self, state):
         """
@@ -223,6 +224,50 @@ class TamerQAgent(QLearningAgent):
         # pop out stale experience
         while len(self.experiences) > self.max_n_experiences:
             self.experiences.pop(0)
+
+    def computeActionFromQValues(self, state):
+        """
+          Choose the action using softmax function
+        """
+        "*** YOUR CODE HERE ***"
+        actions = self.getLegalActions(state)
+        if len(actions) == 0:
+            return None
+
+        qValues = list()
+        for action in actions:
+            qValue = float(self.getQValue(state, action))
+            qValues.append(qValue)
+        maxQValue = np.max(qValues)
+        softmaxValues = np.exp(qValues - maxQValue) / float(np.sum(np.exp(qValues - maxQValue)))
+
+        actionId = np.random.choice(np.arange(0, len(actions)), p=softmaxValues)
+        return actions[actionId]
+
+    def getAction(self, state):
+        """
+          Compute the action to take in the current state.  With
+          probability self.epsilon, we should take a random action and
+          take the best policy action otherwise.  Note that if there are
+          no legal actions, which is the case at the terminal state, you
+          should choose None as the action.
+
+          HINT: You might want to use util.flipCoin(prob)
+          HINT: To pick randomly from a list, use random.choice(list)
+        """
+        # Pick Action
+        legalActions = self.getLegalActions(state)
+        # if there is no legal action
+        if len(legalActions) == 0:
+            return None
+
+        # set the action to the best action
+        action = self.computeActionFromQValues(state)
+        # flip coin with probability of self.epsilon to determine whether to take random action
+        if util.flipCoin(self.epsilon):
+            action = random.choice(legalActions)
+
+        return action
 
 
 class PacmanQAgent(QLearningAgent):

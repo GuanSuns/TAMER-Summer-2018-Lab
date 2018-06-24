@@ -10,7 +10,7 @@ from ..input import user_input
 
 def run_expr():
     # agent parameters
-    is_use_q_agent = False  # use qAgent or use Tamer agent
+    is_use_q_agent = True  # use qAgent or use Tamer agent
     alpha = 0.1     # learning rate
     epsilon = 0.0   # exploration rate
     window_size = 1     # Tamer agent window size

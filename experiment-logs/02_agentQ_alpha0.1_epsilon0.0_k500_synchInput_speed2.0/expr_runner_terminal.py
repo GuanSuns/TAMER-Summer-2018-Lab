@@ -10,7 +10,7 @@ from ..input import user_input
 
 def run_expr():
     # agent parameters
-    is_use_q_agent = False  # use qAgent or use Tamer agent
+    is_use_q_agent = True  # use qAgent or use Tamer agent
     alpha = 0.1     # learning rate
     epsilon = 0.0   # exploration rate
     window_size = 1     # Tamer agent window size
@@ -18,7 +18,7 @@ def run_expr():
     is_asyn = False      # whether to receive input asynchronously
 
     # learning environment parameters
-    n_episodes = 100
+    n_episodes = 500
     display_speed = 2.0
 
     # generate postfix
