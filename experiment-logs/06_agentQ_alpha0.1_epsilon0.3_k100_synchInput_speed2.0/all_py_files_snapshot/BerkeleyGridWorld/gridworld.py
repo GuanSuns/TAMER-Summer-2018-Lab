@@ -27,7 +27,6 @@ class Gridworld(mdp.MarkovDecisionProcess):
     """
       Gridworld
     """
-
     def __init__(self, grid):
         # layout
         if isinstance(grid, list):
@@ -64,7 +63,7 @@ class Gridworld(mdp.MarkovDecisionProcess):
         """
         if state == self.grid.terminalState:
             return ()
-        x, y = state
+        x,y = state
         if type(self.grid[x][y]) == int:
             return ('exit',)
         return ('north', 'west', 'south', 'east')
@@ -140,30 +139,30 @@ class Gridworld(mdp.MarkovDecisionProcess):
 
         successors = []
 
-        northState = (self.__isAllowed(y + 1, x) and (x, y + 1)) or state
-        westState = (self.__isAllowed(y, x - 1) and (x - 1, y)) or state
-        southState = (self.__isAllowed(y - 1, x) and (x, y - 1)) or state
-        eastState = (self.__isAllowed(y, x + 1) and (x + 1, y)) or state
+        northState = (self.__isAllowed(y+1, x) and (x, y+1)) or state
+        westState = (self.__isAllowed(y, x-1) and (x-1, y)) or state
+        southState = (self.__isAllowed(y-1, x) and (x, y-1)) or state
+        eastState = (self.__isAllowed(y, x+1) and (x+1, y)) or state
 
         if action == 'north' or action == 'south':
             if action == 'north':
-                successors.append((northState, 1 - self.noise))
+                successors.append((northState, 1-self.noise))
             else:
-                successors.append((southState, 1 - self.noise))
+                successors.append((southState, 1-self.noise))
 
             massLeft = self.noise
-            successors.append((westState, massLeft / 2.0))
-            successors.append((eastState, massLeft / 2.0))
+            successors.append((westState, massLeft/2.0))
+            successors.append((eastState, massLeft/2.0))
 
         if action == 'west' or action == 'east':
             if action == 'west':
-                successors.append((westState, 1 - self.noise))
+                successors.append((westState, 1-self.noise))
             else:
-                successors.append((eastState, 1 - self.noise))
+                successors.append((eastState, 1-self.noise))
 
             massLeft = self.noise
-            successors.append((northState, massLeft / 2.0))
-            successors.append((southState, massLeft / 2.0))
+            successors.append((northState, massLeft/2.0))
+            successors.append((southState, massLeft/2.0))
 
         successors = self.__aggregate(successors)
 
@@ -234,7 +233,6 @@ class Grid:
 
     The __str__ method constructs an output that is oriented appropriately.
     """
-
     def __init__(self, width, height, initialValue=' '):
         self.width = width
         self.height = height
@@ -302,33 +300,33 @@ def getCliffGrid2():
 
 
 def getDiscountGrid():
-    grid = [[' ', ' ', ' ', ' ', ' '],
-            [' ', '#', ' ', ' ', ' '],
-            [' ', '#', 1, '#', 10],
-            ['S', ' ', ' ', ' ', ' '],
-            [-10, -10, -10, -10, -10]]
+    grid = [[' ', ' ', ' ', ' ', ' '], 
+            [' ', '#', ' ', ' ', ' '], 
+            [' ', '#',  1, '#',  10], 
+            ['S', ' ', ' ', ' ', ' '], 
+            [-10, -10,  -10,  -10,  -10]]
     return Gridworld(grid)
 
 
 def getBridgeGrid():
-    grid = [['#', -100, -100, -100, -100, -100, '#'],
-            [1, 'S', ' ', ' ', ' ', ' ', 10],
-            ['#', -100, -100, -100, -100, -100, '#']]
+    grid = [['#', -100,  -100,  -100,  -100,  -100,  '#'],
+            [1,  'S',   ' ',   ' ',   ' ',   ' ',   10],
+            ['#', -100,  -100,  -100,  -100,  -100,  '#']]
     return Gridworld(grid)
 
 
 def getBookGrid():
-    grid = [[' ', ' ', ' ', +1],
-            [' ', '#', ' ', -1],
+    grid = [[' ', ' ', ' ', +1], 
+            [' ', '#', ' ', -1], 
             ['S', ' ', ' ', ' ']]
     return Gridworld(grid)
 
 
 def getMazeGrid():
-    grid = [[' ', ' ', ' ', +1],
-            ['#', '#', ' ', '#'],
-            [' ', '#', ' ', ' '],
-            [' ', '#', '#', ' '],
+    grid = [[' ', ' ', ' ', +1], 
+            ['#', '#', ' ', '#'], 
+            [' ', '#', ' ', ' '], 
+            [' ', '#', '#', ' '], 
             ['S', ' ', ' ', ' ']]
     return Gridworld(grid)
 
@@ -377,7 +375,7 @@ def parseOptions():
     optParser.add_option('-n', '--noise', action='store',
                          type='float', dest='noise', default=0.2,
                          metavar="P", help='How often action results in ' +
-                                           'unintended direction (default %default)')
+                         'unintended direction (default %default)')
     optParser.add_option('-e', '--epsilon', action='store',
                          type='float', dest='epsilon', default=0.3,
                          metavar="E", help='Chance of taking a random action in q-learning (default %default)')
@@ -393,7 +391,7 @@ def parseOptions():
     optParser.add_option('-g', '--grid', action='store',
                          metavar="G", type='string', dest='grid', default="BookGrid",
                          help='Grid to use (case sensitive; options are BookGrid, BridgeGrid, CliffGrid, MazeGrid, default %default)')
-    optParser.add_option('-w', '--windowSize', metavar="X", type='int', dest='gridSize', default=150,
+    optParser.add_option('-w', '--windowSize', metavar="X", type='int', dest='gridSize',default=150,
                          help='Request a window width of X pixels *per grid cell* (default %default)')
     optParser.add_option('-a', '--agent', action='store', metavar="A",
                          type='string', dest='agent', default="random",
@@ -435,7 +433,7 @@ def parseOptions():
 
 
 def runEpisode(agent, m_environment, discount, f_decision
-               , f_display, f_message, f_pause, i_episode, user_input_module=None, global_step=0):
+                , f_display, f_message, f_pause, i_episode, user_input_module=None, global_step=0):
     episode_rewards = 0
     episode_step = 0
     totalDiscount = 1.0
@@ -466,7 +464,7 @@ def runEpisode(agent, m_environment, discount, f_decision
         if len(actions) == 0:
             f_message("--------------------------------")
             f_message("EPISODE " + str(i_episode) + " COMPLETE: RETURN WAS " + str(episode_rewards) + "\n")
-            f_message("TOTAL STEPS: " + str(global_step) + ", EPISODE STEPS: " + str(episode_step))
+            f_message("TOTAL STEPS: " + str(global_step) + ", EPISODE STEPS: " + episode_step)
             f_message("Learned QValue: " + str(agent.getQValues()) + "\n")
             f_message("--------------------------------")
             return (episode_rewards, global_step)
@@ -630,7 +628,6 @@ if __name__ == '__main__':
 
     # noinspection PyUnresolvedReferences
     import gridworld
-
     mdpFunction = getattr(gridworld, "get" + opts.grid)
     mdp = mdpFunction()
     mdp.setLivingReward(opts.livingReward)
@@ -642,11 +639,9 @@ if __name__ == '__main__':
     ###########################
 
     import textGridworldDisplay
-
     display = textGridworldDisplay.TextGridworldDisplay(mdp)
     if not opts.textDisplay:
         import graphicsGridworldDisplay
-
         display = graphicsGridworldDisplay.GraphicsGridworldDisplay(mdp, opts.gridSize, opts.speed)
     try:
         display.start()
@@ -659,7 +654,6 @@ if __name__ == '__main__':
 
     import valueIterationAgents
     import qlearningAgents
-
     a = None
     if opts.agent == 'value':
         a = valueIterationAgents.ValueIterationAgent(mdp, opts.discount, opts.iters)
@@ -677,7 +671,6 @@ if __name__ == '__main__':
         # # No reason to use the random agent without episodes
         if opts.episodes == 0:
             opts.episodes = 10
-
 
         # noinspection PyUnusedLocal
         class RandomAgent:
@@ -699,8 +692,6 @@ if __name__ == '__main__':
 
             def update(self, state, action, nextState, reward):
                 pass
-
-
         a = RandomAgent()
     else:
         if not opts.manual:
@@ -715,12 +706,12 @@ if __name__ == '__main__':
             if opts.valueSteps:
                 for i in range(opts.iters):
                     tempAgent = valueIterationAgents.ValueIterationAgent(mdp, opts.discount, i)
-                    display.displayValues(tempAgent, message="VALUES AFTER " + str(i) + " ITERATIONS")
+                    display.displayValues(tempAgent, message="VALUES AFTER "+str(i)+" ITERATIONS")
                     display.pause()
 
-            display.displayValues(a, message="VALUES AFTER " + str(opts.iters) + " ITERATIONS")
+            display.displayValues(a, message="VALUES AFTER "+str(opts.iters)+" ITERATIONS")
             display.pause()
-            display.displayQValues(a, message="Q-VALUES AFTER " + str(opts.iters) + " ITERATIONS")
+            display.displayQValues(a, message="Q-VALUES AFTER "+str(opts.iters)+" ITERATIONS")
             display.pause()
     except KeyboardInterrupt:
         sys.exit(0)
@@ -759,26 +750,32 @@ if __name__ == '__main__':
         print "RUNNING", opts.episodes, "EPISODES"
         print
     returns = 0
-    total_n_steps = 0
-    for episode in range(1, opts.episodes + 1):
-        (episode_returns, n_global_step) = runEpisode(a, env, opts.discount, decisionCallback
-                                                      , displayCallback, messageCallback
-                                                      , pauseCallback, episode
-                                                      , global_step=total_n_steps)
-        returns += episode_returns
-        total_n_steps = n_global_step
+    total_steps = 0
+    for episode in range(1, opts.episodes+1):
+        (episode_rewards, global_step) = runEpisode(a, env, opts.discount, decisionCallback
+                                                    , displayCallback, messageCallback
+                                                    , pauseCallback, episode
+                                                    , global_step=total_steps)
+        returns += episode_rewards
+        total_steps = global_step
     if opts.episodes > 0:
         print
-        print "AVERAGE RETURNS FROM START STATE: " + str((returns + 0.0) / opts.episodes)
+        print "AVERAGE RETURNS FROM START STATE: " + str((returns+0.0) / opts.episodes)
         print
         print
 
     # DISPLAY POST-LEARNING VALUES / Q-VALUES
     if opts.agent == 'q' and not opts.manual:
         try:
-            display.displayQValues(a, message="Q-VALUES AFTER " + str(opts.episodes) + " EPISODES")
+            display.displayQValues(a, message="Q-VALUES AFTER "+str(opts.episodes)+" EPISODES")
             display.pause()
-            display.displayValues(a, message="VALUES AFTER " + str(opts.episodes) + " EPISODES")
+            display.displayValues(a, message="VALUES AFTER "+str(opts.episodes)+" EPISODES")
             display.pause()
         except KeyboardInterrupt:
             sys.exit(0)
+
+
+
+
+
+
