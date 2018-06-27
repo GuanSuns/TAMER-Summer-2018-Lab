@@ -18,7 +18,7 @@ import mdp
 import environment
 import util
 import optparse
-import time
+import math
 
 from input import user_input
 
@@ -78,6 +78,18 @@ class Gridworld(mdp.MarkovDecisionProcess):
         for x in range(self.grid.width):
             for y in range(self.grid.height):
                 if self.grid[x][y] != '#':
+                    state = (x, y)
+                    states.append(state)
+        return states
+
+    def getNonTerminalStates(self):
+        """
+        Return list of non-terminal states.
+        """
+        states = list()
+        for x in range(self.grid.width):
+            for y in range(self.grid.height):
+                if self.grid[x][y] == 'S' or self.grid[x][y] == ' ':
                     state = (x, y)
                     states.append(state)
         return states
@@ -192,6 +204,9 @@ class GridworldEnvironment(environment.Environment):
         self.gridWorld = gridWorld
         self.reset()
         self.state = None
+
+    def getGridWorld(self):
+        return self.gridWorld
 
     def getCurrentState(self):
         return self.state
@@ -434,8 +449,26 @@ def parseOptions():
     return m_opts
 
 
+def isQValuesConverged(m_environment, old_qValues, new_qValues, delta=0.02):
+    """ check if the qValues have converged """
+    states = m_environment.getGridWorld().getNonTerminalStates()
+    # iterate through all the non-terminal states
+    for state in states:
+        for action in m_environment.getPossibleActions(state):
+            diff = math.fabs(float(old_qValues[(state, action)]) - float(new_qValues[(state, action)]))
+            if diff > delta:
+                return False
+    return True
+
+
 def runEpisode(agent, m_environment, discount, f_decision
-               , f_display, f_message, f_pause, i_episode, user_input_module=None, global_step=0):
+               , f_display, f_message, f_pause, i_episode
+               , user_input_module=None, global_step=0
+               , check_value_converge=False
+               , check_policy_converge=True
+               , optimal_policy=None):
+    is_converge = False
+    old_qValues = None
     episode_rewards = 0
     episode_step = 0
     totalDiscount = 1.0
@@ -461,6 +494,19 @@ def runEpisode(agent, m_environment, discount, f_decision
                 f_message("Receive Negative (-1) human signal\n")
                 agent.receiveHumanSignal(human_signal=-1)
 
+        # Check if the Q-Values have converged
+        if episode_step != 0 \
+                and agent.getAgentType() == 'qLearningAgent' \
+                and check_value_converge:
+            if isQValuesConverged(m_environment, old_qValues, new_qValues=agent.getQValues()):
+                is_converge = True
+                f_message("--------------------------------")
+                f_message("The Q-Values have converged\n")
+                f_message("TOTAL STEPS: " + str(global_step) + ", EPISODE STEPS: " + str(episode_step))
+                f_message("Learned QValue: " + str(agent.getQValues()) + "\n")
+                f_message("--------------------------------")
+                return (episode_rewards, global_step, is_converge)
+
         # END IF IN A TERMINAL STATE
         actions = m_environment.getPossibleActions(state)
         if len(actions) == 0:
@@ -469,7 +515,7 @@ def runEpisode(agent, m_environment, discount, f_decision
             f_message("TOTAL STEPS: " + str(global_step) + ", EPISODE STEPS: " + str(episode_step))
             f_message("Learned QValue: " + str(agent.getQValues()) + "\n")
             f_message("--------------------------------")
-            return (episode_rewards, global_step)
+            return (episode_rewards, global_step, is_converge)
 
         # GET ACTION (USUALLY FROM AGENT)
         action = f_decision(state)
@@ -483,6 +529,9 @@ def runEpisode(agent, m_environment, discount, f_decision
                   ", A: " + str(action) +
                   ", S': " + str(nextState) +
                   ", R: " + str(reward) + "\n")
+
+        # Save the old qValues
+        old_qValues = agent.getQValuesCopy()
 
         # UPDATE LEARNER
         if 'observeTransition' in dir(agent):
@@ -504,11 +553,12 @@ class TamerGridWorldExperiment():
                  , noise=0, epsilon=0.3, display_speed=0.5
                  , grid_size=150, text_only=False, n_episodes=100
                  , agent_window_size=1, agent_max_n_experiences=1000
-                 , is_use_q_agent=False, is_asyn_input=True):
+                 , is_use_q_agent=False, is_asyn_input=True, check_value_converge=False):
         self.text_only = text_only
         self.display_speed = display_speed
         self.n_episodes = n_episodes
         self.discount = discount
+        self.check_value_converge = check_value_converge
 
         ###########################
         # GET THE INPUT MODULE
@@ -596,11 +646,12 @@ class TamerGridWorldExperiment():
         total_steps = 0
 
         for i_episode in range(1, self.n_episodes + 1):
-            (episode_rewards, global_step) = runEpisode(self.agent, self.env, self.discount
-                                                        , decision_callback, display_callback, message_callback
-                                                        , pause_callback, i_episode
-                                                        , user_input_module=self.user_input_module
-                                                        , global_step=total_steps)
+            (episode_rewards, global_step, is_converge) = runEpisode(self.agent, self.env, self.discount
+                                                                     , decision_callback, display_callback
+                                                                     , message_callback, pause_callback, i_episode
+                                                                     , user_input_module=self.user_input_module
+                                                                     , global_step=total_steps
+                                                                     , check_value_converge=self.check_value_converge)
             total_returns += episode_rewards
             total_steps = global_step
 
@@ -761,10 +812,12 @@ if __name__ == '__main__':
     returns = 0
     total_n_steps = 0
     for episode in range(1, opts.episodes + 1):
-        (episode_returns, n_global_step) = runEpisode(a, env, opts.discount, decisionCallback
-                                                      , displayCallback, messageCallback
-                                                      , pauseCallback, episode
-                                                      , global_step=total_n_steps)
+        (episode_returns, n_global_step, has_converge) = runEpisode(a, env, opts.discount
+                                                                    , decisionCallback
+                                                                    , displayCallback
+                                                                    , messageCallback
+                                                                    , pauseCallback, episode
+                                                                    , global_step=total_n_steps)
         returns += episode_returns
         total_n_steps = n_global_step
     if opts.episodes > 0:

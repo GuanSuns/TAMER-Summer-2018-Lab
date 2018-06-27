@@ -4,3 +4,8 @@
 	- Add instant feedback: pause and wait until human feedback
 	- Random starting initial starting position
 	- Softmax action selection for exploration with overflow protection
+
+## Week 5
+- Berkeley Grid World
+	- Make environment deterministic
+	

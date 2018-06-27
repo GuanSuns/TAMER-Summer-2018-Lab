@@ -53,6 +53,9 @@ class QLearningAgent(ReinforcementAgent):
     def getQValues(self):
         return self.qValues
 
+    def getQValuesCopy(self):
+        return self.qValues.copy()
+
     def getQValue(self, state, action):
         """
           Returns Q(state,action)
@@ -147,6 +150,9 @@ class QLearningAgent(ReinforcementAgent):
     def getValue(self, state):
         return self.computeValueFromQValues(state)
 
+    def getAgentType(self):
+        return 'qLearningAgent'
+
 
 class TamerQAgent(QLearningAgent):
     def __init__(self, max_n_experiences=1000, window_size=1, is_asyn_input=True, **args):
@@ -223,6 +229,9 @@ class TamerQAgent(QLearningAgent):
         # pop out stale experience
         while len(self.experiences) > self.max_n_experiences:
             self.experiences.pop(0)
+
+    def getAgentType(self):
+        return 'TamerAgent'
 
 
 class PacmanQAgent(QLearningAgent):
