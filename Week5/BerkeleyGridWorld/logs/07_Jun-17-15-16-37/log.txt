@@ -1,0 +1,4257 @@
+
+RUNNING 100 EPISODES
+
+BEGINNING EPISODE: 1
+
+S: (0, 1), A: east, S': (1, 1), R: 0.0
+
+S: (1, 1), A: north, S': (1, 1), R: 0.0
+
+S: (1, 1), A: north, S': (1, 1), R: 0.0
+
+S: (1, 1), A: north, S': (1, 1), R: 0.0
+
+S: (1, 1), A: north, S': (1, 1), R: 0.0
+
+S: (1, 1), A: north, S': (2, 1), R: 0.0
+
+S: (2, 1), A: south, S': (2, 0), R: 0.0
+
+S: (2, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+EPISODE 1 COMPLETE: RETURN WAS -4.782969
+
+BEGINNING EPISODE: 2
+
+S: (0, 1), A: north, S': (0, 2), R: 0.0
+
+S: (0, 2), A: north, S': (0, 3), R: 0.0
+
+S: (0, 3), A: north, S': (0, 4), R: 0.0
+
+S: (0, 4), A: north, S': (0, 4), R: 0.0
+
+S: (0, 4), A: north, S': (0, 4), R: 0.0
+
+S: (0, 4), A: north, S': (0, 4), R: 0.0
+
+S: (0, 4), A: north, S': (0, 4), R: 0.0
+
+S: (0, 4), A: north, S': (0, 4), R: 0.0
+
+Receive Positive (+1) human signal
+
+S: (0, 4), A: north, S': (0, 4), R: 0.0
+
+S: (0, 4), A: north, S': (0, 4), R: 0.0
+
+S: (0, 4), A: north, S': (0, 4), R: 0.0
+
+S: (0, 4), A: north, S': (0, 4), R: 0.0
+
+S: (0, 4), A: north, S': (0, 4), R: 0.0
+
+S: (0, 4), A: north, S': (0, 4), R: 0.0
+
+S: (0, 4), A: north, S': (0, 4), R: 0.0
+
+S: (0, 4), A: west, S': (0, 4), R: 0.0
+
+S: (0, 4), A: north, S': (0, 4), R: 0.0
+
+S: (0, 4), A: north, S': (0, 4), R: 0.0
+
+S: (0, 4), A: north, S': (1, 4), R: 0.0
+
+S: (1, 4), A: south, S': (1, 4), R: 0.0
+
+S: (1, 4), A: west, S': (0, 4), R: 0.0
+
+S: (0, 4), A: north, S': (0, 4), R: 0.0
+
+Receive Negative (-1) human signal
+
+S: (0, 4), A: east, S': (1, 4), R: 0.0
+
+S: (1, 4), A: south, S': (1, 4), R: 0.0
+
+S: (1, 4), A: east, S': (2, 4), R: 0.0
+
+S: (2, 4), A: north, S': (2, 4), R: 0.0
+
+S: (2, 4), A: north, S': (2, 4), R: 0.0
+
+S: (2, 4), A: north, S': (2, 4), R: 0.0
+
+S: (2, 4), A: north, S': (3, 4), R: 0.0
+
+Receive Positive (+1) human signal
+
+S: (3, 4), A: west, S': (2, 4), R: 0.0
+
+S: (2, 4), A: north, S': (2, 4), R: 0.0
+
+S: (2, 4), A: north, S': (2, 4), R: 0.0
+
+S: (2, 4), A: north, S': (2, 4), R: 0.0
+
+S: (2, 4), A: north, S': (2, 4), R: 0.0
+
+S: (2, 4), A: north, S': (2, 4), R: 0.0
+
+S: (2, 4), A: east, S': (2, 4), R: 0.0
+
+S: (2, 4), A: north, S': (2, 4), R: 0.0
+
+S: (2, 4), A: north, S': (2, 4), R: 0.0
+
+S: (2, 4), A: west, S': (1, 4), R: 0.0
+
+S: (1, 4), A: north, S': (0, 4), R: 0.0
+
+S: (0, 4), A: north, S': (0, 4), R: 0.0
+
+S: (0, 4), A: east, S': (1, 4), R: 0.0
+
+S: (1, 4), A: east, S': (2, 4), R: 0.0
+
+S: (2, 4), A: east, S': (3, 4), R: 0.0
+
+S: (3, 4), A: north, S': (3, 4), R: 0.0
+
+S: (3, 4), A: west, S': (3, 4), R: 0.0
+
+Receive Negative (-1) human signal
+
+S: (3, 4), A: south, S': (4, 4), R: 0.0
+
+S: (4, 4), A: north, S': (4, 4), R: 0.0
+
+S: (4, 4), A: north, S': (4, 4), R: 0.0
+
+S: (4, 4), A: north, S': (4, 4), R: 0.0
+
+S: (4, 4), A: east, S': (4, 4), R: 0.0
+
+S: (4, 4), A: north, S': (4, 4), R: 0.0
+
+S: (4, 4), A: north, S': (3, 4), R: 0.0
+
+S: (3, 4), A: south, S': (3, 3), R: 0.0
+
+S: (3, 3), A: north, S': (3, 4), R: 0.0
+
+S: (3, 4), A: south, S': (3, 3), R: 0.0
+
+S: (3, 3), A: north, S': (3, 4), R: 0.0
+
+S: (3, 4), A: south, S': (3, 3), R: 0.0
+
+S: (3, 3), A: north, S': (3, 4), R: 0.0
+
+S: (3, 4), A: south, S': (3, 3), R: 0.0
+
+S: (3, 3), A: south, S': (3, 3), R: 0.0
+
+Receive Negative (-1) human signal
+
+S: (3, 3), A: north, S': (2, 3), R: 0.0
+
+S: (2, 3), A: north, S': (2, 4), R: 0.0
+
+S: (2, 4), A: west, S': (1, 4), R: 0.0
+
+S: (1, 4), A: south, S': (1, 4), R: 0.0
+
+S: (1, 4), A: south, S': (1, 4), R: 0.0
+
+S: (1, 4), A: south, S': (1, 4), R: 0.0
+
+S: (1, 4), A: east, S': (2, 4), R: 0.0
+
+S: (2, 4), A: north, S': (2, 4), R: 0.0
+
+S: (2, 4), A: north, S': (1, 4), R: 0.0
+
+S: (1, 4), A: south, S': (1, 4), R: 0.0
+
+S: (1, 4), A: south, S': (1, 4), R: 0.0
+
+S: (1, 4), A: south, S': (1, 4), R: 0.0
+
+S: (1, 4), A: south, S': (1, 4), R: 0.0
+
+S: (1, 4), A: east, S': (2, 4), R: 0.0
+
+S: (2, 4), A: north, S': (2, 4), R: 0.0
+
+S: (2, 4), A: west, S': (1, 4), R: 0.0
+
+S: (1, 4), A: north, S': (1, 4), R: 0.0
+
+S: (1, 4), A: south, S': (1, 4), R: 0.0
+
+S: (1, 4), A: south, S': (1, 4), R: 0.0
+
+S: (1, 4), A: south, S': (1, 4), R: 0.0
+
+S: (1, 4), A: south, S': (2, 4), R: 0.0
+
+S: (2, 4), A: north, S': (3, 4), R: 0.0
+
+S: (3, 4), A: east, S': (4, 4), R: 0.0
+
+S: (4, 4), A: north, S': (4, 4), R: 0.0
+
+Receive Positive (+1) human signal
+
+S: (4, 4), A: north, S': (4, 4), R: 0.0
+
+S: (4, 4), A: north, S': (4, 4), R: 0.0
+
+S: (4, 4), A: north, S': (4, 4), R: 0.0
+
+S: (4, 4), A: north, S': (4, 4), R: 0.0
+
+S: (4, 4), A: north, S': (4, 4), R: 0.0
+
+S: (4, 4), A: north, S': (4, 4), R: 0.0
+
+S: (4, 4), A: west, S': (3, 4), R: 0.0
+
+S: (3, 4), A: east, S': (4, 4), R: 0.0
+
+S: (4, 4), A: north, S': (4, 4), R: 0.0
+
+S: (4, 4), A: west, S': (3, 4), R: 0.0
+
+S: (3, 4), A: north, S': (3, 4), R: 0.0
+
+S: (3, 4), A: east, S': (4, 4), R: 0.0
+
+S: (4, 4), A: north, S': (4, 4), R: 0.0
+
+S: (4, 4), A: north, S': (4, 4), R: 0.0
+
+S: (4, 4), A: north, S': (4, 4), R: 0.0
+
+S: (4, 4), A: north, S': (4, 4), R: 0.0
+
+S: (4, 4), A: east, S': (4, 4), R: 0.0
+
+S: (4, 4), A: north, S': (4, 4), R: 0.0
+
+S: (4, 4), A: south, S': (4, 4), R: 0.0
+
+S: (4, 4), A: north, S': (3, 4), R: 0.0
+
+S: (3, 4), A: east, S': (3, 3), R: 0.0
+
+S: (3, 3), A: west, S': (2, 3), R: 0.0
+
+S: (2, 3), A: north, S': (2, 4), R: 0.0
+
+S: (2, 4), A: north, S': (2, 4), R: 0.0
+
+S: (2, 4), A: north, S': (1, 4), R: 0.0
+
+S: (1, 4), A: south, S': (0, 4), R: 0.0
+
+S: (0, 4), A: south, S': (0, 3), R: 0.0
+
+S: (0, 3), A: north, S': (0, 4), R: 0.0
+
+S: (0, 4), A: north, S': (0, 4), R: 0.0
+
+S: (0, 4), A: south, S': (0, 3), R: 0.0
+
+S: (0, 3), A: north, S': (0, 4), R: 0.0
+
+S: (0, 4), A: south, S': (0, 3), R: 0.0
+
+S: (0, 3), A: north, S': (0, 4), R: 0.0
+
+S: (0, 4), A: west, S': (0, 4), R: 0.0
+
+S: (0, 4), A: south, S': (0, 3), R: 0.0
+
+S: (0, 3), A: north, S': (0, 3), R: 0.0
+
+S: (0, 3), A: north, S': (0, 4), R: 0.0
+
+S: (0, 4), A: south, S': (0, 3), R: 0.0
+
+S: (0, 3), A: north, S': (0, 4), R: 0.0
+
+S: (0, 4), A: west, S': (0, 4), R: 0.0
+
+S: (0, 4), A: south, S': (0, 4), R: 0.0
+
+S: (0, 4), A: south, S': (0, 4), R: 0.0
+
+S: (0, 4), A: south, S': (0, 3), R: 0.0
+
+Receive Negative (-1) human signal
+
+S: (0, 3), A: east, S': (0, 3), R: 0.0
+
+S: (0, 3), A: west, S': (0, 4), R: 0.0
+
+S: (0, 4), A: east, S': (1, 4), R: 0.0
+
+S: (1, 4), A: south, S': (1, 4), R: 0.0
+
+S: (1, 4), A: south, S': (1, 4), R: 0.0
+
+S: (1, 4), A: south, S': (1, 4), R: 0.0
+
+S: (1, 4), A: south, S': (1, 4), R: 0.0
+
+S: (1, 4), A: south, S': (1, 4), R: 0.0
+
+Receive Positive (+1) human signal
+
+S: (1, 4), A: south, S': (1, 4), R: 0.0
+
+S: (1, 4), A: east, S': (2, 4), R: 0.0
+
+S: (2, 4), A: north, S': (1, 4), R: 0.0
+
+S: (1, 4), A: south, S': (1, 4), R: 0.0
+
+S: (1, 4), A: east, S': (2, 4), R: 0.0
+
+S: (2, 4), A: north, S': (2, 4), R: 0.0
+
+S: (2, 4), A: north, S': (2, 4), R: 0.0
+
+S: (2, 4), A: north, S': (2, 4), R: 0.0
+
+S: (2, 4), A: north, S': (2, 4), R: 0.0
+
+S: (2, 4), A: north, S': (1, 4), R: 0.0
+
+S: (1, 4), A: south, S': (1, 4), R: 0.0
+
+S: (1, 4), A: south, S': (0, 4), R: 0.0
+
+S: (0, 4), A: east, S': (1, 4), R: 0.0
+
+S: (1, 4), A: east, S': (2, 4), R: 0.0
+
+S: (2, 4), A: north, S': (3, 4), R: 0.0
+
+S: (3, 4), A: east, S': (4, 4), R: 0.0
+
+S: (4, 4), A: north, S': (4, 4), R: 0.0
+
+S: (4, 4), A: north, S': (4, 4), R: 0.0
+
+S: (4, 4), A: north, S': (4, 4), R: 0.0
+
+S: (4, 4), A: north, S': (4, 4), R: 0.0
+
+S: (4, 4), A: north, S': (4, 4), R: 0.0
+
+Receive Positive (+1) human signal
+
+S: (4, 4), A: north, S': (3, 4), R: 0.0
+
+S: (3, 4), A: south, S': (3, 3), R: 0.0
+
+S: (3, 3), A: west, S': (2, 3), R: 0.0
+
+S: (2, 3), A: north, S': (2, 4), R: 0.0
+
+S: (2, 4), A: north, S': (2, 4), R: 0.0
+
+S: (2, 4), A: north, S': (1, 4), R: 0.0
+
+S: (1, 4), A: south, S': (1, 4), R: 0.0
+
+S: (1, 4), A: south, S': (1, 4), R: 0.0
+
+S: (1, 4), A: south, S': (1, 4), R: 0.0
+
+S: (1, 4), A: south, S': (2, 4), R: 0.0
+
+S: (2, 4), A: north, S': (2, 4), R: 0.0
+
+S: (2, 4), A: north, S': (2, 4), R: 0.0
+
+S: (2, 4), A: north, S': (2, 4), R: 0.0
+
+S: (2, 4), A: north, S': (2, 4), R: 0.0
+
+S: (2, 4), A: north, S': (2, 4), R: 0.0
+
+S: (2, 4), A: north, S': (2, 4), R: 0.0
+
+S: (2, 4), A: south, S': (1, 4), R: 0.0
+
+S: (1, 4), A: south, S': (1, 4), R: 0.0
+
+S: (1, 4), A: south, S': (1, 4), R: 0.0
+
+S: (1, 4), A: east, S': (2, 4), R: 0.0
+
+S: (2, 4), A: north, S': (2, 4), R: 0.0
+
+S: (2, 4), A: south, S': (2, 3), R: 0.0
+
+Receive Positive (+1) human signal
+
+S: (2, 3), A: north, S': (2, 4), R: 0.0
+
+S: (2, 4), A: north, S': (2, 4), R: 0.0
+
+S: (2, 4), A: north, S': (2, 4), R: 0.0
+
+S: (2, 4), A: north, S': (2, 4), R: 0.0
+
+S: (2, 4), A: west, S': (1, 4), R: 0.0
+
+S: (1, 4), A: west, S': (0, 4), R: 0.0
+
+S: (0, 4), A: east, S': (1, 4), R: 0.0
+
+S: (1, 4), A: south, S': (1, 4), R: 0.0
+
+S: (1, 4), A: south, S': (1, 4), R: 0.0
+
+S: (1, 4), A: south, S': (1, 4), R: 0.0
+
+S: (1, 4), A: south, S': (1, 4), R: 0.0
+
+S: (1, 4), A: south, S': (1, 4), R: 0.0
+
+S: (1, 4), A: south, S': (1, 4), R: 0.0
+
+S: (1, 4), A: south, S': (2, 4), R: 0.0
+
+S: (2, 4), A: south, S': (2, 3), R: 0.0
+
+S: (2, 3), A: north, S': (2, 4), R: 0.0
+
+S: (2, 4), A: south, S': (2, 3), R: 0.0
+
+S: (2, 3), A: north, S': (2, 4), R: 0.0
+
+S: (2, 4), A: east, S': (3, 4), R: 0.0
+
+S: (3, 4), A: east, S': (4, 4), R: 0.0
+
+Receive Positive (+1) human signal
+
+S: (4, 4), A: south, S': (4, 3), R: 0.0
+
+S: (4, 3), A: north, S': (4, 4), R: 0.0
+
+S: (4, 4), A: east, S': (4, 4), R: 0.0
+
+S: (4, 4), A: north, S': (4, 4), R: 0.0
+
+S: (4, 4), A: north, S': (4, 4), R: 0.0
+
+S: (4, 4), A: north, S': (4, 4), R: 0.0
+
+S: (4, 4), A: east, S': (4, 4), R: 0.0
+
+S: (4, 4), A: north, S': (4, 4), R: 0.0
+
+S: (4, 4), A: north, S': (4, 4), R: 0.0
+
+S: (4, 4), A: north, S': (4, 4), R: 0.0
+
+S: (4, 4), A: north, S': (4, 4), R: 0.0
+
+S: (4, 4), A: north, S': (4, 4), R: 0.0
+
+S: (4, 4), A: north, S': (4, 4), R: 0.0
+
+S: (4, 4), A: north, S': (4, 4), R: 0.0
+
+S: (4, 4), A: north, S': (4, 4), R: 0.0
+
+S: (4, 4), A: north, S': (4, 4), R: 0.0
+
+S: (4, 4), A: north, S': (4, 4), R: 0.0
+
+S: (4, 4), A: west, S': (3, 4), R: 0.0
+
+S: (3, 4), A: north, S': (4, 4), R: 0.0
+
+S: (4, 4), A: north, S': (4, 4), R: 0.0
+
+S: (4, 4), A: north, S': (4, 4), R: 0.0
+
+S: (4, 4), A: north, S': (4, 4), R: 0.0
+
+S: (4, 4), A: south, S': (4, 3), R: 0.0
+
+S: (4, 3), A: north, S': (4, 3), R: 0.0
+
+S: (4, 3), A: east, S': (4, 3), R: 0.0
+
+S: (4, 3), A: north, S': (4, 4), R: 0.0
+
+S: (4, 4), A: south, S': (4, 3), R: 0.0
+
+S: (4, 3), A: west, S': (3, 3), R: 0.0
+
+S: (3, 3), A: west, S': (2, 3), R: 0.0
+
+S: (2, 3), A: north, S': (2, 4), R: 0.0
+
+S: (2, 4), A: north, S': (2, 4), R: 0.0
+
+Receive Positive (+1) human signal
+
+S: (2, 4), A: north, S': (2, 4), R: 0.0
+
+S: (2, 4), A: north, S': (2, 4), R: 0.0
+
+S: (2, 4), A: north, S': (2, 4), R: 0.0
+
+S: (2, 4), A: north, S': (2, 4), R: 0.0
+
+S: (2, 4), A: north, S': (1, 4), R: 0.0
+
+S: (1, 4), A: north, S': (1, 4), R: 0.0
+
+S: (1, 4), A: south, S': (1, 4), R: 0.0
+
+S: (1, 4), A: south, S': (1, 4), R: 0.0
+
+S: (1, 4), A: north, S': (2, 4), R: 0.0
+
+S: (2, 4), A: north, S': (1, 4), R: 0.0
+
+S: (1, 4), A: south, S': (1, 4), R: 0.0
+
+S: (1, 4), A: south, S': (1, 4), R: 0.0
+
+S: (1, 4), A: south, S': (1, 4), R: 0.0
+
+S: (1, 4), A: south, S': (0, 4), R: 0.0
+
+S: (0, 4), A: east, S': (1, 4), R: 0.0
+
+S: (1, 4), A: north, S': (1, 4), R: 0.0
+
+S: (1, 4), A: north, S': (2, 4), R: 0.0
+
+S: (2, 4), A: north, S': (2, 4), R: 0.0
+
+S: (2, 4), A: north, S': (2, 4), R: 0.0
+
+S: (2, 4), A: north, S': (2, 4), R: 0.0
+
+S: (2, 4), A: north, S': (2, 4), R: 0.0
+
+Receive Negative (-1) human signal
+
+S: (2, 4), A: east, S': (3, 4), R: 0.0
+
+S: (3, 4), A: east, S': (4, 4), R: 0.0
+
+S: (4, 4), A: north, S': (3, 4), R: 0.0
+
+S: (3, 4), A: east, S': (4, 4), R: 0.0
+
+S: (4, 4), A: north, S': (4, 4), R: 0.0
+
+S: (4, 4), A: south, S': (4, 3), R: 0.0
+
+S: (4, 3), A: south, S': (4, 2), R: 0.0
+
+S: (4, 2), A: exit, S': TERMINAL_STATE, R: 10
+
+Receive Positive (+1) human signal
+
+EPISODE 2 COMPLETE: RETURN WAS 1.56519133642e-11
+
+BEGINNING EPISODE: 3
+
+S: (0, 1), A: north, S': (0, 2), R: 0.0
+
+S: (0, 2), A: north, S': (0, 3), R: 0.0
+
+S: (0, 3), A: west, S': (0, 3), R: 0.0
+
+S: (0, 3), A: west, S': (0, 4), R: 0.0
+
+S: (0, 4), A: east, S': (1, 4), R: 0.0
+
+S: (1, 4), A: east, S': (1, 4), R: 0.0
+
+S: (1, 4), A: east, S': (2, 4), R: 0.0
+
+S: (2, 4), A: south, S': (2, 3), R: 0.0
+
+S: (2, 3), A: north, S': (2, 4), R: 0.0
+
+S: (2, 4), A: south, S': (2, 3), R: 0.0
+
+S: (2, 3), A: north, S': (2, 4), R: 0.0
+
+S: (2, 4), A: south, S': (2, 3), R: 0.0
+
+S: (2, 3), A: north, S': (2, 4), R: 0.0
+
+S: (2, 4), A: south, S': (3, 4), R: 0.0
+
+S: (3, 4), A: west, S': (2, 4), R: 0.0
+
+S: (2, 4), A: south, S': (2, 3), R: 0.0
+
+Receive Positive (+1) human signal
+
+S: (2, 3), A: north, S': (2, 4), R: 0.0
+
+S: (2, 4), A: north, S': (2, 4), R: 0.0
+
+S: (2, 4), A: north, S': (3, 4), R: 0.0
+
+S: (3, 4), A: east, S': (4, 4), R: 0.0
+
+S: (4, 4), A: west, S': (3, 4), R: 0.0
+
+S: (3, 4), A: east, S': (3, 4), R: 0.0
+
+S: (3, 4), A: east, S': (4, 4), R: 0.0
+
+S: (4, 4), A: north, S': (4, 4), R: 0.0
+
+S: (4, 4), A: north, S': (4, 4), R: 0.0
+
+S: (4, 4), A: north, S': (4, 4), R: 0.0
+
+S: (4, 4), A: south, S': (4, 3), R: 0.0
+
+S: (4, 3), A: north, S': (4, 4), R: 0.0
+
+S: (4, 4), A: west, S': (4, 3), R: 0.0
+
+S: (4, 3), A: north, S': (4, 4), R: 0.0
+
+S: (4, 4), A: north, S': (3, 4), R: 0.0
+
+S: (3, 4), A: east, S': (4, 4), R: 0.0
+
+S: (4, 4), A: north, S': (4, 4), R: 0.0
+
+S: (4, 4), A: north, S': (4, 4), R: 0.0
+
+S: (4, 4), A: north, S': (4, 4), R: 0.0
+
+S: (4, 4), A: north, S': (4, 4), R: 0.0
+
+S: (4, 4), A: north, S': (4, 4), R: 0.0
+
+S: (4, 4), A: north, S': (3, 4), R: 0.0
+
+S: (3, 4), A: east, S': (4, 4), R: 0.0
+
+S: (4, 4), A: north, S': (4, 4), R: 0.0
+
+S: (4, 4), A: west, S': (3, 4), R: 0.0
+
+S: (3, 4), A: east, S': (4, 4), R: 0.0
+
+S: (4, 4), A: east, S': (4, 4), R: 0.0
+
+S: (4, 4), A: south, S': (3, 4), R: 0.0
+
+S: (3, 4), A: west, S': (2, 4), R: 0.0
+
+S: (2, 4), A: south, S': (2, 3), R: 0.0
+
+S: (2, 3), A: north, S': (2, 4), R: 0.0
+
+S: (2, 4), A: north, S': (2, 4), R: 0.0
+
+S: (2, 4), A: south, S': (2, 3), R: 0.0
+
+S: (2, 3), A: north, S': (2, 4), R: 0.0
+
+S: (2, 4), A: south, S': (2, 3), R: 0.0
+
+S: (2, 3), A: north, S': (2, 4), R: 0.0
+
+S: (2, 4), A: south, S': (2, 3), R: 0.0
+
+S: (2, 3), A: north, S': (2, 4), R: 0.0
+
+S: (2, 4), A: north, S': (2, 4), R: 0.0
+
+S: (2, 4), A: south, S': (2, 3), R: 0.0
+
+S: (2, 3), A: north, S': (2, 4), R: 0.0
+
+S: (2, 4), A: north, S': (2, 4), R: 0.0
+
+S: (2, 4), A: south, S': (3, 4), R: 0.0
+
+S: (3, 4), A: east, S': (4, 4), R: 0.0
+
+S: (4, 4), A: north, S': (4, 4), R: 0.0
+
+S: (4, 4), A: north, S': (4, 4), R: 0.0
+
+S: (4, 4), A: north, S': (3, 4), R: 0.0
+
+S: (3, 4), A: east, S': (4, 4), R: 0.0
+
+S: (4, 4), A: north, S': (4, 4), R: 0.0
+
+S: (4, 4), A: north, S': (4, 4), R: 0.0
+
+S: (4, 4), A: north, S': (4, 4), R: 0.0
+
+S: (4, 4), A: north, S': (3, 4), R: 0.0
+
+S: (3, 4), A: east, S': (4, 4), R: 0.0
+
+S: (4, 4), A: south, S': (4, 3), R: 0.0
+
+S: (4, 3), A: west, S': (3, 3), R: 0.0
+
+S: (3, 3), A: west, S': (2, 3), R: 0.0
+
+S: (2, 3), A: north, S': (2, 4), R: 0.0
+
+S: (2, 4), A: east, S': (3, 4), R: 0.0
+
+S: (3, 4), A: east, S': (4, 4), R: 0.0
+
+S: (4, 4), A: east, S': (4, 4), R: 0.0
+
+S: (4, 4), A: north, S': (4, 4), R: 0.0
+
+S: (4, 4), A: north, S': (4, 4), R: 0.0
+
+S: (4, 4), A: north, S': (4, 4), R: 0.0
+
+S: (4, 4), A: north, S': (4, 4), R: 0.0
+
+S: (4, 4), A: north, S': (4, 4), R: 0.0
+
+S: (4, 4), A: north, S': (4, 4), R: 0.0
+
+S: (4, 4), A: north, S': (4, 4), R: 0.0
+
+S: (4, 4), A: north, S': (4, 4), R: 0.0
+
+S: (4, 4), A: north, S': (4, 4), R: 0.0
+
+S: (4, 4), A: west, S': (3, 4), R: 0.0
+
+S: (3, 4), A: south, S': (4, 4), R: 0.0
+
+S: (4, 4), A: west, S': (3, 4), R: 0.0
+
+S: (3, 4), A: east, S': (4, 4), R: 0.0
+
+S: (4, 4), A: north, S': (4, 4), R: 0.0
+
+S: (4, 4), A: north, S': (4, 4), R: 0.0
+
+S: (4, 4), A: north, S': (4, 4), R: 0.0
+
+S: (4, 4), A: east, S': (4, 4), R: 0.0
+
+S: (4, 4), A: south, S': (4, 3), R: 0.0
+
+S: (4, 3), A: north, S': (4, 4), R: 0.0
+
+S: (4, 4), A: north, S': (4, 4), R: 0.0
+
+S: (4, 4), A: north, S': (3, 4), R: 0.0
+
+S: (3, 4), A: north, S': (3, 4), R: 0.0
+
+S: (3, 4), A: east, S': (4, 4), R: 0.0
+
+S: (4, 4), A: north, S': (4, 4), R: 0.0
+
+S: (4, 4), A: west, S': (3, 4), R: 0.0
+
+S: (3, 4), A: east, S': (4, 4), R: 0.0
+
+S: (4, 4), A: north, S': (4, 4), R: 0.0
+
+Receive Positive (+1) human signal
+
+S: (4, 4), A: north, S': (4, 4), R: 0.0
+
+S: (4, 4), A: east, S': (4, 4), R: 0.0
+
+S: (4, 4), A: north, S': (4, 4), R: 0.0
+
+S: (4, 4), A: north, S': (4, 4), R: 0.0
+
+S: (4, 4), A: north, S': (4, 4), R: 0.0
+
+S: (4, 4), A: west, S': (4, 3), R: 0.0
+
+S: (4, 3), A: north, S': (4, 4), R: 0.0
+
+S: (4, 4), A: north, S': (4, 4), R: 0.0
+
+S: (4, 4), A: north, S': (4, 4), R: 0.0
+
+S: (4, 4), A: north, S': (4, 4), R: 0.0
+
+S: (4, 4), A: north, S': (4, 4), R: 0.0
+
+S: (4, 4), A: east, S': (4, 3), R: 0.0
+
+Receive Positive (+1) human signal
+
+S: (4, 3), A: north, S': (4, 4), R: 0.0
+
+S: (4, 4), A: north, S': (4, 4), R: 0.0
+
+S: (4, 4), A: south, S': (4, 3), R: 0.0
+
+S: (4, 3), A: north, S': (4, 4), R: 0.0
+
+S: (4, 4), A: south, S': (4, 4), R: 0.0
+
+S: (4, 4), A: north, S': (3, 4), R: 0.0
+
+S: (3, 4), A: west, S': (2, 4), R: 0.0
+
+S: (2, 4), A: east, S': (3, 4), R: 0.0
+
+S: (3, 4), A: west, S': (2, 4), R: 0.0
+
+S: (2, 4), A: south, S': (2, 3), R: 0.0
+
+S: (2, 3), A: north, S': (3, 3), R: 0.0
+
+S: (3, 3), A: west, S': (2, 3), R: 0.0
+
+S: (2, 3), A: north, S': (2, 4), R: 0.0
+
+S: (2, 4), A: south, S': (2, 3), R: 0.0
+
+S: (2, 3), A: west, S': (2, 3), R: 0.0
+
+S: (2, 3), A: north, S': (2, 4), R: 0.0
+
+S: (2, 4), A: south, S': (2, 3), R: 0.0
+
+S: (2, 3), A: north, S': (2, 4), R: 0.0
+
+S: (2, 4), A: south, S': (2, 3), R: 0.0
+
+S: (2, 3), A: north, S': (2, 3), R: 0.0
+
+S: (2, 3), A: east, S': (3, 3), R: 0.0
+
+Receive Positive (+1) human signal
+
+S: (3, 3), A: west, S': (2, 3), R: 0.0
+
+S: (2, 3), A: north, S': (3, 3), R: 0.0
+
+S: (3, 3), A: east, S': (4, 3), R: 0.0
+
+S: (4, 3), A: north, S': (4, 3), R: 0.0
+
+S: (4, 3), A: north, S': (4, 4), R: 0.0
+
+S: (4, 4), A: north, S': (4, 4), R: 0.0
+
+S: (4, 4), A: east, S': (4, 4), R: 0.0
+
+S: (4, 4), A: north, S': (4, 4), R: 0.0
+
+S: (4, 4), A: north, S': (4, 4), R: 0.0
+
+S: (4, 4), A: north, S': (4, 4), R: 0.0
+
+S: (4, 4), A: north, S': (4, 4), R: 0.0
+
+S: (4, 4), A: north, S': (4, 4), R: 0.0
+
+S: (4, 4), A: north, S': (4, 4), R: 0.0
+
+S: (4, 4), A: north, S': (4, 4), R: 0.0
+
+S: (4, 4), A: north, S': (4, 4), R: 0.0
+
+S: (4, 4), A: north, S': (4, 4), R: 0.0
+
+S: (4, 4), A: north, S': (4, 4), R: 0.0
+
+S: (4, 4), A: north, S': (4, 4), R: 0.0
+
+S: (4, 4), A: north, S': (4, 4), R: 0.0
+
+S: (4, 4), A: north, S': (4, 4), R: 0.0
+
+S: (4, 4), A: west, S': (3, 4), R: 0.0
+
+S: (3, 4), A: east, S': (4, 4), R: 0.0
+
+S: (4, 4), A: north, S': (4, 4), R: 0.0
+
+S: (4, 4), A: north, S': (4, 4), R: 0.0
+
+S: (4, 4), A: north, S': (4, 4), R: 0.0
+
+S: (4, 4), A: north, S': (4, 4), R: 0.0
+
+S: (4, 4), A: north, S': (4, 4), R: 0.0
+
+S: (4, 4), A: east, S': (4, 4), R: 0.0
+
+S: (4, 4), A: north, S': (4, 4), R: 0.0
+
+S: (4, 4), A: north, S': (4, 4), R: 0.0
+
+S: (4, 4), A: north, S': (4, 4), R: 0.0
+
+S: (4, 4), A: north, S': (4, 4), R: 0.0
+
+S: (4, 4), A: north, S': (3, 4), R: 0.0
+
+S: (3, 4), A: east, S': (4, 4), R: 0.0
+
+S: (4, 4), A: north, S': (4, 4), R: 0.0
+
+S: (4, 4), A: north, S': (3, 4), R: 0.0
+
+S: (3, 4), A: south, S': (4, 4), R: 0.0
+
+S: (4, 4), A: north, S': (4, 4), R: 0.0
+
+S: (4, 4), A: north, S': (4, 4), R: 0.0
+
+S: (4, 4), A: south, S': (3, 4), R: 0.0
+
+S: (3, 4), A: east, S': (4, 4), R: 0.0
+
+S: (4, 4), A: north, S': (4, 4), R: 0.0
+
+S: (4, 4), A: north, S': (4, 4), R: 0.0
+
+S: (4, 4), A: north, S': (3, 4), R: 0.0
+
+S: (3, 4), A: east, S': (4, 4), R: 0.0
+
+S: (4, 4), A: south, S': (4, 3), R: 0.0
+
+S: (4, 3), A: north, S': (4, 4), R: 0.0
+
+S: (4, 4), A: north, S': (4, 4), R: 0.0
+
+S: (4, 4), A: north, S': (4, 4), R: 0.0
+
+S: (4, 4), A: west, S': (3, 4), R: 0.0
+
+S: (3, 4), A: east, S': (3, 4), R: 0.0
+
+S: (3, 4), A: east, S': (4, 4), R: 0.0
+
+S: (4, 4), A: north, S': (4, 4), R: 0.0
+
+S: (4, 4), A: west, S': (3, 4), R: 0.0
+
+S: (3, 4), A: east, S': (4, 4), R: 0.0
+
+S: (4, 4), A: north, S': (4, 4), R: 0.0
+
+S: (4, 4), A: north, S': (4, 4), R: 0.0
+
+S: (4, 4), A: north, S': (4, 4), R: 0.0
+
+S: (4, 4), A: north, S': (3, 4), R: 0.0
+
+S: (3, 4), A: east, S': (4, 4), R: 0.0
+
+S: (4, 4), A: west, S': (3, 4), R: 0.0
+
+S: (3, 4), A: east, S': (4, 4), R: 0.0
+
+S: (4, 4), A: north, S': (4, 4), R: 0.0
+
+S: (4, 4), A: north, S': (4, 4), R: 0.0
+
+S: (4, 4), A: north, S': (4, 4), R: 0.0
+
+S: (4, 4), A: east, S': (4, 4), R: 0.0
+
+S: (4, 4), A: west, S': (3, 4), R: 0.0
+
+S: (3, 4), A: east, S': (4, 4), R: 0.0
+
+S: (4, 4), A: west, S': (4, 3), R: 0.0
+
+S: (4, 3), A: north, S': (4, 4), R: 0.0
+
+S: (4, 4), A: east, S': (4, 3), R: 0.0
+
+S: (4, 3), A: north, S': (4, 4), R: 0.0
+
+S: (4, 4), A: west, S': (4, 4), R: 0.0
+
+S: (4, 4), A: north, S': (3, 4), R: 0.0
+
+S: (3, 4), A: east, S': (4, 4), R: 0.0
+
+S: (4, 4), A: north, S': (4, 4), R: 0.0
+
+S: (4, 4), A: south, S': (4, 3), R: 0.0
+
+S: (4, 3), A: north, S': (4, 4), R: 0.0
+
+S: (4, 4), A: north, S': (4, 4), R: 0.0
+
+Receive Negative (-1) human signal
+
+S: (4, 4), A: east, S': (4, 4), R: 0.0
+
+S: (4, 4), A: east, S': (4, 4), R: 0.0
+
+S: (4, 4), A: east, S': (4, 4), R: 0.0
+
+S: (4, 4), A: east, S': (4, 4), R: 0.0
+
+S: (4, 4), A: east, S': (4, 4), R: 0.0
+
+S: (4, 4), A: east, S': (4, 4), R: 0.0
+
+S: (4, 4), A: south, S': (4, 3), R: 0.0
+
+S: (4, 3), A: west, S': (3, 3), R: 0.0
+
+S: (3, 3), A: north, S': (2, 3), R: 0.0
+
+S: (2, 3), A: north, S': (2, 4), R: 0.0
+
+S: (2, 4), A: south, S': (1, 4), R: 0.0
+
+S: (1, 4), A: east, S': (2, 4), R: 0.0
+
+S: (2, 4), A: south, S': (2, 3), R: 0.0
+
+S: (2, 3), A: south, S': (2, 2), R: 0.0
+
+S: (2, 2), A: exit, S': TERMINAL_STATE, R: 1
+
+EPISODE 3 COMPLETE: RETURN WAS 3.3230330571e-11
+
+BEGINNING EPISODE: 4
+
+S: (0, 1), A: north, S': (0, 2), R: 0.0
+
+S: (0, 2), A: north, S': (0, 3), R: 0.0
+
+S: (0, 3), A: west, S': (0, 3), R: 0.0
+
+S: (0, 3), A: west, S': (0, 3), R: 0.0
+
+S: (0, 3), A: south, S': (0, 2), R: 0.0
+
+S: (0, 2), A: north, S': (0, 3), R: 0.0
+
+S: (0, 3), A: west, S': (0, 3), R: 0.0
+
+S: (0, 3), A: south, S': (0, 2), R: 0.0
+
+S: (0, 2), A: north, S': (0, 3), R: 0.0
+
+S: (0, 3), A: north, S': (0, 4), R: 0.0
+
+S: (0, 4), A: east, S': (1, 4), R: 0.0
+
+S: (1, 4), A: west, S': (1, 4), R: 0.0
+
+S: (1, 4), A: east, S': (2, 4), R: 0.0
+
+S: (2, 4), A: south, S': (3, 4), R: 0.0
+
+S: (3, 4), A: north, S': (3, 4), R: 0.0
+
+S: (3, 4), A: north, S': (3, 4), R: 0.0
+
+S: (3, 4), A: north, S': (3, 4), R: 0.0
+
+S: (3, 4), A: south, S': (3, 3), R: 0.0
+
+S: (3, 3), A: west, S': (2, 3), R: 0.0
+
+S: (2, 3), A: south, S': (2, 2), R: 0.0
+
+S: (2, 2), A: exit, S': TERMINAL_STATE, R: 1
+
+EPISODE 4 COMPLETE: RETURN WAS 0.121576654591
+
+BEGINNING EPISODE: 5
+
+S: (0, 1), A: north, S': (0, 2), R: 0.0
+
+S: (0, 2), A: east, S': (0, 2), R: 0.0
+
+S: (0, 2), A: north, S': (0, 3), R: 0.0
+
+S: (0, 3), A: west, S': (0, 3), R: 0.0
+
+S: (0, 3), A: west, S': (0, 3), R: 0.0
+
+S: (0, 3), A: west, S': (0, 3), R: 0.0
+
+S: (0, 3), A: west, S': (0, 3), R: 0.0
+
+S: (0, 3), A: west, S': (0, 3), R: 0.0
+
+S: (0, 3), A: west, S': (0, 3), R: 0.0
+
+S: (0, 3), A: west, S': (0, 3), R: 0.0
+
+S: (0, 3), A: south, S': (0, 2), R: 0.0
+
+S: (0, 2), A: west, S': (0, 2), R: 0.0
+
+S: (0, 2), A: north, S': (0, 3), R: 0.0
+
+S: (0, 3), A: west, S': (0, 3), R: 0.0
+
+S: (0, 3), A: west, S': (0, 3), R: 0.0
+
+S: (0, 3), A: west, S': (0, 3), R: 0.0
+
+S: (0, 3), A: west, S': (0, 3), R: 0.0
+
+S: (0, 3), A: west, S': (0, 3), R: 0.0
+
+S: (0, 3), A: west, S': (0, 3), R: 0.0
+
+S: (0, 3), A: west, S': (0, 3), R: 0.0
+
+S: (0, 3), A: east, S': (0, 3), R: 0.0
+
+S: (0, 3), A: west, S': (0, 3), R: 0.0
+
+S: (0, 3), A: west, S': (0, 3), R: 0.0
+
+S: (0, 3), A: north, S': (0, 4), R: 0.0
+
+S: (0, 4), A: east, S': (1, 4), R: 0.0
+
+S: (1, 4), A: east, S': (1, 4), R: 0.0
+
+S: (1, 4), A: east, S': (2, 4), R: 0.0
+
+S: (2, 4), A: south, S': (2, 3), R: 0.0
+
+S: (2, 3), A: north, S': (2, 4), R: 0.0
+
+S: (2, 4), A: south, S': (2, 3), R: 0.0
+
+S: (2, 3), A: north, S': (3, 3), R: 0.0
+
+S: (3, 3), A: west, S': (2, 3), R: 0.0
+
+S: (2, 3), A: north, S': (2, 4), R: 0.0
+
+S: (2, 4), A: south, S': (2, 3), R: 0.0
+
+S: (2, 3), A: north, S': (2, 4), R: 0.0
+
+S: (2, 4), A: south, S': (2, 3), R: 0.0
+
+S: (2, 3), A: east, S': (3, 3), R: 0.0
+
+S: (3, 3), A: east, S': (4, 3), R: 0.0
+
+S: (4, 3), A: west, S': (3, 3), R: 0.0
+
+S: (3, 3), A: west, S': (2, 3), R: 0.0
+
+S: (2, 3), A: north, S': (2, 4), R: 0.0
+
+S: (2, 4), A: west, S': (2, 3), R: 0.0
+
+S: (2, 3), A: north, S': (2, 4), R: 0.0
+
+S: (2, 4), A: south, S': (2, 3), R: 0.0
+
+S: (2, 3), A: north, S': (2, 4), R: 0.0
+
+S: (2, 4), A: south, S': (1, 4), R: 0.0
+
+S: (1, 4), A: east, S': (2, 4), R: 0.0
+
+S: (2, 4), A: south, S': (1, 4), R: 0.0
+
+S: (1, 4), A: east, S': (2, 4), R: 0.0
+
+S: (2, 4), A: south, S': (2, 3), R: 0.0
+
+S: (2, 3), A: east, S': (3, 3), R: 0.0
+
+S: (3, 3), A: west, S': (3, 4), R: 0.0
+
+S: (3, 4), A: north, S': (3, 4), R: 0.0
+
+S: (3, 4), A: east, S': (4, 4), R: 0.0
+
+S: (4, 4), A: east, S': (4, 4), R: 0.0
+
+S: (4, 4), A: east, S': (4, 4), R: 0.0
+
+S: (4, 4), A: west, S': (3, 4), R: 0.0
+
+S: (3, 4), A: north, S': (4, 4), R: 0.0
+
+S: (4, 4), A: east, S': (4, 4), R: 0.0
+
+S: (4, 4), A: east, S': (4, 4), R: 0.0
+
+S: (4, 4), A: east, S': (4, 4), R: 0.0
+
+S: (4, 4), A: north, S': (4, 4), R: 0.0
+
+S: (4, 4), A: east, S': (4, 4), R: 0.0
+
+S: (4, 4), A: east, S': (4, 4), R: 0.0
+
+S: (4, 4), A: east, S': (4, 4), R: 0.0
+
+S: (4, 4), A: east, S': (4, 4), R: 0.0
+
+S: (4, 4), A: east, S': (4, 4), R: 0.0
+
+S: (4, 4), A: east, S': (4, 4), R: 0.0
+
+S: (4, 4), A: north, S': (4, 4), R: 0.0
+
+S: (4, 4), A: north, S': (4, 4), R: 0.0
+
+S: (4, 4), A: east, S': (4, 4), R: 0.0
+
+S: (4, 4), A: east, S': (4, 4), R: 0.0
+
+S: (4, 4), A: east, S': (4, 4), R: 0.0
+
+S: (4, 4), A: east, S': (4, 4), R: 0.0
+
+S: (4, 4), A: east, S': (4, 4), R: 0.0
+
+S: (4, 4), A: east, S': (4, 4), R: 0.0
+
+S: (4, 4), A: south, S': (4, 3), R: 0.0
+
+S: (4, 3), A: west, S': (3, 3), R: 0.0
+
+S: (3, 3), A: west, S': (2, 3), R: 0.0
+
+S: (2, 3), A: north, S': (2, 4), R: 0.0
+
+S: (2, 4), A: north, S': (1, 4), R: 0.0
+
+S: (1, 4), A: east, S': (1, 4), R: 0.0
+
+S: (1, 4), A: east, S': (1, 4), R: 0.0
+
+S: (1, 4), A: east, S': (1, 4), R: 0.0
+
+S: (1, 4), A: east, S': (2, 4), R: 0.0
+
+S: (2, 4), A: south, S': (2, 3), R: 0.0
+
+S: (2, 3), A: north, S': (2, 4), R: 0.0
+
+S: (2, 4), A: south, S': (2, 3), R: 0.0
+
+S: (2, 3), A: south, S': (2, 2), R: 0.0
+
+S: (2, 2), A: exit, S': TERMINAL_STATE, R: 1
+
+EPISODE 5 COMPLETE: RETURN WAS 8.46414978287e-05
+
+BEGINNING EPISODE: 6
+
+S: (0, 1), A: north, S': (0, 2), R: 0.0
+
+S: (0, 2), A: north, S': (0, 3), R: 0.0
+
+S: (0, 3), A: west, S': (0, 3), R: 0.0
+
+S: (0, 3), A: west, S': (0, 3), R: 0.0
+
+S: (0, 3), A: east, S': (0, 3), R: 0.0
+
+S: (0, 3), A: east, S': (0, 4), R: 0.0
+
+S: (0, 4), A: east, S': (0, 3), R: 0.0
+
+S: (0, 3), A: west, S': (0, 4), R: 0.0
+
+S: (0, 4), A: east, S': (1, 4), R: 0.0
+
+S: (1, 4), A: east, S': (2, 4), R: 0.0
+
+S: (2, 4), A: south, S': (1, 4), R: 0.0
+
+S: (1, 4), A: east, S': (1, 4), R: 0.0
+
+S: (1, 4), A: east, S': (2, 4), R: 0.0
+
+S: (2, 4), A: south, S': (2, 3), R: 0.0
+
+S: (2, 3), A: north, S': (2, 4), R: 0.0
+
+S: (2, 4), A: south, S': (2, 3), R: 0.0
+
+S: (2, 3), A: north, S': (2, 4), R: 0.0
+
+S: (2, 4), A: east, S': (3, 4), R: 0.0
+
+S: (3, 4), A: north, S': (3, 4), R: 0.0
+
+S: (3, 4), A: north, S': (4, 4), R: 0.0
+
+S: (4, 4), A: east, S': (4, 4), R: 0.0
+
+S: (4, 4), A: west, S': (3, 4), R: 0.0
+
+S: (3, 4), A: north, S': (3, 4), R: 0.0
+
+S: (3, 4), A: north, S': (2, 4), R: 0.0
+
+S: (2, 4), A: south, S': (2, 3), R: 0.0
+
+S: (2, 3), A: east, S': (3, 3), R: 0.0
+
+S: (3, 3), A: east, S': (3, 3), R: 0.0
+
+S: (3, 3), A: east, S': (3, 4), R: 0.0
+
+S: (3, 4), A: south, S': (3, 3), R: 0.0
+
+S: (3, 3), A: west, S': (2, 3), R: 0.0
+
+S: (2, 3), A: north, S': (2, 4), R: 0.0
+
+S: (2, 4), A: south, S': (2, 3), R: 0.0
+
+S: (2, 3), A: north, S': (2, 4), R: 0.0
+
+S: (2, 4), A: south, S': (2, 3), R: 0.0
+
+S: (2, 3), A: north, S': (2, 4), R: 0.0
+
+S: (2, 4), A: west, S': (1, 4), R: 0.0
+
+S: (1, 4), A: east, S': (2, 4), R: 0.0
+
+S: (2, 4), A: south, S': (2, 3), R: 0.0
+
+S: (2, 3), A: north, S': (2, 4), R: 0.0
+
+S: (2, 4), A: west, S': (1, 4), R: 0.0
+
+S: (1, 4), A: north, S': (2, 4), R: 0.0
+
+S: (2, 4), A: south, S': (2, 3), R: 0.0
+
+S: (2, 3), A: north, S': (2, 3), R: 0.0
+
+S: (2, 3), A: east, S': (2, 2), R: 0.0
+
+S: (2, 2), A: exit, S': TERMINAL_STATE, R: 1
+
+Receive Positive (+1) human signal
+
+EPISODE 6 COMPLETE: RETURN WAS 0.00969773729788
+
+BEGINNING EPISODE: 7
+
+S: (0, 1), A: north, S': (0, 2), R: 0.0
+
+S: (0, 2), A: west, S': (0, 2), R: 0.0
+
+S: (0, 2), A: east, S': (0, 2), R: 0.0
+
+S: (0, 2), A: north, S': (0, 3), R: 0.0
+
+S: (0, 3), A: west, S': (0, 3), R: 0.0
+
+S: (0, 3), A: south, S': (0, 3), R: 0.0
+
+S: (0, 3), A: west, S': (0, 3), R: 0.0
+
+S: (0, 3), A: west, S': (0, 2), R: 0.0
+
+S: (0, 2), A: north, S': (0, 3), R: 0.0
+
+S: (0, 3), A: west, S': (0, 3), R: 0.0
+
+S: (0, 3), A: west, S': (0, 3), R: 0.0
+
+S: (0, 3), A: west, S': (0, 3), R: 0.0
+
+S: (0, 3), A: south, S': (0, 2), R: 0.0
+
+S: (0, 2), A: west, S': (0, 2), R: 0.0
+
+S: (0, 2), A: south, S': (0, 1), R: 0.0
+
+S: (0, 1), A: north, S': (0, 2), R: 0.0
+
+S: (0, 2), A: north, S': (0, 3), R: 0.0
+
+S: (0, 3), A: south, S': (0, 2), R: 0.0
+
+S: (0, 2), A: north, S': (0, 3), R: 0.0
+
+S: (0, 3), A: south, S': (0, 3), R: 0.0
+
+S: (0, 3), A: west, S': (0, 3), R: 0.0
+
+S: (0, 3), A: west, S': (0, 3), R: 0.0
+
+S: (0, 3), A: west, S': (0, 3), R: 0.0
+
+S: (0, 3), A: west, S': (0, 3), R: 0.0
+
+S: (0, 3), A: west, S': (0, 3), R: 0.0
+
+S: (0, 3), A: west, S': (0, 3), R: 0.0
+
+S: (0, 3), A: west, S': (0, 3), R: 0.0
+
+S: (0, 3), A: west, S': (0, 3), R: 0.0
+
+S: (0, 3), A: west, S': (0, 3), R: 0.0
+
+S: (0, 3), A: west, S': (0, 3), R: 0.0
+
+Receive Positive (+1) human signal
+
+S: (0, 3), A: west, S': (0, 3), R: 0.0
+
+S: (0, 3), A: north, S': (0, 4), R: 0.0
+
+S: (0, 4), A: east, S': (1, 4), R: 0.0
+
+S: (1, 4), A: east, S': (2, 4), R: 0.0
+
+S: (2, 4), A: east, S': (2, 4), R: 0.0
+
+S: (2, 4), A: east, S': (3, 4), R: 0.0
+
+S: (3, 4), A: north, S': (4, 4), R: 0.0
+
+S: (4, 4), A: north, S': (4, 4), R: 0.0
+
+S: (4, 4), A: east, S': (4, 4), R: 0.0
+
+S: (4, 4), A: east, S': (4, 4), R: 0.0
+
+S: (4, 4), A: south, S': (4, 3), R: 0.0
+
+S: (4, 3), A: west, S': (3, 3), R: 0.0
+
+S: (3, 3), A: west, S': (2, 3), R: 0.0
+
+S: (2, 3), A: north, S': (2, 4), R: 0.0
+
+S: (2, 4), A: south, S': (2, 3), R: 0.0
+
+S: (2, 3), A: south, S': (2, 2), R: 0.0
+
+S: (2, 2), A: exit, S': TERMINAL_STATE, R: 1
+
+EPISODE 7 COMPLETE: RETURN WAS 0.00785516721128
+
+BEGINNING EPISODE: 8
+
+S: (0, 1), A: north, S': (0, 2), R: 0.0
+
+S: (0, 2), A: south, S': (0, 1), R: 0.0
+
+S: (0, 1), A: west, S': (0, 0), R: 0.0
+
+S: (0, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+EPISODE 8 COMPLETE: RETURN WAS -7.29
+
+BEGINNING EPISODE: 9
+
+S: (0, 1), A: north, S': (0, 2), R: 0.0
+
+S: (0, 2), A: south, S': (0, 1), R: 0.0
+
+S: (0, 1), A: west, S': (0, 1), R: 0.0
+
+S: (0, 1), A: north, S': (0, 2), R: 0.0
+
+S: (0, 2), A: north, S': (0, 3), R: 0.0
+
+S: (0, 3), A: west, S': (0, 2), R: 0.0
+
+S: (0, 2), A: north, S': (0, 3), R: 0.0
+
+S: (0, 3), A: west, S': (0, 2), R: 0.0
+
+S: (0, 2), A: north, S': (0, 3), R: 0.0
+
+S: (0, 3), A: south, S': (0, 2), R: 0.0
+
+S: (0, 2), A: north, S': (0, 3), R: 0.0
+
+S: (0, 3), A: west, S': (0, 3), R: 0.0
+
+S: (0, 3), A: west, S': (0, 3), R: 0.0
+
+S: (0, 3), A: west, S': (0, 3), R: 0.0
+
+S: (0, 3), A: west, S': (0, 3), R: 0.0
+
+S: (0, 3), A: south, S': (0, 2), R: 0.0
+
+S: (0, 2), A: north, S': (0, 3), R: 0.0
+
+S: (0, 3), A: west, S': (0, 3), R: 0.0
+
+S: (0, 3), A: west, S': (0, 4), R: 0.0
+
+S: (0, 4), A: south, S': (0, 3), R: 0.0
+
+S: (0, 3), A: west, S': (0, 2), R: 0.0
+
+S: (0, 2), A: north, S': (0, 3), R: 0.0
+
+S: (0, 3), A: west, S': (0, 3), R: 0.0
+
+S: (0, 3), A: west, S': (0, 3), R: 0.0
+
+S: (0, 3), A: west, S': (0, 4), R: 0.0
+
+S: (0, 4), A: east, S': (1, 4), R: 0.0
+
+S: (1, 4), A: east, S': (1, 4), R: 0.0
+
+S: (1, 4), A: east, S': (2, 4), R: 0.0
+
+S: (2, 4), A: south, S': (2, 3), R: 0.0
+
+S: (2, 3), A: north, S': (2, 4), R: 0.0
+
+S: (2, 4), A: south, S': (3, 4), R: 0.0
+
+S: (3, 4), A: north, S': (3, 4), R: 0.0
+
+S: (3, 4), A: east, S': (3, 3), R: 0.0
+
+S: (3, 3), A: west, S': (2, 3), R: 0.0
+
+S: (2, 3), A: north, S': (2, 3), R: 0.0
+
+S: (2, 3), A: north, S': (2, 4), R: 0.0
+
+S: (2, 4), A: south, S': (2, 3), R: 0.0
+
+S: (2, 3), A: north, S': (2, 4), R: 0.0
+
+S: (2, 4), A: south, S': (2, 3), R: 0.0
+
+S: (2, 3), A: north, S': (2, 4), R: 0.0
+
+S: (2, 4), A: north, S': (2, 4), R: 0.0
+
+S: (2, 4), A: south, S': (2, 3), R: 0.0
+
+S: (2, 3), A: east, S': (2, 2), R: 0.0
+
+S: (2, 2), A: exit, S': TERMINAL_STATE, R: 1
+
+EPISODE 9 COMPLETE: RETURN WAS 0.0107752636643
+
+BEGINNING EPISODE: 10
+
+S: (0, 1), A: north, S': (0, 2), R: 0.0
+
+S: (0, 2), A: north, S': (0, 3), R: 0.0
+
+S: (0, 3), A: west, S': (0, 3), R: 0.0
+
+S: (0, 3), A: west, S': (0, 3), R: 0.0
+
+S: (0, 3), A: west, S': (0, 2), R: 0.0
+
+S: (0, 2), A: north, S': (0, 3), R: 0.0
+
+S: (0, 3), A: west, S': (0, 3), R: 0.0
+
+S: (0, 3), A: west, S': (0, 2), R: 0.0
+
+S: (0, 2), A: south, S': (0, 1), R: 0.0
+
+S: (0, 1), A: south, S': (0, 0), R: 0.0
+
+S: (0, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+EPISODE 10 COMPLETE: RETURN WAS -3.486784401
+
+BEGINNING EPISODE: 11
+
+S: (0, 1), A: east, S': (0, 2), R: 0.0
+
+S: (0, 2), A: north, S': (0, 2), R: 0.0
+
+S: (0, 2), A: east, S': (0, 2), R: 0.0
+
+S: (0, 2), A: east, S': (0, 2), R: 0.0
+
+S: (0, 2), A: north, S': (0, 3), R: 0.0
+
+S: (0, 3), A: west, S': (0, 3), R: 0.0
+
+S: (0, 3), A: south, S': (0, 2), R: 0.0
+
+S: (0, 2), A: north, S': (0, 3), R: 0.0
+
+S: (0, 3), A: west, S': (0, 3), R: 0.0
+
+S: (0, 3), A: south, S': (0, 2), R: 0.0
+
+S: (0, 2), A: north, S': (0, 2), R: 0.0
+
+S: (0, 2), A: north, S': (0, 2), R: 0.0
+
+S: (0, 2), A: north, S': (0, 3), R: 0.0
+
+S: (0, 3), A: west, S': (0, 3), R: 0.0
+
+S: (0, 3), A: north, S': (0, 3), R: 0.0
+
+S: (0, 3), A: west, S': (0, 3), R: 0.0
+
+S: (0, 3), A: west, S': (0, 3), R: 0.0
+
+S: (0, 3), A: west, S': (0, 3), R: 0.0
+
+S: (0, 3), A: west, S': (0, 3), R: 0.0
+
+S: (0, 3), A: west, S': (0, 3), R: 0.0
+
+Receive Positive (+1) human signal
+
+S: (0, 3), A: east, S': (0, 4), R: 0.0
+
+S: (0, 4), A: east, S': (1, 4), R: 0.0
+
+S: (1, 4), A: east, S': (2, 4), R: 0.0
+
+S: (2, 4), A: south, S': (2, 3), R: 0.0
+
+S: (2, 3), A: east, S': (3, 3), R: 0.0
+
+S: (3, 3), A: west, S': (2, 3), R: 0.0
+
+S: (2, 3), A: north, S': (2, 4), R: 0.0
+
+S: (2, 4), A: south, S': (3, 4), R: 0.0
+
+S: (3, 4), A: north, S': (3, 4), R: 0.0
+
+S: (3, 4), A: north, S': (3, 4), R: 0.0
+
+S: (3, 4), A: north, S': (3, 4), R: 0.0
+
+S: (3, 4), A: north, S': (2, 4), R: 0.0
+
+S: (2, 4), A: south, S': (2, 3), R: 0.0
+
+S: (2, 3), A: north, S': (2, 4), R: 0.0
+
+S: (2, 4), A: south, S': (2, 3), R: 0.0
+
+S: (2, 3), A: north, S': (2, 4), R: 0.0
+
+S: (2, 4), A: south, S': (1, 4), R: 0.0
+
+Receive Negative (-1) human signal
+
+S: (1, 4), A: north, S': (1, 4), R: 0.0
+
+S: (1, 4), A: east, S': (2, 4), R: 0.0
+
+S: (2, 4), A: north, S': (2, 4), R: 0.0
+
+S: (2, 4), A: west, S': (1, 4), R: 0.0
+
+S: (1, 4), A: north, S': (1, 4), R: 0.0
+
+S: (1, 4), A: east, S': (2, 4), R: 0.0
+
+S: (2, 4), A: east, S': (3, 4), R: 0.0
+
+S: (3, 4), A: west, S': (2, 4), R: 0.0
+
+S: (2, 4), A: east, S': (3, 4), R: 0.0
+
+S: (3, 4), A: west, S': (2, 4), R: 0.0
+
+S: (2, 4), A: east, S': (3, 4), R: 0.0
+
+S: (3, 4), A: west, S': (2, 4), R: 0.0
+
+S: (2, 4), A: south, S': (2, 3), R: 0.0
+
+S: (2, 3), A: east, S': (3, 3), R: 0.0
+
+S: (3, 3), A: west, S': (3, 3), R: 0.0
+
+S: (3, 3), A: west, S': (2, 3), R: 0.0
+
+S: (2, 3), A: north, S': (3, 3), R: 0.0
+
+S: (3, 3), A: west, S': (2, 3), R: 0.0
+
+S: (2, 3), A: east, S': (3, 3), R: 0.0
+
+S: (3, 3), A: west, S': (2, 3), R: 0.0
+
+S: (2, 3), A: west, S': (2, 3), R: 0.0
+
+Receive Negative (-1) human signal
+
+S: (2, 3), A: west, S': (2, 3), R: 0.0
+
+S: (2, 3), A: west, S': (2, 3), R: 0.0
+
+S: (2, 3), A: south, S': (2, 2), R: 0.0
+
+S: (2, 2), A: exit, S': TERMINAL_STATE, R: 1
+
+EPISODE 11 COMPLETE: RETURN WAS 0.00161730926992
+
+BEGINNING EPISODE: 12
+
+S: (0, 1), A: west, S': (0, 1), R: 0.0
+
+S: (0, 1), A: north, S': (1, 1), R: 0.0
+
+S: (1, 1), A: north, S': (1, 1), R: 0.0
+
+S: (1, 1), A: west, S': (1, 0), R: 0.0
+
+S: (1, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+Receive Positive (+1) human signal
+
+EPISODE 12 COMPLETE: RETURN WAS -6.561
+
+BEGINNING EPISODE: 13
+
+S: (0, 1), A: south, S': (0, 0), R: 0.0
+
+S: (0, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+EPISODE 13 COMPLETE: RETURN WAS -9.0
+
+BEGINNING EPISODE: 14
+
+S: (0, 1), A: north, S': (0, 2), R: 0.0
+
+S: (0, 2), A: west, S': (0, 2), R: 0.0
+
+S: (0, 2), A: north, S': (0, 3), R: 0.0
+
+S: (0, 3), A: west, S': (0, 3), R: 0.0
+
+S: (0, 3), A: west, S': (0, 4), R: 0.0
+
+S: (0, 4), A: east, S': (1, 4), R: 0.0
+
+S: (1, 4), A: east, S': (1, 4), R: 0.0
+
+S: (1, 4), A: east, S': (1, 4), R: 0.0
+
+S: (1, 4), A: east, S': (2, 4), R: 0.0
+
+S: (2, 4), A: south, S': (2, 3), R: 0.0
+
+S: (2, 3), A: south, S': (2, 2), R: 0.0
+
+S: (2, 2), A: exit, S': TERMINAL_STATE, R: 1
+
+EPISODE 14 COMPLETE: RETURN WAS 0.31381059609
+
+BEGINNING EPISODE: 15
+
+S: (0, 1), A: north, S': (0, 2), R: 0.0
+
+S: (0, 2), A: north, S': (0, 3), R: 0.0
+
+Receive Positive (+1) human signal
+
+S: (0, 3), A: west, S': (0, 3), R: 0.0
+
+S: (0, 3), A: south, S': (0, 3), R: 0.0
+
+S: (0, 3), A: west, S': (0, 4), R: 0.0
+
+S: (0, 4), A: east, S': (1, 4), R: 0.0
+
+S: (1, 4), A: east, S': (2, 4), R: 0.0
+
+S: (2, 4), A: east, S': (3, 4), R: 0.0
+
+S: (3, 4), A: west, S': (3, 4), R: 0.0
+
+S: (3, 4), A: south, S': (2, 4), R: 0.0
+
+S: (2, 4), A: west, S': (1, 4), R: 0.0
+
+S: (1, 4), A: east, S': (2, 4), R: 0.0
+
+S: (2, 4), A: east, S': (3, 4), R: 0.0
+
+S: (3, 4), A: west, S': (2, 4), R: 0.0
+
+S: (2, 4), A: north, S': (2, 4), R: 0.0
+
+S: (2, 4), A: east, S': (3, 4), R: 0.0
+
+S: (3, 4), A: west, S': (3, 4), R: 0.0
+
+S: (3, 4), A: east, S': (3, 4), R: 0.0
+
+S: (3, 4), A: west, S': (2, 4), R: 0.0
+
+S: (2, 4), A: east, S': (3, 4), R: 0.0
+
+S: (3, 4), A: west, S': (2, 4), R: 0.0
+
+S: (2, 4), A: east, S': (3, 4), R: 0.0
+
+S: (3, 4), A: west, S': (2, 4), R: 0.0
+
+S: (2, 4), A: west, S': (1, 4), R: 0.0
+
+S: (1, 4), A: east, S': (2, 4), R: 0.0
+
+S: (2, 4), A: south, S': (2, 3), R: 0.0
+
+Receive Negative (-1) human signal
+
+S: (2, 3), A: south, S': (2, 2), R: 0.0
+
+S: (2, 2), A: exit, S': TERMINAL_STATE, R: 1
+
+EPISODE 15 COMPLETE: RETURN WAS 0.058149737003
+
+BEGINNING EPISODE: 16
+
+S: (0, 1), A: north, S': (0, 2), R: 0.0
+
+S: (0, 2), A: east, S': (0, 2), R: 0.0
+
+S: (0, 2), A: north, S': (0, 3), R: 0.0
+
+S: (0, 3), A: west, S': (0, 4), R: 0.0
+
+S: (0, 4), A: east, S': (1, 4), R: 0.0
+
+S: (1, 4), A: north, S': (1, 4), R: 0.0
+
+S: (1, 4), A: north, S': (1, 4), R: 0.0
+
+S: (1, 4), A: north, S': (1, 4), R: 0.0
+
+S: (1, 4), A: north, S': (1, 4), R: 0.0
+
+S: (1, 4), A: north, S': (1, 4), R: 0.0
+
+S: (1, 4), A: north, S': (1, 4), R: 0.0
+
+S: (1, 4), A: north, S': (1, 4), R: 0.0
+
+S: (1, 4), A: north, S': (1, 4), R: 0.0
+
+S: (1, 4), A: west, S': (1, 4), R: 0.0
+
+S: (1, 4), A: north, S': (1, 4), R: 0.0
+
+S: (1, 4), A: north, S': (2, 4), R: 0.0
+
+S: (2, 4), A: east, S': (3, 4), R: 0.0
+
+S: (3, 4), A: east, S': (4, 4), R: 0.0
+
+S: (4, 4), A: east, S': (4, 4), R: 0.0
+
+S: (4, 4), A: south, S': (4, 3), R: 0.0
+
+S: (4, 3), A: west, S': (3, 3), R: 0.0
+
+S: (3, 3), A: east, S': (3, 3), R: 0.0
+
+S: (3, 3), A: east, S': (4, 3), R: 0.0
+
+S: (4, 3), A: west, S': (3, 3), R: 0.0
+
+Receive Positive (+1) human signal
+
+S: (3, 3), A: west, S': (2, 3), R: 0.0
+
+S: (2, 3), A: north, S': (2, 4), R: 0.0
+
+S: (2, 4), A: east, S': (3, 4), R: 0.0
+
+S: (3, 4), A: east, S': (4, 4), R: 0.0
+
+S: (4, 4), A: north, S': (4, 4), R: 0.0
+
+S: (4, 4), A: east, S': (4, 4), R: 0.0
+
+S: (4, 4), A: west, S': (3, 4), R: 0.0
+
+S: (3, 4), A: east, S': (4, 4), R: 0.0
+
+S: (4, 4), A: east, S': (4, 4), R: 0.0
+
+S: (4, 4), A: east, S': (4, 4), R: 0.0
+
+S: (4, 4), A: east, S': (4, 4), R: 0.0
+
+S: (4, 4), A: east, S': (4, 4), R: 0.0
+
+S: (4, 4), A: north, S': (4, 4), R: 0.0
+
+S: (4, 4), A: east, S': (4, 4), R: 0.0
+
+S: (4, 4), A: south, S': (4, 3), R: 0.0
+
+S: (4, 3), A: west, S': (3, 3), R: 0.0
+
+S: (3, 3), A: east, S': (4, 3), R: 0.0
+
+S: (4, 3), A: west, S': (3, 3), R: 0.0
+
+S: (3, 3), A: south, S': (4, 3), R: 0.0
+
+S: (4, 3), A: east, S': (4, 3), R: 0.0
+
+S: (4, 3), A: north, S': (4, 4), R: 0.0
+
+S: (4, 4), A: east, S': (4, 4), R: 0.0
+
+S: (4, 4), A: east, S': (4, 4), R: 0.0
+
+S: (4, 4), A: east, S': (4, 4), R: 0.0
+
+S: (4, 4), A: north, S': (4, 4), R: 0.0
+
+S: (4, 4), A: west, S': (3, 4), R: 0.0
+
+S: (3, 4), A: east, S': (4, 4), R: 0.0
+
+S: (4, 4), A: east, S': (4, 4), R: 0.0
+
+S: (4, 4), A: south, S': (4, 3), R: 0.0
+
+S: (4, 3), A: west, S': (3, 3), R: 0.0
+
+S: (3, 3), A: east, S': (4, 3), R: 0.0
+
+S: (4, 3), A: east, S': (4, 3), R: 0.0
+
+S: (4, 3), A: west, S': (4, 2), R: 0.0
+
+S: (4, 2), A: exit, S': TERMINAL_STATE, R: 10
+
+EPISODE 16 COMPLETE: RETURN WAS 0.0246503470496
+
+BEGINNING EPISODE: 17
+
+S: (0, 1), A: north, S': (0, 2), R: 0.0
+
+S: (0, 2), A: north, S': (0, 3), R: 0.0
+
+Receive Positive (+1) human signal
+
+S: (0, 3), A: west, S': (0, 3), R: 0.0
+
+S: (0, 3), A: west, S': (0, 3), R: 0.0
+
+S: (0, 3), A: west, S': (0, 2), R: 0.0
+
+S: (0, 2), A: east, S': (0, 2), R: 0.0
+
+S: (0, 2), A: north, S': (0, 3), R: 0.0
+
+S: (0, 3), A: west, S': (0, 2), R: 0.0
+
+S: (0, 2), A: north, S': (0, 3), R: 0.0
+
+S: (0, 3), A: north, S': (0, 4), R: 0.0
+
+S: (0, 4), A: east, S': (1, 4), R: 0.0
+
+S: (1, 4), A: north, S': (1, 4), R: 0.0
+
+S: (1, 4), A: north, S': (1, 4), R: 0.0
+
+S: (1, 4), A: north, S': (1, 4), R: 0.0
+
+S: (1, 4), A: north, S': (1, 4), R: 0.0
+
+S: (1, 4), A: north, S': (1, 4), R: 0.0
+
+S: (1, 4), A: north, S': (1, 4), R: 0.0
+
+S: (1, 4), A: north, S': (1, 4), R: 0.0
+
+S: (1, 4), A: north, S': (1, 4), R: 0.0
+
+S: (1, 4), A: north, S': (1, 4), R: 0.0
+
+S: (1, 4), A: north, S': (1, 4), R: 0.0
+
+S: (1, 4), A: south, S': (1, 4), R: 0.0
+
+S: (1, 4), A: south, S': (1, 4), R: 0.0
+
+S: (1, 4), A: north, S': (1, 4), R: 0.0
+
+S: (1, 4), A: north, S': (2, 4), R: 0.0
+
+S: (2, 4), A: east, S': (2, 4), R: 0.0
+
+S: (2, 4), A: east, S': (3, 4), R: 0.0
+
+S: (3, 4), A: east, S': (4, 4), R: 0.0
+
+S: (4, 4), A: east, S': (4, 4), R: 0.0
+
+S: (4, 4), A: east, S': (4, 4), R: 0.0
+
+S: (4, 4), A: east, S': (4, 4), R: 0.0
+
+S: (4, 4), A: east, S': (4, 4), R: 0.0
+
+S: (4, 4), A: east, S': (4, 4), R: 0.0
+
+S: (4, 4), A: east, S': (4, 4), R: 0.0
+
+S: (4, 4), A: east, S': (4, 4), R: 0.0
+
+S: (4, 4), A: west, S': (3, 4), R: 0.0
+
+S: (3, 4), A: east, S': (3, 3), R: 0.0
+
+S: (3, 3), A: east, S': (4, 3), R: 0.0
+
+S: (4, 3), A: west, S': (3, 3), R: 0.0
+
+S: (3, 3), A: east, S': (3, 3), R: 0.0
+
+S: (3, 3), A: west, S': (2, 3), R: 0.0
+
+S: (2, 3), A: south, S': (2, 2), R: 0.0
+
+S: (2, 2), A: exit, S': TERMINAL_STATE, R: 1
+
+EPISODE 17 COMPLETE: RETURN WAS 0.0119725151826
+
+BEGINNING EPISODE: 18
+
+S: (0, 1), A: north, S': (0, 2), R: 0.0
+
+S: (0, 2), A: north, S': (0, 3), R: 0.0
+
+S: (0, 3), A: west, S': (0, 3), R: 0.0
+
+S: (0, 3), A: east, S': (0, 3), R: 0.0
+
+S: (0, 3), A: west, S': (0, 3), R: 0.0
+
+Receive Positive (+1) human signal
+
+S: (0, 3), A: west, S': (0, 2), R: 0.0
+
+S: (0, 2), A: south, S': (0, 2), R: 0.0
+
+S: (0, 2), A: north, S': (0, 3), R: 0.0
+
+S: (0, 3), A: west, S': (0, 3), R: 0.0
+
+S: (0, 3), A: west, S': (0, 2), R: 0.0
+
+S: (0, 2), A: north, S': (0, 2), R: 0.0
+
+S: (0, 2), A: north, S': (0, 3), R: 0.0
+
+S: (0, 3), A: west, S': (0, 3), R: 0.0
+
+S: (0, 3), A: west, S': (0, 3), R: 0.0
+
+S: (0, 3), A: west, S': (0, 3), R: 0.0
+
+S: (0, 3), A: west, S': (0, 3), R: 0.0
+
+S: (0, 3), A: south, S': (0, 2), R: 0.0
+
+S: (0, 2), A: north, S': (0, 3), R: 0.0
+
+S: (0, 3), A: east, S': (0, 3), R: 0.0
+
+S: (0, 3), A: west, S': (0, 3), R: 0.0
+
+S: (0, 3), A: west, S': (0, 3), R: 0.0
+
+S: (0, 3), A: south, S': (0, 2), R: 0.0
+
+S: (0, 2), A: north, S': (0, 3), R: 0.0
+
+S: (0, 3), A: west, S': (0, 3), R: 0.0
+
+S: (0, 3), A: west, S': (0, 4), R: 0.0
+
+S: (0, 4), A: west, S': (0, 3), R: 0.0
+
+S: (0, 3), A: west, S': (0, 3), R: 0.0
+
+S: (0, 3), A: north, S': (0, 4), R: 0.0
+
+S: (0, 4), A: east, S': (1, 4), R: 0.0
+
+S: (1, 4), A: north, S': (2, 4), R: 0.0
+
+S: (2, 4), A: east, S': (3, 4), R: 0.0
+
+S: (3, 4), A: east, S': (4, 4), R: 0.0
+
+S: (4, 4), A: east, S': (4, 4), R: 0.0
+
+S: (4, 4), A: south, S': (3, 4), R: 0.0
+
+S: (3, 4), A: east, S': (4, 4), R: 0.0
+
+S: (4, 4), A: east, S': (4, 4), R: 0.0
+
+S: (4, 4), A: east, S': (4, 4), R: 0.0
+
+S: (4, 4), A: east, S': (4, 4), R: 0.0
+
+S: (4, 4), A: east, S': (4, 4), R: 0.0
+
+S: (4, 4), A: west, S': (3, 4), R: 0.0
+
+S: (3, 4), A: east, S': (4, 4), R: 0.0
+
+S: (4, 4), A: south, S': (4, 3), R: 0.0
+
+S: (4, 3), A: west, S': (3, 3), R: 0.0
+
+S: (3, 3), A: east, S': (3, 4), R: 0.0
+
+S: (3, 4), A: east, S': (3, 3), R: 0.0
+
+S: (3, 3), A: east, S': (3, 3), R: 0.0
+
+S: (3, 3), A: east, S': (4, 3), R: 0.0
+
+S: (4, 3), A: west, S': (4, 4), R: 0.0
+
+S: (4, 4), A: east, S': (4, 4), R: 0.0
+
+S: (4, 4), A: east, S': (4, 4), R: 0.0
+
+S: (4, 4), A: south, S': (4, 3), R: 0.0
+
+S: (4, 3), A: west, S': (4, 4), R: 0.0
+
+S: (4, 4), A: east, S': (4, 4), R: 0.0
+
+S: (4, 4), A: east, S': (4, 4), R: 0.0
+
+S: (4, 4), A: east, S': (4, 4), R: 0.0
+
+S: (4, 4), A: east, S': (4, 4), R: 0.0
+
+S: (4, 4), A: north, S': (4, 4), R: 0.0
+
+S: (4, 4), A: west, S': (3, 4), R: 0.0
+
+S: (3, 4), A: east, S': (4, 4), R: 0.0
+
+S: (4, 4), A: east, S': (4, 4), R: 0.0
+
+Receive Negative (-1) human signal
+
+S: (4, 4), A: south, S': (4, 3), R: 0.0
+
+S: (4, 3), A: west, S': (3, 3), R: 0.0
+
+S: (3, 3), A: east, S': (4, 3), R: 0.0
+
+S: (4, 3), A: west, S': (3, 3), R: 0.0
+
+S: (3, 3), A: east, S': (4, 3), R: 0.0
+
+S: (4, 3), A: west, S': (3, 3), R: 0.0
+
+S: (3, 3), A: east, S': (4, 3), R: 0.0
+
+S: (4, 3), A: east, S': (4, 3), R: 0.0
+
+S: (4, 3), A: west, S': (4, 2), R: 0.0
+
+S: (4, 2), A: exit, S': TERMINAL_STATE, R: 10
+
+EPISODE 18 COMPLETE: RETURN WAS 0.00696198609131
+
+BEGINNING EPISODE: 19
+
+S: (0, 1), A: south, S': (0, 0), R: 0.0
+
+Receive Negative (-1) human signal
+
+S: (0, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+EPISODE 19 COMPLETE: RETURN WAS -9.0
+
+BEGINNING EPISODE: 20
+
+S: (0, 1), A: north, S': (0, 2), R: 0.0
+
+S: (0, 2), A: east, S': (0, 2), R: 0.0
+
+S: (0, 2), A: south, S': (0, 1), R: 0.0
+
+S: (0, 1), A: north, S': (0, 2), R: 0.0
+
+S: (0, 2), A: north, S': (0, 3), R: 0.0
+
+S: (0, 3), A: west, S': (0, 3), R: 0.0
+
+S: (0, 3), A: west, S': (0, 3), R: 0.0
+
+S: (0, 3), A: west, S': (0, 3), R: 0.0
+
+S: (0, 3), A: west, S': (0, 3), R: 0.0
+
+S: (0, 3), A: west, S': (0, 3), R: 0.0
+
+S: (0, 3), A: west, S': (0, 3), R: 0.0
+
+S: (0, 3), A: west, S': (0, 4), R: 0.0
+
+S: (0, 4), A: east, S': (0, 4), R: 0.0
+
+S: (0, 4), A: east, S': (1, 4), R: 0.0
+
+S: (1, 4), A: north, S': (1, 4), R: 0.0
+
+S: (1, 4), A: north, S': (1, 4), R: 0.0
+
+S: (1, 4), A: north, S': (0, 4), R: 0.0
+
+S: (0, 4), A: east, S': (1, 4), R: 0.0
+
+S: (1, 4), A: north, S': (1, 4), R: 0.0
+
+S: (1, 4), A: west, S': (1, 4), R: 0.0
+
+S: (1, 4), A: north, S': (1, 4), R: 0.0
+
+S: (1, 4), A: north, S': (1, 4), R: 0.0
+
+S: (1, 4), A: north, S': (1, 4), R: 0.0
+
+S: (1, 4), A: north, S': (1, 4), R: 0.0
+
+S: (1, 4), A: north, S': (1, 4), R: 0.0
+
+S: (1, 4), A: north, S': (2, 4), R: 0.0
+
+S: (2, 4), A: east, S': (3, 4), R: 0.0
+
+S: (3, 4), A: east, S': (4, 4), R: 0.0
+
+S: (4, 4), A: south, S': (4, 4), R: 0.0
+
+S: (4, 4), A: south, S': (4, 3), R: 0.0
+
+S: (4, 3), A: south, S': (4, 2), R: 0.0
+
+S: (4, 2), A: exit, S': TERMINAL_STATE, R: 10
+
+EPISODE 20 COMPLETE: RETURN WAS 0.381520424477
+
+BEGINNING EPISODE: 21
+
+S: (0, 1), A: north, S': (1, 1), R: 0.0
+
+S: (1, 1), A: north, S': (1, 1), R: 0.0
+
+S: (1, 1), A: north, S': (1, 1), R: 0.0
+
+S: (1, 1), A: west, S': (1, 1), R: 0.0
+
+S: (1, 1), A: east, S': (2, 1), R: 0.0
+
+Receive Positive (+1) human signal
+
+S: (2, 1), A: north, S': (2, 2), R: 0.0
+
+S: (2, 2), A: exit, S': TERMINAL_STATE, R: 1
+
+EPISODE 21 COMPLETE: RETURN WAS 0.531441
+
+BEGINNING EPISODE: 22
+
+S: (0, 1), A: south, S': (0, 0), R: 0.0
+
+S: (0, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+EPISODE 22 COMPLETE: RETURN WAS -9.0
+
+BEGINNING EPISODE: 23
+
+S: (0, 1), A: north, S': (0, 2), R: 0.0
+
+S: (0, 2), A: north, S': (0, 2), R: 0.0
+
+S: (0, 2), A: north, S': (0, 3), R: 0.0
+
+S: (0, 3), A: south, S': (0, 2), R: 0.0
+
+S: (0, 2), A: west, S': (0, 2), R: 0.0
+
+S: (0, 2), A: north, S': (0, 3), R: 0.0
+
+S: (0, 3), A: west, S': (0, 3), R: 0.0
+
+S: (0, 3), A: west, S': (0, 3), R: 0.0
+
+S: (0, 3), A: west, S': (0, 3), R: 0.0
+
+S: (0, 3), A: west, S': (0, 3), R: 0.0
+
+S: (0, 3), A: north, S': (0, 4), R: 0.0
+
+S: (0, 4), A: east, S': (1, 4), R: 0.0
+
+S: (1, 4), A: north, S': (1, 4), R: 0.0
+
+S: (1, 4), A: south, S': (0, 4), R: 0.0
+
+S: (0, 4), A: east, S': (0, 4), R: 0.0
+
+S: (0, 4), A: east, S': (1, 4), R: 0.0
+
+S: (1, 4), A: west, S': (0, 4), R: 0.0
+
+S: (0, 4), A: east, S': (1, 4), R: 0.0
+
+S: (1, 4), A: south, S': (0, 4), R: 0.0
+
+S: (0, 4), A: east, S': (1, 4), R: 0.0
+
+S: (1, 4), A: north, S': (1, 4), R: 0.0
+
+Receive Negative (-1) human signal
+
+S: (1, 4), A: south, S': (1, 4), R: 0.0
+
+S: (1, 4), A: east, S': (1, 4), R: 0.0
+
+S: (1, 4), A: north, S': (1, 4), R: 0.0
+
+S: (1, 4), A: east, S': (2, 4), R: 0.0
+
+S: (2, 4), A: east, S': (2, 3), R: 0.0
+
+S: (2, 3), A: south, S': (2, 2), R: 0.0
+
+S: (2, 2), A: exit, S': TERMINAL_STATE, R: 1
+
+EPISODE 23 COMPLETE: RETURN WAS 0.058149737003
+
+BEGINNING EPISODE: 24
+
+S: (0, 1), A: east, S': (1, 1), R: 0.0
+
+S: (1, 1), A: east, S': (2, 1), R: 0.0
+
+Receive Positive (+1) human signal
+
+S: (2, 1), A: west, S': (1, 1), R: 0.0
+
+S: (1, 1), A: north, S': (1, 1), R: 0.0
+
+S: (1, 1), A: south, S': (1, 0), R: 0.0
+
+S: (1, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+EPISODE 24 COMPLETE: RETURN WAS -5.9049
+
+BEGINNING EPISODE: 25
+
+S: (0, 1), A: east, S': (1, 1), R: 0.0
+
+S: (1, 1), A: north, S': (1, 1), R: 0.0
+
+S: (1, 1), A: north, S': (1, 1), R: 0.0
+
+S: (1, 1), A: north, S': (1, 1), R: 0.0
+
+S: (1, 1), A: north, S': (1, 1), R: 0.0
+
+S: (1, 1), A: north, S': (1, 1), R: 0.0
+
+Receive Negative (-1) human signal
+
+S: (1, 1), A: south, S': (1, 0), R: 0.0
+
+S: (1, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+EPISODE 25 COMPLETE: RETURN WAS -4.782969
+
+BEGINNING EPISODE: 26
+
+S: (0, 1), A: north, S': (1, 1), R: 0.0
+
+S: (1, 1), A: west, S': (1, 0), R: 0.0
+
+S: (1, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+EPISODE 26 COMPLETE: RETURN WAS -8.1
+
+BEGINNING EPISODE: 27
+
+S: (0, 1), A: north, S': (0, 2), R: 0.0
+
+Receive Negative (-1) human signal
+
+S: (0, 2), A: north, S': (0, 3), R: 0.0
+
+S: (0, 3), A: east, S': (0, 3), R: 0.0
+
+S: (0, 3), A: west, S': (0, 3), R: 0.0
+
+S: (0, 3), A: west, S': (0, 3), R: 0.0
+
+S: (0, 3), A: west, S': (0, 3), R: 0.0
+
+S: (0, 3), A: west, S': (0, 3), R: 0.0
+
+S: (0, 3), A: north, S': (0, 4), R: 0.0
+
+S: (0, 4), A: west, S': (0, 3), R: 0.0
+
+S: (0, 3), A: west, S': (0, 3), R: 0.0
+
+S: (0, 3), A: west, S': (0, 3), R: 0.0
+
+S: (0, 3), A: west, S': (0, 3), R: 0.0
+
+S: (0, 3), A: west, S': (0, 4), R: 0.0
+
+S: (0, 4), A: west, S': (0, 4), R: 0.0
+
+S: (0, 4), A: west, S': (0, 4), R: 0.0
+
+S: (0, 4), A: west, S': (0, 3), R: 0.0
+
+S: (0, 3), A: west, S': (0, 3), R: 0.0
+
+S: (0, 3), A: north, S': (0, 4), R: 0.0
+
+S: (0, 4), A: south, S': (0, 4), R: 0.0
+
+S: (0, 4), A: west, S': (0, 4), R: 0.0
+
+Receive Negative (-1) human signal
+
+S: (0, 4), A: east, S': (0, 4), R: 0.0
+
+S: (0, 4), A: east, S': (1, 4), R: 0.0
+
+S: (1, 4), A: east, S': (2, 4), R: 0.0
+
+S: (2, 4), A: south, S': (1, 4), R: 0.0
+
+S: (1, 4), A: east, S': (1, 4), R: 0.0
+
+S: (1, 4), A: east, S': (2, 4), R: 0.0
+
+S: (2, 4), A: east, S': (2, 3), R: 0.0
+
+S: (2, 3), A: south, S': (2, 2), R: 0.0
+
+S: (2, 2), A: exit, S': TERMINAL_STATE, R: 1
+
+EPISODE 27 COMPLETE: RETURN WAS 0.0523347633027
+
+BEGINNING EPISODE: 28
+
+S: (0, 1), A: west, S': (0, 1), R: 0.0
+
+S: (0, 1), A: west, S': (0, 2), R: 0.0
+
+S: (0, 2), A: north, S': (0, 3), R: 0.0
+
+S: (0, 3), A: east, S': (0, 3), R: 0.0
+
+Receive Positive (+1) human signal
+
+S: (0, 3), A: north, S': (0, 4), R: 0.0
+
+S: (0, 4), A: east, S': (1, 4), R: 0.0
+
+S: (1, 4), A: east, S': (2, 4), R: 0.0
+
+S: (2, 4), A: east, S': (3, 4), R: 0.0
+
+S: (3, 4), A: east, S': (4, 4), R: 0.0
+
+S: (4, 4), A: south, S': (4, 4), R: 0.0
+
+S: (4, 4), A: south, S': (4, 3), R: 0.0
+
+S: (4, 3), A: west, S': (4, 2), R: 0.0
+
+S: (4, 2), A: exit, S': TERMINAL_STATE, R: 10
+
+EPISODE 28 COMPLETE: RETURN WAS 2.82429536481
+
+BEGINNING EPISODE: 29
+
+S: (0, 1), A: west, S': (0, 1), R: 0.0
+
+S: (0, 1), A: north, S': (1, 1), R: 0.0
+
+S: (1, 1), A: east, S': (1, 0), R: 0.0
+
+Receive Positive (+1) human signal
+
+S: (1, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+EPISODE 29 COMPLETE: RETURN WAS -7.29
+
+BEGINNING EPISODE: 30
+
+S: (0, 1), A: west, S': (0, 2), R: 0.0
+
+S: (0, 2), A: north, S': (0, 3), R: 0.0
+
+S: (0, 3), A: east, S': (0, 3), R: 0.0
+
+S: (0, 3), A: east, S': (0, 3), R: 0.0
+
+S: (0, 3), A: east, S': (0, 4), R: 0.0
+
+S: (0, 4), A: south, S': (0, 3), R: 0.0
+
+S: (0, 3), A: south, S': (0, 2), R: 0.0
+
+S: (0, 2), A: north, S': (0, 3), R: 0.0
+
+S: (0, 3), A: east, S': (0, 3), R: 0.0
+
+S: (0, 3), A: south, S': (0, 2), R: 0.0
+
+S: (0, 2), A: north, S': (0, 3), R: 0.0
+
+S: (0, 3), A: east, S': (0, 3), R: 0.0
+
+S: (0, 3), A: east, S': (0, 3), R: 0.0
+
+Receive Negative (-1) human signal
+
+S: (0, 3), A: north, S': (0, 3), R: 0.0
+
+S: (0, 3), A: north, S': (0, 4), R: 0.0
+
+S: (0, 4), A: east, S': (1, 4), R: 0.0
+
+S: (1, 4), A: east, S': (2, 4), R: 0.0
+
+S: (2, 4), A: east, S': (3, 4), R: 0.0
+
+S: (3, 4), A: east, S': (3, 4), R: 0.0
+
+S: (3, 4), A: west, S': (2, 4), R: 0.0
+
+S: (2, 4), A: east, S': (3, 4), R: 0.0
+
+S: (3, 4), A: east, S': (4, 4), R: 0.0
+
+S: (4, 4), A: east, S': (4, 4), R: 0.0
+
+S: (4, 4), A: south, S': (4, 3), R: 0.0
+
+S: (4, 3), A: south, S': (3, 3), R: 0.0
+
+S: (3, 3), A: south, S': (3, 3), R: 0.0
+
+Receive Negative (-1) human signal
+
+S: (3, 3), A: east, S': (4, 3), R: 0.0
+
+S: (4, 3), A: west, S': (3, 3), R: 0.0
+
+S: (3, 3), A: east, S': (4, 3), R: 0.0
+
+S: (4, 3), A: west, S': (3, 3), R: 0.0
+
+S: (3, 3), A: east, S': (3, 4), R: 0.0
+
+S: (3, 4), A: east, S': (4, 4), R: 0.0
+
+S: (4, 4), A: south, S': (4, 3), R: 0.0
+
+S: (4, 3), A: west, S': (3, 3), R: 0.0
+
+S: (3, 3), A: east, S': (4, 3), R: 0.0
+
+S: (4, 3), A: west, S': (3, 3), R: 0.0
+
+Receive Negative (-1) human signal
+
+S: (3, 3), A: north, S': (3, 4), R: 0.0
+
+S: (3, 4), A: north, S': (3, 4), R: 0.0
+
+S: (3, 4), A: north, S': (3, 4), R: 0.0
+
+S: (3, 4), A: north, S': (3, 4), R: 0.0
+
+S: (3, 4), A: east, S': (4, 4), R: 0.0
+
+S: (4, 4), A: south, S': (4, 3), R: 0.0
+
+S: (4, 3), A: west, S': (4, 2), R: 0.0
+
+S: (4, 2), A: exit, S': TERMINAL_STATE, R: 10
+
+EPISODE 30 COMPLETE: RETURN WAS 0.107752636643
+
+BEGINNING EPISODE: 31
+
+S: (0, 1), A: west, S': (0, 0), R: 0.0
+
+S: (0, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+Receive Positive (+1) human signal
+
+EPISODE 31 COMPLETE: RETURN WAS -9.0
+
+BEGINNING EPISODE: 32
+
+S: (0, 1), A: west, S': (0, 0), R: 0.0
+
+S: (0, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+EPISODE 32 COMPLETE: RETURN WAS -9.0
+
+BEGINNING EPISODE: 33
+
+S: (0, 1), A: north, S': (0, 2), R: 0.0
+
+S: (0, 2), A: east, S': (0, 2), R: 0.0
+
+S: (0, 2), A: west, S': (0, 2), R: 0.0
+
+S: (0, 2), A: west, S': (0, 2), R: 0.0
+
+S: (0, 2), A: west, S': (0, 2), R: 0.0
+
+S: (0, 2), A: east, S': (0, 3), R: 0.0
+
+S: (0, 3), A: north, S': (0, 4), R: 0.0
+
+S: (0, 4), A: east, S': (1, 4), R: 0.0
+
+S: (1, 4), A: east, S': (2, 4), R: 0.0
+
+S: (2, 4), A: east, S': (3, 4), R: 0.0
+
+S: (3, 4), A: east, S': (4, 4), R: 0.0
+
+S: (4, 4), A: south, S': (4, 3), R: 0.0
+
+S: (4, 3), A: north, S': (4, 4), R: 0.0
+
+S: (4, 4), A: south, S': (4, 3), R: 0.0
+
+S: (4, 3), A: west, S': (4, 2), R: 0.0
+
+S: (4, 2), A: exit, S': TERMINAL_STATE, R: 10
+
+EPISODE 33 COMPLETE: RETURN WAS 2.05891132095
+
+BEGINNING EPISODE: 34
+
+S: (0, 1), A: west, S': (0, 1), R: 0.0
+
+Receive Positive (+1) human signal
+
+S: (0, 1), A: west, S': (0, 1), R: 0.0
+
+S: (0, 1), A: west, S': (0, 2), R: 0.0
+
+S: (0, 2), A: west, S': (0, 2), R: 0.0
+
+S: (0, 2), A: west, S': (0, 3), R: 0.0
+
+S: (0, 3), A: north, S': (0, 4), R: 0.0
+
+S: (0, 4), A: east, S': (0, 3), R: 0.0
+
+S: (0, 3), A: north, S': (0, 4), R: 0.0
+
+S: (0, 4), A: east, S': (1, 4), R: 0.0
+
+S: (1, 4), A: east, S': (1, 4), R: 0.0
+
+S: (1, 4), A: east, S': (2, 4), R: 0.0
+
+S: (2, 4), A: south, S': (2, 3), R: 0.0
+
+S: (2, 3), A: north, S': (2, 4), R: 0.0
+
+S: (2, 4), A: east, S': (3, 4), R: 0.0
+
+S: (3, 4), A: south, S': (3, 3), R: 0.0
+
+S: (3, 3), A: south, S': (3, 3), R: 0.0
+
+S: (3, 3), A: east, S': (3, 3), R: 0.0
+
+S: (3, 3), A: south, S': (3, 3), R: 0.0
+
+S: (3, 3), A: south, S': (4, 3), R: 0.0
+
+S: (4, 3), A: west, S': (4, 2), R: 0.0
+
+S: (4, 2), A: exit, S': TERMINAL_STATE, R: 10
+
+EPISODE 34 COMPLETE: RETURN WAS 1.21576654591
+
+BEGINNING EPISODE: 35
+
+S: (0, 1), A: west, S': (0, 1), R: 0.0
+
+S: (0, 1), A: south, S': (0, 1), R: 0.0
+
+S: (0, 1), A: west, S': (0, 1), R: 0.0
+
+S: (0, 1), A: west, S': (0, 1), R: 0.0
+
+Receive Positive (+1) human signal
+
+S: (0, 1), A: north, S': (0, 2), R: 0.0
+
+S: (0, 2), A: north, S': (0, 3), R: 0.0
+
+S: (0, 3), A: north, S': (0, 4), R: 0.0
+
+S: (0, 4), A: east, S': (1, 4), R: 0.0
+
+S: (1, 4), A: east, S': (2, 4), R: 0.0
+
+S: (2, 4), A: east, S': (3, 4), R: 0.0
+
+S: (3, 4), A: east, S': (4, 4), R: 0.0
+
+S: (4, 4), A: south, S': (4, 3), R: 0.0
+
+S: (4, 3), A: west, S': (3, 3), R: 0.0
+
+S: (3, 3), A: south, S': (3, 3), R: 0.0
+
+S: (3, 3), A: south, S': (3, 3), R: 0.0
+
+S: (3, 3), A: south, S': (3, 3), R: 0.0
+
+S: (3, 3), A: east, S': (4, 3), R: 0.0
+
+Receive Positive (+1) human signal
+
+S: (4, 3), A: west, S': (3, 3), R: 0.0
+
+S: (3, 3), A: south, S': (3, 3), R: 0.0
+
+S: (3, 3), A: south, S': (3, 3), R: 0.0
+
+S: (3, 3), A: south, S': (3, 3), R: 0.0
+
+S: (3, 3), A: south, S': (3, 3), R: 0.0
+
+S: (3, 3), A: south, S': (3, 3), R: 0.0
+
+S: (3, 3), A: south, S': (3, 3), R: 0.0
+
+S: (3, 3), A: south, S': (3, 3), R: 0.0
+
+S: (3, 3), A: south, S': (3, 3), R: 0.0
+
+S: (3, 3), A: north, S': (3, 4), R: 0.0
+
+S: (3, 4), A: east, S': (4, 4), R: 0.0
+
+Receive Negative (-1) human signal
+
+S: (4, 4), A: south, S': (4, 3), R: 0.0
+
+S: (4, 3), A: west, S': (3, 3), R: 0.0
+
+S: (3, 3), A: east, S': (4, 3), R: 0.0
+
+S: (4, 3), A: west, S': (3, 3), R: 0.0
+
+S: (3, 3), A: south, S': (3, 3), R: 0.0
+
+S: (3, 3), A: east, S': (4, 3), R: 0.0
+
+S: (4, 3), A: west, S': (4, 2), R: 0.0
+
+S: (4, 2), A: exit, S': TERMINAL_STATE, R: 10
+
+EPISODE 35 COMPLETE: RETURN WAS 0.250315550499
+
+BEGINNING EPISODE: 36
+
+S: (0, 1), A: west, S': (0, 1), R: 0.0
+
+S: (0, 1), A: west, S': (0, 1), R: 0.0
+
+S: (0, 1), A: west, S': (0, 1), R: 0.0
+
+S: (0, 1), A: west, S': (0, 1), R: 0.0
+
+Receive Positive (+1) human signal
+
+S: (0, 1), A: south, S': (0, 0), R: 0.0
+
+S: (0, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+EPISODE 36 COMPLETE: RETURN WAS -5.9049
+
+BEGINNING EPISODE: 37
+
+S: (0, 1), A: north, S': (0, 1), R: 0.0
+
+S: (0, 1), A: west, S': (0, 1), R: 0.0
+
+S: (0, 1), A: west, S': (0, 2), R: 0.0
+
+S: (0, 2), A: west, S': (0, 2), R: 0.0
+
+S: (0, 2), A: west, S': (0, 1), R: 0.0
+
+S: (0, 1), A: west, S': (0, 1), R: 0.0
+
+S: (0, 1), A: west, S': (0, 1), R: 0.0
+
+S: (0, 1), A: west, S': (0, 2), R: 0.0
+
+S: (0, 2), A: west, S': (0, 3), R: 0.0
+
+S: (0, 3), A: north, S': (0, 3), R: 0.0
+
+S: (0, 3), A: north, S': (0, 4), R: 0.0
+
+S: (0, 4), A: east, S': (1, 4), R: 0.0
+
+S: (1, 4), A: east, S': (1, 4), R: 0.0
+
+S: (1, 4), A: east, S': (2, 4), R: 0.0
+
+S: (2, 4), A: east, S': (3, 4), R: 0.0
+
+S: (3, 4), A: east, S': (3, 3), R: 0.0
+
+S: (3, 3), A: east, S': (4, 3), R: 0.0
+
+S: (4, 3), A: west, S': (3, 3), R: 0.0
+
+S: (3, 3), A: east, S': (3, 3), R: 0.0
+
+S: (3, 3), A: east, S': (3, 3), R: 0.0
+
+S: (3, 3), A: east, S': (4, 3), R: 0.0
+
+S: (4, 3), A: west, S': (3, 3), R: 0.0
+
+S: (3, 3), A: east, S': (4, 3), R: 0.0
+
+S: (4, 3), A: west, S': (3, 3), R: 0.0
+
+Receive Negative (-1) human signal
+
+S: (3, 3), A: west, S': (2, 3), R: 0.0
+
+S: (2, 3), A: south, S': (2, 2), R: 0.0
+
+S: (2, 2), A: exit, S': TERMINAL_STATE, R: 1
+
+EPISODE 37 COMPLETE: RETURN WAS 0.0646108188923
+
+BEGINNING EPISODE: 38
+
+S: (0, 1), A: west, S': (0, 1), R: 0.0
+
+S: (0, 1), A: west, S': (0, 1), R: 0.0
+
+S: (0, 1), A: west, S': (0, 1), R: 0.0
+
+S: (0, 1), A: north, S': (0, 2), R: 0.0
+
+S: (0, 2), A: south, S': (0, 1), R: 0.0
+
+S: (0, 1), A: west, S': (0, 1), R: 0.0
+
+Receive Positive (+1) human signal
+
+S: (0, 1), A: west, S': (0, 1), R: 0.0
+
+S: (0, 1), A: east, S': (0, 0), R: 0.0
+
+S: (0, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+EPISODE 38 COMPLETE: RETURN WAS -4.3046721
+
+BEGINNING EPISODE: 39
+
+S: (0, 1), A: north, S': (1, 1), R: 0.0
+
+S: (1, 1), A: east, S': (2, 1), R: 0.0
+
+S: (2, 1), A: north, S': (2, 2), R: 0.0
+
+S: (2, 2), A: exit, S': TERMINAL_STATE, R: 1
+
+EPISODE 39 COMPLETE: RETURN WAS 0.729
+
+BEGINNING EPISODE: 40
+
+S: (0, 1), A: west, S': (0, 2), R: 0.0
+
+S: (0, 2), A: south, S': (0, 2), R: 0.0
+
+S: (0, 2), A: south, S': (0, 1), R: 0.0
+
+S: (0, 1), A: west, S': (0, 1), R: 0.0
+
+S: (0, 1), A: west, S': (0, 1), R: 0.0
+
+S: (0, 1), A: north, S': (0, 2), R: 0.0
+
+S: (0, 2), A: south, S': (0, 1), R: 0.0
+
+S: (0, 1), A: west, S': (0, 1), R: 0.0
+
+S: (0, 1), A: west, S': (0, 0), R: 0.0
+
+S: (0, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+EPISODE 40 COMPLETE: RETURN WAS -3.87420489
+
+BEGINNING EPISODE: 41
+
+S: (0, 1), A: east, S': (1, 1), R: 0.0
+
+S: (1, 1), A: south, S': (1, 0), R: 0.0
+
+S: (1, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+EPISODE 41 COMPLETE: RETURN WAS -8.1
+
+BEGINNING EPISODE: 42
+
+S: (0, 1), A: west, S': (0, 1), R: 0.0
+
+S: (0, 1), A: west, S': (0, 1), R: 0.0
+
+S: (0, 1), A: west, S': (0, 1), R: 0.0
+
+S: (0, 1), A: south, S': (0, 0), R: 0.0
+
+S: (0, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+EPISODE 42 COMPLETE: RETURN WAS -6.561
+
+BEGINNING EPISODE: 43
+
+S: (0, 1), A: west, S': (0, 1), R: 0.0
+
+Receive Negative (-1) human signal
+
+S: (0, 1), A: north, S': (0, 2), R: 0.0
+
+S: (0, 2), A: south, S': (0, 1), R: 0.0
+
+S: (0, 1), A: north, S': (0, 2), R: 0.0
+
+S: (0, 2), A: west, S': (0, 2), R: 0.0
+
+S: (0, 2), A: west, S': (0, 2), R: 0.0
+
+S: (0, 2), A: south, S': (0, 1), R: 0.0
+
+S: (0, 1), A: north, S': (0, 2), R: 0.0
+
+S: (0, 2), A: south, S': (0, 1), R: 0.0
+
+S: (0, 1), A: north, S': (0, 2), R: 0.0
+
+S: (0, 2), A: south, S': (0, 1), R: 0.0
+
+S: (0, 1), A: north, S': (0, 2), R: 0.0
+
+S: (0, 2), A: north, S': (0, 3), R: 0.0
+
+S: (0, 3), A: north, S': (0, 4), R: 0.0
+
+S: (0, 4), A: west, S': (0, 4), R: 0.0
+
+Receive Negative (-1) human signal
+
+S: (0, 4), A: east, S': (0, 3), R: 0.0
+
+S: (0, 3), A: north, S': (0, 4), R: 0.0
+
+S: (0, 4), A: east, S': (0, 3), R: 0.0
+
+S: (0, 3), A: south, S': (0, 2), R: 0.0
+
+S: (0, 2), A: west, S': (0, 3), R: 0.0
+
+S: (0, 3), A: west, S': (0, 3), R: 0.0
+
+S: (0, 3), A: west, S': (0, 3), R: 0.0
+
+S: (0, 3), A: north, S': (0, 4), R: 0.0
+
+S: (0, 4), A: east, S': (1, 4), R: 0.0
+
+S: (1, 4), A: east, S': (2, 4), R: 0.0
+
+S: (2, 4), A: east, S': (3, 4), R: 0.0
+
+S: (3, 4), A: south, S': (3, 3), R: 0.0
+
+S: (3, 3), A: north, S': (3, 4), R: 0.0
+
+S: (3, 4), A: east, S': (4, 4), R: 0.0
+
+S: (4, 4), A: west, S': (3, 4), R: 0.0
+
+S: (3, 4), A: east, S': (3, 4), R: 0.0
+
+S: (3, 4), A: east, S': (4, 4), R: 0.0
+
+S: (4, 4), A: south, S': (4, 3), R: 0.0
+
+S: (4, 3), A: north, S': (4, 3), R: 0.0
+
+S: (4, 3), A: north, S': (4, 4), R: 0.0
+
+S: (4, 4), A: west, S': (3, 4), R: 0.0
+
+S: (3, 4), A: east, S': (3, 3), R: 0.0
+
+S: (3, 3), A: west, S': (2, 3), R: 0.0
+
+S: (2, 3), A: south, S': (2, 3), R: 0.0
+
+S: (2, 3), A: south, S': (2, 2), R: 0.0
+
+S: (2, 2), A: exit, S': TERMINAL_STATE, R: 1
+
+EPISODE 43 COMPLETE: RETURN WAS 0.0147808829414
+
+BEGINNING EPISODE: 44
+
+S: (0, 1), A: north, S': (0, 2), R: 0.0
+
+S: (0, 2), A: west, S': (0, 2), R: 0.0
+
+S: (0, 2), A: north, S': (0, 3), R: 0.0
+
+S: (0, 3), A: west, S': (0, 2), R: 0.0
+
+Receive Positive (+1) human signal
+
+S: (0, 2), A: west, S': (0, 3), R: 0.0
+
+S: (0, 3), A: west, S': (0, 2), R: 0.0
+
+S: (0, 2), A: north, S': (0, 3), R: 0.0
+
+S: (0, 3), A: south, S': (0, 2), R: 0.0
+
+S: (0, 2), A: west, S': (0, 2), R: 0.0
+
+S: (0, 2), A: west, S': (0, 2), R: 0.0
+
+S: (0, 2), A: west, S': (0, 2), R: 0.0
+
+S: (0, 2), A: west, S': (0, 2), R: 0.0
+
+S: (0, 2), A: west, S': (0, 2), R: 0.0
+
+S: (0, 2), A: west, S': (0, 2), R: 0.0
+
+S: (0, 2), A: north, S': (0, 3), R: 0.0
+
+S: (0, 3), A: west, S': (0, 4), R: 0.0
+
+Receive Negative (-1) human signal
+
+S: (0, 4), A: east, S': (1, 4), R: 0.0
+
+S: (1, 4), A: east, S': (2, 4), R: 0.0
+
+S: (2, 4), A: east, S': (3, 4), R: 0.0
+
+S: (3, 4), A: east, S': (4, 4), R: 0.0
+
+S: (4, 4), A: south, S': (4, 3), R: 0.0
+
+S: (4, 3), A: west, S': (3, 3), R: 0.0
+
+S: (3, 3), A: west, S': (2, 3), R: 0.0
+
+S: (2, 3), A: south, S': (2, 2), R: 0.0
+
+S: (2, 2), A: exit, S': TERMINAL_STATE, R: 1
+
+EPISODE 44 COMPLETE: RETURN WAS 0.0797664430769
+
+BEGINNING EPISODE: 45
+
+S: (0, 1), A: north, S': (0, 2), R: 0.0
+
+S: (0, 2), A: east, S': (0, 2), R: 0.0
+
+S: (0, 2), A: east, S': (0, 2), R: 0.0
+
+Receive Negative (-1) human signal
+
+S: (0, 2), A: north, S': (0, 3), R: 0.0
+
+S: (0, 3), A: south, S': (0, 3), R: 0.0
+
+S: (0, 3), A: south, S': (0, 2), R: 0.0
+
+S: (0, 2), A: north, S': (0, 3), R: 0.0
+
+S: (0, 3), A: east, S': (0, 3), R: 0.0
+
+S: (0, 3), A: north, S': (0, 3), R: 0.0
+
+S: (0, 3), A: west, S': (0, 3), R: 0.0
+
+S: (0, 3), A: west, S': (0, 3), R: 0.0
+
+S: (0, 3), A: west, S': (0, 3), R: 0.0
+
+S: (0, 3), A: north, S': (0, 4), R: 0.0
+
+S: (0, 4), A: east, S': (0, 4), R: 0.0
+
+S: (0, 4), A: east, S': (1, 4), R: 0.0
+
+S: (1, 4), A: east, S': (2, 4), R: 0.0
+
+S: (2, 4), A: east, S': (3, 4), R: 0.0
+
+S: (3, 4), A: east, S': (4, 4), R: 0.0
+
+S: (4, 4), A: east, S': (4, 4), R: 0.0
+
+S: (4, 4), A: south, S': (4, 3), R: 0.0
+
+S: (4, 3), A: north, S': (4, 4), R: 0.0
+
+S: (4, 4), A: south, S': (4, 3), R: 0.0
+
+S: (4, 3), A: north, S': (4, 4), R: 0.0
+
+S: (4, 4), A: south, S': (4, 3), R: 0.0
+
+S: (4, 3), A: north, S': (4, 4), R: 0.0
+
+S: (4, 4), A: east, S': (4, 4), R: 0.0
+
+S: (4, 4), A: south, S': (4, 3), R: 0.0
+
+S: (4, 3), A: north, S': (4, 4), R: 0.0
+
+S: (4, 4), A: south, S': (4, 3), R: 0.0
+
+S: (4, 3), A: west, S': (4, 2), R: 0.0
+
+Receive Negative (-1) human signal
+
+S: (4, 2), A: exit, S': TERMINAL_STATE, R: 10
+
+EPISODE 45 COMPLETE: RETURN WAS 0.423911582752
+
+BEGINNING EPISODE: 46
+
+S: (0, 1), A: east, S': (1, 1), R: 0.0
+
+S: (1, 1), A: east, S': (2, 1), R: 0.0
+
+S: (2, 1), A: north, S': (2, 2), R: 0.0
+
+Receive Positive (+1) human signal
+
+S: (2, 2), A: exit, S': TERMINAL_STATE, R: 1
+
+EPISODE 46 COMPLETE: RETURN WAS 0.729
+
+BEGINNING EPISODE: 47
+
+S: (0, 1), A: east, S': (1, 1), R: 0.0
+
+S: (1, 1), A: east, S': (2, 1), R: 0.0
+
+S: (2, 1), A: north, S': (2, 2), R: 0.0
+
+S: (2, 2), A: exit, S': TERMINAL_STATE, R: 1
+
+EPISODE 47 COMPLETE: RETURN WAS 0.729
+
+BEGINNING EPISODE: 48
+
+S: (0, 1), A: east, S': (1, 1), R: 0.0
+
+S: (1, 1), A: east, S': (2, 1), R: 0.0
+
+S: (2, 1), A: north, S': (1, 1), R: 0.0
+
+S: (1, 1), A: east, S': (2, 1), R: 0.0
+
+S: (2, 1), A: north, S': (2, 2), R: 0.0
+
+S: (2, 2), A: exit, S': TERMINAL_STATE, R: 1
+
+EPISODE 48 COMPLETE: RETURN WAS 0.59049
+
+BEGINNING EPISODE: 49
+
+S: (0, 1), A: east, S': (1, 1), R: 0.0
+
+S: (1, 1), A: east, S': (1, 0), R: 0.0
+
+S: (1, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+EPISODE 49 COMPLETE: RETURN WAS -8.1
+
+BEGINNING EPISODE: 50
+
+S: (0, 1), A: west, S': (0, 1), R: 0.0
+
+S: (0, 1), A: east, S': (0, 0), R: 0.0
+
+S: (0, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+EPISODE 50 COMPLETE: RETURN WAS -8.1
+
+BEGINNING EPISODE: 51
+
+S: (0, 1), A: east, S': (1, 1), R: 0.0
+
+S: (1, 1), A: east, S': (2, 1), R: 0.0
+
+S: (2, 1), A: north, S': (2, 2), R: 0.0
+
+Receive Negative (-1) human signal
+
+S: (2, 2), A: exit, S': TERMINAL_STATE, R: 1
+
+EPISODE 51 COMPLETE: RETURN WAS 0.729
+
+BEGINNING EPISODE: 52
+
+S: (0, 1), A: south, S': (0, 0), R: 0.0
+
+S: (0, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+EPISODE 52 COMPLETE: RETURN WAS -9.0
+
+BEGINNING EPISODE: 53
+
+S: (0, 1), A: east, S': (0, 0), R: 0.0
+
+S: (0, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+EPISODE 53 COMPLETE: RETURN WAS -9.0
+
+BEGINNING EPISODE: 54
+
+S: (0, 1), A: south, S': (0, 0), R: 0.0
+
+S: (0, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+EPISODE 54 COMPLETE: RETURN WAS -9.0
+
+BEGINNING EPISODE: 55
+
+S: (0, 1), A: north, S': (0, 2), R: 0.0
+
+S: (0, 2), A: north, S': (0, 3), R: 0.0
+
+S: (0, 3), A: west, S': (0, 2), R: 0.0
+
+Receive Negative (-1) human signal
+
+S: (0, 2), A: east, S': (0, 1), R: 0.0
+
+S: (0, 1), A: east, S': (1, 1), R: 0.0
+
+S: (1, 1), A: west, S': (0, 1), R: 0.0
+
+S: (0, 1), A: east, S': (1, 1), R: 0.0
+
+S: (1, 1), A: east, S': (2, 1), R: 0.0
+
+S: (2, 1), A: west, S': (1, 1), R: 0.0
+
+S: (1, 1), A: east, S': (2, 1), R: 0.0
+
+S: (2, 1), A: west, S': (1, 1), R: 0.0
+
+S: (1, 1), A: east, S': (2, 1), R: 0.0
+
+S: (2, 1), A: west, S': (1, 1), R: 0.0
+
+S: (1, 1), A: east, S': (1, 0), R: 0.0
+
+S: (1, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+Receive Negative (-1) human signal
+
+EPISODE 55 COMPLETE: RETURN WAS -2.2876792455
+
+BEGINNING EPISODE: 56
+
+S: (0, 1), A: east, S': (0, 2), R: 0.0
+
+S: (0, 2), A: south, S': (0, 2), R: 0.0
+
+S: (0, 2), A: north, S': (0, 3), R: 0.0
+
+S: (0, 3), A: west, S': (0, 3), R: 0.0
+
+S: (0, 3), A: east, S': (0, 3), R: 0.0
+
+S: (0, 3), A: east, S': (0, 3), R: 0.0
+
+S: (0, 3), A: west, S': (0, 3), R: 0.0
+
+S: (0, 3), A: west, S': (0, 3), R: 0.0
+
+S: (0, 3), A: west, S': (0, 3), R: 0.0
+
+S: (0, 3), A: south, S': (0, 3), R: 0.0
+
+S: (0, 3), A: west, S': (0, 3), R: 0.0
+
+S: (0, 3), A: west, S': (0, 3), R: 0.0
+
+S: (0, 3), A: west, S': (0, 3), R: 0.0
+
+S: (0, 3), A: west, S': (0, 2), R: 0.0
+
+S: (0, 2), A: south, S': (0, 1), R: 0.0
+
+S: (0, 1), A: south, S': (0, 0), R: 0.0
+
+S: (0, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+EPISODE 56 COMPLETE: RETURN WAS -1.85302018885
+
+BEGINNING EPISODE: 57
+
+S: (0, 1), A: south, S': (0, 0), R: 0.0
+
+S: (0, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+EPISODE 57 COMPLETE: RETURN WAS -9.0
+
+BEGINNING EPISODE: 58
+
+S: (0, 1), A: east, S': (1, 1), R: 0.0
+
+Receive Negative (-1) human signal
+
+S: (1, 1), A: west, S': (1, 0), R: 0.0
+
+S: (1, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+EPISODE 58 COMPLETE: RETURN WAS -8.1
+
+BEGINNING EPISODE: 59
+
+S: (0, 1), A: north, S': (0, 2), R: 0.0
+
+S: (0, 2), A: north, S': (0, 3), R: 0.0
+
+S: (0, 3), A: west, S': (0, 3), R: 0.0
+
+S: (0, 3), A: west, S': (0, 2), R: 0.0
+
+S: (0, 2), A: north, S': (0, 3), R: 0.0
+
+S: (0, 3), A: west, S': (0, 3), R: 0.0
+
+S: (0, 3), A: south, S': (0, 2), R: 0.0
+
+S: (0, 2), A: south, S': (0, 1), R: 0.0
+
+S: (0, 1), A: north, S': (0, 2), R: 0.0
+
+Receive Positive (+1) human signal
+
+S: (0, 2), A: east, S': (0, 2), R: 0.0
+
+S: (0, 2), A: north, S': (0, 3), R: 0.0
+
+S: (0, 3), A: east, S': (0, 2), R: 0.0
+
+S: (0, 2), A: north, S': (0, 2), R: 0.0
+
+S: (0, 2), A: north, S': (0, 3), R: 0.0
+
+S: (0, 3), A: west, S': (0, 3), R: 0.0
+
+S: (0, 3), A: west, S': (0, 3), R: 0.0
+
+S: (0, 3), A: west, S': (0, 3), R: 0.0
+
+S: (0, 3), A: south, S': (0, 2), R: 0.0
+
+S: (0, 2), A: north, S': (0, 3), R: 0.0
+
+S: (0, 3), A: west, S': (0, 2), R: 0.0
+
+S: (0, 2), A: east, S': (0, 3), R: 0.0
+
+S: (0, 3), A: west, S': (0, 3), R: 0.0
+
+S: (0, 3), A: north, S': (0, 4), R: 0.0
+
+Receive Negative (-1) human signal
+
+S: (0, 4), A: east, S': (1, 4), R: 0.0
+
+S: (1, 4), A: east, S': (2, 4), R: 0.0
+
+S: (2, 4), A: east, S': (3, 4), R: 0.0
+
+S: (3, 4), A: east, S': (4, 4), R: 0.0
+
+S: (4, 4), A: south, S': (4, 3), R: 0.0
+
+S: (4, 3), A: south, S': (4, 2), R: 0.0
+
+S: (4, 2), A: exit, S': TERMINAL_STATE, R: 10
+
+EPISODE 59 COMPLETE: RETURN WAS 0.471012869725
+
+BEGINNING EPISODE: 60
+
+S: (0, 1), A: south, S': (0, 0), R: 0.0
+
+Receive Positive (+1) human signal
+
+S: (0, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+EPISODE 60 COMPLETE: RETURN WAS -9.0
+
+BEGINNING EPISODE: 61
+
+S: (0, 1), A: north, S': (0, 2), R: 0.0
+
+S: (0, 2), A: south, S': (0, 1), R: 0.0
+
+S: (0, 1), A: east, S': (1, 1), R: 0.0
+
+S: (1, 1), A: west, S': (1, 1), R: 0.0
+
+S: (1, 1), A: north, S': (1, 1), R: 0.0
+
+S: (1, 1), A: west, S': (0, 1), R: 0.0
+
+S: (0, 1), A: north, S': (0, 1), R: 0.0
+
+S: (0, 1), A: south, S': (0, 0), R: 0.0
+
+S: (0, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+EPISODE 61 COMPLETE: RETURN WAS -4.3046721
+
+BEGINNING EPISODE: 62
+
+S: (0, 1), A: west, S': (0, 1), R: 0.0
+
+Receive Negative (-1) human signal
+
+S: (0, 1), A: north, S': (0, 2), R: 0.0
+
+S: (0, 2), A: east, S': (0, 2), R: 0.0
+
+S: (0, 2), A: south, S': (0, 1), R: 0.0
+
+S: (0, 1), A: north, S': (1, 1), R: 0.0
+
+S: (1, 1), A: south, S': (0, 1), R: 0.0
+
+S: (0, 1), A: east, S': (0, 2), R: 0.0
+
+S: (0, 2), A: south, S': (0, 1), R: 0.0
+
+S: (0, 1), A: north, S': (0, 2), R: 0.0
+
+S: (0, 2), A: south, S': (0, 2), R: 0.0
+
+S: (0, 2), A: south, S': (0, 1), R: 0.0
+
+S: (0, 1), A: north, S': (0, 2), R: 0.0
+
+S: (0, 2), A: east, S': (0, 2), R: 0.0
+
+S: (0, 2), A: south, S': (0, 1), R: 0.0
+
+S: (0, 1), A: south, S': (0, 0), R: 0.0
+
+S: (0, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+EPISODE 62 COMPLETE: RETURN WAS -2.05891132095
+
+BEGINNING EPISODE: 63
+
+S: (0, 1), A: north, S': (0, 2), R: 0.0
+
+S: (0, 2), A: south, S': (0, 1), R: 0.0
+
+S: (0, 1), A: north, S': (1, 1), R: 0.0
+
+S: (1, 1), A: south, S': (1, 0), R: 0.0
+
+S: (1, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+EPISODE 63 COMPLETE: RETURN WAS -6.561
+
+BEGINNING EPISODE: 64
+
+S: (0, 1), A: north, S': (1, 1), R: 0.0
+
+S: (1, 1), A: south, S': (1, 0), R: 0.0
+
+S: (1, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+EPISODE 64 COMPLETE: RETURN WAS -8.1
+
+BEGINNING EPISODE: 65
+
+S: (0, 1), A: north, S': (0, 2), R: 0.0
+
+Receive Negative (-1) human signal
+
+S: (0, 2), A: south, S': (0, 1), R: 0.0
+
+S: (0, 1), A: south, S': (0, 0), R: 0.0
+
+S: (0, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+EPISODE 65 COMPLETE: RETURN WAS -7.29
+
+BEGINNING EPISODE: 66
+
+S: (0, 1), A: south, S': (0, 0), R: 0.0
+
+S: (0, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+EPISODE 66 COMPLETE: RETURN WAS -9.0
+
+BEGINNING EPISODE: 67
+
+S: (0, 1), A: north, S': (0, 2), R: 0.0
+
+S: (0, 2), A: north, S': (0, 3), R: 0.0
+
+Receive Negative (-1) human signal
+
+S: (0, 3), A: south, S': (0, 2), R: 0.0
+
+S: (0, 2), A: south, S': (0, 1), R: 0.0
+
+S: (0, 1), A: south, S': (1, 1), R: 0.0
+
+S: (1, 1), A: south, S': (1, 0), R: 0.0
+
+S: (1, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+EPISODE 67 COMPLETE: RETURN WAS -5.31441
+
+BEGINNING EPISODE: 68
+
+S: (0, 1), A: south, S': (1, 1), R: 0.0
+
+S: (1, 1), A: south, S': (2, 1), R: 0.0
+
+S: (2, 1), A: north, S': (2, 2), R: 0.0
+
+S: (2, 2), A: exit, S': TERMINAL_STATE, R: 1
+
+EPISODE 68 COMPLETE: RETURN WAS 0.729
+
+BEGINNING EPISODE: 69
+
+S: (0, 1), A: east, S': (1, 1), R: 0.0
+
+S: (1, 1), A: north, S': (1, 1), R: 0.0
+
+S: (1, 1), A: south, S': (1, 0), R: 0.0
+
+S: (1, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+EPISODE 69 COMPLETE: RETURN WAS -7.29
+
+BEGINNING EPISODE: 70
+
+S: (0, 1), A: south, S': (0, 0), R: 0.0
+
+Receive Negative (-1) human signal
+
+S: (0, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+EPISODE 70 COMPLETE: RETURN WAS -9.0
+
+BEGINNING EPISODE: 71
+
+S: (0, 1), A: south, S': (1, 1), R: 0.0
+
+S: (1, 1), A: west, S': (0, 1), R: 0.0
+
+S: (0, 1), A: south, S': (0, 0), R: 0.0
+
+S: (0, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+EPISODE 71 COMPLETE: RETURN WAS -7.29
+
+BEGINNING EPISODE: 72
+
+S: (0, 1), A: south, S': (0, 1), R: 0.0
+
+S: (0, 1), A: south, S': (0, 0), R: 0.0
+
+S: (0, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+EPISODE 72 COMPLETE: RETURN WAS -8.1
+
+BEGINNING EPISODE: 73
+
+S: (0, 1), A: north, S': (0, 2), R: 0.0
+
+S: (0, 2), A: east, S': (0, 2), R: 0.0
+
+S: (0, 2), A: south, S': (0, 1), R: 0.0
+
+S: (0, 1), A: south, S': (0, 0), R: 0.0
+
+S: (0, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+EPISODE 73 COMPLETE: RETURN WAS -6.561
+
+BEGINNING EPISODE: 74
+
+S: (0, 1), A: south, S': (0, 0), R: 0.0
+
+S: (0, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+EPISODE 74 COMPLETE: RETURN WAS -9.0
+
+BEGINNING EPISODE: 75
+
+S: (0, 1), A: south, S': (0, 0), R: 0.0
+
+Receive Negative (-1) human signal
+
+S: (0, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+EPISODE 75 COMPLETE: RETURN WAS -9.0
+
+BEGINNING EPISODE: 76
+
+S: (0, 1), A: east, S': (1, 1), R: 0.0
+
+S: (1, 1), A: north, S': (2, 1), R: 0.0
+
+S: (2, 1), A: west, S': (1, 1), R: 0.0
+
+S: (1, 1), A: west, S': (0, 1), R: 0.0
+
+S: (0, 1), A: east, S': (1, 1), R: 0.0
+
+S: (1, 1), A: west, S': (0, 1), R: 0.0
+
+S: (0, 1), A: east, S': (0, 0), R: 0.0
+
+S: (0, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+EPISODE 76 COMPLETE: RETURN WAS -4.782969
+
+BEGINNING EPISODE: 77
+
+S: (0, 1), A: east, S': (0, 0), R: 0.0
+
+S: (0, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+EPISODE 77 COMPLETE: RETURN WAS -9.0
+
+BEGINNING EPISODE: 78
+
+S: (0, 1), A: east, S': (1, 1), R: 0.0
+
+Receive Negative (-1) human signal
+
+S: (1, 1), A: west, S': (0, 1), R: 0.0
+
+S: (0, 1), A: north, S': (0, 2), R: 0.0
+
+S: (0, 2), A: south, S': (0, 1), R: 0.0
+
+S: (0, 1), A: west, S': (0, 1), R: 0.0
+
+S: (0, 1), A: north, S': (0, 2), R: 0.0
+
+S: (0, 2), A: south, S': (0, 1), R: 0.0
+
+S: (0, 1), A: north, S': (0, 1), R: 0.0
+
+S: (0, 1), A: east, S': (1, 1), R: 0.0
+
+S: (1, 1), A: south, S': (1, 0), R: 0.0
+
+S: (1, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+EPISODE 78 COMPLETE: RETURN WAS -3.486784401
+
+BEGINNING EPISODE: 79
+
+S: (0, 1), A: north, S': (0, 2), R: 0.0
+
+S: (0, 2), A: west, S': (0, 2), R: 0.0
+
+S: (0, 2), A: south, S': (0, 1), R: 0.0
+
+S: (0, 1), A: north, S': (0, 1), R: 0.0
+
+S: (0, 1), A: north, S': (0, 1), R: 0.0
+
+S: (0, 1), A: north, S': (0, 1), R: 0.0
+
+S: (0, 1), A: east, S': (0, 0), R: 0.0
+
+Receive Negative (-1) human signal
+
+S: (0, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+EPISODE 79 COMPLETE: RETURN WAS -4.782969
+
+BEGINNING EPISODE: 80
+
+S: (0, 1), A: west, S': (0, 1), R: 0.0
+
+S: (0, 1), A: west, S': (0, 1), R: 0.0
+
+S: (0, 1), A: west, S': (0, 1), R: 0.0
+
+S: (0, 1), A: west, S': (0, 1), R: 0.0
+
+S: (0, 1), A: west, S': (0, 1), R: 0.0
+
+S: (0, 1), A: west, S': (0, 1), R: 0.0
+
+S: (0, 1), A: west, S': (0, 1), R: 0.0
+
+S: (0, 1), A: west, S': (0, 1), R: 0.0
+
+S: (0, 1), A: north, S': (0, 2), R: 0.0
+
+S: (0, 2), A: north, S': (0, 3), R: 0.0
+
+S: (0, 3), A: south, S': (0, 2), R: 0.0
+
+S: (0, 2), A: north, S': (0, 2), R: 0.0
+
+S: (0, 2), A: north, S': (0, 3), R: 0.0
+
+S: (0, 3), A: south, S': (0, 3), R: 0.0
+
+S: (0, 3), A: south, S': (0, 2), R: 0.0
+
+S: (0, 2), A: north, S': (0, 3), R: 0.0
+
+Receive Positive (+1) human signal
+
+S: (0, 3), A: south, S': (0, 2), R: 0.0
+
+S: (0, 2), A: north, S': (0, 3), R: 0.0
+
+S: (0, 3), A: south, S': (0, 3), R: 0.0
+
+S: (0, 3), A: south, S': (0, 2), R: 0.0
+
+S: (0, 2), A: north, S': (0, 3), R: 0.0
+
+S: (0, 3), A: south, S': (0, 2), R: 0.0
+
+S: (0, 2), A: north, S': (0, 3), R: 0.0
+
+S: (0, 3), A: south, S': (0, 2), R: 0.0
+
+S: (0, 2), A: north, S': (0, 3), R: 0.0
+
+Receive Negative (-1) human signal
+
+S: (0, 3), A: east, S': (0, 3), R: 0.0
+
+S: (0, 3), A: west, S': (0, 3), R: 0.0
+
+S: (0, 3), A: east, S': (0, 3), R: 0.0
+
+S: (0, 3), A: east, S': (0, 3), R: 0.0
+
+S: (0, 3), A: west, S': (0, 3), R: 0.0
+
+S: (0, 3), A: east, S': (0, 3), R: 0.0
+
+S: (0, 3), A: east, S': (0, 3), R: 0.0
+
+S: (0, 3), A: north, S': (0, 4), R: 0.0
+
+S: (0, 4), A: north, S': (0, 4), R: 0.0
+
+S: (0, 4), A: east, S': (1, 4), R: 0.0
+
+S: (1, 4), A: east, S': (2, 4), R: 0.0
+
+S: (2, 4), A: east, S': (2, 3), R: 0.0
+
+S: (2, 3), A: south, S': (2, 3), R: 0.0
+
+S: (2, 3), A: east, S': (3, 3), R: 0.0
+
+S: (3, 3), A: north, S': (3, 4), R: 0.0
+
+S: (3, 4), A: east, S': (3, 3), R: 0.0
+
+S: (3, 3), A: north, S': (3, 4), R: 0.0
+
+Receive Positive (+1) human signal
+
+S: (3, 4), A: east, S': (4, 4), R: 0.0
+
+S: (4, 4), A: south, S': (4, 3), R: 0.0
+
+S: (4, 3), A: south, S': (4, 3), R: 0.0
+
+S: (4, 3), A: east, S': (4, 3), R: 0.0
+
+S: (4, 3), A: west, S': (3, 3), R: 0.0
+
+S: (3, 3), A: north, S': (2, 3), R: 0.0
+
+S: (2, 3), A: south, S': (2, 3), R: 0.0
+
+S: (2, 3), A: west, S': (2, 3), R: 0.0
+
+S: (2, 3), A: west, S': (2, 3), R: 0.0
+
+S: (2, 3), A: west, S': (2, 3), R: 0.0
+
+S: (2, 3), A: south, S': (3, 3), R: 0.0
+
+S: (3, 3), A: north, S': (3, 4), R: 0.0
+
+S: (3, 4), A: east, S': (4, 4), R: 0.0
+
+S: (4, 4), A: south, S': (4, 3), R: 0.0
+
+S: (4, 3), A: south, S': (4, 2), R: 0.0
+
+S: (4, 2), A: exit, S': TERMINAL_STATE, R: 10
+
+EPISODE 80 COMPLETE: RETURN WAS 0.0246503470496
+
+BEGINNING EPISODE: 81
+
+S: (0, 1), A: west, S': (0, 1), R: 0.0
+
+S: (0, 1), A: west, S': (0, 1), R: 0.0
+
+S: (0, 1), A: west, S': (0, 1), R: 0.0
+
+S: (0, 1), A: west, S': (0, 1), R: 0.0
+
+S: (0, 1), A: west, S': (0, 1), R: 0.0
+
+Receive Positive (+1) human signal
+
+S: (0, 1), A: west, S': (0, 1), R: 0.0
+
+S: (0, 1), A: west, S': (0, 0), R: 0.0
+
+S: (0, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+EPISODE 81 COMPLETE: RETURN WAS -4.782969
+
+BEGINNING EPISODE: 82
+
+S: (0, 1), A: west, S': (0, 1), R: 0.0
+
+S: (0, 1), A: west, S': (0, 0), R: 0.0
+
+S: (0, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+EPISODE 82 COMPLETE: RETURN WAS -8.1
+
+BEGINNING EPISODE: 83
+
+S: (0, 1), A: west, S': (0, 1), R: 0.0
+
+S: (0, 1), A: west, S': (0, 1), R: 0.0
+
+S: (0, 1), A: south, S': (0, 0), R: 0.0
+
+S: (0, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+EPISODE 83 COMPLETE: RETURN WAS -7.29
+
+BEGINNING EPISODE: 84
+
+S: (0, 1), A: west, S': (0, 1), R: 0.0
+
+Receive Negative (-1) human signal
+
+S: (0, 1), A: west, S': (0, 0), R: 0.0
+
+S: (0, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+EPISODE 84 COMPLETE: RETURN WAS -8.1
+
+BEGINNING EPISODE: 85
+
+S: (0, 1), A: north, S': (1, 1), R: 0.0
+
+S: (1, 1), A: west, S': (1, 0), R: 0.0
+
+S: (1, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+EPISODE 85 COMPLETE: RETURN WAS -8.1
+
+BEGINNING EPISODE: 86
+
+S: (0, 1), A: west, S': (0, 1), R: 0.0
+
+S: (0, 1), A: west, S': (0, 1), R: 0.0
+
+S: (0, 1), A: west, S': (0, 1), R: 0.0
+
+S: (0, 1), A: west, S': (0, 0), R: 0.0
+
+Receive Negative (-1) human signal
+
+S: (0, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+EPISODE 86 COMPLETE: RETURN WAS -6.561
+
+BEGINNING EPISODE: 87
+
+S: (0, 1), A: west, S': (0, 1), R: 0.0
+
+S: (0, 1), A: south, S': (0, 0), R: 0.0
+
+S: (0, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+EPISODE 87 COMPLETE: RETURN WAS -8.1
+
+BEGINNING EPISODE: 88
+
+S: (0, 1), A: west, S': (0, 1), R: 0.0
+
+S: (0, 1), A: west, S': (0, 1), R: 0.0
+
+S: (0, 1), A: north, S': (0, 1), R: 0.0
+
+S: (0, 1), A: north, S': (1, 1), R: 0.0
+
+S: (1, 1), A: south, S': (0, 1), R: 0.0
+
+S: (0, 1), A: west, S': (0, 1), R: 0.0
+
+S: (0, 1), A: west, S': (0, 1), R: 0.0
+
+Receive Negative (-1) human signal
+
+S: (0, 1), A: south, S': (0, 1), R: 0.0
+
+S: (0, 1), A: north, S': (0, 1), R: 0.0
+
+S: (0, 1), A: east, S': (1, 1), R: 0.0
+
+S: (1, 1), A: west, S': (1, 0), R: 0.0
+
+S: (1, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+EPISODE 88 COMPLETE: RETURN WAS -3.1381059609
+
+BEGINNING EPISODE: 89
+
+S: (0, 1), A: south, S': (0, 1), R: 0.0
+
+S: (0, 1), A: south, S': (0, 0), R: 0.0
+
+S: (0, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+EPISODE 89 COMPLETE: RETURN WAS -8.1
+
+BEGINNING EPISODE: 90
+
+S: (0, 1), A: south, S': (0, 0), R: 0.0
+
+S: (0, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+EPISODE 90 COMPLETE: RETURN WAS -9.0
+
+BEGINNING EPISODE: 91
+
+S: (0, 1), A: south, S': (0, 0), R: 0.0
+
+Receive Negative (-1) human signal
+
+S: (0, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+EPISODE 91 COMPLETE: RETURN WAS -9.0
+
+BEGINNING EPISODE: 92
+
+S: (0, 1), A: east, S': (1, 1), R: 0.0
+
+S: (1, 1), A: west, S': (0, 1), R: 0.0
+
+S: (0, 1), A: east, S': (0, 0), R: 0.0
+
+S: (0, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+EPISODE 92 COMPLETE: RETURN WAS -7.29
+
+BEGINNING EPISODE: 93
+
+S: (0, 1), A: east, S': (0, 0), R: 0.0
+
+S: (0, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+EPISODE 93 COMPLETE: RETURN WAS -9.0
+
+BEGINNING EPISODE: 94
+
+S: (0, 1), A: east, S': (1, 1), R: 0.0
+
+S: (1, 1), A: west, S': (1, 1), R: 0.0
+
+S: (1, 1), A: west, S': (0, 1), R: 0.0
+
+Receive Negative (-1) human signal
+
+S: (0, 1), A: east, S': (1, 1), R: 0.0
+
+S: (1, 1), A: south, S': (2, 1), R: 0.0
+
+S: (2, 1), A: south, S': (2, 0), R: 0.0
+
+S: (2, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+EPISODE 94 COMPLETE: RETURN WAS -5.31441
+
+BEGINNING EPISODE: 95
+
+S: (0, 1), A: east, S': (1, 1), R: 0.0
+
+S: (1, 1), A: south, S': (1, 0), R: 0.0
+
+S: (1, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+EPISODE 95 COMPLETE: RETURN WAS -8.1
+
+BEGINNING EPISODE: 96
+
+S: (0, 1), A: east, S': (0, 2), R: 0.0
+
+S: (0, 2), A: south, S': (0, 2), R: 0.0
+
+Receive Negative (-1) human signal
+
+S: (0, 2), A: east, S': (0, 2), R: 0.0
+
+S: (0, 2), A: north, S': (0, 3), R: 0.0
+
+S: (0, 3), A: east, S': (0, 3), R: 0.0
+
+S: (0, 3), A: east, S': (0, 3), R: 0.0
+
+S: (0, 3), A: east, S': (0, 3), R: 0.0
+
+S: (0, 3), A: east, S': (0, 3), R: 0.0
+
+Receive Positive (+1) human signal
+
+S: (0, 3), A: west, S': (0, 3), R: 0.0
+
+S: (0, 3), A: north, S': (0, 4), R: 0.0
+
+S: (0, 4), A: west, S': (0, 4), R: 0.0
+
+S: (0, 4), A: east, S': (0, 4), R: 0.0
+
+S: (0, 4), A: south, S': (0, 3), R: 0.0
+
+S: (0, 3), A: north, S': (0, 4), R: 0.0
+
+S: (0, 4), A: east, S': (1, 4), R: 0.0
+
+S: (1, 4), A: east, S': (2, 4), R: 0.0
+
+S: (2, 4), A: east, S': (3, 4), R: 0.0
+
+S: (3, 4), A: east, S': (4, 4), R: 0.0
+
+Receive Positive (+1) human signal
+
+S: (4, 4), A: south, S': (4, 3), R: 0.0
+
+S: (4, 3), A: south, S': (3, 3), R: 0.0
+
+S: (3, 3), A: east, S': (4, 3), R: 0.0
+
+S: (4, 3), A: west, S': (4, 2), R: 0.0
+
+S: (4, 2), A: exit, S': TERMINAL_STATE, R: 10
+
+EPISODE 96 COMPLETE: RETURN WAS 0.984770902184
+
+BEGINNING EPISODE: 97
+
+S: (0, 1), A: north, S': (0, 2), R: 0.0
+
+S: (0, 2), A: north, S': (0, 3), R: 0.0
+
+S: (0, 3), A: east, S': (0, 3), R: 0.0
+
+Receive Positive (+1) human signal
+
+S: (0, 3), A: east, S': (0, 3), R: 0.0
+
+S: (0, 3), A: east, S': (0, 3), R: 0.0
+
+S: (0, 3), A: south, S': (0, 2), R: 0.0
+
+S: (0, 2), A: north, S': (0, 3), R: 0.0
+
+S: (0, 3), A: east, S': (0, 3), R: 0.0
+
+S: (0, 3), A: west, S': (0, 4), R: 0.0
+
+S: (0, 4), A: east, S': (1, 4), R: 0.0
+
+S: (1, 4), A: east, S': (2, 4), R: 0.0
+
+S: (2, 4), A: east, S': (2, 4), R: 0.0
+
+S: (2, 4), A: east, S': (2, 3), R: 0.0
+
+S: (2, 3), A: east, S': (3, 3), R: 0.0
+
+S: (3, 3), A: north, S': (3, 4), R: 0.0
+
+S: (3, 4), A: north, S': (3, 4), R: 0.0
+
+S: (3, 4), A: east, S': (4, 4), R: 0.0
+
+S: (4, 4), A: south, S': (3, 4), R: 0.0
+
+S: (3, 4), A: east, S': (4, 4), R: 0.0
+
+S: (4, 4), A: south, S': (4, 3), R: 0.0
+
+S: (4, 3), A: south, S': (4, 2), R: 0.0
+
+S: (4, 2), A: exit, S': TERMINAL_STATE, R: 10
+
+EPISODE 97 COMPLETE: RETURN WAS 1.09418989132
+
+BEGINNING EPISODE: 98
+
+S: (0, 1), A: north, S': (0, 1), R: 0.0
+
+S: (0, 1), A: south, S': (0, 0), R: 0.0
+
+Receive Positive (+1) human signal
+
+S: (0, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+EPISODE 98 COMPLETE: RETURN WAS -8.1
+
+BEGINNING EPISODE: 99
+
+S: (0, 1), A: north, S': (0, 2), R: 0.0
+
+S: (0, 2), A: north, S': (0, 3), R: 0.0
+
+S: (0, 3), A: east, S': (0, 4), R: 0.0
+
+S: (0, 4), A: east, S': (1, 4), R: 0.0
+
+S: (1, 4), A: east, S': (2, 4), R: 0.0
+
+S: (2, 4), A: north, S': (2, 4), R: 0.0
+
+S: (2, 4), A: east, S': (3, 4), R: 0.0
+
+S: (3, 4), A: east, S': (4, 4), R: 0.0
+
+S: (4, 4), A: south, S': (4, 3), R: 0.0
+
+S: (4, 3), A: south, S': (4, 2), R: 0.0
+
+S: (4, 2), A: exit, S': TERMINAL_STATE, R: 10
+
+EPISODE 99 COMPLETE: RETURN WAS 3.486784401
+
+BEGINNING EPISODE: 100
+
+S: (0, 1), A: east, S': (0, 0), R: 0.0
+
+Receive Positive (+1) human signal
+
+S: (0, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+EPISODE 100 COMPLETE: RETURN WAS -9.0
+
+
+AVERAGE RETURNS FROM START STATE: -4.24455692171
+
+

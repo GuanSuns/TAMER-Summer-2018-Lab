@@ -1,0 +1,195 @@
+
+RUNNING 100 EPISODES
+
+BEGINNING EPISODE: 1
+
+Step: 0, S: (2, 4), A: north, S': (2, 4), R: 0.0
+
+Receive Negative (-1) human signal
+
+Step: 1, S: (2, 4), A: north, S': (2, 4), R: 0.0
+
+Receive Negative (-1) human signal
+
+Step: 2, S: (2, 4), A: west, S': (2, 4), R: 0.0
+
+Receive Negative (-1) human signal
+
+Step: 3, S: (2, 4), A: south, S': (2, 3), R: 0.0
+
+Receive Positive (+1) human signal
+
+Step: 4, S: (2, 3), A: north, S': (2, 4), R: 0.0
+
+Receive Negative (-1) human signal
+
+Step: 5, S: (2, 4), A: north, S': (2, 4), R: 0.0
+
+Receive Negative (-1) human signal
+
+Step: 6, S: (2, 4), A: north, S': (2, 4), R: 0.0
+
+Receive Negative (-1) human signal
+
+Step: 7, S: (2, 4), A: north, S': (2, 4), R: 0.0
+
+Receive Negative (-1) human signal
+
+Step: 8, S: (2, 4), A: north, S': (2, 4), R: 0.0
+
+Receive Negative (-1) human signal
+
+Step: 9, S: (2, 4), A: north, S': (2, 4), R: 0.0
+
+Receive Negative (-1) human signal
+
+Step: 10, S: (2, 4), A: east, S': (2, 4), R: 0.0
+
+Receive Negative (-1) human signal
+
+Step: 11, S: (2, 4), A: west, S': (1, 4), R: 0.0
+
+Receive Negative (-1) human signal
+
+Step: 12, S: (1, 4), A: west, S': (0, 4), R: 0.0
+
+Receive Negative (-1) human signal
+
+Step: 13, S: (0, 4), A: west, S': (0, 4), R: 0.0
+
+Receive Negative (-1) human signal
+
+Step: 14, S: (0, 4), A: west, S': (0, 4), R: 0.0
+
+Receive Negative (-1) human signal
+
+Step: 15, S: (0, 4), A: north, S': (1, 4), R: 0.0
+
+Receive Negative (-1) human signal
+
+Step: 16, S: (1, 4), A: east, S': (2, 4), R: 0.0
+
+Receive Positive (+1) human signal
+
+Step: 17, S: (2, 4), A: east, S': (2, 3), R: 0.0
+
+Receive Positive (+1) human signal
+
+Step: 18, S: (2, 3), A: west, S': (2, 3), R: 0.0
+
+Receive Positive (+1) human signal
+
+Step: 19, S: (2, 3), A: south, S': (2, 2), R: 0.0
+
+Receive Negative (-1) human signal
+
+Step: 20, S: (2, 2), A: exit, S': TERMINAL_STATE, R: 1
+
+Receive Positive (+1) human signal
+
+--------------------------------
+EPISODE 1 COMPLETE: RETURN WAS 0.121576654591
+
+TOTAL STEPS: 21, EPISODE STEPS: 21
+Learned QValue: {((0, 1), 'east'): 0, ((4, 4), 'south'): 0, ((0, 2), 'south'): 0, ((0, 2), 'west'): 0, ((3, 1), 'west'): 0, ((2, 0), 'exit'): 0, ((2, 1), 'east'): 0, ((4, 0), 'exit'): 0, ((2, 3), 'west'): 0.1, ((0, 3), 'north'): 0, ((4, 2), 'exit'): 0, ((2, 4), 'east'): 0.010000000000000009, ((0, 1), 'south'): 0, ((2, 3), 'east'): 0, ((0, 2), 'east'): 0, ((3, 3), 'south'): 0, ((3, 3), 'north'): 0, ((3, 4), 'north'): 0, ((4, 4), 'north'): 0, ((4, 1), 'south'): 0, ((2, 1), 'south'): 0, ((2, 2), 'exit'): 0.1, ((0, 3), 'west'): 0, ((2, 4), 'south'): 0.1, ((4, 4), 'east'): 0, ((3, 4), 'east'): 0, ((1, 4), 'north'): 0, ((0, 2), 'north'): 0, ((2, 3), 'north'): -0.1, ((3, 3), 'west'): 0, ((4, 4), 'west'): 0, ((0, 3), 'east'): 0, ((1, 0), 'exit'): 0, ((3, 1), 'south'): 0, ((2, 4), 'north'): -0.5217031000000001, ((1, 1), 'south'): 0, ((1, 1), 'west'): 0, ((3, 3), 'east'): 0, ((0, 0), 'exit'): 0, ((2, 3), 'south'): -0.1, ((3, 0), 'exit'): 0, ((1, 4), 'east'): 0.1, ((4, 3), 'west'): 0, ((4, 1), 'north'): 0, ((0, 1), 'north'): 0, ((2, 4), 'west'): -0.19, ((1, 4), 'west'): -0.1, ((1, 1), 'east'): 0, ((0, 4), 'north'): -0.1, ((2, 1), 'west'): 0, ((0, 4), 'south'): 0, ((3, 4), 'west'): 0, ((3, 1), 'north'): 0, ((3, 4), 'south'): 0, ((1, 4), 'south'): 0, ((4, 3), 'east'): 0, ((4, 1), 'west'): 0, ((0, 4), 'west'): -0.19, ((4, 3), 'north'): 0, ((0, 3), 'south'): 0, ((3, 1), 'east'): 0, ((4, 1), 'east'): 0, ((0, 1), 'west'): 0, ((0, 4), 'east'): 0, ((1, 1), 'north'): 0, ((2, 1), 'north'): 0, ((4, 3), 'south'): 0}
+
+--------------------------------
+BEGINNING EPISODE: 2
+
+Step: 0, S: (4, 4), A: east, S': (4, 4), R: 0.0
+
+Receive Negative (-1) human signal
+
+Step: 1, S: (4, 4), A: east, S': (4, 4), R: 0.0
+
+Receive Negative (-1) human signal
+
+Step: 2, S: (4, 4), A: north, S': (3, 4), R: 0.0
+
+Receive Negative (-1) human signal
+
+Step: 3, S: (3, 4), A: east, S': (4, 4), R: 0.0
+
+Receive Positive (+1) human signal
+
+Step: 4, S: (4, 4), A: east, S': (4, 4), R: 0.0
+
+Receive Negative (-1) human signal
+
+Step: 5, S: (4, 4), A: east, S': (4, 3), R: 0.0
+
+Receive Positive (+1) human signal
+
+Step: 6, S: (4, 3), A: west, S': (3, 3), R: 0.0
+
+Receive Negative (-1) human signal
+
+Step: 7, S: (3, 3), A: south, S': (3, 3), R: 0.0
+
+Receive Negative (-1) human signal
+
+Step: 8, S: (3, 3), A: east, S': (4, 3), R: 0.0
+
+Receive Positive (+1) human signal
+
+Step: 9, S: (4, 3), A: north, S': (4, 4), R: 0.0
+
+Receive Negative (-1) human signal
+
+Step: 10, S: (4, 4), A: north, S': (4, 4), R: 0.0
+
+Receive Negative (-1) human signal
+
+Step: 11, S: (4, 4), A: west, S': (3, 4), R: 0.0
+
+Receive Negative (-1) human signal
+
+Step: 12, S: (3, 4), A: north, S': (4, 4), R: 0.0
+
+Receive Negative (-1) human signal
+
+Step: 13, S: (4, 4), A: east, S': (4, 4), R: 0.0
+
+Receive Negative (-1) human signal
+
+Step: 14, S: (4, 4), A: south, S': (4, 3), R: 0.0
+
+Receive Positive (+1) human signal
+
+Step: 15, S: (4, 3), A: south, S': (4, 2), R: 0.0
+
+Receive Positive (+1) human signal
+
+Step: 16, S: (4, 2), A: exit, S': TERMINAL_STATE, R: 10
+
+Receive Positive (+1) human signal
+
+--------------------------------
+EPISODE 2 COMPLETE: RETURN WAS 1.85302018885
+
+TOTAL STEPS: 38, EPISODE STEPS: 17
+Learned QValue: {((0, 1), 'east'): 0, ((4, 4), 'south'): 0.1, ((0, 2), 'south'): 0, ((0, 2), 'west'): 0, ((3, 1), 'west'): 0, ((2, 0), 'exit'): 0, ((2, 1), 'east'): 0, ((4, 0), 'exit'): 0, ((2, 3), 'west'): 0.1, ((0, 3), 'north'): 0, ((4, 2), 'exit'): 0.1, ((2, 4), 'east'): 0.010000000000000009, ((0, 1), 'south'): 0, ((2, 3), 'east'): 0, ((0, 2), 'east'): 0, ((3, 3), 'south'): -0.1, ((3, 3), 'north'): 0, ((3, 4), 'north'): -0.1, ((4, 4), 'north'): -0.19, ((4, 1), 'south'): 0, ((2, 1), 'south'): 0, ((2, 2), 'exit'): 0.1, ((0, 3), 'west'): 0, ((2, 4), 'south'): 0.1, ((4, 4), 'east'): -0.22951000000000005, ((3, 4), 'east'): 0.1, ((1, 4), 'north'): 0, ((0, 2), 'north'): 0, ((2, 3), 'north'): -0.1, ((3, 3), 'west'): 0, ((4, 4), 'west'): -0.1, ((0, 3), 'east'): 0, ((1, 0), 'exit'): 0, ((3, 1), 'south'): 0, ((2, 4), 'north'): -0.5217031000000001, ((1, 1), 'south'): 0, ((1, 1), 'west'): 0, ((3, 3), 'east'): 0.1, ((0, 0), 'exit'): 0, ((2, 3), 'south'): -0.1, ((3, 0), 'exit'): 0, ((1, 4), 'east'): 0.1, ((4, 3), 'west'): -0.1, ((4, 1), 'north'): 0, ((0, 1), 'north'): 0, ((2, 4), 'west'): -0.19, ((1, 4), 'west'): -0.1, ((1, 1), 'east'): 0, ((0, 4), 'north'): -0.1, ((2, 1), 'west'): 0, ((0, 4), 'south'): 0, ((3, 4), 'west'): 0, ((3, 1), 'north'): 0, ((3, 4), 'south'): 0, ((1, 4), 'south'): 0, ((4, 3), 'east'): 0, ((4, 1), 'west'): 0, ((0, 4), 'west'): -0.19, ((4, 3), 'north'): -0.1, ((0, 3), 'south'): 0, ((3, 1), 'east'): 0, ((4, 1), 'east'): 0, ((0, 1), 'west'): 0, ((0, 4), 'east'): 0, ((1, 1), 'north'): 0, ((2, 1), 'north'): 0, ((4, 3), 'south'): 0.1}
+
+--------------------------------
+BEGINNING EPISODE: 3
+
+Step: 0, S: (3, 4), A: west, S': (3, 3), R: 0.0
+
+Receive Positive (+1) human signal
+
+Step: 1, S: (3, 3), A: south, S': (3, 3), R: 0.0
+
+Receive Negative (-1) human signal
+
+Step: 2, S: (3, 3), A: north, S': (3, 4), R: 0.0
+
+Receive Negative (-1) human signal
+
+Step: 3, S: (3, 4), A: east, S': (3, 3), R: 0.0
+
+Receive Positive (+1) human signal
+
+Step: 4, S: (3, 3), A: west, S': (2, 3), R: 0.0
+
+Step: 5, S: (2, 3), A: east, S': (3, 3), R: 0.0
+
