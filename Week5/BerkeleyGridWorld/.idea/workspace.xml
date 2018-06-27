@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2cc07f5f-c6ba-40b1-99dc-e0ae1cdb89a6" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/experiment/expr_runner_terminal.py" afterPath="$PROJECT_DIR$/experiment/expr_runner_terminal.py" />
       <change beforePath="$PROJECT_DIR$/gridworld.py" afterPath="$PROJECT_DIR$/gridworld.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -13,11 +14,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="expr_runner_terminal.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="expr_runner_terminal.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/experiment/expr_runner_terminal.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="47" column="56" lean-forward="false" selection-start-line="47" selection-start-column="56" selection-end-line="47" selection-end-column="56" />
+            <state relative-caret-position="242">
+              <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
               <folding>
                 <element signature="e#109#206#0" expanded="true" />
               </folding>
@@ -67,11 +68,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="gridworld.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="gridworld.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/gridworld.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2987">
-              <caret line="670" column="24" lean-forward="false" selection-start-line="670" selection-start-column="24" selection-end-line="670" selection-end-column="24" />
+            <state relative-caret-position="459">
+              <caret line="556" column="39" lean-forward="true" selection-start-line="556" selection-start-column="19" selection-end-line="556" selection-end-column="39" />
               <folding>
                 <element signature="e#656#669#0" expanded="true" />
               </folding>
@@ -141,11 +142,11 @@
         <option value="$PROJECT_DIR$/experiment/expr_runner_ide.py" />
         <option value="$PROJECT_DIR$/input/user_input.py" />
         <option value="$PROJECT_DIR$/input/user_input.py" />
+        <option value="$PROJECT_DIR$/qlearningAgents.py" />
+        <option value="$PROJECT_DIR$/qlearningAgents.py" />
+        <option value="$PROJECT_DIR$/gridworld.py" />
+        <option value="$PROJECT_DIR$/gridworld.py" />
         <option value="$PROJECT_DIR$/experiment/expr_runner_terminal.py" />
-        <option value="$PROJECT_DIR$/qlearningAgents.py" />
-        <option value="$PROJECT_DIR$/qlearningAgents.py" />
-        <option value="$PROJECT_DIR$/gridworld.py" />
-        <option value="$PROJECT_DIR$/gridworld.py" />
       </list>
     </option>
   </component>
@@ -820,16 +821,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/experiment/expr_runner_terminal.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="47" column="56" lean-forward="false" selection-start-line="47" selection-start-column="56" selection-end-line="47" selection-end-column="56" />
-          <folding>
-            <element signature="e#109#206#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/util.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
@@ -858,10 +849,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/gridworld.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2987">
-          <caret line="670" column="24" lean-forward="false" selection-start-line="670" selection-start-column="24" selection-end-line="670" selection-end-column="24" />
+        <state relative-caret-position="459">
+          <caret line="556" column="39" lean-forward="true" selection-start-line="556" selection-start-column="19" selection-end-line="556" selection-end-column="39" />
           <folding>
             <element signature="e#656#669#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/experiment/expr_runner_terminal.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding>
+            <element signature="e#109#206#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -14,19 +14,29 @@ def run_expr():
     alpha = 0.1     # learning rate
     epsilon = 0.0   # exploration rate
     window_size = 1     # Tamer agent window size
-    max_n_experience = 1000     # Tamer agent maximum number of experiences
+    max_n_experience = 2000     # Tamer agent maximum number of experiences
     is_asyn = False      # whether to receive input asynchronously
 
     # learning environment parameters
     n_episodes = 100
     display_speed = 2.0
 
+    # experiment parameters
+    delta = 0.02
+    check_policy_converge = False
+    check_value_converge = True
+
     # generate postfix
     postfix = ''
     postfix += 'agent' + ('Q' if is_use_q_agent else 'Tamer')
     postfix += '_alpha' + str(alpha)
     postfix += '_epsilon' + str(epsilon)
-    postfix += '_k' + str(n_episodes)
+    if check_value_converge:
+        postfix += '_valueConverge'
+    elif check_policy_converge:
+        postfix += '_policyConverge'
+    else:
+        postfix += '_k' + str(n_episodes)
     if is_asyn:
         postfix += '_winSize' + str(window_size)
     else:
@@ -51,6 +61,9 @@ def run_expr():
                                                         , n_episodes=n_episodes
                                                         , display_speed=display_speed
                                                         , is_asyn_input=is_asyn
+                                                        , delta=delta
+                                                        , check_policy_converge=check_policy_converge
+                                                        , check_value_converge=check_value_converge
                                                         , is_use_q_agent=is_use_q_agent)
     tamerGridWorld.run_episodes()
 

@@ -672,6 +672,10 @@ class TamerGridWorldExperiment():
             total_returns += episode_rewards
             total_steps = global_step
 
+            # terminate the experiment if the qValues have converged
+            if is_converge:
+                break
+
         if self.n_episodes > 0:
             print
             print "AVERAGE RETURNS FROM START STATE: " + str((total_returns + 0.0) / self.n_episodes)
