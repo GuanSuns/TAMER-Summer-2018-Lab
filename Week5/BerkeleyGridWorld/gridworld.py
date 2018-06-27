@@ -466,7 +466,8 @@ def runEpisode(agent, m_environment, discount, f_decision
                , user_input_module=None, global_step=0
                , check_value_converge=False
                , check_policy_converge=True
-               , optimal_policy=None):
+               , optimal_policy=None
+               , delta=0.02):
     is_converge = False
     old_qValues = None
     episode_rewards = 0
@@ -498,7 +499,7 @@ def runEpisode(agent, m_environment, discount, f_decision
         if episode_step != 0 \
                 and agent.getAgentType() == 'qLearningAgent' \
                 and check_value_converge:
-            if isQValuesConverged(m_environment, old_qValues, new_qValues=agent.getQValues()):
+            if isQValuesConverged(m_environment, old_qValues, new_qValues=agent.getQValues(), delta=delta):
                 is_converge = True
                 f_message("--------------------------------")
                 f_message("The Q-Values have converged\n")
@@ -553,12 +554,25 @@ class TamerGridWorldExperiment():
                  , noise=0, epsilon=0.3, display_speed=0.5
                  , grid_size=150, text_only=False, n_episodes=100
                  , agent_window_size=1, agent_max_n_experiences=1000
-                 , is_use_q_agent=False, is_asyn_input=True, check_value_converge=False):
+                 , check_value_converge=False
+                 , check_policy_converge=True
+                 , optimal_policy=None
+                 , delta=0.02
+                 , is_use_q_agent=False
+                 , is_asyn_input=True):
+
+        ###########################
+        # GENERAL CONTROL
+        ###########################
+
         self.text_only = text_only
         self.display_speed = display_speed
         self.n_episodes = n_episodes
         self.discount = discount
         self.check_value_converge = check_value_converge
+        self.check_policy_converge = check_policy_converge
+        self.optimal_policy = optimal_policy
+        self.delta = delta
 
         ###########################
         # GET THE INPUT MODULE
@@ -651,7 +665,10 @@ class TamerGridWorldExperiment():
                                                                      , message_callback, pause_callback, i_episode
                                                                      , user_input_module=self.user_input_module
                                                                      , global_step=total_steps
-                                                                     , check_value_converge=self.check_value_converge)
+                                                                     , check_value_converge=self.check_value_converge
+                                                                     , check_policy_converge=self.check_policy_converge
+                                                                     , delta=self.delta
+                                                                     , optimal_policy=self.optimal_policy)
             total_returns += episode_rewards
             total_steps = global_step
 
