@@ -1,0 +1,3925 @@
+BEGINNING EPOCH: 0
+
+Step: 0, S: (0, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+Step: 1, S: (0, 1), A: north, S': (0, 2), R: 0.0
+
+Step: 2, S: (0, 1), A: west, S': (0, 1), R: 0.0
+
+Step: 3, S: (0, 1), A: south, S': (0, 0), R: 0.0
+
+Step: 4, S: (0, 1), A: east, S': (1, 1), R: 0.0
+
+Step: 5, S: (0, 2), A: north, S': (0, 3), R: 0.0
+
+Step: 6, S: (0, 2), A: west, S': (0, 2), R: 0.0
+
+Step: 7, S: (0, 2), A: south, S': (0, 1), R: 0.0
+
+Step: 8, S: (0, 2), A: east, S': (0, 2), R: 0.0
+
+Step: 9, S: (0, 3), A: north, S': (0, 4), R: 0.0
+
+Step: 10, S: (0, 3), A: west, S': (0, 3), R: 0.0
+
+Step: 11, S: (0, 3), A: south, S': (0, 2), R: 0.0
+
+Step: 12, S: (0, 3), A: east, S': (0, 3), R: 0.0
+
+Step: 13, S: (0, 4), A: north, S': (0, 4), R: 0.0
+
+Step: 14, S: (0, 4), A: west, S': (0, 4), R: 0.0
+
+Step: 15, S: (0, 4), A: south, S': (0, 3), R: 0.0
+
+Step: 16, S: (0, 4), A: east, S': (1, 4), R: 0.0
+
+Step: 17, S: (1, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+Step: 18, S: (1, 1), A: north, S': (1, 1), R: 0.0
+
+Step: 19, S: (1, 1), A: west, S': (0, 1), R: 0.0
+
+Step: 20, S: (1, 1), A: south, S': (1, 0), R: 0.0
+
+Step: 21, S: (1, 1), A: east, S': (2, 1), R: 0.0
+
+Step: 22, S: (1, 4), A: north, S': (1, 4), R: 0.0
+
+Step: 23, S: (1, 4), A: west, S': (0, 4), R: 0.0
+
+Step: 24, S: (1, 4), A: south, S': (1, 4), R: 0.0
+
+Step: 25, S: (1, 4), A: east, S': (2, 4), R: 0.0
+
+Step: 26, S: (2, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+Step: 27, S: (2, 1), A: north, S': (2, 2), R: 0.0
+
+Step: 28, S: (2, 1), A: west, S': (1, 1), R: 0.0
+
+Step: 29, S: (2, 1), A: south, S': (2, 0), R: 0.0
+
+Step: 30, S: (2, 1), A: east, S': (3, 1), R: 0.0
+
+Step: 31, S: (2, 2), A: exit, S': TERMINAL_STATE, R: 1
+
+Step: 32, S: (2, 3), A: north, S': (2, 4), R: 0.0
+
+Step: 33, S: (2, 3), A: west, S': (2, 3), R: 0.0
+
+Step: 34, S: (2, 3), A: south, S': (2, 2), R: 0.0
+
+Step: 35, S: (2, 3), A: east, S': (3, 3), R: 0.0
+
+Step: 36, S: (2, 4), A: north, S': (2, 4), R: 0.0
+
+Step: 37, S: (2, 4), A: west, S': (1, 4), R: 0.0
+
+Step: 38, S: (2, 4), A: south, S': (2, 3), R: 0.0
+
+Step: 39, S: (2, 4), A: east, S': (3, 4), R: 0.0
+
+Step: 40, S: (3, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+Step: 41, S: (3, 1), A: north, S': (3, 1), R: 0.0
+
+Step: 42, S: (3, 1), A: west, S': (2, 1), R: 0.0
+
+Step: 43, S: (3, 1), A: south, S': (3, 0), R: 0.0
+
+Step: 44, S: (3, 1), A: east, S': (4, 1), R: 0.0
+
+Step: 45, S: (3, 3), A: north, S': (3, 4), R: 0.0
+
+Step: 46, S: (3, 3), A: west, S': (2, 3), R: 0.0
+
+Step: 47, S: (3, 3), A: south, S': (3, 3), R: 0.0
+
+Step: 48, S: (3, 3), A: east, S': (4, 3), R: 0.0
+
+Step: 49, S: (3, 4), A: north, S': (3, 4), R: 0.0
+
+Step: 50, S: (3, 4), A: west, S': (2, 4), R: 0.0
+
+Step: 51, S: (3, 4), A: south, S': (3, 3), R: 0.0
+
+Step: 52, S: (3, 4), A: east, S': (4, 4), R: 0.0
+
+Step: 53, S: (4, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+Step: 54, S: (4, 1), A: north, S': (4, 2), R: 0.0
+
+Step: 55, S: (4, 1), A: west, S': (3, 1), R: 0.0
+
+Step: 56, S: (4, 1), A: south, S': (4, 0), R: 0.0
+
+Step: 57, S: (4, 1), A: east, S': (4, 1), R: 0.0
+
+Step: 58, S: (4, 2), A: exit, S': TERMINAL_STATE, R: 10
+
+Step: 59, S: (4, 3), A: north, S': (4, 4), R: 0.0
+
+Step: 60, S: (4, 3), A: west, S': (3, 3), R: 0.0
+
+Step: 61, S: (4, 3), A: south, S': (4, 2), R: 0.0
+
+Step: 62, S: (4, 3), A: east, S': (4, 3), R: 0.0
+
+Step: 63, S: (4, 4), A: north, S': (4, 4), R: 0.0
+
+Step: 64, S: (4, 4), A: west, S': (3, 4), R: 0.0
+
+Step: 65, S: (4, 4), A: south, S': (4, 3), R: 0.0
+
+Step: 66, S: (4, 4), A: east, S': (4, 4), R: 0.0
+
+((0, 0), 'exit'), value diff: 5.0
+BEGINNING EPOCH: 1
+
+Step: 67, S: (0, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+Step: 68, S: (0, 1), A: north, S': (0, 2), R: 0.0
+
+Step: 69, S: (0, 1), A: west, S': (0, 1), R: 0.0
+
+Step: 70, S: (0, 1), A: south, S': (0, 0), R: 0.0
+
+Step: 71, S: (0, 1), A: east, S': (1, 1), R: 0.0
+
+Step: 72, S: (0, 2), A: north, S': (0, 3), R: 0.0
+
+Step: 73, S: (0, 2), A: west, S': (0, 2), R: 0.0
+
+Step: 74, S: (0, 2), A: south, S': (0, 1), R: 0.0
+
+Step: 75, S: (0, 2), A: east, S': (0, 2), R: 0.0
+
+Step: 76, S: (0, 3), A: north, S': (0, 4), R: 0.0
+
+Step: 77, S: (0, 3), A: west, S': (0, 3), R: 0.0
+
+Step: 78, S: (0, 3), A: south, S': (0, 2), R: 0.0
+
+Step: 79, S: (0, 3), A: east, S': (0, 3), R: 0.0
+
+Step: 80, S: (0, 4), A: north, S': (0, 4), R: 0.0
+
+Step: 81, S: (0, 4), A: west, S': (0, 4), R: 0.0
+
+Step: 82, S: (0, 4), A: south, S': (0, 3), R: 0.0
+
+Step: 83, S: (0, 4), A: east, S': (1, 4), R: 0.0
+
+Step: 84, S: (1, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+Step: 85, S: (1, 1), A: north, S': (1, 1), R: 0.0
+
+Step: 86, S: (1, 1), A: west, S': (0, 1), R: 0.0
+
+Step: 87, S: (1, 1), A: south, S': (1, 0), R: 0.0
+
+Step: 88, S: (1, 1), A: east, S': (2, 1), R: 0.0
+
+Step: 89, S: (1, 4), A: north, S': (1, 4), R: 0.0
+
+Step: 90, S: (1, 4), A: west, S': (0, 4), R: 0.0
+
+Step: 91, S: (1, 4), A: south, S': (1, 4), R: 0.0
+
+Step: 92, S: (1, 4), A: east, S': (2, 4), R: 0.0
+
+Step: 93, S: (2, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+Step: 94, S: (2, 1), A: north, S': (2, 2), R: 0.0
+
+Step: 95, S: (2, 1), A: west, S': (1, 1), R: 0.0
+
+Step: 96, S: (2, 1), A: south, S': (2, 0), R: 0.0
+
+Step: 97, S: (2, 1), A: east, S': (3, 1), R: 0.0
+
+Step: 98, S: (2, 2), A: exit, S': TERMINAL_STATE, R: 1
+
+Step: 99, S: (2, 3), A: north, S': (2, 4), R: 0.0
+
+Step: 100, S: (2, 3), A: west, S': (2, 3), R: 0.0
+
+Step: 101, S: (2, 3), A: south, S': (2, 2), R: 0.0
+
+Step: 102, S: (2, 3), A: east, S': (3, 3), R: 0.0
+
+Step: 103, S: (2, 4), A: north, S': (2, 4), R: 0.0
+
+Step: 104, S: (2, 4), A: west, S': (1, 4), R: 0.0
+
+Step: 105, S: (2, 4), A: south, S': (2, 3), R: 0.0
+
+Step: 106, S: (2, 4), A: east, S': (3, 4), R: 0.0
+
+Step: 107, S: (3, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+Step: 108, S: (3, 1), A: north, S': (3, 1), R: 0.0
+
+Step: 109, S: (3, 1), A: west, S': (2, 1), R: 0.0
+
+Step: 110, S: (3, 1), A: south, S': (3, 0), R: 0.0
+
+Step: 111, S: (3, 1), A: east, S': (4, 1), R: 0.0
+
+Step: 112, S: (3, 3), A: north, S': (3, 4), R: 0.0
+
+Step: 113, S: (3, 3), A: west, S': (2, 3), R: 0.0
+
+Step: 114, S: (3, 3), A: south, S': (3, 3), R: 0.0
+
+Step: 115, S: (3, 3), A: east, S': (4, 3), R: 0.0
+
+Step: 116, S: (3, 4), A: north, S': (3, 4), R: 0.0
+
+Step: 117, S: (3, 4), A: west, S': (2, 4), R: 0.0
+
+Step: 118, S: (3, 4), A: south, S': (3, 3), R: 0.0
+
+Step: 119, S: (3, 4), A: east, S': (4, 4), R: 0.0
+
+Step: 120, S: (4, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+Step: 121, S: (4, 1), A: north, S': (4, 2), R: 0.0
+
+Step: 122, S: (4, 1), A: west, S': (3, 1), R: 0.0
+
+Step: 123, S: (4, 1), A: south, S': (4, 0), R: 0.0
+
+Step: 124, S: (4, 1), A: east, S': (4, 1), R: 0.0
+
+Step: 125, S: (4, 2), A: exit, S': TERMINAL_STATE, R: 10
+
+Step: 126, S: (4, 3), A: north, S': (4, 4), R: 0.0
+
+Step: 127, S: (4, 3), A: west, S': (3, 3), R: 0.0
+
+Step: 128, S: (4, 3), A: south, S': (4, 2), R: 0.0
+
+Step: 129, S: (4, 3), A: east, S': (4, 3), R: 0.0
+
+Step: 130, S: (4, 4), A: north, S': (4, 4), R: 0.0
+
+Step: 131, S: (4, 4), A: west, S': (3, 4), R: 0.0
+
+Step: 132, S: (4, 4), A: south, S': (4, 3), R: 0.0
+
+Step: 133, S: (4, 4), A: east, S': (4, 4), R: 0.0
+
+((0, 0), 'exit'), value diff: 2.5
+BEGINNING EPOCH: 2
+
+Step: 134, S: (0, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+Step: 135, S: (0, 1), A: north, S': (0, 2), R: 0.0
+
+Step: 136, S: (0, 1), A: west, S': (0, 1), R: 0.0
+
+Step: 137, S: (0, 1), A: south, S': (0, 0), R: 0.0
+
+Step: 138, S: (0, 1), A: east, S': (1, 1), R: 0.0
+
+Step: 139, S: (0, 2), A: north, S': (0, 3), R: 0.0
+
+Step: 140, S: (0, 2), A: west, S': (0, 2), R: 0.0
+
+Step: 141, S: (0, 2), A: south, S': (0, 1), R: 0.0
+
+Step: 142, S: (0, 2), A: east, S': (0, 2), R: 0.0
+
+Step: 143, S: (0, 3), A: north, S': (0, 4), R: 0.0
+
+Step: 144, S: (0, 3), A: west, S': (0, 3), R: 0.0
+
+Step: 145, S: (0, 3), A: south, S': (0, 2), R: 0.0
+
+Step: 146, S: (0, 3), A: east, S': (0, 3), R: 0.0
+
+Step: 147, S: (0, 4), A: north, S': (0, 4), R: 0.0
+
+Step: 148, S: (0, 4), A: west, S': (0, 4), R: 0.0
+
+Step: 149, S: (0, 4), A: south, S': (0, 3), R: 0.0
+
+Step: 150, S: (0, 4), A: east, S': (1, 4), R: 0.0
+
+Step: 151, S: (1, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+Step: 152, S: (1, 1), A: north, S': (1, 1), R: 0.0
+
+Step: 153, S: (1, 1), A: west, S': (0, 1), R: 0.0
+
+Step: 154, S: (1, 1), A: south, S': (1, 0), R: 0.0
+
+Step: 155, S: (1, 1), A: east, S': (2, 1), R: 0.0
+
+Step: 156, S: (1, 4), A: north, S': (1, 4), R: 0.0
+
+Step: 157, S: (1, 4), A: west, S': (0, 4), R: 0.0
+
+Step: 158, S: (1, 4), A: south, S': (1, 4), R: 0.0
+
+Step: 159, S: (1, 4), A: east, S': (2, 4), R: 0.0
+
+Step: 160, S: (2, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+Step: 161, S: (2, 1), A: north, S': (2, 2), R: 0.0
+
+Step: 162, S: (2, 1), A: west, S': (1, 1), R: 0.0
+
+Step: 163, S: (2, 1), A: south, S': (2, 0), R: 0.0
+
+Step: 164, S: (2, 1), A: east, S': (3, 1), R: 0.0
+
+Step: 165, S: (2, 2), A: exit, S': TERMINAL_STATE, R: 1
+
+Step: 166, S: (2, 3), A: north, S': (2, 4), R: 0.0
+
+Step: 167, S: (2, 3), A: west, S': (2, 3), R: 0.0
+
+Step: 168, S: (2, 3), A: south, S': (2, 2), R: 0.0
+
+Step: 169, S: (2, 3), A: east, S': (3, 3), R: 0.0
+
+Step: 170, S: (2, 4), A: north, S': (2, 4), R: 0.0
+
+Step: 171, S: (2, 4), A: west, S': (1, 4), R: 0.0
+
+Step: 172, S: (2, 4), A: south, S': (2, 3), R: 0.0
+
+Step: 173, S: (2, 4), A: east, S': (3, 4), R: 0.0
+
+Step: 174, S: (3, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+Step: 175, S: (3, 1), A: north, S': (3, 1), R: 0.0
+
+Step: 176, S: (3, 1), A: west, S': (2, 1), R: 0.0
+
+Step: 177, S: (3, 1), A: south, S': (3, 0), R: 0.0
+
+Step: 178, S: (3, 1), A: east, S': (4, 1), R: 0.0
+
+Step: 179, S: (3, 3), A: north, S': (3, 4), R: 0.0
+
+Step: 180, S: (3, 3), A: west, S': (2, 3), R: 0.0
+
+Step: 181, S: (3, 3), A: south, S': (3, 3), R: 0.0
+
+Step: 182, S: (3, 3), A: east, S': (4, 3), R: 0.0
+
+Step: 183, S: (3, 4), A: north, S': (3, 4), R: 0.0
+
+Step: 184, S: (3, 4), A: west, S': (2, 4), R: 0.0
+
+Step: 185, S: (3, 4), A: south, S': (3, 3), R: 0.0
+
+Step: 186, S: (3, 4), A: east, S': (4, 4), R: 0.0
+
+Step: 187, S: (4, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+Step: 188, S: (4, 1), A: north, S': (4, 2), R: 0.0
+
+Step: 189, S: (4, 1), A: west, S': (3, 1), R: 0.0
+
+Step: 190, S: (4, 1), A: south, S': (4, 0), R: 0.0
+
+Step: 191, S: (4, 1), A: east, S': (4, 1), R: 0.0
+
+Step: 192, S: (4, 2), A: exit, S': TERMINAL_STATE, R: 10
+
+Step: 193, S: (4, 3), A: north, S': (4, 4), R: 0.0
+
+Step: 194, S: (4, 3), A: west, S': (3, 3), R: 0.0
+
+Step: 195, S: (4, 3), A: south, S': (4, 2), R: 0.0
+
+Step: 196, S: (4, 3), A: east, S': (4, 3), R: 0.0
+
+Step: 197, S: (4, 4), A: north, S': (4, 4), R: 0.0
+
+Step: 198, S: (4, 4), A: west, S': (3, 4), R: 0.0
+
+Step: 199, S: (4, 4), A: south, S': (4, 3), R: 0.0
+
+Step: 200, S: (4, 4), A: east, S': (4, 4), R: 0.0
+
+((0, 0), 'exit'), value diff: 1.25
+BEGINNING EPOCH: 3
+
+Step: 201, S: (0, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+Step: 202, S: (0, 1), A: north, S': (0, 2), R: 0.0
+
+Step: 203, S: (0, 1), A: west, S': (0, 1), R: 0.0
+
+Step: 204, S: (0, 1), A: south, S': (0, 0), R: 0.0
+
+Step: 205, S: (0, 1), A: east, S': (1, 1), R: 0.0
+
+Step: 206, S: (0, 2), A: north, S': (0, 3), R: 0.0
+
+Step: 207, S: (0, 2), A: west, S': (0, 2), R: 0.0
+
+Step: 208, S: (0, 2), A: south, S': (0, 1), R: 0.0
+
+Step: 209, S: (0, 2), A: east, S': (0, 2), R: 0.0
+
+Step: 210, S: (0, 3), A: north, S': (0, 4), R: 0.0
+
+Step: 211, S: (0, 3), A: west, S': (0, 3), R: 0.0
+
+Step: 212, S: (0, 3), A: south, S': (0, 2), R: 0.0
+
+Step: 213, S: (0, 3), A: east, S': (0, 3), R: 0.0
+
+Step: 214, S: (0, 4), A: north, S': (0, 4), R: 0.0
+
+Step: 215, S: (0, 4), A: west, S': (0, 4), R: 0.0
+
+Step: 216, S: (0, 4), A: south, S': (0, 3), R: 0.0
+
+Step: 217, S: (0, 4), A: east, S': (1, 4), R: 0.0
+
+Step: 218, S: (1, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+Step: 219, S: (1, 1), A: north, S': (1, 1), R: 0.0
+
+Step: 220, S: (1, 1), A: west, S': (0, 1), R: 0.0
+
+Step: 221, S: (1, 1), A: south, S': (1, 0), R: 0.0
+
+Step: 222, S: (1, 1), A: east, S': (2, 1), R: 0.0
+
+Step: 223, S: (1, 4), A: north, S': (1, 4), R: 0.0
+
+Step: 224, S: (1, 4), A: west, S': (0, 4), R: 0.0
+
+Step: 225, S: (1, 4), A: south, S': (1, 4), R: 0.0
+
+Step: 226, S: (1, 4), A: east, S': (2, 4), R: 0.0
+
+Step: 227, S: (2, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+Step: 228, S: (2, 1), A: north, S': (2, 2), R: 0.0
+
+Step: 229, S: (2, 1), A: west, S': (1, 1), R: 0.0
+
+Step: 230, S: (2, 1), A: south, S': (2, 0), R: 0.0
+
+Step: 231, S: (2, 1), A: east, S': (3, 1), R: 0.0
+
+Step: 232, S: (2, 2), A: exit, S': TERMINAL_STATE, R: 1
+
+Step: 233, S: (2, 3), A: north, S': (2, 4), R: 0.0
+
+Step: 234, S: (2, 3), A: west, S': (2, 3), R: 0.0
+
+Step: 235, S: (2, 3), A: south, S': (2, 2), R: 0.0
+
+Step: 236, S: (2, 3), A: east, S': (3, 3), R: 0.0
+
+Step: 237, S: (2, 4), A: north, S': (2, 4), R: 0.0
+
+Step: 238, S: (2, 4), A: west, S': (1, 4), R: 0.0
+
+Step: 239, S: (2, 4), A: south, S': (2, 3), R: 0.0
+
+Step: 240, S: (2, 4), A: east, S': (3, 4), R: 0.0
+
+Step: 241, S: (3, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+Step: 242, S: (3, 1), A: north, S': (3, 1), R: 0.0
+
+Step: 243, S: (3, 1), A: west, S': (2, 1), R: 0.0
+
+Step: 244, S: (3, 1), A: south, S': (3, 0), R: 0.0
+
+Step: 245, S: (3, 1), A: east, S': (4, 1), R: 0.0
+
+Step: 246, S: (3, 3), A: north, S': (3, 4), R: 0.0
+
+Step: 247, S: (3, 3), A: west, S': (2, 3), R: 0.0
+
+Step: 248, S: (3, 3), A: south, S': (3, 3), R: 0.0
+
+Step: 249, S: (3, 3), A: east, S': (4, 3), R: 0.0
+
+Step: 250, S: (3, 4), A: north, S': (3, 4), R: 0.0
+
+Step: 251, S: (3, 4), A: west, S': (2, 4), R: 0.0
+
+Step: 252, S: (3, 4), A: south, S': (3, 3), R: 0.0
+
+Step: 253, S: (3, 4), A: east, S': (4, 4), R: 0.0
+
+Step: 254, S: (4, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+Step: 255, S: (4, 1), A: north, S': (4, 2), R: 0.0
+
+Step: 256, S: (4, 1), A: west, S': (3, 1), R: 0.0
+
+Step: 257, S: (4, 1), A: south, S': (4, 0), R: 0.0
+
+Step: 258, S: (4, 1), A: east, S': (4, 1), R: 0.0
+
+Step: 259, S: (4, 2), A: exit, S': TERMINAL_STATE, R: 10
+
+Step: 260, S: (4, 3), A: north, S': (4, 4), R: 0.0
+
+Step: 261, S: (4, 3), A: west, S': (3, 3), R: 0.0
+
+Step: 262, S: (4, 3), A: south, S': (4, 2), R: 0.0
+
+Step: 263, S: (4, 3), A: east, S': (4, 3), R: 0.0
+
+Step: 264, S: (4, 4), A: north, S': (4, 4), R: 0.0
+
+Step: 265, S: (4, 4), A: west, S': (3, 4), R: 0.0
+
+Step: 266, S: (4, 4), A: south, S': (4, 3), R: 0.0
+
+Step: 267, S: (4, 4), A: east, S': (4, 4), R: 0.0
+
+((0, 0), 'exit'), value diff: 0.625
+BEGINNING EPOCH: 4
+
+Step: 268, S: (0, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+Step: 269, S: (0, 1), A: north, S': (0, 2), R: 0.0
+
+Step: 270, S: (0, 1), A: west, S': (0, 1), R: 0.0
+
+Step: 271, S: (0, 1), A: south, S': (0, 0), R: 0.0
+
+Step: 272, S: (0, 1), A: east, S': (1, 1), R: 0.0
+
+Step: 273, S: (0, 2), A: north, S': (0, 3), R: 0.0
+
+Step: 274, S: (0, 2), A: west, S': (0, 2), R: 0.0
+
+Step: 275, S: (0, 2), A: south, S': (0, 1), R: 0.0
+
+Step: 276, S: (0, 2), A: east, S': (0, 2), R: 0.0
+
+Step: 277, S: (0, 3), A: north, S': (0, 4), R: 0.0
+
+Step: 278, S: (0, 3), A: west, S': (0, 3), R: 0.0
+
+Step: 279, S: (0, 3), A: south, S': (0, 2), R: 0.0
+
+Step: 280, S: (0, 3), A: east, S': (0, 3), R: 0.0
+
+Step: 281, S: (0, 4), A: north, S': (0, 4), R: 0.0
+
+Step: 282, S: (0, 4), A: west, S': (0, 4), R: 0.0
+
+Step: 283, S: (0, 4), A: south, S': (0, 3), R: 0.0
+
+Step: 284, S: (0, 4), A: east, S': (1, 4), R: 0.0
+
+Step: 285, S: (1, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+Step: 286, S: (1, 1), A: north, S': (1, 1), R: 0.0
+
+Step: 287, S: (1, 1), A: west, S': (0, 1), R: 0.0
+
+Step: 288, S: (1, 1), A: south, S': (1, 0), R: 0.0
+
+Step: 289, S: (1, 1), A: east, S': (2, 1), R: 0.0
+
+Step: 290, S: (1, 4), A: north, S': (1, 4), R: 0.0
+
+Step: 291, S: (1, 4), A: west, S': (0, 4), R: 0.0
+
+Step: 292, S: (1, 4), A: south, S': (1, 4), R: 0.0
+
+Step: 293, S: (1, 4), A: east, S': (2, 4), R: 0.0
+
+Step: 294, S: (2, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+Step: 295, S: (2, 1), A: north, S': (2, 2), R: 0.0
+
+Step: 296, S: (2, 1), A: west, S': (1, 1), R: 0.0
+
+Step: 297, S: (2, 1), A: south, S': (2, 0), R: 0.0
+
+Step: 298, S: (2, 1), A: east, S': (3, 1), R: 0.0
+
+Step: 299, S: (2, 2), A: exit, S': TERMINAL_STATE, R: 1
+
+Step: 300, S: (2, 3), A: north, S': (2, 4), R: 0.0
+
+Step: 301, S: (2, 3), A: west, S': (2, 3), R: 0.0
+
+Step: 302, S: (2, 3), A: south, S': (2, 2), R: 0.0
+
+Step: 303, S: (2, 3), A: east, S': (3, 3), R: 0.0
+
+Step: 304, S: (2, 4), A: north, S': (2, 4), R: 0.0
+
+Step: 305, S: (2, 4), A: west, S': (1, 4), R: 0.0
+
+Step: 306, S: (2, 4), A: south, S': (2, 3), R: 0.0
+
+Step: 307, S: (2, 4), A: east, S': (3, 4), R: 0.0
+
+Step: 308, S: (3, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+Step: 309, S: (3, 1), A: north, S': (3, 1), R: 0.0
+
+Step: 310, S: (3, 1), A: west, S': (2, 1), R: 0.0
+
+Step: 311, S: (3, 1), A: south, S': (3, 0), R: 0.0
+
+Step: 312, S: (3, 1), A: east, S': (4, 1), R: 0.0
+
+Step: 313, S: (3, 3), A: north, S': (3, 4), R: 0.0
+
+Step: 314, S: (3, 3), A: west, S': (2, 3), R: 0.0
+
+Step: 315, S: (3, 3), A: south, S': (3, 3), R: 0.0
+
+Step: 316, S: (3, 3), A: east, S': (4, 3), R: 0.0
+
+Step: 317, S: (3, 4), A: north, S': (3, 4), R: 0.0
+
+Step: 318, S: (3, 4), A: west, S': (2, 4), R: 0.0
+
+Step: 319, S: (3, 4), A: south, S': (3, 3), R: 0.0
+
+Step: 320, S: (3, 4), A: east, S': (4, 4), R: 0.0
+
+Step: 321, S: (4, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+Step: 322, S: (4, 1), A: north, S': (4, 2), R: 0.0
+
+Step: 323, S: (4, 1), A: west, S': (3, 1), R: 0.0
+
+Step: 324, S: (4, 1), A: south, S': (4, 0), R: 0.0
+
+Step: 325, S: (4, 1), A: east, S': (4, 1), R: 0.0
+
+Step: 326, S: (4, 2), A: exit, S': TERMINAL_STATE, R: 10
+
+Step: 327, S: (4, 3), A: north, S': (4, 4), R: 0.0
+
+Step: 328, S: (4, 3), A: west, S': (3, 3), R: 0.0
+
+Step: 329, S: (4, 3), A: south, S': (4, 2), R: 0.0
+
+Step: 330, S: (4, 3), A: east, S': (4, 3), R: 0.0
+
+Step: 331, S: (4, 4), A: north, S': (4, 4), R: 0.0
+
+Step: 332, S: (4, 4), A: west, S': (3, 4), R: 0.0
+
+Step: 333, S: (4, 4), A: south, S': (4, 3), R: 0.0
+
+Step: 334, S: (4, 4), A: east, S': (4, 4), R: 0.0
+
+((0, 0), 'exit'), value diff: 0.3125
+BEGINNING EPOCH: 5
+
+Step: 335, S: (0, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+Step: 336, S: (0, 1), A: north, S': (0, 2), R: 0.0
+
+Step: 337, S: (0, 1), A: west, S': (0, 1), R: 0.0
+
+Step: 338, S: (0, 1), A: south, S': (0, 0), R: 0.0
+
+Step: 339, S: (0, 1), A: east, S': (1, 1), R: 0.0
+
+Step: 340, S: (0, 2), A: north, S': (0, 3), R: 0.0
+
+Step: 341, S: (0, 2), A: west, S': (0, 2), R: 0.0
+
+Step: 342, S: (0, 2), A: south, S': (0, 1), R: 0.0
+
+Step: 343, S: (0, 2), A: east, S': (0, 2), R: 0.0
+
+Step: 344, S: (0, 3), A: north, S': (0, 4), R: 0.0
+
+Step: 345, S: (0, 3), A: west, S': (0, 3), R: 0.0
+
+Step: 346, S: (0, 3), A: south, S': (0, 2), R: 0.0
+
+Step: 347, S: (0, 3), A: east, S': (0, 3), R: 0.0
+
+Step: 348, S: (0, 4), A: north, S': (0, 4), R: 0.0
+
+Step: 349, S: (0, 4), A: west, S': (0, 4), R: 0.0
+
+Step: 350, S: (0, 4), A: south, S': (0, 3), R: 0.0
+
+Step: 351, S: (0, 4), A: east, S': (1, 4), R: 0.0
+
+Step: 352, S: (1, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+Step: 353, S: (1, 1), A: north, S': (1, 1), R: 0.0
+
+Step: 354, S: (1, 1), A: west, S': (0, 1), R: 0.0
+
+Step: 355, S: (1, 1), A: south, S': (1, 0), R: 0.0
+
+Step: 356, S: (1, 1), A: east, S': (2, 1), R: 0.0
+
+Step: 357, S: (1, 4), A: north, S': (1, 4), R: 0.0
+
+Step: 358, S: (1, 4), A: west, S': (0, 4), R: 0.0
+
+Step: 359, S: (1, 4), A: south, S': (1, 4), R: 0.0
+
+Step: 360, S: (1, 4), A: east, S': (2, 4), R: 0.0
+
+Step: 361, S: (2, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+Step: 362, S: (2, 1), A: north, S': (2, 2), R: 0.0
+
+Step: 363, S: (2, 1), A: west, S': (1, 1), R: 0.0
+
+Step: 364, S: (2, 1), A: south, S': (2, 0), R: 0.0
+
+Step: 365, S: (2, 1), A: east, S': (3, 1), R: 0.0
+
+Step: 366, S: (2, 2), A: exit, S': TERMINAL_STATE, R: 1
+
+Step: 367, S: (2, 3), A: north, S': (2, 4), R: 0.0
+
+Step: 368, S: (2, 3), A: west, S': (2, 3), R: 0.0
+
+Step: 369, S: (2, 3), A: south, S': (2, 2), R: 0.0
+
+Step: 370, S: (2, 3), A: east, S': (3, 3), R: 0.0
+
+Step: 371, S: (2, 4), A: north, S': (2, 4), R: 0.0
+
+Step: 372, S: (2, 4), A: west, S': (1, 4), R: 0.0
+
+Step: 373, S: (2, 4), A: south, S': (2, 3), R: 0.0
+
+Step: 374, S: (2, 4), A: east, S': (3, 4), R: 0.0
+
+Step: 375, S: (3, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+Step: 376, S: (3, 1), A: north, S': (3, 1), R: 0.0
+
+Step: 377, S: (3, 1), A: west, S': (2, 1), R: 0.0
+
+Step: 378, S: (3, 1), A: south, S': (3, 0), R: 0.0
+
+Step: 379, S: (3, 1), A: east, S': (4, 1), R: 0.0
+
+Step: 380, S: (3, 3), A: north, S': (3, 4), R: 0.0
+
+Step: 381, S: (3, 3), A: west, S': (2, 3), R: 0.0
+
+Step: 382, S: (3, 3), A: south, S': (3, 3), R: 0.0
+
+Step: 383, S: (3, 3), A: east, S': (4, 3), R: 0.0
+
+Step: 384, S: (3, 4), A: north, S': (3, 4), R: 0.0
+
+Step: 385, S: (3, 4), A: west, S': (2, 4), R: 0.0
+
+Step: 386, S: (3, 4), A: south, S': (3, 3), R: 0.0
+
+Step: 387, S: (3, 4), A: east, S': (4, 4), R: 0.0
+
+Step: 388, S: (4, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+Step: 389, S: (4, 1), A: north, S': (4, 2), R: 0.0
+
+Step: 390, S: (4, 1), A: west, S': (3, 1), R: 0.0
+
+Step: 391, S: (4, 1), A: south, S': (4, 0), R: 0.0
+
+Step: 392, S: (4, 1), A: east, S': (4, 1), R: 0.0
+
+Step: 393, S: (4, 2), A: exit, S': TERMINAL_STATE, R: 10
+
+Step: 394, S: (4, 3), A: north, S': (4, 4), R: 0.0
+
+Step: 395, S: (4, 3), A: west, S': (3, 3), R: 0.0
+
+Step: 396, S: (4, 3), A: south, S': (4, 2), R: 0.0
+
+Step: 397, S: (4, 3), A: east, S': (4, 3), R: 0.0
+
+Step: 398, S: (4, 4), A: north, S': (4, 4), R: 0.0
+
+Step: 399, S: (4, 4), A: west, S': (3, 4), R: 0.0
+
+Step: 400, S: (4, 4), A: south, S': (4, 3), R: 0.0
+
+Step: 401, S: (4, 4), A: east, S': (4, 4), R: 0.0
+
+((0, 0), 'exit'), value diff: 0.15625
+BEGINNING EPOCH: 6
+
+Step: 402, S: (0, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+Step: 403, S: (0, 1), A: north, S': (0, 2), R: 0.0
+
+Step: 404, S: (0, 1), A: west, S': (0, 1), R: 0.0
+
+Step: 405, S: (0, 1), A: south, S': (0, 0), R: 0.0
+
+Step: 406, S: (0, 1), A: east, S': (1, 1), R: 0.0
+
+Step: 407, S: (0, 2), A: north, S': (0, 3), R: 0.0
+
+Step: 408, S: (0, 2), A: west, S': (0, 2), R: 0.0
+
+Step: 409, S: (0, 2), A: south, S': (0, 1), R: 0.0
+
+Step: 410, S: (0, 2), A: east, S': (0, 2), R: 0.0
+
+Step: 411, S: (0, 3), A: north, S': (0, 4), R: 0.0
+
+Step: 412, S: (0, 3), A: west, S': (0, 3), R: 0.0
+
+Step: 413, S: (0, 3), A: south, S': (0, 2), R: 0.0
+
+Step: 414, S: (0, 3), A: east, S': (0, 3), R: 0.0
+
+Step: 415, S: (0, 4), A: north, S': (0, 4), R: 0.0
+
+Step: 416, S: (0, 4), A: west, S': (0, 4), R: 0.0
+
+Step: 417, S: (0, 4), A: south, S': (0, 3), R: 0.0
+
+Step: 418, S: (0, 4), A: east, S': (1, 4), R: 0.0
+
+Step: 419, S: (1, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+Step: 420, S: (1, 1), A: north, S': (1, 1), R: 0.0
+
+Step: 421, S: (1, 1), A: west, S': (0, 1), R: 0.0
+
+Step: 422, S: (1, 1), A: south, S': (1, 0), R: 0.0
+
+Step: 423, S: (1, 1), A: east, S': (2, 1), R: 0.0
+
+Step: 424, S: (1, 4), A: north, S': (1, 4), R: 0.0
+
+Step: 425, S: (1, 4), A: west, S': (0, 4), R: 0.0
+
+Step: 426, S: (1, 4), A: south, S': (1, 4), R: 0.0
+
+Step: 427, S: (1, 4), A: east, S': (2, 4), R: 0.0
+
+Step: 428, S: (2, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+Step: 429, S: (2, 1), A: north, S': (2, 2), R: 0.0
+
+Step: 430, S: (2, 1), A: west, S': (1, 1), R: 0.0
+
+Step: 431, S: (2, 1), A: south, S': (2, 0), R: 0.0
+
+Step: 432, S: (2, 1), A: east, S': (3, 1), R: 0.0
+
+Step: 433, S: (2, 2), A: exit, S': TERMINAL_STATE, R: 1
+
+Step: 434, S: (2, 3), A: north, S': (2, 4), R: 0.0
+
+Step: 435, S: (2, 3), A: west, S': (2, 3), R: 0.0
+
+Step: 436, S: (2, 3), A: south, S': (2, 2), R: 0.0
+
+Step: 437, S: (2, 3), A: east, S': (3, 3), R: 0.0
+
+Step: 438, S: (2, 4), A: north, S': (2, 4), R: 0.0
+
+Step: 439, S: (2, 4), A: west, S': (1, 4), R: 0.0
+
+Step: 440, S: (2, 4), A: south, S': (2, 3), R: 0.0
+
+Step: 441, S: (2, 4), A: east, S': (3, 4), R: 0.0
+
+Step: 442, S: (3, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+Step: 443, S: (3, 1), A: north, S': (3, 1), R: 0.0
+
+Step: 444, S: (3, 1), A: west, S': (2, 1), R: 0.0
+
+Step: 445, S: (3, 1), A: south, S': (3, 0), R: 0.0
+
+Step: 446, S: (3, 1), A: east, S': (4, 1), R: 0.0
+
+Step: 447, S: (3, 3), A: north, S': (3, 4), R: 0.0
+
+Step: 448, S: (3, 3), A: west, S': (2, 3), R: 0.0
+
+Step: 449, S: (3, 3), A: south, S': (3, 3), R: 0.0
+
+Step: 450, S: (3, 3), A: east, S': (4, 3), R: 0.0
+
+Step: 451, S: (3, 4), A: north, S': (3, 4), R: 0.0
+
+Step: 452, S: (3, 4), A: west, S': (2, 4), R: 0.0
+
+Step: 453, S: (3, 4), A: south, S': (3, 3), R: 0.0
+
+Step: 454, S: (3, 4), A: east, S': (4, 4), R: 0.0
+
+Step: 455, S: (4, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+Step: 456, S: (4, 1), A: north, S': (4, 2), R: 0.0
+
+Step: 457, S: (4, 1), A: west, S': (3, 1), R: 0.0
+
+Step: 458, S: (4, 1), A: south, S': (4, 0), R: 0.0
+
+Step: 459, S: (4, 1), A: east, S': (4, 1), R: 0.0
+
+Step: 460, S: (4, 2), A: exit, S': TERMINAL_STATE, R: 10
+
+Step: 461, S: (4, 3), A: north, S': (4, 4), R: 0.0
+
+Step: 462, S: (4, 3), A: west, S': (3, 3), R: 0.0
+
+Step: 463, S: (4, 3), A: south, S': (4, 2), R: 0.0
+
+Step: 464, S: (4, 3), A: east, S': (4, 3), R: 0.0
+
+Step: 465, S: (4, 4), A: north, S': (4, 4), R: 0.0
+
+Step: 466, S: (4, 4), A: west, S': (3, 4), R: 0.0
+
+Step: 467, S: (4, 4), A: south, S': (4, 3), R: 0.0
+
+Step: 468, S: (4, 4), A: east, S': (4, 4), R: 0.0
+
+((0, 0), 'exit'), value diff: 0.078125
+BEGINNING EPOCH: 7
+
+Step: 469, S: (0, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+Step: 470, S: (0, 1), A: north, S': (0, 2), R: 0.0
+
+Step: 471, S: (0, 1), A: west, S': (0, 1), R: 0.0
+
+Step: 472, S: (0, 1), A: south, S': (0, 0), R: 0.0
+
+Step: 473, S: (0, 1), A: east, S': (1, 1), R: 0.0
+
+Step: 474, S: (0, 2), A: north, S': (0, 3), R: 0.0
+
+Step: 475, S: (0, 2), A: west, S': (0, 2), R: 0.0
+
+Step: 476, S: (0, 2), A: south, S': (0, 1), R: 0.0
+
+Step: 477, S: (0, 2), A: east, S': (0, 2), R: 0.0
+
+Step: 478, S: (0, 3), A: north, S': (0, 4), R: 0.0
+
+Step: 479, S: (0, 3), A: west, S': (0, 3), R: 0.0
+
+Step: 480, S: (0, 3), A: south, S': (0, 2), R: 0.0
+
+Step: 481, S: (0, 3), A: east, S': (0, 3), R: 0.0
+
+Step: 482, S: (0, 4), A: north, S': (0, 4), R: 0.0
+
+Step: 483, S: (0, 4), A: west, S': (0, 4), R: 0.0
+
+Step: 484, S: (0, 4), A: south, S': (0, 3), R: 0.0
+
+Step: 485, S: (0, 4), A: east, S': (1, 4), R: 0.0
+
+Step: 486, S: (1, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+Step: 487, S: (1, 1), A: north, S': (1, 1), R: 0.0
+
+Step: 488, S: (1, 1), A: west, S': (0, 1), R: 0.0
+
+Step: 489, S: (1, 1), A: south, S': (1, 0), R: 0.0
+
+Step: 490, S: (1, 1), A: east, S': (2, 1), R: 0.0
+
+Step: 491, S: (1, 4), A: north, S': (1, 4), R: 0.0
+
+Step: 492, S: (1, 4), A: west, S': (0, 4), R: 0.0
+
+Step: 493, S: (1, 4), A: south, S': (1, 4), R: 0.0
+
+Step: 494, S: (1, 4), A: east, S': (2, 4), R: 0.0
+
+Step: 495, S: (2, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+Step: 496, S: (2, 1), A: north, S': (2, 2), R: 0.0
+
+Step: 497, S: (2, 1), A: west, S': (1, 1), R: 0.0
+
+Step: 498, S: (2, 1), A: south, S': (2, 0), R: 0.0
+
+Step: 499, S: (2, 1), A: east, S': (3, 1), R: 0.0
+
+Step: 500, S: (2, 2), A: exit, S': TERMINAL_STATE, R: 1
+
+Step: 501, S: (2, 3), A: north, S': (2, 4), R: 0.0
+
+Step: 502, S: (2, 3), A: west, S': (2, 3), R: 0.0
+
+Step: 503, S: (2, 3), A: south, S': (2, 2), R: 0.0
+
+Step: 504, S: (2, 3), A: east, S': (3, 3), R: 0.0
+
+Step: 505, S: (2, 4), A: north, S': (2, 4), R: 0.0
+
+Step: 506, S: (2, 4), A: west, S': (1, 4), R: 0.0
+
+Step: 507, S: (2, 4), A: south, S': (2, 3), R: 0.0
+
+Step: 508, S: (2, 4), A: east, S': (3, 4), R: 0.0
+
+Step: 509, S: (3, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+Step: 510, S: (3, 1), A: north, S': (3, 1), R: 0.0
+
+Step: 511, S: (3, 1), A: west, S': (2, 1), R: 0.0
+
+Step: 512, S: (3, 1), A: south, S': (3, 0), R: 0.0
+
+Step: 513, S: (3, 1), A: east, S': (4, 1), R: 0.0
+
+Step: 514, S: (3, 3), A: north, S': (3, 4), R: 0.0
+
+Step: 515, S: (3, 3), A: west, S': (2, 3), R: 0.0
+
+Step: 516, S: (3, 3), A: south, S': (3, 3), R: 0.0
+
+Step: 517, S: (3, 3), A: east, S': (4, 3), R: 0.0
+
+Step: 518, S: (3, 4), A: north, S': (3, 4), R: 0.0
+
+Step: 519, S: (3, 4), A: west, S': (2, 4), R: 0.0
+
+Step: 520, S: (3, 4), A: south, S': (3, 3), R: 0.0
+
+Step: 521, S: (3, 4), A: east, S': (4, 4), R: 0.0
+
+Step: 522, S: (4, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+Step: 523, S: (4, 1), A: north, S': (4, 2), R: 0.0
+
+Step: 524, S: (4, 1), A: west, S': (3, 1), R: 0.0
+
+Step: 525, S: (4, 1), A: south, S': (4, 0), R: 0.0
+
+Step: 526, S: (4, 1), A: east, S': (4, 1), R: 0.0
+
+Step: 527, S: (4, 2), A: exit, S': TERMINAL_STATE, R: 10
+
+Step: 528, S: (4, 3), A: north, S': (4, 4), R: 0.0
+
+Step: 529, S: (4, 3), A: west, S': (3, 3), R: 0.0
+
+Step: 530, S: (4, 3), A: south, S': (4, 2), R: 0.0
+
+Step: 531, S: (4, 3), A: east, S': (4, 3), R: 0.0
+
+Step: 532, S: (4, 4), A: north, S': (4, 4), R: 0.0
+
+Step: 533, S: (4, 4), A: west, S': (3, 4), R: 0.0
+
+Step: 534, S: (4, 4), A: south, S': (4, 3), R: 0.0
+
+Step: 535, S: (4, 4), A: east, S': (4, 4), R: 0.0
+
+((0, 0), 'exit'), value diff: 0.0390625
+BEGINNING EPOCH: 8
+
+Step: 536, S: (0, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+Step: 537, S: (0, 1), A: north, S': (0, 2), R: 0.0
+
+Step: 538, S: (0, 1), A: west, S': (0, 1), R: 0.0
+
+Step: 539, S: (0, 1), A: south, S': (0, 0), R: 0.0
+
+Step: 540, S: (0, 1), A: east, S': (1, 1), R: 0.0
+
+Step: 541, S: (0, 2), A: north, S': (0, 3), R: 0.0
+
+Step: 542, S: (0, 2), A: west, S': (0, 2), R: 0.0
+
+Step: 543, S: (0, 2), A: south, S': (0, 1), R: 0.0
+
+Step: 544, S: (0, 2), A: east, S': (0, 2), R: 0.0
+
+Step: 545, S: (0, 3), A: north, S': (0, 4), R: 0.0
+
+Step: 546, S: (0, 3), A: west, S': (0, 3), R: 0.0
+
+Step: 547, S: (0, 3), A: south, S': (0, 2), R: 0.0
+
+Step: 548, S: (0, 3), A: east, S': (0, 3), R: 0.0
+
+Step: 549, S: (0, 4), A: north, S': (0, 4), R: 0.0
+
+Step: 550, S: (0, 4), A: west, S': (0, 4), R: 0.0
+
+Step: 551, S: (0, 4), A: south, S': (0, 3), R: 0.0
+
+Step: 552, S: (0, 4), A: east, S': (1, 4), R: 0.0
+
+Step: 553, S: (1, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+Step: 554, S: (1, 1), A: north, S': (1, 1), R: 0.0
+
+Step: 555, S: (1, 1), A: west, S': (0, 1), R: 0.0
+
+Step: 556, S: (1, 1), A: south, S': (1, 0), R: 0.0
+
+Step: 557, S: (1, 1), A: east, S': (2, 1), R: 0.0
+
+Step: 558, S: (1, 4), A: north, S': (1, 4), R: 0.0
+
+Step: 559, S: (1, 4), A: west, S': (0, 4), R: 0.0
+
+Step: 560, S: (1, 4), A: south, S': (1, 4), R: 0.0
+
+Step: 561, S: (1, 4), A: east, S': (2, 4), R: 0.0
+
+Step: 562, S: (2, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+Step: 563, S: (2, 1), A: north, S': (2, 2), R: 0.0
+
+Step: 564, S: (2, 1), A: west, S': (1, 1), R: 0.0
+
+Step: 565, S: (2, 1), A: south, S': (2, 0), R: 0.0
+
+Step: 566, S: (2, 1), A: east, S': (3, 1), R: 0.0
+
+Step: 567, S: (2, 2), A: exit, S': TERMINAL_STATE, R: 1
+
+Step: 568, S: (2, 3), A: north, S': (2, 4), R: 0.0
+
+Step: 569, S: (2, 3), A: west, S': (2, 3), R: 0.0
+
+Step: 570, S: (2, 3), A: south, S': (2, 2), R: 0.0
+
+Step: 571, S: (2, 3), A: east, S': (3, 3), R: 0.0
+
+Step: 572, S: (2, 4), A: north, S': (2, 4), R: 0.0
+
+Step: 573, S: (2, 4), A: west, S': (1, 4), R: 0.0
+
+Step: 574, S: (2, 4), A: south, S': (2, 3), R: 0.0
+
+Step: 575, S: (2, 4), A: east, S': (3, 4), R: 0.0
+
+Step: 576, S: (3, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+Step: 577, S: (3, 1), A: north, S': (3, 1), R: 0.0
+
+Step: 578, S: (3, 1), A: west, S': (2, 1), R: 0.0
+
+Step: 579, S: (3, 1), A: south, S': (3, 0), R: 0.0
+
+Step: 580, S: (3, 1), A: east, S': (4, 1), R: 0.0
+
+Step: 581, S: (3, 3), A: north, S': (3, 4), R: 0.0
+
+Step: 582, S: (3, 3), A: west, S': (2, 3), R: 0.0
+
+Step: 583, S: (3, 3), A: south, S': (3, 3), R: 0.0
+
+Step: 584, S: (3, 3), A: east, S': (4, 3), R: 0.0
+
+Step: 585, S: (3, 4), A: north, S': (3, 4), R: 0.0
+
+Step: 586, S: (3, 4), A: west, S': (2, 4), R: 0.0
+
+Step: 587, S: (3, 4), A: south, S': (3, 3), R: 0.0
+
+Step: 588, S: (3, 4), A: east, S': (4, 4), R: 0.0
+
+Step: 589, S: (4, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+Step: 590, S: (4, 1), A: north, S': (4, 2), R: 0.0
+
+Step: 591, S: (4, 1), A: west, S': (3, 1), R: 0.0
+
+Step: 592, S: (4, 1), A: south, S': (4, 0), R: 0.0
+
+Step: 593, S: (4, 1), A: east, S': (4, 1), R: 0.0
+
+Step: 594, S: (4, 2), A: exit, S': TERMINAL_STATE, R: 10
+
+Step: 595, S: (4, 3), A: north, S': (4, 4), R: 0.0
+
+Step: 596, S: (4, 3), A: west, S': (3, 3), R: 0.0
+
+Step: 597, S: (4, 3), A: south, S': (4, 2), R: 0.0
+
+Step: 598, S: (4, 3), A: east, S': (4, 3), R: 0.0
+
+Step: 599, S: (4, 4), A: north, S': (4, 4), R: 0.0
+
+Step: 600, S: (4, 4), A: west, S': (3, 4), R: 0.0
+
+Step: 601, S: (4, 4), A: south, S': (4, 3), R: 0.0
+
+Step: 602, S: (4, 4), A: east, S': (4, 4), R: 0.0
+
+((0, 0), 'exit'), value diff: 0.01953125
+((0, 1), 'north'), value diff: 0.169313204443
+BEGINNING EPOCH: 9
+
+Step: 603, S: (0, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+Step: 604, S: (0, 1), A: north, S': (0, 2), R: 0.0
+
+Step: 605, S: (0, 1), A: west, S': (0, 1), R: 0.0
+
+Step: 606, S: (0, 1), A: south, S': (0, 0), R: 0.0
+
+Step: 607, S: (0, 1), A: east, S': (1, 1), R: 0.0
+
+Step: 608, S: (0, 2), A: north, S': (0, 3), R: 0.0
+
+Step: 609, S: (0, 2), A: west, S': (0, 2), R: 0.0
+
+Step: 610, S: (0, 2), A: south, S': (0, 1), R: 0.0
+
+Step: 611, S: (0, 2), A: east, S': (0, 2), R: 0.0
+
+Step: 612, S: (0, 3), A: north, S': (0, 4), R: 0.0
+
+Step: 613, S: (0, 3), A: west, S': (0, 3), R: 0.0
+
+Step: 614, S: (0, 3), A: south, S': (0, 2), R: 0.0
+
+Step: 615, S: (0, 3), A: east, S': (0, 3), R: 0.0
+
+Step: 616, S: (0, 4), A: north, S': (0, 4), R: 0.0
+
+Step: 617, S: (0, 4), A: west, S': (0, 4), R: 0.0
+
+Step: 618, S: (0, 4), A: south, S': (0, 3), R: 0.0
+
+Step: 619, S: (0, 4), A: east, S': (1, 4), R: 0.0
+
+Step: 620, S: (1, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+Step: 621, S: (1, 1), A: north, S': (1, 1), R: 0.0
+
+Step: 622, S: (1, 1), A: west, S': (0, 1), R: 0.0
+
+Step: 623, S: (1, 1), A: south, S': (1, 0), R: 0.0
+
+Step: 624, S: (1, 1), A: east, S': (2, 1), R: 0.0
+
+Step: 625, S: (1, 4), A: north, S': (1, 4), R: 0.0
+
+Step: 626, S: (1, 4), A: west, S': (0, 4), R: 0.0
+
+Step: 627, S: (1, 4), A: south, S': (1, 4), R: 0.0
+
+Step: 628, S: (1, 4), A: east, S': (2, 4), R: 0.0
+
+Step: 629, S: (2, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+Step: 630, S: (2, 1), A: north, S': (2, 2), R: 0.0
+
+Step: 631, S: (2, 1), A: west, S': (1, 1), R: 0.0
+
+Step: 632, S: (2, 1), A: south, S': (2, 0), R: 0.0
+
+Step: 633, S: (2, 1), A: east, S': (3, 1), R: 0.0
+
+Step: 634, S: (2, 2), A: exit, S': TERMINAL_STATE, R: 1
+
+Step: 635, S: (2, 3), A: north, S': (2, 4), R: 0.0
+
+Step: 636, S: (2, 3), A: west, S': (2, 3), R: 0.0
+
+Step: 637, S: (2, 3), A: south, S': (2, 2), R: 0.0
+
+Step: 638, S: (2, 3), A: east, S': (3, 3), R: 0.0
+
+Step: 639, S: (2, 4), A: north, S': (2, 4), R: 0.0
+
+Step: 640, S: (2, 4), A: west, S': (1, 4), R: 0.0
+
+Step: 641, S: (2, 4), A: south, S': (2, 3), R: 0.0
+
+Step: 642, S: (2, 4), A: east, S': (3, 4), R: 0.0
+
+Step: 643, S: (3, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+Step: 644, S: (3, 1), A: north, S': (3, 1), R: 0.0
+
+Step: 645, S: (3, 1), A: west, S': (2, 1), R: 0.0
+
+Step: 646, S: (3, 1), A: south, S': (3, 0), R: 0.0
+
+Step: 647, S: (3, 1), A: east, S': (4, 1), R: 0.0
+
+Step: 648, S: (3, 3), A: north, S': (3, 4), R: 0.0
+
+Step: 649, S: (3, 3), A: west, S': (2, 3), R: 0.0
+
+Step: 650, S: (3, 3), A: south, S': (3, 3), R: 0.0
+
+Step: 651, S: (3, 3), A: east, S': (4, 3), R: 0.0
+
+Step: 652, S: (3, 4), A: north, S': (3, 4), R: 0.0
+
+Step: 653, S: (3, 4), A: west, S': (2, 4), R: 0.0
+
+Step: 654, S: (3, 4), A: south, S': (3, 3), R: 0.0
+
+Step: 655, S: (3, 4), A: east, S': (4, 4), R: 0.0
+
+Step: 656, S: (4, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+Step: 657, S: (4, 1), A: north, S': (4, 2), R: 0.0
+
+Step: 658, S: (4, 1), A: west, S': (3, 1), R: 0.0
+
+Step: 659, S: (4, 1), A: south, S': (4, 0), R: 0.0
+
+Step: 660, S: (4, 1), A: east, S': (4, 1), R: 0.0
+
+Step: 661, S: (4, 2), A: exit, S': TERMINAL_STATE, R: 10
+
+Step: 662, S: (4, 3), A: north, S': (4, 4), R: 0.0
+
+Step: 663, S: (4, 3), A: west, S': (3, 3), R: 0.0
+
+Step: 664, S: (4, 3), A: south, S': (4, 2), R: 0.0
+
+Step: 665, S: (4, 3), A: east, S': (4, 3), R: 0.0
+
+Step: 666, S: (4, 4), A: north, S': (4, 4), R: 0.0
+
+Step: 667, S: (4, 4), A: west, S': (3, 4), R: 0.0
+
+Step: 668, S: (4, 4), A: south, S': (4, 3), R: 0.0
+
+Step: 669, S: (4, 4), A: east, S': (4, 4), R: 0.0
+
+((0, 0), 'exit'), value diff: 0.009765625
+((0, 1), 'north'), value diff: 0.271032891724
+BEGINNING EPOCH: 10
+
+Step: 670, S: (0, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+Step: 671, S: (0, 1), A: north, S': (0, 2), R: 0.0
+
+Step: 672, S: (0, 1), A: west, S': (0, 1), R: 0.0
+
+Step: 673, S: (0, 1), A: south, S': (0, 0), R: 0.0
+
+Step: 674, S: (0, 1), A: east, S': (1, 1), R: 0.0
+
+Step: 675, S: (0, 2), A: north, S': (0, 3), R: 0.0
+
+Step: 676, S: (0, 2), A: west, S': (0, 2), R: 0.0
+
+Step: 677, S: (0, 2), A: south, S': (0, 1), R: 0.0
+
+Step: 678, S: (0, 2), A: east, S': (0, 2), R: 0.0
+
+Step: 679, S: (0, 3), A: north, S': (0, 4), R: 0.0
+
+Step: 680, S: (0, 3), A: west, S': (0, 3), R: 0.0
+
+Step: 681, S: (0, 3), A: south, S': (0, 2), R: 0.0
+
+Step: 682, S: (0, 3), A: east, S': (0, 3), R: 0.0
+
+Step: 683, S: (0, 4), A: north, S': (0, 4), R: 0.0
+
+Step: 684, S: (0, 4), A: west, S': (0, 4), R: 0.0
+
+Step: 685, S: (0, 4), A: south, S': (0, 3), R: 0.0
+
+Step: 686, S: (0, 4), A: east, S': (1, 4), R: 0.0
+
+Step: 687, S: (1, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+Step: 688, S: (1, 1), A: north, S': (1, 1), R: 0.0
+
+Step: 689, S: (1, 1), A: west, S': (0, 1), R: 0.0
+
+Step: 690, S: (1, 1), A: south, S': (1, 0), R: 0.0
+
+Step: 691, S: (1, 1), A: east, S': (2, 1), R: 0.0
+
+Step: 692, S: (1, 4), A: north, S': (1, 4), R: 0.0
+
+Step: 693, S: (1, 4), A: west, S': (0, 4), R: 0.0
+
+Step: 694, S: (1, 4), A: south, S': (1, 4), R: 0.0
+
+Step: 695, S: (1, 4), A: east, S': (2, 4), R: 0.0
+
+Step: 696, S: (2, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+Step: 697, S: (2, 1), A: north, S': (2, 2), R: 0.0
+
+Step: 698, S: (2, 1), A: west, S': (1, 1), R: 0.0
+
+Step: 699, S: (2, 1), A: south, S': (2, 0), R: 0.0
+
+Step: 700, S: (2, 1), A: east, S': (3, 1), R: 0.0
+
+Step: 701, S: (2, 2), A: exit, S': TERMINAL_STATE, R: 1
+
+Step: 702, S: (2, 3), A: north, S': (2, 4), R: 0.0
+
+Step: 703, S: (2, 3), A: west, S': (2, 3), R: 0.0
+
+Step: 704, S: (2, 3), A: south, S': (2, 2), R: 0.0
+
+Step: 705, S: (2, 3), A: east, S': (3, 3), R: 0.0
+
+Step: 706, S: (2, 4), A: north, S': (2, 4), R: 0.0
+
+Step: 707, S: (2, 4), A: west, S': (1, 4), R: 0.0
+
+Step: 708, S: (2, 4), A: south, S': (2, 3), R: 0.0
+
+Step: 709, S: (2, 4), A: east, S': (3, 4), R: 0.0
+
+Step: 710, S: (3, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+Step: 711, S: (3, 1), A: north, S': (3, 1), R: 0.0
+
+Step: 712, S: (3, 1), A: west, S': (2, 1), R: 0.0
+
+Step: 713, S: (3, 1), A: south, S': (3, 0), R: 0.0
+
+Step: 714, S: (3, 1), A: east, S': (4, 1), R: 0.0
+
+Step: 715, S: (3, 3), A: north, S': (3, 4), R: 0.0
+
+Step: 716, S: (3, 3), A: west, S': (2, 3), R: 0.0
+
+Step: 717, S: (3, 3), A: south, S': (3, 3), R: 0.0
+
+Step: 718, S: (3, 3), A: east, S': (4, 3), R: 0.0
+
+Step: 719, S: (3, 4), A: north, S': (3, 4), R: 0.0
+
+Step: 720, S: (3, 4), A: west, S': (2, 4), R: 0.0
+
+Step: 721, S: (3, 4), A: south, S': (3, 3), R: 0.0
+
+Step: 722, S: (3, 4), A: east, S': (4, 4), R: 0.0
+
+Step: 723, S: (4, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+Step: 724, S: (4, 1), A: north, S': (4, 2), R: 0.0
+
+Step: 725, S: (4, 1), A: west, S': (3, 1), R: 0.0
+
+Step: 726, S: (4, 1), A: south, S': (4, 0), R: 0.0
+
+Step: 727, S: (4, 1), A: east, S': (4, 1), R: 0.0
+
+Step: 728, S: (4, 2), A: exit, S': TERMINAL_STATE, R: 10
+
+Step: 729, S: (4, 3), A: north, S': (4, 4), R: 0.0
+
+Step: 730, S: (4, 3), A: west, S': (3, 3), R: 0.0
+
+Step: 731, S: (4, 3), A: south, S': (4, 2), R: 0.0
+
+Step: 732, S: (4, 3), A: east, S': (4, 3), R: 0.0
+
+Step: 733, S: (4, 4), A: north, S': (4, 4), R: 0.0
+
+Step: 734, S: (4, 4), A: west, S': (3, 4), R: 0.0
+
+Step: 735, S: (4, 4), A: south, S': (4, 3), R: 0.0
+
+Step: 736, S: (4, 4), A: east, S': (4, 4), R: 0.0
+
+((0, 0), 'exit'), value diff: 0.0048828125
+((0, 1), 'north'), value diff: 0.371438536926
+BEGINNING EPOCH: 11
+
+Step: 737, S: (0, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+Step: 738, S: (0, 1), A: north, S': (0, 2), R: 0.0
+
+Step: 739, S: (0, 1), A: west, S': (0, 1), R: 0.0
+
+Step: 740, S: (0, 1), A: south, S': (0, 0), R: 0.0
+
+Step: 741, S: (0, 1), A: east, S': (1, 1), R: 0.0
+
+Step: 742, S: (0, 2), A: north, S': (0, 3), R: 0.0
+
+Step: 743, S: (0, 2), A: west, S': (0, 2), R: 0.0
+
+Step: 744, S: (0, 2), A: south, S': (0, 1), R: 0.0
+
+Step: 745, S: (0, 2), A: east, S': (0, 2), R: 0.0
+
+Step: 746, S: (0, 3), A: north, S': (0, 4), R: 0.0
+
+Step: 747, S: (0, 3), A: west, S': (0, 3), R: 0.0
+
+Step: 748, S: (0, 3), A: south, S': (0, 2), R: 0.0
+
+Step: 749, S: (0, 3), A: east, S': (0, 3), R: 0.0
+
+Step: 750, S: (0, 4), A: north, S': (0, 4), R: 0.0
+
+Step: 751, S: (0, 4), A: west, S': (0, 4), R: 0.0
+
+Step: 752, S: (0, 4), A: south, S': (0, 3), R: 0.0
+
+Step: 753, S: (0, 4), A: east, S': (1, 4), R: 0.0
+
+Step: 754, S: (1, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+Step: 755, S: (1, 1), A: north, S': (1, 1), R: 0.0
+
+Step: 756, S: (1, 1), A: west, S': (0, 1), R: 0.0
+
+Step: 757, S: (1, 1), A: south, S': (1, 0), R: 0.0
+
+Step: 758, S: (1, 1), A: east, S': (2, 1), R: 0.0
+
+Step: 759, S: (1, 4), A: north, S': (1, 4), R: 0.0
+
+Step: 760, S: (1, 4), A: west, S': (0, 4), R: 0.0
+
+Step: 761, S: (1, 4), A: south, S': (1, 4), R: 0.0
+
+Step: 762, S: (1, 4), A: east, S': (2, 4), R: 0.0
+
+Step: 763, S: (2, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+Step: 764, S: (2, 1), A: north, S': (2, 2), R: 0.0
+
+Step: 765, S: (2, 1), A: west, S': (1, 1), R: 0.0
+
+Step: 766, S: (2, 1), A: south, S': (2, 0), R: 0.0
+
+Step: 767, S: (2, 1), A: east, S': (3, 1), R: 0.0
+
+Step: 768, S: (2, 2), A: exit, S': TERMINAL_STATE, R: 1
+
+Step: 769, S: (2, 3), A: north, S': (2, 4), R: 0.0
+
+Step: 770, S: (2, 3), A: west, S': (2, 3), R: 0.0
+
+Step: 771, S: (2, 3), A: south, S': (2, 2), R: 0.0
+
+Step: 772, S: (2, 3), A: east, S': (3, 3), R: 0.0
+
+Step: 773, S: (2, 4), A: north, S': (2, 4), R: 0.0
+
+Step: 774, S: (2, 4), A: west, S': (1, 4), R: 0.0
+
+Step: 775, S: (2, 4), A: south, S': (2, 3), R: 0.0
+
+Step: 776, S: (2, 4), A: east, S': (3, 4), R: 0.0
+
+Step: 777, S: (3, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+Step: 778, S: (3, 1), A: north, S': (3, 1), R: 0.0
+
+Step: 779, S: (3, 1), A: west, S': (2, 1), R: 0.0
+
+Step: 780, S: (3, 1), A: south, S': (3, 0), R: 0.0
+
+Step: 781, S: (3, 1), A: east, S': (4, 1), R: 0.0
+
+Step: 782, S: (3, 3), A: north, S': (3, 4), R: 0.0
+
+Step: 783, S: (3, 3), A: west, S': (2, 3), R: 0.0
+
+Step: 784, S: (3, 3), A: south, S': (3, 3), R: 0.0
+
+Step: 785, S: (3, 3), A: east, S': (4, 3), R: 0.0
+
+Step: 786, S: (3, 4), A: north, S': (3, 4), R: 0.0
+
+Step: 787, S: (3, 4), A: west, S': (2, 4), R: 0.0
+
+Step: 788, S: (3, 4), A: south, S': (3, 3), R: 0.0
+
+Step: 789, S: (3, 4), A: east, S': (4, 4), R: 0.0
+
+Step: 790, S: (4, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+Step: 791, S: (4, 1), A: north, S': (4, 2), R: 0.0
+
+Step: 792, S: (4, 1), A: west, S': (3, 1), R: 0.0
+
+Step: 793, S: (4, 1), A: south, S': (4, 0), R: 0.0
+
+Step: 794, S: (4, 1), A: east, S': (4, 1), R: 0.0
+
+Step: 795, S: (4, 2), A: exit, S': TERMINAL_STATE, R: 10
+
+Step: 796, S: (4, 3), A: north, S': (4, 4), R: 0.0
+
+Step: 797, S: (4, 3), A: west, S': (3, 3), R: 0.0
+
+Step: 798, S: (4, 3), A: south, S': (4, 2), R: 0.0
+
+Step: 799, S: (4, 3), A: east, S': (4, 3), R: 0.0
+
+Step: 800, S: (4, 4), A: north, S': (4, 4), R: 0.0
+
+Step: 801, S: (4, 4), A: west, S': (3, 4), R: 0.0
+
+Step: 802, S: (4, 4), A: south, S': (4, 3), R: 0.0
+
+Step: 803, S: (4, 4), A: east, S': (4, 4), R: 0.0
+
+((0, 0), 'exit'), value diff: 0.00244140625
+((0, 1), 'north'), value diff: 0.447956439697
+BEGINNING EPOCH: 12
+
+Step: 804, S: (0, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+Step: 805, S: (0, 1), A: north, S': (0, 2), R: 0.0
+
+Step: 806, S: (0, 1), A: west, S': (0, 1), R: 0.0
+
+Step: 807, S: (0, 1), A: south, S': (0, 0), R: 0.0
+
+Step: 808, S: (0, 1), A: east, S': (1, 1), R: 0.0
+
+Step: 809, S: (0, 2), A: north, S': (0, 3), R: 0.0
+
+Step: 810, S: (0, 2), A: west, S': (0, 2), R: 0.0
+
+Step: 811, S: (0, 2), A: south, S': (0, 1), R: 0.0
+
+Step: 812, S: (0, 2), A: east, S': (0, 2), R: 0.0
+
+Step: 813, S: (0, 3), A: north, S': (0, 4), R: 0.0
+
+Step: 814, S: (0, 3), A: west, S': (0, 3), R: 0.0
+
+Step: 815, S: (0, 3), A: south, S': (0, 2), R: 0.0
+
+Step: 816, S: (0, 3), A: east, S': (0, 3), R: 0.0
+
+Step: 817, S: (0, 4), A: north, S': (0, 4), R: 0.0
+
+Step: 818, S: (0, 4), A: west, S': (0, 4), R: 0.0
+
+Step: 819, S: (0, 4), A: south, S': (0, 3), R: 0.0
+
+Step: 820, S: (0, 4), A: east, S': (1, 4), R: 0.0
+
+Step: 821, S: (1, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+Step: 822, S: (1, 1), A: north, S': (1, 1), R: 0.0
+
+Step: 823, S: (1, 1), A: west, S': (0, 1), R: 0.0
+
+Step: 824, S: (1, 1), A: south, S': (1, 0), R: 0.0
+
+Step: 825, S: (1, 1), A: east, S': (2, 1), R: 0.0
+
+Step: 826, S: (1, 4), A: north, S': (1, 4), R: 0.0
+
+Step: 827, S: (1, 4), A: west, S': (0, 4), R: 0.0
+
+Step: 828, S: (1, 4), A: south, S': (1, 4), R: 0.0
+
+Step: 829, S: (1, 4), A: east, S': (2, 4), R: 0.0
+
+Step: 830, S: (2, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+Step: 831, S: (2, 1), A: north, S': (2, 2), R: 0.0
+
+Step: 832, S: (2, 1), A: west, S': (1, 1), R: 0.0
+
+Step: 833, S: (2, 1), A: south, S': (2, 0), R: 0.0
+
+Step: 834, S: (2, 1), A: east, S': (3, 1), R: 0.0
+
+Step: 835, S: (2, 2), A: exit, S': TERMINAL_STATE, R: 1
+
+Step: 836, S: (2, 3), A: north, S': (2, 4), R: 0.0
+
+Step: 837, S: (2, 3), A: west, S': (2, 3), R: 0.0
+
+Step: 838, S: (2, 3), A: south, S': (2, 2), R: 0.0
+
+Step: 839, S: (2, 3), A: east, S': (3, 3), R: 0.0
+
+Step: 840, S: (2, 4), A: north, S': (2, 4), R: 0.0
+
+Step: 841, S: (2, 4), A: west, S': (1, 4), R: 0.0
+
+Step: 842, S: (2, 4), A: south, S': (2, 3), R: 0.0
+
+Step: 843, S: (2, 4), A: east, S': (3, 4), R: 0.0
+
+Step: 844, S: (3, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+Step: 845, S: (3, 1), A: north, S': (3, 1), R: 0.0
+
+Step: 846, S: (3, 1), A: west, S': (2, 1), R: 0.0
+
+Step: 847, S: (3, 1), A: south, S': (3, 0), R: 0.0
+
+Step: 848, S: (3, 1), A: east, S': (4, 1), R: 0.0
+
+Step: 849, S: (3, 3), A: north, S': (3, 4), R: 0.0
+
+Step: 850, S: (3, 3), A: west, S': (2, 3), R: 0.0
+
+Step: 851, S: (3, 3), A: south, S': (3, 3), R: 0.0
+
+Step: 852, S: (3, 3), A: east, S': (4, 3), R: 0.0
+
+Step: 853, S: (3, 4), A: north, S': (3, 4), R: 0.0
+
+Step: 854, S: (3, 4), A: west, S': (2, 4), R: 0.0
+
+Step: 855, S: (3, 4), A: south, S': (3, 3), R: 0.0
+
+Step: 856, S: (3, 4), A: east, S': (4, 4), R: 0.0
+
+Step: 857, S: (4, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+Step: 858, S: (4, 1), A: north, S': (4, 2), R: 0.0
+
+Step: 859, S: (4, 1), A: west, S': (3, 1), R: 0.0
+
+Step: 860, S: (4, 1), A: south, S': (4, 0), R: 0.0
+
+Step: 861, S: (4, 1), A: east, S': (4, 1), R: 0.0
+
+Step: 862, S: (4, 2), A: exit, S': TERMINAL_STATE, R: 10
+
+Step: 863, S: (4, 3), A: north, S': (4, 4), R: 0.0
+
+Step: 864, S: (4, 3), A: west, S': (3, 3), R: 0.0
+
+Step: 865, S: (4, 3), A: south, S': (4, 2), R: 0.0
+
+Step: 866, S: (4, 3), A: east, S': (4, 3), R: 0.0
+
+Step: 867, S: (4, 4), A: north, S': (4, 4), R: 0.0
+
+Step: 868, S: (4, 4), A: west, S': (3, 4), R: 0.0
+
+Step: 869, S: (4, 4), A: south, S': (4, 3), R: 0.0
+
+Step: 870, S: (4, 4), A: east, S': (4, 4), R: 0.0
+
+((0, 0), 'exit'), value diff: 0.001220703125
+((0, 1), 'north'), value diff: 0.488196905988
+BEGINNING EPOCH: 13
+
+Step: 871, S: (0, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+Step: 872, S: (0, 1), A: north, S': (0, 2), R: 0.0
+
+Step: 873, S: (0, 1), A: west, S': (0, 1), R: 0.0
+
+Step: 874, S: (0, 1), A: south, S': (0, 0), R: 0.0
+
+Step: 875, S: (0, 1), A: east, S': (1, 1), R: 0.0
+
+Step: 876, S: (0, 2), A: north, S': (0, 3), R: 0.0
+
+Step: 877, S: (0, 2), A: west, S': (0, 2), R: 0.0
+
+Step: 878, S: (0, 2), A: south, S': (0, 1), R: 0.0
+
+Step: 879, S: (0, 2), A: east, S': (0, 2), R: 0.0
+
+Step: 880, S: (0, 3), A: north, S': (0, 4), R: 0.0
+
+Step: 881, S: (0, 3), A: west, S': (0, 3), R: 0.0
+
+Step: 882, S: (0, 3), A: south, S': (0, 2), R: 0.0
+
+Step: 883, S: (0, 3), A: east, S': (0, 3), R: 0.0
+
+Step: 884, S: (0, 4), A: north, S': (0, 4), R: 0.0
+
+Step: 885, S: (0, 4), A: west, S': (0, 4), R: 0.0
+
+Step: 886, S: (0, 4), A: south, S': (0, 3), R: 0.0
+
+Step: 887, S: (0, 4), A: east, S': (1, 4), R: 0.0
+
+Step: 888, S: (1, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+Step: 889, S: (1, 1), A: north, S': (1, 1), R: 0.0
+
+Step: 890, S: (1, 1), A: west, S': (0, 1), R: 0.0
+
+Step: 891, S: (1, 1), A: south, S': (1, 0), R: 0.0
+
+Step: 892, S: (1, 1), A: east, S': (2, 1), R: 0.0
+
+Step: 893, S: (1, 4), A: north, S': (1, 4), R: 0.0
+
+Step: 894, S: (1, 4), A: west, S': (0, 4), R: 0.0
+
+Step: 895, S: (1, 4), A: south, S': (1, 4), R: 0.0
+
+Step: 896, S: (1, 4), A: east, S': (2, 4), R: 0.0
+
+Step: 897, S: (2, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+Step: 898, S: (2, 1), A: north, S': (2, 2), R: 0.0
+
+Step: 899, S: (2, 1), A: west, S': (1, 1), R: 0.0
+
+Step: 900, S: (2, 1), A: south, S': (2, 0), R: 0.0
+
+Step: 901, S: (2, 1), A: east, S': (3, 1), R: 0.0
+
+Step: 902, S: (2, 2), A: exit, S': TERMINAL_STATE, R: 1
+
+Step: 903, S: (2, 3), A: north, S': (2, 4), R: 0.0
+
+Step: 904, S: (2, 3), A: west, S': (2, 3), R: 0.0
+
+Step: 905, S: (2, 3), A: south, S': (2, 2), R: 0.0
+
+Step: 906, S: (2, 3), A: east, S': (3, 3), R: 0.0
+
+Step: 907, S: (2, 4), A: north, S': (2, 4), R: 0.0
+
+Step: 908, S: (2, 4), A: west, S': (1, 4), R: 0.0
+
+Step: 909, S: (2, 4), A: south, S': (2, 3), R: 0.0
+
+Step: 910, S: (2, 4), A: east, S': (3, 4), R: 0.0
+
+Step: 911, S: (3, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+Step: 912, S: (3, 1), A: north, S': (3, 1), R: 0.0
+
+Step: 913, S: (3, 1), A: west, S': (2, 1), R: 0.0
+
+Step: 914, S: (3, 1), A: south, S': (3, 0), R: 0.0
+
+Step: 915, S: (3, 1), A: east, S': (4, 1), R: 0.0
+
+Step: 916, S: (3, 3), A: north, S': (3, 4), R: 0.0
+
+Step: 917, S: (3, 3), A: west, S': (2, 3), R: 0.0
+
+Step: 918, S: (3, 3), A: south, S': (3, 3), R: 0.0
+
+Step: 919, S: (3, 3), A: east, S': (4, 3), R: 0.0
+
+Step: 920, S: (3, 4), A: north, S': (3, 4), R: 0.0
+
+Step: 921, S: (3, 4), A: west, S': (2, 4), R: 0.0
+
+Step: 922, S: (3, 4), A: south, S': (3, 3), R: 0.0
+
+Step: 923, S: (3, 4), A: east, S': (4, 4), R: 0.0
+
+Step: 924, S: (4, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+Step: 925, S: (4, 1), A: north, S': (4, 2), R: 0.0
+
+Step: 926, S: (4, 1), A: west, S': (3, 1), R: 0.0
+
+Step: 927, S: (4, 1), A: south, S': (4, 0), R: 0.0
+
+Step: 928, S: (4, 1), A: east, S': (4, 1), R: 0.0
+
+Step: 929, S: (4, 2), A: exit, S': TERMINAL_STATE, R: 10
+
+Step: 930, S: (4, 3), A: north, S': (4, 4), R: 0.0
+
+Step: 931, S: (4, 3), A: west, S': (3, 3), R: 0.0
+
+Step: 932, S: (4, 3), A: south, S': (4, 2), R: 0.0
+
+Step: 933, S: (4, 3), A: east, S': (4, 3), R: 0.0
+
+Step: 934, S: (4, 4), A: north, S': (4, 4), R: 0.0
+
+Step: 935, S: (4, 4), A: west, S': (3, 4), R: 0.0
+
+Step: 936, S: (4, 4), A: south, S': (4, 3), R: 0.0
+
+Step: 937, S: (4, 4), A: east, S': (4, 4), R: 0.0
+
+((0, 0), 'exit'), value diff: 0.0006103515625
+((0, 1), 'north'), value diff: 0.490747322543
+BEGINNING EPOCH: 14
+
+Step: 938, S: (0, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+Step: 939, S: (0, 1), A: north, S': (0, 2), R: 0.0
+
+Step: 940, S: (0, 1), A: west, S': (0, 1), R: 0.0
+
+Step: 941, S: (0, 1), A: south, S': (0, 0), R: 0.0
+
+Step: 942, S: (0, 1), A: east, S': (1, 1), R: 0.0
+
+Step: 943, S: (0, 2), A: north, S': (0, 3), R: 0.0
+
+Step: 944, S: (0, 2), A: west, S': (0, 2), R: 0.0
+
+Step: 945, S: (0, 2), A: south, S': (0, 1), R: 0.0
+
+Step: 946, S: (0, 2), A: east, S': (0, 2), R: 0.0
+
+Step: 947, S: (0, 3), A: north, S': (0, 4), R: 0.0
+
+Step: 948, S: (0, 3), A: west, S': (0, 3), R: 0.0
+
+Step: 949, S: (0, 3), A: south, S': (0, 2), R: 0.0
+
+Step: 950, S: (0, 3), A: east, S': (0, 3), R: 0.0
+
+Step: 951, S: (0, 4), A: north, S': (0, 4), R: 0.0
+
+Step: 952, S: (0, 4), A: west, S': (0, 4), R: 0.0
+
+Step: 953, S: (0, 4), A: south, S': (0, 3), R: 0.0
+
+Step: 954, S: (0, 4), A: east, S': (1, 4), R: 0.0
+
+Step: 955, S: (1, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+Step: 956, S: (1, 1), A: north, S': (1, 1), R: 0.0
+
+Step: 957, S: (1, 1), A: west, S': (0, 1), R: 0.0
+
+Step: 958, S: (1, 1), A: south, S': (1, 0), R: 0.0
+
+Step: 959, S: (1, 1), A: east, S': (2, 1), R: 0.0
+
+Step: 960, S: (1, 4), A: north, S': (1, 4), R: 0.0
+
+Step: 961, S: (1, 4), A: west, S': (0, 4), R: 0.0
+
+Step: 962, S: (1, 4), A: south, S': (1, 4), R: 0.0
+
+Step: 963, S: (1, 4), A: east, S': (2, 4), R: 0.0
+
+Step: 964, S: (2, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+Step: 965, S: (2, 1), A: north, S': (2, 2), R: 0.0
+
+Step: 966, S: (2, 1), A: west, S': (1, 1), R: 0.0
+
+Step: 967, S: (2, 1), A: south, S': (2, 0), R: 0.0
+
+Step: 968, S: (2, 1), A: east, S': (3, 1), R: 0.0
+
+Step: 969, S: (2, 2), A: exit, S': TERMINAL_STATE, R: 1
+
+Step: 970, S: (2, 3), A: north, S': (2, 4), R: 0.0
+
+Step: 971, S: (2, 3), A: west, S': (2, 3), R: 0.0
+
+Step: 972, S: (2, 3), A: south, S': (2, 2), R: 0.0
+
+Step: 973, S: (2, 3), A: east, S': (3, 3), R: 0.0
+
+Step: 974, S: (2, 4), A: north, S': (2, 4), R: 0.0
+
+Step: 975, S: (2, 4), A: west, S': (1, 4), R: 0.0
+
+Step: 976, S: (2, 4), A: south, S': (2, 3), R: 0.0
+
+Step: 977, S: (2, 4), A: east, S': (3, 4), R: 0.0
+
+Step: 978, S: (3, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+Step: 979, S: (3, 1), A: north, S': (3, 1), R: 0.0
+
+Step: 980, S: (3, 1), A: west, S': (2, 1), R: 0.0
+
+Step: 981, S: (3, 1), A: south, S': (3, 0), R: 0.0
+
+Step: 982, S: (3, 1), A: east, S': (4, 1), R: 0.0
+
+Step: 983, S: (3, 3), A: north, S': (3, 4), R: 0.0
+
+Step: 984, S: (3, 3), A: west, S': (2, 3), R: 0.0
+
+Step: 985, S: (3, 3), A: south, S': (3, 3), R: 0.0
+
+Step: 986, S: (3, 3), A: east, S': (4, 3), R: 0.0
+
+Step: 987, S: (3, 4), A: north, S': (3, 4), R: 0.0
+
+Step: 988, S: (3, 4), A: west, S': (2, 4), R: 0.0
+
+Step: 989, S: (3, 4), A: south, S': (3, 3), R: 0.0
+
+Step: 990, S: (3, 4), A: east, S': (4, 4), R: 0.0
+
+Step: 991, S: (4, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+Step: 992, S: (4, 1), A: north, S': (4, 2), R: 0.0
+
+Step: 993, S: (4, 1), A: west, S': (3, 1), R: 0.0
+
+Step: 994, S: (4, 1), A: south, S': (4, 0), R: 0.0
+
+Step: 995, S: (4, 1), A: east, S': (4, 1), R: 0.0
+
+Step: 996, S: (4, 2), A: exit, S': TERMINAL_STATE, R: 10
+
+Step: 997, S: (4, 3), A: north, S': (4, 4), R: 0.0
+
+Step: 998, S: (4, 3), A: west, S': (3, 3), R: 0.0
+
+Step: 999, S: (4, 3), A: south, S': (4, 2), R: 0.0
+
+Step: 1000, S: (4, 3), A: east, S': (4, 3), R: 0.0
+
+Step: 1001, S: (4, 4), A: north, S': (4, 4), R: 0.0
+
+Step: 1002, S: (4, 4), A: west, S': (3, 4), R: 0.0
+
+Step: 1003, S: (4, 4), A: south, S': (4, 3), R: 0.0
+
+Step: 1004, S: (4, 4), A: east, S': (4, 4), R: 0.0
+
+((0, 0), 'exit'), value diff: 0.00030517578125
+((0, 1), 'north'), value diff: 0.462001030266
+BEGINNING EPOCH: 15
+
+Step: 1005, S: (0, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+Step: 1006, S: (0, 1), A: north, S': (0, 2), R: 0.0
+
+Step: 1007, S: (0, 1), A: west, S': (0, 1), R: 0.0
+
+Step: 1008, S: (0, 1), A: south, S': (0, 0), R: 0.0
+
+Step: 1009, S: (0, 1), A: east, S': (1, 1), R: 0.0
+
+Step: 1010, S: (0, 2), A: north, S': (0, 3), R: 0.0
+
+Step: 1011, S: (0, 2), A: west, S': (0, 2), R: 0.0
+
+Step: 1012, S: (0, 2), A: south, S': (0, 1), R: 0.0
+
+Step: 1013, S: (0, 2), A: east, S': (0, 2), R: 0.0
+
+Step: 1014, S: (0, 3), A: north, S': (0, 4), R: 0.0
+
+Step: 1015, S: (0, 3), A: west, S': (0, 3), R: 0.0
+
+Step: 1016, S: (0, 3), A: south, S': (0, 2), R: 0.0
+
+Step: 1017, S: (0, 3), A: east, S': (0, 3), R: 0.0
+
+Step: 1018, S: (0, 4), A: north, S': (0, 4), R: 0.0
+
+Step: 1019, S: (0, 4), A: west, S': (0, 4), R: 0.0
+
+Step: 1020, S: (0, 4), A: south, S': (0, 3), R: 0.0
+
+Step: 1021, S: (0, 4), A: east, S': (1, 4), R: 0.0
+
+Step: 1022, S: (1, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+Step: 1023, S: (1, 1), A: north, S': (1, 1), R: 0.0
+
+Step: 1024, S: (1, 1), A: west, S': (0, 1), R: 0.0
+
+Step: 1025, S: (1, 1), A: south, S': (1, 0), R: 0.0
+
+Step: 1026, S: (1, 1), A: east, S': (2, 1), R: 0.0
+
+Step: 1027, S: (1, 4), A: north, S': (1, 4), R: 0.0
+
+Step: 1028, S: (1, 4), A: west, S': (0, 4), R: 0.0
+
+Step: 1029, S: (1, 4), A: south, S': (1, 4), R: 0.0
+
+Step: 1030, S: (1, 4), A: east, S': (2, 4), R: 0.0
+
+Step: 1031, S: (2, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+Step: 1032, S: (2, 1), A: north, S': (2, 2), R: 0.0
+
+Step: 1033, S: (2, 1), A: west, S': (1, 1), R: 0.0
+
+Step: 1034, S: (2, 1), A: south, S': (2, 0), R: 0.0
+
+Step: 1035, S: (2, 1), A: east, S': (3, 1), R: 0.0
+
+Step: 1036, S: (2, 2), A: exit, S': TERMINAL_STATE, R: 1
+
+Step: 1037, S: (2, 3), A: north, S': (2, 4), R: 0.0
+
+Step: 1038, S: (2, 3), A: west, S': (2, 3), R: 0.0
+
+Step: 1039, S: (2, 3), A: south, S': (2, 2), R: 0.0
+
+Step: 1040, S: (2, 3), A: east, S': (3, 3), R: 0.0
+
+Step: 1041, S: (2, 4), A: north, S': (2, 4), R: 0.0
+
+Step: 1042, S: (2, 4), A: west, S': (1, 4), R: 0.0
+
+Step: 1043, S: (2, 4), A: south, S': (2, 3), R: 0.0
+
+Step: 1044, S: (2, 4), A: east, S': (3, 4), R: 0.0
+
+Step: 1045, S: (3, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+Step: 1046, S: (3, 1), A: north, S': (3, 1), R: 0.0
+
+Step: 1047, S: (3, 1), A: west, S': (2, 1), R: 0.0
+
+Step: 1048, S: (3, 1), A: south, S': (3, 0), R: 0.0
+
+Step: 1049, S: (3, 1), A: east, S': (4, 1), R: 0.0
+
+Step: 1050, S: (3, 3), A: north, S': (3, 4), R: 0.0
+
+Step: 1051, S: (3, 3), A: west, S': (2, 3), R: 0.0
+
+Step: 1052, S: (3, 3), A: south, S': (3, 3), R: 0.0
+
+Step: 1053, S: (3, 3), A: east, S': (4, 3), R: 0.0
+
+Step: 1054, S: (3, 4), A: north, S': (3, 4), R: 0.0
+
+Step: 1055, S: (3, 4), A: west, S': (2, 4), R: 0.0
+
+Step: 1056, S: (3, 4), A: south, S': (3, 3), R: 0.0
+
+Step: 1057, S: (3, 4), A: east, S': (4, 4), R: 0.0
+
+Step: 1058, S: (4, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+Step: 1059, S: (4, 1), A: north, S': (4, 2), R: 0.0
+
+Step: 1060, S: (4, 1), A: west, S': (3, 1), R: 0.0
+
+Step: 1061, S: (4, 1), A: south, S': (4, 0), R: 0.0
+
+Step: 1062, S: (4, 1), A: east, S': (4, 1), R: 0.0
+
+Step: 1063, S: (4, 2), A: exit, S': TERMINAL_STATE, R: 10
+
+Step: 1064, S: (4, 3), A: north, S': (4, 4), R: 0.0
+
+Step: 1065, S: (4, 3), A: west, S': (3, 3), R: 0.0
+
+Step: 1066, S: (4, 3), A: south, S': (4, 2), R: 0.0
+
+Step: 1067, S: (4, 3), A: east, S': (4, 3), R: 0.0
+
+Step: 1068, S: (4, 4), A: north, S': (4, 4), R: 0.0
+
+Step: 1069, S: (4, 4), A: west, S': (3, 4), R: 0.0
+
+Step: 1070, S: (4, 4), A: south, S': (4, 3), R: 0.0
+
+Step: 1071, S: (4, 4), A: east, S': (4, 4), R: 0.0
+
+((0, 0), 'exit'), value diff: 0.000152587890625
+((0, 1), 'north'), value diff: 0.412008482328
+BEGINNING EPOCH: 16
+
+Step: 1072, S: (0, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+Step: 1073, S: (0, 1), A: north, S': (0, 2), R: 0.0
+
+Step: 1074, S: (0, 1), A: west, S': (0, 1), R: 0.0
+
+Step: 1075, S: (0, 1), A: south, S': (0, 0), R: 0.0
+
+Step: 1076, S: (0, 1), A: east, S': (1, 1), R: 0.0
+
+Step: 1077, S: (0, 2), A: north, S': (0, 3), R: 0.0
+
+Step: 1078, S: (0, 2), A: west, S': (0, 2), R: 0.0
+
+Step: 1079, S: (0, 2), A: south, S': (0, 1), R: 0.0
+
+Step: 1080, S: (0, 2), A: east, S': (0, 2), R: 0.0
+
+Step: 1081, S: (0, 3), A: north, S': (0, 4), R: 0.0
+
+Step: 1082, S: (0, 3), A: west, S': (0, 3), R: 0.0
+
+Step: 1083, S: (0, 3), A: south, S': (0, 2), R: 0.0
+
+Step: 1084, S: (0, 3), A: east, S': (0, 3), R: 0.0
+
+Step: 1085, S: (0, 4), A: north, S': (0, 4), R: 0.0
+
+Step: 1086, S: (0, 4), A: west, S': (0, 4), R: 0.0
+
+Step: 1087, S: (0, 4), A: south, S': (0, 3), R: 0.0
+
+Step: 1088, S: (0, 4), A: east, S': (1, 4), R: 0.0
+
+Step: 1089, S: (1, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+Step: 1090, S: (1, 1), A: north, S': (1, 1), R: 0.0
+
+Step: 1091, S: (1, 1), A: west, S': (0, 1), R: 0.0
+
+Step: 1092, S: (1, 1), A: south, S': (1, 0), R: 0.0
+
+Step: 1093, S: (1, 1), A: east, S': (2, 1), R: 0.0
+
+Step: 1094, S: (1, 4), A: north, S': (1, 4), R: 0.0
+
+Step: 1095, S: (1, 4), A: west, S': (0, 4), R: 0.0
+
+Step: 1096, S: (1, 4), A: south, S': (1, 4), R: 0.0
+
+Step: 1097, S: (1, 4), A: east, S': (2, 4), R: 0.0
+
+Step: 1098, S: (2, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+Step: 1099, S: (2, 1), A: north, S': (2, 2), R: 0.0
+
+Step: 1100, S: (2, 1), A: west, S': (1, 1), R: 0.0
+
+Step: 1101, S: (2, 1), A: south, S': (2, 0), R: 0.0
+
+Step: 1102, S: (2, 1), A: east, S': (3, 1), R: 0.0
+
+Step: 1103, S: (2, 2), A: exit, S': TERMINAL_STATE, R: 1
+
+Step: 1104, S: (2, 3), A: north, S': (2, 4), R: 0.0
+
+Step: 1105, S: (2, 3), A: west, S': (2, 3), R: 0.0
+
+Step: 1106, S: (2, 3), A: south, S': (2, 2), R: 0.0
+
+Step: 1107, S: (2, 3), A: east, S': (3, 3), R: 0.0
+
+Step: 1108, S: (2, 4), A: north, S': (2, 4), R: 0.0
+
+Step: 1109, S: (2, 4), A: west, S': (1, 4), R: 0.0
+
+Step: 1110, S: (2, 4), A: south, S': (2, 3), R: 0.0
+
+Step: 1111, S: (2, 4), A: east, S': (3, 4), R: 0.0
+
+Step: 1112, S: (3, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+Step: 1113, S: (3, 1), A: north, S': (3, 1), R: 0.0
+
+Step: 1114, S: (3, 1), A: west, S': (2, 1), R: 0.0
+
+Step: 1115, S: (3, 1), A: south, S': (3, 0), R: 0.0
+
+Step: 1116, S: (3, 1), A: east, S': (4, 1), R: 0.0
+
+Step: 1117, S: (3, 3), A: north, S': (3, 4), R: 0.0
+
+Step: 1118, S: (3, 3), A: west, S': (2, 3), R: 0.0
+
+Step: 1119, S: (3, 3), A: south, S': (3, 3), R: 0.0
+
+Step: 1120, S: (3, 3), A: east, S': (4, 3), R: 0.0
+
+Step: 1121, S: (3, 4), A: north, S': (3, 4), R: 0.0
+
+Step: 1122, S: (3, 4), A: west, S': (2, 4), R: 0.0
+
+Step: 1123, S: (3, 4), A: south, S': (3, 3), R: 0.0
+
+Step: 1124, S: (3, 4), A: east, S': (4, 4), R: 0.0
+
+Step: 1125, S: (4, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+Step: 1126, S: (4, 1), A: north, S': (4, 2), R: 0.0
+
+Step: 1127, S: (4, 1), A: west, S': (3, 1), R: 0.0
+
+Step: 1128, S: (4, 1), A: south, S': (4, 0), R: 0.0
+
+Step: 1129, S: (4, 1), A: east, S': (4, 1), R: 0.0
+
+Step: 1130, S: (4, 2), A: exit, S': TERMINAL_STATE, R: 10
+
+Step: 1131, S: (4, 3), A: north, S': (4, 4), R: 0.0
+
+Step: 1132, S: (4, 3), A: west, S': (3, 3), R: 0.0
+
+Step: 1133, S: (4, 3), A: south, S': (4, 2), R: 0.0
+
+Step: 1134, S: (4, 3), A: east, S': (4, 3), R: 0.0
+
+Step: 1135, S: (4, 4), A: north, S': (4, 4), R: 0.0
+
+Step: 1136, S: (4, 4), A: west, S': (3, 4), R: 0.0
+
+Step: 1137, S: (4, 4), A: south, S': (4, 3), R: 0.0
+
+Step: 1138, S: (4, 4), A: east, S': (4, 4), R: 0.0
+
+((0, 0), 'exit'), value diff: 7.62939453125e-05
+((0, 1), 'north'), value diff: 0.351094097154
+BEGINNING EPOCH: 17
+
+Step: 1139, S: (0, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+Step: 1140, S: (0, 1), A: north, S': (0, 2), R: 0.0
+
+Step: 1141, S: (0, 1), A: west, S': (0, 1), R: 0.0
+
+Step: 1142, S: (0, 1), A: south, S': (0, 0), R: 0.0
+
+Step: 1143, S: (0, 1), A: east, S': (1, 1), R: 0.0
+
+Step: 1144, S: (0, 2), A: north, S': (0, 3), R: 0.0
+
+Step: 1145, S: (0, 2), A: west, S': (0, 2), R: 0.0
+
+Step: 1146, S: (0, 2), A: south, S': (0, 1), R: 0.0
+
+Step: 1147, S: (0, 2), A: east, S': (0, 2), R: 0.0
+
+Step: 1148, S: (0, 3), A: north, S': (0, 4), R: 0.0
+
+Step: 1149, S: (0, 3), A: west, S': (0, 3), R: 0.0
+
+Step: 1150, S: (0, 3), A: south, S': (0, 2), R: 0.0
+
+Step: 1151, S: (0, 3), A: east, S': (0, 3), R: 0.0
+
+Step: 1152, S: (0, 4), A: north, S': (0, 4), R: 0.0
+
+Step: 1153, S: (0, 4), A: west, S': (0, 4), R: 0.0
+
+Step: 1154, S: (0, 4), A: south, S': (0, 3), R: 0.0
+
+Step: 1155, S: (0, 4), A: east, S': (1, 4), R: 0.0
+
+Step: 1156, S: (1, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+Step: 1157, S: (1, 1), A: north, S': (1, 1), R: 0.0
+
+Step: 1158, S: (1, 1), A: west, S': (0, 1), R: 0.0
+
+Step: 1159, S: (1, 1), A: south, S': (1, 0), R: 0.0
+
+Step: 1160, S: (1, 1), A: east, S': (2, 1), R: 0.0
+
+Step: 1161, S: (1, 4), A: north, S': (1, 4), R: 0.0
+
+Step: 1162, S: (1, 4), A: west, S': (0, 4), R: 0.0
+
+Step: 1163, S: (1, 4), A: south, S': (1, 4), R: 0.0
+
+Step: 1164, S: (1, 4), A: east, S': (2, 4), R: 0.0
+
+Step: 1165, S: (2, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+Step: 1166, S: (2, 1), A: north, S': (2, 2), R: 0.0
+
+Step: 1167, S: (2, 1), A: west, S': (1, 1), R: 0.0
+
+Step: 1168, S: (2, 1), A: south, S': (2, 0), R: 0.0
+
+Step: 1169, S: (2, 1), A: east, S': (3, 1), R: 0.0
+
+Step: 1170, S: (2, 2), A: exit, S': TERMINAL_STATE, R: 1
+
+Step: 1171, S: (2, 3), A: north, S': (2, 4), R: 0.0
+
+Step: 1172, S: (2, 3), A: west, S': (2, 3), R: 0.0
+
+Step: 1173, S: (2, 3), A: south, S': (2, 2), R: 0.0
+
+Step: 1174, S: (2, 3), A: east, S': (3, 3), R: 0.0
+
+Step: 1175, S: (2, 4), A: north, S': (2, 4), R: 0.0
+
+Step: 1176, S: (2, 4), A: west, S': (1, 4), R: 0.0
+
+Step: 1177, S: (2, 4), A: south, S': (2, 3), R: 0.0
+
+Step: 1178, S: (2, 4), A: east, S': (3, 4), R: 0.0
+
+Step: 1179, S: (3, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+Step: 1180, S: (3, 1), A: north, S': (3, 1), R: 0.0
+
+Step: 1181, S: (3, 1), A: west, S': (2, 1), R: 0.0
+
+Step: 1182, S: (3, 1), A: south, S': (3, 0), R: 0.0
+
+Step: 1183, S: (3, 1), A: east, S': (4, 1), R: 0.0
+
+Step: 1184, S: (3, 3), A: north, S': (3, 4), R: 0.0
+
+Step: 1185, S: (3, 3), A: west, S': (2, 3), R: 0.0
+
+Step: 1186, S: (3, 3), A: south, S': (3, 3), R: 0.0
+
+Step: 1187, S: (3, 3), A: east, S': (4, 3), R: 0.0
+
+Step: 1188, S: (3, 4), A: north, S': (3, 4), R: 0.0
+
+Step: 1189, S: (3, 4), A: west, S': (2, 4), R: 0.0
+
+Step: 1190, S: (3, 4), A: south, S': (3, 3), R: 0.0
+
+Step: 1191, S: (3, 4), A: east, S': (4, 4), R: 0.0
+
+Step: 1192, S: (4, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+Step: 1193, S: (4, 1), A: north, S': (4, 2), R: 0.0
+
+Step: 1194, S: (4, 1), A: west, S': (3, 1), R: 0.0
+
+Step: 1195, S: (4, 1), A: south, S': (4, 0), R: 0.0
+
+Step: 1196, S: (4, 1), A: east, S': (4, 1), R: 0.0
+
+Step: 1197, S: (4, 2), A: exit, S': TERMINAL_STATE, R: 10
+
+Step: 1198, S: (4, 3), A: north, S': (4, 4), R: 0.0
+
+Step: 1199, S: (4, 3), A: west, S': (3, 3), R: 0.0
+
+Step: 1200, S: (4, 3), A: south, S': (4, 2), R: 0.0
+
+Step: 1201, S: (4, 3), A: east, S': (4, 3), R: 0.0
+
+Step: 1202, S: (4, 4), A: north, S': (4, 4), R: 0.0
+
+Step: 1203, S: (4, 4), A: west, S': (3, 4), R: 0.0
+
+Step: 1204, S: (4, 4), A: south, S': (4, 3), R: 0.0
+
+Step: 1205, S: (4, 4), A: east, S': (4, 4), R: 0.0
+
+((0, 0), 'exit'), value diff: 3.81469726562e-05
+((0, 1), 'north'), value diff: 0.287824517485
+BEGINNING EPOCH: 18
+
+Step: 1206, S: (0, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+Step: 1207, S: (0, 1), A: north, S': (0, 2), R: 0.0
+
+Step: 1208, S: (0, 1), A: west, S': (0, 1), R: 0.0
+
+Step: 1209, S: (0, 1), A: south, S': (0, 0), R: 0.0
+
+Step: 1210, S: (0, 1), A: east, S': (1, 1), R: 0.0
+
+Step: 1211, S: (0, 2), A: north, S': (0, 3), R: 0.0
+
+Step: 1212, S: (0, 2), A: west, S': (0, 2), R: 0.0
+
+Step: 1213, S: (0, 2), A: south, S': (0, 1), R: 0.0
+
+Step: 1214, S: (0, 2), A: east, S': (0, 2), R: 0.0
+
+Step: 1215, S: (0, 3), A: north, S': (0, 4), R: 0.0
+
+Step: 1216, S: (0, 3), A: west, S': (0, 3), R: 0.0
+
+Step: 1217, S: (0, 3), A: south, S': (0, 2), R: 0.0
+
+Step: 1218, S: (0, 3), A: east, S': (0, 3), R: 0.0
+
+Step: 1219, S: (0, 4), A: north, S': (0, 4), R: 0.0
+
+Step: 1220, S: (0, 4), A: west, S': (0, 4), R: 0.0
+
+Step: 1221, S: (0, 4), A: south, S': (0, 3), R: 0.0
+
+Step: 1222, S: (0, 4), A: east, S': (1, 4), R: 0.0
+
+Step: 1223, S: (1, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+Step: 1224, S: (1, 1), A: north, S': (1, 1), R: 0.0
+
+Step: 1225, S: (1, 1), A: west, S': (0, 1), R: 0.0
+
+Step: 1226, S: (1, 1), A: south, S': (1, 0), R: 0.0
+
+Step: 1227, S: (1, 1), A: east, S': (2, 1), R: 0.0
+
+Step: 1228, S: (1, 4), A: north, S': (1, 4), R: 0.0
+
+Step: 1229, S: (1, 4), A: west, S': (0, 4), R: 0.0
+
+Step: 1230, S: (1, 4), A: south, S': (1, 4), R: 0.0
+
+Step: 1231, S: (1, 4), A: east, S': (2, 4), R: 0.0
+
+Step: 1232, S: (2, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+Step: 1233, S: (2, 1), A: north, S': (2, 2), R: 0.0
+
+Step: 1234, S: (2, 1), A: west, S': (1, 1), R: 0.0
+
+Step: 1235, S: (2, 1), A: south, S': (2, 0), R: 0.0
+
+Step: 1236, S: (2, 1), A: east, S': (3, 1), R: 0.0
+
+Step: 1237, S: (2, 2), A: exit, S': TERMINAL_STATE, R: 1
+
+Step: 1238, S: (2, 3), A: north, S': (2, 4), R: 0.0
+
+Step: 1239, S: (2, 3), A: west, S': (2, 3), R: 0.0
+
+Step: 1240, S: (2, 3), A: south, S': (2, 2), R: 0.0
+
+Step: 1241, S: (2, 3), A: east, S': (3, 3), R: 0.0
+
+Step: 1242, S: (2, 4), A: north, S': (2, 4), R: 0.0
+
+Step: 1243, S: (2, 4), A: west, S': (1, 4), R: 0.0
+
+Step: 1244, S: (2, 4), A: south, S': (2, 3), R: 0.0
+
+Step: 1245, S: (2, 4), A: east, S': (3, 4), R: 0.0
+
+Step: 1246, S: (3, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+Step: 1247, S: (3, 1), A: north, S': (3, 1), R: 0.0
+
+Step: 1248, S: (3, 1), A: west, S': (2, 1), R: 0.0
+
+Step: 1249, S: (3, 1), A: south, S': (3, 0), R: 0.0
+
+Step: 1250, S: (3, 1), A: east, S': (4, 1), R: 0.0
+
+Step: 1251, S: (3, 3), A: north, S': (3, 4), R: 0.0
+
+Step: 1252, S: (3, 3), A: west, S': (2, 3), R: 0.0
+
+Step: 1253, S: (3, 3), A: south, S': (3, 3), R: 0.0
+
+Step: 1254, S: (3, 3), A: east, S': (4, 3), R: 0.0
+
+Step: 1255, S: (3, 4), A: north, S': (3, 4), R: 0.0
+
+Step: 1256, S: (3, 4), A: west, S': (2, 4), R: 0.0
+
+Step: 1257, S: (3, 4), A: south, S': (3, 3), R: 0.0
+
+Step: 1258, S: (3, 4), A: east, S': (4, 4), R: 0.0
+
+Step: 1259, S: (4, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+Step: 1260, S: (4, 1), A: north, S': (4, 2), R: 0.0
+
+Step: 1261, S: (4, 1), A: west, S': (3, 1), R: 0.0
+
+Step: 1262, S: (4, 1), A: south, S': (4, 0), R: 0.0
+
+Step: 1263, S: (4, 1), A: east, S': (4, 1), R: 0.0
+
+Step: 1264, S: (4, 2), A: exit, S': TERMINAL_STATE, R: 10
+
+Step: 1265, S: (4, 3), A: north, S': (4, 4), R: 0.0
+
+Step: 1266, S: (4, 3), A: west, S': (3, 3), R: 0.0
+
+Step: 1267, S: (4, 3), A: south, S': (4, 2), R: 0.0
+
+Step: 1268, S: (4, 3), A: east, S': (4, 3), R: 0.0
+
+Step: 1269, S: (4, 4), A: north, S': (4, 4), R: 0.0
+
+Step: 1270, S: (4, 4), A: west, S': (3, 4), R: 0.0
+
+Step: 1271, S: (4, 4), A: south, S': (4, 3), R: 0.0
+
+Step: 1272, S: (4, 4), A: east, S': (4, 4), R: 0.0
+
+((0, 0), 'exit'), value diff: 1.90734863281e-05
+((0, 1), 'north'), value diff: 0.228212272526
+BEGINNING EPOCH: 19
+
+Step: 1273, S: (0, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+Step: 1274, S: (0, 1), A: north, S': (0, 2), R: 0.0
+
+Step: 1275, S: (0, 1), A: west, S': (0, 1), R: 0.0
+
+Step: 1276, S: (0, 1), A: south, S': (0, 0), R: 0.0
+
+Step: 1277, S: (0, 1), A: east, S': (1, 1), R: 0.0
+
+Step: 1278, S: (0, 2), A: north, S': (0, 3), R: 0.0
+
+Step: 1279, S: (0, 2), A: west, S': (0, 2), R: 0.0
+
+Step: 1280, S: (0, 2), A: south, S': (0, 1), R: 0.0
+
+Step: 1281, S: (0, 2), A: east, S': (0, 2), R: 0.0
+
+Step: 1282, S: (0, 3), A: north, S': (0, 4), R: 0.0
+
+Step: 1283, S: (0, 3), A: west, S': (0, 3), R: 0.0
+
+Step: 1284, S: (0, 3), A: south, S': (0, 2), R: 0.0
+
+Step: 1285, S: (0, 3), A: east, S': (0, 3), R: 0.0
+
+Step: 1286, S: (0, 4), A: north, S': (0, 4), R: 0.0
+
+Step: 1287, S: (0, 4), A: west, S': (0, 4), R: 0.0
+
+Step: 1288, S: (0, 4), A: south, S': (0, 3), R: 0.0
+
+Step: 1289, S: (0, 4), A: east, S': (1, 4), R: 0.0
+
+Step: 1290, S: (1, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+Step: 1291, S: (1, 1), A: north, S': (1, 1), R: 0.0
+
+Step: 1292, S: (1, 1), A: west, S': (0, 1), R: 0.0
+
+Step: 1293, S: (1, 1), A: south, S': (1, 0), R: 0.0
+
+Step: 1294, S: (1, 1), A: east, S': (2, 1), R: 0.0
+
+Step: 1295, S: (1, 4), A: north, S': (1, 4), R: 0.0
+
+Step: 1296, S: (1, 4), A: west, S': (0, 4), R: 0.0
+
+Step: 1297, S: (1, 4), A: south, S': (1, 4), R: 0.0
+
+Step: 1298, S: (1, 4), A: east, S': (2, 4), R: 0.0
+
+Step: 1299, S: (2, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+Step: 1300, S: (2, 1), A: north, S': (2, 2), R: 0.0
+
+Step: 1301, S: (2, 1), A: west, S': (1, 1), R: 0.0
+
+Step: 1302, S: (2, 1), A: south, S': (2, 0), R: 0.0
+
+Step: 1303, S: (2, 1), A: east, S': (3, 1), R: 0.0
+
+Step: 1304, S: (2, 2), A: exit, S': TERMINAL_STATE, R: 1
+
+Step: 1305, S: (2, 3), A: north, S': (2, 4), R: 0.0
+
+Step: 1306, S: (2, 3), A: west, S': (2, 3), R: 0.0
+
+Step: 1307, S: (2, 3), A: south, S': (2, 2), R: 0.0
+
+Step: 1308, S: (2, 3), A: east, S': (3, 3), R: 0.0
+
+Step: 1309, S: (2, 4), A: north, S': (2, 4), R: 0.0
+
+Step: 1310, S: (2, 4), A: west, S': (1, 4), R: 0.0
+
+Step: 1311, S: (2, 4), A: south, S': (2, 3), R: 0.0
+
+Step: 1312, S: (2, 4), A: east, S': (3, 4), R: 0.0
+
+Step: 1313, S: (3, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+Step: 1314, S: (3, 1), A: north, S': (3, 1), R: 0.0
+
+Step: 1315, S: (3, 1), A: west, S': (2, 1), R: 0.0
+
+Step: 1316, S: (3, 1), A: south, S': (3, 0), R: 0.0
+
+Step: 1317, S: (3, 1), A: east, S': (4, 1), R: 0.0
+
+Step: 1318, S: (3, 3), A: north, S': (3, 4), R: 0.0
+
+Step: 1319, S: (3, 3), A: west, S': (2, 3), R: 0.0
+
+Step: 1320, S: (3, 3), A: south, S': (3, 3), R: 0.0
+
+Step: 1321, S: (3, 3), A: east, S': (4, 3), R: 0.0
+
+Step: 1322, S: (3, 4), A: north, S': (3, 4), R: 0.0
+
+Step: 1323, S: (3, 4), A: west, S': (2, 4), R: 0.0
+
+Step: 1324, S: (3, 4), A: south, S': (3, 3), R: 0.0
+
+Step: 1325, S: (3, 4), A: east, S': (4, 4), R: 0.0
+
+Step: 1326, S: (4, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+Step: 1327, S: (4, 1), A: north, S': (4, 2), R: 0.0
+
+Step: 1328, S: (4, 1), A: west, S': (3, 1), R: 0.0
+
+Step: 1329, S: (4, 1), A: south, S': (4, 0), R: 0.0
+
+Step: 1330, S: (4, 1), A: east, S': (4, 1), R: 0.0
+
+Step: 1331, S: (4, 2), A: exit, S': TERMINAL_STATE, R: 10
+
+Step: 1332, S: (4, 3), A: north, S': (4, 4), R: 0.0
+
+Step: 1333, S: (4, 3), A: west, S': (3, 3), R: 0.0
+
+Step: 1334, S: (4, 3), A: south, S': (4, 2), R: 0.0
+
+Step: 1335, S: (4, 3), A: east, S': (4, 3), R: 0.0
+
+Step: 1336, S: (4, 4), A: north, S': (4, 4), R: 0.0
+
+Step: 1337, S: (4, 4), A: west, S': (3, 4), R: 0.0
+
+Step: 1338, S: (4, 4), A: south, S': (4, 3), R: 0.0
+
+Step: 1339, S: (4, 4), A: east, S': (4, 4), R: 0.0
+
+((0, 0), 'exit'), value diff: 9.53674316406e-06
+((0, 1), 'north'), value diff: 0.175761363735
+BEGINNING EPOCH: 20
+
+Step: 1340, S: (0, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+Step: 1341, S: (0, 1), A: north, S': (0, 2), R: 0.0
+
+Step: 1342, S: (0, 1), A: west, S': (0, 1), R: 0.0
+
+Step: 1343, S: (0, 1), A: south, S': (0, 0), R: 0.0
+
+Step: 1344, S: (0, 1), A: east, S': (1, 1), R: 0.0
+
+Step: 1345, S: (0, 2), A: north, S': (0, 3), R: 0.0
+
+Step: 1346, S: (0, 2), A: west, S': (0, 2), R: 0.0
+
+Step: 1347, S: (0, 2), A: south, S': (0, 1), R: 0.0
+
+Step: 1348, S: (0, 2), A: east, S': (0, 2), R: 0.0
+
+Step: 1349, S: (0, 3), A: north, S': (0, 4), R: 0.0
+
+Step: 1350, S: (0, 3), A: west, S': (0, 3), R: 0.0
+
+Step: 1351, S: (0, 3), A: south, S': (0, 2), R: 0.0
+
+Step: 1352, S: (0, 3), A: east, S': (0, 3), R: 0.0
+
+Step: 1353, S: (0, 4), A: north, S': (0, 4), R: 0.0
+
+Step: 1354, S: (0, 4), A: west, S': (0, 4), R: 0.0
+
+Step: 1355, S: (0, 4), A: south, S': (0, 3), R: 0.0
+
+Step: 1356, S: (0, 4), A: east, S': (1, 4), R: 0.0
+
+Step: 1357, S: (1, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+Step: 1358, S: (1, 1), A: north, S': (1, 1), R: 0.0
+
+Step: 1359, S: (1, 1), A: west, S': (0, 1), R: 0.0
+
+Step: 1360, S: (1, 1), A: south, S': (1, 0), R: 0.0
+
+Step: 1361, S: (1, 1), A: east, S': (2, 1), R: 0.0
+
+Step: 1362, S: (1, 4), A: north, S': (1, 4), R: 0.0
+
+Step: 1363, S: (1, 4), A: west, S': (0, 4), R: 0.0
+
+Step: 1364, S: (1, 4), A: south, S': (1, 4), R: 0.0
+
+Step: 1365, S: (1, 4), A: east, S': (2, 4), R: 0.0
+
+Step: 1366, S: (2, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+Step: 1367, S: (2, 1), A: north, S': (2, 2), R: 0.0
+
+Step: 1368, S: (2, 1), A: west, S': (1, 1), R: 0.0
+
+Step: 1369, S: (2, 1), A: south, S': (2, 0), R: 0.0
+
+Step: 1370, S: (2, 1), A: east, S': (3, 1), R: 0.0
+
+Step: 1371, S: (2, 2), A: exit, S': TERMINAL_STATE, R: 1
+
+Step: 1372, S: (2, 3), A: north, S': (2, 4), R: 0.0
+
+Step: 1373, S: (2, 3), A: west, S': (2, 3), R: 0.0
+
+Step: 1374, S: (2, 3), A: south, S': (2, 2), R: 0.0
+
+Step: 1375, S: (2, 3), A: east, S': (3, 3), R: 0.0
+
+Step: 1376, S: (2, 4), A: north, S': (2, 4), R: 0.0
+
+Step: 1377, S: (2, 4), A: west, S': (1, 4), R: 0.0
+
+Step: 1378, S: (2, 4), A: south, S': (2, 3), R: 0.0
+
+Step: 1379, S: (2, 4), A: east, S': (3, 4), R: 0.0
+
+Step: 1380, S: (3, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+Step: 1381, S: (3, 1), A: north, S': (3, 1), R: 0.0
+
+Step: 1382, S: (3, 1), A: west, S': (2, 1), R: 0.0
+
+Step: 1383, S: (3, 1), A: south, S': (3, 0), R: 0.0
+
+Step: 1384, S: (3, 1), A: east, S': (4, 1), R: 0.0
+
+Step: 1385, S: (3, 3), A: north, S': (3, 4), R: 0.0
+
+Step: 1386, S: (3, 3), A: west, S': (2, 3), R: 0.0
+
+Step: 1387, S: (3, 3), A: south, S': (3, 3), R: 0.0
+
+Step: 1388, S: (3, 3), A: east, S': (4, 3), R: 0.0
+
+Step: 1389, S: (3, 4), A: north, S': (3, 4), R: 0.0
+
+Step: 1390, S: (3, 4), A: west, S': (2, 4), R: 0.0
+
+Step: 1391, S: (3, 4), A: south, S': (3, 3), R: 0.0
+
+Step: 1392, S: (3, 4), A: east, S': (4, 4), R: 0.0
+
+Step: 1393, S: (4, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+Step: 1394, S: (4, 1), A: north, S': (4, 2), R: 0.0
+
+Step: 1395, S: (4, 1), A: west, S': (3, 1), R: 0.0
+
+Step: 1396, S: (4, 1), A: south, S': (4, 0), R: 0.0
+
+Step: 1397, S: (4, 1), A: east, S': (4, 1), R: 0.0
+
+Step: 1398, S: (4, 2), A: exit, S': TERMINAL_STATE, R: 10
+
+Step: 1399, S: (4, 3), A: north, S': (4, 4), R: 0.0
+
+Step: 1400, S: (4, 3), A: west, S': (3, 3), R: 0.0
+
+Step: 1401, S: (4, 3), A: south, S': (4, 2), R: 0.0
+
+Step: 1402, S: (4, 3), A: east, S': (4, 3), R: 0.0
+
+Step: 1403, S: (4, 4), A: north, S': (4, 4), R: 0.0
+
+Step: 1404, S: (4, 4), A: west, S': (3, 4), R: 0.0
+
+Step: 1405, S: (4, 4), A: south, S': (4, 3), R: 0.0
+
+Step: 1406, S: (4, 4), A: east, S': (4, 4), R: 0.0
+
+((0, 0), 'exit'), value diff: 4.76837158203e-06
+((0, 1), 'north'), value diff: 0.131948576432
+BEGINNING EPOCH: 21
+
+Step: 1407, S: (0, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+Step: 1408, S: (0, 1), A: north, S': (0, 2), R: 0.0
+
+Step: 1409, S: (0, 1), A: west, S': (0, 1), R: 0.0
+
+Step: 1410, S: (0, 1), A: south, S': (0, 0), R: 0.0
+
+Step: 1411, S: (0, 1), A: east, S': (1, 1), R: 0.0
+
+Step: 1412, S: (0, 2), A: north, S': (0, 3), R: 0.0
+
+Step: 1413, S: (0, 2), A: west, S': (0, 2), R: 0.0
+
+Step: 1414, S: (0, 2), A: south, S': (0, 1), R: 0.0
+
+Step: 1415, S: (0, 2), A: east, S': (0, 2), R: 0.0
+
+Step: 1416, S: (0, 3), A: north, S': (0, 4), R: 0.0
+
+Step: 1417, S: (0, 3), A: west, S': (0, 3), R: 0.0
+
+Step: 1418, S: (0, 3), A: south, S': (0, 2), R: 0.0
+
+Step: 1419, S: (0, 3), A: east, S': (0, 3), R: 0.0
+
+Step: 1420, S: (0, 4), A: north, S': (0, 4), R: 0.0
+
+Step: 1421, S: (0, 4), A: west, S': (0, 4), R: 0.0
+
+Step: 1422, S: (0, 4), A: south, S': (0, 3), R: 0.0
+
+Step: 1423, S: (0, 4), A: east, S': (1, 4), R: 0.0
+
+Step: 1424, S: (1, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+Step: 1425, S: (1, 1), A: north, S': (1, 1), R: 0.0
+
+Step: 1426, S: (1, 1), A: west, S': (0, 1), R: 0.0
+
+Step: 1427, S: (1, 1), A: south, S': (1, 0), R: 0.0
+
+Step: 1428, S: (1, 1), A: east, S': (2, 1), R: 0.0
+
+Step: 1429, S: (1, 4), A: north, S': (1, 4), R: 0.0
+
+Step: 1430, S: (1, 4), A: west, S': (0, 4), R: 0.0
+
+Step: 1431, S: (1, 4), A: south, S': (1, 4), R: 0.0
+
+Step: 1432, S: (1, 4), A: east, S': (2, 4), R: 0.0
+
+Step: 1433, S: (2, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+Step: 1434, S: (2, 1), A: north, S': (2, 2), R: 0.0
+
+Step: 1435, S: (2, 1), A: west, S': (1, 1), R: 0.0
+
+Step: 1436, S: (2, 1), A: south, S': (2, 0), R: 0.0
+
+Step: 1437, S: (2, 1), A: east, S': (3, 1), R: 0.0
+
+Step: 1438, S: (2, 2), A: exit, S': TERMINAL_STATE, R: 1
+
+Step: 1439, S: (2, 3), A: north, S': (2, 4), R: 0.0
+
+Step: 1440, S: (2, 3), A: west, S': (2, 3), R: 0.0
+
+Step: 1441, S: (2, 3), A: south, S': (2, 2), R: 0.0
+
+Step: 1442, S: (2, 3), A: east, S': (3, 3), R: 0.0
+
+Step: 1443, S: (2, 4), A: north, S': (2, 4), R: 0.0
+
+Step: 1444, S: (2, 4), A: west, S': (1, 4), R: 0.0
+
+Step: 1445, S: (2, 4), A: south, S': (2, 3), R: 0.0
+
+Step: 1446, S: (2, 4), A: east, S': (3, 4), R: 0.0
+
+Step: 1447, S: (3, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+Step: 1448, S: (3, 1), A: north, S': (3, 1), R: 0.0
+
+Step: 1449, S: (3, 1), A: west, S': (2, 1), R: 0.0
+
+Step: 1450, S: (3, 1), A: south, S': (3, 0), R: 0.0
+
+Step: 1451, S: (3, 1), A: east, S': (4, 1), R: 0.0
+
+Step: 1452, S: (3, 3), A: north, S': (3, 4), R: 0.0
+
+Step: 1453, S: (3, 3), A: west, S': (2, 3), R: 0.0
+
+Step: 1454, S: (3, 3), A: south, S': (3, 3), R: 0.0
+
+Step: 1455, S: (3, 3), A: east, S': (4, 3), R: 0.0
+
+Step: 1456, S: (3, 4), A: north, S': (3, 4), R: 0.0
+
+Step: 1457, S: (3, 4), A: west, S': (2, 4), R: 0.0
+
+Step: 1458, S: (3, 4), A: south, S': (3, 3), R: 0.0
+
+Step: 1459, S: (3, 4), A: east, S': (4, 4), R: 0.0
+
+Step: 1460, S: (4, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+Step: 1461, S: (4, 1), A: north, S': (4, 2), R: 0.0
+
+Step: 1462, S: (4, 1), A: west, S': (3, 1), R: 0.0
+
+Step: 1463, S: (4, 1), A: south, S': (4, 0), R: 0.0
+
+Step: 1464, S: (4, 1), A: east, S': (4, 1), R: 0.0
+
+Step: 1465, S: (4, 2), A: exit, S': TERMINAL_STATE, R: 10
+
+Step: 1466, S: (4, 3), A: north, S': (4, 4), R: 0.0
+
+Step: 1467, S: (4, 3), A: west, S': (3, 3), R: 0.0
+
+Step: 1468, S: (4, 3), A: south, S': (4, 2), R: 0.0
+
+Step: 1469, S: (4, 3), A: east, S': (4, 3), R: 0.0
+
+Step: 1470, S: (4, 4), A: north, S': (4, 4), R: 0.0
+
+Step: 1471, S: (4, 4), A: west, S': (3, 4), R: 0.0
+
+Step: 1472, S: (4, 4), A: south, S': (4, 3), R: 0.0
+
+Step: 1473, S: (4, 4), A: east, S': (4, 4), R: 0.0
+
+((0, 0), 'exit'), value diff: 2.38418579102e-06
+((0, 1), 'north'), value diff: 0.0968374449309
+BEGINNING EPOCH: 22
+
+Step: 1474, S: (0, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+Step: 1475, S: (0, 1), A: north, S': (0, 2), R: 0.0
+
+Step: 1476, S: (0, 1), A: west, S': (0, 1), R: 0.0
+
+Step: 1477, S: (0, 1), A: south, S': (0, 0), R: 0.0
+
+Step: 1478, S: (0, 1), A: east, S': (1, 1), R: 0.0
+
+Step: 1479, S: (0, 2), A: north, S': (0, 3), R: 0.0
+
+Step: 1480, S: (0, 2), A: west, S': (0, 2), R: 0.0
+
+Step: 1481, S: (0, 2), A: south, S': (0, 1), R: 0.0
+
+Step: 1482, S: (0, 2), A: east, S': (0, 2), R: 0.0
+
+Step: 1483, S: (0, 3), A: north, S': (0, 4), R: 0.0
+
+Step: 1484, S: (0, 3), A: west, S': (0, 3), R: 0.0
+
+Step: 1485, S: (0, 3), A: south, S': (0, 2), R: 0.0
+
+Step: 1486, S: (0, 3), A: east, S': (0, 3), R: 0.0
+
+Step: 1487, S: (0, 4), A: north, S': (0, 4), R: 0.0
+
+Step: 1488, S: (0, 4), A: west, S': (0, 4), R: 0.0
+
+Step: 1489, S: (0, 4), A: south, S': (0, 3), R: 0.0
+
+Step: 1490, S: (0, 4), A: east, S': (1, 4), R: 0.0
+
+Step: 1491, S: (1, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+Step: 1492, S: (1, 1), A: north, S': (1, 1), R: 0.0
+
+Step: 1493, S: (1, 1), A: west, S': (0, 1), R: 0.0
+
+Step: 1494, S: (1, 1), A: south, S': (1, 0), R: 0.0
+
+Step: 1495, S: (1, 1), A: east, S': (2, 1), R: 0.0
+
+Step: 1496, S: (1, 4), A: north, S': (1, 4), R: 0.0
+
+Step: 1497, S: (1, 4), A: west, S': (0, 4), R: 0.0
+
+Step: 1498, S: (1, 4), A: south, S': (1, 4), R: 0.0
+
+Step: 1499, S: (1, 4), A: east, S': (2, 4), R: 0.0
+
+Step: 1500, S: (2, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+Step: 1501, S: (2, 1), A: north, S': (2, 2), R: 0.0
+
+Step: 1502, S: (2, 1), A: west, S': (1, 1), R: 0.0
+
+Step: 1503, S: (2, 1), A: south, S': (2, 0), R: 0.0
+
+Step: 1504, S: (2, 1), A: east, S': (3, 1), R: 0.0
+
+Step: 1505, S: (2, 2), A: exit, S': TERMINAL_STATE, R: 1
+
+Step: 1506, S: (2, 3), A: north, S': (2, 4), R: 0.0
+
+Step: 1507, S: (2, 3), A: west, S': (2, 3), R: 0.0
+
+Step: 1508, S: (2, 3), A: south, S': (2, 2), R: 0.0
+
+Step: 1509, S: (2, 3), A: east, S': (3, 3), R: 0.0
+
+Step: 1510, S: (2, 4), A: north, S': (2, 4), R: 0.0
+
+Step: 1511, S: (2, 4), A: west, S': (1, 4), R: 0.0
+
+Step: 1512, S: (2, 4), A: south, S': (2, 3), R: 0.0
+
+Step: 1513, S: (2, 4), A: east, S': (3, 4), R: 0.0
+
+Step: 1514, S: (3, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+Step: 1515, S: (3, 1), A: north, S': (3, 1), R: 0.0
+
+Step: 1516, S: (3, 1), A: west, S': (2, 1), R: 0.0
+
+Step: 1517, S: (3, 1), A: south, S': (3, 0), R: 0.0
+
+Step: 1518, S: (3, 1), A: east, S': (4, 1), R: 0.0
+
+Step: 1519, S: (3, 3), A: north, S': (3, 4), R: 0.0
+
+Step: 1520, S: (3, 3), A: west, S': (2, 3), R: 0.0
+
+Step: 1521, S: (3, 3), A: south, S': (3, 3), R: 0.0
+
+Step: 1522, S: (3, 3), A: east, S': (4, 3), R: 0.0
+
+Step: 1523, S: (3, 4), A: north, S': (3, 4), R: 0.0
+
+Step: 1524, S: (3, 4), A: west, S': (2, 4), R: 0.0
+
+Step: 1525, S: (3, 4), A: south, S': (3, 3), R: 0.0
+
+Step: 1526, S: (3, 4), A: east, S': (4, 4), R: 0.0
+
+Step: 1527, S: (4, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+Step: 1528, S: (4, 1), A: north, S': (4, 2), R: 0.0
+
+Step: 1529, S: (4, 1), A: west, S': (3, 1), R: 0.0
+
+Step: 1530, S: (4, 1), A: south, S': (4, 0), R: 0.0
+
+Step: 1531, S: (4, 1), A: east, S': (4, 1), R: 0.0
+
+Step: 1532, S: (4, 2), A: exit, S': TERMINAL_STATE, R: 10
+
+Step: 1533, S: (4, 3), A: north, S': (4, 4), R: 0.0
+
+Step: 1534, S: (4, 3), A: west, S': (3, 3), R: 0.0
+
+Step: 1535, S: (4, 3), A: south, S': (4, 2), R: 0.0
+
+Step: 1536, S: (4, 3), A: east, S': (4, 3), R: 0.0
+
+Step: 1537, S: (4, 4), A: north, S': (4, 4), R: 0.0
+
+Step: 1538, S: (4, 4), A: west, S': (3, 4), R: 0.0
+
+Step: 1539, S: (4, 4), A: south, S': (4, 3), R: 0.0
+
+Step: 1540, S: (4, 4), A: east, S': (4, 4), R: 0.0
+
+((0, 0), 'exit'), value diff: 1.19209289551e-06
+((0, 1), 'north'), value diff: 0.0696456752603
+BEGINNING EPOCH: 23
+
+Step: 1541, S: (0, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+Step: 1542, S: (0, 1), A: north, S': (0, 2), R: 0.0
+
+Step: 1543, S: (0, 1), A: west, S': (0, 1), R: 0.0
+
+Step: 1544, S: (0, 1), A: south, S': (0, 0), R: 0.0
+
+Step: 1545, S: (0, 1), A: east, S': (1, 1), R: 0.0
+
+Step: 1546, S: (0, 2), A: north, S': (0, 3), R: 0.0
+
+Step: 1547, S: (0, 2), A: west, S': (0, 2), R: 0.0
+
+Step: 1548, S: (0, 2), A: south, S': (0, 1), R: 0.0
+
+Step: 1549, S: (0, 2), A: east, S': (0, 2), R: 0.0
+
+Step: 1550, S: (0, 3), A: north, S': (0, 4), R: 0.0
+
+Step: 1551, S: (0, 3), A: west, S': (0, 3), R: 0.0
+
+Step: 1552, S: (0, 3), A: south, S': (0, 2), R: 0.0
+
+Step: 1553, S: (0, 3), A: east, S': (0, 3), R: 0.0
+
+Step: 1554, S: (0, 4), A: north, S': (0, 4), R: 0.0
+
+Step: 1555, S: (0, 4), A: west, S': (0, 4), R: 0.0
+
+Step: 1556, S: (0, 4), A: south, S': (0, 3), R: 0.0
+
+Step: 1557, S: (0, 4), A: east, S': (1, 4), R: 0.0
+
+Step: 1558, S: (1, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+Step: 1559, S: (1, 1), A: north, S': (1, 1), R: 0.0
+
+Step: 1560, S: (1, 1), A: west, S': (0, 1), R: 0.0
+
+Step: 1561, S: (1, 1), A: south, S': (1, 0), R: 0.0
+
+Step: 1562, S: (1, 1), A: east, S': (2, 1), R: 0.0
+
+Step: 1563, S: (1, 4), A: north, S': (1, 4), R: 0.0
+
+Step: 1564, S: (1, 4), A: west, S': (0, 4), R: 0.0
+
+Step: 1565, S: (1, 4), A: south, S': (1, 4), R: 0.0
+
+Step: 1566, S: (1, 4), A: east, S': (2, 4), R: 0.0
+
+Step: 1567, S: (2, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+Step: 1568, S: (2, 1), A: north, S': (2, 2), R: 0.0
+
+Step: 1569, S: (2, 1), A: west, S': (1, 1), R: 0.0
+
+Step: 1570, S: (2, 1), A: south, S': (2, 0), R: 0.0
+
+Step: 1571, S: (2, 1), A: east, S': (3, 1), R: 0.0
+
+Step: 1572, S: (2, 2), A: exit, S': TERMINAL_STATE, R: 1
+
+Step: 1573, S: (2, 3), A: north, S': (2, 4), R: 0.0
+
+Step: 1574, S: (2, 3), A: west, S': (2, 3), R: 0.0
+
+Step: 1575, S: (2, 3), A: south, S': (2, 2), R: 0.0
+
+Step: 1576, S: (2, 3), A: east, S': (3, 3), R: 0.0
+
+Step: 1577, S: (2, 4), A: north, S': (2, 4), R: 0.0
+
+Step: 1578, S: (2, 4), A: west, S': (1, 4), R: 0.0
+
+Step: 1579, S: (2, 4), A: south, S': (2, 3), R: 0.0
+
+Step: 1580, S: (2, 4), A: east, S': (3, 4), R: 0.0
+
+Step: 1581, S: (3, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+Step: 1582, S: (3, 1), A: north, S': (3, 1), R: 0.0
+
+Step: 1583, S: (3, 1), A: west, S': (2, 1), R: 0.0
+
+Step: 1584, S: (3, 1), A: south, S': (3, 0), R: 0.0
+
+Step: 1585, S: (3, 1), A: east, S': (4, 1), R: 0.0
+
+Step: 1586, S: (3, 3), A: north, S': (3, 4), R: 0.0
+
+Step: 1587, S: (3, 3), A: west, S': (2, 3), R: 0.0
+
+Step: 1588, S: (3, 3), A: south, S': (3, 3), R: 0.0
+
+Step: 1589, S: (3, 3), A: east, S': (4, 3), R: 0.0
+
+Step: 1590, S: (3, 4), A: north, S': (3, 4), R: 0.0
+
+Step: 1591, S: (3, 4), A: west, S': (2, 4), R: 0.0
+
+Step: 1592, S: (3, 4), A: south, S': (3, 3), R: 0.0
+
+Step: 1593, S: (3, 4), A: east, S': (4, 4), R: 0.0
+
+Step: 1594, S: (4, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+Step: 1595, S: (4, 1), A: north, S': (4, 2), R: 0.0
+
+Step: 1596, S: (4, 1), A: west, S': (3, 1), R: 0.0
+
+Step: 1597, S: (4, 1), A: south, S': (4, 0), R: 0.0
+
+Step: 1598, S: (4, 1), A: east, S': (4, 1), R: 0.0
+
+Step: 1599, S: (4, 2), A: exit, S': TERMINAL_STATE, R: 10
+
+Step: 1600, S: (4, 3), A: north, S': (4, 4), R: 0.0
+
+Step: 1601, S: (4, 3), A: west, S': (3, 3), R: 0.0
+
+Step: 1602, S: (4, 3), A: south, S': (4, 2), R: 0.0
+
+Step: 1603, S: (4, 3), A: east, S': (4, 3), R: 0.0
+
+Step: 1604, S: (4, 4), A: north, S': (4, 4), R: 0.0
+
+Step: 1605, S: (4, 4), A: west, S': (3, 4), R: 0.0
+
+Step: 1606, S: (4, 4), A: south, S': (4, 3), R: 0.0
+
+Step: 1607, S: (4, 4), A: east, S': (4, 4), R: 0.0
+
+((0, 0), 'exit'), value diff: 5.96046447754e-07
+((0, 1), 'north'), value diff: 0.0491868786655
+BEGINNING EPOCH: 24
+
+Step: 1608, S: (0, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+Step: 1609, S: (0, 1), A: north, S': (0, 2), R: 0.0
+
+Step: 1610, S: (0, 1), A: west, S': (0, 1), R: 0.0
+
+Step: 1611, S: (0, 1), A: south, S': (0, 0), R: 0.0
+
+Step: 1612, S: (0, 1), A: east, S': (1, 1), R: 0.0
+
+Step: 1613, S: (0, 2), A: north, S': (0, 3), R: 0.0
+
+Step: 1614, S: (0, 2), A: west, S': (0, 2), R: 0.0
+
+Step: 1615, S: (0, 2), A: south, S': (0, 1), R: 0.0
+
+Step: 1616, S: (0, 2), A: east, S': (0, 2), R: 0.0
+
+Step: 1617, S: (0, 3), A: north, S': (0, 4), R: 0.0
+
+Step: 1618, S: (0, 3), A: west, S': (0, 3), R: 0.0
+
+Step: 1619, S: (0, 3), A: south, S': (0, 2), R: 0.0
+
+Step: 1620, S: (0, 3), A: east, S': (0, 3), R: 0.0
+
+Step: 1621, S: (0, 4), A: north, S': (0, 4), R: 0.0
+
+Step: 1622, S: (0, 4), A: west, S': (0, 4), R: 0.0
+
+Step: 1623, S: (0, 4), A: south, S': (0, 3), R: 0.0
+
+Step: 1624, S: (0, 4), A: east, S': (1, 4), R: 0.0
+
+Step: 1625, S: (1, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+Step: 1626, S: (1, 1), A: north, S': (1, 1), R: 0.0
+
+Step: 1627, S: (1, 1), A: west, S': (0, 1), R: 0.0
+
+Step: 1628, S: (1, 1), A: south, S': (1, 0), R: 0.0
+
+Step: 1629, S: (1, 1), A: east, S': (2, 1), R: 0.0
+
+Step: 1630, S: (1, 4), A: north, S': (1, 4), R: 0.0
+
+Step: 1631, S: (1, 4), A: west, S': (0, 4), R: 0.0
+
+Step: 1632, S: (1, 4), A: south, S': (1, 4), R: 0.0
+
+Step: 1633, S: (1, 4), A: east, S': (2, 4), R: 0.0
+
+Step: 1634, S: (2, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+Step: 1635, S: (2, 1), A: north, S': (2, 2), R: 0.0
+
+Step: 1636, S: (2, 1), A: west, S': (1, 1), R: 0.0
+
+Step: 1637, S: (2, 1), A: south, S': (2, 0), R: 0.0
+
+Step: 1638, S: (2, 1), A: east, S': (3, 1), R: 0.0
+
+Step: 1639, S: (2, 2), A: exit, S': TERMINAL_STATE, R: 1
+
+Step: 1640, S: (2, 3), A: north, S': (2, 4), R: 0.0
+
+Step: 1641, S: (2, 3), A: west, S': (2, 3), R: 0.0
+
+Step: 1642, S: (2, 3), A: south, S': (2, 2), R: 0.0
+
+Step: 1643, S: (2, 3), A: east, S': (3, 3), R: 0.0
+
+Step: 1644, S: (2, 4), A: north, S': (2, 4), R: 0.0
+
+Step: 1645, S: (2, 4), A: west, S': (1, 4), R: 0.0
+
+Step: 1646, S: (2, 4), A: south, S': (2, 3), R: 0.0
+
+Step: 1647, S: (2, 4), A: east, S': (3, 4), R: 0.0
+
+Step: 1648, S: (3, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+Step: 1649, S: (3, 1), A: north, S': (3, 1), R: 0.0
+
+Step: 1650, S: (3, 1), A: west, S': (2, 1), R: 0.0
+
+Step: 1651, S: (3, 1), A: south, S': (3, 0), R: 0.0
+
+Step: 1652, S: (3, 1), A: east, S': (4, 1), R: 0.0
+
+Step: 1653, S: (3, 3), A: north, S': (3, 4), R: 0.0
+
+Step: 1654, S: (3, 3), A: west, S': (2, 3), R: 0.0
+
+Step: 1655, S: (3, 3), A: south, S': (3, 3), R: 0.0
+
+Step: 1656, S: (3, 3), A: east, S': (4, 3), R: 0.0
+
+Step: 1657, S: (3, 4), A: north, S': (3, 4), R: 0.0
+
+Step: 1658, S: (3, 4), A: west, S': (2, 4), R: 0.0
+
+Step: 1659, S: (3, 4), A: south, S': (3, 3), R: 0.0
+
+Step: 1660, S: (3, 4), A: east, S': (4, 4), R: 0.0
+
+Step: 1661, S: (4, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+Step: 1662, S: (4, 1), A: north, S': (4, 2), R: 0.0
+
+Step: 1663, S: (4, 1), A: west, S': (3, 1), R: 0.0
+
+Step: 1664, S: (4, 1), A: south, S': (4, 0), R: 0.0
+
+Step: 1665, S: (4, 1), A: east, S': (4, 1), R: 0.0
+
+Step: 1666, S: (4, 2), A: exit, S': TERMINAL_STATE, R: 10
+
+Step: 1667, S: (4, 3), A: north, S': (4, 4), R: 0.0
+
+Step: 1668, S: (4, 3), A: west, S': (3, 3), R: 0.0
+
+Step: 1669, S: (4, 3), A: south, S': (4, 2), R: 0.0
+
+Step: 1670, S: (4, 3), A: east, S': (4, 3), R: 0.0
+
+Step: 1671, S: (4, 4), A: north, S': (4, 4), R: 0.0
+
+Step: 1672, S: (4, 4), A: west, S': (3, 4), R: 0.0
+
+Step: 1673, S: (4, 4), A: south, S': (4, 3), R: 0.0
+
+Step: 1674, S: (4, 4), A: east, S': (4, 4), R: 0.0
+
+((0, 0), 'exit'), value diff: 2.98023223877e-07
+((0, 1), 'north'), value diff: 0.0341719687988
+BEGINNING EPOCH: 25
+
+Step: 1675, S: (0, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+Step: 1676, S: (0, 1), A: north, S': (0, 2), R: 0.0
+
+Step: 1677, S: (0, 1), A: west, S': (0, 1), R: 0.0
+
+Step: 1678, S: (0, 1), A: south, S': (0, 0), R: 0.0
+
+Step: 1679, S: (0, 1), A: east, S': (1, 1), R: 0.0
+
+Step: 1680, S: (0, 2), A: north, S': (0, 3), R: 0.0
+
+Step: 1681, S: (0, 2), A: west, S': (0, 2), R: 0.0
+
+Step: 1682, S: (0, 2), A: south, S': (0, 1), R: 0.0
+
+Step: 1683, S: (0, 2), A: east, S': (0, 2), R: 0.0
+
+Step: 1684, S: (0, 3), A: north, S': (0, 4), R: 0.0
+
+Step: 1685, S: (0, 3), A: west, S': (0, 3), R: 0.0
+
+Step: 1686, S: (0, 3), A: south, S': (0, 2), R: 0.0
+
+Step: 1687, S: (0, 3), A: east, S': (0, 3), R: 0.0
+
+Step: 1688, S: (0, 4), A: north, S': (0, 4), R: 0.0
+
+Step: 1689, S: (0, 4), A: west, S': (0, 4), R: 0.0
+
+Step: 1690, S: (0, 4), A: south, S': (0, 3), R: 0.0
+
+Step: 1691, S: (0, 4), A: east, S': (1, 4), R: 0.0
+
+Step: 1692, S: (1, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+Step: 1693, S: (1, 1), A: north, S': (1, 1), R: 0.0
+
+Step: 1694, S: (1, 1), A: west, S': (0, 1), R: 0.0
+
+Step: 1695, S: (1, 1), A: south, S': (1, 0), R: 0.0
+
+Step: 1696, S: (1, 1), A: east, S': (2, 1), R: 0.0
+
+Step: 1697, S: (1, 4), A: north, S': (1, 4), R: 0.0
+
+Step: 1698, S: (1, 4), A: west, S': (0, 4), R: 0.0
+
+Step: 1699, S: (1, 4), A: south, S': (1, 4), R: 0.0
+
+Step: 1700, S: (1, 4), A: east, S': (2, 4), R: 0.0
+
+Step: 1701, S: (2, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+Step: 1702, S: (2, 1), A: north, S': (2, 2), R: 0.0
+
+Step: 1703, S: (2, 1), A: west, S': (1, 1), R: 0.0
+
+Step: 1704, S: (2, 1), A: south, S': (2, 0), R: 0.0
+
+Step: 1705, S: (2, 1), A: east, S': (3, 1), R: 0.0
+
+Step: 1706, S: (2, 2), A: exit, S': TERMINAL_STATE, R: 1
+
+Step: 1707, S: (2, 3), A: north, S': (2, 4), R: 0.0
+
+Step: 1708, S: (2, 3), A: west, S': (2, 3), R: 0.0
+
+Step: 1709, S: (2, 3), A: south, S': (2, 2), R: 0.0
+
+Step: 1710, S: (2, 3), A: east, S': (3, 3), R: 0.0
+
+Step: 1711, S: (2, 4), A: north, S': (2, 4), R: 0.0
+
+Step: 1712, S: (2, 4), A: west, S': (1, 4), R: 0.0
+
+Step: 1713, S: (2, 4), A: south, S': (2, 3), R: 0.0
+
+Step: 1714, S: (2, 4), A: east, S': (3, 4), R: 0.0
+
+Step: 1715, S: (3, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+Step: 1716, S: (3, 1), A: north, S': (3, 1), R: 0.0
+
+Step: 1717, S: (3, 1), A: west, S': (2, 1), R: 0.0
+
+Step: 1718, S: (3, 1), A: south, S': (3, 0), R: 0.0
+
+Step: 1719, S: (3, 1), A: east, S': (4, 1), R: 0.0
+
+Step: 1720, S: (3, 3), A: north, S': (3, 4), R: 0.0
+
+Step: 1721, S: (3, 3), A: west, S': (2, 3), R: 0.0
+
+Step: 1722, S: (3, 3), A: south, S': (3, 3), R: 0.0
+
+Step: 1723, S: (3, 3), A: east, S': (4, 3), R: 0.0
+
+Step: 1724, S: (3, 4), A: north, S': (3, 4), R: 0.0
+
+Step: 1725, S: (3, 4), A: west, S': (2, 4), R: 0.0
+
+Step: 1726, S: (3, 4), A: south, S': (3, 3), R: 0.0
+
+Step: 1727, S: (3, 4), A: east, S': (4, 4), R: 0.0
+
+Step: 1728, S: (4, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+Step: 1729, S: (4, 1), A: north, S': (4, 2), R: 0.0
+
+Step: 1730, S: (4, 1), A: west, S': (3, 1), R: 0.0
+
+Step: 1731, S: (4, 1), A: south, S': (4, 0), R: 0.0
+
+Step: 1732, S: (4, 1), A: east, S': (4, 1), R: 0.0
+
+Step: 1733, S: (4, 2), A: exit, S': TERMINAL_STATE, R: 10
+
+Step: 1734, S: (4, 3), A: north, S': (4, 4), R: 0.0
+
+Step: 1735, S: (4, 3), A: west, S': (3, 3), R: 0.0
+
+Step: 1736, S: (4, 3), A: south, S': (4, 2), R: 0.0
+
+Step: 1737, S: (4, 3), A: east, S': (4, 3), R: 0.0
+
+Step: 1738, S: (4, 4), A: north, S': (4, 4), R: 0.0
+
+Step: 1739, S: (4, 4), A: west, S': (3, 4), R: 0.0
+
+Step: 1740, S: (4, 4), A: south, S': (4, 3), R: 0.0
+
+Step: 1741, S: (4, 4), A: east, S': (4, 4), R: 0.0
+
+((0, 0), 'exit'), value diff: 1.49011611938e-07
+((0, 1), 'north'), value diff: 0.0233889944195
+BEGINNING EPOCH: 26
+
+Step: 1742, S: (0, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+Step: 1743, S: (0, 1), A: north, S': (0, 2), R: 0.0
+
+Step: 1744, S: (0, 1), A: west, S': (0, 1), R: 0.0
+
+Step: 1745, S: (0, 1), A: south, S': (0, 0), R: 0.0
+
+Step: 1746, S: (0, 1), A: east, S': (1, 1), R: 0.0
+
+Step: 1747, S: (0, 2), A: north, S': (0, 3), R: 0.0
+
+Step: 1748, S: (0, 2), A: west, S': (0, 2), R: 0.0
+
+Step: 1749, S: (0, 2), A: south, S': (0, 1), R: 0.0
+
+Step: 1750, S: (0, 2), A: east, S': (0, 2), R: 0.0
+
+Step: 1751, S: (0, 3), A: north, S': (0, 4), R: 0.0
+
+Step: 1752, S: (0, 3), A: west, S': (0, 3), R: 0.0
+
+Step: 1753, S: (0, 3), A: south, S': (0, 2), R: 0.0
+
+Step: 1754, S: (0, 3), A: east, S': (0, 3), R: 0.0
+
+Step: 1755, S: (0, 4), A: north, S': (0, 4), R: 0.0
+
+Step: 1756, S: (0, 4), A: west, S': (0, 4), R: 0.0
+
+Step: 1757, S: (0, 4), A: south, S': (0, 3), R: 0.0
+
+Step: 1758, S: (0, 4), A: east, S': (1, 4), R: 0.0
+
+Step: 1759, S: (1, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+Step: 1760, S: (1, 1), A: north, S': (1, 1), R: 0.0
+
+Step: 1761, S: (1, 1), A: west, S': (0, 1), R: 0.0
+
+Step: 1762, S: (1, 1), A: south, S': (1, 0), R: 0.0
+
+Step: 1763, S: (1, 1), A: east, S': (2, 1), R: 0.0
+
+Step: 1764, S: (1, 4), A: north, S': (1, 4), R: 0.0
+
+Step: 1765, S: (1, 4), A: west, S': (0, 4), R: 0.0
+
+Step: 1766, S: (1, 4), A: south, S': (1, 4), R: 0.0
+
+Step: 1767, S: (1, 4), A: east, S': (2, 4), R: 0.0
+
+Step: 1768, S: (2, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+Step: 1769, S: (2, 1), A: north, S': (2, 2), R: 0.0
+
+Step: 1770, S: (2, 1), A: west, S': (1, 1), R: 0.0
+
+Step: 1771, S: (2, 1), A: south, S': (2, 0), R: 0.0
+
+Step: 1772, S: (2, 1), A: east, S': (3, 1), R: 0.0
+
+Step: 1773, S: (2, 2), A: exit, S': TERMINAL_STATE, R: 1
+
+Step: 1774, S: (2, 3), A: north, S': (2, 4), R: 0.0
+
+Step: 1775, S: (2, 3), A: west, S': (2, 3), R: 0.0
+
+Step: 1776, S: (2, 3), A: south, S': (2, 2), R: 0.0
+
+Step: 1777, S: (2, 3), A: east, S': (3, 3), R: 0.0
+
+Step: 1778, S: (2, 4), A: north, S': (2, 4), R: 0.0
+
+Step: 1779, S: (2, 4), A: west, S': (1, 4), R: 0.0
+
+Step: 1780, S: (2, 4), A: south, S': (2, 3), R: 0.0
+
+Step: 1781, S: (2, 4), A: east, S': (3, 4), R: 0.0
+
+Step: 1782, S: (3, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+Step: 1783, S: (3, 1), A: north, S': (3, 1), R: 0.0
+
+Step: 1784, S: (3, 1), A: west, S': (2, 1), R: 0.0
+
+Step: 1785, S: (3, 1), A: south, S': (3, 0), R: 0.0
+
+Step: 1786, S: (3, 1), A: east, S': (4, 1), R: 0.0
+
+Step: 1787, S: (3, 3), A: north, S': (3, 4), R: 0.0
+
+Step: 1788, S: (3, 3), A: west, S': (2, 3), R: 0.0
+
+Step: 1789, S: (3, 3), A: south, S': (3, 3), R: 0.0
+
+Step: 1790, S: (3, 3), A: east, S': (4, 3), R: 0.0
+
+Step: 1791, S: (3, 4), A: north, S': (3, 4), R: 0.0
+
+Step: 1792, S: (3, 4), A: west, S': (2, 4), R: 0.0
+
+Step: 1793, S: (3, 4), A: south, S': (3, 3), R: 0.0
+
+Step: 1794, S: (3, 4), A: east, S': (4, 4), R: 0.0
+
+Step: 1795, S: (4, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+Step: 1796, S: (4, 1), A: north, S': (4, 2), R: 0.0
+
+Step: 1797, S: (4, 1), A: west, S': (3, 1), R: 0.0
+
+Step: 1798, S: (4, 1), A: south, S': (4, 0), R: 0.0
+
+Step: 1799, S: (4, 1), A: east, S': (4, 1), R: 0.0
+
+Step: 1800, S: (4, 2), A: exit, S': TERMINAL_STATE, R: 10
+
+Step: 1801, S: (4, 3), A: north, S': (4, 4), R: 0.0
+
+Step: 1802, S: (4, 3), A: west, S': (3, 3), R: 0.0
+
+Step: 1803, S: (4, 3), A: south, S': (4, 2), R: 0.0
+
+Step: 1804, S: (4, 3), A: east, S': (4, 3), R: 0.0
+
+Step: 1805, S: (4, 4), A: north, S': (4, 4), R: 0.0
+
+Step: 1806, S: (4, 4), A: west, S': (3, 4), R: 0.0
+
+Step: 1807, S: (4, 4), A: south, S': (4, 3), R: 0.0
+
+Step: 1808, S: (4, 4), A: east, S': (4, 4), R: 0.0
+
+((0, 0), 'exit'), value diff: 7.45058059692e-08
+((0, 1), 'north'), value diff: 0.0157921749647
+((0, 1), 'west'), value diff: 0.0091059505666
+((0, 1), 'south'), value diff: 9.05245542526e-07
+((0, 1), 'east'), value diff: 0.00289268020313
+((0, 2), 'north'), value diff: 0.0248464428406
+BEGINNING EPOCH: 27
+
+Step: 1809, S: (0, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+Step: 1810, S: (0, 1), A: north, S': (0, 2), R: 0.0
+
+Step: 1811, S: (0, 1), A: west, S': (0, 1), R: 0.0
+
+Step: 1812, S: (0, 1), A: south, S': (0, 0), R: 0.0
+
+Step: 1813, S: (0, 1), A: east, S': (1, 1), R: 0.0
+
+Step: 1814, S: (0, 2), A: north, S': (0, 3), R: 0.0
+
+Step: 1815, S: (0, 2), A: west, S': (0, 2), R: 0.0
+
+Step: 1816, S: (0, 2), A: south, S': (0, 1), R: 0.0
+
+Step: 1817, S: (0, 2), A: east, S': (0, 2), R: 0.0
+
+Step: 1818, S: (0, 3), A: north, S': (0, 4), R: 0.0
+
+Step: 1819, S: (0, 3), A: west, S': (0, 3), R: 0.0
+
+Step: 1820, S: (0, 3), A: south, S': (0, 2), R: 0.0
+
+Step: 1821, S: (0, 3), A: east, S': (0, 3), R: 0.0
+
+Step: 1822, S: (0, 4), A: north, S': (0, 4), R: 0.0
+
+Step: 1823, S: (0, 4), A: west, S': (0, 4), R: 0.0
+
+Step: 1824, S: (0, 4), A: south, S': (0, 3), R: 0.0
+
+Step: 1825, S: (0, 4), A: east, S': (1, 4), R: 0.0
+
+Step: 1826, S: (1, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+Step: 1827, S: (1, 1), A: north, S': (1, 1), R: 0.0
+
+Step: 1828, S: (1, 1), A: west, S': (0, 1), R: 0.0
+
+Step: 1829, S: (1, 1), A: south, S': (1, 0), R: 0.0
+
+Step: 1830, S: (1, 1), A: east, S': (2, 1), R: 0.0
+
+Step: 1831, S: (1, 4), A: north, S': (1, 4), R: 0.0
+
+Step: 1832, S: (1, 4), A: west, S': (0, 4), R: 0.0
+
+Step: 1833, S: (1, 4), A: south, S': (1, 4), R: 0.0
+
+Step: 1834, S: (1, 4), A: east, S': (2, 4), R: 0.0
+
+Step: 1835, S: (2, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+Step: 1836, S: (2, 1), A: north, S': (2, 2), R: 0.0
+
+Step: 1837, S: (2, 1), A: west, S': (1, 1), R: 0.0
+
+Step: 1838, S: (2, 1), A: south, S': (2, 0), R: 0.0
+
+Step: 1839, S: (2, 1), A: east, S': (3, 1), R: 0.0
+
+Step: 1840, S: (2, 2), A: exit, S': TERMINAL_STATE, R: 1
+
+Step: 1841, S: (2, 3), A: north, S': (2, 4), R: 0.0
+
+Step: 1842, S: (2, 3), A: west, S': (2, 3), R: 0.0
+
+Step: 1843, S: (2, 3), A: south, S': (2, 2), R: 0.0
+
+Step: 1844, S: (2, 3), A: east, S': (3, 3), R: 0.0
+
+Step: 1845, S: (2, 4), A: north, S': (2, 4), R: 0.0
+
+Step: 1846, S: (2, 4), A: west, S': (1, 4), R: 0.0
+
+Step: 1847, S: (2, 4), A: south, S': (2, 3), R: 0.0
+
+Step: 1848, S: (2, 4), A: east, S': (3, 4), R: 0.0
+
+Step: 1849, S: (3, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+Step: 1850, S: (3, 1), A: north, S': (3, 1), R: 0.0
+
+Step: 1851, S: (3, 1), A: west, S': (2, 1), R: 0.0
+
+Step: 1852, S: (3, 1), A: south, S': (3, 0), R: 0.0
+
+Step: 1853, S: (3, 1), A: east, S': (4, 1), R: 0.0
+
+Step: 1854, S: (3, 3), A: north, S': (3, 4), R: 0.0
+
+Step: 1855, S: (3, 3), A: west, S': (2, 3), R: 0.0
+
+Step: 1856, S: (3, 3), A: south, S': (3, 3), R: 0.0
+
+Step: 1857, S: (3, 3), A: east, S': (4, 3), R: 0.0
+
+Step: 1858, S: (3, 4), A: north, S': (3, 4), R: 0.0
+
+Step: 1859, S: (3, 4), A: west, S': (2, 4), R: 0.0
+
+Step: 1860, S: (3, 4), A: south, S': (3, 3), R: 0.0
+
+Step: 1861, S: (3, 4), A: east, S': (4, 4), R: 0.0
+
+Step: 1862, S: (4, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+Step: 1863, S: (4, 1), A: north, S': (4, 2), R: 0.0
+
+Step: 1864, S: (4, 1), A: west, S': (3, 1), R: 0.0
+
+Step: 1865, S: (4, 1), A: south, S': (4, 0), R: 0.0
+
+Step: 1866, S: (4, 1), A: east, S': (4, 1), R: 0.0
+
+Step: 1867, S: (4, 2), A: exit, S': TERMINAL_STATE, R: 10
+
+Step: 1868, S: (4, 3), A: north, S': (4, 4), R: 0.0
+
+Step: 1869, S: (4, 3), A: west, S': (3, 3), R: 0.0
+
+Step: 1870, S: (4, 3), A: south, S': (4, 2), R: 0.0
+
+Step: 1871, S: (4, 3), A: east, S': (4, 3), R: 0.0
+
+Step: 1872, S: (4, 4), A: north, S': (4, 4), R: 0.0
+
+Step: 1873, S: (4, 4), A: west, S': (3, 4), R: 0.0
+
+Step: 1874, S: (4, 4), A: south, S': (4, 3), R: 0.0
+
+Step: 1875, S: (4, 4), A: east, S': (4, 4), R: 0.0
+
+((0, 0), 'exit'), value diff: 3.72529029846e-08
+((0, 1), 'north'), value diff: 0.010530694101
+((0, 1), 'west'), value diff: 0.00585468137471
+((0, 1), 'south'), value diff: 4.69386577606e-07
+((0, 1), 'east'), value diff: 0.0017751587767
+((0, 2), 'north'), value diff: 0.0171620337657
+((0, 2), 'west'), value diff: 0.010530694101
+((0, 2), 'south'), value diff: 0.00372616213687
+((0, 2), 'east'), value diff: 0.00694212001208
+((0, 3), 'north'), value diff: 0.00694212001208
+((0, 3), 'west'), value diff: 0.0117049708883
+((0, 3), 'south'), value diff: 0.00694212001208
+((0, 3), 'east'), value diff: 0.0117049708883
+((0, 4), 'north'), value diff: 0.00694212001208
+((0, 4), 'west'), value diff: 0.00694212001208
+((0, 4), 'south'), value diff: 0.0117049708883
+((0, 4), 'east'), value diff: 0.00234934426563
+((1, 0), 'exit'), value diff: 3.72529029846e-08
+((1, 1), 'north'), value diff: 0.0017751587767
+((1, 1), 'west'), value diff: 0.00372616213687
+((1, 1), 'south'), value diff: 4.69386577606e-07
+((1, 1), 'east'), value diff: 0.000428901098482
+((1, 4), 'north'), value diff: 0.00234934426563
+((1, 4), 'west'), value diff: 0.00452826492557
+((1, 4), 'south'), value diff: 0.00234934426563
+((1, 4), 'east'), value diff: 0.000652880561035
+((2, 0), 'exit'), value diff: 3.72529029846e-08
+((2, 1), 'north'), value diff: 9.0524554297e-08
+((2, 1), 'west'), value diff: 0.00108058488266
+((2, 1), 'south'), value diff: 4.69386577606e-07
+((2, 1), 'east'), value diff: 7.94339384882e-05
+((2, 2), 'exit'), value diff: 3.72529029846e-09
+((2, 3), 'north'), value diff: 0.000652880561035
+((2, 3), 'west'), value diff: 0.000250195821561
+((2, 3), 'south'), value diff: 4.69386577384e-08
+((2, 3), 'east'), value diff: 4.44830870254e-05
+((2, 4), 'north'), value diff: 0.000652880561035
+((2, 4), 'west'), value diff: 0.00146846838528
+((2, 4), 'south'), value diff: 0.000145115299942
+((2, 4), 'east'), value diff: 0.000145120648435
+((3, 0), 'exit'), value diff: 3.72529029846e-08
+((3, 1), 'north'), value diff: 7.94339384882e-05
+((3, 1), 'west'), value diff: 0.000250195821561
+((3, 1), 'south'), value diff: 4.69386577606e-07
+((3, 1), 'east'), value diff: 1.05913728472e-05
+((3, 3), 'north'), value diff: 0.000145120648435
+((3, 3), 'west'), value diff: 0.000145115299942
+((3, 3), 'south'), value diff: 4.44817291569e-05
+((3, 3), 'east'), value diff: 5.70304691827e-06
+((3, 4), 'north'), value diff: 0.000145120648435
+((3, 4), 'west'), value diff: 0.000391742165491
+((3, 4), 'south'), value diff: 2.48079146257e-05
+((3, 4), 'east'), value diff: 2.48082540928e-05
+((4, 0), 'exit'), value diff: 3.72529029846e-08
+((4, 1), 'north'), value diff: 9.05245542526e-07
+((4, 1), 'west'), value diff: 4.44830870254e-05
+((4, 1), 'south'), value diff: 4.69386577606e-07
+((4, 1), 'east'), value diff: 5.70304691827e-06
+((4, 2), 'exit'), value diff: 3.72529029846e-08
+((4, 3), 'north'), value diff: 2.48082540928e-05
+((4, 3), 'west'), value diff: 2.48079146257e-05
+((4, 3), 'south'), value diff: 4.69386577606e-07
+((4, 3), 'east'), value diff: 3.06274741746e-06
+((4, 4), 'north'), value diff: 2.48082540928e-05
+((4, 4), 'west'), value diff: 8.37238857985e-05
+((4, 4), 'south'), value diff: 3.06274741746e-06
+((4, 4), 'east'), value diff: 1.37823633848e-05
