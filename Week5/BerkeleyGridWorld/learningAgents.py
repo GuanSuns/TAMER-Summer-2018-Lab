@@ -84,6 +84,7 @@ class ValueEstimationAgent(Agent):
         """
         util.raiseNotDefined()
 
+
 class ReinforcementAgent(ValueEstimationAgent):
     """
       Abstract Reinforcemnt Agent: A ValueEstimationAgent

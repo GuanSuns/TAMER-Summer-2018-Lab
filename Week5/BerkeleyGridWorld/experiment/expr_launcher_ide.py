@@ -28,7 +28,7 @@ def run_expr():
     postfix += '_winSize' + str(window_size)
     postfix += '_speed' + str(display_speed)
 
-    log_dir = '/Users/lguan/Documents/Study/Research/Summer 2018/Week3/BerkeleyGridWorld/logs'
+    log_dir = '/Users/lguan/Documents/Study/Research/Summer 2018/experiment-logs'
     expr_saver = ExprCreaterAndResumer(rootdir=log_dir, postfix=postfix)
 
     # save experiment runner

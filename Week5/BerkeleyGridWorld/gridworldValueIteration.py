@@ -37,6 +37,8 @@ def runEpoch(agent, m_environment, f_display, f_message, f_pause
     for state in m_environment.getGridWorld().getNonTerminalStates():
         for action in m_environment.getPossibleActions(state):
             # set current state
+            if 'startEpisode' in dir(agent):
+                agent.startEpisode()
             m_environment.setCurrentState(state)
             # DISPLAY CURRENT STATE
             f_display(state)
@@ -75,7 +77,6 @@ class GridworldValueIterationExperiment():
 
         self.text_only = text_only
         self.display_speed = display_speed
-        self.n_episodes = n_episodes
         self.discount = discount
         self.delta = delta
         self.save_optimal_policy_file = save_optimal_policy_file
@@ -113,7 +114,7 @@ class GridworldValueIterationExperiment():
         import qlearningAgents
         # env.getPossibleActions, opts.discount, opts.learningRate, opts.epsilon
         # simulationFn = lambda agent, state: simulation.GridworldSimulation(agent,state,mdp)
-        self.gridWorldEnv = GridworldEnvironment(self.mdp)
+        self.gridWorldEnv = gridworld.GridworldEnvironment(self.mdp)
         action_function = lambda state: self.mdp.getPossibleActions(state)
         q_learn_opts = {
             'gamma': discount,
@@ -139,11 +140,6 @@ class GridworldValueIterationExperiment():
         # FIGURE OUT WHETHER TO WAIT FOR A KEY PRESS AFTER EACH TIME STEP
         pause_callback = lambda: None
 
-        # RUN EPISODES
-        if self.n_episodes > 0:
-            print
-            print "RUNNING", self.n_episodes, "EPISODES"
-            print
         total_steps = 0
         i_epoch = 0
         is_converged = False
