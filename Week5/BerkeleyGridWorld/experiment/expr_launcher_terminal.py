@@ -10,8 +10,8 @@ from ..input import user_input
 
 def run_expr():
     # agent parameters
-    is_use_q_agent = False  # use qAgent or use Tamer agent
-    alpha = 0.1     # learning rate
+    is_use_q_agent = True  # use qAgent or use Tamer agent
+    alpha = 0.5     # learning rate
     epsilon = 0.0   # exploration rate
     window_size = 1     # Tamer agent window size
     max_n_experience = 2000     # Tamer agent maximum number of experiences
@@ -22,7 +22,7 @@ def run_expr():
     display_speed = 2.0
 
     # experiment parameters
-    delta = 0.02
+    delta = 0.001
     check_policy_converge = False
     check_value_converge = True
 

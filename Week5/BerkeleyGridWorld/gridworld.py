@@ -89,7 +89,7 @@ class Gridworld(mdp.MarkovDecisionProcess):
         states = list()
         for x in range(self.grid.width):
             for y in range(self.grid.height):
-                if self.grid[x][y] == 'S' or self.grid[x][y] == ' ':
+                if self.grid[x][y] != '#':
                     state = (x, y)
                     states.append(state)
         return states
@@ -210,6 +210,9 @@ class GridworldEnvironment(environment.Environment):
 
     def getCurrentState(self):
         return self.state
+
+    def setCurrentState(self, state):
+        self.state = state
 
     def getPossibleActions(self, state):
         return self.gridWorld.getPossibleActions(state)
@@ -449,27 +452,15 @@ def parseOptions():
     return m_opts
 
 
-def isQValuesConverged(m_environment, old_qValues, new_qValues, delta=0.02):
-    """ check if the qValues have converged """
-    states = m_environment.getGridWorld().getNonTerminalStates()
-    # iterate through all the non-terminal states
-    for state in states:
-        for action in m_environment.getPossibleActions(state):
-            diff = math.fabs(float(old_qValues[(state, action)]) - float(new_qValues[(state, action)]))
-            if diff > delta:
-                return False
-    return True
-
-
 def runEpisode(agent, m_environment, discount, f_decision
                , f_display, f_message, f_pause, i_episode
                , user_input_module=None, global_step=0
                , check_value_converge=False
-               , check_policy_converge=True
+               , old_qValues=None
+               , check_policy_converge=False
                , optimal_policy=None
                , delta=0.02):
     is_converge = False
-    old_qValues = None
     episode_rewards = 0
     episode_step = 0
     totalDiscount = 1.0
@@ -495,19 +486,6 @@ def runEpisode(agent, m_environment, discount, f_decision
                 f_message("Receive Negative (-1) human signal\n")
                 agent.receiveHumanSignal(human_signal=-1)
 
-        # Check if the Q-Values have converged
-        if episode_step != 0 \
-                and agent.getAgentType() == 'qLearningAgent' \
-                and check_value_converge:
-            if isQValuesConverged(m_environment, old_qValues, new_qValues=agent.getQValues(), delta=delta):
-                is_converge = True
-                f_message("--------------------------------")
-                f_message("The Q-Values have converged\n")
-                f_message("TOTAL STEPS: " + str(global_step) + ", EPISODE STEPS: " + str(episode_step))
-                f_message("Learned QValue: " + str(agent.getQValues()) + "\n")
-                f_message("--------------------------------")
-                return (episode_rewards, global_step, is_converge)
-
         # END IF IN A TERMINAL STATE
         actions = m_environment.getPossibleActions(state)
         if len(actions) == 0:
@@ -515,7 +493,21 @@ def runEpisode(agent, m_environment, discount, f_decision
             f_message("EPISODE " + str(i_episode) + " COMPLETE: RETURN WAS " + str(episode_rewards) + "\n")
             f_message("TOTAL STEPS: " + str(global_step) + ", EPISODE STEPS: " + str(episode_step))
             f_message("Learned QValue: " + str(agent.getQValues()) + "\n")
-            f_message("--------------------------------")
+            f_message("--------------------------------\n")
+
+            # Check if the Q-Values have converged
+            if episode_step != 0 \
+                    and agent.getAgentType() == 'qLearningAgent' \
+                    and check_value_converge:
+                if isQValuesConverged(m_environment, old_qValues, new_qValues=agent.getQValues(), delta=delta):
+                    is_converge = True
+                    f_message("##################################")
+                    f_message("The Q-Values have converged\n")
+                    f_message("TOTAL STEPS: " + str(global_step) + ", EPISODE STEPS: " + str(episode_step))
+                    f_message("##################################")
+                    f_message("Learned QValue: " + str(agent.getQValues()) + "\n")
+                    f_message("##################################")
+
             return (episode_rewards, global_step, is_converge)
 
         # GET ACTION (USUALLY FROM AGENT)
@@ -530,9 +522,6 @@ def runEpisode(agent, m_environment, discount, f_decision
                   ", A: " + str(action) +
                   ", S': " + str(nextState) +
                   ", R: " + str(reward) + "\n")
-
-        # Save the old qValues
-        old_qValues = agent.getQValuesCopy()
 
         # UPDATE LEARNER
         if 'observeTransition' in dir(agent):
@@ -555,7 +544,7 @@ class TamerGridWorldExperiment():
                  , grid_size=150, text_only=False, n_episodes=100
                  , agent_window_size=1, agent_max_n_experiences=1000
                  , check_value_converge=False
-                 , check_policy_converge=True
+                 , check_policy_converge=False
                  , optimal_policy=None
                  , delta=0.02
                  , is_use_q_agent=False

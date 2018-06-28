@@ -77,7 +77,7 @@ class QLearningAgent(ReinforcementAgent):
         if len(actions) == 0:
             return 0
 
-        maxQValue = -9999999
+        maxQValue = float("-inf")
         for action in actions:
             qValue = self.getQValue(state, action)
             if qValue > maxQValue:
