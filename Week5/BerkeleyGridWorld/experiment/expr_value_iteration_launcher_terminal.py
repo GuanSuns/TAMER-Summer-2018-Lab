@@ -28,7 +28,7 @@ def run_expr():
     expr_saver = ExprCreaterAndResumer(rootdir=root_dir, postfix=postfix)
 
     log_dir = expr_saver.getLogDir()
-    fqValues = log_dir + '/optimal_qValues.json'
+    fqValues = log_dir + '/converged_qValues.json'
 
     # save experiment runner
     expr_saver.dump_src_code_and_model_def(fname=__file__)
