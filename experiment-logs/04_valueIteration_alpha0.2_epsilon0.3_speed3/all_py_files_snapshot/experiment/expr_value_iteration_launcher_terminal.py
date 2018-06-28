@@ -9,7 +9,7 @@ from .. import gridworldValueIteration
 
 def run_expr():
     # agent parameters
-    alpha = 0.5     # learning rate
+    alpha = 0.2     # learning rate
     epsilon = 0.3   # exploration rate
 
     # learning environment parameters

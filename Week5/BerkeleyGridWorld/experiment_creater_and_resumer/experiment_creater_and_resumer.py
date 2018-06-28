@@ -22,6 +22,9 @@ class ExprCreaterAndResumer:
         self.logfile = open(self.dir + "/log.txt", 'a', 0)  # no buffer
         self.redirect_output_to_logfile_as_well()
 
+    def getLogDir(self):
+        return self.dir
+
     def redirect_output_to_logfile_as_well(self):
         class Logger(object):
             def __init__(self, logfile):
