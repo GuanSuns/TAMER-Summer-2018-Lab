@@ -721,6 +721,8 @@ class TamerGridWorldExperiment():
             print
             print
 
+        print(policy_converge_ratios)
+
         # DISPLAY POST-LEARNING VALUES / Q-VALUES
         try:
             self.display.displayQValues(self.agent, message="Q-VALUES AFTER " + str(self.n_episodes) + " EPISODES")
