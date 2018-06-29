@@ -19,7 +19,7 @@ def run_expr():
     is_asyn = False      # whether to receive input asynchronously
 
     # learning environment parameters
-    n_episodes = 100
+    n_episodes = 5000
     display_speed = 2.0
 
     # experiment parameters

@@ -1,0 +1,2686 @@
+
+RUNNING 5000 EPISODES
+
+BEGINNING EPISODE: 1
+
+Current Policy Convergence Ratio: 0.454545
+Step: 0, S: (3, 1), A: west, S': (2, 1), R: 0.0
+
+Current Policy Convergence Ratio: 0.454545
+Step: 1, S: (2, 1), A: west, S': (1, 1), R: 0.0
+
+Current Policy Convergence Ratio: 0.454545
+Step: 2, S: (1, 1), A: west, S': (0, 1), R: 0.0
+
+Current Policy Convergence Ratio: 0.363636
+Step: 3, S: (0, 1), A: north, S': (0, 2), R: 0.0
+
+Current Policy Convergence Ratio: 0.363636
+Step: 4, S: (0, 2), A: east, S': (0, 2), R: 0.0
+
+Current Policy Convergence Ratio: 0.545455
+Step: 5, S: (0, 2), A: north, S': (0, 3), R: 0.0
+
+Current Policy Convergence Ratio: 0.636364
+Step: 6, S: (0, 3), A: north, S': (0, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.318182
+Step: 7, S: (0, 4), A: south, S': (0, 3), R: 0.0
+
+Current Policy Convergence Ratio: 0.500000
+Step: 8, S: (0, 3), A: south, S': (0, 2), R: 0.0
+
+Current Policy Convergence Ratio: 0.409091
+Step: 9, S: (0, 2), A: east, S': (0, 2), R: 0.0
+
+Current Policy Convergence Ratio: 0.590909
+Step: 10, S: (0, 2), A: east, S': (0, 2), R: 0.0
+
+Current Policy Convergence Ratio: 0.409091
+Step: 11, S: (0, 2), A: south, S': (0, 1), R: 0.0
+
+Current Policy Convergence Ratio: 0.454545
+Step: 12, S: (0, 1), A: east, S': (1, 1), R: 0.0
+
+Current Policy Convergence Ratio: 0.454545
+Step: 13, S: (1, 1), A: south, S': (1, 0), R: 0.0
+
+Current Policy Convergence Ratio: 0.500000
+Step: 14, S: (1, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+Current Policy Convergence Ratio: 0.636364
+--------------------------------
+EPISODE 1 COMPLETE: RETURN WAS -2.2876792455
+
+TOTAL STEPS: 15, EPISODE STEPS: 15
+Learned QValue: {((0, 1), 'east'): 0.0, ((4, 4), 'south'): 0, ((0, 2), 'south'): 0.0, ((0, 2), 'west'): 0, ((3, 1), 'west'): 0.0, ((2, 0), 'exit'): 0, ((2, 1), 'east'): 0, ((4, 0), 'exit'): 0, ((2, 3), 'west'): 0, ((0, 3), 'north'): 0.0, ((4, 2), 'exit'): 0, ((2, 4), 'east'): 0, ((0, 1), 'south'): 0, ((2, 3), 'east'): 0, ((0, 2), 'east'): 0.0, ((3, 3), 'south'): 0, ((3, 3), 'north'): 0, ((3, 4), 'north'): 0, ((4, 4), 'north'): 0, ((4, 1), 'south'): 0, ((2, 1), 'south'): 0, ((2, 2), 'exit'): 0, ((0, 3), 'west'): 0, ((2, 4), 'south'): 0, ((4, 4), 'east'): 0, ((3, 4), 'east'): 0, ((1, 4), 'north'): 0, ((0, 2), 'north'): 0.0, ((2, 3), 'north'): 0, ((3, 3), 'west'): 0, ((4, 4), 'west'): 0, ((0, 3), 'east'): 0, ((1, 0), 'exit'): -5.0, ((3, 1), 'south'): 0, ((2, 4), 'north'): 0, ((1, 1), 'south'): 0.0, ((1, 1), 'west'): 0.0, ((3, 3), 'east'): 0, ((0, 0), 'exit'): 0, ((2, 3), 'south'): 0, ((3, 0), 'exit'): 0, ((1, 4), 'east'): 0, ((4, 3), 'west'): 0, ((4, 1), 'north'): 0, ((0, 1), 'north'): 0.0, ((2, 4), 'west'): 0, ((1, 4), 'west'): 0, ((1, 1), 'east'): 0, ((0, 4), 'north'): 0, ((2, 1), 'west'): 0.0, ((0, 4), 'south'): 0.0, ((3, 4), 'west'): 0, ((3, 1), 'north'): 0, ((3, 4), 'south'): 0, ((1, 4), 'south'): 0, ((4, 3), 'east'): 0, ((4, 1), 'west'): 0, ((0, 4), 'west'): 0, ((4, 3), 'north'): 0, ((0, 3), 'south'): 0.0, ((3, 1), 'east'): 0, ((4, 1), 'east'): 0, ((0, 1), 'west'): 0, ((0, 4), 'east'): 0, ((1, 1), 'north'): 0, ((2, 1), 'north'): 0, ((4, 3), 'south'): 0}
+
+--------------------------------
+
+State:(0, 0), optimal:exit, current:exit
+State:(0, 1), optimal:east, current:south
+State:(0, 2), optimal:south, current:south
+State:(0, 3), optimal:north, current:north
+State:(0, 4), optimal:east, current:east
+State:(1, 0), optimal:exit, current:exit
+State:(1, 1), optimal:east, current:north
+State:(1, 4), optimal:east, current:east
+State:(2, 0), optimal:exit, current:exit
+State:(2, 1), optimal:east, current:east
+State:(2, 2), optimal:exit, current:exit
+State:(2, 3), optimal:east, current:south
+State:(2, 4), optimal:south, current:west
+State:(3, 0), optimal:exit, current:exit
+State:(3, 1), optimal:east, current:east
+State:(3, 3), optimal:east, current:south
+State:(3, 4), optimal:south, current:east
+State:(4, 0), optimal:exit, current:exit
+State:(4, 1), optimal:north, current:south
+State:(4, 2), optimal:exit, current:exit
+State:(4, 3), optimal:south, current:west
+State:(4, 4), optimal:south, current:south
+################################
+Current Policy Convergence Ratio: 0.636364
+################################
+
+BEGINNING EPISODE: 2
+
+Current Policy Convergence Ratio: 0.545455
+Step: 0, S: (0, 3), A: east, S': (0, 3), R: 0.0
+
+Current Policy Convergence Ratio: 0.500000
+Step: 1, S: (0, 3), A: east, S': (0, 3), R: 0.0
+
+Current Policy Convergence Ratio: 0.409091
+Step: 2, S: (0, 3), A: south, S': (0, 2), R: 0.0
+
+Current Policy Convergence Ratio: 0.500000
+Step: 3, S: (0, 2), A: north, S': (0, 3), R: 0.0
+
+Current Policy Convergence Ratio: 0.454545
+Step: 4, S: (0, 3), A: west, S': (0, 3), R: 0.0
+
+Current Policy Convergence Ratio: 0.409091
+Step: 5, S: (0, 3), A: north, S': (0, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.500000
+Step: 6, S: (0, 4), A: north, S': (0, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.454545
+Step: 7, S: (0, 4), A: north, S': (0, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.454545
+Step: 8, S: (0, 4), A: north, S': (0, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.590909
+Step: 9, S: (0, 4), A: south, S': (0, 3), R: 0.0
+
+Current Policy Convergence Ratio: 0.454545
+Step: 10, S: (0, 3), A: north, S': (0, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.500000
+Step: 11, S: (0, 4), A: north, S': (0, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.500000
+Step: 12, S: (0, 4), A: east, S': (1, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.454545
+Step: 13, S: (1, 4), A: south, S': (1, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.454545
+Step: 14, S: (1, 4), A: west, S': (0, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.454545
+Step: 15, S: (0, 4), A: east, S': (1, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.500000
+Step: 16, S: (1, 4), A: north, S': (1, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.590909
+Step: 17, S: (1, 4), A: west, S': (0, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.500000
+Step: 18, S: (0, 4), A: east, S': (1, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.590909
+Step: 19, S: (1, 4), A: east, S': (2, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.454545
+Step: 20, S: (2, 4), A: south, S': (2, 3), R: 0.0
+
+Current Policy Convergence Ratio: 0.409091
+Step: 21, S: (2, 3), A: south, S': (2, 2), R: 0.0
+
+Current Policy Convergence Ratio: 0.500000
+Step: 22, S: (2, 2), A: exit, S': TERMINAL_STATE, R: 1
+
+Current Policy Convergence Ratio: 0.363636
+--------------------------------
+EPISODE 2 COMPLETE: RETURN WAS 0.0984770902184
+
+TOTAL STEPS: 38, EPISODE STEPS: 23
+Learned QValue: {((0, 1), 'east'): 0.0, ((4, 4), 'south'): 0, ((0, 2), 'south'): 0.0, ((0, 2), 'west'): 0, ((3, 1), 'west'): 0.0, ((2, 0), 'exit'): 0, ((2, 1), 'east'): 0, ((4, 0), 'exit'): 0, ((2, 3), 'west'): 0, ((0, 3), 'north'): 0.0, ((4, 2), 'exit'): 0, ((2, 4), 'east'): 0, ((0, 1), 'south'): 0, ((2, 3), 'east'): 0, ((0, 2), 'east'): 0.0, ((3, 3), 'south'): 0, ((3, 3), 'north'): 0, ((3, 4), 'north'): 0, ((4, 4), 'north'): 0, ((4, 1), 'south'): 0, ((2, 1), 'south'): 0, ((2, 2), 'exit'): 0.5, ((0, 3), 'west'): 0.0, ((2, 4), 'south'): 0.0, ((4, 4), 'east'): 0, ((3, 4), 'east'): 0, ((1, 4), 'north'): 0.0, ((0, 2), 'north'): 0.0, ((2, 3), 'north'): 0, ((3, 3), 'west'): 0, ((4, 4), 'west'): 0, ((0, 3), 'east'): 0.0, ((1, 0), 'exit'): -5.0, ((3, 1), 'south'): 0, ((2, 4), 'north'): 0, ((1, 1), 'south'): 0.0, ((1, 1), 'west'): 0.0, ((3, 3), 'east'): 0, ((0, 0), 'exit'): 0, ((2, 3), 'south'): 0.0, ((3, 0), 'exit'): 0, ((1, 4), 'east'): 0.0, ((4, 3), 'west'): 0, ((4, 1), 'north'): 0, ((0, 1), 'north'): 0.0, ((2, 4), 'west'): 0, ((1, 4), 'west'): 0.0, ((1, 1), 'east'): 0, ((0, 4), 'north'): 0.0, ((2, 1), 'west'): 0.0, ((0, 4), 'south'): 0.0, ((3, 4), 'west'): 0, ((3, 1), 'north'): 0, ((3, 4), 'south'): 0, ((1, 4), 'south'): 0.0, ((4, 3), 'east'): 0, ((4, 1), 'west'): 0, ((0, 4), 'west'): 0, ((4, 3), 'north'): 0, ((0, 3), 'south'): 0.0, ((3, 1), 'east'): 0, ((4, 1), 'east'): 0, ((0, 1), 'west'): 0, ((0, 4), 'east'): 0.0, ((1, 1), 'north'): 0, ((2, 1), 'north'): 0, ((4, 3), 'south'): 0}
+
+--------------------------------
+
+State:(0, 0), optimal:exit, current:exit
+State:(0, 1), optimal:east, current:north
+State:(0, 2), optimal:south, current:west
+State:(0, 3), optimal:north, current:north
+State:(0, 4), optimal:east, current:west
+State:(1, 0), optimal:exit, current:exit
+State:(1, 1), optimal:east, current:east
+State:(1, 4), optimal:east, current:north
+State:(2, 0), optimal:exit, current:exit
+State:(2, 1), optimal:east, current:east
+State:(2, 2), optimal:exit, current:exit
+State:(2, 3), optimal:east, current:west
+State:(2, 4), optimal:south, current:south
+State:(3, 0), optimal:exit, current:exit
+State:(3, 1), optimal:east, current:south
+State:(3, 3), optimal:east, current:north
+State:(3, 4), optimal:south, current:west
+State:(4, 0), optimal:exit, current:exit
+State:(4, 1), optimal:north, current:west
+State:(4, 2), optimal:exit, current:exit
+State:(4, 3), optimal:south, current:south
+State:(4, 4), optimal:south, current:south
+################################
+Current Policy Convergence Ratio: 0.590909
+################################
+
+BEGINNING EPISODE: 3
+
+Current Policy Convergence Ratio: 0.500000
+Step: 0, S: (3, 3), A: east, S': (4, 3), R: 0.0
+
+Current Policy Convergence Ratio: 0.454545
+Step: 1, S: (4, 3), A: west, S': (3, 3), R: 0.0
+
+Current Policy Convergence Ratio: 0.454545
+Step: 2, S: (3, 3), A: north, S': (3, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.500000
+Step: 3, S: (3, 4), A: west, S': (2, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.409091
+Step: 4, S: (2, 4), A: west, S': (1, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.590909
+Step: 5, S: (1, 4), A: south, S': (1, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.454545
+Step: 6, S: (1, 4), A: north, S': (1, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.500000
+Step: 7, S: (1, 4), A: north, S': (1, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.409091
+Step: 8, S: (1, 4), A: north, S': (1, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.454545
+Step: 9, S: (1, 4), A: north, S': (1, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.454545
+Step: 10, S: (1, 4), A: north, S': (1, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.545455
+Step: 11, S: (1, 4), A: west, S': (0, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.500000
+Step: 12, S: (0, 4), A: south, S': (0, 3), R: 0.0
+
+Current Policy Convergence Ratio: 0.500000
+Step: 13, S: (0, 3), A: north, S': (0, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.545455
+Step: 14, S: (0, 4), A: east, S': (1, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.454545
+Step: 15, S: (1, 4), A: north, S': (1, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.454545
+Step: 16, S: (1, 4), A: east, S': (2, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.454545
+Step: 17, S: (2, 4), A: east, S': (3, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.545455
+Step: 18, S: (3, 4), A: east, S': (4, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.545455
+Step: 19, S: (4, 4), A: east, S': (4, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.636364
+Step: 20, S: (4, 4), A: east, S': (4, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.500000
+Step: 21, S: (4, 4), A: east, S': (4, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.454545
+Step: 22, S: (4, 4), A: east, S': (4, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.590909
+Step: 23, S: (4, 4), A: east, S': (4, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.363636
+Step: 24, S: (4, 4), A: north, S': (4, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.545455
+Step: 25, S: (4, 4), A: west, S': (3, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.500000
+Step: 26, S: (3, 4), A: east, S': (4, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.636364
+Step: 27, S: (4, 4), A: north, S': (4, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.500000
+Step: 28, S: (4, 4), A: west, S': (3, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.409091
+Step: 29, S: (3, 4), A: north, S': (3, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.500000
+Step: 30, S: (3, 4), A: south, S': (3, 3), R: 0.0
+
+Current Policy Convergence Ratio: 0.500000
+Step: 31, S: (3, 3), A: north, S': (3, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.363636
+Step: 32, S: (3, 4), A: north, S': (3, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.590909
+Step: 33, S: (3, 4), A: east, S': (4, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.454545
+Step: 34, S: (4, 4), A: south, S': (4, 3), R: 0.0
+
+Current Policy Convergence Ratio: 0.454545
+Step: 35, S: (4, 3), A: south, S': (4, 2), R: 0.0
+
+Current Policy Convergence Ratio: 0.545455
+Step: 36, S: (4, 2), A: exit, S': TERMINAL_STATE, R: 10
+
+Current Policy Convergence Ratio: 0.590909
+--------------------------------
+EPISODE 3 COMPLETE: RETURN WAS 0.225283995449
+
+TOTAL STEPS: 75, EPISODE STEPS: 37
+Learned QValue: {((0, 1), 'east'): 0.0, ((4, 4), 'south'): 0.0, ((0, 2), 'south'): 0.0, ((0, 2), 'west'): 0, ((3, 1), 'west'): 0.0, ((2, 0), 'exit'): 0, ((2, 1), 'east'): 0, ((4, 0), 'exit'): 0, ((2, 3), 'west'): 0, ((0, 3), 'north'): 0.0, ((4, 2), 'exit'): 5.0, ((2, 4), 'east'): 0.0, ((0, 1), 'south'): 0, ((2, 3), 'east'): 0, ((0, 2), 'east'): 0.0, ((3, 3), 'south'): 0, ((3, 3), 'north'): 0.0, ((3, 4), 'north'): 0.0, ((4, 4), 'north'): 0.0, ((4, 1), 'south'): 0, ((2, 1), 'south'): 0, ((2, 2), 'exit'): 0.5, ((0, 3), 'west'): 0.0, ((2, 4), 'south'): 0.0, ((4, 4), 'east'): 0.0, ((3, 4), 'east'): 0.0, ((1, 4), 'north'): 0.0, ((0, 2), 'north'): 0.0, ((2, 3), 'north'): 0, ((3, 3), 'west'): 0, ((4, 4), 'west'): 0.0, ((0, 3), 'east'): 0.0, ((1, 0), 'exit'): -5.0, ((3, 1), 'south'): 0, ((2, 4), 'north'): 0, ((1, 1), 'south'): 0.0, ((1, 1), 'west'): 0.0, ((3, 3), 'east'): 0.0, ((0, 0), 'exit'): 0, ((2, 3), 'south'): 0.0, ((3, 0), 'exit'): 0, ((1, 4), 'east'): 0.0, ((4, 3), 'west'): 0.0, ((4, 1), 'north'): 0, ((0, 1), 'north'): 0.0, ((2, 4), 'west'): 0.0, ((1, 4), 'west'): 0.0, ((1, 1), 'east'): 0, ((0, 4), 'north'): 0.0, ((2, 1), 'west'): 0.0, ((0, 4), 'south'): 0.0, ((3, 4), 'west'): 0.0, ((3, 1), 'north'): 0, ((3, 4), 'south'): 0.0, ((1, 4), 'south'): 0.0, ((4, 3), 'east'): 0, ((4, 1), 'west'): 0, ((0, 4), 'west'): 0, ((4, 3), 'north'): 0, ((0, 3), 'south'): 0.0, ((3, 1), 'east'): 0, ((4, 1), 'east'): 0, ((0, 1), 'west'): 0, ((0, 4), 'east'): 0.0, ((1, 1), 'north'): 0, ((2, 1), 'north'): 0, ((4, 3), 'south'): 0.0}
+
+--------------------------------
+
+State:(0, 0), optimal:exit, current:exit
+State:(0, 1), optimal:east, current:west
+State:(0, 2), optimal:south, current:south
+State:(0, 3), optimal:north, current:east
+State:(0, 4), optimal:east, current:west
+State:(1, 0), optimal:exit, current:exit
+State:(1, 1), optimal:east, current:east
+State:(1, 4), optimal:east, current:west
+State:(2, 0), optimal:exit, current:exit
+State:(2, 1), optimal:east, current:east
+State:(2, 2), optimal:exit, current:exit
+State:(2, 3), optimal:east, current:east
+State:(2, 4), optimal:south, current:west
+State:(3, 0), optimal:exit, current:exit
+State:(3, 1), optimal:east, current:west
+State:(3, 3), optimal:east, current:west
+State:(3, 4), optimal:south, current:north
+State:(4, 0), optimal:exit, current:exit
+State:(4, 1), optimal:north, current:north
+State:(4, 2), optimal:exit, current:exit
+State:(4, 3), optimal:south, current:south
+State:(4, 4), optimal:south, current:west
+################################
+Current Policy Convergence Ratio: 0.590909
+################################
+
+BEGINNING EPISODE: 4
+
+Current Policy Convergence Ratio: 0.363636
+Step: 0, S: (4, 3), A: north, S': (4, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.545455
+Step: 1, S: (4, 4), A: east, S': (4, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.454545
+Step: 2, S: (4, 4), A: west, S': (3, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.545455
+Step: 3, S: (3, 4), A: west, S': (2, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.363636
+Step: 4, S: (2, 4), A: east, S': (3, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.454545
+Step: 5, S: (3, 4), A: west, S': (2, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.454545
+Step: 6, S: (2, 4), A: north, S': (2, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.500000
+Step: 7, S: (2, 4), A: east, S': (3, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.590909
+Step: 8, S: (3, 4), A: east, S': (4, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.590909
+Step: 9, S: (4, 4), A: east, S': (4, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.454545
+Step: 10, S: (4, 4), A: west, S': (3, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.454545
+Step: 11, S: (3, 4), A: west, S': (2, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.545455
+Step: 12, S: (2, 4), A: west, S': (1, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.409091
+Step: 13, S: (1, 4), A: south, S': (1, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.409091
+Step: 14, S: (1, 4), A: south, S': (1, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.409091
+Step: 15, S: (1, 4), A: north, S': (1, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.409091
+Step: 16, S: (1, 4), A: south, S': (1, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.454545
+Step: 17, S: (1, 4), A: east, S': (2, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.454545
+Step: 18, S: (2, 4), A: east, S': (3, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.545455
+Step: 19, S: (3, 4), A: west, S': (2, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.363636
+Step: 20, S: (2, 4), A: east, S': (3, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.409091
+Step: 21, S: (3, 4), A: south, S': (3, 3), R: 0.0
+
+Current Policy Convergence Ratio: 0.500000
+Step: 22, S: (3, 3), A: north, S': (3, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.454545
+Step: 23, S: (3, 4), A: west, S': (2, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.590909
+Step: 24, S: (2, 4), A: west, S': (1, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.409091
+Step: 25, S: (1, 4), A: east, S': (2, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.636364
+Step: 26, S: (2, 4), A: west, S': (1, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.545455
+Step: 27, S: (1, 4), A: west, S': (0, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.454545
+Step: 28, S: (0, 4), A: east, S': (1, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.500000
+Step: 29, S: (1, 4), A: west, S': (0, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.500000
+Step: 30, S: (0, 4), A: north, S': (0, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.545455
+Step: 31, S: (0, 4), A: north, S': (0, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.590909
+Step: 32, S: (0, 4), A: west, S': (0, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.590909
+Step: 33, S: (0, 4), A: north, S': (0, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.545455
+Step: 34, S: (0, 4), A: north, S': (0, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.500000
+Step: 35, S: (0, 4), A: north, S': (0, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.590909
+Step: 36, S: (0, 4), A: west, S': (0, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.454545
+Step: 37, S: (0, 4), A: north, S': (0, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.454545
+Step: 38, S: (0, 4), A: east, S': (1, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.545455
+Step: 39, S: (1, 4), A: west, S': (0, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.409091
+Step: 40, S: (0, 4), A: east, S': (1, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.409091
+Step: 41, S: (1, 4), A: south, S': (1, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.545455
+Step: 42, S: (1, 4), A: west, S': (0, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.500000
+Step: 43, S: (0, 4), A: east, S': (1, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.409091
+Step: 44, S: (1, 4), A: north, S': (1, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.500000
+Step: 45, S: (1, 4), A: south, S': (1, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.500000
+Step: 46, S: (1, 4), A: west, S': (0, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.409091
+Step: 47, S: (0, 4), A: west, S': (0, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.454545
+Step: 48, S: (0, 4), A: east, S': (1, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.500000
+Step: 49, S: (1, 4), A: south, S': (1, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.500000
+Step: 50, S: (1, 4), A: south, S': (1, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.545455
+Step: 51, S: (1, 4), A: north, S': (1, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.500000
+Step: 52, S: (1, 4), A: north, S': (1, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.545455
+Step: 53, S: (1, 4), A: west, S': (0, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.545455
+Step: 54, S: (0, 4), A: north, S': (0, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.409091
+Step: 55, S: (0, 4), A: east, S': (1, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.590909
+Step: 56, S: (1, 4), A: east, S': (2, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.545455
+Step: 57, S: (2, 4), A: north, S': (2, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.545455
+Step: 58, S: (2, 4), A: west, S': (1, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.454545
+Step: 59, S: (1, 4), A: east, S': (2, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.454545
+Step: 60, S: (2, 4), A: north, S': (2, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.363636
+Step: 61, S: (2, 4), A: west, S': (1, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.636364
+Step: 62, S: (1, 4), A: north, S': (1, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.454545
+Step: 63, S: (1, 4), A: east, S': (2, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.500000
+Step: 64, S: (2, 4), A: east, S': (3, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.454545
+Step: 65, S: (3, 4), A: north, S': (3, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.500000
+Step: 66, S: (3, 4), A: north, S': (3, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.500000
+Step: 67, S: (3, 4), A: south, S': (3, 3), R: 0.0
+
+Current Policy Convergence Ratio: 0.363636
+Step: 68, S: (3, 3), A: north, S': (3, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.500000
+Step: 69, S: (3, 4), A: east, S': (4, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.409091
+Step: 70, S: (4, 4), A: north, S': (4, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.409091
+Step: 71, S: (4, 4), A: east, S': (4, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.409091
+Step: 72, S: (4, 4), A: south, S': (4, 3), R: 0.0
+
+Current Policy Convergence Ratio: 0.454545
+Step: 73, S: (4, 3), A: east, S': (4, 3), R: 0.0
+
+Current Policy Convergence Ratio: 0.590909
+Step: 74, S: (4, 3), A: south, S': (4, 2), R: 0.0
+
+Current Policy Convergence Ratio: 0.545455
+Step: 75, S: (4, 2), A: exit, S': TERMINAL_STATE, R: 10
+
+Current Policy Convergence Ratio: 0.500000
+--------------------------------
+EPISODE 4 COMPLETE: RETURN WAS 0.00369988485035
+
+TOTAL STEPS: 151, EPISODE STEPS: 76
+Learned QValue: {((0, 1), 'east'): 0.0, ((4, 4), 'south'): 0.0, ((0, 2), 'south'): 0.0, ((0, 2), 'west'): 0, ((3, 1), 'west'): 0.0, ((2, 0), 'exit'): 0, ((2, 1), 'east'): 0, ((4, 0), 'exit'): 0, ((2, 3), 'west'): 0, ((0, 3), 'north'): 0.0, ((4, 2), 'exit'): 7.5, ((2, 4), 'east'): 0.0, ((0, 1), 'south'): 0, ((2, 3), 'east'): 0, ((0, 2), 'east'): 0.0, ((3, 3), 'south'): 0, ((3, 3), 'north'): 0.0, ((3, 4), 'north'): 0.0, ((4, 4), 'north'): 0.0, ((4, 1), 'south'): 0, ((2, 1), 'south'): 0, ((2, 2), 'exit'): 0.5, ((0, 3), 'west'): 0.0, ((2, 4), 'south'): 0.0, ((4, 4), 'east'): 0.0, ((3, 4), 'east'): 0.0, ((1, 4), 'north'): 0.0, ((0, 2), 'north'): 0.0, ((2, 3), 'north'): 0, ((3, 3), 'west'): 0, ((4, 4), 'west'): 0.0, ((0, 3), 'east'): 0.0, ((1, 0), 'exit'): -5.0, ((3, 1), 'south'): 0, ((2, 4), 'north'): 0.0, ((1, 1), 'south'): 0.0, ((1, 1), 'west'): 0.0, ((3, 3), 'east'): 0.0, ((0, 0), 'exit'): 0, ((2, 3), 'south'): 0.0, ((3, 0), 'exit'): 0, ((1, 4), 'east'): 0.0, ((4, 3), 'west'): 0.0, ((4, 1), 'north'): 0, ((0, 1), 'north'): 0.0, ((2, 4), 'west'): 0.0, ((1, 4), 'west'): 0.0, ((1, 1), 'east'): 0, ((0, 4), 'north'): 0.0, ((2, 1), 'west'): 0.0, ((0, 4), 'south'): 0.0, ((3, 4), 'west'): 0.0, ((3, 1), 'north'): 0, ((3, 4), 'south'): 0.0, ((1, 4), 'south'): 0.0, ((4, 3), 'east'): 0.0, ((4, 1), 'west'): 0, ((0, 4), 'west'): 0.0, ((4, 3), 'north'): 0.0, ((0, 3), 'south'): 0.0, ((3, 1), 'east'): 0, ((4, 1), 'east'): 0, ((0, 1), 'west'): 0, ((0, 4), 'east'): 0.0, ((1, 1), 'north'): 0, ((2, 1), 'north'): 0, ((4, 3), 'south'): 2.25}
+
+--------------------------------
+
+State:(0, 0), optimal:exit, current:exit
+State:(0, 1), optimal:east, current:north
+State:(0, 2), optimal:south, current:south
+State:(0, 3), optimal:south, current:west
+State:(0, 4), optimal:east, current:east
+State:(1, 0), optimal:exit, current:exit
+State:(1, 1), optimal:east, current:east
+State:(1, 4), optimal:east, current:west
+State:(2, 0), optimal:exit, current:exit
+State:(2, 1), optimal:east, current:north
+State:(2, 2), optimal:exit, current:exit
+State:(2, 3), optimal:east, current:east
+State:(2, 4), optimal:south, current:south
+State:(3, 0), optimal:exit, current:exit
+State:(3, 1), optimal:east, current:east
+State:(3, 3), optimal:east, current:west
+State:(3, 4), optimal:south, current:west
+State:(4, 0), optimal:exit, current:exit
+State:(4, 1), optimal:north, current:west
+State:(4, 2), optimal:exit, current:exit
+State:(4, 3), optimal:south, current:south
+State:(4, 4), optimal:south, current:west
+################################
+Current Policy Convergence Ratio: 0.636364
+################################
+
+BEGINNING EPISODE: 5
+
+Current Policy Convergence Ratio: 0.454545
+Step: 0, S: (0, 1), A: east, S': (1, 1), R: 0.0
+
+Current Policy Convergence Ratio: 0.545455
+Step: 1, S: (1, 1), A: south, S': (1, 0), R: 0.0
+
+Current Policy Convergence Ratio: 0.500000
+Step: 2, S: (1, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+Current Policy Convergence Ratio: 0.545455
+--------------------------------
+EPISODE 5 COMPLETE: RETURN WAS -8.1
+
+TOTAL STEPS: 154, EPISODE STEPS: 3
+Learned QValue: {((0, 1), 'east'): 0.0, ((4, 4), 'south'): 0.0, ((0, 2), 'south'): 0.0, ((0, 2), 'west'): 0, ((3, 1), 'west'): 0.0, ((2, 0), 'exit'): 0, ((2, 1), 'east'): 0, ((4, 0), 'exit'): 0, ((2, 3), 'west'): 0, ((0, 3), 'north'): 0.0, ((4, 2), 'exit'): 7.5, ((2, 4), 'east'): 0.0, ((0, 1), 'south'): 0, ((2, 3), 'east'): 0, ((0, 2), 'east'): 0.0, ((3, 3), 'south'): 0, ((3, 3), 'north'): 0.0, ((3, 4), 'north'): 0.0, ((4, 4), 'north'): 0.0, ((4, 1), 'south'): 0, ((2, 1), 'south'): 0, ((2, 2), 'exit'): 0.5, ((0, 3), 'west'): 0.0, ((2, 4), 'south'): 0.0, ((4, 4), 'east'): 0.0, ((3, 4), 'east'): 0.0, ((1, 4), 'north'): 0.0, ((0, 2), 'north'): 0.0, ((2, 3), 'north'): 0, ((3, 3), 'west'): 0, ((4, 4), 'west'): 0.0, ((0, 3), 'east'): 0.0, ((1, 0), 'exit'): -7.5, ((3, 1), 'south'): 0, ((2, 4), 'north'): 0.0, ((1, 1), 'south'): -2.25, ((1, 1), 'west'): 0.0, ((3, 3), 'east'): 0.0, ((0, 0), 'exit'): 0, ((2, 3), 'south'): 0.0, ((3, 0), 'exit'): 0, ((1, 4), 'east'): 0.0, ((4, 3), 'west'): 0.0, ((4, 1), 'north'): 0, ((0, 1), 'north'): 0.0, ((2, 4), 'west'): 0.0, ((1, 4), 'west'): 0.0, ((1, 1), 'east'): 0, ((0, 4), 'north'): 0.0, ((2, 1), 'west'): 0.0, ((0, 4), 'south'): 0.0, ((3, 4), 'west'): 0.0, ((3, 1), 'north'): 0, ((3, 4), 'south'): 0.0, ((1, 4), 'south'): 0.0, ((4, 3), 'east'): 0.0, ((4, 1), 'west'): 0, ((0, 4), 'west'): 0.0, ((4, 3), 'north'): 0.0, ((0, 3), 'south'): 0.0, ((3, 1), 'east'): 0, ((4, 1), 'east'): 0, ((0, 1), 'west'): 0, ((0, 4), 'east'): 0.0, ((1, 1), 'north'): 0, ((2, 1), 'north'): 0, ((4, 3), 'south'): 2.25}
+
+--------------------------------
+
+State:(0, 0), optimal:exit, current:exit
+State:(0, 1), optimal:east, current:south
+State:(0, 2), optimal:south, current:east
+State:(0, 3), optimal:north, current:south
+State:(0, 4), optimal:east, current:south
+State:(1, 0), optimal:exit, current:exit
+State:(1, 1), optimal:east, current:west
+State:(1, 4), optimal:east, current:south
+State:(2, 0), optimal:exit, current:exit
+State:(2, 1), optimal:east, current:east
+State:(2, 2), optimal:exit, current:exit
+State:(2, 3), optimal:east, current:north
+State:(2, 4), optimal:south, current:north
+State:(3, 0), optimal:exit, current:exit
+State:(3, 1), optimal:east, current:south
+State:(3, 3), optimal:east, current:south
+State:(3, 4), optimal:south, current:north
+State:(4, 0), optimal:exit, current:exit
+State:(4, 1), optimal:north, current:south
+State:(4, 2), optimal:exit, current:exit
+State:(4, 3), optimal:south, current:south
+State:(4, 4), optimal:south, current:east
+################################
+Current Policy Convergence Ratio: 0.409091
+################################
+
+BEGINNING EPISODE: 6
+
+Current Policy Convergence Ratio: 0.590909
+Step: 0, S: (4, 1), A: east, S': (4, 1), R: 0.0
+
+Current Policy Convergence Ratio: 0.545455
+Step: 1, S: (4, 1), A: north, S': (4, 2), R: 0.0
+
+Current Policy Convergence Ratio: 0.590909
+Step: 2, S: (4, 2), A: exit, S': TERMINAL_STATE, R: 10
+
+Current Policy Convergence Ratio: 0.636364
+--------------------------------
+EPISODE 6 COMPLETE: RETURN WAS 8.1
+
+TOTAL STEPS: 157, EPISODE STEPS: 3
+Learned QValue: {((0, 1), 'east'): 0.0, ((4, 4), 'south'): 0.0, ((0, 2), 'south'): 0.0, ((0, 2), 'west'): 0, ((3, 1), 'west'): 0.0, ((2, 0), 'exit'): 0, ((2, 1), 'east'): 0, ((4, 0), 'exit'): 0, ((2, 3), 'west'): 0, ((0, 3), 'north'): 0.0, ((4, 2), 'exit'): 8.75, ((2, 4), 'east'): 0.0, ((0, 1), 'south'): 0, ((2, 3), 'east'): 0, ((0, 2), 'east'): 0.0, ((3, 3), 'south'): 0, ((3, 3), 'north'): 0.0, ((3, 4), 'north'): 0.0, ((4, 4), 'north'): 0.0, ((4, 1), 'south'): 0, ((2, 1), 'south'): 0, ((2, 2), 'exit'): 0.5, ((0, 3), 'west'): 0.0, ((2, 4), 'south'): 0.0, ((4, 4), 'east'): 0.0, ((3, 4), 'east'): 0.0, ((1, 4), 'north'): 0.0, ((0, 2), 'north'): 0.0, ((2, 3), 'north'): 0, ((3, 3), 'west'): 0, ((4, 4), 'west'): 0.0, ((0, 3), 'east'): 0.0, ((1, 0), 'exit'): -7.5, ((3, 1), 'south'): 0, ((2, 4), 'north'): 0.0, ((1, 1), 'south'): -2.25, ((1, 1), 'west'): 0.0, ((3, 3), 'east'): 0.0, ((0, 0), 'exit'): 0, ((2, 3), 'south'): 0.0, ((3, 0), 'exit'): 0, ((1, 4), 'east'): 0.0, ((4, 3), 'west'): 0.0, ((4, 1), 'north'): 3.375, ((0, 1), 'north'): 0.0, ((2, 4), 'west'): 0.0, ((1, 4), 'west'): 0.0, ((1, 1), 'east'): 0, ((0, 4), 'north'): 0.0, ((2, 1), 'west'): 0.0, ((0, 4), 'south'): 0.0, ((3, 4), 'west'): 0.0, ((3, 1), 'north'): 0, ((3, 4), 'south'): 0.0, ((1, 4), 'south'): 0.0, ((4, 3), 'east'): 0.0, ((4, 1), 'west'): 0, ((0, 4), 'west'): 0.0, ((4, 3), 'north'): 0.0, ((0, 3), 'south'): 0.0, ((3, 1), 'east'): 0, ((4, 1), 'east'): 0.0, ((0, 1), 'west'): 0, ((0, 4), 'east'): 0.0, ((1, 1), 'north'): 0, ((2, 1), 'north'): 0, ((4, 3), 'south'): 2.25}
+
+--------------------------------
+
+State:(0, 0), optimal:exit, current:exit
+State:(0, 1), optimal:east, current:north
+State:(0, 2), optimal:south, current:north
+State:(0, 3), optimal:north, current:west
+State:(0, 4), optimal:east, current:east
+State:(1, 0), optimal:exit, current:exit
+State:(1, 1), optimal:east, current:east
+State:(1, 4), optimal:east, current:west
+State:(2, 0), optimal:exit, current:exit
+State:(2, 1), optimal:east, current:west
+State:(2, 2), optimal:exit, current:exit
+State:(2, 3), optimal:east, current:north
+State:(2, 4), optimal:south, current:west
+State:(3, 0), optimal:exit, current:exit
+State:(3, 1), optimal:east, current:west
+State:(3, 3), optimal:east, current:south
+State:(3, 4), optimal:south, current:south
+State:(4, 0), optimal:exit, current:exit
+State:(4, 1), optimal:north, current:north
+State:(4, 2), optimal:exit, current:exit
+State:(4, 3), optimal:south, current:south
+State:(4, 4), optimal:south, current:north
+################################
+Current Policy Convergence Ratio: 0.545455
+################################
+
+BEGINNING EPISODE: 7
+
+Current Policy Convergence Ratio: 0.590909
+Step: 0, S: (0, 2), A: west, S': (0, 2), R: 0.0
+
+Current Policy Convergence Ratio: 0.636364
+Step: 1, S: (0, 2), A: west, S': (0, 2), R: 0.0
+
+Current Policy Convergence Ratio: 0.590909
+Step: 2, S: (0, 2), A: south, S': (0, 1), R: 0.0
+
+Current Policy Convergence Ratio: 0.545455
+Step: 3, S: (0, 1), A: north, S': (0, 2), R: 0.0
+
+Current Policy Convergence Ratio: 0.545455
+Step: 4, S: (0, 2), A: west, S': (0, 2), R: 0.0
+
+Current Policy Convergence Ratio: 0.681818
+Step: 5, S: (0, 2), A: south, S': (0, 1), R: 0.0
+
+Current Policy Convergence Ratio: 0.590909
+Step: 6, S: (0, 1), A: south, S': (0, 0), R: 0.0
+
+Current Policy Convergence Ratio: 0.590909
+Step: 7, S: (0, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+Current Policy Convergence Ratio: 0.636364
+--------------------------------
+EPISODE 7 COMPLETE: RETURN WAS -4.782969
+
+TOTAL STEPS: 165, EPISODE STEPS: 8
+Learned QValue: {((0, 1), 'east'): 0.0, ((4, 4), 'south'): 0.0, ((0, 2), 'south'): 0.0, ((0, 2), 'west'): 0.0, ((3, 1), 'west'): 0.0, ((2, 0), 'exit'): 0, ((2, 1), 'east'): 0, ((4, 0), 'exit'): 0, ((2, 3), 'west'): 0, ((0, 3), 'north'): 0.0, ((4, 2), 'exit'): 8.75, ((2, 4), 'east'): 0.0, ((0, 1), 'south'): 0.0, ((2, 3), 'east'): 0, ((0, 2), 'east'): 0.0, ((3, 3), 'south'): 0, ((3, 3), 'north'): 0.0, ((3, 4), 'north'): 0.0, ((4, 4), 'north'): 0.0, ((4, 1), 'south'): 0, ((2, 1), 'south'): 0, ((2, 2), 'exit'): 0.5, ((0, 3), 'west'): 0.0, ((2, 4), 'south'): 0.0, ((4, 4), 'east'): 0.0, ((3, 4), 'east'): 0.0, ((1, 4), 'north'): 0.0, ((0, 2), 'north'): 0.0, ((2, 3), 'north'): 0, ((3, 3), 'west'): 0, ((4, 4), 'west'): 0.0, ((0, 3), 'east'): 0.0, ((1, 0), 'exit'): -7.5, ((3, 1), 'south'): 0, ((2, 4), 'north'): 0.0, ((1, 1), 'south'): -2.25, ((1, 1), 'west'): 0.0, ((3, 3), 'east'): 0.0, ((0, 0), 'exit'): -5.0, ((2, 3), 'south'): 0.0, ((3, 0), 'exit'): 0, ((1, 4), 'east'): 0.0, ((4, 3), 'west'): 0.0, ((4, 1), 'north'): 3.375, ((0, 1), 'north'): 0.0, ((2, 4), 'west'): 0.0, ((1, 4), 'west'): 0.0, ((1, 1), 'east'): 0, ((0, 4), 'north'): 0.0, ((2, 1), 'west'): 0.0, ((0, 4), 'south'): 0.0, ((3, 4), 'west'): 0.0, ((3, 1), 'north'): 0, ((3, 4), 'south'): 0.0, ((1, 4), 'south'): 0.0, ((4, 3), 'east'): 0.0, ((4, 1), 'west'): 0, ((0, 4), 'west'): 0.0, ((4, 3), 'north'): 0.0, ((0, 3), 'south'): 0.0, ((3, 1), 'east'): 0, ((4, 1), 'east'): 0.0, ((0, 1), 'west'): 0, ((0, 4), 'east'): 0.0, ((1, 1), 'north'): 0, ((2, 1), 'north'): 0, ((4, 3), 'south'): 2.25}
+
+--------------------------------
+
+State:(0, 0), optimal:exit, current:exit
+State:(0, 1), optimal:east, current:west
+State:(0, 2), optimal:south, current:south
+State:(0, 3), optimal:north, current:west
+State:(0, 4), optimal:east, current:south
+State:(1, 0), optimal:exit, current:exit
+State:(1, 1), optimal:east, current:east
+State:(1, 4), optimal:east, current:north
+State:(2, 0), optimal:exit, current:exit
+State:(2, 1), optimal:east, current:south
+State:(2, 2), optimal:exit, current:exit
+State:(2, 3), optimal:east, current:south
+State:(2, 4), optimal:south, current:west
+State:(3, 0), optimal:exit, current:exit
+State:(3, 1), optimal:east, current:west
+State:(3, 3), optimal:east, current:east
+State:(3, 4), optimal:south, current:east
+State:(4, 0), optimal:exit, current:exit
+State:(4, 1), optimal:north, current:north
+State:(4, 2), optimal:exit, current:exit
+State:(4, 3), optimal:south, current:south
+State:(4, 4), optimal:south, current:south
+################################
+Current Policy Convergence Ratio: 0.590909
+################################
+
+BEGINNING EPISODE: 8
+
+Current Policy Convergence Ratio: 0.590909
+Step: 0, S: (4, 3), A: south, S': (4, 2), R: 0.0
+
+Current Policy Convergence Ratio: 0.500000
+Step: 1, S: (4, 2), A: exit, S': TERMINAL_STATE, R: 10
+
+Current Policy Convergence Ratio: 0.590909
+--------------------------------
+EPISODE 8 COMPLETE: RETURN WAS 9.0
+
+TOTAL STEPS: 167, EPISODE STEPS: 2
+Learned QValue: {((0, 1), 'east'): 0.0, ((4, 4), 'south'): 0.0, ((0, 2), 'south'): 0.0, ((0, 2), 'west'): 0.0, ((3, 1), 'west'): 0.0, ((2, 0), 'exit'): 0, ((2, 1), 'east'): 0, ((4, 0), 'exit'): 0, ((2, 3), 'west'): 0, ((0, 3), 'north'): 0.0, ((4, 2), 'exit'): 9.375, ((2, 4), 'east'): 0.0, ((0, 1), 'south'): 0.0, ((2, 3), 'east'): 0, ((0, 2), 'east'): 0.0, ((3, 3), 'south'): 0, ((3, 3), 'north'): 0.0, ((3, 4), 'north'): 0.0, ((4, 4), 'north'): 0.0, ((4, 1), 'south'): 0, ((2, 1), 'south'): 0, ((2, 2), 'exit'): 0.5, ((0, 3), 'west'): 0.0, ((2, 4), 'south'): 0.0, ((4, 4), 'east'): 0.0, ((3, 4), 'east'): 0.0, ((1, 4), 'north'): 0.0, ((0, 2), 'north'): 0.0, ((2, 3), 'north'): 0, ((3, 3), 'west'): 0, ((4, 4), 'west'): 0.0, ((0, 3), 'east'): 0.0, ((1, 0), 'exit'): -7.5, ((3, 1), 'south'): 0, ((2, 4), 'north'): 0.0, ((1, 1), 'south'): -2.25, ((1, 1), 'west'): 0.0, ((3, 3), 'east'): 0.0, ((0, 0), 'exit'): -5.0, ((2, 3), 'south'): 0.0, ((3, 0), 'exit'): 0, ((1, 4), 'east'): 0.0, ((4, 3), 'west'): 0.0, ((4, 1), 'north'): 3.375, ((0, 1), 'north'): 0.0, ((2, 4), 'west'): 0.0, ((1, 4), 'west'): 0.0, ((1, 1), 'east'): 0, ((0, 4), 'north'): 0.0, ((2, 1), 'west'): 0.0, ((0, 4), 'south'): 0.0, ((3, 4), 'west'): 0.0, ((3, 1), 'north'): 0, ((3, 4), 'south'): 0.0, ((1, 4), 'south'): 0.0, ((4, 3), 'east'): 0.0, ((4, 1), 'west'): 0, ((0, 4), 'west'): 0.0, ((4, 3), 'north'): 0.0, ((0, 3), 'south'): 0.0, ((3, 1), 'east'): 0, ((4, 1), 'east'): 0.0, ((0, 1), 'west'): 0, ((0, 4), 'east'): 0.0, ((1, 1), 'north'): 0, ((2, 1), 'north'): 0, ((4, 3), 'south'): 5.0625}
+
+--------------------------------
+
+State:(0, 0), optimal:exit, current:exit
+State:(0, 1), optimal:east, current:north
+State:(0, 2), optimal:south, current:east
+State:(0, 3), optimal:north, current:east
+State:(0, 4), optimal:east, current:north
+State:(1, 0), optimal:exit, current:exit
+State:(1, 1), optimal:east, current:east
+State:(1, 4), optimal:east, current:east
+State:(2, 0), optimal:exit, current:exit
+State:(2, 1), optimal:east, current:north
+State:(2, 2), optimal:exit, current:exit
+State:(2, 3), optimal:east, current:east
+State:(2, 4), optimal:south, current:south
+State:(3, 0), optimal:exit, current:exit
+State:(3, 1), optimal:east, current:north
+State:(3, 3), optimal:east, current:north
+State:(3, 4), optimal:south, current:south
+State:(4, 0), optimal:exit, current:exit
+State:(4, 1), optimal:north, current:north
+State:(4, 2), optimal:exit, current:exit
+State:(4, 3), optimal:south, current:south
+State:(4, 4), optimal:south, current:north
+################################
+Current Policy Convergence Ratio: 0.636364
+################################
+
+BEGINNING EPISODE: 9
+
+Current Policy Convergence Ratio: 0.545455
+Step: 0, S: (0, 4), A: west, S': (0, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.681818
+Step: 1, S: (0, 4), A: north, S': (0, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.772727
+Step: 2, S: (0, 4), A: north, S': (0, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.681818
+Step: 3, S: (0, 4), A: north, S': (0, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.590909
+Step: 4, S: (0, 4), A: west, S': (0, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.454545
+Step: 5, S: (0, 4), A: south, S': (0, 3), R: 0.0
+
+Current Policy Convergence Ratio: 0.500000
+Step: 6, S: (0, 3), A: west, S': (0, 3), R: 0.0
+
+Current Policy Convergence Ratio: 0.590909
+Step: 7, S: (0, 3), A: west, S': (0, 3), R: 0.0
+
+Current Policy Convergence Ratio: 0.545455
+Step: 8, S: (0, 3), A: north, S': (0, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.590909
+Step: 9, S: (0, 4), A: north, S': (0, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.636364
+Step: 10, S: (0, 4), A: north, S': (0, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.545455
+Step: 11, S: (0, 4), A: west, S': (0, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.636364
+Step: 12, S: (0, 4), A: west, S': (0, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.636364
+Step: 13, S: (0, 4), A: east, S': (1, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.545455
+Step: 14, S: (1, 4), A: south, S': (1, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.545455
+Step: 15, S: (1, 4), A: south, S': (1, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.545455
+Step: 16, S: (1, 4), A: east, S': (2, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.545455
+Step: 17, S: (2, 4), A: west, S': (1, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.727273
+Step: 18, S: (1, 4), A: north, S': (1, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.454545
+Step: 19, S: (1, 4), A: south, S': (1, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.500000
+Step: 20, S: (1, 4), A: north, S': (1, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.545455
+Step: 21, S: (1, 4), A: south, S': (1, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.636364
+Step: 22, S: (1, 4), A: south, S': (1, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.590909
+Step: 23, S: (1, 4), A: east, S': (2, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.454545
+Step: 24, S: (2, 4), A: east, S': (3, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.454545
+Step: 25, S: (3, 4), A: west, S': (2, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.590909
+Step: 26, S: (2, 4), A: west, S': (1, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.545455
+Step: 27, S: (1, 4), A: west, S': (0, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.590909
+Step: 28, S: (0, 4), A: south, S': (0, 3), R: 0.0
+
+Current Policy Convergence Ratio: 0.545455
+Step: 29, S: (0, 3), A: north, S': (0, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.409091
+Step: 30, S: (0, 4), A: north, S': (0, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.590909
+Step: 31, S: (0, 4), A: west, S': (0, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.545455
+Step: 32, S: (0, 4), A: south, S': (0, 3), R: 0.0
+
+Current Policy Convergence Ratio: 0.500000
+Step: 33, S: (0, 3), A: east, S': (0, 3), R: 0.0
+
+Current Policy Convergence Ratio: 0.590909
+Step: 34, S: (0, 3), A: west, S': (0, 3), R: 0.0
+
+Current Policy Convergence Ratio: 0.590909
+Step: 35, S: (0, 3), A: south, S': (0, 2), R: 0.0
+
+Current Policy Convergence Ratio: 0.500000
+Step: 36, S: (0, 2), A: north, S': (0, 3), R: 0.0
+
+Current Policy Convergence Ratio: 0.681818
+Step: 37, S: (0, 3), A: west, S': (0, 3), R: 0.0
+
+Current Policy Convergence Ratio: 0.590909
+Step: 38, S: (0, 3), A: east, S': (0, 3), R: 0.0
+
+Current Policy Convergence Ratio: 0.454545
+Step: 39, S: (0, 3), A: east, S': (0, 3), R: 0.0
+
+Current Policy Convergence Ratio: 0.500000
+Step: 40, S: (0, 3), A: south, S': (0, 2), R: 0.0
+
+Current Policy Convergence Ratio: 0.590909
+Step: 41, S: (0, 2), A: west, S': (0, 2), R: 0.0
+
+Current Policy Convergence Ratio: 0.590909
+Step: 42, S: (0, 2), A: south, S': (0, 1), R: 0.0
+
+Current Policy Convergence Ratio: 0.590909
+Step: 43, S: (0, 1), A: west, S': (0, 1), R: 0.0
+
+Current Policy Convergence Ratio: 0.454545
+Step: 44, S: (0, 1), A: north, S': (0, 2), R: 0.0
+
+Current Policy Convergence Ratio: 0.590909
+Step: 45, S: (0, 2), A: east, S': (0, 2), R: 0.0
+
+Current Policy Convergence Ratio: 0.409091
+Step: 46, S: (0, 2), A: south, S': (0, 1), R: 0.0
+
+Current Policy Convergence Ratio: 0.500000
+Step: 47, S: (0, 1), A: south, S': (0, 0), R: 0.0
+
+Current Policy Convergence Ratio: 0.681818
+Step: 48, S: (0, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+Current Policy Convergence Ratio: 0.545455
+--------------------------------
+EPISODE 9 COMPLETE: RETURN WAS -0.0636268544114
+
+TOTAL STEPS: 216, EPISODE STEPS: 49
+Learned QValue: {((0, 1), 'east'): 0.0, ((4, 4), 'south'): 0.0, ((0, 2), 'south'): 0.0, ((0, 2), 'west'): 0.0, ((3, 1), 'west'): 0.0, ((2, 0), 'exit'): 0, ((2, 1), 'east'): 0, ((4, 0), 'exit'): 0, ((2, 3), 'west'): 0, ((0, 3), 'north'): 0.0, ((4, 2), 'exit'): 9.375, ((2, 4), 'east'): 0.0, ((0, 1), 'south'): -2.25, ((2, 3), 'east'): 0, ((0, 2), 'east'): 0.0, ((3, 3), 'south'): 0, ((3, 3), 'north'): 0.0, ((3, 4), 'north'): 0.0, ((4, 4), 'north'): 0.0, ((4, 1), 'south'): 0, ((2, 1), 'south'): 0, ((2, 2), 'exit'): 0.5, ((0, 3), 'west'): 0.0, ((2, 4), 'south'): 0.0, ((4, 4), 'east'): 0.0, ((3, 4), 'east'): 0.0, ((1, 4), 'north'): 0.0, ((0, 2), 'north'): 0.0, ((2, 3), 'north'): 0, ((3, 3), 'west'): 0, ((4, 4), 'west'): 0.0, ((0, 3), 'east'): 0.0, ((1, 0), 'exit'): -7.5, ((3, 1), 'south'): 0, ((2, 4), 'north'): 0.0, ((1, 1), 'south'): -2.25, ((1, 1), 'west'): 0.0, ((3, 3), 'east'): 0.0, ((0, 0), 'exit'): -7.5, ((2, 3), 'south'): 0.0, ((3, 0), 'exit'): 0, ((1, 4), 'east'): 0.0, ((4, 3), 'west'): 0.0, ((4, 1), 'north'): 3.375, ((0, 1), 'north'): 0.0, ((2, 4), 'west'): 0.0, ((1, 4), 'west'): 0.0, ((1, 1), 'east'): 0, ((0, 4), 'north'): 0.0, ((2, 1), 'west'): 0.0, ((0, 4), 'south'): 0.0, ((3, 4), 'west'): 0.0, ((3, 1), 'north'): 0, ((3, 4), 'south'): 0.0, ((1, 4), 'south'): 0.0, ((4, 3), 'east'): 0.0, ((4, 1), 'west'): 0, ((0, 4), 'west'): 0.0, ((4, 3), 'north'): 0.0, ((0, 3), 'south'): 0.0, ((3, 1), 'east'): 0, ((4, 1), 'east'): 0.0, ((0, 1), 'west'): 0.0, ((0, 4), 'east'): 0.0, ((1, 1), 'north'): 0, ((2, 1), 'north'): 0, ((4, 3), 'south'): 5.0625}
+
+--------------------------------
+
+State:(0, 0), optimal:exit, current:exit
+State:(0, 1), optimal:east, current:north
+State:(0, 2), optimal:south, current:east
+State:(0, 3), optimal:north, current:north
+State:(0, 4), optimal:east, current:west
+State:(1, 0), optimal:exit, current:exit
+State:(1, 1), optimal:east, current:east
+State:(1, 4), optimal:east, current:east
+State:(2, 0), optimal:exit, current:exit
+State:(2, 1), optimal:east, current:east
+State:(2, 2), optimal:exit, current:exit
+State:(2, 3), optimal:east, current:east
+State:(2, 4), optimal:south, current:west
+State:(3, 0), optimal:exit, current:exit
+State:(3, 1), optimal:east, current:south
+State:(3, 3), optimal:east, current:north
+State:(3, 4), optimal:south, current:north
+State:(4, 0), optimal:exit, current:exit
+State:(4, 1), optimal:north, current:north
+State:(4, 2), optimal:exit, current:exit
+State:(4, 3), optimal:south, current:south
+State:(4, 4), optimal:south, current:east
+################################
+Current Policy Convergence Ratio: 0.636364
+################################
+
+BEGINNING EPISODE: 10
+
+Current Policy Convergence Ratio: 0.454545
+Step: 0, S: (4, 3), A: south, S': (4, 2), R: 0.0
+
+Current Policy Convergence Ratio: 0.590909
+Step: 1, S: (4, 2), A: exit, S': TERMINAL_STATE, R: 10
+
+Current Policy Convergence Ratio: 0.500000
+--------------------------------
+EPISODE 10 COMPLETE: RETURN WAS 9.0
+
+TOTAL STEPS: 218, EPISODE STEPS: 2
+Learned QValue: {((0, 1), 'east'): 0.0, ((4, 4), 'south'): 0.0, ((0, 2), 'south'): 0.0, ((0, 2), 'west'): 0.0, ((3, 1), 'west'): 0.0, ((2, 0), 'exit'): 0, ((2, 1), 'east'): 0, ((4, 0), 'exit'): 0, ((2, 3), 'west'): 0, ((0, 3), 'north'): 0.0, ((4, 2), 'exit'): 9.6875, ((2, 4), 'east'): 0.0, ((0, 1), 'south'): -2.25, ((2, 3), 'east'): 0, ((0, 2), 'east'): 0.0, ((3, 3), 'south'): 0, ((3, 3), 'north'): 0.0, ((3, 4), 'north'): 0.0, ((4, 4), 'north'): 0.0, ((4, 1), 'south'): 0, ((2, 1), 'south'): 0, ((2, 2), 'exit'): 0.5, ((0, 3), 'west'): 0.0, ((2, 4), 'south'): 0.0, ((4, 4), 'east'): 0.0, ((3, 4), 'east'): 0.0, ((1, 4), 'north'): 0.0, ((0, 2), 'north'): 0.0, ((2, 3), 'north'): 0, ((3, 3), 'west'): 0, ((4, 4), 'west'): 0.0, ((0, 3), 'east'): 0.0, ((1, 0), 'exit'): -7.5, ((3, 1), 'south'): 0, ((2, 4), 'north'): 0.0, ((1, 1), 'south'): -2.25, ((1, 1), 'west'): 0.0, ((3, 3), 'east'): 0.0, ((0, 0), 'exit'): -7.5, ((2, 3), 'south'): 0.0, ((3, 0), 'exit'): 0, ((1, 4), 'east'): 0.0, ((4, 3), 'west'): 0.0, ((4, 1), 'north'): 3.375, ((0, 1), 'north'): 0.0, ((2, 4), 'west'): 0.0, ((1, 4), 'west'): 0.0, ((1, 1), 'east'): 0, ((0, 4), 'north'): 0.0, ((2, 1), 'west'): 0.0, ((0, 4), 'south'): 0.0, ((3, 4), 'west'): 0.0, ((3, 1), 'north'): 0, ((3, 4), 'south'): 0.0, ((1, 4), 'south'): 0.0, ((4, 3), 'east'): 0.0, ((4, 1), 'west'): 0, ((0, 4), 'west'): 0.0, ((4, 3), 'north'): 0.0, ((0, 3), 'south'): 0.0, ((3, 1), 'east'): 0, ((4, 1), 'east'): 0.0, ((0, 1), 'west'): 0.0, ((0, 4), 'east'): 0.0, ((1, 1), 'north'): 0, ((2, 1), 'north'): 0, ((4, 3), 'south'): 6.75}
+
+--------------------------------
+
+State:(0, 0), optimal:exit, current:exit
+State:(0, 1), optimal:east, current:west
+State:(0, 2), optimal:south, current:south
+State:(0, 3), optimal:south, current:west
+State:(0, 4), optimal:east, current:south
+State:(1, 0), optimal:exit, current:exit
+State:(1, 1), optimal:east, current:north
+State:(1, 4), optimal:east, current:west
+State:(2, 0), optimal:exit, current:exit
+State:(2, 1), optimal:east, current:south
+State:(2, 2), optimal:exit, current:exit
+State:(2, 3), optimal:east, current:west
+State:(2, 4), optimal:south, current:east
+State:(3, 0), optimal:exit, current:exit
+State:(3, 1), optimal:east, current:west
+State:(3, 3), optimal:east, current:south
+State:(3, 4), optimal:south, current:south
+State:(4, 0), optimal:exit, current:exit
+State:(4, 1), optimal:north, current:north
+State:(4, 2), optimal:exit, current:exit
+State:(4, 3), optimal:south, current:south
+State:(4, 4), optimal:south, current:south
+################################
+Current Policy Convergence Ratio: 0.545455
+################################
+
+BEGINNING EPISODE: 11
+
+Current Policy Convergence Ratio: 0.545455
+Step: 0, S: (1, 4), A: south, S': (1, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.500000
+Step: 1, S: (1, 4), A: south, S': (1, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.454545
+Step: 2, S: (1, 4), A: east, S': (2, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.590909
+Step: 3, S: (2, 4), A: north, S': (2, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.500000
+Step: 4, S: (2, 4), A: west, S': (1, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.681818
+Step: 5, S: (1, 4), A: north, S': (1, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.636364
+Step: 6, S: (1, 4), A: south, S': (1, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.681818
+Step: 7, S: (1, 4), A: east, S': (2, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.545455
+Step: 8, S: (2, 4), A: west, S': (1, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.545455
+Step: 9, S: (1, 4), A: east, S': (2, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.590909
+Step: 10, S: (2, 4), A: west, S': (1, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.636364
+Step: 11, S: (1, 4), A: west, S': (0, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.545455
+Step: 12, S: (0, 4), A: south, S': (0, 3), R: 0.0
+
+Current Policy Convergence Ratio: 0.590909
+Step: 13, S: (0, 3), A: east, S': (0, 3), R: 0.0
+
+Current Policy Convergence Ratio: 0.545455
+Step: 14, S: (0, 3), A: south, S': (0, 2), R: 0.0
+
+Current Policy Convergence Ratio: 0.590909
+Step: 15, S: (0, 2), A: north, S': (0, 3), R: 0.0
+
+Current Policy Convergence Ratio: 0.545455
+Step: 16, S: (0, 3), A: north, S': (0, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.545455
+Step: 17, S: (0, 4), A: south, S': (0, 3), R: 0.0
+
+Current Policy Convergence Ratio: 0.590909
+Step: 18, S: (0, 3), A: north, S': (0, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.545455
+Step: 19, S: (0, 4), A: south, S': (0, 3), R: 0.0
+
+Current Policy Convergence Ratio: 0.636364
+Step: 20, S: (0, 3), A: west, S': (0, 3), R: 0.0
+
+Current Policy Convergence Ratio: 0.590909
+Step: 21, S: (0, 3), A: north, S': (0, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.636364
+Step: 22, S: (0, 4), A: east, S': (1, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.500000
+Step: 23, S: (1, 4), A: south, S': (1, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.681818
+Step: 24, S: (1, 4), A: west, S': (0, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.772727
+Step: 25, S: (0, 4), A: west, S': (0, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.590909
+Step: 26, S: (0, 4), A: north, S': (0, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.409091
+Step: 27, S: (0, 4), A: west, S': (0, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.409091
+Step: 28, S: (0, 4), A: south, S': (0, 3), R: 0.0
+
+Current Policy Convergence Ratio: 0.636364
+Step: 29, S: (0, 3), A: west, S': (0, 3), R: 0.0
+
+Current Policy Convergence Ratio: 0.454545
+Step: 30, S: (0, 3), A: east, S': (0, 3), R: 0.0
+
+Current Policy Convergence Ratio: 0.590909
+Step: 31, S: (0, 3), A: west, S': (0, 3), R: 0.0
+
+Current Policy Convergence Ratio: 0.545455
+Step: 32, S: (0, 3), A: south, S': (0, 2), R: 0.0
+
+Current Policy Convergence Ratio: 0.636364
+Step: 33, S: (0, 2), A: south, S': (0, 1), R: 0.0
+
+Current Policy Convergence Ratio: 0.545455
+Step: 34, S: (0, 1), A: east, S': (1, 1), R: 0.0
+
+Current Policy Convergence Ratio: 0.590909
+Step: 35, S: (1, 1), A: west, S': (0, 1), R: 0.0
+
+Current Policy Convergence Ratio: 0.727273
+Step: 36, S: (0, 1), A: west, S': (0, 1), R: 0.0
+
+Current Policy Convergence Ratio: 0.545455
+Step: 37, S: (0, 1), A: west, S': (0, 1), R: 0.0
+
+Current Policy Convergence Ratio: 0.727273
+Step: 38, S: (0, 1), A: east, S': (1, 1), R: 0.0
+
+Current Policy Convergence Ratio: 0.590909
+Step: 39, S: (1, 1), A: west, S': (0, 1), R: 0.0
+
+Current Policy Convergence Ratio: 0.545455
+Step: 40, S: (0, 1), A: east, S': (1, 1), R: 0.0
+
+Current Policy Convergence Ratio: 0.590909
+Step: 41, S: (1, 1), A: west, S': (0, 1), R: 0.0
+
+Current Policy Convergence Ratio: 0.500000
+Step: 42, S: (0, 1), A: west, S': (0, 1), R: 0.0
+
+Current Policy Convergence Ratio: 0.590909
+Step: 43, S: (0, 1), A: east, S': (1, 1), R: 0.0
+
+Current Policy Convergence Ratio: 0.500000
+Step: 44, S: (1, 1), A: east, S': (2, 1), R: 0.0
+
+Current Policy Convergence Ratio: 0.681818
+Step: 45, S: (2, 1), A: east, S': (3, 1), R: 0.0
+
+Current Policy Convergence Ratio: 0.545455
+Step: 46, S: (3, 1), A: east, S': (4, 1), R: 0.0
+
+Current Policy Convergence Ratio: 0.681818
+Step: 47, S: (4, 1), A: north, S': (4, 2), R: 0.0
+
+Current Policy Convergence Ratio: 0.636364
+Step: 48, S: (4, 2), A: exit, S': TERMINAL_STATE, R: 10
+
+Current Policy Convergence Ratio: 0.681818
+--------------------------------
+EPISODE 11 COMPLETE: RETURN WAS 0.0636268544114
+
+TOTAL STEPS: 267, EPISODE STEPS: 49
+Learned QValue: {((0, 1), 'east'): 0.0, ((4, 4), 'south'): 0.0, ((0, 2), 'south'): 0.0, ((0, 2), 'west'): 0.0, ((3, 1), 'west'): 0.0, ((2, 0), 'exit'): 0, ((2, 1), 'east'): 0.0, ((4, 0), 'exit'): 0, ((2, 3), 'west'): 0, ((0, 3), 'north'): 0.0, ((4, 2), 'exit'): 9.84375, ((2, 4), 'east'): 0.0, ((0, 1), 'south'): -2.25, ((2, 3), 'east'): 0, ((0, 2), 'east'): 0.0, ((3, 3), 'south'): 0, ((3, 3), 'north'): 0.0, ((3, 4), 'north'): 0.0, ((4, 4), 'north'): 0.0, ((4, 1), 'south'): 0, ((2, 1), 'south'): 0, ((2, 2), 'exit'): 0.5, ((0, 3), 'west'): 0.0, ((2, 4), 'south'): 0.0, ((4, 4), 'east'): 0.0, ((3, 4), 'east'): 0.0, ((1, 4), 'north'): 0.0, ((0, 2), 'north'): 0.0, ((2, 3), 'north'): 0, ((3, 3), 'west'): 0, ((4, 4), 'west'): 0.0, ((0, 3), 'east'): 0.0, ((1, 0), 'exit'): -7.5, ((3, 1), 'south'): 0, ((2, 4), 'north'): 0.0, ((1, 1), 'south'): -2.25, ((1, 1), 'west'): 0.0, ((3, 3), 'east'): 0.0, ((0, 0), 'exit'): -7.5, ((2, 3), 'south'): 0.0, ((3, 0), 'exit'): 0, ((1, 4), 'east'): 0.0, ((4, 3), 'west'): 0.0, ((4, 1), 'north'): 6.046875, ((0, 1), 'north'): 0.0, ((2, 4), 'west'): 0.0, ((1, 4), 'west'): 0.0, ((1, 1), 'east'): 0.0, ((0, 4), 'north'): 0.0, ((2, 1), 'west'): 0.0, ((0, 4), 'south'): 0.0, ((3, 4), 'west'): 0.0, ((3, 1), 'north'): 0, ((3, 4), 'south'): 0.0, ((1, 4), 'south'): 0.0, ((4, 3), 'east'): 0.0, ((4, 1), 'west'): 0, ((0, 4), 'west'): 0.0, ((4, 3), 'north'): 0.0, ((0, 3), 'south'): 0.0, ((3, 1), 'east'): 1.51875, ((4, 1), 'east'): 0.0, ((0, 1), 'west'): 0.0, ((0, 4), 'east'): 0.0, ((1, 1), 'north'): 0, ((2, 1), 'north'): 0, ((4, 3), 'south'): 6.75}
+
+--------------------------------
+
+State:(0, 0), optimal:exit, current:exit
+State:(0, 1), optimal:east, current:west
+State:(0, 2), optimal:south, current:north
+State:(0, 3), optimal:north, current:east
+State:(0, 4), optimal:east, current:west
+State:(1, 0), optimal:exit, current:exit
+State:(1, 1), optimal:east, current:west
+State:(1, 4), optimal:east, current:east
+State:(2, 0), optimal:exit, current:exit
+State:(2, 1), optimal:east, current:south
+State:(2, 2), optimal:exit, current:exit
+State:(2, 3), optimal:east, current:east
+State:(2, 4), optimal:south, current:east
+State:(3, 0), optimal:exit, current:exit
+State:(3, 1), optimal:east, current:east
+State:(3, 3), optimal:east, current:south
+State:(3, 4), optimal:south, current:east
+State:(4, 0), optimal:exit, current:exit
+State:(4, 1), optimal:north, current:north
+State:(4, 2), optimal:exit, current:exit
+State:(4, 3), optimal:south, current:south
+State:(4, 4), optimal:south, current:west
+################################
+Current Policy Convergence Ratio: 0.545455
+################################
+
+BEGINNING EPISODE: 12
+
+Current Policy Convergence Ratio: 0.454545
+Step: 0, S: (4, 1), A: north, S': (4, 2), R: 0.0
+
+Current Policy Convergence Ratio: 0.500000
+Step: 1, S: (4, 2), A: exit, S': TERMINAL_STATE, R: 10
+
+Current Policy Convergence Ratio: 0.545455
+--------------------------------
+EPISODE 12 COMPLETE: RETURN WAS 9.0
+
+TOTAL STEPS: 269, EPISODE STEPS: 2
+Learned QValue: {((0, 1), 'east'): 0.0, ((4, 4), 'south'): 0.0, ((0, 2), 'south'): 0.0, ((0, 2), 'west'): 0.0, ((3, 1), 'west'): 0.0, ((2, 0), 'exit'): 0, ((2, 1), 'east'): 0.0, ((4, 0), 'exit'): 0, ((2, 3), 'west'): 0, ((0, 3), 'north'): 0.0, ((4, 2), 'exit'): 9.921875, ((2, 4), 'east'): 0.0, ((0, 1), 'south'): -2.25, ((2, 3), 'east'): 0, ((0, 2), 'east'): 0.0, ((3, 3), 'south'): 0, ((3, 3), 'north'): 0.0, ((3, 4), 'north'): 0.0, ((4, 4), 'north'): 0.0, ((4, 1), 'south'): 0, ((2, 1), 'south'): 0, ((2, 2), 'exit'): 0.5, ((0, 3), 'west'): 0.0, ((2, 4), 'south'): 0.0, ((4, 4), 'east'): 0.0, ((3, 4), 'east'): 0.0, ((1, 4), 'north'): 0.0, ((0, 2), 'north'): 0.0, ((2, 3), 'north'): 0, ((3, 3), 'west'): 0, ((4, 4), 'west'): 0.0, ((0, 3), 'east'): 0.0, ((1, 0), 'exit'): -7.5, ((3, 1), 'south'): 0, ((2, 4), 'north'): 0.0, ((1, 1), 'south'): -2.25, ((1, 1), 'west'): 0.0, ((3, 3), 'east'): 0.0, ((0, 0), 'exit'): -7.5, ((2, 3), 'south'): 0.0, ((3, 0), 'exit'): 0, ((1, 4), 'east'): 0.0, ((4, 3), 'west'): 0.0, ((4, 1), 'north'): 7.453125, ((0, 1), 'north'): 0.0, ((2, 4), 'west'): 0.0, ((1, 4), 'west'): 0.0, ((1, 1), 'east'): 0.0, ((0, 4), 'north'): 0.0, ((2, 1), 'west'): 0.0, ((0, 4), 'south'): 0.0, ((3, 4), 'west'): 0.0, ((3, 1), 'north'): 0, ((3, 4), 'south'): 0.0, ((1, 4), 'south'): 0.0, ((4, 3), 'east'): 0.0, ((4, 1), 'west'): 0, ((0, 4), 'west'): 0.0, ((4, 3), 'north'): 0.0, ((0, 3), 'south'): 0.0, ((3, 1), 'east'): 1.51875, ((4, 1), 'east'): 0.0, ((0, 1), 'west'): 0.0, ((0, 4), 'east'): 0.0, ((1, 1), 'north'): 0, ((2, 1), 'north'): 0, ((4, 3), 'south'): 6.75}
+
+--------------------------------
+
+State:(0, 0), optimal:exit, current:exit
+State:(0, 1), optimal:east, current:west
+State:(0, 2), optimal:south, current:south
+State:(0, 3), optimal:south, current:north
+State:(0, 4), optimal:east, current:south
+State:(1, 0), optimal:exit, current:exit
+State:(1, 1), optimal:east, current:east
+State:(1, 4), optimal:east, current:north
+State:(2, 0), optimal:exit, current:exit
+State:(2, 1), optimal:east, current:east
+State:(2, 2), optimal:exit, current:exit
+State:(2, 3), optimal:east, current:east
+State:(2, 4), optimal:south, current:south
+State:(3, 0), optimal:exit, current:exit
+State:(3, 1), optimal:east, current:east
+State:(3, 3), optimal:east, current:east
+State:(3, 4), optimal:south, current:north
+State:(4, 0), optimal:exit, current:exit
+State:(4, 1), optimal:north, current:north
+State:(4, 2), optimal:exit, current:exit
+State:(4, 3), optimal:south, current:south
+State:(4, 4), optimal:south, current:west
+################################
+Current Policy Convergence Ratio: 0.727273
+################################
+
+BEGINNING EPISODE: 13
+
+Current Policy Convergence Ratio: 0.590909
+Step: 0, S: (0, 2), A: west, S': (0, 2), R: 0.0
+
+Current Policy Convergence Ratio: 0.590909
+Step: 1, S: (0, 2), A: south, S': (0, 1), R: 0.0
+
+Current Policy Convergence Ratio: 0.545455
+Step: 2, S: (0, 1), A: east, S': (1, 1), R: 0.0
+
+Current Policy Convergence Ratio: 0.636364
+Step: 3, S: (1, 1), A: south, S': (1, 0), R: 0.0
+
+Current Policy Convergence Ratio: 0.636364
+Step: 4, S: (1, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+Current Policy Convergence Ratio: 0.590909
+--------------------------------
+EPISODE 13 COMPLETE: RETURN WAS -6.561
+
+TOTAL STEPS: 274, EPISODE STEPS: 5
+Learned QValue: {((0, 1), 'east'): 0.0, ((4, 4), 'south'): 0.0, ((0, 2), 'south'): 0.0, ((0, 2), 'west'): 0.0, ((3, 1), 'west'): 0.0, ((2, 0), 'exit'): 0, ((2, 1), 'east'): 0.0, ((4, 0), 'exit'): 0, ((2, 3), 'west'): 0, ((0, 3), 'north'): 0.0, ((4, 2), 'exit'): 9.921875, ((2, 4), 'east'): 0.0, ((0, 1), 'south'): -2.25, ((2, 3), 'east'): 0, ((0, 2), 'east'): 0.0, ((3, 3), 'south'): 0, ((3, 3), 'north'): 0.0, ((3, 4), 'north'): 0.0, ((4, 4), 'north'): 0.0, ((4, 1), 'south'): 0, ((2, 1), 'south'): 0, ((2, 2), 'exit'): 0.5, ((0, 3), 'west'): 0.0, ((2, 4), 'south'): 0.0, ((4, 4), 'east'): 0.0, ((3, 4), 'east'): 0.0, ((1, 4), 'north'): 0.0, ((0, 2), 'north'): 0.0, ((2, 3), 'north'): 0, ((3, 3), 'west'): 0, ((4, 4), 'west'): 0.0, ((0, 3), 'east'): 0.0, ((1, 0), 'exit'): -8.75, ((3, 1), 'south'): 0, ((2, 4), 'north'): 0.0, ((1, 1), 'south'): -4.5, ((1, 1), 'west'): 0.0, ((3, 3), 'east'): 0.0, ((0, 0), 'exit'): -7.5, ((2, 3), 'south'): 0.0, ((3, 0), 'exit'): 0, ((1, 4), 'east'): 0.0, ((4, 3), 'west'): 0.0, ((4, 1), 'north'): 7.453125, ((0, 1), 'north'): 0.0, ((2, 4), 'west'): 0.0, ((1, 4), 'west'): 0.0, ((1, 1), 'east'): 0.0, ((0, 4), 'north'): 0.0, ((2, 1), 'west'): 0.0, ((0, 4), 'south'): 0.0, ((3, 4), 'west'): 0.0, ((3, 1), 'north'): 0, ((3, 4), 'south'): 0.0, ((1, 4), 'south'): 0.0, ((4, 3), 'east'): 0.0, ((4, 1), 'west'): 0, ((0, 4), 'west'): 0.0, ((4, 3), 'north'): 0.0, ((0, 3), 'south'): 0.0, ((3, 1), 'east'): 1.51875, ((4, 1), 'east'): 0.0, ((0, 1), 'west'): 0.0, ((0, 4), 'east'): 0.0, ((1, 1), 'north'): 0, ((2, 1), 'north'): 0, ((4, 3), 'south'): 6.75}
+
+--------------------------------
+
+State:(0, 0), optimal:exit, current:exit
+State:(0, 1), optimal:east, current:east
+State:(0, 2), optimal:south, current:west
+State:(0, 3), optimal:north, current:west
+State:(0, 4), optimal:east, current:east
+State:(1, 0), optimal:exit, current:exit
+State:(1, 1), optimal:east, current:east
+State:(1, 4), optimal:east, current:east
+State:(2, 0), optimal:exit, current:exit
+State:(2, 1), optimal:east, current:west
+State:(2, 2), optimal:exit, current:exit
+State:(2, 3), optimal:east, current:east
+State:(2, 4), optimal:south, current:east
+State:(3, 0), optimal:exit, current:exit
+State:(3, 1), optimal:east, current:east
+State:(3, 3), optimal:east, current:north
+State:(3, 4), optimal:south, current:north
+State:(4, 0), optimal:exit, current:exit
+State:(4, 1), optimal:north, current:north
+State:(4, 2), optimal:exit, current:exit
+State:(4, 3), optimal:south, current:south
+State:(4, 4), optimal:south, current:south
+################################
+Current Policy Convergence Ratio: 0.727273
+################################
+
+BEGINNING EPISODE: 14
+
+Current Policy Convergence Ratio: 0.590909
+Step: 0, S: (0, 2), A: south, S': (0, 1), R: 0.0
+
+Current Policy Convergence Ratio: 0.590909
+Step: 1, S: (0, 1), A: north, S': (0, 2), R: 0.0
+
+Current Policy Convergence Ratio: 0.590909
+Step: 2, S: (0, 2), A: north, S': (0, 3), R: 0.0
+
+Current Policy Convergence Ratio: 0.636364
+Step: 3, S: (0, 3), A: east, S': (0, 3), R: 0.0
+
+Current Policy Convergence Ratio: 0.636364
+Step: 4, S: (0, 3), A: north, S': (0, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.681818
+Step: 5, S: (0, 4), A: west, S': (0, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.636364
+Step: 6, S: (0, 4), A: west, S': (0, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.590909
+Step: 7, S: (0, 4), A: west, S': (0, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.545455
+Step: 8, S: (0, 4), A: north, S': (0, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.590909
+Step: 9, S: (0, 4), A: south, S': (0, 3), R: 0.0
+
+Current Policy Convergence Ratio: 0.590909
+Step: 10, S: (0, 3), A: east, S': (0, 3), R: 0.0
+
+Current Policy Convergence Ratio: 0.500000
+Step: 11, S: (0, 3), A: west, S': (0, 3), R: 0.0
+
+Current Policy Convergence Ratio: 0.727273
+Step: 12, S: (0, 3), A: east, S': (0, 3), R: 0.0
+
+Current Policy Convergence Ratio: 0.590909
+Step: 13, S: (0, 3), A: south, S': (0, 2), R: 0.0
+
+Current Policy Convergence Ratio: 0.500000
+Step: 14, S: (0, 2), A: east, S': (0, 2), R: 0.0
+
+Current Policy Convergence Ratio: 0.545455
+Step: 15, S: (0, 2), A: west, S': (0, 2), R: 0.0
+
+Current Policy Convergence Ratio: 0.590909
+Step: 16, S: (0, 2), A: south, S': (0, 1), R: 0.0
+
+Current Policy Convergence Ratio: 0.545455
+Step: 17, S: (0, 1), A: north, S': (0, 2), R: 0.0
+
+Current Policy Convergence Ratio: 0.590909
+Step: 18, S: (0, 2), A: north, S': (0, 3), R: 0.0
+
+Current Policy Convergence Ratio: 0.590909
+Step: 19, S: (0, 3), A: east, S': (0, 3), R: 0.0
+
+Current Policy Convergence Ratio: 0.590909
+Step: 20, S: (0, 3), A: east, S': (0, 3), R: 0.0
+
+Current Policy Convergence Ratio: 0.772727
+Step: 21, S: (0, 3), A: north, S': (0, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.590909
+Step: 22, S: (0, 4), A: south, S': (0, 3), R: 0.0
+
+Current Policy Convergence Ratio: 0.545455
+Step: 23, S: (0, 3), A: east, S': (0, 3), R: 0.0
+
+Current Policy Convergence Ratio: 0.545455
+Step: 24, S: (0, 3), A: west, S': (0, 3), R: 0.0
+
+Current Policy Convergence Ratio: 0.500000
+Step: 25, S: (0, 3), A: east, S': (0, 3), R: 0.0
+
+Current Policy Convergence Ratio: 0.772727
+Step: 26, S: (0, 3), A: west, S': (0, 3), R: 0.0
+
+Current Policy Convergence Ratio: 0.545455
+Step: 27, S: (0, 3), A: south, S': (0, 2), R: 0.0
+
+Current Policy Convergence Ratio: 0.681818
+Step: 28, S: (0, 2), A: east, S': (0, 2), R: 0.0
+
+Current Policy Convergence Ratio: 0.636364
+Step: 29, S: (0, 2), A: south, S': (0, 1), R: 0.0
+
+Current Policy Convergence Ratio: 0.545455
+Step: 30, S: (0, 1), A: north, S': (0, 2), R: 0.0
+
+Current Policy Convergence Ratio: 0.590909
+Step: 31, S: (0, 2), A: east, S': (0, 2), R: 0.0
+
+Current Policy Convergence Ratio: 0.590909
+Step: 32, S: (0, 2), A: east, S': (0, 2), R: 0.0
+
+Current Policy Convergence Ratio: 0.545455
+Step: 33, S: (0, 2), A: east, S': (0, 2), R: 0.0
+
+Current Policy Convergence Ratio: 0.590909
+Step: 34, S: (0, 2), A: north, S': (0, 3), R: 0.0
+
+Current Policy Convergence Ratio: 0.590909
+Step: 35, S: (0, 3), A: west, S': (0, 3), R: 0.0
+
+Current Policy Convergence Ratio: 0.772727
+Step: 36, S: (0, 3), A: north, S': (0, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.636364
+Step: 37, S: (0, 4), A: east, S': (1, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.636364
+Step: 38, S: (1, 4), A: south, S': (1, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.545455
+Step: 39, S: (1, 4), A: east, S': (2, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.636364
+Step: 40, S: (2, 4), A: west, S': (1, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.590909
+Step: 41, S: (1, 4), A: east, S': (2, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.590909
+Step: 42, S: (2, 4), A: north, S': (2, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.681818
+Step: 43, S: (2, 4), A: east, S': (3, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.545455
+Step: 44, S: (3, 4), A: south, S': (3, 3), R: 0.0
+
+Current Policy Convergence Ratio: 0.636364
+Step: 45, S: (3, 3), A: east, S': (4, 3), R: 0.0
+
+Current Policy Convergence Ratio: 0.590909
+Step: 46, S: (4, 3), A: south, S': (4, 2), R: 0.0
+
+Current Policy Convergence Ratio: 0.772727
+Step: 47, S: (4, 2), A: exit, S': TERMINAL_STATE, R: 10
+
+Current Policy Convergence Ratio: 0.545455
+--------------------------------
+EPISODE 14 COMPLETE: RETURN WAS 0.0706965049015
+
+TOTAL STEPS: 322, EPISODE STEPS: 48
+Learned QValue: {((0, 1), 'east'): 0.0, ((4, 4), 'south'): 0.0, ((0, 2), 'south'): 0.0, ((0, 2), 'west'): 0.0, ((3, 1), 'west'): 0.0, ((2, 0), 'exit'): 0, ((2, 1), 'east'): 0.0, ((4, 0), 'exit'): 0, ((2, 3), 'west'): 0, ((0, 3), 'north'): 0.0, ((4, 2), 'exit'): 9.9609375, ((2, 4), 'east'): 0.0, ((0, 1), 'south'): -2.25, ((2, 3), 'east'): 0, ((0, 2), 'east'): 0.0, ((3, 3), 'south'): 0, ((3, 3), 'north'): 0.0, ((3, 4), 'north'): 0.0, ((4, 4), 'north'): 0.0, ((4, 1), 'south'): 0, ((2, 1), 'south'): 0, ((2, 2), 'exit'): 0.5, ((0, 3), 'west'): 0.0, ((2, 4), 'south'): 0.0, ((4, 4), 'east'): 0.0, ((3, 4), 'east'): 0.0, ((1, 4), 'north'): 0.0, ((0, 2), 'north'): 0.0, ((2, 3), 'north'): 0, ((3, 3), 'west'): 0, ((4, 4), 'west'): 0.0, ((0, 3), 'east'): 0.0, ((1, 0), 'exit'): -8.75, ((3, 1), 'south'): 0, ((2, 4), 'north'): 0.0, ((1, 1), 'south'): -4.5, ((1, 1), 'west'): 0.0, ((3, 3), 'east'): 3.0375, ((0, 0), 'exit'): -7.5, ((2, 3), 'south'): 0.0, ((3, 0), 'exit'): 0, ((1, 4), 'east'): 0.0, ((4, 3), 'west'): 0.0, ((4, 1), 'north'): 7.453125, ((0, 1), 'north'): 0.0, ((2, 4), 'west'): 0.0, ((1, 4), 'west'): 0.0, ((1, 1), 'east'): 0.0, ((0, 4), 'north'): 0.0, ((2, 1), 'west'): 0.0, ((0, 4), 'south'): 0.0, ((3, 4), 'west'): 0.0, ((3, 1), 'north'): 0, ((3, 4), 'south'): 0.0, ((1, 4), 'south'): 0.0, ((4, 3), 'east'): 0.0, ((4, 1), 'west'): 0, ((0, 4), 'west'): 0.0, ((4, 3), 'north'): 0.0, ((0, 3), 'south'): 0.0, ((3, 1), 'east'): 1.51875, ((4, 1), 'east'): 0.0, ((0, 1), 'west'): 0.0, ((0, 4), 'east'): 0.0, ((1, 1), 'north'): 0, ((2, 1), 'north'): 0, ((4, 3), 'south'): 7.83984375}
+
+--------------------------------
+
+State:(0, 0), optimal:exit, current:exit
+State:(0, 1), optimal:east, current:east
+State:(0, 2), optimal:south, current:north
+State:(0, 3), optimal:south, current:west
+State:(0, 4), optimal:east, current:north
+State:(1, 0), optimal:exit, current:exit
+State:(1, 1), optimal:east, current:north
+State:(1, 4), optimal:east, current:north
+State:(2, 0), optimal:exit, current:exit
+State:(2, 1), optimal:east, current:north
+State:(2, 2), optimal:exit, current:exit
+State:(2, 3), optimal:east, current:west
+State:(2, 4), optimal:south, current:west
+State:(3, 0), optimal:exit, current:exit
+State:(3, 1), optimal:east, current:east
+State:(3, 3), optimal:east, current:east
+State:(3, 4), optimal:south, current:west
+State:(4, 0), optimal:exit, current:exit
+State:(4, 1), optimal:north, current:north
+State:(4, 2), optimal:exit, current:exit
+State:(4, 3), optimal:south, current:south
+State:(4, 4), optimal:south, current:east
+################################
+Current Policy Convergence Ratio: 0.545455
+################################
+
+BEGINNING EPISODE: 15
+
+Current Policy Convergence Ratio: 0.545455
+Step: 0, S: (1, 1), A: east, S': (2, 1), R: 0.0
+
+Current Policy Convergence Ratio: 0.590909
+Step: 1, S: (2, 1), A: west, S': (1, 1), R: 0.0
+
+Current Policy Convergence Ratio: 0.590909
+Step: 2, S: (1, 1), A: west, S': (0, 1), R: 0.0
+
+Current Policy Convergence Ratio: 0.500000
+Step: 3, S: (0, 1), A: south, S': (0, 0), R: 0.0
+
+Current Policy Convergence Ratio: 0.590909
+Step: 4, S: (0, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+Current Policy Convergence Ratio: 0.590909
+--------------------------------
+EPISODE 15 COMPLETE: RETURN WAS -6.561
+
+TOTAL STEPS: 327, EPISODE STEPS: 5
+Learned QValue: {((0, 1), 'east'): 0.0, ((4, 4), 'south'): 0.0, ((0, 2), 'south'): 0.0, ((0, 2), 'west'): 0.0, ((3, 1), 'west'): 0.0, ((2, 0), 'exit'): 0, ((2, 1), 'east'): 0.0, ((4, 0), 'exit'): 0, ((2, 3), 'west'): 0, ((0, 3), 'north'): 0.0, ((4, 2), 'exit'): 9.9609375, ((2, 4), 'east'): 0.0, ((0, 1), 'south'): -4.5, ((2, 3), 'east'): 0, ((0, 2), 'east'): 0.0, ((3, 3), 'south'): 0, ((3, 3), 'north'): 0.0, ((3, 4), 'north'): 0.0, ((4, 4), 'north'): 0.0, ((4, 1), 'south'): 0, ((2, 1), 'south'): 0, ((2, 2), 'exit'): 0.5, ((0, 3), 'west'): 0.0, ((2, 4), 'south'): 0.0, ((4, 4), 'east'): 0.0, ((3, 4), 'east'): 0.0, ((1, 4), 'north'): 0.0, ((0, 2), 'north'): 0.0, ((2, 3), 'north'): 0, ((3, 3), 'west'): 0, ((4, 4), 'west'): 0.0, ((0, 3), 'east'): 0.0, ((1, 0), 'exit'): -8.75, ((3, 1), 'south'): 0, ((2, 4), 'north'): 0.0, ((1, 1), 'south'): -4.5, ((1, 1), 'west'): 0.0, ((3, 3), 'east'): 3.0375, ((0, 0), 'exit'): -8.75, ((2, 3), 'south'): 0.0, ((3, 0), 'exit'): 0, ((1, 4), 'east'): 0.0, ((4, 3), 'west'): 0.0, ((4, 1), 'north'): 7.453125, ((0, 1), 'north'): 0.0, ((2, 4), 'west'): 0.0, ((1, 4), 'west'): 0.0, ((1, 1), 'east'): 0.0, ((0, 4), 'north'): 0.0, ((2, 1), 'west'): 0.0, ((0, 4), 'south'): 0.0, ((3, 4), 'west'): 0.0, ((3, 1), 'north'): 0, ((3, 4), 'south'): 0.0, ((1, 4), 'south'): 0.0, ((4, 3), 'east'): 0.0, ((4, 1), 'west'): 0, ((0, 4), 'west'): 0.0, ((4, 3), 'north'): 0.0, ((0, 3), 'south'): 0.0, ((3, 1), 'east'): 1.51875, ((4, 1), 'east'): 0.0, ((0, 1), 'west'): 0.0, ((0, 4), 'east'): 0.0, ((1, 1), 'north'): 0, ((2, 1), 'north'): 0, ((4, 3), 'south'): 7.83984375}
+
+--------------------------------
+
+State:(0, 0), optimal:exit, current:exit
+State:(0, 1), optimal:east, current:west
+State:(0, 2), optimal:south, current:south
+State:(0, 3), optimal:south, current:south
+State:(0, 4), optimal:east, current:west
+State:(1, 0), optimal:exit, current:exit
+State:(1, 1), optimal:east, current:west
+State:(1, 4), optimal:east, current:east
+State:(2, 0), optimal:exit, current:exit
+State:(2, 1), optimal:east, current:east
+State:(2, 2), optimal:exit, current:exit
+State:(2, 3), optimal:east, current:south
+State:(2, 4), optimal:south, current:west
+State:(3, 0), optimal:exit, current:exit
+State:(3, 1), optimal:east, current:east
+State:(3, 3), optimal:east, current:east
+State:(3, 4), optimal:south, current:north
+State:(4, 0), optimal:exit, current:exit
+State:(4, 1), optimal:north, current:north
+State:(4, 2), optimal:exit, current:exit
+State:(4, 3), optimal:south, current:south
+State:(4, 4), optimal:south, current:north
+################################
+Current Policy Convergence Ratio: 0.681818
+################################
+
+BEGINNING EPISODE: 16
+
+Current Policy Convergence Ratio: 0.636364
+Step: 0, S: (0, 4), A: north, S': (0, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.590909
+Step: 1, S: (0, 4), A: west, S': (0, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.636364
+Step: 2, S: (0, 4), A: north, S': (0, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.590909
+Step: 3, S: (0, 4), A: north, S': (0, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.681818
+Step: 4, S: (0, 4), A: north, S': (0, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.727273
+Step: 5, S: (0, 4), A: west, S': (0, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.636364
+Step: 6, S: (0, 4), A: west, S': (0, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.636364
+Step: 7, S: (0, 4), A: north, S': (0, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.590909
+Step: 8, S: (0, 4), A: south, S': (0, 3), R: 0.0
+
+Current Policy Convergence Ratio: 0.636364
+Step: 9, S: (0, 3), A: north, S': (0, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.590909
+Step: 10, S: (0, 4), A: west, S': (0, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.636364
+Step: 11, S: (0, 4), A: south, S': (0, 3), R: 0.0
+
+Current Policy Convergence Ratio: 0.590909
+Step: 12, S: (0, 3), A: west, S': (0, 3), R: 0.0
+
+Current Policy Convergence Ratio: 0.727273
+Step: 13, S: (0, 3), A: north, S': (0, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.772727
+Step: 14, S: (0, 4), A: east, S': (1, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.590909
+Step: 15, S: (1, 4), A: west, S': (0, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.681818
+Step: 16, S: (0, 4), A: south, S': (0, 3), R: 0.0
+
+Current Policy Convergence Ratio: 0.636364
+Step: 17, S: (0, 3), A: north, S': (0, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.727273
+Step: 18, S: (0, 4), A: south, S': (0, 3), R: 0.0
+
+Current Policy Convergence Ratio: 0.590909
+Step: 19, S: (0, 3), A: east, S': (0, 3), R: 0.0
+
+Current Policy Convergence Ratio: 0.681818
+Step: 20, S: (0, 3), A: south, S': (0, 2), R: 0.0
+
+Current Policy Convergence Ratio: 0.636364
+Step: 21, S: (0, 2), A: west, S': (0, 2), R: 0.0
+
+Current Policy Convergence Ratio: 0.681818
+Step: 22, S: (0, 2), A: east, S': (0, 2), R: 0.0
+
+Current Policy Convergence Ratio: 0.590909
+Step: 23, S: (0, 2), A: west, S': (0, 2), R: 0.0
+
+Current Policy Convergence Ratio: 0.681818
+Step: 24, S: (0, 2), A: north, S': (0, 3), R: 0.0
+
+Current Policy Convergence Ratio: 0.590909
+Step: 25, S: (0, 3), A: east, S': (0, 3), R: 0.0
+
+Current Policy Convergence Ratio: 0.590909
+Step: 26, S: (0, 3), A: south, S': (0, 2), R: 0.0
+
+Current Policy Convergence Ratio: 0.590909
+Step: 27, S: (0, 2), A: south, S': (0, 1), R: 0.0
+
+Current Policy Convergence Ratio: 0.590909
+Step: 28, S: (0, 1), A: east, S': (1, 1), R: 0.0
+
+Current Policy Convergence Ratio: 0.636364
+Step: 29, S: (1, 1), A: west, S': (0, 1), R: 0.0
+
+Current Policy Convergence Ratio: 0.681818
+Step: 30, S: (0, 1), A: west, S': (0, 1), R: 0.0
+
+Current Policy Convergence Ratio: 0.636364
+Step: 31, S: (0, 1), A: north, S': (0, 2), R: 0.0
+
+Current Policy Convergence Ratio: 0.590909
+Step: 32, S: (0, 2), A: west, S': (0, 2), R: 0.0
+
+Current Policy Convergence Ratio: 0.636364
+Step: 33, S: (0, 2), A: west, S': (0, 2), R: 0.0
+
+Current Policy Convergence Ratio: 0.590909
+Step: 34, S: (0, 2), A: north, S': (0, 3), R: 0.0
+
+Current Policy Convergence Ratio: 0.545455
+Step: 35, S: (0, 3), A: north, S': (0, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.681818
+Step: 36, S: (0, 4), A: east, S': (1, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.545455
+Step: 37, S: (1, 4), A: east, S': (2, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.727273
+Step: 38, S: (2, 4), A: north, S': (2, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.636364
+Step: 39, S: (2, 4), A: south, S': (2, 3), R: 0.0
+
+Current Policy Convergence Ratio: 0.545455
+Step: 40, S: (2, 3), A: east, S': (3, 3), R: 0.0
+
+Current Policy Convergence Ratio: 0.681818
+Step: 41, S: (3, 3), A: west, S': (2, 3), R: 0.0
+
+Current Policy Convergence Ratio: 0.681818
+Step: 42, S: (2, 3), A: east, S': (3, 3), R: 0.0
+
+Current Policy Convergence Ratio: 0.636364
+Step: 43, S: (3, 3), A: east, S': (4, 3), R: 0.0
+
+Current Policy Convergence Ratio: 0.636364
+Step: 44, S: (4, 3), A: south, S': (4, 2), R: 0.0
+
+Current Policy Convergence Ratio: 0.681818
+Step: 45, S: (4, 2), A: exit, S': TERMINAL_STATE, R: 10
+
+Current Policy Convergence Ratio: 0.681818
+--------------------------------
+EPISODE 16 COMPLETE: RETURN WAS 0.0872796356809
+
+TOTAL STEPS: 373, EPISODE STEPS: 46
+Learned QValue: {((0, 1), 'east'): 0.0, ((4, 4), 'south'): 0.0, ((0, 2), 'south'): 0.0, ((0, 2), 'west'): 0.0, ((3, 1), 'west'): 0.0, ((2, 0), 'exit'): 0, ((2, 1), 'east'): 0.0, ((4, 0), 'exit'): 0, ((2, 3), 'west'): 0, ((0, 3), 'north'): 0.0, ((4, 2), 'exit'): 9.98046875, ((2, 4), 'east'): 0.0, ((0, 1), 'south'): -4.5, ((2, 3), 'east'): 2.0503125, ((0, 2), 'east'): 0.0, ((3, 3), 'south'): 0, ((3, 3), 'north'): 0.0, ((3, 4), 'north'): 0.0, ((4, 4), 'north'): 0.0, ((4, 1), 'south'): 0, ((2, 1), 'south'): 0, ((2, 2), 'exit'): 0.5, ((0, 3), 'west'): 0.0, ((2, 4), 'south'): 0.0, ((4, 4), 'east'): 0.0, ((3, 4), 'east'): 0.0, ((1, 4), 'north'): 0.0, ((0, 2), 'north'): 0.0, ((2, 3), 'north'): 0, ((3, 3), 'west'): 0.61509375, ((4, 4), 'west'): 0.0, ((0, 3), 'east'): 0.0, ((1, 0), 'exit'): -8.75, ((3, 1), 'south'): 0, ((2, 4), 'north'): 0.0, ((1, 1), 'south'): -4.5, ((1, 1), 'west'): 0.0, ((3, 3), 'east'): 5.0466796875, ((0, 0), 'exit'): -8.75, ((2, 3), 'south'): 0.0, ((3, 0), 'exit'): 0, ((1, 4), 'east'): 0.0, ((4, 3), 'west'): 0.0, ((4, 1), 'north'): 7.453125, ((0, 1), 'north'): 0.0, ((2, 4), 'west'): 0.0, ((1, 4), 'west'): 0.0, ((1, 1), 'east'): 0.0, ((0, 4), 'north'): 0.0, ((2, 1), 'west'): 0.0, ((0, 4), 'south'): 0.0, ((3, 4), 'west'): 0.0, ((3, 1), 'north'): 0, ((3, 4), 'south'): 0.0, ((1, 4), 'south'): 0.0, ((4, 3), 'east'): 0.0, ((4, 1), 'west'): 0, ((0, 4), 'west'): 0.0, ((4, 3), 'north'): 0.0, ((0, 3), 'south'): 0.0, ((3, 1), 'east'): 1.51875, ((4, 1), 'east'): 0.0, ((0, 1), 'west'): 0.0, ((0, 4), 'east'): 0.0, ((1, 1), 'north'): 0, ((2, 1), 'north'): 0, ((4, 3), 'south'): 8.40234375}
+
+--------------------------------
+
+State:(0, 0), optimal:exit, current:exit
+State:(0, 1), optimal:east, current:north
+State:(0, 2), optimal:south, current:south
+State:(0, 3), optimal:south, current:south
+State:(0, 4), optimal:east, current:east
+State:(1, 0), optimal:exit, current:exit
+State:(1, 1), optimal:east, current:east
+State:(1, 4), optimal:east, current:west
+State:(2, 0), optimal:exit, current:exit
+State:(2, 1), optimal:east, current:north
+State:(2, 2), optimal:exit, current:exit
+State:(2, 3), optimal:east, current:east
+State:(2, 4), optimal:south, current:east
+State:(3, 0), optimal:exit, current:exit
+State:(3, 1), optimal:east, current:east
+State:(3, 3), optimal:east, current:east
+State:(3, 4), optimal:south, current:west
+State:(4, 0), optimal:exit, current:exit
+State:(4, 1), optimal:north, current:north
+State:(4, 2), optimal:exit, current:exit
+State:(4, 3), optimal:south, current:south
+State:(4, 4), optimal:south, current:west
+################################
+Current Policy Convergence Ratio: 0.727273
+################################
+
+BEGINNING EPISODE: 17
+
+Current Policy Convergence Ratio: 0.681818
+Step: 0, S: (0, 4), A: east, S': (1, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.636364
+Step: 1, S: (1, 4), A: east, S': (2, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.727273
+Step: 2, S: (2, 4), A: west, S': (1, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.636364
+Step: 3, S: (1, 4), A: south, S': (1, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.681818
+Step: 4, S: (1, 4), A: north, S': (1, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.590909
+Step: 5, S: (1, 4), A: north, S': (1, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.772727
+Step: 6, S: (1, 4), A: south, S': (1, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.681818
+Step: 7, S: (1, 4), A: west, S': (0, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.772727
+Step: 8, S: (0, 4), A: north, S': (0, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.636364
+Step: 9, S: (0, 4), A: east, S': (1, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.590909
+Step: 10, S: (1, 4), A: north, S': (1, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.681818
+Step: 11, S: (1, 4), A: east, S': (2, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.727273
+Step: 12, S: (2, 4), A: south, S': (2, 3), R: 0.0
+
+Current Policy Convergence Ratio: 0.772727
+Step: 13, S: (2, 3), A: east, S': (3, 3), R: 0.0
+
+Current Policy Convergence Ratio: 0.681818
+Step: 14, S: (3, 3), A: east, S': (4, 3), R: 0.0
+
+Current Policy Convergence Ratio: 0.727273
+Step: 15, S: (4, 3), A: south, S': (4, 2), R: 0.0
+
+Current Policy Convergence Ratio: 0.681818
+Step: 16, S: (4, 2), A: exit, S': TERMINAL_STATE, R: 10
+
+Current Policy Convergence Ratio: 0.681818
+--------------------------------
+EPISODE 17 COMPLETE: RETURN WAS 1.85302018885
+
+TOTAL STEPS: 390, EPISODE STEPS: 17
+Learned QValue: {((0, 1), 'east'): 0.0, ((4, 4), 'south'): 0.0, ((0, 2), 'south'): 0.0, ((0, 2), 'west'): 0.0, ((3, 1), 'west'): 0.0, ((2, 0), 'exit'): 0, ((2, 1), 'east'): 0.0, ((4, 0), 'exit'): 0, ((2, 3), 'west'): 0, ((0, 3), 'north'): 0.0, ((4, 2), 'exit'): 9.990234375, ((2, 4), 'east'): 0.0, ((0, 1), 'south'): -4.5, ((2, 3), 'east'): 3.2961621093750004, ((0, 2), 'east'): 0.0, ((3, 3), 'south'): 0, ((3, 3), 'north'): 0.0, ((3, 4), 'north'): 0.0, ((4, 4), 'north'): 0.0, ((4, 1), 'south'): 0, ((2, 1), 'south'): 0, ((2, 2), 'exit'): 0.5, ((0, 3), 'west'): 0.0, ((2, 4), 'south'): 0.922640625, ((4, 4), 'east'): 0.0, ((3, 4), 'east'): 0.0, ((1, 4), 'north'): 0.0, ((0, 2), 'north'): 0.0, ((2, 3), 'north'): 0, ((3, 3), 'west'): 0.61509375, ((4, 4), 'west'): 0.0, ((0, 3), 'east'): 0.0, ((1, 0), 'exit'): -8.75, ((3, 1), 'south'): 0, ((2, 4), 'north'): 0.0, ((1, 1), 'south'): -4.5, ((1, 1), 'west'): 0.0, ((3, 3), 'east'): 6.304394531250001, ((0, 0), 'exit'): -8.75, ((2, 3), 'south'): 0.0, ((3, 0), 'exit'): 0, ((1, 4), 'east'): 0.0, ((4, 3), 'west'): 0.0, ((4, 1), 'north'): 7.453125, ((0, 1), 'north'): 0.0, ((2, 4), 'west'): 0.0, ((1, 4), 'west'): 0.0, ((1, 1), 'east'): 0.0, ((0, 4), 'north'): 0.0, ((2, 1), 'west'): 0.0, ((0, 4), 'south'): 0.0, ((3, 4), 'west'): 0.0, ((3, 1), 'north'): 0, ((3, 4), 'south'): 0.0, ((1, 4), 'south'): 0.0, ((4, 3), 'east'): 0.0, ((4, 1), 'west'): 0, ((0, 4), 'west'): 0.0, ((4, 3), 'north'): 0.0, ((0, 3), 'south'): 0.0, ((3, 1), 'east'): 1.51875, ((4, 1), 'east'): 0.0, ((0, 1), 'west'): 0.0, ((0, 4), 'east'): 0.0, ((1, 1), 'north'): 0, ((2, 1), 'north'): 0, ((4, 3), 'south'): 8.6923828125}
+
+--------------------------------
+
+State:(0, 0), optimal:exit, current:exit
+State:(0, 1), optimal:east, current:north
+State:(0, 2), optimal:south, current:west
+State:(0, 3), optimal:north, current:west
+State:(0, 4), optimal:east, current:south
+State:(1, 0), optimal:exit, current:exit
+State:(1, 1), optimal:east, current:north
+State:(1, 4), optimal:east, current:east
+State:(2, 0), optimal:exit, current:exit
+State:(2, 1), optimal:east, current:east
+State:(2, 2), optimal:exit, current:exit
+State:(2, 3), optimal:east, current:east
+State:(2, 4), optimal:south, current:south
+State:(3, 0), optimal:exit, current:exit
+State:(3, 1), optimal:east, current:east
+State:(3, 3), optimal:east, current:east
+State:(3, 4), optimal:south, current:north
+State:(4, 0), optimal:exit, current:exit
+State:(4, 1), optimal:north, current:north
+State:(4, 2), optimal:exit, current:exit
+State:(4, 3), optimal:south, current:south
+State:(4, 4), optimal:south, current:west
+################################
+Current Policy Convergence Ratio: 0.681818
+################################
+
+BEGINNING EPISODE: 18
+
+Current Policy Convergence Ratio: 0.727273
+Step: 0, S: (2, 3), A: east, S': (3, 3), R: 0.0
+
+Current Policy Convergence Ratio: 0.590909
+Step: 1, S: (3, 3), A: east, S': (4, 3), R: 0.0
+
+Current Policy Convergence Ratio: 0.772727
+Step: 2, S: (4, 3), A: south, S': (4, 2), R: 0.0
+
+Current Policy Convergence Ratio: 0.727273
+Step: 3, S: (4, 2), A: exit, S': TERMINAL_STATE, R: 10
+
+Current Policy Convergence Ratio: 0.681818
+--------------------------------
+EPISODE 18 COMPLETE: RETURN WAS 7.29
+
+TOTAL STEPS: 394, EPISODE STEPS: 4
+Learned QValue: {((0, 1), 'east'): 0.0, ((4, 4), 'south'): 0.0, ((0, 2), 'south'): 0.0, ((0, 2), 'west'): 0.0, ((3, 1), 'west'): 0.0, ((2, 0), 'exit'): 0, ((2, 1), 'east'): 0.0, ((4, 0), 'exit'): 0, ((2, 3), 'west'): 0, ((0, 3), 'north'): 0.0, ((4, 2), 'exit'): 9.9951171875, ((2, 4), 'east'): 0.0, ((0, 1), 'south'): -4.5, ((2, 3), 'east'): 4.485058593750001, ((0, 2), 'east'): 0.0, ((3, 3), 'south'): 0, ((3, 3), 'north'): 0.0, ((3, 4), 'north'): 0.0, ((4, 4), 'north'): 0.0, ((4, 1), 'south'): 0, ((2, 1), 'south'): 0, ((2, 2), 'exit'): 0.5, ((0, 3), 'west'): 0.0, ((2, 4), 'south'): 0.922640625, ((4, 4), 'east'): 0.0, ((3, 4), 'east'): 0.0, ((1, 4), 'north'): 0.0, ((0, 2), 'north'): 0.0, ((2, 3), 'north'): 0, ((3, 3), 'west'): 0.61509375, ((4, 4), 'west'): 0.0, ((0, 3), 'east'): 0.0, ((1, 0), 'exit'): -8.75, ((3, 1), 'south'): 0, ((2, 4), 'north'): 0.0, ((1, 1), 'south'): -4.5, ((1, 1), 'west'): 0.0, ((3, 3), 'east'): 7.063769531250001, ((0, 0), 'exit'): -8.75, ((2, 3), 'south'): 0.0, ((3, 0), 'exit'): 0, ((1, 4), 'east'): 0.0, ((4, 3), 'west'): 0.0, ((4, 1), 'north'): 7.453125, ((0, 1), 'north'): 0.0, ((2, 4), 'west'): 0.0, ((1, 4), 'west'): 0.0, ((1, 1), 'east'): 0.0, ((0, 4), 'north'): 0.0, ((2, 1), 'west'): 0.0, ((0, 4), 'south'): 0.0, ((3, 4), 'west'): 0.0, ((3, 1), 'north'): 0, ((3, 4), 'south'): 0.0, ((1, 4), 'south'): 0.0, ((4, 3), 'east'): 0.0, ((4, 1), 'west'): 0, ((0, 4), 'west'): 0.0, ((4, 3), 'north'): 0.0, ((0, 3), 'south'): 0.0, ((3, 1), 'east'): 1.51875, ((4, 1), 'east'): 0.0, ((0, 1), 'west'): 0.0, ((0, 4), 'east'): 0.0, ((1, 1), 'north'): 0, ((2, 1), 'north'): 0, ((4, 3), 'south'): 8.841796875}
+
+--------------------------------
+
+State:(0, 0), optimal:exit, current:exit
+State:(0, 1), optimal:east, current:west
+State:(0, 2), optimal:south, current:west
+State:(0, 3), optimal:south, current:east
+State:(0, 4), optimal:east, current:west
+State:(1, 0), optimal:exit, current:exit
+State:(1, 1), optimal:east, current:east
+State:(1, 4), optimal:east, current:west
+State:(2, 0), optimal:exit, current:exit
+State:(2, 1), optimal:east, current:south
+State:(2, 2), optimal:exit, current:exit
+State:(2, 3), optimal:east, current:east
+State:(2, 4), optimal:south, current:south
+State:(3, 0), optimal:exit, current:exit
+State:(3, 1), optimal:east, current:east
+State:(3, 3), optimal:east, current:east
+State:(3, 4), optimal:south, current:north
+State:(4, 0), optimal:exit, current:exit
+State:(4, 1), optimal:north, current:north
+State:(4, 2), optimal:exit, current:exit
+State:(4, 3), optimal:south, current:south
+State:(4, 4), optimal:south, current:north
+################################
+Current Policy Convergence Ratio: 0.636364
+################################
+
+BEGINNING EPISODE: 19
+
+Current Policy Convergence Ratio: 0.772727
+Step: 0, S: (2, 3), A: east, S': (3, 3), R: 0.0
+
+Current Policy Convergence Ratio: 0.681818
+Step: 1, S: (3, 3), A: east, S': (4, 3), R: 0.0
+
+Current Policy Convergence Ratio: 0.636364
+Step: 2, S: (4, 3), A: south, S': (4, 2), R: 0.0
+
+Current Policy Convergence Ratio: 0.727273
+Step: 3, S: (4, 2), A: exit, S': TERMINAL_STATE, R: 10
+
+Current Policy Convergence Ratio: 0.772727
+--------------------------------
+EPISODE 19 COMPLETE: RETURN WAS 7.29
+
+TOTAL STEPS: 398, EPISODE STEPS: 4
+Learned QValue: {((0, 1), 'east'): 0.0, ((4, 4), 'south'): 0.0, ((0, 2), 'south'): 0.0, ((0, 2), 'west'): 0.0, ((3, 1), 'west'): 0.0, ((2, 0), 'exit'): 0, ((2, 1), 'east'): 0.0, ((4, 0), 'exit'): 0, ((2, 3), 'west'): 0, ((0, 3), 'north'): 0.0, ((4, 2), 'exit'): 9.99755859375, ((2, 4), 'east'): 0.0, ((0, 1), 'south'): -4.5, ((2, 3), 'east'): 5.421225585937501, ((0, 2), 'east'): 0.0, ((3, 3), 'south'): 0, ((3, 3), 'north'): 0.0, ((3, 4), 'north'): 0.0, ((4, 4), 'north'): 0.0, ((4, 1), 'south'): 0, ((2, 1), 'south'): 0, ((2, 2), 'exit'): 0.5, ((0, 3), 'west'): 0.0, ((2, 4), 'south'): 0.922640625, ((4, 4), 'east'): 0.0, ((3, 4), 'east'): 0.0, ((1, 4), 'north'): 0.0, ((0, 2), 'north'): 0.0, ((2, 3), 'north'): 0, ((3, 3), 'west'): 0.61509375, ((4, 4), 'west'): 0.0, ((0, 3), 'east'): 0.0, ((1, 0), 'exit'): -8.75, ((3, 1), 'south'): 0, ((2, 4), 'north'): 0.0, ((1, 1), 'south'): -4.5, ((1, 1), 'west'): 0.0, ((3, 3), 'east'): 7.510693359375001, ((0, 0), 'exit'): -8.75, ((2, 3), 'south'): 0.0, ((3, 0), 'exit'): 0, ((1, 4), 'east'): 0.0, ((4, 3), 'west'): 0.0, ((4, 1), 'north'): 7.453125, ((0, 1), 'north'): 0.0, ((2, 4), 'west'): 0.0, ((1, 4), 'west'): 0.0, ((1, 1), 'east'): 0.0, ((0, 4), 'north'): 0.0, ((2, 1), 'west'): 0.0, ((0, 4), 'south'): 0.0, ((3, 4), 'west'): 0.0, ((3, 1), 'north'): 0, ((3, 4), 'south'): 0.0, ((1, 4), 'south'): 0.0, ((4, 3), 'east'): 0.0, ((4, 1), 'west'): 0, ((0, 4), 'west'): 0.0, ((4, 3), 'north'): 0.0, ((0, 3), 'south'): 0.0, ((3, 1), 'east'): 1.51875, ((4, 1), 'east'): 0.0, ((0, 1), 'west'): 0.0, ((0, 4), 'east'): 0.0, ((1, 1), 'north'): 0, ((2, 1), 'north'): 0, ((4, 3), 'south'): 8.918701171875}
+
+--------------------------------
+
+State:(0, 0), optimal:exit, current:exit
+State:(0, 1), optimal:east, current:west
+State:(0, 2), optimal:south, current:west
+State:(0, 3), optimal:north, current:east
+State:(0, 4), optimal:east, current:north
+State:(1, 0), optimal:exit, current:exit
+State:(1, 1), optimal:east, current:north
+State:(1, 4), optimal:east, current:west
+State:(2, 0), optimal:exit, current:exit
+State:(2, 1), optimal:east, current:south
+State:(2, 2), optimal:exit, current:exit
+State:(2, 3), optimal:east, current:east
+State:(2, 4), optimal:south, current:south
+State:(3, 0), optimal:exit, current:exit
+State:(3, 1), optimal:east, current:east
+State:(3, 3), optimal:east, current:east
+State:(3, 4), optimal:south, current:west
+State:(4, 0), optimal:exit, current:exit
+State:(4, 1), optimal:north, current:north
+State:(4, 2), optimal:exit, current:exit
+State:(4, 3), optimal:south, current:south
+State:(4, 4), optimal:south, current:north
+################################
+Current Policy Convergence Ratio: 0.590909
+################################
+
+BEGINNING EPISODE: 20
+
+Current Policy Convergence Ratio: 0.681818
+Step: 0, S: (0, 2), A: east, S': (0, 2), R: 0.0
+
+Current Policy Convergence Ratio: 0.681818
+Step: 1, S: (0, 2), A: north, S': (0, 3), R: 0.0
+
+Current Policy Convergence Ratio: 0.681818
+Step: 2, S: (0, 3), A: east, S': (0, 3), R: 0.0
+
+Current Policy Convergence Ratio: 0.681818
+Step: 3, S: (0, 3), A: east, S': (0, 3), R: 0.0
+
+Current Policy Convergence Ratio: 0.727273
+Step: 4, S: (0, 3), A: south, S': (0, 2), R: 0.0
+
+Current Policy Convergence Ratio: 0.727273
+Step: 5, S: (0, 2), A: east, S': (0, 2), R: 0.0
+
+Current Policy Convergence Ratio: 0.681818
+Step: 6, S: (0, 2), A: east, S': (0, 2), R: 0.0
+
+Current Policy Convergence Ratio: 0.636364
+Step: 7, S: (0, 2), A: west, S': (0, 2), R: 0.0
+
+Current Policy Convergence Ratio: 0.636364
+Step: 8, S: (0, 2), A: east, S': (0, 2), R: 0.0
+
+Current Policy Convergence Ratio: 0.772727
+Step: 9, S: (0, 2), A: south, S': (0, 1), R: 0.0
+
+Current Policy Convergence Ratio: 0.681818
+Step: 10, S: (0, 1), A: west, S': (0, 1), R: 0.0
+
+Current Policy Convergence Ratio: 0.727273
+Step: 11, S: (0, 1), A: west, S': (0, 1), R: 0.0
+
+Current Policy Convergence Ratio: 0.681818
+Step: 12, S: (0, 1), A: west, S': (0, 1), R: 0.0
+
+Current Policy Convergence Ratio: 0.590909
+Step: 13, S: (0, 1), A: north, S': (0, 2), R: 0.0
+
+Current Policy Convergence Ratio: 0.681818
+Step: 14, S: (0, 2), A: south, S': (0, 1), R: 0.0
+
+Current Policy Convergence Ratio: 0.727273
+Step: 15, S: (0, 1), A: west, S': (0, 1), R: 0.0
+
+Current Policy Convergence Ratio: 0.681818
+Step: 16, S: (0, 1), A: south, S': (0, 0), R: 0.0
+
+Current Policy Convergence Ratio: 0.681818
+Step: 17, S: (0, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+Current Policy Convergence Ratio: 0.772727
+--------------------------------
+EPISODE 20 COMPLETE: RETURN WAS -1.66771816997
+
+TOTAL STEPS: 416, EPISODE STEPS: 18
+Learned QValue: {((0, 1), 'east'): 0.0, ((4, 4), 'south'): 0.0, ((0, 2), 'south'): 0.0, ((0, 2), 'west'): 0.0, ((3, 1), 'west'): 0.0, ((2, 0), 'exit'): 0, ((2, 1), 'east'): 0.0, ((4, 0), 'exit'): 0, ((2, 3), 'west'): 0, ((0, 3), 'north'): 0.0, ((4, 2), 'exit'): 9.99755859375, ((2, 4), 'east'): 0.0, ((0, 1), 'south'): -6.1875, ((2, 3), 'east'): 5.421225585937501, ((0, 2), 'east'): 0.0, ((3, 3), 'south'): 0, ((3, 3), 'north'): 0.0, ((3, 4), 'north'): 0.0, ((4, 4), 'north'): 0.0, ((4, 1), 'south'): 0, ((2, 1), 'south'): 0, ((2, 2), 'exit'): 0.5, ((0, 3), 'west'): 0.0, ((2, 4), 'south'): 0.922640625, ((4, 4), 'east'): 0.0, ((3, 4), 'east'): 0.0, ((1, 4), 'north'): 0.0, ((0, 2), 'north'): 0.0, ((2, 3), 'north'): 0, ((3, 3), 'west'): 0.61509375, ((4, 4), 'west'): 0.0, ((0, 3), 'east'): 0.0, ((1, 0), 'exit'): -8.75, ((3, 1), 'south'): 0, ((2, 4), 'north'): 0.0, ((1, 1), 'south'): -4.5, ((1, 1), 'west'): 0.0, ((3, 3), 'east'): 7.510693359375001, ((0, 0), 'exit'): -9.375, ((2, 3), 'south'): 0.0, ((3, 0), 'exit'): 0, ((1, 4), 'east'): 0.0, ((4, 3), 'west'): 0.0, ((4, 1), 'north'): 7.453125, ((0, 1), 'north'): 0.0, ((2, 4), 'west'): 0.0, ((1, 4), 'west'): 0.0, ((1, 1), 'east'): 0.0, ((0, 4), 'north'): 0.0, ((2, 1), 'west'): 0.0, ((0, 4), 'south'): 0.0, ((3, 4), 'west'): 0.0, ((3, 1), 'north'): 0, ((3, 4), 'south'): 0.0, ((1, 4), 'south'): 0.0, ((4, 3), 'east'): 0.0, ((4, 1), 'west'): 0, ((0, 4), 'west'): 0.0, ((4, 3), 'north'): 0.0, ((0, 3), 'south'): 0.0, ((3, 1), 'east'): 1.51875, ((4, 1), 'east'): 0.0, ((0, 1), 'west'): 0.0, ((0, 4), 'east'): 0.0, ((1, 1), 'north'): 0, ((2, 1), 'north'): 0, ((4, 3), 'south'): 8.918701171875}
+
+--------------------------------
+
+State:(0, 0), optimal:exit, current:exit
+State:(0, 1), optimal:east, current:north
+State:(0, 2), optimal:south, current:south
+State:(0, 3), optimal:north, current:south
+State:(0, 4), optimal:east, current:west
+State:(1, 0), optimal:exit, current:exit
+State:(1, 1), optimal:east, current:east
+State:(1, 4), optimal:east, current:south
+State:(2, 0), optimal:exit, current:exit
+State:(2, 1), optimal:east, current:north
+State:(2, 2), optimal:exit, current:exit
+State:(2, 3), optimal:east, current:east
+State:(2, 4), optimal:south, current:south
+State:(3, 0), optimal:exit, current:exit
+State:(3, 1), optimal:east, current:east
+State:(3, 3), optimal:east, current:east
+State:(3, 4), optimal:south, current:west
+State:(4, 0), optimal:exit, current:exit
+State:(4, 1), optimal:north, current:north
+State:(4, 2), optimal:exit, current:exit
+State:(4, 3), optimal:south, current:south
+State:(4, 4), optimal:south, current:east
+################################
+Current Policy Convergence Ratio: 0.681818
+################################
+
+BEGINNING EPISODE: 21
+
+Current Policy Convergence Ratio: 0.727273
+Step: 0, S: (0, 2), A: west, S': (0, 2), R: 0.0
+
+Current Policy Convergence Ratio: 0.727273
+Step: 1, S: (0, 2), A: south, S': (0, 1), R: 0.0
+
+Current Policy Convergence Ratio: 0.772727
+Step: 2, S: (0, 1), A: west, S': (0, 1), R: 0.0
+
+Current Policy Convergence Ratio: 0.772727
+Step: 3, S: (0, 1), A: north, S': (0, 2), R: 0.0
+
+Current Policy Convergence Ratio: 0.681818
+Step: 4, S: (0, 2), A: east, S': (0, 2), R: 0.0
+
+Current Policy Convergence Ratio: 0.681818
+Step: 5, S: (0, 2), A: south, S': (0, 1), R: 0.0
+
+Current Policy Convergence Ratio: 0.772727
+Step: 6, S: (0, 1), A: north, S': (0, 2), R: 0.0
+
+Current Policy Convergence Ratio: 0.681818
+Step: 7, S: (0, 2), A: north, S': (0, 3), R: 0.0
+
+Current Policy Convergence Ratio: 0.636364
+Step: 8, S: (0, 3), A: south, S': (0, 2), R: 0.0
+
+Current Policy Convergence Ratio: 0.681818
+Step: 9, S: (0, 2), A: east, S': (0, 2), R: 0.0
+
+Current Policy Convergence Ratio: 0.681818
+Step: 10, S: (0, 2), A: west, S': (0, 2), R: 0.0
+
+Current Policy Convergence Ratio: 0.681818
+Step: 11, S: (0, 2), A: east, S': (0, 2), R: 0.0
+
+Current Policy Convergence Ratio: 0.681818
+Step: 12, S: (0, 2), A: west, S': (0, 2), R: 0.0
+
+Current Policy Convergence Ratio: 0.772727
+Step: 13, S: (0, 2), A: west, S': (0, 2), R: 0.0
+
+Current Policy Convergence Ratio: 0.727273
+Step: 14, S: (0, 2), A: west, S': (0, 2), R: 0.0
+
+Current Policy Convergence Ratio: 0.681818
+Step: 15, S: (0, 2), A: south, S': (0, 1), R: 0.0
+
+Current Policy Convergence Ratio: 0.681818
+Step: 16, S: (0, 1), A: west, S': (0, 1), R: 0.0
+
+Current Policy Convergence Ratio: 0.636364
+Step: 17, S: (0, 1), A: north, S': (0, 2), R: 0.0
+
+Current Policy Convergence Ratio: 0.636364
+Step: 18, S: (0, 2), A: west, S': (0, 2), R: 0.0
+
+Current Policy Convergence Ratio: 0.636364
+Step: 19, S: (0, 2), A: south, S': (0, 1), R: 0.0
+
+Current Policy Convergence Ratio: 0.727273
+Step: 20, S: (0, 1), A: north, S': (0, 2), R: 0.0
+
+Current Policy Convergence Ratio: 0.681818
+Step: 21, S: (0, 2), A: south, S': (0, 1), R: 0.0
+
+Current Policy Convergence Ratio: 0.727273
+Step: 22, S: (0, 1), A: west, S': (0, 1), R: 0.0
+
+Current Policy Convergence Ratio: 0.818182
+Step: 23, S: (0, 1), A: east, S': (1, 1), R: 0.0
+
+Current Policy Convergence Ratio: 0.681818
+Step: 24, S: (1, 1), A: east, S': (2, 1), R: 0.0
+
+Current Policy Convergence Ratio: 0.636364
+Step: 25, S: (2, 1), A: east, S': (3, 1), R: 0.0
+
+Current Policy Convergence Ratio: 0.727273
+Step: 26, S: (3, 1), A: south, S': (3, 0), R: 0.0
+
+Current Policy Convergence Ratio: 0.772727
+Step: 27, S: (3, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+Current Policy Convergence Ratio: 0.636364
+--------------------------------
+EPISODE 21 COMPLETE: RETURN WAS -0.58149737003
+
+TOTAL STEPS: 444, EPISODE STEPS: 28
+Learned QValue: {((0, 1), 'east'): 0.0, ((4, 4), 'south'): 0.0, ((0, 2), 'south'): 0.0, ((0, 2), 'west'): 0.0, ((3, 1), 'west'): 0.0, ((2, 0), 'exit'): 0, ((2, 1), 'east'): 0.6834375, ((4, 0), 'exit'): 0, ((2, 3), 'west'): 0, ((0, 3), 'north'): 0.0, ((4, 2), 'exit'): 9.99755859375, ((2, 4), 'east'): 0.0, ((0, 1), 'south'): -6.1875, ((2, 3), 'east'): 5.421225585937501, ((0, 2), 'east'): 0.0, ((3, 3), 'south'): 0, ((3, 3), 'north'): 0.0, ((3, 4), 'north'): 0.0, ((4, 4), 'north'): 0.0, ((4, 1), 'south'): 0, ((2, 1), 'south'): 0, ((2, 2), 'exit'): 0.5, ((0, 3), 'west'): 0.0, ((2, 4), 'south'): 0.922640625, ((4, 4), 'east'): 0.0, ((3, 4), 'east'): 0.0, ((1, 4), 'north'): 0.0, ((0, 2), 'north'): 0.0, ((2, 3), 'north'): 0, ((3, 3), 'west'): 0.61509375, ((4, 4), 'west'): 0.0, ((0, 3), 'east'): 0.0, ((1, 0), 'exit'): -8.75, ((3, 1), 'south'): 0.0, ((2, 4), 'north'): 0.0, ((1, 1), 'south'): -4.5, ((1, 1), 'west'): 0.0, ((3, 3), 'east'): 7.510693359375001, ((0, 0), 'exit'): -9.375, ((2, 3), 'south'): 0.0, ((3, 0), 'exit'): -5.0, ((1, 4), 'east'): 0.0, ((4, 3), 'west'): 0.0, ((4, 1), 'north'): 7.453125, ((0, 1), 'north'): 0.0, ((2, 4), 'west'): 0.0, ((1, 4), 'west'): 0.0, ((1, 1), 'east'): 0.0, ((0, 4), 'north'): 0.0, ((2, 1), 'west'): 0.0, ((0, 4), 'south'): 0.0, ((3, 4), 'west'): 0.0, ((3, 1), 'north'): 0, ((3, 4), 'south'): 0.0, ((1, 4), 'south'): 0.0, ((4, 3), 'east'): 0.0, ((4, 1), 'west'): 0, ((0, 4), 'west'): 0.0, ((4, 3), 'north'): 0.0, ((0, 3), 'south'): 0.0, ((3, 1), 'east'): 1.51875, ((4, 1), 'east'): 0.0, ((0, 1), 'west'): 0.0, ((0, 4), 'east'): 0.0, ((1, 1), 'north'): 0, ((2, 1), 'north'): 0, ((4, 3), 'south'): 8.918701171875}
+
+--------------------------------
+
+State:(0, 0), optimal:exit, current:exit
+State:(0, 1), optimal:east, current:north
+State:(0, 2), optimal:south, current:west
+State:(0, 3), optimal:south, current:east
+State:(0, 4), optimal:east, current:west
+State:(1, 0), optimal:exit, current:exit
+State:(1, 1), optimal:east, current:north
+State:(1, 4), optimal:east, current:west
+State:(2, 0), optimal:exit, current:exit
+State:(2, 1), optimal:east, current:east
+State:(2, 2), optimal:exit, current:exit
+State:(2, 3), optimal:east, current:east
+State:(2, 4), optimal:south, current:south
+State:(3, 0), optimal:exit, current:exit
+State:(3, 1), optimal:east, current:east
+State:(3, 3), optimal:east, current:east
+State:(3, 4), optimal:south, current:east
+State:(4, 0), optimal:exit, current:exit
+State:(4, 1), optimal:north, current:north
+State:(4, 2), optimal:exit, current:exit
+State:(4, 3), optimal:south, current:south
+State:(4, 4), optimal:south, current:south
+################################
+Current Policy Convergence Ratio: 0.681818
+################################
+
+BEGINNING EPISODE: 22
+
+Current Policy Convergence Ratio: 0.818182
+Step: 0, S: (4, 4), A: south, S': (4, 3), R: 0.0
+
+Current Policy Convergence Ratio: 0.681818
+Step: 1, S: (4, 3), A: south, S': (4, 2), R: 0.0
+
+Current Policy Convergence Ratio: 0.818182
+Step: 2, S: (4, 2), A: exit, S': TERMINAL_STATE, R: 10
+
+Current Policy Convergence Ratio: 0.818182
+--------------------------------
+EPISODE 22 COMPLETE: RETURN WAS 8.1
+
+TOTAL STEPS: 447, EPISODE STEPS: 3
+Learned QValue: {((0, 1), 'east'): 0.0, ((4, 4), 'south'): 4.01341552734375, ((0, 2), 'south'): 0.0, ((0, 2), 'west'): 0.0, ((3, 1), 'west'): 0.0, ((2, 0), 'exit'): 0, ((2, 1), 'east'): 0.6834375, ((4, 0), 'exit'): 0, ((2, 3), 'west'): 0, ((0, 3), 'north'): 0.0, ((4, 2), 'exit'): 9.998779296875, ((2, 4), 'east'): 0.0, ((0, 1), 'south'): -6.1875, ((2, 3), 'east'): 5.421225585937501, ((0, 2), 'east'): 0.0, ((3, 3), 'south'): 0, ((3, 3), 'north'): 0.0, ((3, 4), 'north'): 0.0, ((4, 4), 'north'): 0.0, ((4, 1), 'south'): 0, ((2, 1), 'south'): 0, ((2, 2), 'exit'): 0.5, ((0, 3), 'west'): 0.0, ((2, 4), 'south'): 0.922640625, ((4, 4), 'east'): 0.0, ((3, 4), 'east'): 0.0, ((1, 4), 'north'): 0.0, ((0, 2), 'north'): 0.0, ((2, 3), 'north'): 0, ((3, 3), 'west'): 0.61509375, ((4, 4), 'west'): 0.0, ((0, 3), 'east'): 0.0, ((1, 0), 'exit'): -8.75, ((3, 1), 'south'): 0.0, ((2, 4), 'north'): 0.0, ((1, 1), 'south'): -4.5, ((1, 1), 'west'): 0.0, ((3, 3), 'east'): 7.510693359375001, ((0, 0), 'exit'): -9.375, ((2, 3), 'south'): 0.0, ((3, 0), 'exit'): -5.0, ((1, 4), 'east'): 0.0, ((4, 3), 'west'): 0.0, ((4, 1), 'north'): 7.453125, ((0, 1), 'north'): 0.0, ((2, 4), 'west'): 0.0, ((1, 4), 'west'): 0.0, ((1, 1), 'east'): 0.0, ((0, 4), 'north'): 0.0, ((2, 1), 'west'): 0.0, ((0, 4), 'south'): 0.0, ((3, 4), 'west'): 0.0, ((3, 1), 'north'): 0, ((3, 4), 'south'): 0.0, ((1, 4), 'south'): 0.0, ((4, 3), 'east'): 0.0, ((4, 1), 'west'): 0, ((0, 4), 'west'): 0.0, ((4, 3), 'north'): 0.0, ((0, 3), 'south'): 0.0, ((3, 1), 'east'): 1.51875, ((4, 1), 'east'): 0.0, ((0, 1), 'west'): 0.0, ((0, 4), 'east'): 0.0, ((1, 1), 'north'): 0, ((2, 1), 'north'): 0, ((4, 3), 'south'): 8.958251953125}
+
+--------------------------------
+
+State:(0, 0), optimal:exit, current:exit
+State:(0, 1), optimal:east, current:north
+State:(0, 2), optimal:south, current:east
+State:(0, 3), optimal:north, current:south
+State:(0, 4), optimal:east, current:west
+State:(1, 0), optimal:exit, current:exit
+State:(1, 1), optimal:east, current:east
+State:(1, 4), optimal:east, current:south
+State:(2, 0), optimal:exit, current:exit
+State:(2, 1), optimal:east, current:east
+State:(2, 2), optimal:exit, current:exit
+State:(2, 3), optimal:east, current:east
+State:(2, 4), optimal:south, current:south
+State:(3, 0), optimal:exit, current:exit
+State:(3, 1), optimal:east, current:east
+State:(3, 3), optimal:east, current:east
+State:(3, 4), optimal:south, current:south
+State:(4, 0), optimal:exit, current:exit
+State:(4, 1), optimal:north, current:north
+State:(4, 2), optimal:exit, current:exit
+State:(4, 3), optimal:south, current:south
+State:(4, 4), optimal:south, current:south
+################################
+Current Policy Convergence Ratio: 0.772727
+################################
+
+BEGINNING EPISODE: 23
+
+Current Policy Convergence Ratio: 0.681818
+Step: 0, S: (1, 1), A: north, S': (1, 1), R: 0.0
+
+Current Policy Convergence Ratio: 0.818182
+Step: 1, S: (1, 1), A: east, S': (2, 1), R: 0.0
+
+Current Policy Convergence Ratio: 0.772727
+Step: 2, S: (2, 1), A: north, S': (2, 2), R: 0.0
+
+Current Policy Convergence Ratio: 0.818182
+Step: 3, S: (2, 2), A: exit, S': TERMINAL_STATE, R: 1
+
+Current Policy Convergence Ratio: 0.818182
+--------------------------------
+EPISODE 23 COMPLETE: RETURN WAS 0.729
+
+TOTAL STEPS: 451, EPISODE STEPS: 4
+Learned QValue: {((0, 1), 'east'): 0.0, ((4, 4), 'south'): 4.01341552734375, ((0, 2), 'south'): 0.0, ((0, 2), 'west'): 0.0, ((3, 1), 'west'): 0.0, ((2, 0), 'exit'): 0, ((2, 1), 'east'): 0.6834375, ((4, 0), 'exit'): 0, ((2, 3), 'west'): 0, ((0, 3), 'north'): 0.0, ((4, 2), 'exit'): 9.998779296875, ((2, 4), 'east'): 0.0, ((0, 1), 'south'): -6.1875, ((2, 3), 'east'): 5.421225585937501, ((0, 2), 'east'): 0.0, ((3, 3), 'south'): 0, ((3, 3), 'north'): 0.0, ((3, 4), 'north'): 0.0, ((4, 4), 'north'): 0.0, ((4, 1), 'south'): 0, ((2, 1), 'south'): 0, ((2, 2), 'exit'): 0.75, ((0, 3), 'west'): 0.0, ((2, 4), 'south'): 0.922640625, ((4, 4), 'east'): 0.0, ((3, 4), 'east'): 0.0, ((1, 4), 'north'): 0.0, ((0, 2), 'north'): 0.0, ((2, 3), 'north'): 0, ((3, 3), 'west'): 0.61509375, ((4, 4), 'west'): 0.0, ((0, 3), 'east'): 0.0, ((1, 0), 'exit'): -8.75, ((3, 1), 'south'): 0.0, ((2, 4), 'north'): 0.0, ((1, 1), 'south'): -4.5, ((1, 1), 'west'): 0.0, ((3, 3), 'east'): 7.510693359375001, ((0, 0), 'exit'): -9.375, ((2, 3), 'south'): 0.0, ((3, 0), 'exit'): -5.0, ((1, 4), 'east'): 0.0, ((4, 3), 'west'): 0.0, ((4, 1), 'north'): 7.453125, ((0, 1), 'north'): 0.0, ((2, 4), 'west'): 0.0, ((1, 4), 'west'): 0.0, ((1, 1), 'east'): 0.307546875, ((0, 4), 'north'): 0.0, ((2, 1), 'west'): 0.0, ((0, 4), 'south'): 0.0, ((3, 4), 'west'): 0.0, ((3, 1), 'north'): 0, ((3, 4), 'south'): 0.0, ((1, 4), 'south'): 0.0, ((4, 3), 'east'): 0.0, ((4, 1), 'west'): 0, ((0, 4), 'west'): 0.0, ((4, 3), 'north'): 0.0, ((0, 3), 'south'): 0.0, ((3, 1), 'east'): 1.51875, ((4, 1), 'east'): 0.0, ((0, 1), 'west'): 0.0, ((0, 4), 'east'): 0.0, ((1, 1), 'north'): 0.0, ((2, 1), 'north'): 0.225, ((4, 3), 'south'): 8.958251953125}
+
+--------------------------------
+
+State:(0, 0), optimal:exit, current:exit
+State:(0, 1), optimal:east, current:east
+State:(0, 2), optimal:south, current:south
+State:(0, 3), optimal:north, current:east
+State:(0, 4), optimal:east, current:north
+State:(1, 0), optimal:exit, current:exit
+State:(1, 1), optimal:east, current:east
+State:(1, 4), optimal:east, current:west
+State:(2, 0), optimal:exit, current:exit
+State:(2, 1), optimal:east, current:east
+State:(2, 2), optimal:exit, current:exit
+State:(2, 3), optimal:east, current:east
+State:(2, 4), optimal:south, current:south
+State:(3, 0), optimal:exit, current:exit
+State:(3, 1), optimal:east, current:east
+State:(3, 3), optimal:east, current:east
+State:(3, 4), optimal:south, current:west
+State:(4, 0), optimal:exit, current:exit
+State:(4, 1), optimal:north, current:north
+State:(4, 2), optimal:exit, current:exit
+State:(4, 3), optimal:south, current:south
+State:(4, 4), optimal:south, current:south
+################################
+Current Policy Convergence Ratio: 0.818182
+################################
+
+BEGINNING EPISODE: 24
+
+Current Policy Convergence Ratio: 0.818182
+Step: 0, S: (2, 3), A: east, S': (3, 3), R: 0.0
+
+Current Policy Convergence Ratio: 0.772727
+Step: 1, S: (3, 3), A: east, S': (4, 3), R: 0.0
+
+Current Policy Convergence Ratio: 0.772727
+Step: 2, S: (4, 3), A: south, S': (4, 2), R: 0.0
+
+Current Policy Convergence Ratio: 0.909091
+Step: 3, S: (4, 2), A: exit, S': TERMINAL_STATE, R: 10
+
+Current Policy Convergence Ratio: 0.863636
+--------------------------------
+EPISODE 24 COMPLETE: RETURN WAS 7.29
+
+TOTAL STEPS: 455, EPISODE STEPS: 4
+Learned QValue: {((0, 1), 'east'): 0.0, ((4, 4), 'south'): 4.01341552734375, ((0, 2), 'south'): 0.0, ((0, 2), 'west'): 0.0, ((3, 1), 'west'): 0.0, ((2, 0), 'exit'): 0, ((2, 1), 'east'): 0.6834375, ((4, 0), 'exit'): 0, ((2, 3), 'west'): 0, ((0, 3), 'north'): 0.0, ((4, 2), 'exit'): 9.9993896484375, ((2, 4), 'east'): 0.0, ((0, 1), 'south'): -6.1875, ((2, 3), 'east'): 6.090424804687501, ((0, 2), 'east'): 0.0, ((3, 3), 'south'): 0, ((3, 3), 'north'): 0.0, ((3, 4), 'north'): 0.0, ((4, 4), 'north'): 0.0, ((4, 1), 'south'): 0, ((2, 1), 'south'): 0, ((2, 2), 'exit'): 0.75, ((0, 3), 'west'): 0.0, ((2, 4), 'south'): 0.922640625, ((4, 4), 'east'): 0.0, ((3, 4), 'east'): 0.0, ((1, 4), 'north'): 0.0, ((0, 2), 'north'): 0.0, ((2, 3), 'north'): 0, ((3, 3), 'west'): 0.61509375, ((4, 4), 'west'): 0.0, ((0, 3), 'east'): 0.0, ((1, 0), 'exit'): -8.75, ((3, 1), 'south'): 0.0, ((2, 4), 'north'): 0.0, ((1, 1), 'south'): -4.5, ((1, 1), 'west'): 0.0, ((3, 3), 'east'): 7.786560058593751, ((0, 0), 'exit'): -9.375, ((2, 3), 'south'): 0.0, ((3, 0), 'exit'): -5.0, ((1, 4), 'east'): 0.0, ((4, 3), 'west'): 0.0, ((4, 1), 'north'): 7.453125, ((0, 1), 'north'): 0.0, ((2, 4), 'west'): 0.0, ((1, 4), 'west'): 0.0, ((1, 1), 'east'): 0.307546875, ((0, 4), 'north'): 0.0, ((2, 1), 'west'): 0.0, ((0, 4), 'south'): 0.0, ((3, 4), 'west'): 0.0, ((3, 1), 'north'): 0, ((3, 4), 'south'): 0.0, ((1, 4), 'south'): 0.0, ((4, 3), 'east'): 0.0, ((4, 1), 'west'): 0, ((0, 4), 'west'): 0.0, ((4, 3), 'north'): 0.0, ((0, 3), 'south'): 0.0, ((3, 1), 'east'): 1.51875, ((4, 1), 'east'): 0.0, ((0, 1), 'west'): 0.0, ((0, 4), 'east'): 0.0, ((1, 1), 'north'): 0.0, ((2, 1), 'north'): 0.225, ((4, 3), 'south'): 8.97857666015625}
+
+--------------------------------
+
+State:(0, 0), optimal:exit, current:exit
+State:(0, 1), optimal:east, current:east
+State:(0, 2), optimal:south, current:south
+State:(0, 3), optimal:north, current:west
+State:(0, 4), optimal:east, current:north
+State:(1, 0), optimal:exit, current:exit
+State:(1, 1), optimal:east, current:east
+State:(1, 4), optimal:east, current:north
+State:(2, 0), optimal:exit, current:exit
+State:(2, 1), optimal:east, current:east
+State:(2, 2), optimal:exit, current:exit
+State:(2, 3), optimal:east, current:east
+State:(2, 4), optimal:south, current:south
+State:(3, 0), optimal:exit, current:exit
+State:(3, 1), optimal:east, current:east
+State:(3, 3), optimal:east, current:east
+State:(3, 4), optimal:south, current:south
+State:(4, 0), optimal:exit, current:exit
+State:(4, 1), optimal:north, current:north
+State:(4, 2), optimal:exit, current:exit
+State:(4, 3), optimal:south, current:south
+State:(4, 4), optimal:south, current:south
+################################
+Current Policy Convergence Ratio: 0.863636
+################################
+
+BEGINNING EPISODE: 25
+
+Current Policy Convergence Ratio: 0.818182
+Step: 0, S: (4, 3), A: south, S': (4, 2), R: 0.0
+
+Current Policy Convergence Ratio: 0.772727
+Step: 1, S: (4, 2), A: exit, S': TERMINAL_STATE, R: 10
+
+Current Policy Convergence Ratio: 0.863636
+--------------------------------
+EPISODE 25 COMPLETE: RETURN WAS 9.0
+
+TOTAL STEPS: 457, EPISODE STEPS: 2
+Learned QValue: {((0, 1), 'east'): 0.0, ((4, 4), 'south'): 4.01341552734375, ((0, 2), 'south'): 0.0, ((0, 2), 'west'): 0.0, ((3, 1), 'west'): 0.0, ((2, 0), 'exit'): 0, ((2, 1), 'east'): 0.6834375, ((4, 0), 'exit'): 0, ((2, 3), 'west'): 0, ((0, 3), 'north'): 0.0, ((4, 2), 'exit'): 9.99969482421875, ((2, 4), 'east'): 0.0, ((0, 1), 'south'): -6.1875, ((2, 3), 'east'): 6.090424804687501, ((0, 2), 'east'): 0.0, ((3, 3), 'south'): 0, ((3, 3), 'north'): 0.0, ((3, 4), 'north'): 0.0, ((4, 4), 'north'): 0.0, ((4, 1), 'south'): 0, ((2, 1), 'south'): 0, ((2, 2), 'exit'): 0.75, ((0, 3), 'west'): 0.0, ((2, 4), 'south'): 0.922640625, ((4, 4), 'east'): 0.0, ((3, 4), 'east'): 0.0, ((1, 4), 'north'): 0.0, ((0, 2), 'north'): 0.0, ((2, 3), 'north'): 0, ((3, 3), 'west'): 0.61509375, ((4, 4), 'west'): 0.0, ((0, 3), 'east'): 0.0, ((1, 0), 'exit'): -8.75, ((3, 1), 'south'): 0.0, ((2, 4), 'north'): 0.0, ((1, 1), 'south'): -4.5, ((1, 1), 'west'): 0.0, ((3, 3), 'east'): 7.786560058593751, ((0, 0), 'exit'): -9.375, ((2, 3), 'south'): 0.0, ((3, 0), 'exit'): -5.0, ((1, 4), 'east'): 0.0, ((4, 3), 'west'): 0.0, ((4, 1), 'north'): 7.453125, ((0, 1), 'north'): 0.0, ((2, 4), 'west'): 0.0, ((1, 4), 'west'): 0.0, ((1, 1), 'east'): 0.307546875, ((0, 4), 'north'): 0.0, ((2, 1), 'west'): 0.0, ((0, 4), 'south'): 0.0, ((3, 4), 'west'): 0.0, ((3, 1), 'north'): 0, ((3, 4), 'south'): 0.0, ((1, 4), 'south'): 0.0, ((4, 3), 'east'): 0.0, ((4, 1), 'west'): 0, ((0, 4), 'west'): 0.0, ((4, 3), 'north'): 0.0, ((0, 3), 'south'): 0.0, ((3, 1), 'east'): 1.51875, ((4, 1), 'east'): 0.0, ((0, 1), 'west'): 0.0, ((0, 4), 'east'): 0.0, ((1, 1), 'north'): 0.0, ((2, 1), 'north'): 0.225, ((4, 3), 'south'): 8.989013671875}
+
+--------------------------------
+
+State:(0, 0), optimal:exit, current:exit
+State:(0, 1), optimal:east, current:north
+State:(0, 2), optimal:south, current:east
+State:(0, 3), optimal:south, current:east
+State:(0, 4), optimal:east, current:south
+State:(1, 0), optimal:exit, current:exit
+State:(1, 1), optimal:east, current:east
+State:(1, 4), optimal:east, current:north
+State:(2, 0), optimal:exit, current:exit
+State:(2, 1), optimal:east, current:east
+State:(2, 2), optimal:exit, current:exit
+State:(2, 3), optimal:east, current:east
+State:(2, 4), optimal:south, current:south
+State:(3, 0), optimal:exit, current:exit
+State:(3, 1), optimal:east, current:east
+State:(3, 3), optimal:east, current:east
+State:(3, 4), optimal:south, current:west
+State:(4, 0), optimal:exit, current:exit
+State:(4, 1), optimal:north, current:north
+State:(4, 2), optimal:exit, current:exit
+State:(4, 3), optimal:south, current:south
+State:(4, 4), optimal:south, current:south
+################################
+Current Policy Convergence Ratio: 0.727273
+################################
+
+BEGINNING EPISODE: 26
+
+Current Policy Convergence Ratio: 0.772727
+Step: 0, S: (0, 2), A: east, S': (0, 2), R: 0.0
+
+Current Policy Convergence Ratio: 0.772727
+Step: 1, S: (0, 2), A: west, S': (0, 2), R: 0.0
+
+Current Policy Convergence Ratio: 0.818182
+Step: 2, S: (0, 2), A: south, S': (0, 1), R: 0.0
+
+Current Policy Convergence Ratio: 0.772727
+Step: 3, S: (0, 1), A: north, S': (0, 2), R: 0.0
+
+Current Policy Convergence Ratio: 0.818182
+Step: 4, S: (0, 2), A: south, S': (0, 1), R: 0.0
+
+Current Policy Convergence Ratio: 0.818182
+Step: 5, S: (0, 1), A: west, S': (0, 1), R: 0.0
+
+Current Policy Convergence Ratio: 0.727273
+Step: 6, S: (0, 1), A: east, S': (1, 1), R: 0.0
+
+Current Policy Convergence Ratio: 0.772727
+Step: 7, S: (1, 1), A: west, S': (0, 1), R: 0.0
+
+Current Policy Convergence Ratio: 0.818182
+Step: 8, S: (0, 1), A: north, S': (0, 2), R: 0.0
+
+Current Policy Convergence Ratio: 0.772727
+Step: 9, S: (0, 2), A: west, S': (0, 2), R: 0.0
+
+Current Policy Convergence Ratio: 0.818182
+Step: 10, S: (0, 2), A: north, S': (0, 3), R: 0.0
+
+Current Policy Convergence Ratio: 0.909091
+Step: 11, S: (0, 3), A: west, S': (0, 3), R: 0.0
+
+Current Policy Convergence Ratio: 0.909091
+Step: 12, S: (0, 3), A: east, S': (0, 3), R: 0.0
+
+Current Policy Convergence Ratio: 0.772727
+Step: 13, S: (0, 3), A: north, S': (0, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.772727
+Step: 14, S: (0, 4), A: north, S': (0, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.818182
+Step: 15, S: (0, 4), A: east, S': (1, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.818182
+Step: 16, S: (1, 4), A: east, S': (2, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.818182
+Step: 17, S: (2, 4), A: south, S': (2, 3), R: 0.0
+
+Current Policy Convergence Ratio: 0.818182
+Step: 18, S: (2, 3), A: east, S': (3, 3), R: 0.0
+
+Current Policy Convergence Ratio: 0.818182
+Step: 19, S: (3, 3), A: east, S': (4, 3), R: 0.0
+
+Current Policy Convergence Ratio: 0.863636
+Step: 20, S: (4, 3), A: south, S': (4, 2), R: 0.0
+
+Current Policy Convergence Ratio: 0.863636
+Step: 21, S: (4, 2), A: exit, S': TERMINAL_STATE, R: 10
+
+Current Policy Convergence Ratio: 0.818182
+--------------------------------
+EPISODE 26 COMPLETE: RETURN WAS 1.09418989132
+
+TOTAL STEPS: 479, EPISODE STEPS: 22
+Learned QValue: {((0, 1), 'east'): 0.13839609375, ((4, 4), 'south'): 4.01341552734375, ((0, 2), 'south'): 0.0, ((0, 2), 'west'): 0.0, ((3, 1), 'west'): 0.0, ((2, 0), 'exit'): 0, ((2, 1), 'east'): 0.6834375, ((4, 0), 'exit'): 0, ((2, 3), 'west'): 0, ((0, 3), 'north'): 0.0, ((4, 2), 'exit'): 9.999847412109375, ((2, 4), 'east'): 0.0, ((0, 1), 'south'): -6.1875, ((2, 3), 'east'): 6.549164428710938, ((0, 2), 'east'): 0.0, ((3, 3), 'south'): 0, ((3, 3), 'north'): 0.0, ((3, 4), 'north'): 0.0, ((4, 4), 'north'): 0.0, ((4, 1), 'south'): 0, ((2, 1), 'south'): 0, ((2, 2), 'exit'): 0.75, ((0, 3), 'west'): 0.0, ((2, 4), 'south'): 3.2020114746093755, ((4, 4), 'east'): 0.0, ((3, 4), 'east'): 0.0, ((1, 4), 'north'): 0.0, ((0, 2), 'north'): 0.0, ((2, 3), 'north'): 0, ((3, 3), 'west'): 0.61509375, ((4, 4), 'west'): 0.0, ((0, 3), 'east'): 0.0, ((1, 0), 'exit'): -8.75, ((3, 1), 'south'): 0.0, ((2, 4), 'north'): 0.0, ((1, 1), 'south'): -4.5, ((1, 1), 'west'): 0.062278242187500006, ((3, 3), 'east'): 7.938336181640626, ((0, 0), 'exit'): -9.375, ((2, 3), 'south'): 0.0, ((3, 0), 'exit'): -5.0, ((1, 4), 'east'): 0.41518828125, ((4, 3), 'west'): 0.0, ((4, 1), 'north'): 7.453125, ((0, 1), 'north'): 0.0, ((2, 4), 'west'): 0.0, ((1, 4), 'west'): 0.0, ((1, 1), 'east'): 0.307546875, ((0, 4), 'north'): 0.0, ((2, 1), 'west'): 0.0, ((0, 4), 'south'): 0.0, ((3, 4), 'west'): 0.0, ((3, 1), 'north'): 0, ((3, 4), 'south'): 0.0, ((1, 4), 'south'): 0.0, ((4, 3), 'east'): 0.0, ((4, 1), 'west'): 0, ((0, 4), 'west'): 0.0, ((4, 3), 'north'): 0.0, ((0, 3), 'south'): 0.0, ((3, 1), 'east'): 1.51875, ((4, 1), 'east'): 0.0, ((0, 1), 'west'): 0.0, ((0, 4), 'east'): 0.0, ((1, 1), 'north'): 0.0, ((2, 1), 'north'): 0.225, ((4, 3), 'south'): 8.994369506835938}
+
+--------------------------------
+
+State:(0, 0), optimal:exit, current:exit
+State:(0, 1), optimal:east, current:east
+State:(0, 2), optimal:south, current:east
+State:(0, 3), optimal:south, current:north
+State:(0, 4), optimal:east, current:south
+State:(1, 0), optimal:exit, current:exit
+State:(1, 1), optimal:east, current:east
+State:(1, 4), optimal:east, current:east
+State:(2, 0), optimal:exit, current:exit
+State:(2, 1), optimal:east, current:east
+State:(2, 2), optimal:exit, current:exit
+State:(2, 3), optimal:east, current:east
+State:(2, 4), optimal:south, current:south
+State:(3, 0), optimal:exit, current:exit
+State:(3, 1), optimal:east, current:east
+State:(3, 3), optimal:east, current:east
+State:(3, 4), optimal:south, current:east
+State:(4, 0), optimal:exit, current:exit
+State:(4, 1), optimal:north, current:north
+State:(4, 2), optimal:exit, current:exit
+State:(4, 3), optimal:south, current:south
+State:(4, 4), optimal:south, current:south
+################################
+Current Policy Convergence Ratio: 0.818182
+################################
+
+BEGINNING EPISODE: 27
+
+Current Policy Convergence Ratio: 0.909091
+Step: 0, S: (3, 4), A: south, S': (3, 3), R: 0.0
+
+Current Policy Convergence Ratio: 0.954545
+Step: 1, S: (3, 3), A: east, S': (4, 3), R: 0.0
+
+Current Policy Convergence Ratio: 0.954545
+Step: 2, S: (4, 3), A: south, S': (4, 2), R: 0.0
+
+Current Policy Convergence Ratio: 0.863636
+Step: 3, S: (4, 2), A: exit, S': TERMINAL_STATE, R: 10
+
+Current Policy Convergence Ratio: 0.863636
+--------------------------------
+EPISODE 27 COMPLETE: RETURN WAS 7.29
+
+TOTAL STEPS: 483, EPISODE STEPS: 4
+Learned QValue: {((0, 1), 'east'): 0.13839609375, ((4, 4), 'south'): 4.01341552734375, ((0, 2), 'south'): 0.0, ((0, 2), 'west'): 0.0, ((3, 1), 'west'): 0.0, ((2, 0), 'exit'): 0, ((2, 1), 'east'): 0.6834375, ((4, 0), 'exit'): 0, ((2, 3), 'west'): 0, ((0, 3), 'north'): 0.0, ((4, 2), 'exit'): 9.999923706054688, ((2, 4), 'east'): 0.0, ((0, 1), 'south'): -6.1875, ((2, 3), 'east'): 6.549164428710938, ((0, 2), 'east'): 0.0, ((3, 3), 'south'): 0, ((3, 3), 'north'): 0.0, ((3, 4), 'north'): 0.0, ((4, 4), 'north'): 0.0, ((4, 1), 'south'): 0, ((2, 1), 'south'): 0, ((2, 2), 'exit'): 0.75, ((0, 3), 'west'): 0.0, ((2, 4), 'south'): 3.2020114746093755, ((4, 4), 'east'): 0.0, ((3, 4), 'east'): 0.0, ((1, 4), 'north'): 0.0, ((0, 2), 'north'): 0.0, ((2, 3), 'north'): 0, ((3, 3), 'west'): 0.61509375, ((4, 4), 'west'): 0.0, ((0, 3), 'east'): 0.0, ((1, 0), 'exit'): -8.75, ((3, 1), 'south'): 0.0, ((2, 4), 'north'): 0.0, ((1, 1), 'south'): -4.5, ((1, 1), 'west'): 0.062278242187500006, ((3, 3), 'east'): 8.016634368896485, ((0, 0), 'exit'): -9.375, ((2, 3), 'south'): 0.0, ((3, 0), 'exit'): -5.0, ((1, 4), 'east'): 0.41518828125, ((4, 3), 'west'): 0.0, ((4, 1), 'north'): 7.453125, ((0, 1), 'north'): 0.0, ((2, 4), 'west'): 0.0, ((1, 4), 'west'): 0.0, ((1, 1), 'east'): 0.307546875, ((0, 4), 'north'): 0.0, ((2, 1), 'west'): 0.0, ((0, 4), 'south'): 0.0, ((3, 4), 'west'): 0.0, ((3, 1), 'north'): 0, ((3, 4), 'south'): 3.5722512817382817, ((1, 4), 'south'): 0.0, ((4, 3), 'east'): 0.0, ((4, 1), 'west'): 0, ((0, 4), 'west'): 0.0, ((4, 3), 'north'): 0.0, ((0, 3), 'south'): 0.0, ((3, 1), 'east'): 1.51875, ((4, 1), 'east'): 0.0, ((0, 1), 'west'): 0.0, ((0, 4), 'east'): 0.0, ((1, 1), 'north'): 0.0, ((2, 1), 'north'): 0.225, ((4, 3), 'south'): 8.997116088867188}
+
+--------------------------------
+
+State:(0, 0), optimal:exit, current:exit
+State:(0, 1), optimal:east, current:east
+State:(0, 2), optimal:south, current:west
+State:(0, 3), optimal:south, current:west
+State:(0, 4), optimal:east, current:west
+State:(1, 0), optimal:exit, current:exit
+State:(1, 1), optimal:east, current:east
+State:(1, 4), optimal:east, current:east
+State:(2, 0), optimal:exit, current:exit
+State:(2, 1), optimal:east, current:east
+State:(2, 2), optimal:exit, current:exit
+State:(2, 3), optimal:east, current:east
+State:(2, 4), optimal:south, current:south
+State:(3, 0), optimal:exit, current:exit
+State:(3, 1), optimal:east, current:east
+State:(3, 3), optimal:east, current:east
+State:(3, 4), optimal:south, current:south
+State:(4, 0), optimal:exit, current:exit
+State:(4, 1), optimal:north, current:north
+State:(4, 2), optimal:exit, current:exit
+State:(4, 3), optimal:south, current:south
+State:(4, 4), optimal:south, current:south
+################################
+Current Policy Convergence Ratio: 0.863636
+################################
+
+BEGINNING EPISODE: 28
+
+Current Policy Convergence Ratio: 0.909091
+Step: 0, S: (4, 1), A: north, S': (4, 2), R: 0.0
+
+Current Policy Convergence Ratio: 0.863636
+Step: 1, S: (4, 2), A: exit, S': TERMINAL_STATE, R: 10
+
+Current Policy Convergence Ratio: 0.863636
+--------------------------------
+EPISODE 28 COMPLETE: RETURN WAS 9.0
+
+TOTAL STEPS: 485, EPISODE STEPS: 2
+Learned QValue: {((0, 1), 'east'): 0.13839609375, ((4, 4), 'south'): 4.01341552734375, ((0, 2), 'south'): 0.0, ((0, 2), 'west'): 0.0, ((3, 1), 'west'): 0.0, ((2, 0), 'exit'): 0, ((2, 1), 'east'): 0.6834375, ((4, 0), 'exit'): 0, ((2, 3), 'west'): 0, ((0, 3), 'north'): 0.0, ((4, 2), 'exit'): 9.999961853027344, ((2, 4), 'east'): 0.0, ((0, 1), 'south'): -6.1875, ((2, 3), 'east'): 6.549164428710938, ((0, 2), 'east'): 0.0, ((3, 3), 'south'): 0, ((3, 3), 'north'): 0.0, ((3, 4), 'north'): 0.0, ((4, 4), 'north'): 0.0, ((4, 1), 'south'): 0, ((2, 1), 'south'): 0, ((2, 2), 'exit'): 0.75, ((0, 3), 'west'): 0.0, ((2, 4), 'south'): 3.2020114746093755, ((4, 4), 'east'): 0.0, ((3, 4), 'east'): 0.0, ((1, 4), 'north'): 0.0, ((0, 2), 'north'): 0.0, ((2, 3), 'north'): 0, ((3, 3), 'west'): 0.61509375, ((4, 4), 'west'): 0.0, ((0, 3), 'east'): 0.0, ((1, 0), 'exit'): -8.75, ((3, 1), 'south'): 0.0, ((2, 4), 'north'): 0.0, ((1, 1), 'south'): -4.5, ((1, 1), 'west'): 0.062278242187500006, ((3, 3), 'east'): 8.016634368896485, ((0, 0), 'exit'): -9.375, ((2, 3), 'south'): 0.0, ((3, 0), 'exit'): -5.0, ((1, 4), 'east'): 0.41518828125, ((4, 3), 'west'): 0.0, ((4, 1), 'north'): 8.22652816772461, ((0, 1), 'north'): 0.0, ((2, 4), 'west'): 0.0, ((1, 4), 'west'): 0.0, ((1, 1), 'east'): 0.307546875, ((0, 4), 'north'): 0.0, ((2, 1), 'west'): 0.0, ((0, 4), 'south'): 0.0, ((3, 4), 'west'): 0.0, ((3, 1), 'north'): 0, ((3, 4), 'south'): 3.5722512817382817, ((1, 4), 'south'): 0.0, ((4, 3), 'east'): 0.0, ((4, 1), 'west'): 0, ((0, 4), 'west'): 0.0, ((4, 3), 'north'): 0.0, ((0, 3), 'south'): 0.0, ((3, 1), 'east'): 1.51875, ((4, 1), 'east'): 0.0, ((0, 1), 'west'): 0.0, ((0, 4), 'east'): 0.0, ((1, 1), 'north'): 0.0, ((2, 1), 'north'): 0.225, ((4, 3), 'south'): 8.997116088867188}
+
+--------------------------------
+
+State:(0, 0), optimal:exit, current:exit
+State:(0, 1), optimal:east, current:east
+State:(0, 2), optimal:south, current:north
+State:(0, 3), optimal:north, current:north
+State:(0, 4), optimal:east, current:west
+State:(1, 0), optimal:exit, current:exit
+State:(1, 1), optimal:east, current:east
+State:(1, 4), optimal:east, current:east
+State:(2, 0), optimal:exit, current:exit
+State:(2, 1), optimal:east, current:east
+State:(2, 2), optimal:exit, current:exit
+State:(2, 3), optimal:east, current:east
+State:(2, 4), optimal:south, current:south
+State:(3, 0), optimal:exit, current:exit
+State:(3, 1), optimal:east, current:east
+State:(3, 3), optimal:east, current:east
+State:(3, 4), optimal:south, current:south
+State:(4, 0), optimal:exit, current:exit
+State:(4, 1), optimal:north, current:north
+State:(4, 2), optimal:exit, current:exit
+State:(4, 3), optimal:south, current:south
+State:(4, 4), optimal:south, current:south
+################################
+Current Policy Convergence Ratio: 0.909091
+################################
+
+BEGINNING EPISODE: 29
+
+Current Policy Convergence Ratio: 0.909091
+Step: 0, S: (2, 3), A: east, S': (3, 3), R: 0.0
+
+Current Policy Convergence Ratio: 0.909091
+Step: 1, S: (3, 3), A: east, S': (4, 3), R: 0.0
+
+Current Policy Convergence Ratio: 1.000000
+Step: 2, S: (4, 3), A: south, S': (4, 2), R: 0.0
+
+Current Policy Convergence Ratio: 0.909091
+Step: 3, S: (4, 2), A: exit, S': TERMINAL_STATE, R: 10
+
+Current Policy Convergence Ratio: 0.909091
+--------------------------------
+EPISODE 29 COMPLETE: RETURN WAS 7.29
+
+TOTAL STEPS: 489, EPISODE STEPS: 4
+Learned QValue: {((0, 1), 'east'): 0.13839609375, ((4, 4), 'south'): 4.01341552734375, ((0, 2), 'south'): 0.0, ((0, 2), 'west'): 0.0, ((3, 1), 'west'): 0.0, ((2, 0), 'exit'): 0, ((2, 1), 'east'): 0.6834375, ((4, 0), 'exit'): 0, ((2, 3), 'west'): 0, ((0, 3), 'north'): 0.0, ((4, 2), 'exit'): 9.999980926513672, ((2, 4), 'east'): 0.0, ((0, 1), 'south'): -6.1875, ((2, 3), 'east'): 6.882067680358887, ((0, 2), 'east'): 0.0, ((3, 3), 'south'): 0, ((3, 3), 'north'): 0.0, ((3, 4), 'north'): 0.0, ((4, 4), 'north'): 0.0, ((4, 1), 'south'): 0, ((2, 1), 'south'): 0, ((2, 2), 'exit'): 0.75, ((0, 3), 'west'): 0.0, ((2, 4), 'south'): 3.2020114746093755, ((4, 4), 'east'): 0.0, ((3, 4), 'east'): 0.0, ((1, 4), 'north'): 0.0, ((0, 2), 'north'): 0.0, ((2, 3), 'north'): 0, ((3, 3), 'west'): 0.61509375, ((4, 4), 'west'): 0.0, ((0, 3), 'east'): 0.0, ((1, 0), 'exit'): -8.75, ((3, 1), 'south'): 0.0, ((2, 4), 'north'): 0.0, ((1, 1), 'south'): -4.5, ((1, 1), 'west'): 0.062278242187500006, ((3, 3), 'east'): 8.057019424438476, ((0, 0), 'exit'): -9.375, ((2, 3), 'south'): 0.0, ((3, 0), 'exit'): -5.0, ((1, 4), 'east'): 0.41518828125, ((4, 3), 'west'): 0.0, ((4, 1), 'north'): 8.22652816772461, ((0, 1), 'north'): 0.0, ((2, 4), 'west'): 0.0, ((1, 4), 'west'): 0.0, ((1, 1), 'east'): 0.307546875, ((0, 4), 'north'): 0.0, ((2, 1), 'west'): 0.0, ((0, 4), 'south'): 0.0, ((3, 4), 'west'): 0.0, ((3, 1), 'north'): 0, ((3, 4), 'south'): 3.5722512817382817, ((1, 4), 'south'): 0.0, ((4, 3), 'east'): 0.0, ((4, 1), 'west'): 0, ((0, 4), 'west'): 0.0, ((4, 3), 'north'): 0.0, ((0, 3), 'south'): 0.0, ((3, 1), 'east'): 1.51875, ((4, 1), 'east'): 0.0, ((0, 1), 'west'): 0.0, ((0, 4), 'east'): 0.0, ((1, 1), 'north'): 0.0, ((2, 1), 'north'): 0.225, ((4, 3), 'south'): 8.998540878295898}
+
+--------------------------------
+
+State:(0, 0), optimal:exit, current:exit
+State:(0, 1), optimal:east, current:east
+State:(0, 2), optimal:south, current:north
+State:(0, 3), optimal:north, current:south
+State:(0, 4), optimal:east, current:north
+State:(1, 0), optimal:exit, current:exit
+State:(1, 1), optimal:east, current:east
+State:(1, 4), optimal:east, current:east
+State:(2, 0), optimal:exit, current:exit
+State:(2, 1), optimal:east, current:east
+State:(2, 2), optimal:exit, current:exit
+State:(2, 3), optimal:east, current:east
+State:(2, 4), optimal:south, current:south
+State:(3, 0), optimal:exit, current:exit
+State:(3, 1), optimal:east, current:east
+State:(3, 3), optimal:east, current:east
+State:(3, 4), optimal:south, current:south
+State:(4, 0), optimal:exit, current:exit
+State:(4, 1), optimal:north, current:north
+State:(4, 2), optimal:exit, current:exit
+State:(4, 3), optimal:south, current:south
+State:(4, 4), optimal:south, current:south
+################################
+Current Policy Convergence Ratio: 0.863636
+################################
+
+BEGINNING EPISODE: 30
+
+Current Policy Convergence Ratio: 0.863636
+Step: 0, S: (1, 1), A: west, S': (0, 1), R: 0.0
+
+Current Policy Convergence Ratio: 0.954545
+Step: 1, S: (0, 1), A: east, S': (1, 1), R: 0.0
+
+Current Policy Convergence Ratio: 0.909091
+Step: 2, S: (1, 1), A: west, S': (0, 1), R: 0.0
+
+Current Policy Convergence Ratio: 0.863636
+Step: 3, S: (0, 1), A: west, S': (0, 1), R: 0.0
+
+Current Policy Convergence Ratio: 0.863636
+Step: 4, S: (0, 1), A: east, S': (1, 1), R: 0.0
+
+Current Policy Convergence Ratio: 0.863636
+Step: 5, S: (1, 1), A: east, S': (2, 1), R: 0.0
+
+Current Policy Convergence Ratio: 0.954545
+Step: 6, S: (2, 1), A: west, S': (1, 1), R: 0.0
+
+Current Policy Convergence Ratio: 0.909091
+Step: 7, S: (1, 1), A: east, S': (2, 1), R: 0.0
+
+Current Policy Convergence Ratio: 0.863636
+Step: 8, S: (2, 1), A: south, S': (2, 0), R: 0.0
+
+Current Policy Convergence Ratio: 0.909091
+Step: 9, S: (2, 0), A: exit, S': TERMINAL_STATE, R: -10
+
+Current Policy Convergence Ratio: 0.909091
+--------------------------------
+EPISODE 30 COMPLETE: RETURN WAS -3.87420489
+
+TOTAL STEPS: 499, EPISODE STEPS: 10
+Learned QValue: {((0, 1), 'east'): 0.24219316406250002, ((4, 4), 'south'): 4.01341552734375, ((0, 2), 'south'): 0.0, ((0, 2), 'west'): 0.0, ((3, 1), 'west'): 0.0, ((2, 0), 'exit'): -5.0, ((2, 1), 'east'): 0.6834375, ((4, 0), 'exit'): 0, ((2, 3), 'west'): 0, ((0, 3), 'north'): 0.0, ((4, 2), 'exit'): 9.999980926513672, ((2, 4), 'east'): 0.0, ((0, 1), 'south'): -6.1875, ((2, 3), 'east'): 6.882067680358887, ((0, 2), 'east'): 0.0, ((3, 3), 'south'): 0, ((3, 3), 'north'): 0.0, ((3, 4), 'north'): 0.0, ((4, 4), 'north'): 0.0, ((4, 1), 'south'): 0, ((2, 1), 'south'): 0.0, ((2, 2), 'exit'): 0.75, ((0, 3), 'west'): 0.0, ((2, 4), 'south'): 3.2020114746093755, ((4, 4), 'east'): 0.0, ((3, 4), 'east'): 0.0, ((1, 4), 'north'): 0.0, ((0, 2), 'north'): 0.0, ((2, 3), 'north'): 0, ((3, 3), 'west'): 0.61509375, ((4, 4), 'west'): 0.0, ((0, 3), 'east'): 0.0, ((1, 0), 'exit'): -8.75, ((3, 1), 'south'): 0.0, ((2, 4), 'north'): 0.0, ((1, 1), 'south'): -4.5, ((1, 1), 'west'): 0.140126044921875, ((3, 3), 'east'): 8.057019424438476, ((0, 0), 'exit'): -9.375, ((2, 3), 'south'): 0.0, ((3, 0), 'exit'): -5.0, ((1, 4), 'east'): 0.41518828125, ((4, 3), 'west'): 0.0, ((4, 1), 'north'): 8.22652816772461, ((0, 1), 'north'): 0.0, ((2, 4), 'west'): 0.0, ((1, 4), 'west'): 0.0, ((1, 1), 'east'): 0.53820703125, ((0, 4), 'north'): 0.0, ((2, 1), 'west'): 0.207594140625, ((0, 4), 'south'): 0.0, ((3, 4), 'west'): 0.0, ((3, 1), 'north'): 0, ((3, 4), 'south'): 3.5722512817382817, ((1, 4), 'south'): 0.0, ((4, 3), 'east'): 0.0, ((4, 1), 'west'): 0, ((0, 4), 'west'): 0.0, ((4, 3), 'north'): 0.0, ((0, 3), 'south'): 0.0, ((3, 1), 'east'): 1.51875, ((4, 1), 'east'): 0.0, ((0, 1), 'west'): 0.09341736328125, ((0, 4), 'east'): 0.0, ((1, 1), 'north'): 0.0, ((2, 1), 'north'): 0.225, ((4, 3), 'south'): 8.998540878295898}
+
+--------------------------------
+
+State:(0, 0), optimal:exit, current:exit
+State:(0, 1), optimal:east, current:east
+State:(0, 2), optimal:south, current:west
+State:(0, 3), optimal:north, current:west
+State:(0, 4), optimal:east, current:west
+State:(1, 0), optimal:exit, current:exit
+State:(1, 1), optimal:east, current:east
+State:(1, 4), optimal:east, current:east
+State:(2, 0), optimal:exit, current:exit
+State:(2, 1), optimal:east, current:east
+State:(2, 2), optimal:exit, current:exit
+State:(2, 3), optimal:east, current:east
+State:(2, 4), optimal:south, current:south
+State:(3, 0), optimal:exit, current:exit
+State:(3, 1), optimal:east, current:east
+State:(3, 3), optimal:east, current:east
+State:(3, 4), optimal:south, current:south
+State:(4, 0), optimal:exit, current:exit
+State:(4, 1), optimal:north, current:north
+State:(4, 2), optimal:exit, current:exit
+State:(4, 3), optimal:south, current:south
+State:(4, 4), optimal:south, current:south
+################################
+Current Policy Convergence Ratio: 0.863636
+################################
+
+BEGINNING EPISODE: 31
+
+Current Policy Convergence Ratio: 0.909091
+Step: 0, S: (0, 1), A: north, S': (0, 2), R: 0.0
+
+Current Policy Convergence Ratio: 0.863636
+Step: 1, S: (0, 2), A: south, S': (0, 1), R: 0.0
+
+Current Policy Convergence Ratio: 0.954545
+Step: 2, S: (0, 1), A: north, S': (0, 2), R: 0.0
+
+Current Policy Convergence Ratio: 0.954545
+Step: 3, S: (0, 2), A: south, S': (0, 1), R: 0.0
+
+Current Policy Convergence Ratio: 0.909091
+Step: 4, S: (0, 1), A: east, S': (1, 1), R: 0.0
+
+Current Policy Convergence Ratio: 0.954545
+Step: 5, S: (1, 1), A: north, S': (1, 1), R: 0.0
+
+Current Policy Convergence Ratio: 0.954545
+Step: 6, S: (1, 1), A: east, S': (2, 1), R: 0.0
+
+Current Policy Convergence Ratio: 0.909091
+Step: 7, S: (2, 1), A: north, S': (2, 2), R: 0.0
+
+Current Policy Convergence Ratio: 0.909091
+Step: 8, S: (2, 2), A: exit, S': TERMINAL_STATE, R: 1
+
+Current Policy Convergence Ratio: 0.909091
+--------------------------------
+EPISODE 31 COMPLETE: RETURN WAS 0.43046721
+
+TOTAL STEPS: 508, EPISODE STEPS: 9
+Learned QValue: {((0, 1), 'east'): 0.36328974609375003, ((4, 4), 'south'): 4.01341552734375, ((0, 2), 'south'): 0.1634803857421875, ((0, 2), 'west'): 0.0, ((3, 1), 'west'): 0.0, ((2, 0), 'exit'): -5.0, ((2, 1), 'east'): 0.6834375, ((4, 0), 'exit'): 0, ((2, 3), 'west'): 0, ((0, 3), 'north'): 0.0, ((4, 2), 'exit'): 9.999980926513672, ((2, 4), 'east'): 0.0, ((0, 1), 'south'): -6.1875, ((2, 3), 'east'): 6.882067680358887, ((0, 2), 'east'): 0.0, ((3, 3), 'south'): 0, ((3, 3), 'north'): 0.0, ((3, 4), 'north'): 0.0, ((4, 4), 'north'): 0.0, ((4, 1), 'south'): 0, ((2, 1), 'south'): 0.0, ((2, 2), 'exit'): 0.875, ((0, 3), 'west'): 0.0, ((2, 4), 'south'): 3.2020114746093755, ((4, 4), 'east'): 0.0, ((3, 4), 'east'): 0.0, ((1, 4), 'north'): 0.0, ((0, 2), 'north'): 0.0, ((2, 3), 'north'): 0, ((3, 3), 'west'): 0.61509375, ((4, 4), 'west'): 0.0, ((0, 3), 'east'): 0.0, ((1, 0), 'exit'): -8.75, ((3, 1), 'south'): 0.0, ((2, 4), 'north'): 0.0, ((1, 1), 'south'): -4.5, ((1, 1), 'west'): 0.140126044921875, ((3, 3), 'east'): 8.057019424438476, ((0, 0), 'exit'): -9.375, ((2, 3), 'south'): 0.0, ((3, 0), 'exit'): -5.0, ((1, 4), 'east'): 0.41518828125, ((4, 3), 'west'): 0.0, ((4, 1), 'north'): 8.22652816772461, ((0, 1), 'north'): 0.049044115722656254, ((2, 4), 'west'): 0.0, ((1, 4), 'west'): 0.0, ((1, 1), 'east'): 0.576650390625, ((0, 4), 'north'): 0.0, ((2, 1), 'west'): 0.207594140625, ((0, 4), 'south'): 0.0, ((3, 4), 'west'): 0.0, ((3, 1), 'north'): 0, ((3, 4), 'south'): 3.5722512817382817, ((1, 4), 'south'): 0.0, ((4, 3), 'east'): 0.0, ((4, 1), 'west'): 0, ((0, 4), 'west'): 0.0, ((4, 3), 'north'): 0.0, ((0, 3), 'south'): 0.0, ((3, 1), 'east'): 1.51875, ((4, 1), 'east'): 0.0, ((0, 1), 'west'): 0.09341736328125, ((0, 4), 'east'): 0.0, ((1, 1), 'north'): 0.24219316406250002, ((2, 1), 'north'): 0.45, ((4, 3), 'south'): 8.998540878295898}
+
+--------------------------------
+
+State:(0, 0), optimal:exit, current:exit
+State:(0, 1), optimal:east, current:east
+State:(0, 2), optimal:south, current:south
+State:(0, 3), optimal:south, current:south
+State:(0, 4), optimal:east, current:east
+State:(1, 0), optimal:exit, current:exit
+State:(1, 1), optimal:east, current:east
+State:(1, 4), optimal:east, current:east
+State:(2, 0), optimal:exit, current:exit
+State:(2, 1), optimal:east, current:east
+State:(2, 2), optimal:exit, current:exit
+State:(2, 3), optimal:east, current:east
+State:(2, 4), optimal:south, current:south
+State:(3, 0), optimal:exit, current:exit
+State:(3, 1), optimal:east, current:east
+State:(3, 3), optimal:east, current:east
+State:(3, 4), optimal:south, current:south
+State:(4, 0), optimal:exit, current:exit
+State:(4, 1), optimal:north, current:north
+State:(4, 2), optimal:exit, current:exit
+State:(4, 3), optimal:south, current:south
+State:(4, 4), optimal:south, current:south
+################################
+Current Policy Convergence Ratio: 1.000000
+################################
+
+##################################
+The policy has converged
+
+TOTAL STEPS: 508, EPISODE STEPS: 9
+##################################
+Learned QValue: {((0, 1), 'east'): 0.36328974609375003, ((4, 4), 'south'): 4.01341552734375, ((0, 2), 'south'): 0.1634803857421875, ((0, 2), 'west'): 0.0, ((3, 1), 'west'): 0.0, ((2, 0), 'exit'): -5.0, ((2, 1), 'east'): 0.6834375, ((4, 0), 'exit'): 0, ((2, 3), 'west'): 0, ((0, 3), 'north'): 0.0, ((4, 2), 'exit'): 9.999980926513672, ((2, 4), 'east'): 0.0, ((0, 1), 'south'): -6.1875, ((2, 3), 'east'): 6.882067680358887, ((0, 2), 'east'): 0.0, ((3, 3), 'south'): 0, ((3, 3), 'north'): 0.0, ((3, 4), 'north'): 0.0, ((4, 4), 'north'): 0.0, ((4, 1), 'south'): 0, ((2, 1), 'south'): 0.0, ((2, 2), 'exit'): 0.875, ((0, 3), 'west'): 0.0, ((2, 4), 'south'): 3.2020114746093755, ((4, 4), 'east'): 0.0, ((3, 4), 'east'): 0.0, ((1, 4), 'north'): 0.0, ((0, 2), 'north'): 0.0, ((2, 3), 'north'): 0, ((3, 3), 'west'): 0.61509375, ((4, 4), 'west'): 0.0, ((0, 3), 'east'): 0.0, ((1, 0), 'exit'): -8.75, ((3, 1), 'south'): 0.0, ((2, 4), 'north'): 0.0, ((1, 1), 'south'): -4.5, ((1, 1), 'west'): 0.140126044921875, ((3, 3), 'east'): 8.057019424438476, ((0, 0), 'exit'): -9.375, ((2, 3), 'south'): 0.0, ((3, 0), 'exit'): -5.0, ((1, 4), 'east'): 0.41518828125, ((4, 3), 'west'): 0.0, ((4, 1), 'north'): 8.22652816772461, ((0, 1), 'north'): 0.049044115722656254, ((2, 4), 'west'): 0.0, ((1, 4), 'west'): 0.0, ((1, 1), 'east'): 0.576650390625, ((0, 4), 'north'): 0.0, ((2, 1), 'west'): 0.207594140625, ((0, 4), 'south'): 0.0, ((3, 4), 'west'): 0.0, ((3, 1), 'north'): 0, ((3, 4), 'south'): 3.5722512817382817, ((1, 4), 'south'): 0.0, ((4, 3), 'east'): 0.0, ((4, 1), 'west'): 0, ((0, 4), 'west'): 0.0, ((4, 3), 'north'): 0.0, ((0, 3), 'south'): 0.0, ((3, 1), 'east'): 1.51875, ((4, 1), 'east'): 0.0, ((0, 1), 'west'): 0.09341736328125, ((0, 4), 'east'): 0.0, ((1, 1), 'north'): 0.24219316406250002, ((2, 1), 'north'): 0.45, ((4, 3), 'south'): 8.998540878295898}
+
+##################################
+
+AVERAGE RETURNS FROM START STATE: 0.0135652091452
+
+
