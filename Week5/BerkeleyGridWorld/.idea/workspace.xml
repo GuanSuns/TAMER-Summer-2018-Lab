@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2cc07f5f-c6ba-40b1-99dc-e0ae1cdb89a6" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/experiment/expr_value_iteration_launcher_terminal.py" afterPath="$PROJECT_DIR$/experiment/expr_value_iteration_launcher_terminal.py" />
-      <change beforePath="$PROJECT_DIR$/../../experiment-logs/06_valueIteration_alpha0.5_epsilon0.3_speed3/optimal_qValues.json" afterPath="" />
-    </list>
+    <list default="true" id="2cc07f5f-c6ba-40b1-99dc-e0ae1cdb89a6" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -30,8 +26,8 @@
       <file leaf-file-name="expr_value_iteration_launcher_terminal.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/experiment/expr_value_iteration_launcher_terminal.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="17" column="16" lean-forward="true" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
+            <state relative-caret-position="219">
+              <caret line="28" column="0" lean-forward="true" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
               <folding>
                 <element signature="e#104#201#0" expanded="true" />
               </folding>
@@ -911,8 +907,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/experiment/expr_value_iteration_launcher_terminal.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="17" column="16" lean-forward="true" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
+        <state relative-caret-position="219">
+          <caret line="28" column="0" lean-forward="true" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
           <folding>
             <element signature="e#104#201#0" expanded="true" />
           </folding>
