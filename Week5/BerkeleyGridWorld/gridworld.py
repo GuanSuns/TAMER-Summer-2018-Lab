@@ -18,7 +18,8 @@ import mdp
 import environment
 import util
 import optparse
-import math
+import qValueSaver
+import matplotlib.pyplot as plt
 import numpy as np
 
 from input import user_input
@@ -594,6 +595,7 @@ class TamerGridWorldExperiment():
                  , check_value_converge=False
                  , check_policy_converge=False
                  , optimal_policy=None
+                 , expr_log_dir=None
                  , delta=0.02
                  , is_use_q_agent=False
                  , is_asyn_input=True):
@@ -609,6 +611,7 @@ class TamerGridWorldExperiment():
         self.check_value_converge = check_value_converge
         self.check_policy_converge = check_policy_converge
         self.optimal_policy = optimal_policy
+        self.expr_log_dir = expr_log_dir
         self.delta = delta
 
         ###########################
@@ -721,6 +724,13 @@ class TamerGridWorldExperiment():
             print
             print
 
+        # save policy convergence ratio logs to file
+        if self.expr_log_dir is not None:
+            converge_log_file = self.expr_log_dir + '/' + 'policy_convergence_ratio.json'
+            qValueSaver.saveDictToFile(converge_log_file, policy_converge_ratios)
+        # plot policy convergence ratio
+        plotRatios(policy_converge_ratios)
+
         # DISPLAY POST-LEARNING VALUES / Q-VALUES
         try:
             self.display.displayQValues(self.agent, message="Q-VALUES AFTER " + str(self.n_episodes) + " EPISODES")
@@ -731,167 +741,23 @@ class TamerGridWorldExperiment():
             sys.exit(0)
 
 
-if __name__ == '__main__':
-
-    opts = parseOptions()
-
-    ###########################
-    # GET THE GRIDWORLD
-    ###########################
-
-    # noinspection PyUnresolvedReferences
-    import gridworld
-
-    mdpFunction = getattr(gridworld, "get" + opts.grid)
-    mdp = mdpFunction()
-    mdp.setLivingReward(opts.livingReward)
-    mdp.setNoise(opts.noise)
-    env = gridworld.GridworldEnvironment(mdp)
-
-    ###########################
-    # GET THE DISPLAY ADAPTER
-    ###########################
-
-    import textGridworldDisplay
-
-    display = textGridworldDisplay.TextGridworldDisplay(mdp)
-    if not opts.textDisplay:
-        import graphicsGridworldDisplay
-
-        display = graphicsGridworldDisplay.GraphicsGridworldDisplay(mdp, opts.gridSize, opts.speed)
-    try:
-        display.start()
-    except KeyboardInterrupt:
-        sys.exit(0)
-
-    ###########################
-    # GET THE AGENT
-    ###########################
-
-    import valueIterationAgents
-    import qlearningAgents
-
-    a = None
-    if opts.agent == 'value':
-        a = valueIterationAgents.ValueIterationAgent(mdp, opts.discount, opts.iters)
-    elif opts.agent == 'q':
-        # env.getPossibleActions, opts.discount, opts.learningRate, opts.epsilon
-        # simulationFn = lambda agent, state: simulation.GridworldSimulation(agent,state,mdp)
-        gridWorldEnv = GridworldEnvironment(mdp)
-        actionFn = lambda state: mdp.getPossibleActions(state)
-        qLearnOpts = {'gamma': opts.discount,
-                      'alpha': opts.learningRate,
-                      'epsilon': opts.epsilon,
-                      'actionFn': actionFn}
-        a = qlearningAgents.QLearningAgent(**qLearnOpts)
-    elif opts.agent == 'random':
-        # # No reason to use the random agent without episodes
-        if opts.episodes == 0:
-            opts.episodes = 10
-
-
-        # noinspection PyUnusedLocal
-        class RandomAgent:
-            def __init__(self):
-                pass
-
-            def getAction(self, state):
-                return random.choice(mdp.getPossibleActions(state))
-
-            def getValue(self, state):
-                return 0.0
-
-            def getQValue(self, state, action):
-                return 0.0
-
-            def getPolicy(self, state):
-                """ NOTE: 'random' is a special policy value; don't use it in your code. """
-                return 'random'
-
-            def update(self, state, action, nextState, reward):
-                pass
-
-
-        a = RandomAgent()
-    else:
-        if not opts.manual:
-            raise Exception('Unknown agent type: ' + opts.agent)
-
-    ###########################
-    # RUN EPISODES
-    ###########################
-    # DISPLAY Q/V VALUES BEFORE SIMULATION OF EPISODES
-    try:
-        if not opts.manual and opts.agent == 'value':
-            if opts.valueSteps:
-                for i in range(opts.iters):
-                    tempAgent = valueIterationAgents.ValueIterationAgent(mdp, opts.discount, i)
-                    display.displayValues(tempAgent, message="VALUES AFTER " + str(i) + " ITERATIONS")
-                    display.pause()
-
-            display.displayValues(a, message="VALUES AFTER " + str(opts.iters) + " ITERATIONS")
-            display.pause()
-            display.displayQValues(a, message="Q-VALUES AFTER " + str(opts.iters) + " ITERATIONS")
-            display.pause()
-    except KeyboardInterrupt:
-        sys.exit(0)
-
-    # FIGURE OUT WHAT TO DISPLAY EACH TIME STEP (IF ANYTHING)
-    displayCallback = lambda x: None
-    if not opts.quiet:
-        if opts.manual and opts.agent is None:
-            displayCallback = lambda state: display.displayNullValues(state)
+def plotRatios(ratio_dict):
+    indices = ratio_dict.keys()
+    min_index = np.min(indices)
+    max_index = np.max(indices)
+    ratio_list = list()
+    for i in range(min_index, max_index+1):
+        if i in ratio_dict:
+            ratio_list.append(ratio_dict[i])
         else:
-            if opts.agent == 'random':
-                displayCallback = lambda state: display.displayValues(a, state, "CURRENT VALUES")
-            if opts.agent == 'value':
-                displayCallback = lambda state: display.displayValues(a, state, "CURRENT VALUES")
-            if opts.agent == 'q':
-                displayCallback = lambda state: display.displayQValues(a, state, "CURRENT Q-VALUES")
+            ratio_list.append(0)
+    # plot the ratio list
+    plt.plot(ratio_list)
+    plt.xlabel('steps')
+    plt.ylabel('policy convergence ratios')
+    plt.show()
 
-    messageCallback = lambda x: printString(x)
-    if opts.quiet:
-        messageCallback = lambda x: None
 
-    # FIGURE OUT WHETHER TO WAIT FOR A KEY PRESS AFTER EACH TIME STEP
-    pauseCallback = lambda: None
-    if opts.pause:
-        pauseCallback = lambda: display.pause()
+if __name__ == '__main__':
+    pass
 
-    # FIGURE OUT WHETHER THE USER WANTS MANUAL CONTROL (FOR DEBUGGING AND DEMOS)
-    if opts.manual:
-        decisionCallback = lambda state: getUserAction(state, mdp.getPossibleActions)
-    else:
-        decisionCallback = a.getAction
-
-    # RUN EPISODES
-    if opts.episodes > 0:
-        print
-        print "RUNNING", opts.episodes, "EPISODES"
-        print
-    returns = 0
-    total_n_steps = 0
-    for episode in range(1, opts.episodes + 1):
-        (episode_returns, n_global_step, has_converge) = runEpisode(a, env, opts.discount
-                                                                    , decisionCallback
-                                                                    , displayCallback
-                                                                    , messageCallback
-                                                                    , pauseCallback, episode
-                                                                    , global_step=total_n_steps)
-        returns += episode_returns
-        total_n_steps = n_global_step
-    if opts.episodes > 0:
-        print
-        print "AVERAGE RETURNS FROM START STATE: " + str((returns + 0.0) / opts.episodes)
-        print
-        print
-
-    # DISPLAY POST-LEARNING VALUES / Q-VALUES
-    if opts.agent == 'q' and not opts.manual:
-        try:
-            display.displayQValues(a, message="Q-VALUES AFTER " + str(opts.episodes) + " EPISODES")
-            display.pause()
-            display.displayValues(a, message="VALUES AFTER " + str(opts.episodes) + " EPISODES")
-            display.pause()
-        except KeyboardInterrupt:
-            sys.exit(0)

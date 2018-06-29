@@ -36,12 +36,17 @@ def json2qValues(json_dict):
     return qValues
 
 
+def saveDictToFile(values_file, values_dict):
+    json_str_values = json.dumps(qValues2Json(values_dict), indent=4, sort_keys=True)
+    f_values = open(values_file, 'w')
+    f_values.write(json_str_values)
+    f_values.close()
+
+
 def saveQValuesCounterToJsonFile(qValue_file, qValues):
     """ save the qValues Counter to the specified file"""
-    f_qValues = open(qValue_file, 'w')
-    json_qValues = json.dumps(qValues2Json(qValues), indent=4, sort_keys=True)
-    f_qValues.write(json_qValues)
-    f_qValues.close()
+    json_qValues = qValues2Json(qValues)
+    saveDictToFile(qValue_file, json_qValues)
 
 
 def readQValuesFromJsonFile(qValue_file):

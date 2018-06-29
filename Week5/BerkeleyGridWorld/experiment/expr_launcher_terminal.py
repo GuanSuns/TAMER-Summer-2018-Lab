@@ -44,8 +44,9 @@ def run_expr():
         postfix += '_synchInput'
     postfix += '_speed' + str(display_speed)
 
-    log_dir = '/Users/lguan/Documents/Study/Research/Summer 2018/experiment-logs'
-    expr_saver = ExprCreaterAndResumer(rootdir=log_dir, postfix=postfix)
+    root_log_dir = '/Users/lguan/Documents/Study/Research/Summer 2018/experiment-logs'
+    expr_saver = ExprCreaterAndResumer(rootdir=root_log_dir, postfix=postfix)
+    expr_log_dir = expr_saver.getLogDir()
 
     # load optimal q-values
     f_qValues = '/Users/lguan/Documents/Study/Research/Summer 2018/experiment-logs/results/converged_qValues.json'
@@ -67,6 +68,7 @@ def run_expr():
                                                         , display_speed=display_speed
                                                         , is_asyn_input=is_asyn
                                                         , delta=delta
+                                                        , expr_log_dir=expr_log_dir
                                                         , optimal_policy=optimal_qValues
                                                         , check_policy_converge=check_policy_converge
                                                         , check_value_converge=check_value_converge

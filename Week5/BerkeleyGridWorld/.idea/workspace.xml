@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2cc07f5f-c6ba-40b1-99dc-e0ae1cdb89a6" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/experiment/expr_launcher_terminal.py" afterPath="$PROJECT_DIR$/experiment/expr_launcher_terminal.py" />
       <change beforePath="$PROJECT_DIR$/gridworld.py" afterPath="$PROJECT_DIR$/gridworld.py" />
+      <change beforePath="$PROJECT_DIR$/qValueSaver.py" afterPath="$PROJECT_DIR$/qValueSaver.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -17,8 +19,8 @@
       <file leaf-file-name="expr_launcher_terminal.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/experiment/expr_launcher_terminal.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="430">
-              <caret line="22" column="23" lean-forward="true" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
+            <state relative-caret-position="818">
+              <caret line="64" column="79" lean-forward="false" selection-start-line="64" selection-start-column="79" selection-end-line="64" selection-end-column="79" />
               <folding>
                 <element signature="e#109#206#0" expanded="true" />
               </folding>
@@ -29,8 +31,8 @@
       <file leaf-file-name="qValueSaver.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/qValueSaver.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="805">
-              <caret line="51" column="0" lean-forward="true" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
+            <state relative-caret-position="147">
+              <caret line="35" column="18" lean-forward="true" selection-start-line="35" selection-start-column="18" selection-end-line="35" selection-end-column="18" />
               <folding>
                 <element signature="e#212#223#0" expanded="true" />
               </folding>
@@ -41,8 +43,8 @@
       <file leaf-file-name="gridworld.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/gridworld.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="486">
-              <caret line="721" column="17" lean-forward="false" selection-start-line="721" selection-start-column="17" selection-end-line="721" selection-end-column="17" />
+            <state relative-caret-position="313">
+              <caret line="724" column="17" lean-forward="true" selection-start-line="724" selection-start-column="17" selection-end-line="724" selection-end-column="17" />
               <folding>
                 <element signature="e#656#669#0" expanded="true" />
               </folding>
@@ -138,9 +140,10 @@
         <option value="$PROJECT_DIR$/experiment/expr_value_iteration_launcher_ide.py" />
         <option value="$PROJECT_DIR$/experiment_creater_and_resumer/experiment_creater_and_resumer.py" />
         <option value="$PROJECT_DIR$/gridworldValueIteration.py" />
-        <option value="$PROJECT_DIR$/qValueSaver.py" />
         <option value="$PROJECT_DIR$/experiment/expr_value_iteration_launcher_terminal.py" />
+        <option value="$PROJECT_DIR$/qValueSaver.py" />
         <option value="$PROJECT_DIR$/experiment/expr_launcher_terminal.py" />
+        <option value="$PROJECT_DIR$/plotUtils.py" />
         <option value="$PROJECT_DIR$/gridworld.py" />
         <option value="$PROJECT_DIR$/gridworld.py" />
       </list>
@@ -148,7 +151,7 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="183" />
-    <option name="y" value="50" />
+    <option name="y" value="49" />
     <option name="width" value="1461" />
     <option name="height" value="925" />
   </component>
@@ -195,6 +198,11 @@
             <path>
               <item name="BerkeleyGridWorld" type="b2602c69:ProjectViewProjectNode" />
               <item name="BerkeleyGridWorld" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BerkeleyGridWorld" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BerkeleyGridWorld" type="462c0819:PsiDirectoryNode" />
+              <item name="experiment" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="BerkeleyGridWorld" type="b2602c69:ProjectViewProjectNode" />
@@ -457,7 +465,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="183" y="50" width="1461" height="925" extended-state="0" />
+    <frame x="183" y="49" width="1461" height="925" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22430556" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -489,14 +497,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/input/getchar.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="20" column="13" lean-forward="false" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/gridworld.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="10912">
@@ -789,14 +789,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/experiment_creater_and_resumer/experiment_creater_and_resumer.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="12" column="39" lean-forward="true" selection-start-line="12" selection-start-column="39" selection-end-line="12" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/util.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2171">
@@ -825,26 +817,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/qValueSaver.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="805">
-          <caret line="51" column="0" lean-forward="true" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
-          <folding>
-            <element signature="e#212#223#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/experiment/expr_launcher_terminal.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="430">
-          <caret line="22" column="23" lean-forward="true" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
-          <folding>
-            <element signature="e#109#206#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/gridworldValueIteration.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="201">
@@ -855,10 +827,46 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/experiment_creater_and_resumer/experiment_creater_and_resumer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="12" column="39" lean-forward="true" selection-start-line="12" selection-start-column="39" selection-end-line="12" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/experiment/expr_launcher_terminal.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="818">
+          <caret line="64" column="79" lean-forward="false" selection-start-line="64" selection-start-column="79" selection-end-line="64" selection-end-column="79" />
+          <folding>
+            <element signature="e#109#206#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/qValueSaver.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="35" column="18" lean-forward="true" selection-start-line="35" selection-start-column="18" selection-end-line="35" selection-end-column="18" />
+          <folding>
+            <element signature="e#212#223#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plotUtils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/gridworld.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="721" column="17" lean-forward="false" selection-start-line="721" selection-start-column="17" selection-end-line="721" selection-end-column="17" />
+        <state relative-caret-position="313">
+          <caret line="724" column="17" lean-forward="true" selection-start-line="724" selection-start-column="17" selection-end-line="724" selection-end-column="17" />
           <folding>
             <element signature="e#656#669#0" expanded="true" />
           </folding>
