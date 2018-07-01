@@ -464,6 +464,16 @@ def getActionGreedilyFromQValues(m_environment, state, qValues):
     return possible_actions[action_index]
 
 
+def getSelectedActions(m_environment, state, qValues):
+    """ select action greedily according to the q-Values with no tie breaking """
+    possible_actions = np.array(m_environment.getPossibleActions(state))
+    n_actions = len(possible_actions)
+    action_qValues = [qValues[(state, possible_actions[j])] for j in range(0, n_actions)]
+    # select action greedily with tie breaking
+    action_indices = np.flatnonzero(action_qValues == np.max(action_qValues))
+    return possible_actions[action_indices]
+
+
 def getPolicyConvergenceRatio(m_environment, optimal_qValues, current_qValues, is_print_info):
     states = m_environment.getGridWorld().getNonTerminalStates()
     n_states = len(states)
@@ -471,11 +481,19 @@ def getPolicyConvergenceRatio(m_environment, optimal_qValues, current_qValues, i
 
     # iterate through all the non-terminal state
     for state in states:
-        optimal_action = getActionGreedilyFromQValues(m_environment, state, optimal_qValues)
-        current_action = getActionGreedilyFromQValues(m_environment, state, current_qValues)
-        if is_print_info:
-            print('State:' + str(state) + ', optimal:' + optimal_action + ', current:' + current_action)
-        if optimal_action == current_action:
+        optimal_actions = getSelectedActions(m_environment, state, optimal_qValues)
+        current_actions = getSelectedActions(m_environment, state, current_qValues)
+        is_optimal = True
+        # treat current_actions as optimal if it's a subset of optimal_actions
+        for current_action in current_actions:
+            if current_action not in optimal_actions:
+                if is_print_info:
+                    print('Action ' + current_action + ' at state ' + str(state) + ' is not optimal')
+                is_optimal = False
+
+        if is_optimal:
+            if is_print_info:
+                print('Policy at state ' + str(state) + ' is optimal')
             n_converged_states += 1
 
     return float(n_converged_states)/float(n_states)
@@ -598,6 +616,8 @@ class TamerGridWorldExperiment():
                  , expr_log_dir=None
                  , delta=0.02
                  , is_use_q_agent=False
+                 , init_temp=1024.0
+                 , temp_decrease_rate=2.0
                  , is_asyn_input=True):
 
         ###########################
@@ -662,7 +682,9 @@ class TamerGridWorldExperiment():
             'gamma': discount,
             'alpha': learning_rate,
             'epsilon': epsilon,
-            'actionFn': action_function
+            'actionFn': action_function,
+            'init_temp': init_temp,
+            'temp_decrease_rate': temp_decrease_rate
         }
 
         if is_use_q_agent:
@@ -734,9 +756,9 @@ class TamerGridWorldExperiment():
         # DISPLAY POST-LEARNING VALUES / Q-VALUES
         try:
             self.display.displayQValues(self.agent, message="Q-VALUES AFTER " + str(self.n_episodes) + " EPISODES")
-            self.display.pause()
+            raw_input('Press Enter to continue')
             self.display.displayValues(self.agent, message="VALUES AFTER " + str(self.n_episodes) + " EPISODES")
-            self.display.pause()
+            raw_input('Press Enter to continue')
         except KeyboardInterrupt:
             sys.exit(0)
 

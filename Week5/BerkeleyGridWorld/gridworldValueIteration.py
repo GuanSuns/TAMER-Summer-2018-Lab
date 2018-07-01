@@ -70,6 +70,8 @@ class GridworldValueIterationExperiment():
                  , noise=0, epsilon=0.3, display_speed=0.5
                  , grid_size=150, text_only=False
                  , save_optimal_policy_file=None
+                 , init_temp=1024.0
+                 , temp_decrease_rate=2.0
                  , delta=0.02):
 
         ###########################
@@ -121,7 +123,9 @@ class GridworldValueIterationExperiment():
             'gamma': discount,
             'alpha': learning_rate,
             'epsilon': epsilon,
-            'actionFn': action_function
+            'actionFn': action_function,
+            'init_temp': init_temp,
+            'temp_decrease_rate': temp_decrease_rate
         }
 
         self.agent = qlearningAgents.QLearningAgent(**q_learn_opts)

@@ -42,13 +42,20 @@ class QLearningAgent(ReinforcementAgent):
         - self.getLegalActions(state)
           which returns legal actions for a state
     """
-    def __init__(self, **args):
+    def __init__(self, init_temp=1024.0, temp_decrease_rate=2.0, **args):
+        """
+            init_temp - the initial temperature used for softmax
+            temp_decrease_rate -  the value of softmax temperature decreasing rate
+        """
         # you can initialize Q-values here...
         ReinforcementAgent.__init__(self, **args)
 
         "*** YOUR CODE HERE ***"
         # the key of Q-Values should be (state, action)
         self.qValues = util.Counter()
+        self.temperatures = dict()
+        self.init_temp = init_temp
+        self.temp_decrease_rate = temp_decrease_rate
 
     def getQValues(self):
         return self.qValues
@@ -89,6 +96,11 @@ class QLearningAgent(ReinforcementAgent):
           Choose the action using softmax function
         """
         "*** YOUR CODE HERE ***"
+        # Get current temperature
+        temperature = self.getTemperature(state)
+        # update temperature
+        self.updateTemperature(state)
+
         actions = self.getLegalActions(state)
         if len(actions) == 0:
             return None
@@ -98,10 +110,28 @@ class QLearningAgent(ReinforcementAgent):
             qValue = float(self.getQValue(state, action))
             qValues.append(qValue)
         maxQValue = np.max(qValues)
-        softmaxValues = np.exp(qValues - maxQValue) / float(np.sum(np.exp(qValues - maxQValue)))
+        softmaxValues = np.exp((qValues-maxQValue)/temperature) / float(np.sum(np.exp((qValues-maxQValue)/temperature)))
 
         actionId = np.random.choice(np.arange(0, len(actions)), p=softmaxValues)
         return actions[actionId]
+
+    def updateTemperature(self, state):
+        """ safely update the temperature for softmax """
+        if state in self.temperatures:
+            old_temperature = self.temperatures[state]
+            # only update the temperature when it's not less than 0.5
+            if old_temperature > 0.5:
+                self.temperatures[state] = old_temperature / float(self.temp_decrease_rate)
+        else:
+            self.temperatures[state] = self.init_temp
+
+    def getTemperature(self, state):
+        """ return the temperature value of the state """
+        if state in self.temperatures:
+            return self.temperatures[state]
+        else:
+            self.temperatures[state] = self.init_temp
+            return self.init_temp
 
     def getAction(self, state):
         """
@@ -155,7 +185,8 @@ class QLearningAgent(ReinforcementAgent):
 
 
 class TamerQAgent(QLearningAgent):
-    def __init__(self, max_n_experiences=1000, window_size=1, is_asyn_input=True, **args):
+    def __init__(self, max_n_experiences=1000, window_size=1, is_asyn_input=True
+                 , init_temp=1024.0, temp_decrease_rate=2.0, **args):
         """
             window_size: use the experiences within 2 seconds to update the weights
             max_n_experiences: maximum number of experiences stored in the history list
@@ -164,8 +195,11 @@ class TamerQAgent(QLearningAgent):
                 - self.epsilon (exploration prob)
                 - self.alpha (learning rate)
                 - self.discount (discount rate)
+            init_temp - the initial temperature used for softmax
+            temp_decrease_rate -  the value of softmax temperature decreasing rate
         """
-        QLearningAgent.__init__(self, **args)
+        QLearningAgent.__init__(self, init_temp=init_temp
+                                , temp_decrease_rate=temp_decrease_rate, **args)
 
         # initialize experiences list
         self.max_n_experiences = max_n_experiences
@@ -237,7 +271,8 @@ class TamerQAgent(QLearningAgent):
 class PacmanQAgent(QLearningAgent):
     """ Exactly the same as QLearningAgent, but with different default parameters """
 
-    def __init__(self, epsilon=0.05, gamma=0.8, alpha=0.2, numTraining=0, **args):
+    def __init__(self, epsilon=0.05, gamma=0.8
+                 , alpha=0.2, numTraining=0, **args):
         """
         These default parameters can be changed from the pacman.py command line.
         For example, to change the exploration rate, try:

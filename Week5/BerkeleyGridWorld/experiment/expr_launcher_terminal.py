@@ -17,9 +17,11 @@ def run_expr():
     window_size = 1     # Tamer agent window size
     max_n_experience = 2000     # Tamer agent maximum number of experiences
     is_asyn = False      # whether to receive input asynchronously
+    init_temp = 1024.0
+    temp_decrease_rate = 2.0
 
     # learning environment parameters
-    n_episodes = 5000
+    n_episodes = 3000
     display_speed = 2.0
 
     # experiment parameters
@@ -72,6 +74,8 @@ def run_expr():
                                                         , optimal_policy=optimal_qValues
                                                         , check_policy_converge=check_policy_converge
                                                         , check_value_converge=check_value_converge
+                                                        , init_temp=init_temp
+                                                        , temp_decrease_rate=temp_decrease_rate
                                                         , is_use_q_agent=is_use_q_agent)
     tamerGridWorld.run_episodes()
 
