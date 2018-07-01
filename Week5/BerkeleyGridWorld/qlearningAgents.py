@@ -94,6 +94,8 @@ class QLearningAgent(ReinforcementAgent):
     def computeActionFromQValues(self, state):
         """
           Choose the action using softmax function
+          epsilon >= 0: use e-greedy
+          epsilon < 0: use softmax
         """
         "*** YOUR CODE HERE ***"
         # Get current temperature
@@ -110,9 +112,16 @@ class QLearningAgent(ReinforcementAgent):
             qValue = float(self.getQValue(state, action))
             qValues.append(qValue)
         maxQValue = np.max(qValues)
-        softmaxValues = np.exp((qValues-maxQValue)/temperature) / float(np.sum(np.exp((qValues-maxQValue)/temperature)))
 
-        actionId = np.random.choice(np.arange(0, len(actions)), p=softmaxValues)
+        # if epsilon >= 0: use e-greedy
+        if self.epsilon >= 0:
+            actionId = np.random.choice(np.flatnonzero(maxQValue == qValues))
+        # if epsilon < 0: use softmax
+        else:
+            softmaxValues = np.exp((qValues-maxQValue)/temperature)\
+                            / float(np.sum(np.exp((qValues-maxQValue)/temperature)))
+            actionId = np.random.choice(np.arange(0, len(actions)), p=softmaxValues)
+
         return actions[actionId]
 
     def updateTemperature(self, state):
@@ -153,7 +162,7 @@ class QLearningAgent(ReinforcementAgent):
         # set the action to the best action
         action = self.computeActionFromQValues(state)
         # flip coin with probability of self.epsilon to determine whether to take random action
-        if util.flipCoin(self.epsilon):
+        if self.epsilon > 0 and util.flipCoin(self.epsilon):
             action = random.choice(legalActions)
 
         return action

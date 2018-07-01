@@ -759,7 +759,7 @@ class TamerGridWorldExperiment():
             converge_log_file = self.expr_log_dir + '/' + 'policy_convergence_ratio.json'
             qValueSaver.saveDictToFile(converge_log_file, policy_converge_ratios)
         # plot policy convergence ratio
-        # plotRatios(policy_converge_ratios)
+        plotRatios(policy_converge_ratios)
 
         # DISPLAY POST-LEARNING VALUES / Q-VALUES
         try:

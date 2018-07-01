@@ -13,6 +13,8 @@ def run_expr():
     # agent parameters
     is_use_q_agent = True  # use qAgent or use Tamer agent
     alpha = 0.5     # learning rate
+    # epsilon >= 0: use e-greedy
+    # epsilon < 0: use softmax
     epsilon = 0.0   # exploration rate
     window_size = 1     # Tamer agent window size
     max_n_experience = 2000     # Tamer agent maximum number of experiences
@@ -22,7 +24,7 @@ def run_expr():
 
     # learning environment parameters
     n_episodes = 1000
-    display_speed = 0.1
+    display_speed = 2.0
 
     # experiment parameters
     delta = 0.02
@@ -33,7 +35,10 @@ def run_expr():
     postfix = ''
     postfix += 'agent' + ('Q' if is_use_q_agent else 'Tamer')
     postfix += '_alpha' + str(alpha)
-    postfix += '_epsilon' + str(epsilon)
+    if epsilon >= 0:
+        postfix += '_epsilon' + str(epsilon)
+    else:
+        postfix += '_temp' + str(init_temp) + '_decrease' + str(temp_decrease_rate)
     if check_value_converge:
         postfix += '_valueConverge'
     elif check_policy_converge:
