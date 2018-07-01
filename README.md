@@ -12,3 +12,4 @@
 	- QValue Saver and Loader: save the computed q-values to json files, as well as read q-values from json files
 	- Record and display policy agreement ratio
 	- Add temperature control into Softmax action selection
+	- Visualize last state and action
