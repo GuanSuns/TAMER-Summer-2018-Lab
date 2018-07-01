@@ -1,0 +1,161 @@
+
+RUNNING 1000 EPISODES
+
+BEGINNING EPISODE: 1
+
+Current Policy Convergence Ratio: 0.318182
+Step: 0, S: (1, 4), A: north, S': (1, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.318182
+Step: 1, S: (1, 4), A: west, S': (0, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.318182
+Step: 2, S: (0, 4), A: east, S': (1, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.318182
+Step: 3, S: (1, 4), A: north, S': (1, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.318182
+Step: 4, S: (1, 4), A: west, S': (0, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.318182
+Step: 5, S: (0, 4), A: east, S': (1, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.318182
+Step: 6, S: (1, 4), A: west, S': (0, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.318182
+Step: 7, S: (0, 4), A: north, S': (0, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.318182
+Step: 8, S: (0, 4), A: east, S': (1, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.318182
+Step: 9, S: (1, 4), A: north, S': (1, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.318182
+Step: 10, S: (1, 4), A: south, S': (1, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.318182
+Step: 11, S: (1, 4), A: north, S': (1, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.318182
+Step: 12, S: (1, 4), A: east, S': (2, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.318182
+Step: 13, S: (2, 4), A: west, S': (1, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.318182
+Step: 14, S: (1, 4), A: north, S': (1, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.318182
+Step: 15, S: (1, 4), A: south, S': (1, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.318182
+Step: 16, S: (1, 4), A: north, S': (1, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.318182
+Step: 17, S: (1, 4), A: west, S': (0, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.318182
+Step: 18, S: (0, 4), A: east, S': (1, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.318182
+Step: 19, S: (1, 4), A: north, S': (1, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.318182
+Step: 20, S: (1, 4), A: east, S': (2, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.318182
+Step: 21, S: (2, 4), A: west, S': (1, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.318182
+Step: 22, S: (1, 4), A: south, S': (1, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.318182
+Step: 23, S: (1, 4), A: north, S': (1, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.318182
+Step: 24, S: (1, 4), A: east, S': (2, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.318182
+Step: 25, S: (2, 4), A: east, S': (3, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.318182
+Step: 26, S: (3, 4), A: north, S': (3, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.318182
+Step: 27, S: (3, 4), A: north, S': (3, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.318182
+Step: 28, S: (3, 4), A: south, S': (3, 3), R: 0.0
+
+Current Policy Convergence Ratio: 0.318182
+Step: 29, S: (3, 3), A: north, S': (3, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.318182
+Step: 30, S: (3, 4), A: south, S': (3, 3), R: 0.0
+
+Current Policy Convergence Ratio: 0.318182
+Step: 31, S: (3, 3), A: south, S': (3, 3), R: 0.0
+
+Current Policy Convergence Ratio: 0.318182
+Step: 32, S: (3, 3), A: east, S': (4, 3), R: 0.0
+
+Current Policy Convergence Ratio: 0.318182
+Step: 33, S: (4, 3), A: west, S': (3, 3), R: 0.0
+
+Current Policy Convergence Ratio: 0.318182
+Step: 34, S: (3, 3), A: north, S': (3, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.318182
+Step: 35, S: (3, 4), A: east, S': (4, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.318182
+Step: 36, S: (4, 4), A: east, S': (4, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.318182
+Step: 37, S: (4, 4), A: north, S': (4, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.318182
+Step: 38, S: (4, 4), A: north, S': (4, 4), R: 0.0
+
+Current Policy Convergence Ratio: 0.318182
+Step: 39, S: (4, 4), A: south, S': (4, 3), R: 0.0
+
+Current Policy Convergence Ratio: 0.318182
+Step: 40, S: (4, 3), A: west, S': (3, 3), R: 0.0
+
+Current Policy Convergence Ratio: 0.318182
+Step: 41, S: (3, 3), A: west, S': (2, 3), R: 0.0
+
+Current Policy Convergence Ratio: 0.318182
+Step: 42, S: (2, 3), A: east, S': (3, 3), R: 0.0
+
+Current Policy Convergence Ratio: 0.318182
+Step: 43, S: (3, 3), A: east, S': (4, 3), R: 0.0
+
+Traceback (most recent call last):
+  File "/Users/lguan/env-tensorflow-py2.7/lib/python2.7/runpy.py", line 174, in _run_module_as_main
+    "__main__", fname, loader, pkg_name)
+  File "/Users/lguan/env-tensorflow-py2.7/lib/python2.7/runpy.py", line 72, in _run_code
+    exec code in run_globals
+  File "/Users/lguan/Documents/Study/Research/Summer 2018/Week5/BerkeleyGridWorld/experiment/expr_launcher_terminal.py", line 90, in <module>
+    run_expr()
+  File "/Users/lguan/Documents/Study/Research/Summer 2018/Week5/BerkeleyGridWorld/experiment/expr_launcher_terminal.py", line 86, in run_expr
+    tamerGridWorld.run_episodes()
+  File "BerkeleyGridWorld/gridworld.py", line 742, in run_episodes
+    , optimal_policy=self.optimal_policy)
+  File "BerkeleyGridWorld/gridworld.py", line 527, in runEpisode
+    f_display(state, previous_state)
+  File "BerkeleyGridWorld/gridworld.py", line 710, in <lambda>
+    , previousState=previous_state)
+  File "BerkeleyGridWorld/graphicsGridworldDisplay.py", line 60, in displayQValues
+    sleep(0.05 / self.speed)
+  File "BerkeleyGridWorld/graphicsUtils.py", line 54, in sleep
+    _root_window.mainloop()
+  File "/Users/lguan/env-tensorflow-py2.7/lib/python2.7/lib-tk/Tkinter.py", line 1129, in mainloop
+    self.tk.mainloop(n)
+  File "/Users/lguan/env-tensorflow-py2.7/lib/python2.7/lib-tk/Tkinter.py", line 1536, in __call__
+    def __call__(self, *args):
+KeyboardInterrupt

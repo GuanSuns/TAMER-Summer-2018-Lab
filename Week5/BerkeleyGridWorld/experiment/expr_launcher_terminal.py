@@ -17,12 +17,12 @@ def run_expr():
     window_size = 1     # Tamer agent window size
     max_n_experience = 2000     # Tamer agent maximum number of experiences
     is_asyn = False      # whether to receive input asynchronously
-    init_temp = 1024.0
-    temp_decrease_rate = 2.0
+    init_temp = 1.0
+    temp_decrease_rate = 1.0
 
     # learning environment parameters
-    n_episodes = 3000
-    display_speed = 2.0
+    n_episodes = 1000
+    display_speed = 0.1
 
     # experiment parameters
     delta = 0.02
@@ -57,9 +57,15 @@ def run_expr():
     # save experiment runner
     expr_saver.dump_src_code_and_model_def(fname=__file__)
     # save grid world related files
-    expr_saver.dump_src_code_and_model_def(fname=gridworld.__file__)
+    fname = gridworld.__file__
+    if fname.endswith('.pyc'):
+        fname = fname.replace(".pyc", ".py")
+    expr_saver.dump_src_code_and_model_def(fname=fname)
     # save input module related files
-    expr_saver.dump_src_code_and_model_def(fname=user_input.__file__)
+    fname = user_input.__file__
+    if fname.endswith('.pyc'):
+        fname = fname.replace(".pyc", ".py")
+    expr_saver.dump_src_code_and_model_def(fname=fname)
 
     # run experiment
     tamerGridWorld = gridworld.TamerGridWorldExperiment(learning_rate=alpha
