@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2cc07f5f-c6ba-40b1-99dc-e0ae1cdb89a6" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/../../RL Introduction/Chapter 4 Dynamic Programming/notes.md" afterPath="" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/experiment/expr_launcher_terminal.py" afterPath="$PROJECT_DIR$/experiment/expr_launcher_terminal.py" />
-      <change beforePath="$PROJECT_DIR$/gridworld.py" afterPath="$PROJECT_DIR$/gridworld.py" />
-      <change beforePath="$PROJECT_DIR$/plotUtils.py" afterPath="$PROJECT_DIR$/plotUtils.py" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/00_agentQ_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/log.txt" afterPath="" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -42,21 +39,9 @@
       <file leaf-file-name="gridworld.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/gridworld.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="546">
-              <caret line="662" column="10" lean-forward="true" selection-start-line="662" selection-start-column="10" selection-end-line="662" selection-end-column="10" />
+            <state relative-caret-position="326">
+              <caret line="652" column="35" lean-forward="true" selection-start-line="652" selection-start-column="35" selection-end-line="652" selection-end-column="35" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="plotUtils.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/plotUtils.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="219">
-              <caret line="41" column="45" lean-forward="false" selection-start-line="41" selection-start-column="45" selection-end-line="41" selection-end-column="45" />
-              <folding>
-                <element signature="e#31#49#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -905,8 +890,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/plotUtils.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
-          <caret line="41" column="45" lean-forward="false" selection-start-line="41" selection-start-column="45" selection-end-line="41" selection-end-column="45" />
+        <state relative-caret-position="946">
+          <caret line="43" column="0" lean-forward="true" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
           <folding>
             <element signature="e#31#49#0" expanded="true" />
           </folding>
@@ -915,8 +900,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/gridworld.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="546">
-          <caret line="662" column="10" lean-forward="true" selection-start-line="662" selection-start-column="10" selection-end-line="662" selection-end-column="10" />
+        <state relative-caret-position="326">
+          <caret line="652" column="35" lean-forward="true" selection-start-line="652" selection-start-column="35" selection-end-line="652" selection-end-column="35" />
           <folding />
         </state>
       </provider>

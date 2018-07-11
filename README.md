@@ -1,3 +1,12 @@
+## Week 3
+- **Berkeley Grid World**
+	- Setup TAMER on berkely gridworld
+	- Make it able to save Tamer (Q table, log) on every trial
+- **Experiment Creater and Resumer**
+	- Modify the original experiment launcher and resumer
+	- Redirect all the output (print) to log files and make a copy of related files
+
+
 ## Week 4
 - **Berkeley Grid World**
 	- Add Evaluation metric: number of episode/step to reach optimal policy
@@ -17,5 +26,8 @@
 
 ## Week 6
 - **Berkeley Grid World**
+	- Use distinct color to display 'STAY' move
+	- Add flags to control how many details printed on the screen as log during the experiment
 	- Experiment on TAMER with epsilon-greedy
+	- Evaluate TAMER's performance in noise environment
 	

@@ -2,7 +2,10 @@
 
 ## COACH: Interactive Learning from Policy-Dependent Human Feedback
 
-### Motivation: human feedback exhibits properties that are inconsistent with a traditional reward signal.
+### Motivation: human feedback exhibits properties that are inconsistent with a traditional reward signal. (Much previous work has made the assumption that people are providing policy-independent feedback, while experiments show that it should be policy-dependent)
+
+### Huamn-Centered Reinforcement Learning
+
 
 
 ### Advantage Function: evaluate how recent behavior is different from the trainer's desired policy
