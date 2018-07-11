@@ -1,9 +1,9 @@
-# Chapter 4 Dynamic Programming Reading Note
+# Chapter 4 Dynamic Programming Note
 
-## Big Picture
-### Assumption: finite MDP
+## 1. Big Picture
+### 1.1. Assumption: finite MDP
 
-### Applications
+### 1.2. Applications
 - Application 1: Policy Evaluation (prediction problem)
 	- Method **iterative policy evaluation**: iterative methods using a sequence of approximated values
 	- Key concepts: expected update
@@ -23,10 +23,10 @@
 	- converge as long as keep visiting all the states
 	- preferred for large state space
 
-### Generalization
+### 1.3. Generalization
 - GPI (generalizaed policy iteration): **evaluation &larr;&rarr; policy improvement (greedy)**
 - Optimal when stable (no change)
 
-### Problems of DP
+### 1.4. Problems of DP
 - may not be practical for very large problems though it's efficient (much faster than search algorithm)
 
