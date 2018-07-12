@@ -1,39 +1,37 @@
-# COACH
+# RL Reading Note: COACH
 
-## COACH: Interactive Learning from Policy-Dependent Human Feedback
+## 1. COACH: Interactive Learning from Policy-Dependent Human Feedback
 
-### Motivation: human feedback exhibits properties that are inconsistent with a traditional reward signal. (Much previous work has made the assumption that people are providing policy-independent feedback, while experiments show that it should be policy-dependent)
+### 1.1. Motivation: human feedback exhibits properties that are inconsistent with a traditional reward signal. (Much previous work has made the assumption that people are providing policy-independent feedback, while experiments show that it should be policy-dependent)
 
-### Huamn-Centered Reinforcement Learning
+### 1.2. Huamn-Centered Reinforcement Learning
+- Interpretion of huamn feedback
+	- Reward function: bad way, often induces positive reward cycles that leads to unintended behaviors.
+	- Comment on the agent's behavior: better interpretation
 
 
-
-### Advantage Function: evaluate how recent behavior is different from the trainer's desired policy
+### 1.3. Advantage Function: evaluate how recent behavior is different from the trainer's desired policy
 - Advantage function can successfully represent threee different kinds of feedback schemes
-	- Diminishing Feedback
-	- Differential Feedback 
-	- Policy Shaping
+	- **Diminishing Feedback**: basic TAMER can't catch the change with time, it has to keep giving positive feedback on good behaviors; On the contrary, COACH requires the user stops giving positive feedback after the agent learns desirable policy. 
+	- **Differential Feedback** 
+	- **Policy Shaping**
+- $f_{t} =A^{\pi}(s, a)= Q^{\pi}(s_t, a_t) - V^{\pi}(s_t)$
 
 
-### Comparison to TAMER:
-- TAMER might have the forgetting of learned behavior issue
+### 1.4. Comparison to TAMER:
+- TAMER might have the **forgetting** of learned behavior issue
 
-### Properties:
+### 1.5. Properties:
 - it's impossible for human trainer to provide feedback on each time step (spare human feedback): use eligibility traces
+- Due to reaction time, human feedback is typically delayed by about 0.2 to 0.8 seconds
 
+### 1.6. Implementation
+- Environment:
+	- Fast decison cycle: 33ms
+	- Numeric feedback: +1,+4, -1
+	- Data pre-processing (RGB images): see details in the paper
+- COACH agent:
+	- Maintains multiple eligibility traces with different temporal decay rates: $\lambda = 0.95$ for feedback +1 and -1, $\lambda = 0.9999$ for feedback +4 
+	- feedback-action delay d=6, which is 0.198 seconds
+	- use an actor-critic parameter-update rather than using the gradient of the policy
 
-## Deep COACH: Deep Reinforcement Learning from Policy-Dependent Human Feedback
-### Motivation: adjust COACH to making use of the higher dimensional data
-
-### Properties:
-- maximize expected sum of rewards using **policy gradient**
-- In favor of an **eligibility Q-Networks**, deep COACH extends this idea using a replaybuffer where the atomic elements stored are **whole windows of experience**, rather than individual transitions.
-- using replay buffer creates a discrepancy between the policy being optimized at current timestep and the policy under which data sampled from the buffer was generated: use off-policy learning with **importance sampling**.
-- Use **unsupervised pre-training**
-- For robustness, restrict to relatively small policy network architectures
-
-### Experiment results:
-- **COACH**: not enough generalization; get locked into a sub-optimal policy
-- **Deep TAMER**: demonstrate a certain degree of unstability
-- **Deep COACH**: the vast majority of trainer feedback consists of negative signals discouraging incorrect behavior at the start of learning whereas a relatively smaller number of positive signals are actually needed to guide the agent towards good behavior. (also needs less feedbacks)
-- Catastrophic **forgetting** exhibited in both TAMER and Deep-COACH, but COACH was able to fix it while TAMER's was irreversible.
