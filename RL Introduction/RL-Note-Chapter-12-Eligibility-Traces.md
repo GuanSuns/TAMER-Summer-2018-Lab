@@ -1,7 +1,8 @@
 # Chapter 12 Eligibility Traces Note
 
 ## 1. Big Picture
-### 1.1. Motivation: update can be done not just toward any n-step return, but toward any average of n-step returns.
+### 1.1. Motivation
+Update can be done not just toward any n-step return, but toward any average of n-step returns.
 
 ### 1.2. Some concepts:
 - **Compund update**: average simpler component updates like average of simple n-step returns (lambda formula 12.2)
