@@ -129,9 +129,9 @@ def run_expr(alpha=0.5, epsilon=0.05, init_temp=1.0, temp_decrease_rate=1.0, noi
 
 def run_experiments():
     n_sub_experiment = 20
-    noises = [0]
-    alphas = [0.5]
-    epsilons = [0.05, 0.1, 0.3, 0.5, 0.8, 1]
+    noises = [0.3, 0.6]
+    alphas = [0.1, 0.3, 0.5, 0.8]
+    epsilons = [0.3]
     init_temps = [1.0]
     temp_decrease_rates = [1.0]
 
