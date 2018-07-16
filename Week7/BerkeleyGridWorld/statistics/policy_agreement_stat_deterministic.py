@@ -14,12 +14,12 @@ temperature_control_experiments = ['/Users/lguan/Documents/Study/Research/Summer
     , '/Users/lguan/Documents/Study/Research/Summer 2018/experiment-logs/13_agentQ_alpha0.5_temp1.0_decrease1.0_policyConverge_synchInput_speed2.0/avg_policy_agreement_ratio.json']
 temperature_control_experiment_names = ['T:30 D:1.005', 'T:10 D:1.005', 'T:50 D:1.05', 'T:1024 D:1.2', 'T:1024 D:2', 'pure softmax']
 
-e_greedy_experiments = ['/Users/lguan/Documents/Study/Research/Summer 2018/experiment-logs/deterministic-environment/32_agentQ_alpha0.5_epsilon1_policyConverge_synchInput_speed2.0/avg_policy_agreement_ratio.json'
-    , '/Users/lguan/Documents/Study/Research/Summer 2018/experiment-logs/deterministic-environment/31_agentQ_alpha0.5_epsilon0.8_policyConverge_synchInput_speed2.0/avg_policy_agreement_ratio.json'
-    , '/Users/lguan/Documents/Study/Research/Summer 2018/experiment-logs/deterministic-environment/30_agentQ_alpha0.5_epsilon0.5_policyConverge_synchInput_speed2.0/avg_policy_agreement_ratio.json'
-    , '/Users/lguan/Documents/Study/Research/Summer 2018/experiment-logs/deterministic-environment/29_agentQ_alpha0.5_epsilon0.3_policyConverge_synchInput_speed2.0/avg_policy_agreement_ratio.json'
-    , '/Users/lguan/Documents/Study/Research/Summer 2018/experiment-logs/deterministic-environment/28_agentQ_alpha0.5_epsilon0.1_policyConverge_synchInput_speed2.0/avg_policy_agreement_ratio.json'
-    , '/Users/lguan/Documents/Study/Research/Summer 2018/experiment-logs/deterministic-environment/27_agentQ_alpha0.5_epsilon0.05_policyConverge_synchInput_speed2.0/avg_policy_agreement_ratio.json']
+e_greedy_experiments = ['/Users/lguan/Documents/Study/Research/Summer 2018/experiment-logs/deterministic-environment/38_agentQ_alpha0.5_epsilon1_policyConverge_synchInput_speed2.0/avg_policy_agreement_ratio.json'
+    , '/Users/lguan/Documents/Study/Research/Summer 2018/experiment-logs/deterministic-environment/37_agentQ_alpha0.5_epsilon0.8_policyConverge_synchInput_speed2.0/avg_policy_agreement_ratio.json'
+    , '/Users/lguan/Documents/Study/Research/Summer 2018/experiment-logs/deterministic-environment/36_agentQ_alpha0.5_epsilon0.5_policyConverge_synchInput_speed2.0/avg_policy_agreement_ratio.json'
+    , '/Users/lguan/Documents/Study/Research/Summer 2018/experiment-logs/deterministic-environment/35_agentQ_alpha0.5_epsilon0.3_policyConverge_synchInput_speed2.0/avg_policy_agreement_ratio.json'
+    , '/Users/lguan/Documents/Study/Research/Summer 2018/experiment-logs/deterministic-environment/34_agentQ_alpha0.5_epsilon0.1_policyConverge_synchInput_speed2.0/avg_policy_agreement_ratio.json'
+    , '/Users/lguan/Documents/Study/Research/Summer 2018/experiment-logs/deterministic-environment/33_agentQ_alpha0.5_epsilon0.05_policyConverge_synchInput_speed2.0/avg_policy_agreement_ratio.json']
 e_greedy_experiment_names = ['Random', 'e:0.8', 'e:0.5', 'e:0.3', 'e:0.1', 'e:0.05']
 
 compare_experiments = ['/Users/lguan/Documents/Study/Research/Summer 2018/experiment-logs/26_agentTamer_alpha0.5_epsilon0.05_policyConverge_synchInput_speed2.0/avg_policy_agreement_ratio.json'
@@ -79,7 +79,7 @@ def compare_epsilon():
                 ratio_dict[int(str_key)] = str_ratio_dict[str_key]
             ratios.append(ratio_dict)
     # plot the ratios
-    plotMultipleRatios(ratios, e_greedy_experiment_names, 0, 2000)
+    plotMultipleRatios(ratios, e_greedy_experiment_names, 0, 4000)
     # wait for user input
     raw_input("Press Enter to terminate")
 
