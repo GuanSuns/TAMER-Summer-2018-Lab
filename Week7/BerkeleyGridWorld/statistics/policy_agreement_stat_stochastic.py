@@ -33,10 +33,11 @@ noise_09_experiments = ['/Users/lguan/Documents/Study/Research/Summer 2018/exper
 noise_09_experiments_names = ['pure softmax', 'T:10 D:1.005', 'e:0.05']
 
 
-noise_02_alpha_experiments = ['/Users/lguan/Documents/Study/Research/Summer 2018/experiment-logs/20_agentQ_alpha0.3_temp1.0_decrease1.0_policyConverge_synchInput_noise0.2_speed2.0/avg_policy_agreement_ratio.json'
-    , '/Users/lguan/Documents/Study/Research/Summer 2018/experiment-logs/21_agentQ_alpha0.5_temp1.0_decrease1.0_policyConverge_synchInput_noise0.2_speed2.0/avg_policy_agreement_ratio.json'
-    , '/Users/lguan/Documents/Study/Research/Summer 2018/experiment-logs/22_agentQ_alpha0.8_temp1.0_decrease1.0_policyConverge_synchInput_noise0.2_speed2.0/avg_policy_agreement_ratio.json']
-noise_02_alpha_experiments_names = ['alpha:0.3', 'alpha:0.5', 'alpha:0.8']
+noise_02_alpha_experiments = ['/Users/lguan/Documents/Study/Research/Summer 2018/experiment-logs/stochastic-environment/19_agentQ_alpha0.1_temp1.0_decrease1.0_policyConverge_synchInput_noise0.2_speed2.0/avg_policy_agreement_ratio.json'
+    , '/Users/lguan/Documents/Study/Research/Summer 2018/experiment-logs/stochastic-environment/20_agentQ_alpha0.3_temp1.0_decrease1.0_policyConverge_synchInput_noise0.2_speed2.0/avg_policy_agreement_ratio.json'
+, '/Users/lguan/Documents/Study/Research/Summer 2018/experiment-logs/stochastic-environment/21_agentQ_alpha0.5_temp1.0_decrease1.0_policyConverge_synchInput_noise0.2_speed2.0/avg_policy_agreement_ratio.json'
+    , '/Users/lguan/Documents/Study/Research/Summer 2018/experiment-logs/stochastic-environment/22_agentQ_alpha0.8_temp1.0_decrease1.0_policyConverge_synchInput_noise0.2_speed2.0/avg_policy_agreement_ratio.json']
+noise_02_alpha_experiments_names = ['alpha:0.1', 'alpha:0.3', 'alpha:0.5', 'alpha:0.8']
 
 
 def compare_noise_01():
