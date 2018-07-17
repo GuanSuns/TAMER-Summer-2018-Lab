@@ -57,6 +57,7 @@ class QLearningAgent(ReinforcementAgent):
         self.init_temp = init_temp
         self.temp_decrease_rate = temp_decrease_rate
         self.is_show_real_values = True
+        self.state_VDBE = dict     # just for fun, epsilon counter for VDBE
 
     def showRealValues(self):
         self.is_show_real_values = True
@@ -193,6 +194,19 @@ class QLearningAgent(ReinforcementAgent):
 
         newQValue = (1-self.alpha)*oldQValue + self.alpha*(reward + self.discount*nextStateValue)
         self.qValues[(state, action)] = newQValue
+
+        # just for fun update VDBE
+        self.updateVDBE(state, oldQValue, newQValue)
+
+    def updateVDBE(self, state, old_qValue, new_qValue):
+        # check if VDBE value for current state has been initialized
+        if state not in self.state_VDBE:
+            self.state_VDBE[state] = 1.0
+        sigma = 0.33
+        delta = 0.25
+        qValue_error = np.fabs(float(new_qValue) - float(old_qValue))
+        f = (1.0 - np.exp((-qValue_error)/sigma)) / (1.0 + np.exp((-qValue_error)/sigma))
+        self.state_VDBE[state] = delta * f + (1 - delta) * self.state_VDBE[state]
 
     def getPolicy(self, state):
         return self.computeActionFromQValues(state)

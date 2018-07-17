@@ -20,6 +20,7 @@
       <w>stdin</w>
       <w>synch</w>
       <w>tensorflow</w>
+      <w>vdbe</w>
       <w>ybar</w>
     </words>
   </dictionary>
