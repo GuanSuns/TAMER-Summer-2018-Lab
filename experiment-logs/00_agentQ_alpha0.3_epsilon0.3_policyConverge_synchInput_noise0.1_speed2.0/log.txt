@@ -1,0 +1,3440 @@
+*************************************
+*************************************
+*************************************
+*** Start Sub-Experiment 0 **********
+*************************************
+*************************************
+*************************************
+
+RUNNING 800 EPISODES
+
+BEGINNING EPISODE: 1
+
+--------------------------------
+EPISODE 1 COMPLETE: RETURN WAS -0.984770902184
+
+TOTAL STEPS: 23, EPISODE STEPS: 23
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.000000
+################################
+
+BEGINNING EPISODE: 2
+
+--------------------------------
+EPISODE 2 COMPLETE: RETURN WAS -0.000404837660228
+
+TOTAL STEPS: 120, EPISODE STEPS: 97
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.000000
+################################
+
+BEGINNING EPISODE: 3
+
+--------------------------------
+EPISODE 3 COMPLETE: RETURN WAS 0.0164232032683
+
+TOTAL STEPS: 160, EPISODE STEPS: 40
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.000000
+################################
+
+BEGINNING EPISODE: 4
+
+--------------------------------
+EPISODE 4 COMPLETE: RETURN WAS 0.309031543826
+
+TOTAL STEPS: 194, EPISODE STEPS: 34
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.000000
+################################
+
+BEGINNING EPISODE: 5
+
+--------------------------------
+EPISODE 5 COMPLETE: RETURN WAS 0.121576654591
+
+TOTAL STEPS: 215, EPISODE STEPS: 21
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.000000
+################################
+
+BEGINNING EPISODE: 6
+
+--------------------------------
+EPISODE 6 COMPLETE: RETURN WAS -9.0
+
+TOTAL STEPS: 217, EPISODE STEPS: 2
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.000000
+################################
+
+BEGINNING EPISODE: 7
+
+--------------------------------
+EPISODE 7 COMPLETE: RETURN WAS 0.6561
+
+TOTAL STEPS: 222, EPISODE STEPS: 5
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.066667
+################################
+
+BEGINNING EPISODE: 8
+
+--------------------------------
+EPISODE 8 COMPLETE: RETURN WAS 3.87420489
+
+TOTAL STEPS: 232, EPISODE STEPS: 10
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.133333
+################################
+
+BEGINNING EPISODE: 9
+
+--------------------------------
+EPISODE 9 COMPLETE: RETURN WAS -8.1
+
+TOTAL STEPS: 235, EPISODE STEPS: 3
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.133333
+################################
+
+BEGINNING EPISODE: 10
+
+--------------------------------
+EPISODE 10 COMPLETE: RETURN WAS 0.282429536481
+
+TOTAL STEPS: 248, EPISODE STEPS: 13
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.200000
+################################
+
+BEGINNING EPISODE: 11
+
+--------------------------------
+EPISODE 11 COMPLETE: RETURN WAS -1.35085171767
+
+TOTAL STEPS: 268, EPISODE STEPS: 20
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.200000
+################################
+
+BEGINNING EPISODE: 12
+
+--------------------------------
+EPISODE 12 COMPLETE: RETURN WAS 6.561
+
+TOTAL STEPS: 273, EPISODE STEPS: 5
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.333333
+################################
+
+BEGINNING EPISODE: 13
+
+--------------------------------
+EPISODE 13 COMPLETE: RETURN WAS -9.0
+
+TOTAL STEPS: 275, EPISODE STEPS: 2
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.333333
+################################
+
+BEGINNING EPISODE: 14
+
+--------------------------------
+EPISODE 14 COMPLETE: RETURN WAS 0.886293811965
+
+TOTAL STEPS: 299, EPISODE STEPS: 24
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.466667
+################################
+
+BEGINNING EPISODE: 15
+
+--------------------------------
+EPISODE 15 COMPLETE: RETURN WAS 3.87420489
+
+TOTAL STEPS: 309, EPISODE STEPS: 10
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.466667
+################################
+
+BEGINNING EPISODE: 16
+
+--------------------------------
+EPISODE 16 COMPLETE: RETURN WAS 0.729
+
+TOTAL STEPS: 313, EPISODE STEPS: 4
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.466667
+################################
+
+BEGINNING EPISODE: 17
+
+--------------------------------
+EPISODE 17 COMPLETE: RETURN WAS 0.81
+
+TOTAL STEPS: 316, EPISODE STEPS: 3
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.466667
+################################
+
+BEGINNING EPISODE: 18
+
+--------------------------------
+EPISODE 18 COMPLETE: RETURN WAS 0.150094635297
+
+TOTAL STEPS: 335, EPISODE STEPS: 19
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.533333
+################################
+
+BEGINNING EPISODE: 19
+
+--------------------------------
+EPISODE 19 COMPLETE: RETURN WAS 0.729
+
+TOTAL STEPS: 339, EPISODE STEPS: 4
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.533333
+################################
+
+BEGINNING EPISODE: 20
+
+--------------------------------
+EPISODE 20 COMPLETE: RETURN WAS 0.43046721
+
+TOTAL STEPS: 348, EPISODE STEPS: 9
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.533333
+################################
+
+BEGINNING EPISODE: 21
+
+--------------------------------
+EPISODE 21 COMPLETE: RETURN WAS 0.3486784401
+
+TOTAL STEPS: 359, EPISODE STEPS: 11
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.533333
+################################
+
+BEGINNING EPISODE: 22
+
+--------------------------------
+EPISODE 22 COMPLETE: RETURN WAS 8.1
+
+TOTAL STEPS: 362, EPISODE STEPS: 3
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.533333
+################################
+
+BEGINNING EPISODE: 23
+
+--------------------------------
+EPISODE 23 COMPLETE: RETURN WAS 0.531441
+
+TOTAL STEPS: 369, EPISODE STEPS: 7
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.533333
+################################
+
+BEGINNING EPISODE: 24
+
+--------------------------------
+EPISODE 24 COMPLETE: RETURN WAS 0.9
+
+TOTAL STEPS: 371, EPISODE STEPS: 2
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.533333
+################################
+
+BEGINNING EPISODE: 25
+
+--------------------------------
+EPISODE 25 COMPLETE: RETURN WAS 0.4782969
+
+TOTAL STEPS: 379, EPISODE STEPS: 8
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.533333
+################################
+
+BEGINNING EPISODE: 26
+
+--------------------------------
+EPISODE 26 COMPLETE: RETURN WAS 0.531441
+
+TOTAL STEPS: 386, EPISODE STEPS: 7
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.533333
+################################
+
+BEGINNING EPISODE: 27
+
+--------------------------------
+EPISODE 27 COMPLETE: RETURN WAS 0.59049
+
+TOTAL STEPS: 392, EPISODE STEPS: 6
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.533333
+################################
+
+BEGINNING EPISODE: 28
+
+--------------------------------
+EPISODE 28 COMPLETE: RETURN WAS 0.9
+
+TOTAL STEPS: 394, EPISODE STEPS: 2
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.533333
+################################
+
+BEGINNING EPISODE: 29
+
+--------------------------------
+EPISODE 29 COMPLETE: RETURN WAS 0.531441
+
+TOTAL STEPS: 401, EPISODE STEPS: 7
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.533333
+################################
+
+BEGINNING EPISODE: 30
+
+--------------------------------
+EPISODE 30 COMPLETE: RETURN WAS 0.729
+
+TOTAL STEPS: 405, EPISODE STEPS: 4
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.533333
+################################
+
+BEGINNING EPISODE: 31
+
+--------------------------------
+EPISODE 31 COMPLETE: RETURN WAS 0.81
+
+TOTAL STEPS: 408, EPISODE STEPS: 3
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.600000
+################################
+
+BEGINNING EPISODE: 32
+
+--------------------------------
+EPISODE 32 COMPLETE: RETURN WAS 5.31441
+
+TOTAL STEPS: 415, EPISODE STEPS: 7
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.600000
+################################
+
+BEGINNING EPISODE: 33
+
+--------------------------------
+EPISODE 33 COMPLETE: RETURN WAS 9.0
+
+TOTAL STEPS: 417, EPISODE STEPS: 2
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.666667
+################################
+
+BEGINNING EPISODE: 34
+
+--------------------------------
+EPISODE 34 COMPLETE: RETURN WAS 0.22876792455
+
+TOTAL STEPS: 432, EPISODE STEPS: 15
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.666667
+################################
+
+BEGINNING EPISODE: 35
+
+--------------------------------
+EPISODE 35 COMPLETE: RETURN WAS 0.531441
+
+TOTAL STEPS: 439, EPISODE STEPS: 7
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.666667
+################################
+
+BEGINNING EPISODE: 36
+
+--------------------------------
+EPISODE 36 COMPLETE: RETURN WAS 0.59049
+
+TOTAL STEPS: 445, EPISODE STEPS: 6
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.666667
+################################
+
+BEGINNING EPISODE: 37
+
+--------------------------------
+EPISODE 37 COMPLETE: RETURN WAS 8.1
+
+TOTAL STEPS: 448, EPISODE STEPS: 3
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.666667
+################################
+
+BEGINNING EPISODE: 38
+
+--------------------------------
+EPISODE 38 COMPLETE: RETURN WAS 2.54186582833
+
+TOTAL STEPS: 462, EPISODE STEPS: 14
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.666667
+################################
+
+BEGINNING EPISODE: 39
+
+--------------------------------
+EPISODE 39 COMPLETE: RETURN WAS 0.387420489
+
+TOTAL STEPS: 472, EPISODE STEPS: 10
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.666667
+################################
+
+BEGINNING EPISODE: 40
+
+--------------------------------
+EPISODE 40 COMPLETE: RETURN WAS 8.1
+
+TOTAL STEPS: 475, EPISODE STEPS: 3
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.666667
+################################
+
+BEGINNING EPISODE: 41
+
+--------------------------------
+EPISODE 41 COMPLETE: RETURN WAS -7.29
+
+TOTAL STEPS: 479, EPISODE STEPS: 4
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.666667
+################################
+
+BEGINNING EPISODE: 42
+
+--------------------------------
+EPISODE 42 COMPLETE: RETURN WAS 0.531441
+
+TOTAL STEPS: 486, EPISODE STEPS: 7
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.666667
+################################
+
+BEGINNING EPISODE: 43
+
+--------------------------------
+EPISODE 43 COMPLETE: RETURN WAS 0.81
+
+TOTAL STEPS: 489, EPISODE STEPS: 3
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.666667
+################################
+
+BEGINNING EPISODE: 44
+
+--------------------------------
+EPISODE 44 COMPLETE: RETURN WAS 7.29
+
+TOTAL STEPS: 493, EPISODE STEPS: 4
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.666667
+################################
+
+BEGINNING EPISODE: 45
+
+--------------------------------
+EPISODE 45 COMPLETE: RETURN WAS 7.29
+
+TOTAL STEPS: 497, EPISODE STEPS: 4
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.666667
+################################
+
+BEGINNING EPISODE: 46
+
+--------------------------------
+EPISODE 46 COMPLETE: RETURN WAS 0.81
+
+TOTAL STEPS: 500, EPISODE STEPS: 3
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.666667
+################################
+
+BEGINNING EPISODE: 47
+
+--------------------------------
+EPISODE 47 COMPLETE: RETURN WAS 0.729
+
+TOTAL STEPS: 504, EPISODE STEPS: 4
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.666667
+################################
+
+BEGINNING EPISODE: 48
+
+--------------------------------
+EPISODE 48 COMPLETE: RETURN WAS 3.486784401
+
+TOTAL STEPS: 515, EPISODE STEPS: 11
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.666667
+################################
+
+BEGINNING EPISODE: 49
+
+--------------------------------
+EPISODE 49 COMPLETE: RETURN WAS 0.729
+
+TOTAL STEPS: 519, EPISODE STEPS: 4
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.666667
+################################
+
+BEGINNING EPISODE: 50
+
+--------------------------------
+EPISODE 50 COMPLETE: RETURN WAS 0.81
+
+TOTAL STEPS: 522, EPISODE STEPS: 3
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.666667
+################################
+
+BEGINNING EPISODE: 51
+
+--------------------------------
+EPISODE 51 COMPLETE: RETURN WAS 8.1
+
+TOTAL STEPS: 525, EPISODE STEPS: 3
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.666667
+################################
+
+BEGINNING EPISODE: 52
+
+--------------------------------
+EPISODE 52 COMPLETE: RETURN WAS 0.9
+
+TOTAL STEPS: 527, EPISODE STEPS: 2
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.666667
+################################
+
+BEGINNING EPISODE: 53
+
+--------------------------------
+EPISODE 53 COMPLETE: RETURN WAS 0.729
+
+TOTAL STEPS: 531, EPISODE STEPS: 4
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.666667
+################################
+
+BEGINNING EPISODE: 54
+
+--------------------------------
+EPISODE 54 COMPLETE: RETURN WAS 0.81
+
+TOTAL STEPS: 534, EPISODE STEPS: 3
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.666667
+################################
+
+BEGINNING EPISODE: 55
+
+--------------------------------
+EPISODE 55 COMPLETE: RETURN WAS 0.729
+
+TOTAL STEPS: 538, EPISODE STEPS: 4
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.666667
+################################
+
+BEGINNING EPISODE: 56
+
+--------------------------------
+EPISODE 56 COMPLETE: RETURN WAS 6.561
+
+TOTAL STEPS: 543, EPISODE STEPS: 5
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.666667
+################################
+
+BEGINNING EPISODE: 57
+
+--------------------------------
+EPISODE 57 COMPLETE: RETURN WAS 6.561
+
+TOTAL STEPS: 548, EPISODE STEPS: 5
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.666667
+################################
+
+BEGINNING EPISODE: 58
+
+--------------------------------
+EPISODE 58 COMPLETE: RETURN WAS 0.4782969
+
+TOTAL STEPS: 556, EPISODE STEPS: 8
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.666667
+################################
+
+BEGINNING EPISODE: 59
+
+--------------------------------
+EPISODE 59 COMPLETE: RETURN WAS 0.43046721
+
+TOTAL STEPS: 565, EPISODE STEPS: 9
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.666667
+################################
+
+BEGINNING EPISODE: 60
+
+--------------------------------
+EPISODE 60 COMPLETE: RETURN WAS 2.2876792455
+
+TOTAL STEPS: 580, EPISODE STEPS: 15
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.666667
+################################
+
+BEGINNING EPISODE: 61
+
+--------------------------------
+EPISODE 61 COMPLETE: RETURN WAS 9.0
+
+TOTAL STEPS: 582, EPISODE STEPS: 2
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.666667
+################################
+
+BEGINNING EPISODE: 62
+
+--------------------------------
+EPISODE 62 COMPLETE: RETURN WAS 8.1
+
+TOTAL STEPS: 585, EPISODE STEPS: 3
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.666667
+################################
+
+BEGINNING EPISODE: 63
+
+--------------------------------
+EPISODE 63 COMPLETE: RETURN WAS 9.0
+
+TOTAL STEPS: 587, EPISODE STEPS: 2
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.666667
+################################
+
+BEGINNING EPISODE: 64
+
+--------------------------------
+EPISODE 64 COMPLETE: RETURN WAS 0.59049
+
+TOTAL STEPS: 593, EPISODE STEPS: 6
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.666667
+################################
+
+BEGINNING EPISODE: 65
+
+--------------------------------
+EPISODE 65 COMPLETE: RETURN WAS 9.0
+
+TOTAL STEPS: 595, EPISODE STEPS: 2
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.666667
+################################
+
+BEGINNING EPISODE: 66
+
+--------------------------------
+EPISODE 66 COMPLETE: RETURN WAS 7.29
+
+TOTAL STEPS: 599, EPISODE STEPS: 4
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.666667
+################################
+
+BEGINNING EPISODE: 67
+
+--------------------------------
+EPISODE 67 COMPLETE: RETURN WAS 0.729
+
+TOTAL STEPS: 603, EPISODE STEPS: 4
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.666667
+################################
+
+BEGINNING EPISODE: 68
+
+--------------------------------
+EPISODE 68 COMPLETE: RETURN WAS 7.29
+
+TOTAL STEPS: 607, EPISODE STEPS: 4
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.666667
+################################
+
+BEGINNING EPISODE: 69
+
+--------------------------------
+EPISODE 69 COMPLETE: RETURN WAS 0.531441
+
+TOTAL STEPS: 614, EPISODE STEPS: 7
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.666667
+################################
+
+BEGINNING EPISODE: 70
+
+--------------------------------
+EPISODE 70 COMPLETE: RETURN WAS 0.81
+
+TOTAL STEPS: 617, EPISODE STEPS: 3
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.666667
+################################
+
+BEGINNING EPISODE: 71
+
+--------------------------------
+EPISODE 71 COMPLETE: RETURN WAS 7.29
+
+TOTAL STEPS: 621, EPISODE STEPS: 4
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.733333
+################################
+
+BEGINNING EPISODE: 72
+
+--------------------------------
+EPISODE 72 COMPLETE: RETURN WAS 6.561
+
+TOTAL STEPS: 626, EPISODE STEPS: 5
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.733333
+################################
+
+BEGINNING EPISODE: 73
+
+--------------------------------
+EPISODE 73 COMPLETE: RETURN WAS 2.05891132095
+
+TOTAL STEPS: 642, EPISODE STEPS: 16
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.733333
+################################
+
+BEGINNING EPISODE: 74
+
+--------------------------------
+EPISODE 74 COMPLETE: RETURN WAS 7.29
+
+TOTAL STEPS: 646, EPISODE STEPS: 4
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.733333
+################################
+
+BEGINNING EPISODE: 75
+
+--------------------------------
+EPISODE 75 COMPLETE: RETURN WAS 3.87420489
+
+TOTAL STEPS: 656, EPISODE STEPS: 10
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.733333
+################################
+
+BEGINNING EPISODE: 76
+
+--------------------------------
+EPISODE 76 COMPLETE: RETURN WAS 6.561
+
+TOTAL STEPS: 661, EPISODE STEPS: 5
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.733333
+################################
+
+BEGINNING EPISODE: 77
+
+--------------------------------
+EPISODE 77 COMPLETE: RETURN WAS 3.87420489
+
+TOTAL STEPS: 671, EPISODE STEPS: 10
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.733333
+################################
+
+BEGINNING EPISODE: 78
+
+--------------------------------
+EPISODE 78 COMPLETE: RETURN WAS 0.81
+
+TOTAL STEPS: 674, EPISODE STEPS: 3
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.733333
+################################
+
+BEGINNING EPISODE: 79
+
+--------------------------------
+EPISODE 79 COMPLETE: RETURN WAS 7.29
+
+TOTAL STEPS: 678, EPISODE STEPS: 4
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.733333
+################################
+
+BEGINNING EPISODE: 80
+
+--------------------------------
+EPISODE 80 COMPLETE: RETURN WAS 0.531441
+
+TOTAL STEPS: 685, EPISODE STEPS: 7
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.733333
+################################
+
+BEGINNING EPISODE: 81
+
+--------------------------------
+EPISODE 81 COMPLETE: RETURN WAS 1.66771816997
+
+TOTAL STEPS: 703, EPISODE STEPS: 18
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.733333
+################################
+
+BEGINNING EPISODE: 82
+
+--------------------------------
+EPISODE 82 COMPLETE: RETURN WAS 7.29
+
+TOTAL STEPS: 707, EPISODE STEPS: 4
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.733333
+################################
+
+BEGINNING EPISODE: 83
+
+--------------------------------
+EPISODE 83 COMPLETE: RETURN WAS 7.29
+
+TOTAL STEPS: 711, EPISODE STEPS: 4
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.733333
+################################
+
+BEGINNING EPISODE: 84
+
+--------------------------------
+EPISODE 84 COMPLETE: RETURN WAS 9.0
+
+TOTAL STEPS: 713, EPISODE STEPS: 2
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.733333
+################################
+
+BEGINNING EPISODE: 85
+
+--------------------------------
+EPISODE 85 COMPLETE: RETURN WAS 7.29
+
+TOTAL STEPS: 717, EPISODE STEPS: 4
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.733333
+################################
+
+BEGINNING EPISODE: 86
+
+--------------------------------
+EPISODE 86 COMPLETE: RETURN WAS 1.85302018885
+
+TOTAL STEPS: 734, EPISODE STEPS: 17
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.733333
+################################
+
+BEGINNING EPISODE: 87
+
+--------------------------------
+EPISODE 87 COMPLETE: RETURN WAS 3.486784401
+
+TOTAL STEPS: 745, EPISODE STEPS: 11
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.733333
+################################
+
+BEGINNING EPISODE: 88
+
+--------------------------------
+EPISODE 88 COMPLETE: RETURN WAS 8.1
+
+TOTAL STEPS: 748, EPISODE STEPS: 3
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.733333
+################################
+
+BEGINNING EPISODE: 89
+
+--------------------------------
+EPISODE 89 COMPLETE: RETURN WAS 5.31441
+
+TOTAL STEPS: 755, EPISODE STEPS: 7
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.733333
+################################
+
+BEGINNING EPISODE: 90
+
+--------------------------------
+EPISODE 90 COMPLETE: RETURN WAS 7.29
+
+TOTAL STEPS: 759, EPISODE STEPS: 4
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.733333
+################################
+
+BEGINNING EPISODE: 91
+
+--------------------------------
+EPISODE 91 COMPLETE: RETURN WAS 2.05891132095
+
+TOTAL STEPS: 775, EPISODE STEPS: 16
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.733333
+################################
+
+BEGINNING EPISODE: 92
+
+--------------------------------
+EPISODE 92 COMPLETE: RETURN WAS 4.782969
+
+TOTAL STEPS: 783, EPISODE STEPS: 8
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.733333
+################################
+
+BEGINNING EPISODE: 93
+
+--------------------------------
+EPISODE 93 COMPLETE: RETURN WAS 7.29
+
+TOTAL STEPS: 787, EPISODE STEPS: 4
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.733333
+################################
+
+BEGINNING EPISODE: 94
+
+--------------------------------
+EPISODE 94 COMPLETE: RETURN WAS -5.9049
+
+TOTAL STEPS: 793, EPISODE STEPS: 6
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.733333
+################################
+
+BEGINNING EPISODE: 95
+
+--------------------------------
+EPISODE 95 COMPLETE: RETURN WAS 3.87420489
+
+TOTAL STEPS: 803, EPISODE STEPS: 10
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.733333
+################################
+
+BEGINNING EPISODE: 96
+
+--------------------------------
+EPISODE 96 COMPLETE: RETURN WAS 5.9049
+
+TOTAL STEPS: 809, EPISODE STEPS: 6
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.733333
+################################
+
+BEGINNING EPISODE: 97
+
+--------------------------------
+EPISODE 97 COMPLETE: RETURN WAS 0.81
+
+TOTAL STEPS: 812, EPISODE STEPS: 3
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.733333
+################################
+
+BEGINNING EPISODE: 98
+
+--------------------------------
+EPISODE 98 COMPLETE: RETURN WAS 4.3046721
+
+TOTAL STEPS: 821, EPISODE STEPS: 9
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.733333
+################################
+
+BEGINNING EPISODE: 99
+
+--------------------------------
+EPISODE 99 COMPLETE: RETURN WAS 4.782969
+
+TOTAL STEPS: 829, EPISODE STEPS: 8
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.733333
+################################
+
+BEGINNING EPISODE: 100
+
+--------------------------------
+EPISODE 100 COMPLETE: RETURN WAS 1.21576654591
+
+TOTAL STEPS: 850, EPISODE STEPS: 21
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.733333
+################################
+
+BEGINNING EPISODE: 101
+
+--------------------------------
+EPISODE 101 COMPLETE: RETURN WAS 0.9
+
+TOTAL STEPS: 852, EPISODE STEPS: 2
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.733333
+################################
+
+BEGINNING EPISODE: 102
+
+--------------------------------
+EPISODE 102 COMPLETE: RETURN WAS -9.0
+
+TOTAL STEPS: 854, EPISODE STEPS: 2
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.733333
+################################
+
+BEGINNING EPISODE: 103
+
+--------------------------------
+EPISODE 103 COMPLETE: RETURN WAS 4.3046721
+
+TOTAL STEPS: 863, EPISODE STEPS: 9
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.733333
+################################
+
+BEGINNING EPISODE: 104
+
+--------------------------------
+EPISODE 104 COMPLETE: RETURN WAS -9.0
+
+TOTAL STEPS: 865, EPISODE STEPS: 2
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.733333
+################################
+
+BEGINNING EPISODE: 105
+
+--------------------------------
+EPISODE 105 COMPLETE: RETURN WAS 9.0
+
+TOTAL STEPS: 867, EPISODE STEPS: 2
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.733333
+################################
+
+BEGINNING EPISODE: 106
+
+--------------------------------
+EPISODE 106 COMPLETE: RETURN WAS 9.0
+
+TOTAL STEPS: 869, EPISODE STEPS: 2
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.733333
+################################
+
+BEGINNING EPISODE: 107
+
+--------------------------------
+EPISODE 107 COMPLETE: RETURN WAS 2.05891132095
+
+TOTAL STEPS: 885, EPISODE STEPS: 16
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.733333
+################################
+
+BEGINNING EPISODE: 108
+
+--------------------------------
+EPISODE 108 COMPLETE: RETURN WAS 3.486784401
+
+TOTAL STEPS: 896, EPISODE STEPS: 11
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.733333
+################################
+
+BEGINNING EPISODE: 109
+
+--------------------------------
+EPISODE 109 COMPLETE: RETURN WAS 6.561
+
+TOTAL STEPS: 901, EPISODE STEPS: 5
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.733333
+################################
+
+BEGINNING EPISODE: 110
+
+--------------------------------
+EPISODE 110 COMPLETE: RETURN WAS 3.87420489
+
+TOTAL STEPS: 911, EPISODE STEPS: 10
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.733333
+################################
+
+BEGINNING EPISODE: 111
+
+--------------------------------
+EPISODE 111 COMPLETE: RETURN WAS 5.9049
+
+TOTAL STEPS: 917, EPISODE STEPS: 6
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.733333
+################################
+
+BEGINNING EPISODE: 112
+
+--------------------------------
+EPISODE 112 COMPLETE: RETURN WAS 3.486784401
+
+TOTAL STEPS: 928, EPISODE STEPS: 11
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.733333
+################################
+
+BEGINNING EPISODE: 113
+
+--------------------------------
+EPISODE 113 COMPLETE: RETURN WAS 3.486784401
+
+TOTAL STEPS: 939, EPISODE STEPS: 11
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.733333
+################################
+
+BEGINNING EPISODE: 114
+
+--------------------------------
+EPISODE 114 COMPLETE: RETURN WAS 7.29
+
+TOTAL STEPS: 943, EPISODE STEPS: 4
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.800000
+################################
+
+BEGINNING EPISODE: 115
+
+--------------------------------
+EPISODE 115 COMPLETE: RETURN WAS 0.729
+
+TOTAL STEPS: 947, EPISODE STEPS: 4
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.800000
+################################
+
+BEGINNING EPISODE: 116
+
+--------------------------------
+EPISODE 116 COMPLETE: RETURN WAS 3.87420489
+
+TOTAL STEPS: 957, EPISODE STEPS: 10
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.800000
+################################
+
+BEGINNING EPISODE: 117
+
+--------------------------------
+EPISODE 117 COMPLETE: RETURN WAS 2.82429536481
+
+TOTAL STEPS: 970, EPISODE STEPS: 13
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.800000
+################################
+
+BEGINNING EPISODE: 118
+
+--------------------------------
+EPISODE 118 COMPLETE: RETURN WAS 7.29
+
+TOTAL STEPS: 974, EPISODE STEPS: 4
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.800000
+################################
+
+BEGINNING EPISODE: 119
+
+--------------------------------
+EPISODE 119 COMPLETE: RETURN WAS 9.0
+
+TOTAL STEPS: 976, EPISODE STEPS: 2
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.800000
+################################
+
+BEGINNING EPISODE: 120
+
+--------------------------------
+EPISODE 120 COMPLETE: RETURN WAS 3.486784401
+
+TOTAL STEPS: 987, EPISODE STEPS: 11
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.800000
+################################
+
+BEGINNING EPISODE: 121
+
+--------------------------------
+EPISODE 121 COMPLETE: RETURN WAS 3.87420489
+
+TOTAL STEPS: 997, EPISODE STEPS: 10
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.800000
+################################
+
+BEGINNING EPISODE: 122
+
+--------------------------------
+EPISODE 122 COMPLETE: RETURN WAS 0.9
+
+TOTAL STEPS: 999, EPISODE STEPS: 2
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.800000
+################################
+
+BEGINNING EPISODE: 123
+
+--------------------------------
+EPISODE 123 COMPLETE: RETURN WAS 4.782969
+
+TOTAL STEPS: 1007, EPISODE STEPS: 8
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.800000
+################################
+
+BEGINNING EPISODE: 124
+
+--------------------------------
+EPISODE 124 COMPLETE: RETURN WAS 7.29
+
+TOTAL STEPS: 1011, EPISODE STEPS: 4
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.800000
+################################
+
+BEGINNING EPISODE: 125
+
+--------------------------------
+EPISODE 125 COMPLETE: RETURN WAS 9.0
+
+TOTAL STEPS: 1013, EPISODE STEPS: 2
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.800000
+################################
+
+BEGINNING EPISODE: 126
+
+--------------------------------
+EPISODE 126 COMPLETE: RETURN WAS 9.0
+
+TOTAL STEPS: 1015, EPISODE STEPS: 2
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.800000
+################################
+
+BEGINNING EPISODE: 127
+
+--------------------------------
+EPISODE 127 COMPLETE: RETURN WAS 2.2876792455
+
+TOTAL STEPS: 1030, EPISODE STEPS: 15
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.800000
+################################
+
+BEGINNING EPISODE: 128
+
+--------------------------------
+EPISODE 128 COMPLETE: RETURN WAS 6.561
+
+TOTAL STEPS: 1035, EPISODE STEPS: 5
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.800000
+################################
+
+BEGINNING EPISODE: 129
+
+--------------------------------
+EPISODE 129 COMPLETE: RETURN WAS 2.2876792455
+
+TOTAL STEPS: 1050, EPISODE STEPS: 15
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.800000
+################################
+
+BEGINNING EPISODE: 130
+
+--------------------------------
+EPISODE 130 COMPLETE: RETURN WAS 8.1
+
+TOTAL STEPS: 1053, EPISODE STEPS: 3
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.800000
+################################
+
+BEGINNING EPISODE: 131
+
+--------------------------------
+EPISODE 131 COMPLETE: RETURN WAS 8.1
+
+TOTAL STEPS: 1056, EPISODE STEPS: 3
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.800000
+################################
+
+BEGINNING EPISODE: 132
+
+--------------------------------
+EPISODE 132 COMPLETE: RETURN WAS -9.0
+
+TOTAL STEPS: 1058, EPISODE STEPS: 2
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.800000
+################################
+
+BEGINNING EPISODE: 133
+
+--------------------------------
+EPISODE 133 COMPLETE: RETURN WAS 9.0
+
+TOTAL STEPS: 1060, EPISODE STEPS: 2
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.800000
+################################
+
+BEGINNING EPISODE: 134
+
+--------------------------------
+EPISODE 134 COMPLETE: RETURN WAS 4.782969
+
+TOTAL STEPS: 1068, EPISODE STEPS: 8
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.800000
+################################
+
+BEGINNING EPISODE: 135
+
+--------------------------------
+EPISODE 135 COMPLETE: RETURN WAS -8.1
+
+TOTAL STEPS: 1071, EPISODE STEPS: 3
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.800000
+################################
+
+BEGINNING EPISODE: 136
+
+--------------------------------
+EPISODE 136 COMPLETE: RETURN WAS 2.54186582833
+
+TOTAL STEPS: 1085, EPISODE STEPS: 14
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.800000
+################################
+
+BEGINNING EPISODE: 137
+
+--------------------------------
+EPISODE 137 COMPLETE: RETURN WAS -9.0
+
+TOTAL STEPS: 1087, EPISODE STEPS: 2
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.800000
+################################
+
+BEGINNING EPISODE: 138
+
+--------------------------------
+EPISODE 138 COMPLETE: RETURN WAS 8.1
+
+TOTAL STEPS: 1090, EPISODE STEPS: 3
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.800000
+################################
+
+BEGINNING EPISODE: 139
+
+--------------------------------
+EPISODE 139 COMPLETE: RETURN WAS 8.1
+
+TOTAL STEPS: 1093, EPISODE STEPS: 3
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.800000
+################################
+
+BEGINNING EPISODE: 140
+
+--------------------------------
+EPISODE 140 COMPLETE: RETURN WAS 2.2876792455
+
+TOTAL STEPS: 1108, EPISODE STEPS: 15
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.800000
+################################
+
+BEGINNING EPISODE: 141
+
+--------------------------------
+EPISODE 141 COMPLETE: RETURN WAS 1.66771816997
+
+TOTAL STEPS: 1126, EPISODE STEPS: 18
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.800000
+################################
+
+BEGINNING EPISODE: 142
+
+--------------------------------
+EPISODE 142 COMPLETE: RETURN WAS 4.782969
+
+TOTAL STEPS: 1134, EPISODE STEPS: 8
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.800000
+################################
+
+BEGINNING EPISODE: 143
+
+--------------------------------
+EPISODE 143 COMPLETE: RETURN WAS 2.82429536481
+
+TOTAL STEPS: 1147, EPISODE STEPS: 13
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.800000
+################################
+
+BEGINNING EPISODE: 144
+
+--------------------------------
+EPISODE 144 COMPLETE: RETURN WAS 3.87420489
+
+TOTAL STEPS: 1157, EPISODE STEPS: 10
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.800000
+################################
+
+BEGINNING EPISODE: 145
+
+--------------------------------
+EPISODE 145 COMPLETE: RETURN WAS -9.0
+
+TOTAL STEPS: 1159, EPISODE STEPS: 2
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.733333
+################################
+
+BEGINNING EPISODE: 146
+
+--------------------------------
+EPISODE 146 COMPLETE: RETURN WAS 2.2876792455
+
+TOTAL STEPS: 1174, EPISODE STEPS: 15
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.733333
+################################
+
+BEGINNING EPISODE: 147
+
+--------------------------------
+EPISODE 147 COMPLETE: RETURN WAS 0.729
+
+TOTAL STEPS: 1178, EPISODE STEPS: 4
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.733333
+################################
+
+BEGINNING EPISODE: 148
+
+--------------------------------
+EPISODE 148 COMPLETE: RETURN WAS -5.31441
+
+TOTAL STEPS: 1185, EPISODE STEPS: 7
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.733333
+################################
+
+BEGINNING EPISODE: 149
+
+--------------------------------
+EPISODE 149 COMPLETE: RETURN WAS 2.2876792455
+
+TOTAL STEPS: 1200, EPISODE STEPS: 15
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.733333
+################################
+
+BEGINNING EPISODE: 150
+
+--------------------------------
+EPISODE 150 COMPLETE: RETURN WAS 6.561
+
+TOTAL STEPS: 1205, EPISODE STEPS: 5
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.733333
+################################
+
+BEGINNING EPISODE: 151
+
+--------------------------------
+EPISODE 151 COMPLETE: RETURN WAS 0.81
+
+TOTAL STEPS: 1208, EPISODE STEPS: 3
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.733333
+################################
+
+BEGINNING EPISODE: 152
+
+--------------------------------
+EPISODE 152 COMPLETE: RETURN WAS 1.85302018885
+
+TOTAL STEPS: 1225, EPISODE STEPS: 17
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.733333
+################################
+
+BEGINNING EPISODE: 153
+
+--------------------------------
+EPISODE 153 COMPLETE: RETURN WAS 8.1
+
+TOTAL STEPS: 1228, EPISODE STEPS: 3
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.733333
+################################
+
+BEGINNING EPISODE: 154
+
+--------------------------------
+EPISODE 154 COMPLETE: RETURN WAS 2.82429536481
+
+TOTAL STEPS: 1241, EPISODE STEPS: 13
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.733333
+################################
+
+BEGINNING EPISODE: 155
+
+--------------------------------
+EPISODE 155 COMPLETE: RETURN WAS 5.9049
+
+TOTAL STEPS: 1247, EPISODE STEPS: 6
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.733333
+################################
+
+BEGINNING EPISODE: 156
+
+--------------------------------
+EPISODE 156 COMPLETE: RETURN WAS 8.1
+
+TOTAL STEPS: 1250, EPISODE STEPS: 3
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.733333
+################################
+
+BEGINNING EPISODE: 157
+
+--------------------------------
+EPISODE 157 COMPLETE: RETURN WAS 0.6561
+
+TOTAL STEPS: 1255, EPISODE STEPS: 5
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.733333
+################################
+
+BEGINNING EPISODE: 158
+
+--------------------------------
+EPISODE 158 COMPLETE: RETURN WAS 7.29
+
+TOTAL STEPS: 1259, EPISODE STEPS: 4
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.733333
+################################
+
+BEGINNING EPISODE: 159
+
+--------------------------------
+EPISODE 159 COMPLETE: RETURN WAS 3.87420489
+
+TOTAL STEPS: 1269, EPISODE STEPS: 10
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.733333
+################################
+
+BEGINNING EPISODE: 160
+
+--------------------------------
+EPISODE 160 COMPLETE: RETURN WAS 2.82429536481
+
+TOTAL STEPS: 1282, EPISODE STEPS: 13
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.733333
+################################
+
+BEGINNING EPISODE: 161
+
+--------------------------------
+EPISODE 161 COMPLETE: RETURN WAS 8.1
+
+TOTAL STEPS: 1285, EPISODE STEPS: 3
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.733333
+################################
+
+BEGINNING EPISODE: 162
+
+--------------------------------
+EPISODE 162 COMPLETE: RETURN WAS 3.1381059609
+
+TOTAL STEPS: 1297, EPISODE STEPS: 12
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.733333
+################################
+
+BEGINNING EPISODE: 163
+
+--------------------------------
+EPISODE 163 COMPLETE: RETURN WAS 8.1
+
+TOTAL STEPS: 1300, EPISODE STEPS: 3
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.733333
+################################
+
+BEGINNING EPISODE: 164
+
+--------------------------------
+EPISODE 164 COMPLETE: RETURN WAS 0.523347633027
+
+TOTAL STEPS: 1329, EPISODE STEPS: 29
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.733333
+################################
+
+BEGINNING EPISODE: 165
+
+--------------------------------
+EPISODE 165 COMPLETE: RETURN WAS 6.561
+
+TOTAL STEPS: 1334, EPISODE STEPS: 5
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.733333
+################################
+
+BEGINNING EPISODE: 166
+
+--------------------------------
+EPISODE 166 COMPLETE: RETURN WAS 4.782969
+
+TOTAL STEPS: 1342, EPISODE STEPS: 8
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.733333
+################################
+
+BEGINNING EPISODE: 167
+
+--------------------------------
+EPISODE 167 COMPLETE: RETURN WAS 4.782969
+
+TOTAL STEPS: 1350, EPISODE STEPS: 8
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.800000
+################################
+
+BEGINNING EPISODE: 168
+
+--------------------------------
+EPISODE 168 COMPLETE: RETURN WAS 7.29
+
+TOTAL STEPS: 1354, EPISODE STEPS: 4
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.800000
+################################
+
+BEGINNING EPISODE: 169
+
+--------------------------------
+EPISODE 169 COMPLETE: RETURN WAS 3.1381059609
+
+TOTAL STEPS: 1366, EPISODE STEPS: 12
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.800000
+################################
+
+BEGINNING EPISODE: 170
+
+--------------------------------
+EPISODE 170 COMPLETE: RETURN WAS 2.54186582833
+
+TOTAL STEPS: 1380, EPISODE STEPS: 14
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.800000
+################################
+
+BEGINNING EPISODE: 171
+
+--------------------------------
+EPISODE 171 COMPLETE: RETURN WAS 5.31441
+
+TOTAL STEPS: 1387, EPISODE STEPS: 7
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.800000
+################################
+
+BEGINNING EPISODE: 172
+
+--------------------------------
+EPISODE 172 COMPLETE: RETURN WAS 8.1
+
+TOTAL STEPS: 1390, EPISODE STEPS: 3
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.800000
+################################
+
+BEGINNING EPISODE: 173
+
+--------------------------------
+EPISODE 173 COMPLETE: RETURN WAS 3.87420489
+
+TOTAL STEPS: 1400, EPISODE STEPS: 10
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.800000
+################################
+
+BEGINNING EPISODE: 174
+
+--------------------------------
+EPISODE 174 COMPLETE: RETURN WAS 0.6561
+
+TOTAL STEPS: 1405, EPISODE STEPS: 5
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.800000
+################################
+
+BEGINNING EPISODE: 175
+
+--------------------------------
+EPISODE 175 COMPLETE: RETURN WAS 5.9049
+
+TOTAL STEPS: 1411, EPISODE STEPS: 6
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.800000
+################################
+
+BEGINNING EPISODE: 176
+
+--------------------------------
+EPISODE 176 COMPLETE: RETURN WAS 9.0
+
+TOTAL STEPS: 1413, EPISODE STEPS: 2
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.800000
+################################
+
+BEGINNING EPISODE: 177
+
+--------------------------------
+EPISODE 177 COMPLETE: RETURN WAS 0.9
+
+TOTAL STEPS: 1415, EPISODE STEPS: 2
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.800000
+################################
+
+BEGINNING EPISODE: 178
+
+--------------------------------
+EPISODE 178 COMPLETE: RETURN WAS 0.729
+
+TOTAL STEPS: 1419, EPISODE STEPS: 4
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.800000
+################################
+
+BEGINNING EPISODE: 179
+
+--------------------------------
+EPISODE 179 COMPLETE: RETURN WAS 9.0
+
+TOTAL STEPS: 1421, EPISODE STEPS: 2
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.800000
+################################
+
+BEGINNING EPISODE: 180
+
+--------------------------------
+EPISODE 180 COMPLETE: RETURN WAS 4.3046721
+
+TOTAL STEPS: 1430, EPISODE STEPS: 9
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.800000
+################################
+
+BEGINNING EPISODE: 181
+
+--------------------------------
+EPISODE 181 COMPLETE: RETURN WAS 0.0523347633027
+
+TOTAL STEPS: 1459, EPISODE STEPS: 29
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.800000
+################################
+
+BEGINNING EPISODE: 182
+
+--------------------------------
+EPISODE 182 COMPLETE: RETURN WAS 2.82429536481
+
+TOTAL STEPS: 1472, EPISODE STEPS: 13
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.800000
+################################
+
+BEGINNING EPISODE: 183
+
+--------------------------------
+EPISODE 183 COMPLETE: RETURN WAS 0.9
+
+TOTAL STEPS: 1474, EPISODE STEPS: 2
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.733333
+################################
+
+BEGINNING EPISODE: 184
+
+--------------------------------
+EPISODE 184 COMPLETE: RETURN WAS 9.0
+
+TOTAL STEPS: 1476, EPISODE STEPS: 2
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.733333
+################################
+
+BEGINNING EPISODE: 185
+
+--------------------------------
+EPISODE 185 COMPLETE: RETURN WAS 4.3046721
+
+TOTAL STEPS: 1485, EPISODE STEPS: 9
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.800000
+################################
+
+BEGINNING EPISODE: 186
+
+--------------------------------
+EPISODE 186 COMPLETE: RETURN WAS 1.85302018885
+
+TOTAL STEPS: 1502, EPISODE STEPS: 17
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.800000
+################################
+
+BEGINNING EPISODE: 187
+
+--------------------------------
+EPISODE 187 COMPLETE: RETURN WAS 2.82429536481
+
+TOTAL STEPS: 1515, EPISODE STEPS: 13
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.733333
+################################
+
+BEGINNING EPISODE: 188
+
+--------------------------------
+EPISODE 188 COMPLETE: RETURN WAS 9.0
+
+TOTAL STEPS: 1517, EPISODE STEPS: 2
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.733333
+################################
+
+BEGINNING EPISODE: 189
+
+--------------------------------
+EPISODE 189 COMPLETE: RETURN WAS 9.0
+
+TOTAL STEPS: 1519, EPISODE STEPS: 2
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.733333
+################################
+
+BEGINNING EPISODE: 190
+
+--------------------------------
+EPISODE 190 COMPLETE: RETURN WAS 5.31441
+
+TOTAL STEPS: 1526, EPISODE STEPS: 7
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.733333
+################################
+
+BEGINNING EPISODE: 191
+
+--------------------------------
+EPISODE 191 COMPLETE: RETURN WAS 5.9049
+
+TOTAL STEPS: 1532, EPISODE STEPS: 6
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.666667
+################################
+
+BEGINNING EPISODE: 192
+
+--------------------------------
+EPISODE 192 COMPLETE: RETURN WAS 3.1381059609
+
+TOTAL STEPS: 1544, EPISODE STEPS: 12
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.666667
+################################
+
+BEGINNING EPISODE: 193
+
+--------------------------------
+EPISODE 193 COMPLETE: RETURN WAS 3.486784401
+
+TOTAL STEPS: 1555, EPISODE STEPS: 11
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.666667
+################################
+
+BEGINNING EPISODE: 194
+
+--------------------------------
+EPISODE 194 COMPLETE: RETURN WAS 4.782969
+
+TOTAL STEPS: 1563, EPISODE STEPS: 8
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.666667
+################################
+
+BEGINNING EPISODE: 195
+
+--------------------------------
+EPISODE 195 COMPLETE: RETURN WAS 5.9049
+
+TOTAL STEPS: 1569, EPISODE STEPS: 6
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.666667
+################################
+
+BEGINNING EPISODE: 196
+
+--------------------------------
+EPISODE 196 COMPLETE: RETURN WAS 9.0
+
+TOTAL STEPS: 1571, EPISODE STEPS: 2
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.666667
+################################
+
+BEGINNING EPISODE: 197
+
+--------------------------------
+EPISODE 197 COMPLETE: RETURN WAS 9.0
+
+TOTAL STEPS: 1573, EPISODE STEPS: 2
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.666667
+################################
+
+BEGINNING EPISODE: 198
+
+--------------------------------
+EPISODE 198 COMPLETE: RETURN WAS 2.82429536481
+
+TOTAL STEPS: 1586, EPISODE STEPS: 13
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.666667
+################################
+
+BEGINNING EPISODE: 199
+
+--------------------------------
+EPISODE 199 COMPLETE: RETURN WAS 2.05891132095
+
+TOTAL STEPS: 1602, EPISODE STEPS: 16
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.666667
+################################
+
+BEGINNING EPISODE: 200
+
+--------------------------------
+EPISODE 200 COMPLETE: RETURN WAS 9.0
+
+TOTAL STEPS: 1604, EPISODE STEPS: 2
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.666667
+################################
+
+BEGINNING EPISODE: 201
+
+--------------------------------
+EPISODE 201 COMPLETE: RETURN WAS 3.87420489
+
+TOTAL STEPS: 1614, EPISODE STEPS: 10
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.666667
+################################
+
+BEGINNING EPISODE: 202
+
+--------------------------------
+EPISODE 202 COMPLETE: RETURN WAS 8.1
+
+TOTAL STEPS: 1617, EPISODE STEPS: 3
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.666667
+################################
+
+BEGINNING EPISODE: 203
+
+--------------------------------
+EPISODE 203 COMPLETE: RETURN WAS -9.0
+
+TOTAL STEPS: 1619, EPISODE STEPS: 2
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.666667
+################################
+
+BEGINNING EPISODE: 204
+
+--------------------------------
+EPISODE 204 COMPLETE: RETURN WAS 8.1
+
+TOTAL STEPS: 1622, EPISODE STEPS: 3
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.666667
+################################
+
+BEGINNING EPISODE: 205
+
+--------------------------------
+EPISODE 205 COMPLETE: RETURN WAS 3.486784401
+
+TOTAL STEPS: 1633, EPISODE STEPS: 11
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.666667
+################################
+
+BEGINNING EPISODE: 206
+
+--------------------------------
+EPISODE 206 COMPLETE: RETURN WAS 8.1
+
+TOTAL STEPS: 1636, EPISODE STEPS: 3
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.666667
+################################
+
+BEGINNING EPISODE: 207
+
+--------------------------------
+EPISODE 207 COMPLETE: RETURN WAS 7.29
+
+TOTAL STEPS: 1640, EPISODE STEPS: 4
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.666667
+################################
+
+BEGINNING EPISODE: 208
+
+--------------------------------
+EPISODE 208 COMPLETE: RETURN WAS 2.82429536481
+
+TOTAL STEPS: 1653, EPISODE STEPS: 13
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.666667
+################################
+
+BEGINNING EPISODE: 209
+
+--------------------------------
+EPISODE 209 COMPLETE: RETURN WAS 5.9049
+
+TOTAL STEPS: 1659, EPISODE STEPS: 6
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.666667
+################################
+
+BEGINNING EPISODE: 210
+
+--------------------------------
+EPISODE 210 COMPLETE: RETURN WAS 5.31441
+
+TOTAL STEPS: 1666, EPISODE STEPS: 7
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.666667
+################################
+
+BEGINNING EPISODE: 211
+
+--------------------------------
+EPISODE 211 COMPLETE: RETURN WAS 3.87420489
+
+TOTAL STEPS: 1676, EPISODE STEPS: 10
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.666667
+################################
+
+BEGINNING EPISODE: 212
+
+--------------------------------
+EPISODE 212 COMPLETE: RETURN WAS 5.9049
+
+TOTAL STEPS: 1682, EPISODE STEPS: 6
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.666667
+################################
+
+BEGINNING EPISODE: 213
+
+--------------------------------
+EPISODE 213 COMPLETE: RETURN WAS 5.31441
+
+TOTAL STEPS: 1689, EPISODE STEPS: 7
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.666667
+################################
+
+BEGINNING EPISODE: 214
+
+--------------------------------
+EPISODE 214 COMPLETE: RETURN WAS 3.1381059609
+
+TOTAL STEPS: 1701, EPISODE STEPS: 12
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.666667
+################################
+
+BEGINNING EPISODE: 215
+
+--------------------------------
+EPISODE 215 COMPLETE: RETURN WAS 5.31441
+
+TOTAL STEPS: 1708, EPISODE STEPS: 7
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.666667
+################################
+
+BEGINNING EPISODE: 216
+
+--------------------------------
+EPISODE 216 COMPLETE: RETURN WAS 3.486784401
+
+TOTAL STEPS: 1719, EPISODE STEPS: 11
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.666667
+################################
+
+BEGINNING EPISODE: 217
+
+--------------------------------
+EPISODE 217 COMPLETE: RETURN WAS 8.1
+
+TOTAL STEPS: 1722, EPISODE STEPS: 3
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.666667
+################################
+
+BEGINNING EPISODE: 218
+
+--------------------------------
+EPISODE 218 COMPLETE: RETURN WAS 4.782969
+
+TOTAL STEPS: 1730, EPISODE STEPS: 8
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.733333
+################################
+
+BEGINNING EPISODE: 219
+
+--------------------------------
+EPISODE 219 COMPLETE: RETURN WAS 5.9049
+
+TOTAL STEPS: 1736, EPISODE STEPS: 6
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.733333
+################################
+
+BEGINNING EPISODE: 220
+
+--------------------------------
+EPISODE 220 COMPLETE: RETURN WAS 0.9
+
+TOTAL STEPS: 1738, EPISODE STEPS: 2
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.733333
+################################
+
+BEGINNING EPISODE: 221
+
+--------------------------------
+EPISODE 221 COMPLETE: RETURN WAS -9.0
+
+TOTAL STEPS: 1740, EPISODE STEPS: 2
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.733333
+################################
+
+BEGINNING EPISODE: 222
+
+--------------------------------
+EPISODE 222 COMPLETE: RETURN WAS 4.782969
+
+TOTAL STEPS: 1748, EPISODE STEPS: 8
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.733333
+################################
+
+BEGINNING EPISODE: 223
+
+--------------------------------
+EPISODE 223 COMPLETE: RETURN WAS 4.3046721
+
+TOTAL STEPS: 1757, EPISODE STEPS: 9
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.733333
+################################
+
+BEGINNING EPISODE: 224
+
+--------------------------------
+EPISODE 224 COMPLETE: RETURN WAS 3.1381059609
+
+TOTAL STEPS: 1769, EPISODE STEPS: 12
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.733333
+################################
+
+BEGINNING EPISODE: 225
+
+--------------------------------
+EPISODE 225 COMPLETE: RETURN WAS 2.82429536481
+
+TOTAL STEPS: 1782, EPISODE STEPS: 13
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.733333
+################################
+
+BEGINNING EPISODE: 226
+
+--------------------------------
+EPISODE 226 COMPLETE: RETURN WAS 3.486784401
+
+TOTAL STEPS: 1793, EPISODE STEPS: 11
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.733333
+################################
+
+BEGINNING EPISODE: 227
+
+--------------------------------
+EPISODE 227 COMPLETE: RETURN WAS 6.561
+
+TOTAL STEPS: 1798, EPISODE STEPS: 5
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.733333
+################################
+
+BEGINNING EPISODE: 228
+
+--------------------------------
+EPISODE 228 COMPLETE: RETURN WAS 5.9049
+
+TOTAL STEPS: 1804, EPISODE STEPS: 6
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.733333
+################################
+
+BEGINNING EPISODE: 229
+
+--------------------------------
+EPISODE 229 COMPLETE: RETURN WAS 7.29
+
+TOTAL STEPS: 1808, EPISODE STEPS: 4
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.733333
+################################
+
+BEGINNING EPISODE: 230
+
+--------------------------------
+EPISODE 230 COMPLETE: RETURN WAS 3.87420489
+
+TOTAL STEPS: 1818, EPISODE STEPS: 10
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.733333
+################################
+
+BEGINNING EPISODE: 231
+
+--------------------------------
+EPISODE 231 COMPLETE: RETURN WAS 3.486784401
+
+TOTAL STEPS: 1829, EPISODE STEPS: 11
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.733333
+################################
+
+BEGINNING EPISODE: 232
+
+--------------------------------
+EPISODE 232 COMPLETE: RETURN WAS 3.87420489
+
+TOTAL STEPS: 1839, EPISODE STEPS: 10
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.733333
+################################
+
+BEGINNING EPISODE: 233
+
+--------------------------------
+EPISODE 233 COMPLETE: RETURN WAS 6.561
+
+TOTAL STEPS: 1844, EPISODE STEPS: 5
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.733333
+################################
+
+BEGINNING EPISODE: 234
+
+--------------------------------
+EPISODE 234 COMPLETE: RETURN WAS 3.486784401
+
+TOTAL STEPS: 1855, EPISODE STEPS: 11
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.733333
+################################
+
+BEGINNING EPISODE: 235
+
+--------------------------------
+EPISODE 235 COMPLETE: RETURN WAS 8.1
+
+TOTAL STEPS: 1858, EPISODE STEPS: 3
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.733333
+################################
+
+BEGINNING EPISODE: 236
+
+--------------------------------
+EPISODE 236 COMPLETE: RETURN WAS 9.0
+
+TOTAL STEPS: 1860, EPISODE STEPS: 2
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.733333
+################################
+
+BEGINNING EPISODE: 237
+
+--------------------------------
+EPISODE 237 COMPLETE: RETURN WAS -7.29
+
+TOTAL STEPS: 1864, EPISODE STEPS: 4
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.733333
+################################
+
+BEGINNING EPISODE: 238
+
+--------------------------------
+EPISODE 238 COMPLETE: RETURN WAS 7.29
+
+TOTAL STEPS: 1868, EPISODE STEPS: 4
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.733333
+################################
+
+BEGINNING EPISODE: 239
+
+--------------------------------
+EPISODE 239 COMPLETE: RETURN WAS 3.87420489
+
+TOTAL STEPS: 1878, EPISODE STEPS: 10
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.733333
+################################
+
+BEGINNING EPISODE: 240
+
+--------------------------------
+EPISODE 240 COMPLETE: RETURN WAS 7.29
+
+TOTAL STEPS: 1882, EPISODE STEPS: 4
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.733333
+################################
+
+BEGINNING EPISODE: 241
+
+--------------------------------
+EPISODE 241 COMPLETE: RETURN WAS 2.05891132095
+
+TOTAL STEPS: 1898, EPISODE STEPS: 16
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.733333
+################################
+
+BEGINNING EPISODE: 242
+
+--------------------------------
+EPISODE 242 COMPLETE: RETURN WAS 4.3046721
+
+TOTAL STEPS: 1907, EPISODE STEPS: 9
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.733333
+################################
+
+BEGINNING EPISODE: 243
+
+--------------------------------
+EPISODE 243 COMPLETE: RETURN WAS 2.05891132095
+
+TOTAL STEPS: 1923, EPISODE STEPS: 16
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.733333
+################################
+
+BEGINNING EPISODE: 244
+
+--------------------------------
+EPISODE 244 COMPLETE: RETURN WAS 6.561
+
+TOTAL STEPS: 1928, EPISODE STEPS: 5
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.733333
+################################
+
+BEGINNING EPISODE: 245
+
+--------------------------------
+EPISODE 245 COMPLETE: RETURN WAS -9.0
+
+TOTAL STEPS: 1930, EPISODE STEPS: 2
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.733333
+################################
+
+BEGINNING EPISODE: 246
+
+--------------------------------
+EPISODE 246 COMPLETE: RETURN WAS 7.29
+
+TOTAL STEPS: 1934, EPISODE STEPS: 4
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.733333
+################################
+
+BEGINNING EPISODE: 247
+
+--------------------------------
+EPISODE 247 COMPLETE: RETURN WAS 4.782969
+
+TOTAL STEPS: 1942, EPISODE STEPS: 8
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.733333
+################################
+
+BEGINNING EPISODE: 248
+
+--------------------------------
+EPISODE 248 COMPLETE: RETURN WAS 1.66771816997
+
+TOTAL STEPS: 1960, EPISODE STEPS: 18
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.733333
+################################
+
+BEGINNING EPISODE: 249
+
+--------------------------------
+EPISODE 249 COMPLETE: RETURN WAS 3.87420489
+
+TOTAL STEPS: 1970, EPISODE STEPS: 10
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.733333
+################################
+
+BEGINNING EPISODE: 250
+
+--------------------------------
+EPISODE 250 COMPLETE: RETURN WAS 7.29
+
+TOTAL STEPS: 1974, EPISODE STEPS: 4
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.733333
+################################
+
+BEGINNING EPISODE: 251
+
+--------------------------------
+EPISODE 251 COMPLETE: RETURN WAS 9.0
+
+TOTAL STEPS: 1976, EPISODE STEPS: 2
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.733333
+################################
+
+BEGINNING EPISODE: 252
+
+--------------------------------
+EPISODE 252 COMPLETE: RETURN WAS 8.1
+
+TOTAL STEPS: 1979, EPISODE STEPS: 3
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.733333
+################################
+
+BEGINNING EPISODE: 253
+
+--------------------------------
+EPISODE 253 COMPLETE: RETURN WAS -9.0
+
+TOTAL STEPS: 1981, EPISODE STEPS: 2
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.733333
+################################
+
+BEGINNING EPISODE: 254
+
+--------------------------------
+EPISODE 254 COMPLETE: RETURN WAS 2.05891132095
+
+TOTAL STEPS: 1997, EPISODE STEPS: 16
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.733333
+################################
+
+BEGINNING EPISODE: 255
+
+--------------------------------
+EPISODE 255 COMPLETE: RETURN WAS 4.782969
+
+TOTAL STEPS: 2005, EPISODE STEPS: 8
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.733333
+################################
+
+BEGINNING EPISODE: 256
+
+--------------------------------
+EPISODE 256 COMPLETE: RETURN WAS 0.9
+
+TOTAL STEPS: 2007, EPISODE STEPS: 2
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.733333
+################################
+
+BEGINNING EPISODE: 257
+
+--------------------------------
+EPISODE 257 COMPLETE: RETURN WAS 2.82429536481
+
+TOTAL STEPS: 2020, EPISODE STEPS: 13
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.733333
+################################
+
+BEGINNING EPISODE: 258
+
+--------------------------------
+EPISODE 258 COMPLETE: RETURN WAS 4.782969
+
+TOTAL STEPS: 2028, EPISODE STEPS: 8
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.733333
+################################
+
+BEGINNING EPISODE: 259
+
+--------------------------------
+EPISODE 259 COMPLETE: RETURN WAS 2.54186582833
+
+TOTAL STEPS: 2042, EPISODE STEPS: 14
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.733333
+################################
+
+BEGINNING EPISODE: 260
+
+--------------------------------
+EPISODE 260 COMPLETE: RETURN WAS 8.1
+
+TOTAL STEPS: 2045, EPISODE STEPS: 3
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.733333
+################################
+
+BEGINNING EPISODE: 261
+
+--------------------------------
+EPISODE 261 COMPLETE: RETURN WAS 6.561
+
+TOTAL STEPS: 2050, EPISODE STEPS: 5
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.733333
+################################
+
+BEGINNING EPISODE: 262
+
+--------------------------------
+EPISODE 262 COMPLETE: RETURN WAS 4.782969
+
+TOTAL STEPS: 2058, EPISODE STEPS: 8
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.733333
+################################
+
+BEGINNING EPISODE: 263
+
+--------------------------------
+EPISODE 263 COMPLETE: RETURN WAS 5.9049
+
+TOTAL STEPS: 2064, EPISODE STEPS: 6
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.733333
+################################
+
+BEGINNING EPISODE: 264
+
+--------------------------------
+EPISODE 264 COMPLETE: RETURN WAS 3.486784401
+
+TOTAL STEPS: 2075, EPISODE STEPS: 11
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.733333
+################################
+
+BEGINNING EPISODE: 265
+
+--------------------------------
+EPISODE 265 COMPLETE: RETURN WAS 8.1
+
+TOTAL STEPS: 2078, EPISODE STEPS: 3
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.733333
+################################
+
+BEGINNING EPISODE: 266
+
+--------------------------------
+EPISODE 266 COMPLETE: RETURN WAS 6.561
+
+TOTAL STEPS: 2083, EPISODE STEPS: 5
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.733333
+################################
+
+BEGINNING EPISODE: 267
+
+--------------------------------
+EPISODE 267 COMPLETE: RETURN WAS 0.9
+
+TOTAL STEPS: 2085, EPISODE STEPS: 2
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.733333
+################################
+
+BEGINNING EPISODE: 268
+
+--------------------------------
+EPISODE 268 COMPLETE: RETURN WAS -9.0
+
+TOTAL STEPS: 2087, EPISODE STEPS: 2
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.733333
+################################
+
+BEGINNING EPISODE: 269
+
+--------------------------------
+EPISODE 269 COMPLETE: RETURN WAS 0.9
+
+TOTAL STEPS: 2089, EPISODE STEPS: 2
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.733333
+################################
+
+BEGINNING EPISODE: 270
+
+--------------------------------
+EPISODE 270 COMPLETE: RETURN WAS 4.782969
+
+TOTAL STEPS: 2097, EPISODE STEPS: 8
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.733333
+################################
+
+BEGINNING EPISODE: 271
+
+--------------------------------
+EPISODE 271 COMPLETE: RETURN WAS 4.3046721
+
+TOTAL STEPS: 2106, EPISODE STEPS: 9
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.733333
+################################
+
+BEGINNING EPISODE: 272
+
+--------------------------------
+EPISODE 272 COMPLETE: RETURN WAS 5.9049
+
+TOTAL STEPS: 2112, EPISODE STEPS: 6
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.733333
+################################
+
+BEGINNING EPISODE: 273
+
+--------------------------------
+EPISODE 273 COMPLETE: RETURN WAS 9.0
+
+TOTAL STEPS: 2114, EPISODE STEPS: 2
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.733333
+################################
+
+BEGINNING EPISODE: 274
+
+--------------------------------
+EPISODE 274 COMPLETE: RETURN WAS 9.0
+
+TOTAL STEPS: 2116, EPISODE STEPS: 2
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.733333
+################################
+
+BEGINNING EPISODE: 275
+
+--------------------------------
+EPISODE 275 COMPLETE: RETURN WAS -9.0
+
+TOTAL STEPS: 2118, EPISODE STEPS: 2
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.733333
+################################
+
+BEGINNING EPISODE: 276
+
+--------------------------------
+EPISODE 276 COMPLETE: RETURN WAS 9.0
+
+TOTAL STEPS: 2120, EPISODE STEPS: 2
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.733333
+################################
+
+BEGINNING EPISODE: 277
+
+--------------------------------
+EPISODE 277 COMPLETE: RETURN WAS 3.87420489
+
+TOTAL STEPS: 2130, EPISODE STEPS: 10
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.733333
+################################
+
+BEGINNING EPISODE: 278
+
+--------------------------------
+EPISODE 278 COMPLETE: RETURN WAS 3.87420489
+
+TOTAL STEPS: 2140, EPISODE STEPS: 10
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.733333
+################################
+
+BEGINNING EPISODE: 279
+
+--------------------------------
+EPISODE 279 COMPLETE: RETURN WAS 4.782969
+
+TOTAL STEPS: 2148, EPISODE STEPS: 8
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.733333
+################################
+
+BEGINNING EPISODE: 280
+
+--------------------------------
+EPISODE 280 COMPLETE: RETURN WAS 9.0
+
+TOTAL STEPS: 2150, EPISODE STEPS: 2
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.733333
+################################
+
+BEGINNING EPISODE: 281
+
+--------------------------------
+EPISODE 281 COMPLETE: RETURN WAS 6.561
+
+TOTAL STEPS: 2155, EPISODE STEPS: 5
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.733333
+################################
+
+BEGINNING EPISODE: 282
+
+--------------------------------
+EPISODE 282 COMPLETE: RETURN WAS 1.35085171767
+
+TOTAL STEPS: 2175, EPISODE STEPS: 20
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.733333
+################################
+
+BEGINNING EPISODE: 283
+
+--------------------------------
+EPISODE 283 COMPLETE: RETURN WAS 8.1
+
+TOTAL STEPS: 2178, EPISODE STEPS: 3
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.733333
+################################
+
+BEGINNING EPISODE: 284
+
+--------------------------------
+EPISODE 284 COMPLETE: RETURN WAS 5.9049
+
+TOTAL STEPS: 2184, EPISODE STEPS: 6
+--------------------------------
+
+################################
+Current Policy Convergence Ratio: 0.733333
+################################
+
+BEGINNING EPISODE: 285
+
+Traceback (most recent call last):
+  File "/Users/lguan/env-tensorflow-py2.7/lib/python2.7/runpy.py", line 174, in _run_module_as_main
+    "__main__", fname, loader, pkg_name)
+  File "/Users/lguan/env-tensorflow-py2.7/lib/python2.7/runpy.py", line 72, in _run_code
+    exec code in run_globals
+  File "/Users/lguan/Documents/Study/Research/Summer 2018/Week8/BerkeleyGridWorld/experiment/expr_launcher_terminal.py", line 167, in <module>
+    run_experiments()
+  File "/Users/lguan/Documents/Study/Research/Summer 2018/Week8/BerkeleyGridWorld/experiment/expr_launcher_terminal.py", line 161, in run_experiments
+    , is_use_q_learning_agent=is_use_q_learning_agent)
+  File "/Users/lguan/Documents/Study/Research/Summer 2018/Week8/BerkeleyGridWorld/experiment/expr_launcher_terminal.py", line 119, in run_expr
+    experiment_stat = tamerGridWorld.run_episodes()
+  File "BerkeleyGridWorld/gridworld.py", line 789, in run_episodes
+    , optimal_policy=self.optimal_policy)
+  File "BerkeleyGridWorld/gridworld.py", line 585, in runEpisode
+    , is_print_info=False)
+  File "BerkeleyGridWorld/gridworld.py", line 498, in getPolicyAgreementRatio
+    optimal_actions = getSelectedActions(m_environment, state, optimal_qValues)
+  File "BerkeleyGridWorld/gridworld.py", line 485, in getSelectedActions
+    action_qValues = [round(qValues[(state, possible_actions[j])], 4) for j in range(0, n_actions)]
+KeyboardInterrupt
