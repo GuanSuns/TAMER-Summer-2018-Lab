@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2cc07f5f-c6ba-40b1-99dc-e0ae1cdb89a6" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/experiment/expr_launcher_terminal.py" afterPath="$PROJECT_DIR$/experiment/expr_launcher_terminal.py" />
-      <change beforePath="$PROJECT_DIR$/gridworld.py" afterPath="$PROJECT_DIR$/gridworld.py" />
-      <change beforePath="$PROJECT_DIR$/qlearningAgents.py" afterPath="$PROJECT_DIR$/qlearningAgents.py" />
       <change beforePath="$PROJECT_DIR$/statistics/policy_agreement_stat_stochastic.py" afterPath="$PROJECT_DIR$/statistics/policy_agreement_stat_stochastic.py" />
-      <change beforePath="$PROJECT_DIR$/../Report/images/alpha_noise02_400.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../Report/images/alpha_noise02_4000.png" afterPath="$PROJECT_DIR$/../Report/images/alpha_noise02_4000.png" />
-      <change beforePath="$PROJECT_DIR$/../Report/images/alpha_noise02_800.png" afterPath="" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -32,11 +25,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="policy_agreement_stat_stochastic.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="policy_agreement_stat_stochastic.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/statistics/policy_agreement_stat_stochastic.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="147">
-              <caret line="97" column="32" lean-forward="false" selection-start-line="97" selection-start-column="32" selection-end-line="97" selection-end-column="32" />
+            <state relative-caret-position="273">
+              <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -46,7 +39,7 @@
         <entry file="file://$PROJECT_DIR$/gridworld.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="394">
-              <caret line="624" column="24" lean-forward="true" selection-start-line="624" selection-start-column="24" selection-end-line="624" selection-end-column="24" />
+              <caret line="624" column="24" lean-forward="false" selection-start-line="624" selection-start-column="24" selection-end-line="624" selection-end-column="24" />
               <folding>
                 <element signature="e#655#668#0" expanded="true" />
               </folding>
@@ -58,7 +51,7 @@
         <entry file="file://$PROJECT_DIR$/autoFeedbacks.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="359">
-              <caret line="40" column="33" lean-forward="true" selection-start-line="40" selection-start-column="33" selection-end-line="40" selection-end-column="33" />
+              <caret line="40" column="33" lean-forward="false" selection-start-line="40" selection-start-column="33" selection-end-line="40" selection-end-column="33" />
               <folding />
             </state>
           </provider>
@@ -74,11 +67,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="qlearningAgents.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="qlearningAgents.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/qlearningAgents.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="281">
-              <caret line="71" column="37" lean-forward="true" selection-start-line="71" selection-start-column="37" selection-end-line="71" selection-end-column="37" />
+              <caret line="71" column="37" lean-forward="false" selection-start-line="71" selection-start-column="37" selection-end-line="71" selection-end-column="37" />
               <folding />
             </state>
           </provider>
@@ -170,7 +163,6 @@
         <option value="$PROJECT_DIR$/statistics/policy_agreement_stat.py" />
         <option value="$PROJECT_DIR$/plotUtils.py" />
         <option value="$PROJECT_DIR$/statistics/policy_agreement_stat_deterministic.py" />
-        <option value="$PROJECT_DIR$/statistics/policy_agreement_stat_stochastic.py" />
         <option value="$PROJECT_DIR$/qlearningAgents.py" />
         <option value="$PROJECT_DIR$/qlearningAgents.py" />
         <option value="$PROJECT_DIR$/AutoFeedback.py" />
@@ -178,6 +170,7 @@
         <option value="$PROJECT_DIR$/experiment/expr_launcher_terminal.py" />
         <option value="$PROJECT_DIR$/gridworld.py" />
         <option value="$PROJECT_DIR$/gridworld.py" />
+        <option value="$PROJECT_DIR$/statistics/policy_agreement_stat_stochastic.py" />
       </list>
     </option>
   </component>
@@ -509,7 +502,7 @@
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22377622" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32891566" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32891566" sideWeight="0.5027285" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24457832" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24457832" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32891566" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39518073" sideWeight="0.49181446" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -857,18 +850,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/statistics/policy_agreement_stat_stochastic.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="97" column="32" lean-forward="false" selection-start-line="97" selection-start-column="32" selection-end-line="97" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/autoFeedbacks.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="359">
-          <caret line="40" column="33" lean-forward="true" selection-start-line="40" selection-start-column="33" selection-end-line="40" selection-end-column="33" />
+          <caret line="40" column="33" lean-forward="false" selection-start-line="40" selection-start-column="33" selection-end-line="40" selection-end-column="33" />
           <folding />
         </state>
       </provider>
@@ -886,7 +871,7 @@
     <entry file="file://$PROJECT_DIR$/gridworld.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="394">
-          <caret line="624" column="24" lean-forward="true" selection-start-line="624" selection-start-column="24" selection-end-line="624" selection-end-column="24" />
+          <caret line="624" column="24" lean-forward="false" selection-start-line="624" selection-start-column="24" selection-end-line="624" selection-end-column="24" />
           <folding>
             <element signature="e#655#668#0" expanded="true" />
           </folding>
@@ -896,7 +881,15 @@
     <entry file="file://$PROJECT_DIR$/qlearningAgents.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="281">
-          <caret line="71" column="37" lean-forward="true" selection-start-line="71" selection-start-column="37" selection-end-line="71" selection-end-column="37" />
+          <caret line="71" column="37" lean-forward="false" selection-start-line="71" selection-start-column="37" selection-end-line="71" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/statistics/policy_agreement_stat_stochastic.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
           <folding />
         </state>
       </provider>
