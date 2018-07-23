@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2cc07f5f-c6ba-40b1-99dc-e0ae1cdb89a6" name="Default" comment="" />
+    <list default="true" id="2cc07f5f-c6ba-40b1-99dc-e0ae1cdb89a6" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/../../README.md" afterPath="$PROJECT_DIR$/../../README.md" />
+      <change beforePath="$PROJECT_DIR$/experiment/expr_launcher_terminal.py" afterPath="$PROJECT_DIR$/experiment/expr_launcher_terminal.py" />
+      <change beforePath="$PROJECT_DIR$/gridworld.py" afterPath="$PROJECT_DIR$/gridworld.py" />
+      <change beforePath="$PROJECT_DIR$/qlearningAgents.py" afterPath="$PROJECT_DIR$/qlearningAgents.py" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -11,11 +16,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="expr_launcher_terminal.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="expr_launcher_terminal.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/experiment/expr_launcher_terminal.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="504">
-              <caret line="131" column="80" lean-forward="false" selection-start-line="131" selection-start-column="80" selection-end-line="131" selection-end-column="80" />
+            <state relative-caret-position="2794">
+              <caret line="127" column="47" lean-forward="true" selection-start-line="127" selection-start-column="47" selection-end-line="127" selection-end-column="47" />
               <folding>
                 <element signature="e#109#118#0" expanded="true" />
               </folding>
@@ -26,8 +31,8 @@
       <file leaf-file-name="policy_agreement_stat_stochastic.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/statistics/policy_agreement_stat_stochastic.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1067">
-              <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+            <state relative-caret-position="527">
+              <caret line="134" column="0" lean-forward="true" selection-start-line="134" selection-start-column="0" selection-end-line="137" selection-end-column="22" />
               <folding>
                 <element signature="e#125#136#0" expanded="true" />
               </folding>
@@ -38,7 +43,7 @@
       <file leaf-file-name="gridworld.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/gridworld.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="477">
+            <state relative-caret-position="161">
               <caret line="33" column="34" lean-forward="false" selection-start-line="33" selection-start-column="34" selection-end-line="33" selection-end-column="34" />
               <folding>
                 <element signature="e#655#668#0" expanded="true" />
@@ -47,21 +52,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="autoFeedbacks.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/autoFeedbacks.py">
+      <file leaf-file-name="visualize_VDBE.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/statistics/visualize_VDBE.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="880">
-              <caret line="40" column="33" lean-forward="false" selection-start-line="40" selection-start-column="33" selection-end-line="40" selection-end-column="33" />
-              <folding />
+            <state relative-caret-position="233">
+              <caret line="26" column="166" lean-forward="false" selection-start-line="26" selection-start-column="166" selection-end-line="26" selection-end-column="166" />
+              <folding>
+                <element signature="e#95#106#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="policy_agreement_stat_deterministic.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/statistics/policy_agreement_stat_deterministic.py">
+      <file leaf-file-name="autoFeedbacks.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/autoFeedbacks.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="739">
-              <caret line="69" column="0" lean-forward="false" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
+              <caret line="40" column="33" lean-forward="false" selection-start-line="40" selection-start-column="33" selection-end-line="40" selection-end-column="33" />
               <folding />
             </state>
           </provider>
@@ -70,8 +77,8 @@
       <file leaf-file-name="qlearningAgents.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/qlearningAgents.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4321">
-              <caret line="226" column="34" lean-forward="false" selection-start-line="226" selection-start-column="34" selection-end-line="226" selection-end-column="34" />
+            <state relative-caret-position="855">
+              <caret line="432" column="37" lean-forward="false" selection-start-line="432" selection-start-column="32" selection-end-line="432" selection-end-column="37" />
               <folding />
             </state>
           </provider>
@@ -88,9 +95,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>,'</find>
-      <find>,</find>
-      <find>getPossibleActions</find>
       <find>mdpFunction</find>
       <find>gridSize</find>
       <find>actionF</find>
@@ -115,9 +119,12 @@
       <find>previous</find>
       <find>noise0.1</find>
       <find>noise</find>
-      <find>print</find>
       <find>SHORT_OUTPUT</find>
       <find>FAST_EXPERIMENT</find>
+      <find>states</find>
+      <find>getNonTerminalStates</find>
+      <find>getNon</find>
+      <find>print</find>
     </findStrings>
     <replaceStrings>
       <replace>, '</replace>
@@ -166,18 +173,19 @@
         <option value="$PROJECT_DIR$/AutoFeedback.py" />
         <option value="$PROJECT_DIR$/autoFeedbacks.py" />
         <option value="$PROJECT_DIR$/statistics/policy_agreement_stat_stochastic.py" />
-        <option value="$PROJECT_DIR$/qlearningAgents.py" />
-        <option value="$PROJECT_DIR$/qlearningAgents.py" />
-        <option value="$PROJECT_DIR$/experiment/expr_launcher_terminal.py" />
         <option value="$PROJECT_DIR$/statistics/policy_agreement_stat_deterministic.py" />
+        <option value="$PROJECT_DIR$/experiment/expr_launcher_terminal.py" />
+        <option value="$PROJECT_DIR$/qlearningAgents.py" />
+        <option value="$PROJECT_DIR$/qlearningAgents.py" />
+        <option value="$PROJECT_DIR$/statistics/visualize_VDBE.py" />
         <option value="$PROJECT_DIR$/gridworld.py" />
         <option value="$PROJECT_DIR$/gridworld.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="45" />
-    <option name="y" value="31" />
+    <option name="x" value="43" />
+    <option name="y" value="45" />
     <option name="width" value="1451" />
     <option name="height" value="925" />
   </component>
@@ -218,7 +226,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -246,6 +253,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -276,7 +284,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.policy_agreement_stat_stochastic">
+  <component name="RunManager" selected="Python.visualize_VDBE">
     <configuration name="expr_runner (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -290,24 +298,6 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="BerkeleyGridWorld" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/experiment/expr_launcher_terminal.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
-    <configuration name="expr_value_iteration_launcher" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/experiment" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="BerkeleyGridWorld" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/experiment/expr_value_iteration_launcher_ide.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -362,6 +352,24 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="BerkeleyGridWorld" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/qValueSaver.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="visualize_VDBE" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/statistics" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="BerkeleyGridWorld" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/statistics/visualize_VDBE.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -456,18 +464,18 @@
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Python.expr_runner (1)" />
-      <item index="1" class="java.lang.String" itemvalue="Python.expr_value_iteration_launcher" />
-      <item index="2" class="java.lang.String" itemvalue="Python.qValueSaver" />
-      <item index="3" class="java.lang.String" itemvalue="Python.policy_agreement_stat" />
-      <item index="4" class="java.lang.String" itemvalue="Python.policy_agreement_stat_stochastic" />
+      <item index="1" class="java.lang.String" itemvalue="Python.qValueSaver" />
+      <item index="2" class="java.lang.String" itemvalue="Python.policy_agreement_stat" />
+      <item index="3" class="java.lang.String" itemvalue="Python.policy_agreement_stat_stochastic" />
+      <item index="4" class="java.lang.String" itemvalue="Python.visualize_VDBE" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.policy_agreement_stat_stochastic" />
-        <item index="1" class="java.lang.String" itemvalue="Python.policy_agreement_stat" />
-        <item index="2" class="java.lang.String" itemvalue="Python.expr_runner (1)" />
-        <item index="3" class="java.lang.String" itemvalue="Python.qValueSaver" />
-        <item index="4" class="java.lang.String" itemvalue="Python.expr_value_iteration_launcher" />
+        <item index="0" class="java.lang.String" itemvalue="Python.visualize_VDBE" />
+        <item index="1" class="java.lang.String" itemvalue="Python.policy_agreement_stat_stochastic" />
+        <item index="2" class="java.lang.String" itemvalue="Python.policy_agreement_stat" />
+        <item index="3" class="java.lang.String" itemvalue="Python.expr_runner (1)" />
+        <item index="4" class="java.lang.String" itemvalue="Python.qValueSaver" />
       </list>
     </recent_temporary>
   </component>
@@ -497,13 +505,14 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="45" y="31" width="1451" height="925" extended-state="0" />
+    <frame x="43" y="45" width="1451" height="925" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22377622" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32891566" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32891566" sideWeight="0.5027285" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24457832" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32891566" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24457832" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32891566" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39518073" sideWeight="0.49181446" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -515,7 +524,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32891566" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -548,16 +556,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/experiment/expr_launcher_terminal.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="20" column="24" lean-forward="false" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
-          <folding>
-            <element signature="e#109#118#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/gridworld.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="9746">
@@ -835,43 +833,55 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/autoFeedbacks.py">
+    <entry file="file://$PROJECT_DIR$/statistics/policy_agreement_stat_deterministic.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="880">
-          <caret line="40" column="33" lean-forward="false" selection-start-line="40" selection-start-column="33" selection-end-line="40" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/statistics/policy_agreement_stat_stochastic.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1067">
-          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+        <state relative-caret-position="108">
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="6" selection-end-column="31" />
           <folding>
             <element signature="e#125#136#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/qlearningAgents.py">
+    <entry file="file://$PROJECT_DIR$/autoFeedbacks.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4321">
-          <caret line="226" column="34" lean-forward="false" selection-start-line="226" selection-start-column="34" selection-end-line="226" selection-end-column="34" />
+        <state relative-caret-position="739">
+          <caret line="40" column="33" lean-forward="false" selection-start-line="40" selection-start-column="33" selection-end-line="40" selection-end-column="33" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/statistics/policy_agreement_stat_deterministic.py">
+    <entry file="file://$PROJECT_DIR$/qlearningAgents.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="739">
-          <caret line="69" column="0" lean-forward="false" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
+        <state relative-caret-position="855">
+          <caret line="432" column="37" lean-forward="false" selection-start-line="432" selection-start-column="32" selection-end-line="432" selection-end-column="37" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/statistics/policy_agreement_stat_stochastic.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="134" column="0" lean-forward="true" selection-start-line="134" selection-start-column="0" selection-end-line="137" selection-end-column="22" />
+          <folding>
+            <element signature="e#125#136#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/experiment/expr_launcher_terminal.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2794">
+          <caret line="127" column="47" lean-forward="true" selection-start-line="127" selection-start-column="47" selection-end-line="127" selection-end-column="47" />
+          <folding>
+            <element signature="e#109#118#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/gridworld.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="477">
+        <state relative-caret-position="161">
           <caret line="33" column="34" lean-forward="false" selection-start-line="33" selection-start-column="34" selection-end-line="33" selection-end-column="34" />
           <folding>
             <element signature="e#655#668#0" expanded="true" />
@@ -879,12 +889,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/experiment/expr_launcher_terminal.py">
+    <entry file="file://$PROJECT_DIR$/statistics/visualize_VDBE.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="131" column="80" lean-forward="false" selection-start-line="131" selection-start-column="80" selection-end-line="131" selection-end-column="80" />
+        <state relative-caret-position="233">
+          <caret line="26" column="166" lean-forward="false" selection-start-line="26" selection-start-column="166" selection-end-line="26" selection-end-column="166" />
           <folding>
-            <element signature="e#109#118#0" expanded="true" />
+            <element signature="e#95#106#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -60,10 +60,10 @@ class QLearningAgent(ReinforcementAgent):
         #############################################################
         ##############  VDBE epsilon annealing   ####################
         #############################################################
-        self.use_VDBE = False
+        self.use_VDBE = True
         self.state_VDBE = dict()
         self.VDBE_sigma = 0.33
-        self.VDBE_delta = 0.25
+        self.VDBE_delta = 0.1
         #############################################################
         ############  Episode-wise epsilon annealing   ##############
         #############################################################

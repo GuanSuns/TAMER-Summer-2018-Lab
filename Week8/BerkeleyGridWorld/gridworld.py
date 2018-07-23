@@ -31,11 +31,24 @@ from input import user_input
 VERY_SHORT_OUTPUT = 0
 SHORT_OUTPUT = 1
 SOME_DETAILS = 2
-OUTPUT_DETAIL_LEVEL = SHORT_OUTPUT
+OUTPUT_DETAIL_LEVEL = SOME_DETAILS
 #######################################################
 FAST_EXPERIMENT = True      # no wait at the end of each epoch and no graphic output
 TAMER_SHOW_LEARNED_VALUES = False   # whether to hide the learned Q-Values while learning
 AUTO_FEEDBACK_TAMER = False
+#######################################################
+############### VDBE values recorder ##################
+#######################################################
+VDBE_RECORDS = dict()
+
+
+def record_VDBE(current_VDBEs, all_states):
+    for state in all_states:
+        if state in current_VDBEs:
+            VDBE_RECORDS[state].append(current_VDBEs[state])
+        else:
+            VDBE_RECORDS[state].append(1.0)
+#######################################################
 #######################################################
 
 
@@ -649,6 +662,11 @@ def runEpisode(agent, m_environment, discount, f_decision
         if 'observeTransition' in dir(agent):
             agent.observeTransition(state, action, nextState, reward)
 
+        # RECORD VDBE values
+        current_VDBEs = agent.state_VDBE
+        all_states = m_environment.getGridWorld().getNonTerminalStates()
+        record_VDBE(current_VDBEs, all_states)
+
         episode_rewards += reward * totalDiscount
         totalDiscount *= discount
         episode_step += 1
@@ -709,6 +727,16 @@ class TamerGridWorldExperiment():
         self.mdp.setLivingReward(living_reward)
         self.mdp.setNoise(noise)
         self.env = gridworld.GridworldEnvironment(self.mdp)
+
+        ###########################
+        # Variables used to store parameters values
+        ###########################
+
+        # init VDBE values records
+        global VDBE_RECORDS
+        VDBE_RECORDS = dict()
+        for state in self.env.getGridWorld().getNonTerminalStates():
+            VDBE_RECORDS[state] = list()
 
         ###########################
         # GET THE DISPLAY ADAPTER
@@ -811,6 +839,12 @@ class TamerGridWorldExperiment():
             qValueSaver.saveDictToFile(policy_agreement_log_file, policy_agreement_ratios)
         # plot policy convergence ratio
         plotUtils.plotAgreementRatios(policy_agreement_ratios)
+
+        # save VDBE values to files
+        for state in self.env.getGridWorld().getNonTerminalStates():
+            vdbe_values_file = self.expr_log_dir + '/vdbe-' + str(state[0]) \
+                               + '-' + str(state[1])  + '.json'
+            qValueSaver.saveDictToFile(vdbe_values_file, VDBE_RECORDS[state])
 
         # DISPLAY POST-LEARNING VALUES / Q-VALUES
         try:

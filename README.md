@@ -30,4 +30,14 @@
 	- Add flags to control how many details printed on the screen as log during the experiment
 	- Experiment on TAMER with epsilon-greedy
 	- Evaluate TAMER's performance in noise environment
+
+## Week 7
+- **Berkeley Grid World**
+	- Use VDBE as epsilon annealing policy 
+	- Use both global-wise epsilon annealing and episode-wise epsilon annealing
+
+## Week 8
+- **Berkeley Grid World**
+	- Record and visualize VDBE values
+
 	
