@@ -18,11 +18,13 @@ e_greedy_experiments = ['/Users/lguan/Documents/Study/Research/Summer 2018/exper
     , '/Users/lguan/Documents/Study/Research/Summer 2018/experiment-logs/deterministic-environment/36_agentQ_alpha0.5_epsilon0.5_policyConverge_synchInput_speed2.0/avg_policy_agreement_ratio.json'
     , '/Users/lguan/Documents/Study/Research/Summer 2018/experiment-logs/deterministic-environment/35_agentQ_alpha0.5_epsilon0.3_policyConverge_synchInput_speed2.0/avg_policy_agreement_ratio.json'
     , '/Users/lguan/Documents/Study/Research/Summer 2018/experiment-logs/deterministic-environment/34_agentQ_alpha0.5_epsilon0.1_policyConverge_synchInput_speed2.0/avg_policy_agreement_ratio.json'
-    , '/Users/lguan/Documents/Study/Research/Summer 2018/experiment-logs/deterministic-environment/00_VDBE/avg_policy_agreement_ratio.json'
+    , '/Users/lguan/Documents/Study/Research/Summer 2018/experiment-logs/deterministic-environment/00_VDBE_with_episode_anneal/avg_policy_agreement_ratio.json'
+    , '/Users/lguan/Documents/Study/Research/Summer 2018/experiment-logs/deterministic-environment/00_VDBE_no_episode_anneal/avg_policy_agreement_ratio.json'
+    , '/Users/lguan/Documents/Study/Research/Summer 2018/experiment-logs/deterministic-environment/00_VDBE_0.1_no_episode_anneal/avg_policy_agreement_ratio.json'
     , '/Users/lguan/Documents/Study/Research/Summer 2018/experiment-logs/deterministic-environment/01_decay01_Episode_Annealing/avg_policy_agreement_ratio.json'
     , '/Users/lguan/Documents/Study/Research/Summer 2018/experiment-logs/deterministic-environment/02_decay02_Episode_Annealing/avg_policy_agreement_ratio.json'
     , '/Users/lguan/Documents/Study/Research/Summer 2018/experiment-logs/deterministic-environment/03_decay03_Episode_Annealing/avg_policy_agreement_ratio.json']
-e_greedy_experiment_names = ['Random', 'e:0.5', 'e:0.3', 'e:0.1', 'VDBE', 'anneal, r=0.1', 'anneal, r=0.2', 'anneal, r=0.3']
+e_greedy_experiment_names = ['Random', 'e:0.5', 'e:0.3', 'e:0.1', 'VDBE with episode anneal', 'VDBE no episode anneal', 'VDBE 0.1 no episode anneal', 'episode-anneal, r=0.1', 'episode-anneal, r=0.2', 'episode-anneal, r=0.3']
 
 compare_experiments = ['/Users/lguan/Documents/Study/Research/Summer 2018/experiment-logs/26_agentTamer_alpha0.5_epsilon0.05_policyConverge_synchInput_speed2.0/avg_policy_agreement_ratio.json'
     , '/Users/lguan/Documents/Study/Research/Summer 2018/experiment-logs/25_agentTamer_alpha0.5_epsilon0.01_policyConverge_synchInput_speed2.0/avg_policy_agreement_ratio.json'
@@ -33,6 +35,8 @@ compare_experiments = ['/Users/lguan/Documents/Study/Research/Summer 2018/experi
     , '/Users/lguan/Documents/Study/Research/Summer 2018/experiment-logs/16_agentQ_alpha0.5_temp50_decrease1.05_policyConverge_synchInput_speed2.0/avg_policy_agreement_ratio.json'
     , '/Users/lguan/Documents/Study/Research/Summer 2018/experiment-logs/13_agentQ_alpha0.5_temp1.0_decrease1.0_policyConverge_synchInput_speed2.0/avg_policy_agreement_ratio.json']
 compare_experiment_names = ['Tamer, e:0.05', 'Tamer, e:0.01', 'Tamer, softmax', 'Random', 'e:0.5', 'e:0.3', 'T:50 D:1.05', 'pure softmax']
+
+plot_skip_set = ['episode-anneal, r=0.1', 'episode-anneal, r=0.2', 'Random', 'e:0.1']
 
 
 def compare_both_methods():
@@ -96,6 +100,8 @@ def plotMultipleRatios(ratios_dicts_list, names, min_index, max_index):
     for i in range(0, len(ratios_dicts_list)):
         ratios_dicts_item = ratios_dicts_list[i]
         name = names[i]
+        if name in plot_skip_set:
+            continue
         # extract values in the specified range
         ratios = list()
         for j in range(min_index, max_index+1):

@@ -64,12 +64,13 @@ class QLearningAgent(ReinforcementAgent):
         self.state_VDBE = dict()
         self.VDBE_sigma = 0.05
         self.VDBE_delta = 0.1
+        self.episode_anneal_threshold = 0.1
         #############################################################
         ############  Episode-wise epsilon annealing   ##############
         #############################################################
         self.use_episode_epsilon_anneal = False
-        self.global_epsilon = 0.3
-        self.global_min_epsilon = 0.1
+        self.global_epsilon = 0     # current best: 0.3
+        self.global_min_epsilon = 0     # current best: 0.1
         self.global_decay_rate = 1.0 + 0.001  # Mean lifetime is 695
         self.episode_init_epsilon = 1.0
         self.episode_decay_rate = 1.0 + 0.3   # episode decay rate (mean lifetime - 0.1: 9, 0.2: 5; 0.3: 4)
@@ -203,8 +204,14 @@ class QLearningAgent(ReinforcementAgent):
             action = random.choice(legalActions)
         # if use_VDBE is set
         elif self.use_VDBE:
-            if state in self.state_VDBE and util.flipCoin(self.state_VDBE[state]):
-                action = random.choice(legalActions)
+            if state in self.state_VDBE:
+                prob = self.state_VDBE[state]
+                if prob < self.episode_anneal_threshold \
+                        and prob < self.episode_epsilon \
+                        and self.use_episode_epsilon_anneal:
+                    prob = self.episode_epsilon
+                if util.flipCoin(prob):
+                    action = random.choice(legalActions)
         # if use episode-wise epsilon annealing
         elif self.use_episode_epsilon_anneal and util.flipCoin(self.episode_epsilon):
             action = random.choice(legalActions)
@@ -372,8 +379,8 @@ class PacmanQAgent(QLearningAgent):
         informs parent of action for Pacman.  Do not change or remove this
         method.
         """
-        action = QLearningAgent.getAction(self,state)
-        self.doAction(state,action)
+        action = QLearningAgent.getAction(self, state)
+        self.doAction(state, action)
         return action
 
 
