@@ -57,6 +57,30 @@ class QLearningAgent(ReinforcementAgent):
         self.init_temp = init_temp
         self.temp_decrease_rate = temp_decrease_rate
         self.is_show_real_values = True
+        #############################################################
+        ##############  VDBE epsilon annealing   ####################
+        #############################################################
+        self.use_VDBE = False
+        self.state_VDBE = dict()
+        self.VDBE_sigma = 0.05
+        self.VDBE_delta = 0.1
+        self.episode_anneal_threshold = 0.15
+        #############################################################
+        ############  Episode-wise epsilon annealing   ##############
+        #############################################################
+        self.use_episode_epsilon_anneal = False
+        self.global_epsilon = 0     # current best: 0.3
+        self.global_min_epsilon = 0     # current best: 0.1
+        self.global_decay_rate = 1.0 + 0.001  # Mean lifetime is 695
+        self.episode_init_epsilon = 1.0
+        self.episode_decay_rate = 1.0 + 0.6   # episode decay rate (mean lifetime - 0.1: 9, 0.2: 5; 0.3: 4)
+        self.episode_epsilon = 1.0
+        #############################################################
+        #############################################################
+
+    def startEpisode(self):
+        ReinforcementAgent.startEpisode(self)
+        self.episode_epsilon = self.episode_init_epsilon
 
     def showRealValues(self):
         self.is_show_real_values = True
@@ -173,7 +197,23 @@ class QLearningAgent(ReinforcementAgent):
         # set the action to the best action
         action = self.computeActionFromQValues(state)
         # flip coin with probability of self.epsilon to determine whether to take random action
-        if self.epsilon > 0 and util.flipCoin(self.epsilon):
+        if not self.use_VDBE \
+                and not self.use_episode_epsilon_anneal \
+                and self.epsilon > 0 \
+                and util.flipCoin(self.epsilon):
+            action = random.choice(legalActions)
+        # if use_VDBE is set
+        elif self.use_VDBE:
+            if state in self.state_VDBE:
+                prob = self.state_VDBE[state]
+                if prob < self.episode_anneal_threshold \
+                        and prob < self.episode_epsilon \
+                        and self.use_episode_epsilon_anneal:
+                    prob = self.episode_epsilon
+                if util.flipCoin(prob):
+                    action = random.choice(legalActions)
+        # if use episode-wise epsilon annealing
+        elif self.use_episode_epsilon_anneal and util.flipCoin(self.episode_epsilon):
             action = random.choice(legalActions)
 
         return action
@@ -193,6 +233,25 @@ class QLearningAgent(ReinforcementAgent):
 
         newQValue = (1-self.alpha)*oldQValue + self.alpha*(reward + self.discount*nextStateValue)
         self.qValues[(state, action)] = newQValue
+
+        # update VDBE
+        if self.use_VDBE:
+            self.updateVDBE(state, oldQValue, newQValue)
+        # update episode-wise epsilon annealing
+        if self.use_episode_epsilon_anneal:
+            self.updateEpisodeEpsilonAnnealing()
+
+    def updateEpisodeEpsilonAnnealing(self):
+        self.global_epsilon = max(self.global_epsilon/self.global_decay_rate, self.global_min_epsilon)
+        self.episode_epsilon = max(self.episode_epsilon/self.episode_decay_rate, self.global_epsilon)
+
+    def updateVDBE(self, state, old_qValue, new_qValue):
+        # check if VDBE value for current state has been initialized
+        if state not in self.state_VDBE:
+            self.state_VDBE[state] = 1.0
+        qValue_error = np.fabs(float(new_qValue) - float(old_qValue))
+        f = (1.0 - np.exp((-qValue_error)/self.VDBE_sigma)) / (1.0 + np.exp((-qValue_error)/self.VDBE_sigma))
+        self.state_VDBE[state] = self.VDBE_delta * f + (1 - self.VDBE_delta) * self.state_VDBE[state]
 
     def getPolicy(self, state):
         return self.computeActionFromQValues(state)
@@ -232,6 +291,10 @@ class TamerQAgent(QLearningAgent):
         # do nothing when the signal is 0 or it's not in training
         if human_signal == 0:
             return
+
+        # just for fun, update episode-wise epsilon annealing
+        if self.use_episode_epsilon_anneal:
+            self.updateEpisodeEpsilonAnnealing()
 
         # if pause-and-wait-for-user-feedback, only update according to the latest observation
         if not self.is_asyn_input:
@@ -316,8 +379,8 @@ class PacmanQAgent(QLearningAgent):
         informs parent of action for Pacman.  Do not change or remove this
         method.
         """
-        action = QLearningAgent.getAction(self,state)
-        self.doAction(state,action)
+        action = QLearningAgent.getAction(self, state)
+        self.doAction(state, action)
         return action
 
 

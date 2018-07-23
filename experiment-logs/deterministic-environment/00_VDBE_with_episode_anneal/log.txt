@@ -11,11 +11,11 @@ RUNNING 800 EPISODES
 ##################################
 The policy has converged
 
-TOTAL STEPS: 3255, EPISODE STEPS: 7
+TOTAL STEPS: 3344, EPISODE STEPS: 6
 ##################################
 ##################################
 
-AVERAGE RETURNS FROM START STATE: 2.87456624967
+AVERAGE RETURNS FROM START STATE: 2.49651269538
 
 
 *************************************
@@ -31,11 +31,11 @@ RUNNING 800 EPISODES
 ##################################
 The policy has converged
 
-TOTAL STEPS: 2613, EPISODE STEPS: 10
+TOTAL STEPS: 3081, EPISODE STEPS: 5
 ##################################
 ##################################
 
-AVERAGE RETURNS FROM START STATE: 2.9064014863
+AVERAGE RETURNS FROM START STATE: 3.82716924871
 
 
 *************************************
@@ -51,11 +51,11 @@ RUNNING 800 EPISODES
 ##################################
 The policy has converged
 
-TOTAL STEPS: 638, EPISODE STEPS: 23
+TOTAL STEPS: 1254, EPISODE STEPS: 5
 ##################################
 ##################################
 
-AVERAGE RETURNS FROM START STATE: 0.701887519493
+AVERAGE RETURNS FROM START STATE: 1.77085298797
 
 
 *************************************
@@ -71,11 +71,11 @@ RUNNING 800 EPISODES
 ##################################
 The policy has converged
 
-TOTAL STEPS: 4743, EPISODE STEPS: 9
+TOTAL STEPS: 2049, EPISODE STEPS: 6
 ##################################
 ##################################
 
-AVERAGE RETURNS FROM START STATE: 2.43764717517
+AVERAGE RETURNS FROM START STATE: 2.79533381774
 
 
 *************************************
@@ -91,11 +91,11 @@ RUNNING 800 EPISODES
 ##################################
 The policy has converged
 
-TOTAL STEPS: 1814, EPISODE STEPS: 5
+TOTAL STEPS: 2370, EPISODE STEPS: 10
 ##################################
 ##################################
 
-AVERAGE RETURNS FROM START STATE: 2.34185736009
+AVERAGE RETURNS FROM START STATE: 2.24769157132
 
 
 *************************************
@@ -111,11 +111,11 @@ RUNNING 800 EPISODES
 ##################################
 The policy has converged
 
-TOTAL STEPS: 2257, EPISODE STEPS: 19
+TOTAL STEPS: 2600, EPISODE STEPS: 4
 ##################################
 ##################################
 
-AVERAGE RETURNS FROM START STATE: 2.74928859368
+AVERAGE RETURNS FROM START STATE: 3.04228606092
 
 
 *************************************
@@ -131,11 +131,11 @@ RUNNING 800 EPISODES
 ##################################
 The policy has converged
 
-TOTAL STEPS: 558, EPISODE STEPS: 28
+TOTAL STEPS: 3089, EPISODE STEPS: 9
 ##################################
 ##################################
 
-AVERAGE RETURNS FROM START STATE: 0.522601000084
+AVERAGE RETURNS FROM START STATE: 3.13298875927
 
 
 *************************************
@@ -151,11 +151,11 @@ RUNNING 800 EPISODES
 ##################################
 The policy has converged
 
-TOTAL STEPS: 2939, EPISODE STEPS: 5
+TOTAL STEPS: 1018, EPISODE STEPS: 4
 ##################################
 ##################################
 
-AVERAGE RETURNS FROM START STATE: 3.22263348151
+AVERAGE RETURNS FROM START STATE: 0.334336394158
 
 
 *************************************
@@ -171,11 +171,11 @@ RUNNING 800 EPISODES
 ##################################
 The policy has converged
 
-TOTAL STEPS: 561, EPISODE STEPS: 11
+TOTAL STEPS: 3002, EPISODE STEPS: 7
 ##################################
 ##################################
 
-AVERAGE RETURNS FROM START STATE: 1.60841752076
+AVERAGE RETURNS FROM START STATE: 3.42701702559
 
 
 *************************************
@@ -191,11 +191,11 @@ RUNNING 800 EPISODES
 ##################################
 The policy has converged
 
-TOTAL STEPS: 4960, EPISODE STEPS: 8
+TOTAL STEPS: 3597, EPISODE STEPS: 4
 ##################################
 ##################################
 
-AVERAGE RETURNS FROM START STATE: 3.59329936181
+AVERAGE RETURNS FROM START STATE: 2.17922244959
 
 
 *************************************
@@ -211,11 +211,11 @@ RUNNING 800 EPISODES
 ##################################
 The policy has converged
 
-TOTAL STEPS: 2865, EPISODE STEPS: 12
+TOTAL STEPS: 763, EPISODE STEPS: 6
 ##################################
 ##################################
 
-AVERAGE RETURNS FROM START STATE: 2.68062962303
+AVERAGE RETURNS FROM START STATE: -0.330900746608
 
 
 *************************************
@@ -231,11 +231,11 @@ RUNNING 800 EPISODES
 ##################################
 The policy has converged
 
-TOTAL STEPS: 838, EPISODE STEPS: 5
+TOTAL STEPS: 2403, EPISODE STEPS: 8
 ##################################
 ##################################
 
-AVERAGE RETURNS FROM START STATE: 0.662106104267
+AVERAGE RETURNS FROM START STATE: 1.98438074843
 
 
 *************************************
@@ -251,11 +251,11 @@ RUNNING 800 EPISODES
 ##################################
 The policy has converged
 
-TOTAL STEPS: 465, EPISODE STEPS: 4
+TOTAL STEPS: 1939, EPISODE STEPS: 7
 ##################################
 ##################################
 
-AVERAGE RETURNS FROM START STATE: 1.92545557136
+AVERAGE RETURNS FROM START STATE: 2.6209739314
 
 
 *************************************
@@ -271,11 +271,11 @@ RUNNING 800 EPISODES
 ##################################
 The policy has converged
 
-TOTAL STEPS: 1627, EPISODE STEPS: 8
+TOTAL STEPS: 2256, EPISODE STEPS: 9
 ##################################
 ##################################
 
-AVERAGE RETURNS FROM START STATE: 1.8448337101
+AVERAGE RETURNS FROM START STATE: 1.57124788008
 
 
 *************************************
@@ -291,11 +291,11 @@ RUNNING 800 EPISODES
 ##################################
 The policy has converged
 
-TOTAL STEPS: 449, EPISODE STEPS: 16
+TOTAL STEPS: 3228, EPISODE STEPS: 5
 ##################################
 ##################################
 
-AVERAGE RETURNS FROM START STATE: -0.247457931872
+AVERAGE RETURNS FROM START STATE: 3.23268760284
 
 
 *************************************
@@ -311,11 +311,11 @@ RUNNING 800 EPISODES
 ##################################
 The policy has converged
 
-TOTAL STEPS: 4176, EPISODE STEPS: 11
+TOTAL STEPS: 2406, EPISODE STEPS: 7
 ##################################
 ##################################
 
-AVERAGE RETURNS FROM START STATE: 2.94103956452
+AVERAGE RETURNS FROM START STATE: 1.2962205541
 
 
 *************************************
@@ -331,11 +331,11 @@ RUNNING 800 EPISODES
 ##################################
 The policy has converged
 
-TOTAL STEPS: 2487, EPISODE STEPS: 8
+TOTAL STEPS: 2314, EPISODE STEPS: 5
 ##################################
 ##################################
 
-AVERAGE RETURNS FROM START STATE: 2.6972223733
+AVERAGE RETURNS FROM START STATE: 2.33950701165
 
 
 *************************************
@@ -351,11 +351,11 @@ RUNNING 800 EPISODES
 ##################################
 The policy has converged
 
-TOTAL STEPS: 650, EPISODE STEPS: 11
+TOTAL STEPS: 581, EPISODE STEPS: 13
 ##################################
 ##################################
 
-AVERAGE RETURNS FROM START STATE: 0.697248286968
+AVERAGE RETURNS FROM START STATE: 0.162230638898
 
 
 *************************************
@@ -371,11 +371,11 @@ RUNNING 800 EPISODES
 ##################################
 The policy has converged
 
-TOTAL STEPS: 2851, EPISODE STEPS: 12
+TOTAL STEPS: 4201, EPISODE STEPS: 9
 ##################################
 ##################################
 
-AVERAGE RETURNS FROM START STATE: 2.43171668253
+AVERAGE RETURNS FROM START STATE: 3.50017507343
 
 
 *************************************
@@ -391,11 +391,11 @@ RUNNING 800 EPISODES
 ##################################
 The policy has converged
 
-TOTAL STEPS: 2246, EPISODE STEPS: 8
+TOTAL STEPS: 999, EPISODE STEPS: 4
 ##################################
 ##################################
 
-AVERAGE RETURNS FROM START STATE: 2.11554054877
+AVERAGE RETURNS FROM START STATE: -0.319252158318
 
 
 Press Enter to terminate the experiment

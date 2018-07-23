@@ -21,13 +21,35 @@ import optparse
 import qValueSaver
 import numpy as np
 import plotUtils
+import autoFeedbacks
 
 from input import user_input
 
+#######################################################
+######## Output detail level control ##################
+#######################################################
+VERY_SHORT_OUTPUT = 0
+SHORT_OUTPUT = 1
+SOME_DETAILS = 2
+OUTPUT_DETAIL_LEVEL = VERY_SHORT_OUTPUT
+#######################################################
+FAST_EXPERIMENT = True      # no wait at the end of each epoch and no graphic output
+TAMER_SHOW_LEARNED_VALUES = False   # whether to hide the learned Q-Values while learning
+AUTO_FEEDBACK_TAMER = False
+#######################################################
+############### VDBE values recorder ##################
+#######################################################
+VDBE_RECORDS = dict()
 
-FAST_EXPERIMENT = True
-SHORT_OUTPUT = True
-VERY_SHORT_OUTPUT = True
+
+def record_VDBE(current_VDBEs, all_states):
+    for state in all_states:
+        if state in current_VDBEs:
+            VDBE_RECORDS[state].append(current_VDBEs[state])
+        else:
+            VDBE_RECORDS[state].append(1.0)
+#######################################################
+#######################################################
 
 
 class Gridworld(mdp.MarkovDecisionProcess):
@@ -500,13 +522,14 @@ def getPolicyAgreementRatio(m_environment, optimal_qValues, current_qValues, is_
         # treat current_actions as optimal if it's a subset of optimal_actions
         for current_action in current_actions:
             if current_action not in optimal_actions:
-                if is_print_info and not SHORT_OUTPUT:
+                # only print the message when print_info is set and output detail level is greater than VERY_SHORT
+                if is_print_info and OUTPUT_DETAIL_LEVEL > SHORT_OUTPUT:
                     print('Action \'' + current_action + '\' at state ' + str(state) + ' is not optimal')
                 is_optimal = False
                 break
 
         if is_optimal:
-            if is_print_info and not SHORT_OUTPUT:
+            if is_print_info and OUTPUT_DETAIL_LEVEL > SHORT_OUTPUT:
                 print('Policy at state ' + str(state) + ' is optimal')
             n_converged_states += 1
 
@@ -531,17 +554,17 @@ def runEpisode(agent, m_environment, discount, f_decision
 
     if 'startEpisode' in dir(agent):
         agent.startEpisode()
-    if not VERY_SHORT_OUTPUT:
+    if OUTPUT_DETAIL_LEVEL > VERY_SHORT_OUTPUT:
         f_message("BEGINNING EPISODE: " + str(i_episode) + "\n")
 
     while True:
         # DISPLAY CURRENT STATE
         state = m_environment.getCurrentState()
 
-        if agent.getAgentType() == 'TamerAgent':
+        if agent.getAgentType() == 'TamerAgent' and not TAMER_SHOW_LEARNED_VALUES:
             agent.hideRealValues()
-        # global variable fast experiment
-        if not FAST_EXPERIMENT:
+        # only have graphic output when fast_experiment is not set or it TAMER agent with no auto feedback
+        if not FAST_EXPERIMENT or (agent.getAgentType() == 'TamerAgent' and not AUTO_FEEDBACK_TAMER):
             f_display(state, previous_state)
         if agent.getAgentType() == 'TamerAgent':
             agent.showRealValues()
@@ -549,16 +572,26 @@ def runEpisode(agent, m_environment, discount, f_decision
         f_pause()
 
         # get human feedback
-        if episode_step != 0 and user_input_module is not None:
-            human_signal = user_input_module.getInput()
-            if human_signal is not None and human_signal == 'a':
-                f_message("Receive Positive (+1) human signal\n")
-                agent.receiveHumanSignal(human_signal=1)
-            elif human_signal is not None and human_signal == 's':
-                f_message("Receive Negative (-1) human signal\n")
-                agent.receiveHumanSignal(human_signal=-1)
-            elif human_signal is not None and human_signal.strip() == '':
-                f_message("Receive Uncertainty human signal\n")
+        if AUTO_FEEDBACK_TAMER:
+            if episode_step != 0 and agent.getAgentType() == 'TamerAgent':
+                human_signal = autoFeedbacks.getAutoHumanFeedback(state, previous_state)
+                if OUTPUT_DETAIL_LEVEL > VERY_SHORT_OUTPUT:
+                    f_message("Receive human signal %s\n" % human_signal)
+                agent.receiveHumanSignal(human_signal=human_signal)
+        else:
+            if episode_step != 0 and user_input_module is not None and agent.getAgentType() == 'TamerAgent':
+                human_signal = user_input_module.getInput()
+                if human_signal is not None and human_signal == 'a':
+                    if OUTPUT_DETAIL_LEVEL > VERY_SHORT_OUTPUT:
+                        f_message("Receive Positive (+1) human signal\n")
+                    agent.receiveHumanSignal(human_signal=1)
+                elif human_signal is not None and human_signal == 's':
+                    if OUTPUT_DETAIL_LEVEL > VERY_SHORT_OUTPUT:
+                        f_message("Receive Negative (-1) human signal\n")
+                    agent.receiveHumanSignal(human_signal=-1)
+                elif human_signal is not None and human_signal.strip() == '':
+                    if OUTPUT_DETAIL_LEVEL > VERY_SHORT_OUTPUT:
+                        f_message("Receive Uncertainty human signal\n")
 
         # calculate policy convergence ratio
         policy_convergence_ratio = 0
@@ -568,17 +601,17 @@ def runEpisode(agent, m_environment, discount, f_decision
                                                                    , current_qValues=agent.getQValues()
                                                                    , is_print_info=False)
                 policy_converge_ratio_logs[global_step] = policy_convergence_ratio
-                if not SHORT_OUTPUT:
+                if OUTPUT_DETAIL_LEVEL > SHORT_OUTPUT:
                     print("Current Policy Agreement Ratio: %f" % policy_convergence_ratio)
 
         # END IF IN A TERMINAL STATE
         actions = m_environment.getPossibleActions(state)
         if len(actions) == 0:
-            if not VERY_SHORT_OUTPUT:
+            if OUTPUT_DETAIL_LEVEL > VERY_SHORT_OUTPUT:
                 f_message("--------------------------------")
                 f_message("EPISODE " + str(i_episode) + " COMPLETE: RETURN WAS " + str(episode_rewards) + "\n")
                 f_message("TOTAL STEPS: " + str(global_step) + ", EPISODE STEPS: " + str(episode_step))
-                if not SHORT_OUTPUT:
+                if OUTPUT_DETAIL_LEVEL > SHORT_OUTPUT:
                     f_message("Learned QValue: " + str(agent.getQValues()) + "\n")
                 f_message("--------------------------------\n")
 
@@ -588,7 +621,7 @@ def runEpisode(agent, m_environment, discount, f_decision
                                                                    , optimal_qValues=optimal_policy
                                                                    , current_qValues=agent.getQValues()
                                                                    , is_print_info=True)
-                if not VERY_SHORT_OUTPUT:
+                if OUTPUT_DETAIL_LEVEL > VERY_SHORT_OUTPUT:
                     f_message("################################")
                     f_message("Current Policy Convergence Ratio: %f" % policy_convergence_ratio)
                     f_message("################################\n")
@@ -602,7 +635,7 @@ def runEpisode(agent, m_environment, discount, f_decision
                     f_message("The policy has converged\n")
                     f_message("TOTAL STEPS: " + str(global_step) + ", EPISODE STEPS: " + str(episode_step))
                     f_message("##################################")
-                    if not SHORT_OUTPUT:
+                    if OUTPUT_DETAIL_LEVEL > SHORT_OUTPUT:
                         f_message("Learned QValue: " + str(agent.getQValues()) + "\n")
                     f_message("##################################")
 
@@ -616,7 +649,8 @@ def runEpisode(agent, m_environment, discount, f_decision
         # EXECUTE ACTION
         nextState, reward = m_environment.doAction(action)
         # print the transition only when SHORT_OUTPUT is not set or current agent is TamerAgent
-        if not SHORT_OUTPUT or agent.getAgentType() == 'TamerAgent':
+        if OUTPUT_DETAIL_LEVEL > SHORT_OUTPUT \
+                or (agent.getAgentType() == 'TamerAgent' and OUTPUT_DETAIL_LEVEL > VERY_SHORT_OUTPUT):
             f_message("Step: " + str(episode_step) +
                       ", S: " + str(state) +
                       ", A: " + str(action) +
@@ -627,6 +661,11 @@ def runEpisode(agent, m_environment, discount, f_decision
         # UPDATE LEARNER
         if 'observeTransition' in dir(agent):
             agent.observeTransition(state, action, nextState, reward)
+
+        # RECORD VDBE values
+        current_VDBEs = agent.state_VDBE
+        all_states = m_environment.getGridWorld().getNonTerminalStates()
+        record_VDBE(current_VDBEs, all_states)
 
         episode_rewards += reward * totalDiscount
         totalDiscount *= discount
@@ -688,6 +727,16 @@ class TamerGridWorldExperiment():
         self.mdp.setLivingReward(living_reward)
         self.mdp.setNoise(noise)
         self.env = gridworld.GridworldEnvironment(self.mdp)
+
+        ###########################
+        # Variables used to store parameters values
+        ###########################
+
+        # init VDBE values records
+        global VDBE_RECORDS
+        VDBE_RECORDS = dict()
+        for state in self.env.getGridWorld().getNonTerminalStates():
+            VDBE_RECORDS[state] = list()
 
         ###########################
         # GET THE DISPLAY ADAPTER
@@ -790,6 +839,12 @@ class TamerGridWorldExperiment():
             qValueSaver.saveDictToFile(policy_agreement_log_file, policy_agreement_ratios)
         # plot policy convergence ratio
         plotUtils.plotAgreementRatios(policy_agreement_ratios)
+
+        # save VDBE values to files
+        for state in self.env.getGridWorld().getNonTerminalStates():
+            vdbe_values_file = self.expr_log_dir + '/vdbe-' + str(state[0]) \
+                               + '-' + str(state[1])  + '.json'
+            qValueSaver.saveDictToFile(vdbe_values_file, VDBE_RECORDS[state])
 
         # DISPLAY POST-LEARNING VALUES / Q-VALUES
         try:

@@ -36,7 +36,7 @@ compare_experiments = ['/Users/lguan/Documents/Study/Research/Summer 2018/experi
     , '/Users/lguan/Documents/Study/Research/Summer 2018/experiment-logs/13_agentQ_alpha0.5_temp1.0_decrease1.0_policyConverge_synchInput_speed2.0/avg_policy_agreement_ratio.json']
 compare_experiment_names = ['Tamer, e:0.05', 'Tamer, e:0.01', 'Tamer, softmax', 'Random', 'e:0.5', 'e:0.3', 'T:50 D:1.05', 'pure softmax']
 
-plot_skip_set = ['episode-anneal, r=0.1', 'episode-anneal, r=0.2', 'Random', 'e:0.1']
+plot_skip_set = ['episode-anneal, r=0.1', 'episode-anneal, r=0.2', 'Random', 'e:0.1', 'episode-anneal, r=0.3']
 
 
 def compare_both_methods():

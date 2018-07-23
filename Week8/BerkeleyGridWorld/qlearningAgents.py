@@ -60,11 +60,11 @@ class QLearningAgent(ReinforcementAgent):
         #############################################################
         ##############  VDBE epsilon annealing   ####################
         #############################################################
-        self.use_VDBE = True
+        self.use_VDBE = False
         self.state_VDBE = dict()
         self.VDBE_sigma = 0.05
         self.VDBE_delta = 0.1
-        self.episode_anneal_threshold = 0.1
+        self.episode_anneal_threshold = 0.15
         #############################################################
         ############  Episode-wise epsilon annealing   ##############
         #############################################################
@@ -73,7 +73,7 @@ class QLearningAgent(ReinforcementAgent):
         self.global_min_epsilon = 0     # current best: 0.1
         self.global_decay_rate = 1.0 + 0.001  # Mean lifetime is 695
         self.episode_init_epsilon = 1.0
-        self.episode_decay_rate = 1.0 + 0.3   # episode decay rate (mean lifetime - 0.1: 9, 0.2: 5; 0.3: 4)
+        self.episode_decay_rate = 1.0 + 0.6   # episode decay rate (mean lifetime - 0.1: 9, 0.2: 5; 0.3: 4)
         self.episode_epsilon = 1.0
         #############################################################
         #############################################################
