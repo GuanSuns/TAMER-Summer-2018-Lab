@@ -31,7 +31,7 @@ def plotAgreementRatios(ratio_dict, is_new_figure=False):
     plt.pause(0.001)
 
 
-def plotAveragePolicyAgreementRatios(ratios_list):
+def getAndPlotAveragePolicyAgreementRatios(ratios_list, no_graphics=False):
     # inner helper function
     def getPolicyAgreementRatios(ratio_dict, i_step):
         keys = ratio_dict.keys()
@@ -56,7 +56,8 @@ def plotAveragePolicyAgreementRatios(ratios_list):
         avg_agreement_ratios[i] = sum_agreement_ratios / float(n_experiments)
 
     # plot the ratios
-    plotAgreementRatios(avg_agreement_ratios, True)
+    if not no_graphics:
+        plotAgreementRatios(avg_agreement_ratios, True)
     # return the calculated avg ratios
     return avg_agreement_ratios
 

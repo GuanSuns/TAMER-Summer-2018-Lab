@@ -838,7 +838,8 @@ class TamerGridWorldExperiment():
             policy_agreement_log_file = self.expr_log_dir + '/' + 'policy_agreement_ratio.json'
             qValueSaver.saveDictToFile(policy_agreement_log_file, policy_agreement_ratios)
         # plot policy convergence ratio
-        plotUtils.plotAgreementRatios(policy_agreement_ratios)
+        if not self.text_only:
+            plotUtils.plotAgreementRatios(policy_agreement_ratios)
 
         # save VDBE values to files
         for state in self.env.getGridWorld().getNonTerminalStates():

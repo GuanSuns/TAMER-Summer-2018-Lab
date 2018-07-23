@@ -40,6 +40,7 @@ def run_expr(alpha=0.5, epsilon=0.05, init_temp=1.0, temp_decrease_rate=1.0, noi
     delta = 0.02
     check_policy_converge = True
     check_value_converge = False
+    text_only = True
 
     # generate postfix
     postfix = ''
@@ -115,25 +116,25 @@ def run_expr(alpha=0.5, epsilon=0.05, init_temp=1.0, temp_decrease_rate=1.0, noi
                                                             , check_value_converge=check_value_converge
                                                             , init_temp=init_temp
                                                             , temp_decrease_rate=temp_decrease_rate
+                                                            , text_only=text_only
                                                             , is_use_q_agent=is_use_q_agent)
         experiment_stat = tamerGridWorld.run_episodes()
         policy_agreement_ratio = experiment_stat[0]
         policy_agreement_ratios.append(policy_agreement_ratio)
 
     # calculate and plot average policy agreement ratios
-    avg_policy_agreement_ratios = plotUtils.plotAveragePolicyAgreementRatios(policy_agreement_ratios)
+    avg_policy_agreement_ratios = plotUtils.getAndPlotAveragePolicyAgreementRatios(policy_agreement_ratios
+                                                                                   , no_graphics=text_only)
     avg_policy_agreement_log_file = expr_log_dir + '/' + 'avg_policy_agreement_ratio.json'
     qValueSaver.saveDictToFile(avg_policy_agreement_log_file, avg_policy_agreement_ratios)
-
-    # raw_input('Press Enter to terminate the experiment')
 
 
 def run_experiments():
     is_use_q_learning_agent = True     # True: use q-learning, False: use TAMER
     n_sub_experiment = 20
-    noises = [0]
-    alphas = [0.5]
-    epsilons = [0.5]
+    noises = [0.1, 0.3, 0.5, 0.7]
+    alphas = [0.3]
+    epsilons = [0.01, 0.05, 0.1, 0.3, 0.5]
     init_temps = [1.0]
     temp_decrease_rates = [1.0]
 
