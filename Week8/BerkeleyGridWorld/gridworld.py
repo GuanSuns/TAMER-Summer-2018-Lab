@@ -706,6 +706,7 @@ class TamerGridWorldExperiment():
         self.optimal_policy = optimal_policy
         self.expr_log_dir = expr_log_dir
         self.delta = delta
+        self.save_VDBE = False
 
         ###########################
         # GET THE INPUT MODULE
@@ -845,7 +846,8 @@ class TamerGridWorldExperiment():
         for state in self.env.getGridWorld().getNonTerminalStates():
             vdbe_values_file = self.expr_log_dir + '/vdbe-' + str(state[0]) \
                                + '-' + str(state[1])  + '.json'
-            qValueSaver.saveDictToFile(vdbe_values_file, VDBE_RECORDS[state])
+            if self.save_VDBE:
+                qValueSaver.saveDictToFile(vdbe_values_file, VDBE_RECORDS[state])
 
         # DISPLAY POST-LEARNING VALUES / Q-VALUES
         try:
