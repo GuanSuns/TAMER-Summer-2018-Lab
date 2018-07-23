@@ -24,7 +24,7 @@ VDBE_value_states = [
     (4, 4),
 ]
 
-VDBE_values_dir = '/Users/lguan/Documents/Study/Research/Summer 2018/experiment-logs/00_agentQ_alpha0.5_epsilon0.3_policyConverge_synchInput_speed2.0/sub-experiment-1'
+VDBE_values_dir = '/Users/lguan/Documents/Study/Research/Summer 2018/experiment-logs/00_agentQ_alpha0.5_epsilon0.3_policyConverge_synchInput_speed2.0/sub-experiment-0'
 
 
 def visual_VDBEs():

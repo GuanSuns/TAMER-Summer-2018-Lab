@@ -16,9 +16,10 @@ root_log_dir = '/Users/lguan/Documents/Study/Research/Summer 2018/experiment-log
 # f_qValues = '/u/guanlin/Desktop/experiment-logs/results/converged_qValues.json'
 
 
-def run_expr(alpha=0.5, epsilon=0.05, init_temp=1.0, temp_decrease_rate=1.0, noise=0.0, n_sub_experiment=10):
+def run_expr(alpha=0.5, epsilon=0.05, init_temp=1.0, temp_decrease_rate=1.0, noise=0.0
+             , n_sub_experiment=10, is_use_q_learning_agent=True):
     # agent parameters
-    is_use_q_agent = True  # use qAgent or use Tamer agent
+    is_use_q_agent = is_use_q_learning_agent  # use qAgent or use Tamer agent
     alpha = alpha    # learning rate
     # epsilon >= 0: use e-greedy
     # epsilon < 0: use softmax
@@ -128,6 +129,7 @@ def run_expr(alpha=0.5, epsilon=0.05, init_temp=1.0, temp_decrease_rate=1.0, noi
 
 
 def run_experiments():
+    is_use_q_learning_agent = True     # True: use q-learning, False: use TAMER
     n_sub_experiment = 20
     noises = [0]
     alphas = [0.5]
@@ -140,17 +142,23 @@ def run_experiments():
             for epsilon in epsilons:
                 # use softmax
                 if epsilon == -1:
-                    run_expr(alpha=alpha, epsilon=epsilon, init_temp=1.0, temp_decrease_rate=1.0, noise=noise, n_sub_experiment=n_sub_experiment)
                     # pure softmax
+                    run_expr(alpha=alpha, epsilon=epsilon, init_temp=1.0, temp_decrease_rate=1.0, noise=noise
+                             , n_sub_experiment=n_sub_experiment, is_use_q_learning_agent=is_use_q_learning_agent)
+
                     for init_temp in init_temps:
                         for temp_decrease_rate in temp_decrease_rates:
                             # we have already tested softmax with no temperature control
                             if init_temp == 1.0 and temp_decrease_rate == 1.0:
                                 continue
-                            run_expr(alpha=alpha, epsilon=epsilon, init_temp=init_temp, temp_decrease_rate=temp_decrease_rate, noise=noise, n_sub_experiment=n_sub_experiment)
+                            run_expr(alpha=alpha, epsilon=epsilon, init_temp=init_temp
+                                     , temp_decrease_rate=temp_decrease_rate, noise=noise
+                                     , n_sub_experiment=n_sub_experiment
+                                     , is_use_q_learning_agent=is_use_q_learning_agent)
                 # epsilon greedy
                 else:
-                    run_expr(alpha=alpha, epsilon=epsilon, noise=noise, n_sub_experiment=n_sub_experiment)
+                    run_expr(alpha=alpha, epsilon=epsilon, noise=noise, n_sub_experiment=n_sub_experiment
+                             , is_use_q_learning_agent=is_use_q_learning_agent)
 
     raw_input('Press Enter to terminate the experiment')
 

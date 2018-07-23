@@ -31,7 +31,7 @@ from input import user_input
 VERY_SHORT_OUTPUT = 0
 SHORT_OUTPUT = 1
 SOME_DETAILS = 2
-OUTPUT_DETAIL_LEVEL = SOME_DETAILS
+OUTPUT_DETAIL_LEVEL = VERY_SHORT_OUTPUT
 #######################################################
 FAST_EXPERIMENT = True      # no wait at the end of each epoch and no graphic output
 TAMER_SHOW_LEARNED_VALUES = False   # whether to hide the learned Q-Values while learning

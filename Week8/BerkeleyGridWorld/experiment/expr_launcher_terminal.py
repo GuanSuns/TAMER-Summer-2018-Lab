@@ -130,7 +130,7 @@ def run_expr(alpha=0.5, epsilon=0.05, init_temp=1.0, temp_decrease_rate=1.0, noi
 
 def run_experiments():
     is_use_q_learning_agent = True     # True: use q-learning, False: use TAMER
-    n_sub_experiment = 2
+    n_sub_experiment = 20
     noises = [0]
     alphas = [0.5]
     epsilons = [0.3]

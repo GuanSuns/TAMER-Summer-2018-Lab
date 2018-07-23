@@ -58,21 +58,21 @@ class QLearningAgent(ReinforcementAgent):
         self.temp_decrease_rate = temp_decrease_rate
         self.is_show_real_values = True
         #############################################################
-        ######  Just for fun, VDBE epsilon annealing   ######
+        ##############  VDBE epsilon annealing   ####################
         #############################################################
-        self.state_VDBE = dict()
         self.use_VDBE = True
-        self.VDBE_sigma = 0.33
-        self.VDBE_delta = 0.25
+        self.state_VDBE = dict()
+        self.VDBE_sigma = 0.05
+        self.VDBE_delta = 0.1
         #############################################################
-        ######  Just for fun, episode-wise epsilon annealing   ######
+        ############  Episode-wise epsilon annealing   ##############
         #############################################################
         self.use_episode_epsilon_anneal = False
         self.global_epsilon = 0.3
         self.global_min_epsilon = 0.1
         self.global_decay_rate = 1.0 + 0.001  # Mean lifetime is 695
         self.episode_init_epsilon = 1.0
-        self.episode_decay_rate = 1.0 + 0.1   # episode decay rate, Mean lifetime is 3
+        self.episode_decay_rate = 1.0 + 0.3   # episode decay rate (mean lifetime - 0.1: 9, 0.2: 5; 0.3: 4)
         self.episode_epsilon = 1.0
         #############################################################
         #############################################################
@@ -227,17 +227,16 @@ class QLearningAgent(ReinforcementAgent):
         newQValue = (1-self.alpha)*oldQValue + self.alpha*(reward + self.discount*nextStateValue)
         self.qValues[(state, action)] = newQValue
 
-        # just for fun, update VDBE
+        # update VDBE
         if self.use_VDBE:
             self.updateVDBE(state, oldQValue, newQValue)
-        # just for fun, update episode-wise epsilon annealing
+        # update episode-wise epsilon annealing
         if self.use_episode_epsilon_anneal:
             self.updateEpisodeEpsilonAnnealing()
 
     def updateEpisodeEpsilonAnnealing(self):
         self.global_epsilon = max(self.global_epsilon/self.global_decay_rate, self.global_min_epsilon)
         self.episode_epsilon = max(self.episode_epsilon/self.episode_decay_rate, self.global_epsilon)
-        print('global_epsilon: %s, episode_epsilon: %s' % (self.global_epsilon, self.episode_epsilon))
 
     def updateVDBE(self, state, old_qValue, new_qValue):
         # check if VDBE value for current state has been initialized
@@ -285,6 +284,10 @@ class TamerQAgent(QLearningAgent):
         # do nothing when the signal is 0 or it's not in training
         if human_signal == 0:
             return
+
+        # just for fun, update episode-wise epsilon annealing
+        if self.use_episode_epsilon_anneal:
+            self.updateEpisodeEpsilonAnnealing()
 
         # if pause-and-wait-for-user-feedback, only update according to the latest observation
         if not self.is_asyn_input:
