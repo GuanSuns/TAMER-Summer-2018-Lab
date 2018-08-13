@@ -8,6 +8,8 @@
 
 
 ## Week 4
+- **Reading Note**
+	- RL Reading Note - Chapter 4 DP: https://guansuns.github.io/blog/09/RL-Note-Chapter-4-DP/
 - **Berkeley Grid World**
 	- Add Evaluation metric: number of episode/step to reach optimal policy
 	- Add instant feedback: pause and wait until human feedback
@@ -15,6 +17,8 @@
 	- Softmax action selection for exploration with overflow protection
 
 ## Week 5
+- **Reading Note**
+	- RL Reading Note - Chapter 12 Eligibility Traces: https://guansuns.github.io/blog/08/RL-Note-Chapter-12-Eligibility-Traces/
 - **Berkeley Grid World**
 	- Make environment deterministic
 	- Value Iteration Experiment: use value iteration to find the optimal (converged) values (Q-Values) in the Gridworld
@@ -25,6 +29,9 @@
 	- Statistics Module: visualize and compare experiment results
 
 ## Week 6
+- **Reading Note**
+	- RL Reading Note - Covergent Actor-Critic by Humans (COACH): https://guansuns.github.io/blog/10/RL-Reading-Note-Covergent-Actor-Critic-by-Humans-COACH/
+	- RL Reading Note - Deep COACH: https://guansuns.github.io/blog/11/RL-Reading-Note-Deep-COACH/
 - **Berkeley Grid World**
 	- Use distinct color to display 'STAY' move
 	- Add flags to control how many details printed on the screen as log during the experiment
@@ -32,11 +39,16 @@
 	- Evaluate TAMER's performance in noise environment
 
 ## Week 7
+- **Reading Note**
+	- Double DQN: https://guansuns.github.io/blog/21/RL-Reading-Note-Double-DQN/
+	- Deep RL from Human Preferences: https://guansuns.github.io/blog/22/Deep-RL-from-Human-Preferences/
 - **Berkeley Grid World**
 	- Use VDBE as epsilon annealing policy 
 	- Use both global-wise epsilon annealing and episode-wise epsilon annealing
 
 ## Week 8
+- **Reading Note**
+	-  Preference-Based RL Relevant Paper: https://guansuns.github.io/blog/23/Relevant-Papers/
 - **Berkeley Grid World**
 	- Record and visualize VDBE values
 

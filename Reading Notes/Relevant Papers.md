@@ -49,10 +49,6 @@ we can directly learn from an expert’s preferences instead of a hand-designed 
 - **Short-term optimality**: Short-term state preferences do not define a trade-off, because it is unclear whether visiting an undominated state once should be preferred over visiting a rarely dominated state multiple times.
 
 #### 1.5.2. Papers
-- **Long-term**: Wirth and J. Fürnkranz. **A policy iteration algorithm for learning from preference-based feedback**. In Advances in Intelligent Data Analysis XII: 12th International Symposium (IDA-13), volume 8207 of LNCS, pages 427–437. 2013a.
-	- https://link.springer.com/chapter/10.1007/978-3-642-41398-8_37
-	- Return a weighted vote for each action instead of a binary vote
-	- **Learn a preference model**
 - **Short-term**: (Optional, Robot Locomotion)M. Zucker, J. A. Bagnell, C. Atkeson, and J. Kuffner, Jr. **An optimization approach to rough terrain locomotion**. In Proceedings of the IEEE International Conference on Robotics and Automation (ICRA-10), pages 3589–3595. 2010.
 	- http://www.cs.cmu.edu/~cga/papers/zucker-icra10.pdf
 - C. Wirth and J. Fürnkranz. **First steps towards learning from game annotations**. In Proceedings of the ECAI Workshop on Preference Learning: Problems and Applications in AI, pages 53–58, 2012.
