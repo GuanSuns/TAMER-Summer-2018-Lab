@@ -18,7 +18,11 @@
 ## Understanding RPC
 - Learning **pair-wise** preference leans **more accurate** theories than the more commonly used **one-against-all** classification method. And it can be shown that pairwise classification is also computationally more efficient than one-against-all class binarization.
 - The learned binary preference relation does not necessarily have the typical properties of order relations.
+- **Procedure**: Learning piarwise preference (pairwise classification) $\rightarrow$ comnining predicted preferences into a ranking (can be voting)
 - The overall complexity of paiwise label ranking depends on the average number of preferences that are given for each training example.
+- Pairwise comparison
+![Pairwise comparison
+](figure1.png "Pairwise comparison")
 - **Disadvantage**
 	- A large number of classifiers that have to be stored
 
