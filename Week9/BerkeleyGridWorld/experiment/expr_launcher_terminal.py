@@ -17,34 +17,36 @@ root_log_dir = '/Users/lguan/Documents/Study/Research/Summer 2018/experiment-log
 
 
 def run_expr(alpha=0.5, epsilon=0.05, init_temp=1.0, temp_decrease_rate=1.0, noise=0.0
-             , n_sub_experiment=10, is_use_q_learning_agent=True):
-    # agent parameters
-    is_use_q_agent = is_use_q_learning_agent  # use qAgent or use Tamer agent
-    alpha = alpha    # learning rate
-    # epsilon >= 0: use e-greedy
-    # epsilon < 0: use softmax
-    epsilon = epsilon   # exploration rate
+             , n_sub_experiment=10, agent_type="qLearningAgent"):
+    """
+
+    :param alpha: learning rate
+    :param epsilon: epsilon >= 0 - use e-greedy; epsilon < 0 - use softmax
+    :param init_temp: initial temperature
+    :param temp_decrease_rate: temperature decreasing rate
+    :param noise: the probability of moving to an unexpected state
+    :param n_sub_experiment: the number of experiments for each setting
+    :param agent_type: "qLearningAgent" or "TamerAgent" or "preferenceTAMERAgent"
+
+    """
+    # TAMER global parameters
     window_size = 1     # Tamer agent window size
     max_n_experience = 2000     # Tamer agent maximum number of experiences
     is_asyn = False      # whether to receive input asynchronously
-    init_temp = init_temp
-    temp_decrease_rate = temp_decrease_rate
-    noise = noise
 
-    # learning environment parameters
+    # learning environment global parameters
+    noise = noise
     n_episodes = 800
     display_speed = 2.0
 
-    # experiment parameters
+    # experiment global parameters
     N = n_sub_experiment
-    delta = 0.02
     check_policy_converge = True
-    check_value_converge = False
     text_only = True
 
     # generate postfix
     postfix = ''
-    postfix += 'agent' + ('Q' if is_use_q_agent else 'Tamer')
+    postfix += agent_type
     postfix += '_alpha' + str(alpha)
     # softmax or epsilon-greedy
     if epsilon >= 0:
@@ -52,9 +54,7 @@ def run_expr(alpha=0.5, epsilon=0.05, init_temp=1.0, temp_decrease_rate=1.0, noi
     else:
         postfix += '_temp' + str(init_temp) + '_decrease' + str(temp_decrease_rate)
     # termination condition
-    if check_value_converge:
-        postfix += '_valueConverge'
-    elif check_policy_converge:
+    if check_policy_converge:
         postfix += '_policyConverge'
     else:
         postfix += '_k' + str(n_episodes)
@@ -90,11 +90,8 @@ def run_expr(alpha=0.5, epsilon=0.05, init_temp=1.0, temp_decrease_rate=1.0, noi
     # run experiments
     policy_agreement_ratios = list()
     for i in range(0, N):
-        print(" ")
-        print("*************************************")
         print("*************************************")
         print("*** Start Sub-Experiment %s **********" % i)
-        print("*************************************")
         print("*************************************")
         # create sub-experiment directory
         sub_experiment_log_dir = expr_log_dir + '/sub-experiment-' + str(i)
@@ -108,15 +105,13 @@ def run_expr(alpha=0.5, epsilon=0.05, init_temp=1.0, temp_decrease_rate=1.0, noi
                                                             , n_episodes=n_episodes
                                                             , display_speed=display_speed
                                                             , is_asyn_input=is_asyn
-                                                            , delta=delta
                                                             , expr_log_dir=sub_experiment_log_dir
                                                             , optimal_policy=optimal_qValues
                                                             , check_policy_converge=check_policy_converge
-                                                            , check_value_converge=check_value_converge
                                                             , init_temp=init_temp
                                                             , temp_decrease_rate=temp_decrease_rate
                                                             , text_only=text_only
-                                                            , is_use_q_agent=is_use_q_agent)
+                                                            , agent_type=agent_type)
         experiment_stat = tamerGridWorld.run_episodes()
         policy_agreement_ratio = experiment_stat[0]
         policy_agreement_ratios.append(policy_agreement_ratio)
@@ -129,7 +124,8 @@ def run_expr(alpha=0.5, epsilon=0.05, init_temp=1.0, temp_decrease_rate=1.0, noi
 
 
 def run_experiments():
-    is_use_q_learning_agent = True     # True: use q-learning, False: use TAMER
+    # agent_type: "qLearningAgent" or "TamerAgent" or "preferenceTAMERAgent"
+    agent_types = ["TamerAgent", "preferenceTAMERAgent"]
     n_sub_experiment = 20
     noises = [0.1, 0.3, 0.5, 0.7]
     alphas = [0.3]
@@ -137,28 +133,29 @@ def run_experiments():
     init_temps = [1.0]
     temp_decrease_rates = [1.0]
 
-    for noise in noises:
-        for alpha in alphas:
-            for epsilon in epsilons:
-                # use softmax
-                if epsilon == -1:
-                    # pure softmax
-                    run_expr(alpha=alpha, epsilon=epsilon, init_temp=1.0, temp_decrease_rate=1.0, noise=noise
-                             , n_sub_experiment=n_sub_experiment, is_use_q_learning_agent=is_use_q_learning_agent)
+    for agent_type in agent_types:
+        for noise in noises:
+            for alpha in alphas:
+                for epsilon in epsilons:
+                    # use softmax
+                    if epsilon == -1:
+                        # test softmax with no temperature control
+                        run_expr(alpha=alpha, epsilon=epsilon, init_temp=1.0, temp_decrease_rate=1.0, noise=noise
+                                 , n_sub_experiment=n_sub_experiment, agent_type=agent_type)
 
-                    for init_temp in init_temps:
-                        for temp_decrease_rate in temp_decrease_rates:
-                            # we have already tested softmax with no temperature control
-                            if init_temp == 1.0 and temp_decrease_rate == 1.0:
-                                continue
-                            run_expr(alpha=alpha, epsilon=epsilon, init_temp=init_temp
-                                     , temp_decrease_rate=temp_decrease_rate, noise=noise
-                                     , n_sub_experiment=n_sub_experiment
-                                     , is_use_q_learning_agent=is_use_q_learning_agent)
-                # epsilon greedy
-                else:
-                    run_expr(alpha=alpha, epsilon=epsilon, noise=noise, n_sub_experiment=n_sub_experiment
-                             , is_use_q_learning_agent=is_use_q_learning_agent)
+                        for init_temp in init_temps:
+                            for temp_decrease_rate in temp_decrease_rates:
+                                # we have already tested softmax with no temperature control
+                                if init_temp == 1.0 and temp_decrease_rate == 1.0:
+                                    continue
+                                run_expr(alpha=alpha, epsilon=epsilon, init_temp=init_temp
+                                         , temp_decrease_rate=temp_decrease_rate, noise=noise
+                                         , n_sub_experiment=n_sub_experiment
+                                         , agent_type=agent_type)
+                    # epsilon greedy
+                    else:
+                        run_expr(alpha=alpha, epsilon=epsilon, noise=noise, n_sub_experiment=n_sub_experiment
+                                 , agent_type=agent_type)
 
     raw_input('Press Enter to terminate the experiment')
 
