@@ -148,14 +148,14 @@ class QLearningAgent(ReinforcementAgent):
             qValues.append(qValue)
         maxQValue = np.max(qValues)
 
-        # if epsilon >= 0: use e-greedy
-        if self.epsilon >= 0:
-            actionId = np.random.choice(np.flatnonzero(maxQValue == qValues))
         # if epsilon < 0: use softmax
-        else:
-            softmaxValues = np.exp((qValues-maxQValue)/temperature)\
-                            / float(np.sum(np.exp((qValues-maxQValue)/temperature)))
+        if self.epsilon < 0:
+            softmaxValues = np.exp((qValues - maxQValue) / temperature) \
+                            / float(np.sum(np.exp((qValues - maxQValue) / temperature)))
             actionId = np.random.choice(np.arange(0, len(actions)), p=softmaxValues)
+        # if epsilon >= 0: choose the best action
+        else:
+            actionId = np.random.choice(np.flatnonzero(maxQValue == qValues))
 
         return actions[actionId]
 
@@ -194,8 +194,9 @@ class QLearningAgent(ReinforcementAgent):
         if len(legalActions) == 0:
             return None
 
-        # set the action to the best action
+        # choose an action
         action = self.computeActionFromQValues(state)
+        # if epsilon > 0, use epsilon-greedy
         # flip coin with probability of self.epsilon to determine whether to take random action
         if not self.use_VDBE \
                 and not self.use_episode_epsilon_anneal \
@@ -218,6 +219,25 @@ class QLearningAgent(ReinforcementAgent):
             action = random.choice(legalActions)
 
         return action
+
+    def getCurrentBestActions(self, state, is_single_action=False):
+        """
+        Choose the optimal action without any randomness
+        """
+        actions = self.getLegalActions(state)
+        if len(actions) == 0:
+            return None
+
+        qValues = list()
+        for action in actions:
+            qValue = float(self.getQValue(state, action))
+            qValues.append(qValue)
+        maxQValue = np.max(qValues)
+
+        action_indices = np.flatnonzero(qValues == maxQValue)
+        if is_single_action:
+            action_indices = random.choice(action_indices)
+        return actions[action_indices]
 
     def update(self, state, action, nextState, reward):
         """
@@ -255,12 +275,13 @@ class QLearningAgent(ReinforcementAgent):
         self.state_VDBE[state] = self.VDBE_delta * f + (1 - self.VDBE_delta) * self.state_VDBE[state]
 
     def getPolicy(self, state):
-        return self.computeActionFromQValues(state)
+        return self.getCurrentBestActions(state, is_single_action=True)
 
     def getValue(self, state):
         return self.computeValueFromQValues(state)
 
-    def getAgentType(self):
+    @staticmethod
+    def getAgentType():
         return 'qLearningAgent'
 
 
@@ -349,7 +370,8 @@ class TamerQAgent(QLearningAgent):
         while len(self.experiences) > self.max_n_experiences:
             self.experiences.pop(0)
 
-    def getAgentType(self):
+    @staticmethod
+    def getAgentType():
         return 'TamerAgent'
 
 

@@ -25,6 +25,9 @@ import autoFeedbacks
 
 from input import user_input
 
+import qlearningAgents
+import preferenceTamerAgent
+
 #######################################################
 ######## Output detail level control ##################
 #######################################################
@@ -481,36 +484,26 @@ def parseOptions():
     return m_opts
 
 
-def getActionGreedilyFromQValues(m_environment, state, qValues):
-    """ select action greedily according to the q-Values with tie breaking """
-    possible_actions = m_environment.getPossibleActions(state)
-    n_actions = len(possible_actions)
-    action_qValues = [qValues[(state, possible_actions[j])] for j in range(0, n_actions)]
-    # select action greedily with tie breaking
-    action_index = np.random.choice(np.flatnonzero(action_qValues == np.max(action_qValues)))
-    return possible_actions[action_index]
-
-
-def getSelectedActions(m_environment, state, qValues):
+def getOptimalActions(m_environment, state, optimal_qValues):
     """ select action greedily according to the q-Values with no tie breaking """
     possible_actions = np.array(m_environment.getPossibleActions(state))
     n_actions = len(possible_actions)
     # round float to 4 decimal place
-    action_qValues = [round(qValues[(state, possible_actions[j])], 4) for j in range(0, n_actions)]
+    action_qValues = [round(optimal_qValues[(state, possible_actions[j])], 4) for j in range(0, n_actions)]
     # select action greedily with tie breaking
     action_indices = np.flatnonzero(action_qValues == np.max(action_qValues))
     return possible_actions[action_indices]
 
 
-def getPolicyAgreementRatio(m_environment, optimal_qValues, current_qValues, is_print_info):
+def getPolicyAgreementRatio(m_environment, agent, optimal_qValues, is_print_info):
     states = m_environment.getGridWorld().getNonTerminalStates()
     n_states = len(states)
     n_converged_states = 0
 
     # iterate through all the non-terminal state
     for state in states:
-        optimal_actions = getSelectedActions(m_environment, state, optimal_qValues)
-        current_actions = getSelectedActions(m_environment, state, current_qValues)
+        optimal_actions = getOptimalActions(m_environment, state, optimal_qValues)
+        current_actions = agent.getCurrentBestActions(state)
 
         # skip exit state
         if 'exit' in optimal_actions:
@@ -534,6 +527,13 @@ def getPolicyAgreementRatio(m_environment, optimal_qValues, current_qValues, is_
             n_converged_states += 1
 
     return float(n_converged_states)/float(n_states)
+
+
+def isTamerAgent(agent):
+    str_agent_type = agent.getAgentType()
+    str_TAMER_agent = qlearningAgents.TamerQAgent.getAgentType()
+    str_prefer_TAMER_agent = preferenceTamerAgent.PreferenceTAMERAgent.getAgentType()
+    return str_agent_type == str_TAMER_agent or str_agent_type == str_prefer_TAMER_agent
 
 
 def runEpisode(agent, m_environment, discount, f_decision
@@ -564,25 +564,25 @@ def runEpisode(agent, m_environment, discount, f_decision
         # DISPLAY CURRENT STATE
         state = m_environment.getCurrentState()
 
-        if agent.getAgentType() == 'TamerAgent' and not TAMER_SHOW_LEARNED_VALUES:
+        if isTamerAgent(agent) and not TAMER_SHOW_LEARNED_VALUES:
             agent.hideRealValues()
-        # only have graphic output when fast_experiment is not set or it TAMER agent with no auto feedback
-        if not FAST_EXPERIMENT or (agent.getAgentType() == 'TamerAgent' and not AUTO_FEEDBACK_TAMER):
+        # only have graphic output when fast_experiment is not set or it's a TAMER agent with no auto feedback
+        if not FAST_EXPERIMENT or (isTamerAgent(agent) and not AUTO_FEEDBACK_TAMER):
             f_display(state, previous_state)
-        if agent.getAgentType() == 'TamerAgent':
+        if isTamerAgent(agent):
             agent.showRealValues()
 
         f_pause()
 
         # get human feedback
         if AUTO_FEEDBACK_TAMER:
-            if episode_step != 0 and agent.getAgentType() == 'TamerAgent':
+            if episode_step != 0 and isTamerAgent(agent):
                 human_signal = autoFeedbacks.getAutoHumanFeedback(state, previous_state)
                 if OUTPUT_DETAIL_LEVEL > VERY_SHORT_OUTPUT:
                     f_message("Receive human signal %s\n" % human_signal)
                 agent.receiveHumanSignal(human_signal=human_signal)
         else:
-            if episode_step != 0 and user_input_module is not None and agent.getAgentType() == 'TamerAgent':
+            if episode_step != 0 and user_input_module is not None and isTamerAgent(agent):
                 human_signal = user_input_module.getInput()
                 if human_signal is not None and human_signal == 'a':
                     if OUTPUT_DETAIL_LEVEL > VERY_SHORT_OUTPUT:
@@ -601,7 +601,7 @@ def runEpisode(agent, m_environment, discount, f_decision
         if optimal_policy is not None and policy_converge_ratio_logs is not None:
                 policy_convergence_ratio = getPolicyAgreementRatio(m_environment
                                                                    , optimal_qValues=optimal_policy
-                                                                   , current_qValues=agent.getQValues()
+                                                                   , agent=agent
                                                                    , is_print_info=False)
                 policy_converge_ratio_logs[global_step] = policy_convergence_ratio
                 if OUTPUT_DETAIL_LEVEL > SHORT_OUTPUT:
@@ -622,7 +622,7 @@ def runEpisode(agent, m_environment, discount, f_decision
             if optimal_policy is not None:
                 policy_convergence_ratio = getPolicyAgreementRatio(m_environment
                                                                    , optimal_qValues=optimal_policy
-                                                                   , current_qValues=agent.getQValues()
+                                                                   , agent=agent
                                                                    , is_print_info=True)
                 if OUTPUT_DETAIL_LEVEL > VERY_SHORT_OUTPUT:
                     f_message("################################")
@@ -653,7 +653,7 @@ def runEpisode(agent, m_environment, discount, f_decision
         nextState, reward = m_environment.doAction(action)
         # print the transition only when SHORT_OUTPUT is not set or current agent is TamerAgent
         if OUTPUT_DETAIL_LEVEL > SHORT_OUTPUT \
-                or (agent.getAgentType() == 'TamerAgent' and OUTPUT_DETAIL_LEVEL > VERY_SHORT_OUTPUT):
+                or (isTamerAgent(agent) and OUTPUT_DETAIL_LEVEL > VERY_SHORT_OUTPUT):
             f_message("Step: " + str(episode_step) +
                       ", S: " + str(state) +
                       ", A: " + str(action) +
@@ -690,12 +690,11 @@ class TamerGridWorldExperiment():
                  , check_policy_converge=False
                  , optimal_policy=None
                  , expr_log_dir=None
-                 , agent_type="Q-Agent"
+                 , agent_type="qLearningAgent"
                  , init_temp=1024.0
                  , temp_decrease_rate=2.0
                  , is_asyn_input=True):
         """
-
         :param agent_type: "qLearningAgent" or "TamerAgent" or "preferenceTAMERAgent"
         """
         ###########################
@@ -714,8 +713,7 @@ class TamerGridWorldExperiment():
         ###########################
         # GET THE INPUT MODULE
         ###########################
-
-        if is_use_q_agent:
+        if agent_type == qlearningAgents.QLearningAgent.getAgentType():
             self.user_input_module = None
         else:
             self.user_input_module = user_input.UserInputModule(is_asyn=is_asyn_input)
@@ -760,7 +758,6 @@ class TamerGridWorldExperiment():
         # GET THE TAMER AGENT
         ###########################
 
-        import qlearningAgents
         # env.getPossibleActions, opts.discount, opts.learningRate, opts.epsilon
         # simulationFn = lambda agent, state: simulation.GridworldSimulation(agent,state,mdp)
         self.gridWorldEnv = GridworldEnvironment(self.mdp)
@@ -774,10 +771,15 @@ class TamerGridWorldExperiment():
             'temp_decrease_rate': temp_decrease_rate
         }
 
-        if is_use_q_agent:
+        if agent_type == qlearningAgents.QLearningAgent.getAgentType():
             self.agent = qlearningAgents.QLearningAgent(**q_learn_opts)
-        else:
+        elif agent_type == qlearningAgents.TamerQAgent.getAgentType():
             self.agent = qlearningAgents.TamerQAgent(max_n_experiences=agent_max_n_experiences
+                                                     , window_size=agent_window_size
+                                                     , is_asyn_input=is_asyn_input
+                                                     , **q_learn_opts)
+        elif agent_type == preferenceTamerAgent.PreferenceTAMERAgent.getAgentType():
+            self.agent = preferenceTamerAgent.PreferenceTAMERAgent(max_n_experiences=agent_max_n_experiences
                                                      , window_size=agent_window_size
                                                      , is_asyn_input=is_asyn_input
                                                      , **q_learn_opts)

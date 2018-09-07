@@ -19,7 +19,6 @@ root_log_dir = '/Users/lguan/Documents/Study/Research/Summer 2018/experiment-log
 def run_expr(alpha=0.5, epsilon=0.05, init_temp=1.0, temp_decrease_rate=1.0, noise=0.0
              , n_sub_experiment=10, agent_type="qLearningAgent"):
     """
-
     :param alpha: learning rate
     :param epsilon: epsilon >= 0 - use e-greedy; epsilon < 0 - use softmax
     :param init_temp: initial temperature
@@ -31,7 +30,7 @@ def run_expr(alpha=0.5, epsilon=0.05, init_temp=1.0, temp_decrease_rate=1.0, noi
     """
     # TAMER global parameters
     window_size = 1     # Tamer agent window size
-    max_n_experience = 2000     # Tamer agent maximum number of experiences
+    max_n_experience = 2000     # Tamer agent replay buffer maximum size
     is_asyn = False      # whether to receive input asynchronously
 
     # learning environment global parameters
@@ -42,7 +41,7 @@ def run_expr(alpha=0.5, epsilon=0.05, init_temp=1.0, temp_decrease_rate=1.0, noi
     # experiment global parameters
     N = n_sub_experiment
     check_policy_converge = True
-    text_only = True
+    text_only = False
 
     # generate postfix
     postfix = ''
@@ -125,7 +124,7 @@ def run_expr(alpha=0.5, epsilon=0.05, init_temp=1.0, temp_decrease_rate=1.0, noi
 
 def run_experiments():
     # agent_type: "qLearningAgent" or "TamerAgent" or "preferenceTAMERAgent"
-    agent_types = ["TamerAgent", "preferenceTAMERAgent"]
+    agent_types = ["preferenceTAMERAgent"]
     n_sub_experiment = 20
     noises = [0.1, 0.3, 0.5, 0.7]
     alphas = [0.3]
