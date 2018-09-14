@@ -42,7 +42,7 @@ def run_expr(alpha=0.5, epsilon=0.05, init_temp=1.0, temp_decrease_rate=1.0, noi
     # experiment global parameters
     N = n_sub_experiment
     check_policy_converge = True
-    text_only = True
+    text_only = False
 
     # generate postfix
     postfix = ''
@@ -127,7 +127,7 @@ def run_experiments():
     # agent_type: "qLearningAgent" or "TamerAgent" or "preferenceTAMERAgent"
     agent_types = ["TamerAgent", "preferenceTAMERAgent"]
     n_sub_experiment = 20
-    feedback_noises = [0, 0.1, 0.2, 0.3]
+    feedback_noises = [0.5]
     noises = [0.1]
     alphas = [0.3]
     epsilons = [0.1]

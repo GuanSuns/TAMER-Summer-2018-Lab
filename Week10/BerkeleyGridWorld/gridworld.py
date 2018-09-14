@@ -36,7 +36,7 @@ SHORT_OUTPUT = 1
 SOME_DETAILS = 2
 OUTPUT_DETAIL_LEVEL = VERY_SHORT_OUTPUT    # use this to assign current output level
 #######################################################
-FAST_EXPERIMENT = True      # no wait at the end of each epoch and no graphic output
+FAST_EXPERIMENT = False      # no wait at the end of each epoch and no graphic output
 TAMER_SHOW_LEARNED_VALUES = True   # whether to hide the learned Q-Values while learning
 AUTO_FEEDBACK_TAMER = True     # use robot to simulate human feedback
 #######################################################

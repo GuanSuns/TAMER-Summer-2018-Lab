@@ -42,7 +42,7 @@ def run_expr(alpha=0.5, epsilon=0.05, init_temp=1.0, temp_decrease_rate=1.0, noi
     # experiment global parameters
     N = n_sub_experiment
     check_policy_converge = True
-    text_only = True
+    text_only = False
 
     # generate postfix
     postfix = ''

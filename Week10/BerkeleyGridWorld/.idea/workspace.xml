@@ -2,38 +2,651 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2cc07f5f-c6ba-40b1-99dc-e0ae1cdb89a6" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/Instruction/Project 3 - Reinforcement Learning.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Instruction/Project 3 - Reinforcement Learning_files/capsule.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Instruction/Project 3 - Reinforcement Learning_files/define-eqn1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Instruction/Project 3 - Reinforcement Learning_files/define-eqn2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Instruction/Project 3 - Reinforcement Learning_files/discountgrid.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Instruction/Project 3 - Reinforcement Learning_files/projects.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Instruction/Project 3 - Reinforcement Learning_files/value.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/analysis.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/autograder.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/capsule.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/commands.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crawler.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crawler.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/define-eqn1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/define-eqn2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/discountgrid.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/featureExtractors.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ghostAgents.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/grading.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/graphicsCrawlerDisplay.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/keyboardAgents.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pacman.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pacman.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pacmanAgents.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projectParams.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Week9/BerkeleyGridWorld/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Week9/BerkeleyGridWorld/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Week9/BerkeleyGridWorld/autoFeedbacks.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../Week9/BerkeleyGridWorld/autoFeedbacks.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Week9/BerkeleyGridWorld/experiment/expr_launcher_terminal.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../Week9/BerkeleyGridWorld/experiment/expr_launcher_terminal.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Week9/BerkeleyGridWorld/gridworld.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../Week9/BerkeleyGridWorld/gridworld.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Week9/BerkeleyGridWorld/preferenceTamerAgent.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../Week9/BerkeleyGridWorld/preferenceTamerAgent.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Week9/BerkeleyGridWorld/qlearningAgents.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../Week9/BerkeleyGridWorld/qlearningAgents.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/environment.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiment/expr_launcher_terminal.py" beforeDir="false" afterPath="$PROJECT_DIR$/experiment/expr_launcher_terminal.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/graphicsDisplay.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gridworld.py" beforeDir="false" afterPath="$PROJECT_DIR$/gridworld.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layout.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mdp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/textDisplay.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/value.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/valueIterationAgents.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/00_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/analysis.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/00_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/autograder.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/00_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/crawler.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/00_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/featureExtractors.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/00_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/ghostAgents.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/00_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/grading.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/00_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/graphicsCrawlerDisplay.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/00_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/graphicsDisplay.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/00_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/gridworld.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../experiment-logs/00_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/gridworld.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/00_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/keyboardAgents.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/00_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/pacman.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/00_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/pacmanAgents.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/00_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/preferenceTamerAgent.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../experiment-logs/00_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/preferenceTamerAgent.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/00_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/projectParams.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/00_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/qlearningAgents.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../experiment-logs/00_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/qlearningAgents.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/00_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/reinforcementTestClasses.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/00_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/testClasses.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/00_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/testParser.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/00_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/textDisplay.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/00_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/valueIterationAgents.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/00_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/experiment/expr_launcher_terminal.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../experiment-logs/00_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/experiment/expr_launcher_terminal.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/00_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/avg_policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/00_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/expr_launcher_terminal.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../experiment-logs/00_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/expr_launcher_terminal.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/00_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/gridworld.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../experiment-logs/00_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/gridworld.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/00_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../experiment-logs/00_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/00_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/sub-experiment-0/policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/00_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/sub-experiment-1/policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/00_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/sub-experiment-10/policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/00_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/sub-experiment-11/policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/00_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/sub-experiment-12/policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/00_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/sub-experiment-13/policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/00_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/sub-experiment-14/policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/00_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/sub-experiment-15/policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/00_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/sub-experiment-16/policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/00_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/sub-experiment-17/policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/00_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/sub-experiment-18/policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/00_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/sub-experiment-19/policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/00_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/sub-experiment-2/policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/00_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/sub-experiment-3/policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/00_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/sub-experiment-4/policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/00_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/sub-experiment-5/policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/00_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/sub-experiment-6/policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/00_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/sub-experiment-7/policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/00_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/sub-experiment-8/policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/00_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/sub-experiment-9/policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/01_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/analysis.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/01_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/autograder.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/01_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/crawler.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/01_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/featureExtractors.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/01_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/ghostAgents.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/01_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/grading.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/01_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/graphicsCrawlerDisplay.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/01_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/graphicsDisplay.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/01_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/gridworld.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../experiment-logs/01_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/gridworld.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/01_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/keyboardAgents.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/01_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/layout.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/01_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/pacman.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/01_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/pacmanAgents.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/01_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/preferenceTamerAgent.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../experiment-logs/01_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/preferenceTamerAgent.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/01_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/projectParams.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/01_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/qlearningAgents.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../experiment-logs/01_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/qlearningAgents.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/01_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/reinforcementTestClasses.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/01_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/testClasses.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/01_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/testParser.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/01_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/textDisplay.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/01_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/valueIterationAgents.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/01_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/experiment/expr_launcher_terminal.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../experiment-logs/01_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/experiment/expr_launcher_terminal.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/01_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/avg_policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/01_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/expr_launcher_terminal.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../experiment-logs/01_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/expr_launcher_terminal.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/01_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/gridworld.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../experiment-logs/01_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/gridworld.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/01_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../experiment-logs/01_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/01_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/sub-experiment-0/policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/01_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/sub-experiment-1/policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/01_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/sub-experiment-10/policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/01_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/sub-experiment-11/policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/01_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/sub-experiment-12/policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/01_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/sub-experiment-13/policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/01_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/sub-experiment-14/policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/01_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/sub-experiment-15/policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/01_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/sub-experiment-16/policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/01_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/sub-experiment-17/policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/01_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/sub-experiment-18/policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/01_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/sub-experiment-19/policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/01_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/sub-experiment-2/policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/01_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/sub-experiment-3/policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/01_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/sub-experiment-4/policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/01_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/sub-experiment-5/policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/01_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/sub-experiment-6/policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/01_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/sub-experiment-7/policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/01_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/sub-experiment-8/policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/01_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/sub-experiment-9/policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/02_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/02_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/analysis.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/02_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/autoFeedbacks.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/02_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/autograder.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/02_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/crawler.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/02_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/environment.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/02_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/featureExtractors.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/02_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/game.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/02_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/ghostAgents.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/02_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/grading.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/02_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/graphicsCrawlerDisplay.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/02_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/graphicsDisplay.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/02_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/graphicsGridworldDisplay.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/02_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/graphicsUtils.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/02_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/gridworld.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/02_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/gridworldValueIteration.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/02_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/keyboardAgents.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/02_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/layout.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/02_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/learningAgents.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/02_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/mdp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/02_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/pacman.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/02_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/pacmanAgents.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/02_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/plotUtils.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/02_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/preferenceTamerAgent.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/02_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/projectParams.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/02_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/qValueSaver.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/02_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/qlearningAgents.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/02_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/reinforcementTestClasses.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/02_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/testClasses.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/02_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/testParser.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/02_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/textDisplay.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/02_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/textGridworldDisplay.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/02_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/util.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/02_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/valueIterationAgents.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/02_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/02_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/experiment/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/02_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/experiment/expr_launcher_ide.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/02_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/experiment/expr_launcher_terminal.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/02_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/experiment/expr_value_iteration_launcher_ide.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/02_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/experiment/expr_value_iteration_launcher_terminal.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/02_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/input/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/02_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/input/getchar.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/02_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/input/user_input.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/02_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/avg_policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/02_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/expr_launcher_terminal.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/02_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/gridworld.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/02_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/02_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/sub-experiment-0/policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/02_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/sub-experiment-1/policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/02_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/sub-experiment-10/policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/02_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/sub-experiment-11/policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/02_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/sub-experiment-12/policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/02_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/sub-experiment-13/policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/02_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/sub-experiment-14/policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/02_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/sub-experiment-15/policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/02_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/sub-experiment-16/policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/02_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/sub-experiment-17/policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/02_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/sub-experiment-18/policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/02_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/sub-experiment-19/policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/02_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/sub-experiment-2/policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/02_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/sub-experiment-3/policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/02_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/sub-experiment-4/policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/02_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/sub-experiment-5/policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/02_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/sub-experiment-6/policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/02_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/sub-experiment-7/policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/02_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/sub-experiment-8/policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/02_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/sub-experiment-9/policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/02_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/user_input.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/03_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/03_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/analysis.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/03_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/autoFeedbacks.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/03_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/autograder.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/03_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/crawler.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/03_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/environment.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/03_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/featureExtractors.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/03_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/game.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/03_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/ghostAgents.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/03_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/grading.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/03_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/graphicsCrawlerDisplay.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/03_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/graphicsDisplay.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/03_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/graphicsGridworldDisplay.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/03_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/graphicsUtils.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/03_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/gridworld.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/03_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/gridworldValueIteration.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/03_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/keyboardAgents.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/03_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/layout.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/03_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/learningAgents.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/03_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/mdp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/03_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/pacman.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/03_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/pacmanAgents.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/03_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/plotUtils.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/03_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/preferenceTamerAgent.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/03_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/projectParams.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/03_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/qValueSaver.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/03_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/qlearningAgents.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/03_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/reinforcementTestClasses.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/03_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/testClasses.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/03_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/testParser.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/03_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/textDisplay.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/03_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/textGridworldDisplay.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/03_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/util.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/03_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/valueIterationAgents.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/03_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/03_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/experiment/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/03_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/experiment/expr_launcher_ide.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/03_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/experiment/expr_launcher_terminal.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/03_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/experiment/expr_value_iteration_launcher_ide.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/03_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/experiment/expr_value_iteration_launcher_terminal.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/03_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/input/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/03_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/input/getchar.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/03_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/input/user_input.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/03_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/avg_policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/03_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/expr_launcher_terminal.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/03_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/gridworld.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/03_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/03_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/sub-experiment-0/policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/03_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/sub-experiment-1/policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/03_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/sub-experiment-10/policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/03_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/sub-experiment-11/policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/03_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/sub-experiment-12/policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/03_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/sub-experiment-13/policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/03_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/sub-experiment-14/policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/03_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/sub-experiment-15/policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/03_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/sub-experiment-16/policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/03_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/sub-experiment-17/policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/03_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/sub-experiment-18/policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/03_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/sub-experiment-19/policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/03_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/sub-experiment-2/policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/03_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/sub-experiment-3/policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/03_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/sub-experiment-4/policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/03_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/sub-experiment-5/policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/03_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/sub-experiment-6/policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/03_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/sub-experiment-7/policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/03_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/sub-experiment-8/policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/03_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/sub-experiment-9/policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/03_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/user_input.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/04_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/04_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/analysis.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/04_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/autoFeedbacks.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/04_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/autograder.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/04_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/crawler.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/04_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/environment.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/04_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/featureExtractors.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/04_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/game.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/04_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/ghostAgents.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/04_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/grading.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/04_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/graphicsCrawlerDisplay.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/04_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/graphicsDisplay.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/04_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/graphicsGridworldDisplay.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/04_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/graphicsUtils.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/04_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/gridworld.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/04_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/gridworldValueIteration.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/04_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/keyboardAgents.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/04_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/layout.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/04_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/learningAgents.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/04_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/mdp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/04_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/pacman.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/04_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/pacmanAgents.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/04_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/plotUtils.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/04_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/preferenceTamerAgent.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/04_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/projectParams.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/04_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/qValueSaver.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/04_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/qlearningAgents.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/04_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/reinforcementTestClasses.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/04_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/testClasses.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/04_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/testParser.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/04_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/textDisplay.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/04_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/textGridworldDisplay.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/04_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/util.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/04_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/valueIterationAgents.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/04_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/04_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/experiment/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/04_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/experiment/expr_launcher_ide.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/04_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/experiment/expr_launcher_terminal.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/04_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/experiment/expr_value_iteration_launcher_ide.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/04_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/experiment/expr_value_iteration_launcher_terminal.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/04_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/input/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/04_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/input/getchar.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/04_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/input/user_input.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/04_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/avg_policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/04_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/expr_launcher_terminal.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/04_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/gridworld.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/04_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/04_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/sub-experiment-0/policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/04_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/sub-experiment-1/policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/04_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/sub-experiment-10/policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/04_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/sub-experiment-11/policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/04_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/sub-experiment-12/policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/04_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/sub-experiment-13/policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/04_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/sub-experiment-14/policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/04_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/sub-experiment-15/policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/04_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/sub-experiment-16/policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/04_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/sub-experiment-17/policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/04_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/sub-experiment-18/policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/04_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/sub-experiment-19/policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/04_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/sub-experiment-2/policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/04_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/sub-experiment-3/policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/04_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/sub-experiment-4/policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/04_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/sub-experiment-5/policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/04_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/sub-experiment-6/policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/04_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/sub-experiment-7/policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/04_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/sub-experiment-8/policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/04_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/sub-experiment-9/policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/04_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/user_input.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/05_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/05_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/analysis.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/05_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/autoFeedbacks.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/05_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/autograder.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/05_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/crawler.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/05_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/environment.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/05_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/featureExtractors.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/05_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/game.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/05_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/ghostAgents.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/05_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/grading.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/05_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/graphicsCrawlerDisplay.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/05_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/graphicsDisplay.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/05_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/graphicsGridworldDisplay.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/05_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/graphicsUtils.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/05_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/gridworld.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/05_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/gridworldValueIteration.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/05_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/keyboardAgents.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/05_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/layout.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/05_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/learningAgents.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/05_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/mdp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/05_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/pacman.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/05_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/pacmanAgents.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/05_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/plotUtils.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/05_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/preferenceTamerAgent.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/05_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/projectParams.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/05_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/qValueSaver.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/05_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/qlearningAgents.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/05_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/reinforcementTestClasses.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/05_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/testClasses.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/05_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/testParser.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/05_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/textDisplay.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/05_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/textGridworldDisplay.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/05_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/util.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/05_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/valueIterationAgents.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/05_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/05_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/experiment/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/05_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/experiment/expr_launcher_ide.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/05_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/experiment/expr_launcher_terminal.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/05_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/experiment/expr_value_iteration_launcher_ide.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/05_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/experiment/expr_value_iteration_launcher_terminal.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/05_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/input/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/05_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/input/getchar.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/05_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/input/user_input.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/05_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/avg_policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/05_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/expr_launcher_terminal.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/05_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/gridworld.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/05_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/05_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/sub-experiment-0/policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/05_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/sub-experiment-1/policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/05_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/sub-experiment-10/policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/05_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/sub-experiment-11/policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/05_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/sub-experiment-12/policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/05_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/sub-experiment-13/policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/05_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/sub-experiment-14/policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/05_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/sub-experiment-15/policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/05_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/sub-experiment-16/policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/05_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/sub-experiment-17/policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/05_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/sub-experiment-18/policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/05_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/sub-experiment-19/policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/05_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/sub-experiment-2/policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/05_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/sub-experiment-3/policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/05_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/sub-experiment-4/policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/05_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/sub-experiment-5/policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/05_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/sub-experiment-6/policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/05_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/sub-experiment-7/policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/05_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/sub-experiment-8/policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/05_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/sub-experiment-9/policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/05_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/user_input.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/06_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/06_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/analysis.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/06_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/autoFeedbacks.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/06_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/autograder.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/06_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/crawler.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/06_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/environment.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/06_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/featureExtractors.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/06_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/game.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/06_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/ghostAgents.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/06_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/grading.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/06_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/graphicsCrawlerDisplay.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/06_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/graphicsDisplay.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/06_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/graphicsGridworldDisplay.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/06_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/graphicsUtils.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/06_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/gridworld.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/06_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/gridworldValueIteration.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/06_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/keyboardAgents.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/06_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/layout.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/06_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/learningAgents.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/06_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/mdp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/06_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/pacman.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/06_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/pacmanAgents.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/06_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/plotUtils.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/06_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/preferenceTamerAgent.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/06_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/projectParams.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/06_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/qValueSaver.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/06_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/qlearningAgents.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/06_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/reinforcementTestClasses.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/06_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/testClasses.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/06_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/testParser.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/06_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/textDisplay.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/06_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/textGridworldDisplay.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/06_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/util.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/06_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/valueIterationAgents.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/06_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/06_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/experiment/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/06_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/experiment/expr_launcher_ide.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/06_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/experiment/expr_launcher_terminal.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/06_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/experiment/expr_value_iteration_launcher_ide.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/06_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/experiment/expr_value_iteration_launcher_terminal.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/06_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/input/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/06_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/input/getchar.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/06_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/input/user_input.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/06_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/avg_policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/06_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/expr_launcher_terminal.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/06_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/gridworld.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/06_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/06_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/sub-experiment-0/policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/06_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/sub-experiment-1/policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/06_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/sub-experiment-10/policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/06_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/sub-experiment-11/policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/06_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/sub-experiment-12/policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/06_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/sub-experiment-13/policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/06_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/sub-experiment-14/policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/06_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/sub-experiment-15/policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/06_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/sub-experiment-16/policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/06_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/sub-experiment-17/policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/06_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/sub-experiment-18/policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/06_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/sub-experiment-19/policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/06_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/sub-experiment-2/policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/06_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/sub-experiment-3/policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/06_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/sub-experiment-4/policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/06_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/sub-experiment-5/policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/06_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/sub-experiment-6/policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/06_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/sub-experiment-7/policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/06_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/sub-experiment-8/policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/06_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/sub-experiment-9/policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/06_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/user_input.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/07_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/07_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/analysis.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/07_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/autoFeedbacks.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/07_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/autograder.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/07_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/crawler.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/07_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/environment.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/07_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/featureExtractors.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/07_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/game.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/07_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/ghostAgents.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/07_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/grading.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/07_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/graphicsCrawlerDisplay.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/07_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/graphicsDisplay.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/07_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/graphicsGridworldDisplay.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/07_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/graphicsUtils.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/07_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/gridworld.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/07_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/gridworldValueIteration.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/07_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/keyboardAgents.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/07_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/layout.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/07_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/learningAgents.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/07_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/mdp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/07_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/pacman.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/07_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/pacmanAgents.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/07_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/plotUtils.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/07_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/preferenceTamerAgent.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/07_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/projectParams.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/07_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/qValueSaver.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/07_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/qlearningAgents.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/07_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/reinforcementTestClasses.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/07_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/testClasses.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/07_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/testParser.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/07_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/textDisplay.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/07_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/textGridworldDisplay.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/07_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/util.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/07_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/valueIterationAgents.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/07_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/07_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/experiment/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/07_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/experiment/expr_launcher_ide.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/07_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/experiment/expr_launcher_terminal.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/07_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/experiment/expr_value_iteration_launcher_ide.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/07_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/experiment/expr_value_iteration_launcher_terminal.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/07_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/input/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/07_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/input/getchar.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/07_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/input/user_input.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/07_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/avg_policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/07_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/expr_launcher_terminal.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/07_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/gridworld.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/07_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/07_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/sub-experiment-0/policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/07_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/sub-experiment-1/policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/07_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/sub-experiment-10/policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/07_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/sub-experiment-11/policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/07_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/sub-experiment-12/policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/07_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/sub-experiment-13/policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/07_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/sub-experiment-14/policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/07_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/sub-experiment-15/policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/07_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/sub-experiment-16/policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/07_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/sub-experiment-17/policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/07_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/sub-experiment-18/policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/07_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/sub-experiment-19/policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/07_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/sub-experiment-2/policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/07_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/sub-experiment-3/policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/07_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/sub-experiment-4/policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/07_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/sub-experiment-5/policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/07_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/sub-experiment-6/policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/07_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/sub-experiment-7/policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/07_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/sub-experiment-8/policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/07_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/sub-experiment-9/policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/07_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/user_input.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/08_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/08_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/analysis.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/08_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/autoFeedbacks.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/08_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/autograder.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/08_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/crawler.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/08_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/environment.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/08_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/featureExtractors.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/08_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/game.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/08_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/ghostAgents.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/08_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/grading.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/08_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/graphicsCrawlerDisplay.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/08_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/graphicsDisplay.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/08_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/graphicsGridworldDisplay.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/08_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/graphicsUtils.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/08_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/gridworld.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/08_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/gridworldValueIteration.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/08_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/keyboardAgents.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/08_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/layout.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/08_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/learningAgents.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/08_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/mdp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/08_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/pacman.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/08_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/pacmanAgents.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/08_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/plotUtils.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/08_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/preferenceTamerAgent.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/08_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/projectParams.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/08_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/qValueSaver.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/08_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/qlearningAgents.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/08_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/reinforcementTestClasses.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/08_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/testClasses.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/08_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/testParser.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/08_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/textDisplay.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/08_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/textGridworldDisplay.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/08_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/util.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/08_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/valueIterationAgents.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/08_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/08_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/experiment/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/08_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/experiment/expr_launcher_ide.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/08_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/experiment/expr_launcher_terminal.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/08_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/experiment/expr_value_iteration_launcher_ide.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/08_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/experiment/expr_value_iteration_launcher_terminal.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/08_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/input/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/08_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/input/getchar.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/08_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/input/user_input.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/08_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/avg_policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/08_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/expr_launcher_terminal.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/08_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/gridworld.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/08_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/08_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/sub-experiment-0/policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/08_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/sub-experiment-1/policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/08_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/sub-experiment-10/policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/08_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/sub-experiment-11/policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/08_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/sub-experiment-12/policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/08_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/sub-experiment-13/policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/08_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/sub-experiment-14/policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/08_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/sub-experiment-15/policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/08_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/sub-experiment-16/policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/08_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/sub-experiment-17/policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/08_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/sub-experiment-18/policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/08_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/sub-experiment-19/policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/08_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/sub-experiment-2/policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/08_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/sub-experiment-3/policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/08_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/sub-experiment-4/policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/08_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/sub-experiment-5/policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/08_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/sub-experiment-6/policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/08_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/sub-experiment-7/policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/08_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/sub-experiment-8/policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/08_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/sub-experiment-9/policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/08_TamerAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/user_input.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/09_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/09_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/analysis.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/09_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/autoFeedbacks.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/09_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/autograder.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/09_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/crawler.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/09_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/environment.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/09_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/featureExtractors.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/09_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/game.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/09_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/ghostAgents.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/09_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/grading.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/09_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/graphicsCrawlerDisplay.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/09_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/graphicsDisplay.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/09_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/graphicsGridworldDisplay.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/09_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/graphicsUtils.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/09_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/gridworld.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/09_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/gridworldValueIteration.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/09_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/keyboardAgents.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/09_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/layout.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/09_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/learningAgents.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/09_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/mdp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/09_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/pacman.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/09_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/pacmanAgents.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/09_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/plotUtils.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/09_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/preferenceTamerAgent.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/09_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/projectParams.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/09_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/qValueSaver.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/09_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/qlearningAgents.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/09_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/reinforcementTestClasses.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/09_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/testClasses.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/09_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/testParser.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/09_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/textDisplay.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/09_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/textGridworldDisplay.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/09_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/util.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/09_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/BerkeleyGridWorld/valueIterationAgents.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/09_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/09_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/experiment/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/09_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/experiment/expr_launcher_ide.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/09_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/experiment/expr_launcher_terminal.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/09_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/experiment/expr_value_iteration_launcher_ide.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/09_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/experiment/expr_value_iteration_launcher_terminal.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/09_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/input/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/09_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/input/getchar.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/09_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/all_py_files_snapshot/input/user_input.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/09_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/avg_policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/09_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/expr_launcher_terminal.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/09_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/gridworld.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/09_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/09_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/sub-experiment-0/policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/09_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/sub-experiment-1/policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/09_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/sub-experiment-10/policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/09_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/sub-experiment-11/policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/09_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/sub-experiment-12/policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/09_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/sub-experiment-13/policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/09_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/sub-experiment-14/policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/09_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/sub-experiment-15/policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/09_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/sub-experiment-16/policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/09_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/sub-experiment-17/policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/09_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/sub-experiment-18/policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/09_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/sub-experiment-19/policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/09_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/sub-experiment-2/policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/09_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/sub-experiment-3/policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/09_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/sub-experiment-4/policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/09_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/sub-experiment-5/policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/09_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/sub-experiment-6/policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/09_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/sub-experiment-7/policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/09_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/sub-experiment-8/policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/09_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/sub-experiment-9/policy_agreement_ratio.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../experiment-logs/09_preferenceTAMERAgent_alpha0.3_epsilon0.1_policyConverge_synchInput_noise0.1_speed2.0/user_input.py" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -52,19 +665,31 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="html" value="1" />
-          <entry key="png" value="1" />
-          <entry key="py" value="7" />
+          <entry key="png" value="2" />
+          <entry key="py" value="20" />
           <entry key="txt" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="HTML" value="1" />
-          <entry key="Image" value="1" />
+          <entry key="Image" value="2" />
           <entry key="PLAIN_TEXT" value="2" />
-          <entry key="Python" value="7" />
+          <entry key="Python" value="20" />
         </counts>
       </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="Python" value="10" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="py" value="10" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.vcs.git.usages" />
+      <usages-collector id="statistics.js.language.service.starts" />
     </session>
   </component>
   <component name="FileEditorManager">
@@ -72,8 +697,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/experiment/expr_launcher_terminal.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2794">
-              <caret line="133" column="22" selection-start-line="133" selection-start-column="22" selection-end-line="133" selection-end-column="22" />
+            <state relative-caret-position="-1833">
+              <caret line="44" column="21" selection-start-line="44" selection-start-column="21" selection-end-line="44" selection-end-column="21" />
               <folding>
                 <element signature="e#109#118#0" expanded="true" />
               </folding>
@@ -81,11 +706,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/gridworld.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-439">
-              <caret line="10" column="40" lean-forward="true" selection-start-line="10" selection-start-column="40" selection-end-line="10" selection-end-column="40" />
+            <state relative-caret-position="-6555">
+              <caret line="43" column="34" selection-start-line="43" selection-start-column="34" selection-end-line="43" selection-end-column="34" />
               <folding>
                 <element signature="e#655#668#0" expanded="true" />
               </folding>
@@ -94,22 +719,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/preferenceTamerAgent.py">
+        <entry file="file://$PROJECT_DIR$/autoFeedbacks.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="88">
-              <caret line="4" column="45" selection-start-line="4" selection-start-column="45" selection-end-line="4" selection-end-column="45" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/qlearningAgents.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="654">
-              <caret line="375" lean-forward="true" selection-start-line="375" selection-end-line="375" />
-              <folding>
-                <element signature="e#668#686#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="346">
+              <caret line="46" column="21" selection-start-line="46" selection-start-column="21" selection-end-line="46" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -205,14 +818,14 @@
         <option value="$PROJECT_DIR$/plotUtils.py" />
         <option value="$PROJECT_DIR$/statistics/policy_agreement_stat_stochastic.py" />
         <option value="$PROJECT_DIR$/PreferenceTamerAgent.py" />
-        <option value="$PROJECT_DIR$/gridworld.py" />
-        <option value="$PROJECT_DIR$/gridworld.py" />
         <option value="$PROJECT_DIR$/autoFeedbacks.py" />
-        <option value="$PROJECT_DIR$/experiment/expr_launcher_terminal.py" />
         <option value="$PROJECT_DIR$/statistics/policy_agreement_Tamer_vs_preferTamer.py" />
         <option value="$PROJECT_DIR$/preferenceTamerAgent.py" />
         <option value="$PROJECT_DIR$/qlearningAgents.py" />
         <option value="$PROJECT_DIR$/qlearningAgents.py" />
+        <option value="$PROJECT_DIR$/gridworld.py" />
+        <option value="$PROJECT_DIR$/gridworld.py" />
+        <option value="$PROJECT_DIR$/experiment/expr_launcher_terminal.py" />
       </list>
     </option>
   </component>
@@ -600,19 +1213,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/experiment_creater_and_resumer/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/game.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-614" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pacman.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-811" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -640,13 +1240,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/environment.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/env-tensorflow-py2.7/lib/python2.7/optparse.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="685">
@@ -668,13 +1261,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/valueIterationAgents.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1145">
-          <caret line="82" column="33" selection-start-line="82" selection-start-column="33" selection-end-line="82" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/experiment/expr_launcher_ide.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="304">
@@ -693,20 +1279,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="22">
           <caret line="180" column="36" selection-start-line="180" selection-start-column="36" selection-end-line="180" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/graphicsGridworldDisplay.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6710">
-          <caret line="306" column="34" selection-start-line="306" selection-start-column="34" selection-end-line="306" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gridworldValueIteration.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="725">
-          <caret line="116" column="30" selection-start-line="116" selection-start-column="30" selection-end-line="116" selection-end-column="30" />
         </state>
       </provider>
     </entry>
@@ -749,6 +1321,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1914">
           <caret line="87" column="31" selection-start-line="87" selection-start-column="31" selection-end-line="87" selection-end-column="31" />
+          <folding>
+            <element signature="e#125#136#0" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -780,16 +1355,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/experiment/expr_launcher_terminal.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2794">
-          <caret line="133" column="22" selection-start-line="133" selection-start-column="22" selection-end-line="133" selection-end-column="22" />
-          <folding>
-            <element signature="e#109#118#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Instruction/Project 3 - Reinforcement Learning.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -797,13 +1362,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="434">
           <caret line="165" column="23" selection-start-line="165" selection-start-column="23" selection-end-line="165" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/autoFeedbacks.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="363">
-          <caret line="46" column="21" selection-start-line="46" selection-start-column="21" selection-end-line="46" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -827,16 +1385,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gridworld.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-439">
-          <caret line="10" column="40" lean-forward="true" selection-start-line="10" selection-start-column="40" selection-end-line="10" selection-end-column="40" />
-          <folding>
-            <element signature="e#655#668#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/preferenceTamerAgent.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="88">
@@ -857,12 +1405,100 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/reinforcementTestClasses.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/textDisplay.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="15" column="5" lean-forward="true" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/qlearningAgents.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="654">
           <caret line="375" lean-forward="true" selection-start-line="375" selection-end-line="375" />
           <folding>
             <element signature="e#668#686#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/value.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/textGridworldDisplay.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-6474" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/graphicsDisplay.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-6676" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/layout.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1981" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-9971" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/valueIterationAgents.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1760">
+          <caret line="82" column="33" selection-start-line="82" selection-start-column="33" selection-end-line="82" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/environment.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/graphicsGridworldDisplay.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="764">
+          <caret line="306" column="34" selection-start-line="306" selection-start-column="34" selection-end-line="306" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gridworldValueIteration.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="382">
+          <caret line="116" column="30" selection-start-line="116" selection-start-column="30" selection-end-line="116" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/autoFeedbacks.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="346">
+          <caret line="46" column="21" selection-start-line="46" selection-start-column="21" selection-end-line="46" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/experiment/expr_launcher_terminal.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1833">
+          <caret line="44" column="21" selection-start-line="44" selection-start-column="21" selection-end-line="44" selection-end-column="21" />
+          <folding>
+            <element signature="e#109#118#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gridworld.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-6555">
+          <caret line="43" column="34" selection-start-line="43" selection-start-column="34" selection-end-line="43" selection-end-column="34" />
+          <folding>
+            <element signature="e#655#668#0" expanded="true" />
           </folding>
         </state>
       </provider>
