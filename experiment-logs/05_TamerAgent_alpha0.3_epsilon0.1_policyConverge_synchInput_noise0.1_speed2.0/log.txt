@@ -1,0 +1,50 @@
+*************************************
+*** Start Sub-Experiment 0 **********
+*************************************
+
+RUNNING 800 EPISODES
+
+##################################
+The policy has converged
+
+TOTAL STEPS: 764, EPISODE STEPS: 8
+##################################
+##################################
+
+AVERAGE RETURNS FROM START STATE: 3.05664601571
+
+
+Press Enter to continue*************************************
+*** Start Sub-Experiment 1 **********
+*************************************
+
+RUNNING 800 EPISODES
+
+Traceback (most recent call last):
+  File "/Users/lguan/env-tensorflow-py2.7/lib/python2.7/runpy.py", line 174, in _run_module_as_main
+    "__main__", fname, loader, pkg_name)
+  File "/Users/lguan/env-tensorflow-py2.7/lib/python2.7/runpy.py", line 72, in _run_code
+    exec code in run_globals
+  File "/Users/lguan/Documents/Study/Research/Summer 2018/Week10/BerkeleyGridWorld/experiment/expr_launcher_terminal.py", line 167, in <module>
+    run_experiments()
+  File "/Users/lguan/Documents/Study/Research/Summer 2018/Week10/BerkeleyGridWorld/experiment/expr_launcher_terminal.py", line 161, in run_experiments
+    , agent_type=agent_type)
+  File "/Users/lguan/Documents/Study/Research/Summer 2018/Week10/BerkeleyGridWorld/experiment/expr_launcher_terminal.py", line 115, in run_expr
+    experiment_stat = tamerGridWorld.run_episodes()
+  File "BerkeleyGridWorld/gridworld.py", line 813, in run_episodes
+    , optimal_policy=self.optimal_policy)
+  File "BerkeleyGridWorld/gridworld.py", line 559, in runEpisode
+    f_display(state, previous_state)
+  File "BerkeleyGridWorld/gridworld.py", line 783, in <lambda>
+    , previousState=previous_state)
+  File "BerkeleyGridWorld/graphicsGridworldDisplay.py", line 59, in displayQValues
+    drawQValues(self.gridworld, qValues, currentState, message, previousState=previousState)
+  File "BerkeleyGridWorld/graphicsGridworldDisplay.py", line 171, in drawQValues
+    drawSquare(x, y, value, minValue, maxValue, valString, action, False, isExit, isCurrent)
+  File "BerkeleyGridWorld/graphicsGridworldDisplay.py", line 223, in drawSquare
+    square_color = getColor(val, min, max)
+  File "BerkeleyGridWorld/graphicsGridworldDisplay.py", line 340, in getColor
+    return formatColor(r,g,0.0)
+  File "BerkeleyGridWorld/graphicsUtils.py", line 36, in formatColor
+    return '#%02x%02x%02x' % (int(r * 255), int(g * 255), int(b * 255))
+KeyboardInterrupt

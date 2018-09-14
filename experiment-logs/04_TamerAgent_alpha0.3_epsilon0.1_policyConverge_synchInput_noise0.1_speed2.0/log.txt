@@ -1,0 +1,22 @@
+*************************************
+*** Start Sub-Experiment 0 **********
+*************************************
+
+RUNNING 800 EPISODES
+
+Traceback (most recent call last):
+  File "/Users/lguan/env-tensorflow-py2.7/lib/python2.7/runpy.py", line 174, in _run_module_as_main
+    "__main__", fname, loader, pkg_name)
+  File "/Users/lguan/env-tensorflow-py2.7/lib/python2.7/runpy.py", line 72, in _run_code
+    exec code in run_globals
+  File "/Users/lguan/Documents/Study/Research/Summer 2018/Week10/BerkeleyGridWorld/experiment/expr_launcher_terminal.py", line 167, in <module>
+    run_experiments()
+  File "/Users/lguan/Documents/Study/Research/Summer 2018/Week10/BerkeleyGridWorld/experiment/expr_launcher_terminal.py", line 161, in run_experiments
+    , agent_type=agent_type)
+  File "/Users/lguan/Documents/Study/Research/Summer 2018/Week10/BerkeleyGridWorld/experiment/expr_launcher_terminal.py", line 115, in run_expr
+    experiment_stat = tamerGridWorld.run_episodes()
+  File "BerkeleyGridWorld/gridworld.py", line 813, in run_episodes
+    , optimal_policy=self.optimal_policy)
+  File "BerkeleyGridWorld/gridworld.py", line 566, in runEpisode
+    if ExperimentConfigurator.TamerConfig['AUTO_FEEDBACK_TAMER']:
+KeyError: 'AUTO_FEEDBACK_TAMER'
