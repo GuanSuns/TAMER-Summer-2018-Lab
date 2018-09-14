@@ -52,4 +52,13 @@
 - **Berkeley Grid World**
 	- Record and visualize VDBE values
 
-	
+## Week 9
+- **Reading Note**
+	-  Relevant Papers: learning through human feedback: https://guansuns.github.io/blog/02/Papers-RL-with-Human-Feedback/
+- **Berkeley Grid World**
+	- Add supports for preferences-based agents
+
+## Week 10
+- **Berkeley Grid World**
+	- Add supports for preferences-based agents
+
