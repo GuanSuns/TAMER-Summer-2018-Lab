@@ -21,35 +21,48 @@ class ExperimentConfigurator:
         , 'agent_type': 'qLearningAgent'
         , 'Fast_Experiment': True      # no wait at the end of each epoch and no graphic output
         , 'save_VDBE': False
-        , 'display_speed': 2.0}
+        , 'display_speed': 2.0
+    }
 
     gridWorldConfig = {
         'grid_name': 'DiscountGrid'
         , 'discount': 0.9
-        , 'noise': 0
+        , 'noise': 0.1
         , 'grid_size': 150
         , 'n_episodes': 100
-        , 'living_reward': 0}
+        , 'living_reward': 0
+    }
+
+    AutoFeedbackConfig = {
+        'prob_wrong_feedback': 0.2,
+        'prob_no_feedback': 0.3
+    }
 
     TamerConfig = {
         'is_asyn_input': False
         , 'agent_max_n_experiences': 1000
         , 'agent_window_size': 1.0
         , 'Auto_Feedback_TAMER': True
-        , 'TAMER_Show_Learned_Values': True}    # whether to hide the learned Q-Values while learning
+        , 'TAMER_Show_Learned_Values': True     # whether to hide the learned Q-Values while learning
+    }
 
     qLearningConfig = {
         'learning_rate': 0.5
         , 'init_temp': 1.0
         , 'use_VDBE': False
         , 'temp_decrease_rate': 1.0
-        , 'epsilon': 0.3}   # set epsilon to -1 to use softmax
+        , 'epsilon': 0.3    # set epsilon to -1 to use softmax
+    }
 
+    #######################################################
+    #################### For fun ##########################
+    #######################################################
     VDBEConfig = {
         'use_VDBE': False
         , 'sigma': 0.05
         , 'delta': 0.1
-        , 'episode_anneal_threshold': 0.15}
+        , 'episode_anneal_threshold': 0.15
+    }
 
     EpisodeWiseEpsilonAnnealing = {
         'use_episode_epsilon_anneal': False
@@ -59,6 +72,9 @@ class ExperimentConfigurator:
         , 'episode_init_epsilon': 1.0
         , 'episode_decay_rate': 1.0 + 0.6    # episode decay rate (mean lifetime - 0.1: 9, 0.2: 5; 0.3: 4)
     }
+
+    #######################################################
+    #######################################################
 
     @staticmethod
     def getOutputDetailLevel():
@@ -87,6 +103,12 @@ class ExperimentConfigurator:
         for parameter in parameters:
             if parameter in ExperimentConfigurator.qLearningConfig:
                 ExperimentConfigurator.qLearningConfig[parameter] = parameters[parameter]
+
+    @staticmethod
+    def setAutoFeedbackConfig(parameters):
+        for parameter in parameters:
+            if parameter in ExperimentConfigurator.AutoFeedbackConfig:
+                ExperimentConfigurator.AutoFeedbackConfig[parameter] = parameters[parameter]
 
     def __init__(self):
         pass

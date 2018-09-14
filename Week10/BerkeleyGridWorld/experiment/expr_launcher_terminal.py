@@ -9,7 +9,6 @@ from .. import gridworld
 from ..input import user_input
 from .. import qValueSaver
 from .. import plotUtils
-from ..autoFeedbacks import setHumanFeedbackNoise
 
 from ..experimentConfigurator import ExperimentConfigurator
 
@@ -41,7 +40,10 @@ def run_expr(n_sub_experiment=10):
     else:
         postfix += '_k' + str(ExperimentConfigurator.gridWorldConfig['n_episodes'])
     # user input method
-    if ExperimentConfigurator.TamerConfig['is_asyn_input']:
+    if ExperimentConfigurator.TamerConfig['Auto_Feedback_TAMER']:
+        postfix += '_autoFeedback_no' + str(ExperimentConfigurator.AutoFeedbackConfig['prob_no_feedback'])
+        postfix += '_wrong' + str(ExperimentConfigurator.AutoFeedbackConfig['prob_wrong_feedback'])
+    elif ExperimentConfigurator.TamerConfig['is_asyn_input']:
         postfix += '_winSize' + str(ExperimentConfigurator.TamerConfig['agent_window_size'])
     else:
         postfix += '_synchInput'
@@ -66,6 +68,11 @@ def run_expr(n_sub_experiment=10):
     expr_saver.dump_src_code_and_model_def(fname=fname)
     # save input module related files
     fname = user_input.__file__
+    if fname.endswith('.pyc'):
+        fname = fname.replace(".pyc", ".py")
+    expr_saver.dump_src_code_and_model_def(fname=fname)
+    # save configurator
+    fname = ExperimentConfigurator.__file__
     if fname.endswith('.pyc'):
         fname = fname.replace(".pyc", ".py")
     expr_saver.dump_src_code_and_model_def(fname=fname)
@@ -97,7 +104,18 @@ def run_experiments():
     # agent_type: "qLearningAgent" or "TamerAgent" or "preferenceTAMERAgent"
     agent_types = ["TamerAgent", "preferenceTAMERAgent"]
     n_sub_experiment = 20
-    feedback_noises = [0.5]
+    feedback_noises = [     # format: (no_feedback, wrong_feedback)
+        (0, 0)
+        , (0.1, 0)
+        , (0.2, 0)
+        , (0.3, 0)
+        , (0, 0.1)
+        , (0, 0.2)
+        , (0, 0.3)
+        , (0.1, 0.1)
+        , (0.2, 0.2)
+        , (0.3, 0.3)
+    ]
     noises = [0.1]
     alphas = [0.3]
     epsilons = [0.1]
@@ -106,7 +124,8 @@ def run_experiments():
 
     for agent_type in agent_types:
         for feedback_noise in feedback_noises:
-            setHumanFeedbackNoise(feedback_noise)
+            wrong_feedback = feedback_noise[1]
+            no_feedback = feedback_noise[0]
             for noise in noises:
                 for alpha in alphas:
                     for epsilon in epsilons:
@@ -114,7 +133,9 @@ def run_experiments():
                             'agent_type': agent_type,
                             'env_noise': noise,
                             'alpha': alpha,
-                            'epsilon': epsilon
+                            'epsilon': epsilon,
+                            'wrong_feedback': wrong_feedback,
+                            'no_feedback': no_feedback
                         }
                         # use softmax
                         if epsilon == -1:
@@ -140,6 +161,7 @@ def run_experiments():
 
 
 def configExperiment(agent_type="TamerAgent"
+                     , wrong_feedback=0, no_feedback=0
                      , env_noise=0, alpha=0.5, epsilon=0
                      , init_temp=1.0, temp_decrease_rate=1.0):
     # experiment config
@@ -158,6 +180,13 @@ def configExperiment(agent_type="TamerAgent"
     gridWorldConfig = {
         'noise': env_noise}
     ExperimentConfigurator.setGridWorldConfig(gridWorldConfig)
+
+    # Auto feedback config
+    autoFeedbackConfig = {
+        'prob_wrong_feedback': wrong_feedback,
+        'prob_no_feedback': no_feedback
+    }
+    ExperimentConfigurator.setAutoFeedbackConfig(autoFeedbackConfig)
 
 
 if __name__ == '__main__':

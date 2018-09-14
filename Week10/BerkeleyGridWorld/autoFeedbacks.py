@@ -2,8 +2,7 @@
 # ------------
 
 import util
-
-FEEDBACK_NOISE = 0.1
+from experimentConfigurator import ExperimentConfigurator
 
 feedbackValues = {
     ((4, 2), (4, 2)): 1
@@ -32,29 +31,37 @@ terminalFeedbackValues = {
 }
 
 
-def setHumanFeedbackNoise(noise):
-    global FEEDBACK_NOISE
-    FEEDBACK_NOISE = noise
+class AutoFeedback:
+    def __init__(self):
+        pass
 
-
-def getAutoHumanFeedback(new_state, previous_state):
-    if new_state is None or previous_state is None:
-        return 0
-    # evaluate terminal state
-    if isinstance(new_state, str):
-        if (previous_state, new_state) in terminalFeedbackValues:
+    def getAutoHumanFeedback(self, new_state, previous_state):
+        if new_state is None or previous_state is None:
+            return 0
+        # evaluate terminal state
+        if isinstance(new_state, str):
+            if (previous_state, new_state) in terminalFeedbackValues:
+                # simulate the case when human makes mistakes
+                correct_feedback = terminalFeedbackValues[(previous_state, new_state)]
+            else:
+                correct_feedback = -1
+        # evaluate non-terminal state
+        elif (previous_state, new_state) in feedbackValues:
             # simulate the case when human makes mistakes
-            if util.flipCoin(FEEDBACK_NOISE):
-                return -terminalFeedbackValues[(previous_state, new_state)]
-            return terminalFeedbackValues[(previous_state, new_state)]
+            correct_feedback = feedbackValues[(previous_state, new_state)]
         else:
-            return -1
-    # evaluate non-terminal state
-    if (previous_state, new_state) in feedbackValues:
-        # simulate the case when human makes mistakes
-        if util.flipCoin(FEEDBACK_NOISE):
-            return -feedbackValues[(previous_state, new_state)]
-        return feedbackValues[(previous_state, new_state)]
-    else:
-        return -1
+            correct_feedback = -1
+
+        # generate feedback
+        return AutoFeedback.generateFeedback(correct_feedback)
+
+    @staticmethod
+    def generateFeedback(correct_feedback):
+        # simulate the case when there is no feedback
+        if util.flipCoin(ExperimentConfigurator.AutoFeedbackConfig['prob_no_feedback']):
+            return 0
+        # simulate the case when the human makes mistake
+        if util.flipCoin(ExperimentConfigurator.AutoFeedbackConfig['prob_wrong_feedback']):
+            return -correct_feedback
+
 

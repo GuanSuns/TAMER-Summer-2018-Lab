@@ -2,17 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2cc07f5f-c6ba-40b1-99dc-e0ae1cdb89a6" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/lguan.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/lguan.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/learningAgents.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/learningAgents.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/qlearningAgents.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/qlearningAgents.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/autoFeedbacks.py" beforeDir="false" afterPath="$PROJECT_DIR$/autoFeedbacks.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/experiment/expr_launcher_terminal.py" beforeDir="false" afterPath="$PROJECT_DIR$/experiment/expr_launcher_terminal.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gridworld.py" beforeDir="false" afterPath="$PROJECT_DIR$/gridworld.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gridworldValueIteration.py" beforeDir="false" afterPath="$PROJECT_DIR$/gridworldValueIteration.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/learningAgents.py" beforeDir="false" afterPath="$PROJECT_DIR$/agents/learningAgents.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/preferenceTamerAgent.py" beforeDir="false" afterPath="$PROJECT_DIR$/agents/preferenceTamerAgent.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/qlearningAgents.py" beforeDir="false" afterPath="$PROJECT_DIR$/agents/qlearningAgents.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/experimentConfigurator.py" beforeDir="false" afterPath="$PROJECT_DIR$/experimentConfigurator.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -34,7 +27,7 @@
         <counts>
           <entry key="html" value="1" />
           <entry key="png" value="2" />
-          <entry key="py" value="27" />
+          <entry key="py" value="28" />
           <entry key="txt" value="2" />
         </counts>
       </usages-collector>
@@ -43,20 +36,20 @@
           <entry key="HTML" value="1" />
           <entry key="Image" value="2" />
           <entry key="PLAIN_TEXT" value="2" />
-          <entry key="Python" value="27" />
+          <entry key="Python" value="28" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="3" />
-          <entry key="Python" value="2176" />
+          <entry key="Python" value="3106" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="Python Console" value="43" />
           <entry key="dummy" value="3" />
-          <entry key="py" value="2133" />
+          <entry key="py" value="3063" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages" />
@@ -65,14 +58,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/experiment/expr_launcher_terminal.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="585">
-              <caret line="58" lean-forward="true" selection-start-line="58" selection-end-line="58" />
+            <state relative-caret-position="265">
+              <caret line="137" column="54" selection-start-line="137" selection-start-column="54" selection-end-line="137" selection-end-column="54" />
               <folding>
                 <element signature="e#109#118#0" expanded="true" />
-                <marker date="1536939923496" expanded="true" signature="6388:6941" ph="..." />
+                <marker date="1536951640697" expanded="true" signature="7265:8035" ph="..." />
               </folding>
             </state>
           </provider>
@@ -81,7 +74,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/gridworld.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
+            <state relative-caret-position="-2111">
               <caret line="693" column="121" selection-start-line="693" selection-start-column="108" selection-end-line="693" selection-end-column="121" />
               <folding>
                 <element signature="e#655#668#0" expanded="true" />
@@ -90,14 +83,28 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/autoFeedbacks.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="45" column="17" lean-forward="true" selection-start-line="45" selection-start-column="17" selection-end-line="45" selection-end-column="17" />
+              <folding>
+                <element signature="e#34#45#0" expanded="true" />
+                <marker date="1536950275596" expanded="true" signature="740:741" ph="..." />
+                <marker date="1536950275596" expanded="true" signature="740:2016" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/experimentConfigurator.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="110">
-              <caret line="21" column="33" selection-start-line="21" selection-start-column="33" selection-end-line="21" selection-end-column="33" />
+            <state relative-caret-position="317">
+              <caret line="35" column="4" lean-forward="true" selection-start-line="35" selection-start-column="4" selection-end-line="38" selection-end-column="5" />
               <folding>
-                <marker date="1536939992913" expanded="true" signature="2145:3152" ph="..." />
-                <marker date="1536939992913" expanded="true" signature="3146:3152" ph="..." />
+                <marker date="1536951126688" expanded="true" signature="2577:3847" ph="..." />
+                <marker date="1536951126688" expanded="true" signature="3841:3847" ph="..." />
               </folding>
             </state>
           </provider>
@@ -215,7 +222,6 @@
         <option value="$PROJECT_DIR$/plotUtils.py" />
         <option value="$PROJECT_DIR$/statistics/policy_agreement_stat_stochastic.py" />
         <option value="$PROJECT_DIR$/PreferenceTamerAgent.py" />
-        <option value="$PROJECT_DIR$/autoFeedbacks.py" />
         <option value="$PROJECT_DIR$/statistics/policy_agreement_Tamer_vs_preferTamer.py" />
         <option value="$PROJECT_DIR$/preferenceTamerAgent.py" />
         <option value="$PROJECT_DIR$/qlearningAgents.py" />
@@ -225,8 +231,9 @@
         <option value="$PROJECT_DIR$/gridworld.py" />
         <option value="$PROJECT_DIR$/agents/qlearningAgents.py" />
         <option value="$PROJECT_DIR$/agents/preferenceTamerAgent.py" />
-        <option value="$PROJECT_DIR$/experiment/expr_launcher_terminal.py" />
+        <option value="$PROJECT_DIR$/autoFeedbacks.py" />
         <option value="$PROJECT_DIR$/experimentConfigurator.py" />
+        <option value="$PROJECT_DIR$/experiment/expr_launcher_terminal.py" />
       </list>
     </option>
   </component>
@@ -819,13 +826,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/autoFeedbacks.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-201">
-          <caret selection-end-line="1" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/agents/learningAgents.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1628">
@@ -855,7 +855,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/gridworld.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
+        <state relative-caret-position="-2111">
           <caret line="693" column="121" selection-start-line="693" selection-start-column="108" selection-end-line="693" selection-end-column="121" />
           <folding>
             <element signature="e#655#668#0" expanded="true" />
@@ -863,24 +863,36 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/experiment/expr_launcher_terminal.py">
+    <entry file="file://$PROJECT_DIR$/autoFeedbacks.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
-          <caret line="58" lean-forward="true" selection-start-line="58" selection-end-line="58" />
+        <state relative-caret-position="170">
+          <caret line="45" column="17" lean-forward="true" selection-start-line="45" selection-start-column="17" selection-end-line="45" selection-end-column="17" />
           <folding>
-            <element signature="e#109#118#0" expanded="true" />
-            <marker date="1536939923496" expanded="true" signature="6388:6941" ph="..." />
+            <element signature="e#34#45#0" expanded="true" />
+            <marker date="1536950275596" expanded="true" signature="740:741" ph="..." />
+            <marker date="1536950275596" expanded="true" signature="740:2016" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/experimentConfigurator.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="21" column="33" selection-start-line="21" selection-start-column="33" selection-end-line="21" selection-end-column="33" />
+        <state relative-caret-position="317">
+          <caret line="35" column="4" lean-forward="true" selection-start-line="35" selection-start-column="4" selection-end-line="38" selection-end-column="5" />
           <folding>
-            <marker date="1536939992913" expanded="true" signature="2145:3152" ph="..." />
-            <marker date="1536939992913" expanded="true" signature="3146:3152" ph="..." />
+            <marker date="1536951126688" expanded="true" signature="2577:3847" ph="..." />
+            <marker date="1536951126688" expanded="true" signature="3841:3847" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/experiment/expr_launcher_terminal.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="265">
+          <caret line="137" column="54" selection-start-line="137" selection-start-column="54" selection-end-line="137" selection-end-column="54" />
+          <folding>
+            <element signature="e#109#118#0" expanded="true" />
+            <marker date="1536951640697" expanded="true" signature="7265:8035" ph="..." />
           </folding>
         </state>
       </provider>
